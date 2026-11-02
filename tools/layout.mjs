@@ -1,17 +1,29 @@
 // Puts the shared head, header and footer into every page, stamps the CSS and JS links, then writes sitemap.xml.
 // Edit partials/*.html or assets/*.css, then run: node tools/layout.mjs
+// tools/blog.mjs imports applyLayout() so a single blog post comes out finished without touching other pages.
 import { readFileSync, writeFileSync, readdirSync, statSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { join } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
-const root = new URL("..", import.meta.url).pathname;
+const root = fileURLToPath(new URL("..", import.meta.url));
 const read = (f) => readFileSync(join(root, "partials", f), "utf8").trim();
 const parts = { head: read("head.html"), header: read("header.html"), footer: read("footer.html") };
 
 // Each CSS and JS link gets ?v=<hash of the file>, so a changed file skips the browser cache.
 const version = (name) => createHash("sha1").update(readFileSync(join(root, "assets", name))).digest("hex").slice(0, 8);
 
-const skip = new Set(["node_modules", ".git", "partials", "tools", "assets"]);
+// Fills the partials markers and stamps the asset links of one page.
+export function applyLayout(html) {
+  for (const [name, content] of Object.entries(parts)) {
+    const re = new RegExp(`<!-- ${name}:start -->[\\s\\S]*?<!-- ${name}:end -->`);
+    html = html.replace(re, () => `<!-- ${name}:start -->\n${content}\n<!-- ${name}:end -->`);
+  }
+  return html.replace(/(href|src)="\/assets\/([\w.-]+\.(?:css|js))(\?v=\w+)?"/g, (_, attr, name) => `${attr}="/assets/${name}?v=${version(name)}"`);
+}
+
+// Folders that hold no pages. blog/_src holds the blog's Markdown sources.
+const skip = new Set(["node_modules", ".git", "partials", "tools", "assets", "_src"]);
 function pages(dir) {
   return readdirSync(dir).flatMap((name) => {
     const p = join(dir, name);
@@ -20,26 +32,27 @@ function pages(dir) {
   });
 }
 
-const urls = [];
-const files = pages(root);
-for (const file of files) {
-  let html = readFileSync(file, "utf8");
-  for (const [name, content] of Object.entries(parts)) {
-    const re = new RegExp(`<!-- ${name}:start -->[\\s\\S]*?<!-- ${name}:end -->`);
-    html = html.replace(re, () => `<!-- ${name}:start -->\n${content}\n<!-- ${name}:end -->`);
+function main() {
+  const today = new Date().toISOString().slice(0, 10);
+  const urls = new Map();
+  const files = pages(root);
+  for (const file of files) {
+    const html = applyLayout(readFileSync(file, "utf8"));
+    writeFileSync(file, html);
+    const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
+    const noindex = /<meta name="robots" content="[^"]*noindex/.test(html);
+    // Blog posts carry their own date; every other page gets today.
+    const modified = html.match(/<meta property="article:modified_time" content="(\d{4}-\d{2}-\d{2})/)?.[1];
+    if (canonical && !noindex) urls.set(canonical, modified || today);
   }
-  html = html.replace(/(href|src)="\/assets\/([\w.-]+\.(?:css|js))(\?v=\w+)?"/g, (_, attr, name) => `${attr}="/assets/${name}?v=${version(name)}"`);
-  writeFileSync(file, html);
-  const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
-  const noindex = /<meta name="robots" content="[^"]*noindex/.test(html);
-  if (canonical && !noindex) urls.push(canonical);
-}
 
-const today = new Date().toISOString().slice(0, 10);
-const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...new Set(urls)].sort().map((u) => `  <url><loc>${u}</loc><lastmod>${today}</lastmod></url>`).join("\n")}
+${[...urls.keys()].sort().map((u) => `  <url><loc>${u}</loc><lastmod>${urls.get(u)}</lastmod></url>`).join("\n")}
 </urlset>
 `;
-writeFileSync(join(root, "sitemap.xml"), xml);
-console.log(`Updated ${files.length} pages, ${urls.length} URLs in sitemap.xml`);
+  writeFileSync(join(root, "sitemap.xml"), xml);
+  console.log(`Updated ${files.length} pages, ${urls.size} URLs in sitemap.xml`);
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main();

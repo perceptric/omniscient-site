@@ -1,0 +1,35 @@
+<style>.lat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.lat-card{padding:14px;display:grid;gap:12px;align-content:start;min-width:0}.lat-card+.lat-card{border-left:1px solid var(--ink)}.lat-hd{display:flex;align-items:center;gap:10px;min-width:0}.lat-hd b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lat-lbl{font:500 10.5px var(--mono);color:var(--ink-2)}.lat-m{display:grid;gap:3px;font-size:11.5px}.lat-m div{display:flex;justify-content:space-between;gap:8px}.lat-bar{height:4px;background:var(--line)}.lat-bar i{display:block;height:4px;background:var(--ink)}.lat-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 8px;font-size:11.5px}.lat-seg{display:inline-flex;border:1px solid var(--ink)}.lat-seg span{padding:2px 6px;font-size:10.5px}.lat-seg span+span{border-left:1px solid var(--line)}.lat-seg .on{background:var(--ink);color:#fff}@media (max-width:480px){.lat-cr{display:none}}@media (max-width:760px){.lat-grid{grid-template-columns:minmax(0,1fr)}.lat-card+.lat-card{border-left:0;border-top:1px solid var(--ink)}}</style>
+<div class="app" style="grid-template-columns:minmax(0,1fr);min-height:0" role="img" aria-label="Omniscient's LinkedIn senders settings with three connected accounts. Sam Carter in Europe/London at the Normal pace has sent 9 of 14 invitations today and shares conversations with everyone in the workspace. Leo Novak in America/New_York is warming up on day 3 with 4 of 8 invitations sent and keeps conversations to himself and admins. Amara Osei in Europe/Berlin is slowed down because few invitations were accepted, with 3 of 6 invitations sent today.">
+  <div class="main">
+    <div class="ph"><span class="sub mono lat-cr">Settings /</span><b>LinkedIn senders <span>3</span></b><span style="flex:1"></span><span class="ui-btn pri"><img class="lg" src="/assets/logos/linkedin.svg" alt="" width="13" height="13" style="background:#fff">Connect LinkedIn</span></div>
+    <div class="lat-grid">
+      <div class="lat-card">
+        <div class="lat-hd"><img class="av" src="/assets/img/people/sam.jpg" alt="" width="30" height="30" style="width:30px;height:30px"><span style="min-width:0;flex:1"><b>Sam Carter</b><span class="sub" style="font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Last sent 6m ago</span></span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="lat-lbl">[Today]</span><span class="tag t-green">Connected</span></div>
+        <div class="lat-m"><div><span class="sub">Invitations</span><span>9 of 14</span></div><div class="lat-bar"><i style="width:64%"></i></div></div>
+        <div class="lat-m"><div><span class="sub">Messages</span><span>17 of 27</span></div><div class="lat-bar"><i style="width:63%"></i></div></div>
+        <div class="lat-row"><span class="sub">Time zone</span><span>Europe/London</span></div>
+        <div class="lat-row"><span class="sub">Pace</span><span class="lat-seg"><span>Careful</span><span class="on">Normal</span><span>Fast</span><span>Custom</span></span></div>
+        <div class="lat-row"><span class="sub">Conversations</span><span>Everyone in the workspace</span></div>
+      </div>
+      <div class="lat-card">
+        <div class="lat-hd"><img class="av" src="/assets/img/people/leo.jpg" alt="" width="30" height="30" style="width:30px;height:30px"><span style="min-width:0;flex:1"><b>Leo Novak</b><span class="sub" style="font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Last sent 22m ago</span></span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="lat-lbl">[Today]</span><span class="tag t-blue">Warming up, day 3</span></div>
+        <div class="lat-m"><div><span class="sub">Invitations</span><span>4 of 8</span></div><div class="lat-bar"><i style="width:50%"></i></div></div>
+        <div class="lat-m"><div><span class="sub">Messages</span><span>6 of 14</span></div><div class="lat-bar"><i style="width:43%"></i></div></div>
+        <div class="lat-row"><span class="sub">Time zone</span><span>America/New_York</span></div>
+        <div class="lat-row"><span class="sub">Pace</span><span class="lat-seg"><span>Careful</span><span class="on">Normal</span><span>Fast</span><span>Custom</span></span></div>
+        <div class="lat-row"><span class="sub">Conversations</span><span>Only me and admins</span></div>
+      </div>
+      <div class="lat-card">
+        <div class="lat-hd"><img class="av" src="/assets/img/people/amara.jpg" alt="" width="30" height="30" style="width:30px;height:30px"><span style="min-width:0;flex:1"><b>Amara Osei</b><span class="sub" style="font-size:11px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Last sent 1h ago</span></span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="lat-lbl">[Today]</span><span class="tag t-yellow">Few invitations accepted</span></div>
+        <div class="lat-m"><div><span class="sub">Invitations</span><span>3 of 6</span></div><div class="lat-bar"><i style="width:50%"></i></div></div>
+        <div class="lat-m"><div><span class="sub">Messages</span><span>9 of 13</span></div><div class="lat-bar"><i style="width:69%"></i></div></div>
+        <div class="lat-row"><span class="sub">Time zone</span><span>Europe/Berlin</span></div>
+        <div class="lat-row"><span class="sub">Pace</span><span class="lat-seg"><span>Careful</span><span class="on">Normal</span><span>Fast</span><span>Custom</span></span></div>
+        <div class="lat-row"><span class="sub">Conversations</span><span>Everyone in the workspace</span></div>
+      </div>
+    </div>
+  </div>
+</div>

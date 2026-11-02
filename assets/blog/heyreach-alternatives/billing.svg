@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 928" width="720" height="928" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">How HeyReach and its alternatives bill you</title>
+<desc id="d">How HeyReach and its alternatives bill for LinkedIn sending. Per LinkedIn account: HeyReach Growth $79 per sender a month, La Growth Machine €60 per identity a month, Linked Helper $15 per account a month. Per seat or user: Omniscient $19 per seat a month billed yearly, Waalaxy €19 per user a month, Dripify $79 per user a month, lemlist $87 per user a month billed yearly, Expandi $99 a month, Skylead $100 per seat a month. Flat for a team of senders: HeyReach Agency $999 a month for 25 senders, Skylead Agency $999 a month for 25 seats as a first year offer, HeyReach Unlimited $2,999 a month for up to 300 senders.</desc>
+<rect width="720" height="928" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="927" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Pricing]</text>
+<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">How each tool bills you <tspan fill="#a3a3a3">today</tspan></text>
+<rect x="32" y="116" width="656" height="184" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="52" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Per LinkedIn account]</text>
+<text x="52" y="192" font-size="20" font-weight="600" fill="#0a0a0a">HeyReach Growth</text>
+<text x="668" y="192" text-anchor="end" font-size="19" fill="#404040">$79 per sender a month</text>
+<line x1="33" x2="687" y1="208" y2="208" stroke="#e5e5e5"/>
+<text x="52" y="238" font-size="20" font-weight="600" fill="#0a0a0a">La Growth Machine</text>
+<text x="668" y="238" text-anchor="end" font-size="19" fill="#404040">€60 per identity a month</text>
+<line x1="33" x2="687" y1="254" y2="254" stroke="#e5e5e5"/>
+<text x="52" y="284" font-size="20" font-weight="600" fill="#0a0a0a">Linked Helper</text>
+<text x="668" y="284" text-anchor="end" font-size="19" fill="#404040">$15 per account a month</text>
+<rect x="32" y="322" width="656" height="322" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32" y="322" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="52" y="352" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Per seat or user]</text>
+<rect x="52" y="384" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
+<text x="76" y="398" font-size="20" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<text x="668" y="398" text-anchor="end" font-size="19" fill="#404040">$19 per seat a month, billed yearly</text>
+<line x1="33" x2="687" y1="414" y2="414" stroke="#e5e5e5"/>
+<text x="52" y="444" font-size="20" font-weight="600" fill="#0a0a0a">Waalaxy</text>
+<text x="668" y="444" text-anchor="end" font-size="19" fill="#404040">€19 per user a month</text>
+<line x1="33" x2="687" y1="460" y2="460" stroke="#e5e5e5"/>
+<text x="52" y="490" font-size="20" font-weight="600" fill="#0a0a0a">Dripify</text>
+<text x="668" y="490" text-anchor="end" font-size="19" fill="#404040">$79 per user a month</text>
+<line x1="33" x2="687" y1="506" y2="506" stroke="#e5e5e5"/>
+<text x="52" y="536" font-size="20" font-weight="600" fill="#0a0a0a">lemlist</text>
+<text x="668" y="536" text-anchor="end" font-size="19" fill="#404040">$87 per user a month, billed yearly</text>
+<line x1="33" x2="687" y1="552" y2="552" stroke="#e5e5e5"/>
+<text x="52" y="582" font-size="20" font-weight="600" fill="#0a0a0a">Expandi</text>
+<text x="668" y="582" text-anchor="end" font-size="19" fill="#404040">$99 a month</text>
+<line x1="33" x2="687" y1="598" y2="598" stroke="#e5e5e5"/>
+<text x="52" y="628" font-size="20" font-weight="600" fill="#0a0a0a">Skylead</text>
+<text x="668" y="628" text-anchor="end" font-size="19" fill="#404040">$100 per seat a month</text>
+<rect x="32" y="666" width="656" height="184" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32" y="666" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="52" y="696" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Flat for a team of senders]</text>
+<text x="52" y="742" font-size="20" font-weight="600" fill="#0a0a0a">HeyReach Agency</text>
+<text x="668" y="742" text-anchor="end" font-size="19" fill="#404040">$999 a month for 25 senders</text>
+<line x1="33" x2="687" y1="758" y2="758" stroke="#e5e5e5"/>
+<text x="52" y="788" font-size="20" font-weight="600" fill="#0a0a0a">Skylead Agency</text>
+<text x="668" y="788" text-anchor="end" font-size="19" fill="#404040">$999 a month for 25 seats, first year</text>
+<line x1="33" x2="687" y1="804" y2="804" stroke="#e5e5e5"/>
+<text x="52" y="834" font-size="20" font-weight="600" fill="#0a0a0a">HeyReach Unlimited</text>
+<text x="668" y="834" text-anchor="end" font-size="19" fill="#404040">$2,999 a month, up to 300 senders</text>
+<text x="32" y="894" font-size="18" fill="#737373">Starting prices from each vendor&#x27;s pricing page, November 2026.</text>
+</svg>

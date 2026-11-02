@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 990" width="720" height="990" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">LinkedIn automation entry prices, monthly and yearly billing</title>
+<desc id="d">Listed entry prices for one seat or LinkedIn account, monthly billing against yearly billing shown per month. Omniscient Starter $19 billed yearly. Linked Helper Standard $15 monthly, $8.25 on a 12 month term. Dux-Soup STACKED local $55 monthly, $41.25 yearly. HeyReach Growth $79 monthly, $64 yearly. Dripify Pro $79 monthly, $59 yearly. lemlist Multichannel $87 billed yearly. Expandi Business $99 monthly, $79 yearly. Dux-Soup STACKED cloud $99 monthly, $74.17 yearly. Skylead All-in-one $100 monthly. In euros: Waalaxy Pro €19 monthly and La Growth Machine Basic €60 monthly.</desc>
+<rect width="720" height="990" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="989" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Entry plans]</text>
+<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">One seat or account, <tspan fill="#a3a3a3">listed price</tspan></text>
+<rect x="32" y="115" width="16" height="16" fill="#0a0a0a"/>
+<text x="56" y="128" font-size="17" fill="#404040">Monthly billing</text>
+<rect x="205" y="115" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="229" y="128" font-size="17" fill="#404040">Billed yearly, per month</text>
+<line x1="32" x2="688" y1="158" y2="158" stroke="#0a0a0a"/>
+<text x="32" y="192" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Priced in US dollars]</text>
+<line x1="300.0" x2="300.0" y1="204" y2="686" stroke="#e5e5e5"/>
+<line x1="392.0" x2="392.0" y1="204" y2="686" stroke="#e5e5e5"/>
+<line x1="484.0" x2="484.0" y1="204" y2="686" stroke="#e5e5e5"/>
+<line x1="576.0" x2="576.0" y1="204" y2="686" stroke="#e5e5e5"/>
+<line x1="668.0" x2="668.0" y1="204" y2="686" stroke="#e5e5e5"/>
+<rect x="32" y="210" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="52" y="221" font-size="18" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<text x="32" y="243" font-size="15" fill="#737373">Starter</text>
+<rect x="361.9" y="222" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="355.9" y="236" font-size="16" fill="#404040" text-anchor="end">$19</text>
+<line x1="32" x2="688" y1="257" y2="257" stroke="#e5e5e5"/>
+<text x="32" y="275" font-size="18" font-weight="600" fill="#0a0a0a">Linked Helper</text>
+<text x="32" y="297" font-size="15" fill="#737373">Standard, local</text>
+<line x1="330.4" x2="355.2" y1="284" y2="284" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="322.4" y="276" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="316.4" y="290" font-size="16" fill="#404040" text-anchor="end">$8.25</text>
+<rect x="347.2" y="276" width="16" height="16" fill="#0a0a0a"/>
+<text x="369.2" y="290" font-size="16" font-weight="600" fill="#0a0a0a">$15</text>
+<line x1="32" x2="688" y1="311" y2="311" stroke="#e5e5e5"/>
+<text x="32" y="329" font-size="18" font-weight="600" fill="#0a0a0a">Dux-Soup</text>
+<text x="32" y="351" font-size="15" fill="#737373">STACKED local</text>
+<line x1="451.8" x2="502.4" y1="338" y2="338" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="443.8" y="330" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="437.8" y="344" font-size="16" fill="#404040" text-anchor="end">$41.25</text>
+<rect x="494.4" y="330" width="16" height="16" fill="#0a0a0a"/>
+<text x="516.4" y="344" font-size="16" font-weight="600" fill="#0a0a0a">$55</text>
+<line x1="32" x2="688" y1="365" y2="365" stroke="#e5e5e5"/>
+<text x="32" y="383" font-size="18" font-weight="600" fill="#0a0a0a">HeyReach</text>
+<text x="32" y="405" font-size="15" fill="#737373">Growth</text>
+<line x1="535.5" x2="590.7" y1="392" y2="392" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="527.5" y="384" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="521.5" y="398" font-size="16" fill="#404040" text-anchor="end">$64</text>
+<rect x="582.7" y="384" width="16" height="16" fill="#0a0a0a"/>
+<text x="604.7" y="398" font-size="16" font-weight="600" fill="#0a0a0a">$79</text>
+<line x1="32" x2="688" y1="419" y2="419" stroke="#e5e5e5"/>
+<text x="32" y="437" font-size="18" font-weight="600" fill="#0a0a0a">Dripify</text>
+<text x="32" y="459" font-size="15" fill="#737373">Pro</text>
+<line x1="517.1" x2="590.7" y1="446" y2="446" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="509.1" y="438" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="503.1" y="452" font-size="16" fill="#404040" text-anchor="end">$59</text>
+<rect x="582.7" y="438" width="16" height="16" fill="#0a0a0a"/>
+<text x="604.7" y="452" font-size="16" font-weight="600" fill="#0a0a0a">$79</text>
+<line x1="32" x2="688" y1="473" y2="473" stroke="#e5e5e5"/>
+<text x="32" y="491" font-size="18" font-weight="600" fill="#0a0a0a">lemlist</text>
+<text x="32" y="513" font-size="15" fill="#737373">Multichannel</text>
+<rect x="612.2" y="492" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="606.2" y="506" font-size="16" fill="#404040" text-anchor="end">$87</text>
+<line x1="32" x2="688" y1="527" y2="527" stroke="#e5e5e5"/>
+<text x="32" y="545" font-size="18" font-weight="600" fill="#0a0a0a">Expandi</text>
+<text x="32" y="567" font-size="15" fill="#737373">Business</text>
+<line x1="590.7" x2="664.3" y1="554" y2="554" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="582.7" y="546" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="576.7" y="560" font-size="16" fill="#404040" text-anchor="end">$79</text>
+<rect x="656.3" y="546" width="16" height="16" fill="#0a0a0a"/>
+<text x="664.3" y="540" font-size="16" font-weight="600" fill="#0a0a0a" text-anchor="middle">$99</text>
+<line x1="32" x2="688" y1="581" y2="581" stroke="#e5e5e5"/>
+<text x="32" y="599" font-size="18" font-weight="600" fill="#0a0a0a">Dux-Soup</text>
+<text x="32" y="621" font-size="15" fill="#737373">STACKED cloud</text>
+<line x1="572.9" x2="664.3" y1="608" y2="608" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="564.9" y="600" width="16" height="16" fill="#ffffff" stroke="#0a0a0a" stroke-width="2"/>
+<text x="558.9" y="614" font-size="16" fill="#404040" text-anchor="end">$74.17</text>
+<rect x="656.3" y="600" width="16" height="16" fill="#0a0a0a"/>
+<text x="664.3" y="594" font-size="16" font-weight="600" fill="#0a0a0a" text-anchor="middle">$99</text>
+<line x1="32" x2="688" y1="635" y2="635" stroke="#e5e5e5"/>
+<text x="32" y="653" font-size="18" font-weight="600" fill="#0a0a0a">Skylead</text>
+<text x="32" y="675" font-size="15" fill="#737373">All-in-one</text>
+<rect x="660.0" y="654" width="16" height="16" fill="#0a0a0a"/>
+<text x="668.0" y="648" font-size="16" font-weight="600" fill="#0a0a0a" text-anchor="middle">$100</text>
+<text x="300.0" y="704" font-size="15" fill="#737373" text-anchor="middle">$0</text>
+<text x="392.0" y="704" font-size="15" fill="#737373" text-anchor="middle">$25</text>
+<text x="484.0" y="704" font-size="15" fill="#737373" text-anchor="middle">$50</text>
+<text x="576.0" y="704" font-size="15" fill="#737373" text-anchor="middle">$75</text>
+<text x="668.0" y="704" font-size="15" fill="#737373" text-anchor="middle">$100</text>
+<line x1="32" x2="688" y1="732" y2="732" stroke="#0a0a0a"/>
+<text x="32" y="766" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Priced in euros]</text>
+<line x1="300.0" x2="300.0" y1="778" y2="882" stroke="#e5e5e5"/>
+<line x1="392.0" x2="392.0" y1="778" y2="882" stroke="#e5e5e5"/>
+<line x1="484.0" x2="484.0" y1="778" y2="882" stroke="#e5e5e5"/>
+<line x1="576.0" x2="576.0" y1="778" y2="882" stroke="#e5e5e5"/>
+<line x1="668.0" x2="668.0" y1="778" y2="882" stroke="#e5e5e5"/>
+<text x="32" y="795" font-size="18" font-weight="600" fill="#0a0a0a">Waalaxy</text>
+<text x="32" y="817" font-size="15" fill="#737373">Pro</text>
+<rect x="361.9" y="796" width="16" height="16" fill="#0a0a0a"/>
+<text x="383.9" y="810" font-size="16" font-weight="600" fill="#0a0a0a">€19</text>
+<line x1="32" x2="688" y1="831" y2="831" stroke="#e5e5e5"/>
+<text x="32" y="849" font-size="18" font-weight="600" fill="#0a0a0a">La Growth Machine</text>
+<text x="32" y="871" font-size="15" fill="#737373">Basic</text>
+<rect x="512.8" y="850" width="16" height="16" fill="#0a0a0a"/>
+<text x="534.8" y="864" font-size="16" font-weight="600" fill="#0a0a0a">€60</text>
+<text x="300.0" y="900" font-size="15" fill="#737373" text-anchor="middle">€0</text>
+<text x="392.0" y="900" font-size="15" fill="#737373" text-anchor="middle">€25</text>
+<text x="484.0" y="900" font-size="15" fill="#737373" text-anchor="middle">€50</text>
+<text x="576.0" y="900" font-size="15" fill="#737373" text-anchor="middle">€75</text>
+<text x="668.0" y="900" font-size="15" fill="#737373" text-anchor="middle">€100</text>
+<text x="32" y="940" font-size="16" fill="#737373">Linked Helper&#x27;s yearly price is its 12 month term. Omniscient&#x27;s</text>
+<text x="32" y="964" font-size="16" fill="#737373">monthly billing costs 20% more. Pricing pages, November 2, 2026.</text>
+</svg>

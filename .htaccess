@@ -8,6 +8,9 @@ RewriteEngine On
 # Hostinger deploys the whole repo here, so hide the git folder, dot files, the README and docs
 RewriteRule (^|/)\.(?!well-known/) - [F]
 RewriteRule ^(README\.md|docs/) - [F]
+# Blog sources and drafts (blog/_src/, anything whose name starts with "_") and shot snippets are built into pages, never served
+RewriteRule (^|/)_ - [F]
+RewriteRule \.shot\.html$ - [F]
 # One host: www -> apex, http -> https
 RewriteCond %{HTTP_HOST} ^www\.tryomniscient\.com$ [NC]
 RewriteRule ^(.*)$ https://tryomniscient.com/$1 [R=301,L]

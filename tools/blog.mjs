@@ -1,0 +1,1036 @@
+// Builds the blog from Markdown. No npm dependencies (Node 22). Writing rules and the block list: README, "Blog".
+//
+//   node tools/blog.mjs <slug> [<slug> ...]  Builds one post: blog/<slug>/index.html and its cover. Touches nothing else.
+//   node tools/blog.mjs --all                Builds every post, blog/index.html, then runs tools/layout.mjs (sitemap).
+//   node tools/blog.mjs --index              Rebuilds blog/index.html only.
+//
+// Sources live in blog/_src/<slug>.md. A file whose name starts with "_" is a draft: it builds when named, with noindex,
+// and never shows in the index, related posts or the sitemap. A broken post is skipped with a message, never a crash.
+// Each post gets assets/blog/<slug>/cover.svg, and og.png (1200x630) when Playwright is installed.
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
+import { join, basename, dirname, posix } from "node:path";
+import { createRequire } from "node:module";
+import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+import { applyLayout } from "./layout.mjs";
+
+const root = fileURLToPath(new URL("..", import.meta.url));
+const SRC = join(root, "blog", "_src");
+const SITE = "https://tryomniscient.com";
+const APP = "https://app.tryomniscient.com/";
+const FONTS = "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&family=Geist+Mono:wght@400;500&display=swap";
+const TOPICS = { linkedin: "LinkedIn", crm: "CRM" };
+const TYPES = ["best-of", "alternatives", "versus", "pricing", "how-to"];
+const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
+const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly"];
+
+const rel = (p) => p.slice(root.length).replace(/^\/+/, "");
+const topicName = (t) => TOPICS[t] || t.charAt(0).toUpperCase() + t.slice(1);
+
+// ─── Text helpers ────────────────────────────────────────────────────────────────────────────────────────────────
+
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const decode = (s) => s.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, "&");
+const plain = (html) => decode(html.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
+const jsonLd = (obj) => `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, "\\u003c")}</script>`;
+
+function slugify(text) {
+  return text.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 64) || "section";
+}
+
+function prettyDate(iso) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+}
+
+// Only http(s), mailto, tel, site paths and anchors become links.
+function safeUrl(url) {
+  const u = url.trim();
+  if (/^(https?:|mailto:|tel:)/i.test(u) || /^[/#.]/.test(u) || /^[\w-]+(\/|\.|$)/.test(u)) return u;
+  return null;
+}
+
+// ─── Frontmatter ─────────────────────────────────────────────────────────────────────────────────────────────────
+
+function parseFrontmatter(text) {
+  const m = text.match(/^---[ \t]*\n([\s\S]*?)\n---[ \t]*(?:\n|$)/);
+  if (!m) throw new Error("no frontmatter: the file must start with a --- block");
+  const data = {};
+  let last = null;
+  m[1].split("\n").forEach((raw, n) => {
+    if (!raw.trim() || /^\s*#/.test(raw)) return;
+    if (/^\s/.test(raw) && last) { data[last] = `${data[last]} ${raw.trim()}`.trim(); return; } // folded value
+    const kv = raw.match(/^([A-Za-z_][\w-]*)\s*:\s*(.*)$/);
+    if (!kv) throw new Error(`frontmatter line ${n + 2} is not "key: value": ${raw.trim()}`);
+    let v = kv[2].trim();
+    if (v.length >= 2 && v.startsWith('"') && v.endsWith('"')) v = v.slice(1, -1).replace(/\\(["\\])/g, "$1");
+    else if (v.length >= 2 && v.startsWith("'") && v.endsWith("'")) v = v.slice(1, -1).replace(/''/g, "'");
+    else if (v === ">" || v === "|" || v === ">-" || v === "|-") v = "";
+    else v = v.replace(/\s+#\s.*$/, "");
+    last = kv[1].toLowerCase().replace(/-/g, "_");
+    data[last] = v;
+  });
+  return { data, body: text.slice(m[0].length) };
+}
+
+// ─── Markdown: inline ────────────────────────────────────────────────────────────────────────────────────────────
+
+// Finds the "]" that closes the "[" at i, skipping escapes, code spans and nested brackets.
+function closeBracket(s, i) {
+  let depth = 0;
+  for (let j = i; j < s.length; j++) {
+    const c = s[j];
+    if (c === "\\") { j++; continue; }
+    if (c === "`") { const end = s.indexOf("`", j + 1); if (end > -1) { j = end; continue; } }
+    if (c === "[") depth++;
+    else if (c === "]" && --depth === 0) return j;
+  }
+  return -1;
+}
+
+// Parses [text](url "title") starting at the "[" at i. Returns null when it isn't a link.
+function parseLink(s, i) {
+  const close = closeBracket(s, i);
+  if (close < 0 || s[close + 1] !== "(") return null;
+  let j = close + 2;
+  while (s[j] === " ") j++;
+  let url = "";
+  if (s[j] === "<") {
+    const end = s.indexOf(">", j);
+    if (end < 0) return null;
+    url = s.slice(j + 1, end);
+    j = end + 1;
+  } else {
+    let depth = 0;
+    for (; j < s.length; j++) {
+      const c = s[j];
+      if (c === "\\" && j + 1 < s.length) { url += s[++j]; continue; }
+      if (c === "(") depth++;
+      else if (c === ")") { if (depth === 0) break; depth--; }
+      else if (/\s/.test(c)) break;
+      url += c;
+    }
+  }
+  while (s[j] === " ") j++;
+  let title = "";
+  const q = s[j];
+  if (q === '"' || q === "'") {
+    const end = s.indexOf(q, j + 1);
+    if (end < 0) return null;
+    title = s.slice(j + 1, end);
+    j = end + 1;
+    while (s[j] === " ") j++;
+  }
+  if (s[j] !== ")") return null;
+  return { text: s.slice(i + 1, close), url, title, end: j + 1 };
+}
+
+// Finds a closing run of exactly n delimiter characters.
+function findCloser(s, from, ch, n) {
+  for (let j = from; j < s.length; j++) {
+    const c = s[j];
+    if (c === "\\") { j++; continue; }
+    if (c === "`") { const end = s.indexOf("`", j + 1); if (end > -1) { j = end; continue; } }
+    if (c !== ch) continue;
+    let r = 1;
+    while (s[j + r] === ch) r++;
+    const okBefore = !/\s/.test(s[j - 1] || " ");
+    const okAfter = ch !== "_" || !/[\p{L}\p{N}]/u.test(s[j + r] || "");
+    if (r === n && okBefore && okAfter) return j;
+    j += r - 1;
+  }
+  return -1;
+}
+
+function inline(s, ctx) {
+  let out = "";
+  for (let i = 0; i < s.length;) {
+    const c = s[i];
+    if (c === "\\" && i + 1 < s.length && /[\\`*_{}[\]()#+\-.!|<>~"']/.test(s[i + 1])) { out += esc(s[i + 1]); i += 2; continue; }
+    if (c === "\\" && s[i + 1] === undefined) { i++; continue; } // trailing backslash: a line break marker, joined already
+    if (c === "`") {
+      let n = 1;
+      while (s[i + n] === "`") n++;
+      const fence = "`".repeat(n);
+      const end = s.indexOf(fence, i + n);
+      if (end > -1) { out += `<code>${esc(s.slice(i + n, end).replace(/^ (.+) $/, "$1"))}</code>`; i = end + n; continue; }
+      out += esc(fence); i += n; continue;
+    }
+    if (c === "!" && s[i + 1] === "[") {
+      const l = parseLink(s, i + 1);
+      if (l) { out += inlineImage(l, ctx); i = l.end; continue; }
+    }
+    if (c === "[") {
+      const l = parseLink(s, i);
+      if (l) { out += link(l, ctx); i = l.end; continue; }
+    }
+    if (c === "<") {
+      const m = s.slice(i).match(/^<((?:https?:\/\/|mailto:)[^\s<>]+)>/i);
+      if (m) { out += `<a href="${esc(m[1])}">${esc(m[1].replace(/^mailto:/i, ""))}</a>`; i += m[0].length; continue; }
+    }
+    if (c === "*" || c === "_") {
+      let n = 1;
+      while (s[i + n] === c) n++;
+      const prev = s[i - 1] || " ";
+      const leftOk = !/\s/.test(s[i + n] || " ") && (c === "*" || !/[\p{L}\p{N}]/u.test(prev));
+      if (n <= 3 && leftOk) {
+        const end = findCloser(s, i + n, c, n);
+        if (end > i + n) {
+          const inner = inline(s.slice(i + n, end), ctx);
+          out += n === 1 ? `<em>${inner}</em>` : n === 2 ? `<strong>${inner}</strong>` : `<strong><em>${inner}</em></strong>`;
+          i = end + n; continue;
+        }
+      }
+      out += esc(c.repeat(n)); i += n; continue;
+    }
+    if (c === "~" && s[i + 1] === "~") {
+      const end = s.indexOf("~~", i + 2);
+      if (end > i + 2) { out += `<del>${inline(s.slice(i + 2, end), ctx)}</del>`; i = end + 2; continue; }
+    }
+    if (c === "\n") { out += s[i - 1] === " " && s[i - 2] === " " ? "<br>" : " "; i++; continue; }
+    out += esc(c); i++;
+  }
+  return out;
+}
+
+function link(l, ctx) {
+  const text = inline(l.text, ctx);
+  const url = safeUrl(l.url);
+  if (!url) { ctx.warn(`link "${l.text}" has an unsafe or empty address (${l.url || "none"}); shown as text`); return text; }
+  ctx.links.push(url);
+  const title = l.title ? ` title="${esc(l.title)}"` : "";
+  return `<a href="${esc(url)}"${title}>${text}</a>`;
+}
+
+function inlineImage(l, ctx) {
+  const src = assetUrl(l.url, ctx);
+  if (!src) return esc(l.text);
+  return `<img class="bl-inline-img" src="${esc(src)}" alt="${esc(l.text)}"${sizeAttrs(src)} loading="lazy" decoding="async">`;
+}
+
+// ─── Images and shots ────────────────────────────────────────────────────────────────────────────────────────────
+
+// Resolves an image address. A bare file name ("chart.svg") means assets/blog/<slug>/chart.svg.
+function assetUrl(url, ctx) {
+  const u = (url || "").trim();
+  if (!u) { ctx.warn("an image has no address"); return null; }
+  if (/^https?:\/\//i.test(u)) return u;
+  if (!safeUrl(u)) { ctx.warn(`image address ${u} is not allowed`); return null; }
+  const path = u.startsWith("/") ? u : `/assets/blog/${ctx.slug}/${u.replace(/^\.\//, "")}`;
+  if (!existsSync(join(root, decodeURI(path.split(/[?#]/)[0])))) ctx.warn(`image not found: ${path}`);
+  else ctx.visuals++;
+  return path;
+}
+
+// Reads width and height from a local SVG or PNG, so the page doesn't jump while it loads.
+function imageSize(path) {
+  if (!path.startsWith("/")) return null;
+  const file = join(root, decodeURI(path.split(/[?#]/)[0]));
+  if (!existsSync(file)) return null;
+  try {
+    if (/\.svg$/i.test(file)) {
+      const head = readFileSync(file, "utf8").slice(0, 4000);
+      const tag = head.match(/<svg\b[^>]*>/i)?.[0] || "";
+      const num = (name) => { const m = tag.match(new RegExp(`\\s${name}="\\s*([\\d.]+)(px)?\\s*"`)); return m ? Number(m[1]) : null; };
+      const vb = tag.match(/viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)\s*"/);
+      const w = num("width") || (vb && Number(vb[1]));
+      const h = num("height") || (vb && Number(vb[2]));
+      return w && h ? { w: Math.round(w), h: Math.round(h) } : null;
+    }
+    if (/\.png$/i.test(file)) {
+      const b = readFileSync(file);
+      return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    }
+  } catch { /* no size: the image still shows */ }
+  return null;
+}
+
+function sizeAttrs(src) {
+  const s = imageSize(src);
+  return s ? ` width="${s.w}" height="${s.h}"` : "";
+}
+
+function figure({ text: alt, url, title }, ctx) {
+  if (/\.shot\.html$/i.test(url.trim())) return shot(url.trim(), alt, title, ctx);
+  const src = assetUrl(url, ctx);
+  if (!src) return "";
+  if (!alt.trim()) ctx.warn(`image ${src} has no alt text`);
+  const caption = title ? `<figcaption>${inline(title, ctx)}</figcaption>` : "";
+  return `<figure class="bl-fig"><div class="bl-band"><img src="${esc(src)}" alt="${esc(alt)}"${sizeAttrs(src)} loading="lazy" decoding="async"></div>${caption}</figure>`;
+}
+
+// Inlines an HTML snippet (<name>.shot.html) inside the gray grain band the product pages use. Shots use home.css.
+function shot(url, alt, title, ctx) {
+  if (!/\.html$/i.test(url)) url = `${url}.shot.html`;
+  const path = url.startsWith("/") ? url : `/assets/blog/${ctx.slug}/${url.replace(/^\.\//, "")}`;
+  const file = join(root, path);
+  if (!existsSync(file)) { ctx.warn(`shot not found: ${path}`); return ""; }
+  let html = readFileSync(file, "utf8");
+  const body = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+  if (body) html = [...html.matchAll(/<style[\s\S]*?<\/style>/gi)].map((m) => m[0]).join("\n") + body[1];
+  html = html.replace(/<!doctype[^>]*>/i, "").trim();
+  ctx.usesShot = true;
+  ctx.visuals++;
+  const label = alt && !/\brole="img"/.test(html) ? ` role="img" aria-label="${esc(alt)}"` : "";
+  const caption = title ? `<figcaption>${inline(title, ctx)}</figcaption>` : "";
+  return `<figure class="bl-fig bl-fig--shot"><div class="om-home bl-shot" data-anim${label}><div class="band b-gray">\n${html}\n</div></div>${caption}</figure>`;
+}
+
+// ─── Markdown: blocks ────────────────────────────────────────────────────────────────────────────────────────────
+
+const FENCE = /^\s{0,3}(`{3,}|~{3,})\s*([\w-]*)[^`]*$/;
+const HEADING = /^\s{0,3}(#{1,6})\s+(.*?)\s*#*\s*$/;
+const HR = /^\s{0,3}([-*_])(?:\s*\1){2,}\s*$/;
+const QUOTE = /^\s{0,3}>/;
+const LIST = /^(\s*)([-*+]|\d{1,9}[.)])\s+(.*)$/;
+const TABLE_SEP = /^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$/;
+const blank = (l) => l === undefined || !l.trim();
+const isTableStart = (lines, i) => lines[i].includes("|") && i + 1 < lines.length && lines[i + 1].includes("-") && TABLE_SEP.test(lines[i + 1]) && (lines[i + 1].includes("|") || lines[i].trim().startsWith("|"));
+const startsBlock = (lines, i) => FENCE.test(lines[i]) || HEADING.test(lines[i]) || HR.test(lines[i]) || QUOTE.test(lines[i]) || /^\s{0,3}([-*+]|1[.)])\s+\S/.test(lines[i]) || isTableStart(lines, i) || /^\s*<!--/.test(lines[i]);
+
+function blocks(lines, ctx, tight = false) {
+  const out = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    if (blank(line)) { i++; continue; }
+
+    // HTML comments are notes for writers: dropped.
+    if (/^\s*<!--/.test(line)) {
+      while (i < lines.length && !lines[i].includes("-->")) i++;
+      i++; continue;
+    }
+
+    const fence = line.match(FENCE);
+    if (fence) {
+      const mark = fence[1];
+      const body = [];
+      let closed = false;
+      for (i++; i < lines.length; i++) {
+        const t = lines[i].trim();
+        if (t.startsWith(mark) && t.replace(/[`~]/g, "") === "" && t[0] === mark[0]) { closed = true; i++; break; }
+        body.push(lines[i]);
+      }
+      if (!closed) ctx.warn(`a ${mark}${fence[2]} block never closes; it runs to the end of the post`);
+      out.push(special(fence[2].toLowerCase(), body, ctx));
+      continue;
+    }
+
+    const h = line.match(HEADING);
+    if (h) { out.push(heading(h[1].length, h[2], ctx)); i++; continue; }
+
+    if (HR.test(line)) { out.push("<hr>"); i++; continue; }
+
+    if (QUOTE.test(line)) {
+      const inner = [];
+      while (i < lines.length && !blank(lines[i]) && (QUOTE.test(lines[i]) || !startsBlock(lines, i))) inner.push(lines[i++].replace(/^\s{0,3}> ?/, ""));
+      out.push(`<blockquote>${blocks(inner, ctx)}</blockquote>`);
+      continue;
+    }
+
+    if (LIST.test(line)) { const r = list(lines, i, ctx); out.push(r.html); i = r.next; continue; }
+
+    if (isTableStart(lines, i)) { const r = table(lines, i, ctx); out.push(r.html); i = r.next; continue; }
+
+    // Paragraph
+    const para = [line.trim()];
+    for (i++; i < lines.length && !blank(lines[i]) && !startsBlock(lines, i); i++) {
+      const prev = para[para.length - 1];
+      para[para.length - 1] = prev.endsWith("\\") ? `${prev.slice(0, -1)}  ` : prev;
+      para.push(lines[i].trim());
+    }
+    const text = para.join("\n");
+    const img = text.match(/^!\[/) && parseLink(text, 1);
+    if (img && img.end === text.length) { out.push(figure(img, ctx)); continue; }
+    out.push(tight ? inline(text, ctx) : `<p>${inline(text, ctx)}</p>`);
+  }
+  return out.join("\n");
+}
+
+function heading(level, raw, ctx) {
+  const html = inline(raw, ctx);
+  const text = plain(html);
+  if (level === 1) {
+    ctx.h1s.push(text);
+    if (ctx.h1s.length === 1) return ""; // the page header shows the title
+    ctx.warn(`more than one # heading ("${text}"); shown as ##`);
+    level = 2;
+  }
+  if (level > 4) level = 4;
+  let id = slugify(text);
+  for (let n = 2; ctx.ids.has(id); n++) id = `${slugify(text)}-${n}`;
+  ctx.ids.add(id);
+  if (level === 2) ctx.toc.push({ id, html: html.replace(/<a\b[^>]*>|<\/a>/g, "") });
+  return `<h${level} id="${id}">${html}</h${level}>`;
+}
+
+function list(lines, start, ctx) {
+  const first = lines[start].match(LIST);
+  const base = first[1].length;
+  const ordered = /\d/.test(first[2]);
+  const items = [];
+  let cur = null, loose = false, gap = false, i = start;
+  const sibling = (m) => m && m[1].length <= base + 1 && /\d/.test(m[2]) === ordered;
+  while (i < lines.length) {
+    const l = lines[i];
+    const m = l.match(LIST);
+    if (sibling(m)) {
+      if (gap) loose = true;
+      cur = { lines: [m[3]], indent: m[1].length + m[2].length + 1 };
+      items.push(cur); gap = false; i++; continue;
+    }
+    if (m && m[1].length <= base + 1) break; // a different kind of list starts
+    if (blank(l)) {
+      let j = i + 1;
+      while (j < lines.length && blank(lines[j])) j++;
+      if (j >= lines.length) break;
+      const ind = lines[j].match(/^\s*/)[0].length;
+      if (ind > base + 1 || sibling(lines[j].match(LIST))) { cur.lines.push(""); gap = true; i++; continue; }
+      break;
+    }
+    const ind = l.match(/^\s*/)[0].length;
+    if (ind > base + 1) { cur.lines.push(l.slice(Math.min(ind, cur.indent))); i++; continue; }
+    if (!gap && !startsBlock(lines, i)) { cur.lines.push(l.trim()); i++; continue; } // lazy continuation
+    break;
+  }
+  const tag = ordered ? "ol" : "ul";
+  const num = ordered ? parseInt(first[2], 10) : 1;
+  const startAttr = ordered && num !== 1 ? ` start="${num}"` : "";
+  const lis = items.map((it) => `<li>${blocks(it.lines, ctx, !loose)}</li>`).join("\n");
+  return { html: `<${tag}${startAttr}>\n${lis}\n</${tag}>`, next: i };
+}
+
+// Splits a table row on "|" outside code spans and links.
+function cells(row) {
+  let s = row.trim();
+  if (s.startsWith("|")) s = s.slice(1);
+  if (s.endsWith("|") && !s.endsWith("\\|")) s = s.slice(0, -1);
+  const out = [];
+  let cur = "", code = false, depth = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === "\\" && s[i + 1] === "|") { cur += "|"; i++; continue; }
+    if (c === "`") code = !code;
+    if (!code && c === "[") depth++;
+    if (!code && c === "]" && depth > 0) depth--;
+    if (c === "|" && !code && depth === 0) { out.push(cur.trim()); cur = ""; continue; }
+    cur += c;
+  }
+  out.push(cur.trim());
+  return out;
+}
+
+function table(lines, start, ctx) {
+  const head = cells(lines[start]);
+  const align = cells(lines[start + 1]).map((c) => (c.startsWith(":") && c.endsWith(":") ? "center" : c.endsWith(":") ? "right" : ""));
+  let i = start + 2;
+  const rows = [];
+  for (; i < lines.length && !blank(lines[i]) && lines[i].includes("|"); i++) rows.push(cells(lines[i]));
+  const cols = head.length;
+  rows.forEach((r, n) => { if (r.length !== cols) ctx.warn(`table "${plain(inline(head[0], ctx))}": row ${n + 1} has ${r.length} cells, the header has ${cols}`); });
+  const td = (tag, c, k) => `<${tag}${align[k] ? ` style="text-align:${align[k]}"` : ""}>${inline(c || "", ctx)}</${tag}>`;
+  const minW = cols >= 3 ? ` style="min-width:${Math.min(cols * 130, 700)}px"` : "";
+  const html = `<div class="bl-table" role="region" aria-label="Table" tabindex="0"><table${minW}>
+<thead><tr>${head.map((c, k) => td("th", c, k)).join("")}</tr></thead>
+<tbody>
+${rows.map((r) => `<tr>${Array.from({ length: cols }, (_, k) => td("td", r[k], k)).join("")}</tr>`).join("\n")}
+</tbody></table></div>`;
+  return { html, next: i };
+}
+
+// ─── Special blocks ──────────────────────────────────────────────────────────────────────────────────────────────
+
+function special(kind, body, ctx) {
+  switch (kind) {
+    case "tools": return tools(body, ctx);
+    case "callout": return `<aside class="bl-callout">${blocks(body, ctx)}</aside>`;
+    case "cta": return cta(body, ctx);
+    case "faq": return faq(body, ctx);
+    case "steps": return steps(body, ctx);
+    case "shot": return body.filter((l) => l.trim()).map((l) => shot(l.trim(), "", "", ctx)).join("\n");
+    default:
+      if (kind && !["", "text", "txt", "html", "css", "js", "json", "bash", "sh", "md", "markdown", "sql", "ts", "tsx", "yaml"].includes(kind)) ctx.warn(`unknown block \`\`\`${kind}: shown as code`);
+      return `<pre class="bl-code"><code>${esc(body.join("\n"))}</code></pre>`;
+  }
+}
+
+const LOGOS = (() => {
+  try { return readdirSync(join(root, "assets", "logos")); } catch { return []; }
+})();
+
+function logoFor(name, domain) {
+  if (/omniscient/i.test(name) || domain === "tryomniscient.com") return "/assets/brand/icon.svg";
+  const keys = [name.toLowerCase().replace(/[^a-z0-9]/g, ""), (domain || "").split(".")[0]];
+  for (const k of keys) {
+    const file = LOGOS.find((f) => f.replace(/\.\w+$/, "") === k);
+    if (k && file) return `/assets/logos/${file}`;
+  }
+  return domain ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64` : null;
+}
+
+function tools(body, ctx) {
+  const rows = [];
+  body.forEach((line, n) => {
+    if (!line.trim() || TABLE_SEP.test(line)) return;
+    const c = cells(line);
+    const [name, domainRaw = ""] = c;
+    const domain = domainRaw.replace(/^https?:\/\//i, "").replace(/^www\./i, "").replace(/[/?#].*$/, "").toLowerCase();
+    const looksDomain = /^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(domain);
+    if (rows.length === 0 && !looksDomain && /^(name|tool)s?$/i.test(name)) return; // header line
+    if (c.length < 3 || !name) { ctx.warn(`tools line ${n + 1} needs "Name | domain.com | what it is | price | best for": ${line.trim()}`); return; }
+    if (!looksDomain) ctx.warn(`tools: "${name}" has no domain (${domainRaw || "empty"}), so no logo`);
+    rows.push({ name, domain: looksDomain ? domain : "", what: c[2] || "", price: c[3] || "", best: c[4] || "" });
+  });
+  if (!rows.length) { ctx.warn("a ```tools block has no tools"); return ""; }
+  const tr = rows.map((r) => {
+    const logo = logoFor(r.name, r.domain);
+    const img = logo ? `<img src="${esc(logo)}" alt="" width="20" height="20" loading="lazy" decoding="async">` : "";
+    const href = r.domain === "tryomniscient.com" ? "/" : r.domain ? `https://${r.domain}/` : "";
+    const name = href ? `<a href="${esc(href)}"${href === "/" ? "" : ' rel="nofollow"'}>${inline(r.name, ctx)}</a>` : inline(r.name, ctx);
+    let price;
+    if (/^check$/i.test(plain(r.price)) || !r.price) {
+      ctx.checks.push(r.name);
+      price = r.domain ? `<a class="bl-tools__see" href="https://${esc(r.domain)}/" rel="nofollow">See site</a>` : "";
+    } else price = inline(r.price, ctx);
+    return `<tr><th scope="row"><span class="bl-tools__name"><span class="bl-tools__logo">${img}</span>${name}</span></th><td>${inline(r.what, ctx)}</td><td class="bl-tools__price">${price}</td><td>${inline(r.best, ctx)}</td></tr>`;
+  }).join("\n");
+  return `<div class="bl-table bl-tools" role="region" aria-label="Tools compared" tabindex="0"><table>
+<thead><tr><th scope="col">Tool</th><th scope="col">What it is</th><th scope="col">Starting price</th><th scope="col">Best for</th></tr></thead>
+<tbody>
+${tr}
+</tbody></table></div>`;
+}
+
+function cta(body, ctx) {
+  const text = body.map((l) => l.trim()).filter(Boolean).join(" ");
+  if (!text) ctx.warn("a ```cta block is empty");
+  return `<aside class="bl-cta"><p class="bl-cta__text">${inline(text || "Try Omniscient free for 14 days.", ctx)}</p><div class="bl-cta__row"><a class="btn btn--primary btn--lg" href="${APP}">Start free <span class="nudge" aria-hidden="true">→</span></a><span class="bl-mono">14 days free. No credit card required.</span></div></aside>`;
+}
+
+function faq(body, ctx) {
+  const items = [];
+  let cur = null, part = "q";
+  for (const line of body) {
+    const q = line.match(/^\s*(?:\*\*)?Q(?:uestion)?\s*[:.](?:\*\*)?\s*(.*)$/i);
+    const a = line.match(/^\s*(?:\*\*)?A(?:nswer)?\s*[:.](?:\*\*)?\s*(.*)$/i);
+    if (q) { cur = { q: [q[1]], a: [] }; items.push(cur); part = "q"; continue; }
+    if (a && cur) { cur.a.push(a[1]); part = "a"; continue; }
+    if (!cur) { if (line.trim()) ctx.warn(`faq: text before the first "Q:" is dropped: ${line.trim()}`); continue; }
+    cur[part].push(line.trim() ? line.trim() : "");
+  }
+  const good = items.filter((it) => {
+    const ok = it.q.join(" ").trim() && it.a.join("").trim();
+    if (!ok) ctx.warn(`faq: "${it.q.join(" ").trim() || "(empty)"}" has no answer; left out`);
+    return ok;
+  });
+  if (!good.length) return "";
+  const html = good.map((it, n) => {
+    const q = inline(it.q.join(" ").trim(), ctx);
+    const a = blocks(it.a, ctx);
+    ctx.faq.push({ q: plain(q), a: plain(a) });
+    return `<details${n === 0 ? " open" : ""}><summary>${q}</summary><div class="bl-faq__a">${a}</div></details>`;
+  }).join("\n");
+  return `<div class="bl-faq">\n${html}\n</div>`;
+}
+
+function steps(body, ctx) {
+  const items = [];
+  for (const line of body) {
+    const m = line.match(/^\s*(\d+)[.)]\s+(.*)$/);
+    if (m) { items.push([m[2]]); continue; }
+    if (line.trim() && items.length) items[items.length - 1].push(line.trim());
+    else if (line.trim()) ctx.warn(`steps: text before step 1 is dropped: ${line.trim()}`);
+  }
+  if (!items.length) { ctx.warn("a ```steps block has no numbered lines"); return ""; }
+  const lis = items.map((parts, n) => {
+    const text = parts.join(" ");
+    const m = text.match(/^(?:\*\*)?([^:*]{1,90}?)(?:\*\*)?:(?:\*\*)?\s+(.*)$/);
+    const title = m ? `<b class="bl-steps__title">${inline(m[1], ctx)}</b>` : "";
+    const rest = inline(m ? m[2] : text, ctx);
+    return `<li><span class="bl-steps__n">${String(n + 1).padStart(2, "0")}</span><div>${title}<p>${rest}</p></div></li>`;
+  }).join("\n");
+  return `<ol class="bl-steps">\n${lis}\n</ol>`;
+}
+
+// ─── Covers ──────────────────────────────────────────────────────────────────────────────────────────────────────
+
+// Advance widths of Inter Tight 600 (em units, measured in Chromium). Used to wrap the title on the cover.
+const W600 = JSON.parse('{"0":0.63,"1":0.385,"2":0.584,"3":0.614,"4":0.628,"5":0.594,"6":0.609,"7":0.54,"8":0.61,"9":0.609," ":0.211,"!":0.292,"\\"":0.489,"#":0.606,"$":0.611,"%":0.806,"&":0.625,"\'":0.289,"(":0.334,")":0.334,"*":0.506,"+":0.635,",":0.297,"-":0.428,".":0.282,"/":0.341,":":0.282,";":0.292,"<":0.635,"=":0.635,">":0.635,"?":0.507,"@":0.962,"A":0.686,"B":0.62,"C":0.707,"D":0.687,"E":0.57,"F":0.548,"G":0.717,"H":0.706,"I":0.237,"J":0.523,"K":0.64,"L":0.528,"M":0.871,"N":0.704,"O":0.737,"P":0.606,"Q":0.738,"R":0.613,"S":0.611,"T":0.622,"U":0.696,"V":0.686,"W":0.972,"X":0.652,"Y":0.667,"Z":0.615,"[":0.334,"\\\\":0.341,"]":0.334,"^":0.444,"_":0.431,"`":0.417,"a":0.54,"b":0.586,"c":0.541,"d":0.586,"e":0.553,"f":0.341,"g":0.587,"h":0.577,"i":0.223,"j":0.223,"k":0.531,"l":0.223,"m":0.862,"n":0.574,"o":0.57,"p":0.586,"q":0.586,"r":0.359,"s":0.511,"t":0.343,"u":0.571,"v":0.539,"w":0.8,"x":0.525,"y":0.539,"z":0.524,"{":0.417,"|":0.321,"}":0.417,"~":0.635}');
+const TRACK = -0.035; // letter spacing, em
+
+function textWidth(s, size) {
+  let w = 0;
+  for (const ch of s) w += W600[ch] ?? 0.62;
+  return (w + TRACK * Math.max(0, [...s].length - 1)) * size;
+}
+
+function wrap(words, size, max) {
+  const lines = [];
+  let cur = [];
+  for (const w of words) {
+    const next = [...cur, w];
+    if (cur.length && textWidth(next.map((x) => x.t).join(" "), size) > max) { lines.push(cur); cur = [w]; }
+    else cur = next;
+  }
+  if (cur.length) lines.push(cur);
+  return lines;
+}
+
+// Two tones like the site's headings: the point in black, the rest in gray (after a colon, or a trailing "in 2026").
+function toneWords(title) {
+  let head = title, tail = "";
+  const colon = title.indexOf(": ");
+  const year = title.match(/^(.*\S)\s+((?:in|for)\s+20\d\d|\(20\d\d\))$/i);
+  if (colon > 0) { head = title.slice(0, colon + 1); tail = title.slice(colon + 2); }
+  else if (year) { head = year[1]; tail = year[2]; }
+  const words = (s, two) => s.split(/\s+/).filter(Boolean).map((t) => ({ t, two }));
+  return [...words(head, false), ...words(tail, true)];
+}
+
+function hashOf(s) { let h = 0; for (const ch of s) h = (h * 31 + ch.codePointAt(0)) >>> 0; return h; }
+
+export function coverSvg({ title, label, slug, meta = "", tone, standalone = true }) {
+  const W = 1200, H = 630, X = 72, MAXW = W - 2 * X, TOP = 150, BOTTOM = 462;
+  const dark = tone === "dark" || (tone !== "light" && hashOf(slug) % 3 === 0);
+  const c = dark
+    ? { bg: "#0a0a0a", ink: "#ffffff", two: "#737373", muted: "#a3a3a3", rule: "#404040", point: "#18e299" }
+    : { bg: "#ffffff", ink: "#0a0a0a", two: "#a3a3a3", muted: "#737373", rule: "#0a0a0a", point: "#0c8c5e" };
+  const words = toneWords(title);
+  let size = 88, lines = wrap(words, size, MAXW);
+  while (size > 44 && (lines.length * size * 1.04 > BOTTOM - TOP || lines.length > 4)) lines = wrap(words, (size -= 2), MAXW);
+  const lh = size * 1.04;
+  const firstBase = BOTTOM - (lines.length - 1) * lh; // the title sits on the rule above the footer
+  const ls = (TRACK * size).toFixed(2);
+  const text = lines.map((line, n) => {
+    const runs = [];
+    for (const w of line) {
+      const last = runs[runs.length - 1];
+      if (last && last.two === w.two) last.t += ` ${w.t}`; else runs.push({ two: w.two, t: (runs.length ? " " : "") + w.t });
+    }
+    const spans = runs.map((r) => `<tspan fill="${r.two ? c.two : c.ink}">${esc(r.t)}</tspan>`).join("");
+    return `<text x="${X}" y="${(firstBase + n * lh).toFixed(1)}" xml:space="preserve">${spans}</text>`;
+  }).join("");
+  const fonts = standalone ? `<style>@import url("${FONTS.replace(/&/g, "&amp;")}");</style>` : "";
+  const frame = standalone ? `<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" fill="none" stroke="#0a0a0a" stroke-width="1" vector-effect="non-scaling-stroke"/>` : "";
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${esc(title)}">
+<title>${esc(title)}</title>${fonts}
+<rect width="${W}" height="${H}" fill="${c.bg}"/>${frame}
+<rect x="${X}" y="76" width="14" height="14" fill="${c.point}"/>
+<text x="${X + 30}" y="90" font-family="'Geist Mono', ui-monospace, Menlo, monospace" font-size="24" font-weight="500" fill="${c.muted}">[ ${esc(label)} ]</text>
+<text x="${W - X}" y="90" text-anchor="end" font-family="'Geist Mono', ui-monospace, Menlo, monospace" font-size="24" fill="${c.muted}">${esc(meta)}</text>
+<g font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="${size}" letter-spacing="${ls}">${text}</g>
+<line x1="0" y1="520" x2="${W}" y2="520" stroke="${c.rule}" stroke-width="1" vector-effect="non-scaling-stroke"/>
+<g transform="translate(${X} 557)"><circle cx="18" cy="18" r="15.5" fill="none" stroke="${c.ink}" stroke-width="2.6"/><circle cx="18" cy="18" r="4.8" fill="${c.point}"/></g>
+<text x="${X + 54}" y="583" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="4.4" fill="${c.ink}">OMNISCIENT</text>
+<text x="${W - X}" y="583" text-anchor="end" font-family="'Geist Mono', ui-monospace, Menlo, monospace" font-size="20" fill="${c.muted}">tryomniscient.com/blog</text>
+</svg>`;
+}
+
+// Renders 1200x630 PNGs of covers with Playwright, when it's installed. Returns the set of written files.
+async function renderPngs(jobs) {
+  const done = new Set();
+  if (!jobs.length) return done;
+  let chromium;
+  try { ({ chromium } = createRequire(import.meta.url)("playwright")); } catch {
+    console.log("  Playwright isn't installed: share images (og.png) skipped; pages use the default share image.");
+    return done;
+  }
+  let browser;
+  try {
+    browser = await chromium.launch();
+    const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
+    let fontsOk = true;
+    for (const job of jobs) {
+      await page.setContent(`<!doctype html><html><head><link rel="stylesheet" href="${FONTS}"><style>html,body{margin:0;background:#fff}svg{display:block}</style></head><body>${job.svg}</body></html>`, { waitUntil: "networkidle", timeout: 20000 }).catch(() => {});
+      fontsOk = (await page.evaluate(async () => { await document.fonts.ready; return document.fonts.check("600 40px 'Inter Tight'"); }).catch(() => false)) && fontsOk;
+      mkdirSync(dirname(job.out), { recursive: true });
+      await page.screenshot({ path: job.out, clip: { x: 0, y: 0, width: 1200, height: 630 } });
+      done.add(job.out);
+    }
+    if (!fontsOk) console.log("  Fonts didn't load from Google Fonts: share images use fallback fonts. Run again online.");
+  } catch (e) {
+    console.log(`  Share images skipped: ${e.message.split("\n")[0]}`);
+  } finally {
+    await browser?.close().catch(() => {});
+  }
+  return done;
+}
+
+// ─── Posts ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+function sources() {
+  if (!existsSync(SRC)) return [];
+  return readdirSync(SRC).filter((f) => f.endsWith(".md")).sort().map((f) => join(SRC, f));
+}
+
+// Reads a post's frontmatter and checks it. Throws with a plain reason when the post can't be built.
+function meta(file) {
+  const text = readFileSync(file, "utf8").replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n");
+  const { data, body } = parseFrontmatter(text);
+  const fileSlug = basename(file, ".md");
+  const draft = fileSlug.startsWith("_");
+  const slug = (data.slug || fileSlug).replace(/^\/?(?:blog\/)?/, "").replace(/\/+$/, "");
+  if (!(draft ? /^_?[a-z0-9]+(?:-[a-z0-9]+)*$/ : /^[a-z0-9]+(?:-[a-z0-9]+)*$/).test(slug)) throw new Error(`slug "${slug}" must be lowercase words joined by hyphens`);
+  const h1 = body.match(/^\s{0,3}#\s+(.+?)\s*#*\s*$/m)?.[1];
+  const title = data.title || h1;
+  if (!title) throw new Error("no title: add title: to the frontmatter");
+  const topic = (data.topic || "").toLowerCase();
+  if (!topic) throw new Error(`no topic: add topic: ${Object.keys(TOPICS).join(" or ")}`);
+  if (!/^[a-z0-9-]+$/.test(topic)) throw new Error(`topic "${data.topic}" must be one word (${Object.keys(TOPICS).join(", ")})`);
+  const updated = data.updated || data.date;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(updated || "") || Number.isNaN(Date.parse(updated))) throw new Error(`updated: "${updated || ""}" must be a date like 2026-11-03`);
+  const published = /^\d{4}-\d{2}-\d{2}$/.test(data.published || data.date || "") ? data.published || data.date : updated;
+  return {
+    file, body, draft, slug, fileSlug, title, h1, topic, updated, published,
+    type: (data.type || "").toLowerCase(),
+    description: data.meta_description || data.description || data.summary || "",
+    summary: data.summary || data.meta_description || "",
+    keyword: data.target_keyword || "",
+    readMinutes: parseInt(data.read_minutes, 10) || 0,
+    tone: (data.cover || "").toLowerCase(),
+    data,
+  };
+}
+
+function render(post, known) {
+  const warnings = [];
+  const ctx = {
+    slug: post.slug, toc: [], faq: [], ids: new Set(), h1s: [], links: [], checks: [], visuals: 0, usesShot: false,
+    warn: (m) => warnings.push(m),
+  };
+  const html = blocks(post.body.split("\n"), ctx);
+  const words = plain(html).split(/\s+/).filter(Boolean).length;
+
+  // Checks that help writers; none of them stop the build.
+  if (post.slug !== post.fileSlug) ctx.warn(`slug "${post.slug}" differs from the file name; the page goes to /blog/${post.slug}/`);
+  if (!TOPICS[post.topic]) ctx.warn(`topic "${post.topic}" is new; known topics: ${Object.keys(TOPICS).join(", ")}`);
+  if (post.type && !TYPES.includes(post.type)) ctx.warn(`type "${post.type}" isn't one of ${TYPES.join(", ")}`);
+  if (!post.description) ctx.warn("no meta_description");
+  else if (post.description.length < 150 || post.description.length > 160) ctx.warn(`meta_description is ${post.description.length} characters (aim for 150 to 160)`);
+  if (!post.data.summary) ctx.warn("no summary (the index card uses meta_description)");
+  if (!ctx.h1s.length) ctx.warn("no # title line in the body (the page uses the frontmatter title)");
+  if (!ctx.toc.length) ctx.warn("no ## headings, so the table of contents is empty");
+  const range = LENGTH[post.type];
+  if (range && (words < range[0] * 0.95 || words > range[1] * 1.05)) ctx.warn(`${words} words; a ${post.type} post runs ${range[0]} to ${range[1]}`);
+  if (ctx.visuals < 3) ctx.warn(`${ctx.visuals} visual${ctx.visuals === 1 ? "" : "s"} found; posts need at least 3`);
+  if (ctx.checks.length) ctx.warn(`price is "check" for ${ctx.checks.join(", ")} (the page shows "See site")`);
+  const prose = post.body.replace(/^(`{3,}|~{3,})[\s\S]*?^\1/gm, "");
+  const dashes = (prose.match(/—/g) || []).length;
+  if (dashes) ctx.warn(`${dashes} em dash${dashes > 1 ? "es" : ""}`);
+  const bangs = (prose.replace(/!\[/g, "").match(/!/g) || []).length;
+  if (bangs) ctx.warn(`${bangs} exclamation mark${bangs > 1 ? "s" : ""}`);
+  const banned = BANNED.filter((w) => new RegExp(`\\b${w.replace(/'/g, "['’]")}\\b`, "i").test(prose));
+  if (banned.length) ctx.warn(`banned words: ${banned.join(", ")}`);
+  for (const url of new Set(ctx.links)) {
+    const hash = url.includes("#") ? url.slice(url.indexOf("#") + 1) : "";
+    const path = url.split(/[?#]/)[0];
+    if (url.startsWith("#")) { if (!ctx.ids.has(hash)) ctx.warn(`link to #${hash}, which matches no heading`); continue; }
+    if (!path.startsWith("/") || path.startsWith("//")) continue;
+    const b = path.match(/^\/blog\/([^/]+)\/?$/);
+    if (b) { if (!known.has(b[1])) ctx.warn(`link to /blog/${b[1]}/, which has no post in blog/_src yet`); continue; }
+    if (path === "/" || path === "/blog/") continue;
+    const local = join(root, decodeURI(path.split("?")[0]));
+    const ok = path.endsWith("/") ? existsSync(join(local, "index.html")) : existsSync(local) || existsSync(join(local, "index.html"));
+    if (!ok) ctx.warn(`link to ${path}, which isn't a page on this site (the server would send it to the app)`);
+  }
+
+  const readMinutes = post.readMinutes || Math.max(1, Math.round(words / 230));
+  return { html, ctx, words, readMinutes, warnings };
+}
+
+// ─── Pages ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+function head({ title, description, canonical, image, imageAlt, type = "website", extra = "" , noindex = false }) {
+  const img = image ? `\n<meta property="og:image" content="${esc(image.url)}">${image.w ? `\n<meta property="og:image:width" content="${image.w}">\n<meta property="og:image:height" content="${image.h}">` : ""}\n<meta property="og:image:alt" content="${esc(imageAlt || title)}">` : "";
+  return `<!doctype html>
+<html lang="en-US">
+<head>
+<!-- head:start -->
+<!-- head:end -->
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(description)}">
+<link rel="canonical" href="${canonical}">${noindex ? '\n<meta name="robots" content="noindex, nofollow">' : ""}
+<meta property="og:type" content="${type}">
+<meta property="og:site_name" content="Omniscient">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(description)}">
+<meta property="og:url" content="${canonical}">${img}
+<meta name="twitter:card" content="${image?.w ? "summary_large_image" : "summary"}">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(description)}">${image ? `\n<meta name="twitter:image" content="${esc(image.url)}">` : ""}
+${extra}
+</head>`;
+}
+
+const DEFAULT_IMAGE = { url: `${SITE}/assets/brand/omniscient-app-icon-512.png` };
+
+function shareImage(slug) {
+  return existsSync(join(root, "assets", "blog", slug, "og.png")) ? { url: `${SITE}/assets/blog/${slug}/og.png`, w: 1200, h: 630 } : DEFAULT_IMAGE;
+}
+
+const coverFor = (p, standalone) => coverSvg({ title: p.title, label: topicName(p.topic), slug: p.slug, meta: `${p.readMinutes} min read`, tone: p.tone, standalone });
+
+function card(p, level) {
+  const svg = coverFor(p, false).replace(/ role="img" aria-label="[^"]*"/, ' aria-hidden="true" focusable="false"').replace(/<title>[\s\S]*?<\/title>/, "");
+  return `<a class="bl-card" href="/blog/${p.slug}/" data-topic="${esc(p.topic)}">
+  <div class="bl-card__cover">${svg}</div>
+  <div class="bl-card__body">
+    <p class="bl-card__meta"><span class="bl-tag">${esc(topicName(p.topic))}</span><span>${p.readMinutes} min read</span></p>
+    <h${level} class="bl-card__title">${esc(p.title)}</h${level}>
+    <p class="bl-card__sum">${esc(p.summary)}</p>
+  </div>
+</a>`;
+}
+
+function postPage(post, r, related) {
+  const url = `${SITE}/blog/${post.slug}/`;
+  const image = shareImage(post.slug);
+  const topicLabel = topicName(post.topic);
+  const ld = [
+    jsonLd({
+      "@context": "https://schema.org", "@type": "Article", headline: post.title, description: post.description,
+      image: [image.url], datePublished: post.published, dateModified: post.updated, inLanguage: "en-US",
+      articleSection: topicLabel, ...(post.keyword ? { keywords: post.keyword } : {}), wordCount: r.words,
+      author: { "@type": "Organization", name: "Omniscient", url: `${SITE}/` },
+      publisher: { "@type": "Organization", name: "Omniscient", url: `${SITE}/`, logo: { "@type": "ImageObject", url: DEFAULT_IMAGE.url } },
+      mainEntityOfPage: { "@type": "WebPage", "@id": url }, url,
+    }),
+    jsonLd({
+      "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Blog", item: `${SITE}/blog/` },
+        { "@type": "ListItem", position: 2, name: topicLabel, item: `${SITE}/blog/?topic=${post.topic}` },
+        { "@type": "ListItem", position: 3, name: post.title, item: url },
+      ],
+    }),
+  ];
+  if (r.ctx.faq.length) ld.push(jsonLd({
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: r.ctx.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  }));
+  const extra = [
+    `<meta property="article:published_time" content="${post.published}">`,
+    `<meta property="article:modified_time" content="${post.updated}">`,
+    `<meta property="article:section" content="${esc(topicLabel)}">`,
+    r.ctx.usesShot ? `<link rel="stylesheet" href="/assets/home.css">` : "",
+    `<link rel="stylesheet" href="/assets/blog.css">`,
+    ...ld,
+    `<script src="/assets/blog.js" defer></script>`,
+  ].filter(Boolean).join("\n");
+
+  const tocItems = r.ctx.toc.map((t) => `<li><a href="#${t.id}">${t.html}</a></li>`).join("");
+  const toc = tocItems ? `<nav class="bl-toc" aria-label="On this page"><p class="bl-label">[ On this page ]</p><ol class="bl-toc__list">${tocItems}</ol></nav>` : "";
+  const tocPhone = tocItems ? `<details class="bl-toc-m"><summary>On this page</summary><ol class="bl-toc__list">${tocItems}</ol></details>` : "";
+  const cover = coverFor(post, false).replace(/ role="img" aria-label="[^"]*"/, ' aria-hidden="true" focusable="false"').replace(/<title>[\s\S]*?<\/title>/, "");
+  const h1 = esc((post.h1 && plain(inline(post.h1, { slug: post.slug, warn() {}, links: [], visuals: 0 }))) || post.title);
+  const relatedHtml = related.length ? `
+  <section class="wrap bl-related" aria-labelledby="bl-related">
+    <h2 class="bl-related__title" id="bl-related">Keep reading. <span class="two">More on ${esc(topicLabel)}.</span></h2>
+    <div class="bl-cards">
+${related.map((p) => card(p, 3)).join("\n")}
+    </div>
+  </section>` : "";
+
+  return `${head({ title: `${post.title} | Omniscient`, description: post.description, canonical: url, image, imageAlt: post.title, type: "article", extra, noindex: post.draft })}
+<body class="om om-blog">
+<!-- header:start -->
+<!-- header:end -->
+<main id="main" class="site-main bl-post">
+  <div class="wrap">
+    <div class="bl-grid">
+      <aside class="bl-side">${toc}</aside>
+      <article class="bl-article">
+        <header class="bl-head">
+          <nav class="bl-crumb" aria-label="Breadcrumb"><ol><li><a href="/blog/">Blog</a></li><li><a href="/blog/?topic=${esc(post.topic)}">${esc(topicLabel)}</a></li></ol></nav>
+          <h1 class="bl-title">${h1}</h1>
+          <p class="bl-meta"><span>Updated <time datetime="${post.updated}">${prettyDate(post.updated)}</time></span><span>${r.readMinutes} min read</span></p>
+        </header>
+        <figure class="bl-cover">${cover}</figure>
+        <div class="bl-body">
+${tocPhone}
+${r.html}
+        </div>
+      </article>
+    </div>
+  </div>${relatedHtml}
+</main>
+<!-- footer:start -->
+<!-- footer:end -->
+</body>
+</html>
+`;
+}
+
+function indexPage(posts) {
+  const url = `${SITE}/blog/`;
+  const counts = {};
+  for (const p of posts) counts[p.topic] = (counts[p.topic] || 0) + 1;
+  const topics = [...Object.keys(TOPICS), ...Object.keys(counts).filter((t) => !TOPICS[t]).sort()].filter((t) => counts[t]);
+  const button = (t, label, n, on) => `<button class="bl-filter__btn" type="button" data-topic="${esc(t)}" aria-pressed="${on}">${esc(label)}<span>${n}</span></button>`;
+  const filter = posts.length ? `<div class="bl-filter" role="group" aria-label="Filter by topic">${button("all", "All", posts.length, true)}${topics.map((t) => button(t, topicName(t), counts[t], false)).join("")}</div>` : "";
+  const image = existsSync(join(root, "assets", "blog", "og.png")) ? { url: `${SITE}/assets/blog/og.png`, w: 1200, h: 630 } : DEFAULT_IMAGE;
+  const description = "Guides, comparisons and pricing for LinkedIn outbound and CRM, written by the team that builds Omniscient.";
+  const extra = [
+    `<link rel="stylesheet" href="/assets/blog.css">`,
+    jsonLd({
+      "@context": "https://schema.org", "@type": "Blog", name: "The Omniscient blog", url, description, inLanguage: "en-US",
+      publisher: { "@type": "Organization", name: "Omniscient", url: `${SITE}/` },
+      blogPost: posts.map((p) => ({ "@type": "BlogPosting", headline: p.title, url: `${SITE}/blog/${p.slug}/`, datePublished: p.published, dateModified: p.updated })),
+    }),
+    `<script src="/assets/blog.js" defer></script>`,
+  ].join("\n");
+  return `${head({ title: "Blog: LinkedIn outbound and CRM | Omniscient", description, canonical: url, image, extra })}
+<body class="om om-blog">
+<!-- header:start -->
+<!-- header:end -->
+<main id="main" class="site-main bl-index">
+  <section class="wrap bl-hero">
+    <p class="bl-label">[ Blog ]</p>
+    <h1 class="bl-hero__title">LinkedIn outbound and CRM. <span class="two">Written by the team that builds Omniscient.</span></h1>
+  </section>
+  <section class="wrap bl-list" aria-label="Posts">
+    ${filter}
+    <div class="bl-cards">
+${posts.map((p) => card(p, 2)).join("\n")}
+    </div>
+    <p class="bl-empty"${posts.length ? " hidden" : ""}>No posts yet</p>
+  </section>
+</main>
+<!-- footer:start -->
+<!-- footer:end -->
+</body>
+</html>
+`;
+}
+
+// ─── Build ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+function write(file, content) {
+  mkdirSync(dirname(file), { recursive: true });
+  const prev = existsSync(file) ? readFileSync(file, "utf8") : null;
+  if (prev !== content) writeFileSync(file, content);
+  return prev !== content;
+}
+
+// Reads every source's frontmatter. Bad ones are left out here and reported when they're built.
+function catalog() {
+  const out = [];
+  for (const file of sources()) {
+    try {
+      const p = meta(file);
+      const words = plain(p.body.replace(/^(`{3,}|~{3,})[\s\S]*?^\1/gm, " ")).split(/\s+/).filter(Boolean).length;
+      p.readMinutes = p.readMinutes || Math.max(1, Math.round(words / 230));
+      out.push(p);
+    } catch { /* reported by the build */ }
+  }
+  return out;
+}
+
+function relatedFor(post, pool) {
+  const others = pool.filter((p) => p.slug !== post.slug && !p.draft);
+  const byDate = (a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title);
+  const same = others.filter((p) => p.topic === post.topic).sort(byDate);
+  const rest = others.filter((p) => p.topic !== post.topic).sort(byDate);
+  return [...same, ...rest].slice(0, 3);
+}
+
+function report(post, r) {
+  const where = rel(join(root, "blog", post.slug, "index.html"));
+  console.log(`Built ${where} (${r.words} words, ${r.readMinutes} min${post.draft ? ", draft: noindex" : ""})`);
+  for (const w of r.warnings) console.log(`  ! ${w}`);
+}
+
+async function buildPosts(files, pool, { all }) {
+  const built = [];
+  let skipped = 0;
+  const known = new Set(pool.filter((p) => !p.draft).map((p) => p.slug));
+  for (const file of files) {
+    try {
+      const post = meta(file);
+      if (post.draft && all) continue;
+      const r = render(post, known);
+      post.readMinutes = r.readMinutes;
+      built.push({ post, r });
+    } catch (e) {
+      skipped++;
+      console.log(`Skipped ${rel(file)}: ${e.message}`);
+    }
+  }
+
+  // Covers: the SVG, then a PNG for the share image when the SVG changed or the PNG is missing.
+  const jobs = [];
+  for (const { post } of built) {
+    const dir = join(root, "assets", "blog", post.slug);
+    const svg = coverFor(post, true);
+    const changed = write(join(dir, "cover.svg"), `${svg}\n`);
+    if (changed || !existsSync(join(dir, "og.png"))) jobs.push({ svg, out: join(dir, "og.png") });
+  }
+  await renderPngs(jobs);
+
+  // Related posts link only to pages that exist: every post in --all, built pages otherwise.
+  const live = all ? built.map((b) => b.post) : pool.filter((p) => !p.draft && existsSync(join(root, "blog", p.slug, "index.html")));
+  for (const { post, r } of built) {
+    try {
+      const page = applyLayout(postPage(post, r, relatedFor(post, live)));
+      write(join(root, "blog", post.slug, "index.html"), page);
+      report(post, r);
+    } catch (e) {
+      skipped++;
+      console.log(`Skipped ${rel(post.file)}: ${e.message}`);
+    }
+  }
+  return { built, skipped };
+}
+
+async function buildIndex(posts) {
+  const list = posts.filter((p) => !p.draft).sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title));
+  const svg = coverSvg({ title: "LinkedIn outbound and CRM, from the team that builds Omniscient", label: "Blog", slug: "blog", meta: "", tone: "dark" });
+  const changed = write(join(root, "assets", "blog", "cover.svg"), `${svg}\n`);
+  if (changed || !existsSync(join(root, "assets", "blog", "og.png"))) await renderPngs([{ svg, out: join(root, "assets", "blog", "og.png") }]);
+  write(join(root, "blog", "index.html"), applyLayout(indexPage(list)));
+  console.log(`Built blog/index.html (${list.length} post${list.length === 1 ? "" : "s"})`);
+}
+
+function findSource(arg) {
+  const name = basename(arg).replace(/\.md$/, "");
+  const direct = join(SRC, `${name}.md`);
+  if (existsSync(direct)) return direct;
+  return sources().find((f) => { try { return meta(f).slug === name; } catch { return false; } }) || null;
+}
+
+async function main() {
+  const args = process.argv.slice(2);
+  if (!args.length || args.includes("--help") || args.includes("-h")) {
+    console.log("Usage:\n  node tools/blog.mjs <slug> [<slug> ...]   build one post\n  node tools/blog.mjs --all                  build every post, the index and the sitemap\n  node tools/blog.mjs --index                rebuild blog/index.html");
+    return;
+  }
+  if (args[0] === "--all") {
+    const pool = catalog();
+    const { built, skipped } = await buildPosts(sources(), pool, { all: true });
+    await buildIndex(built.map((b) => b.post));
+    for (const dir of existsSync(join(root, "blog")) ? readdirSync(join(root, "blog")) : []) {
+      if (dir.startsWith("_") || !statSync(join(root, "blog", dir)).isDirectory()) continue;
+      if (!built.some((b) => b.post.slug === dir)) console.log(`  ! blog/${dir}/ has no source in blog/_src any more; delete it if the post is gone`);
+    }
+    const lay = spawnSync(process.execPath, [join(root, "tools", "layout.mjs")], { stdio: "inherit" });
+    if (lay.status !== 0) console.log("tools/layout.mjs failed; run it by hand.");
+    console.log(`Done: ${built.length} built, ${skipped} skipped.`);
+    return;
+  }
+  if (args[0] === "--index") { await buildIndex(catalog().filter((p) => existsSync(join(root, "blog", p.slug, "index.html")))); return; }
+
+  const pool = catalog();
+  let failed = 0;
+  for (const arg of args) {
+    const file = findSource(arg);
+    if (!file) { console.log(`Skipped ${arg}: no blog/_src/${basename(arg).replace(/\.md$/, "")}.md`); failed++; continue; }
+    const { built } = await buildPosts([file], pool, { all: false });
+    if (!built.length) failed++;
+  }
+  if (failed) process.exitCode = 1;
+}
+
+main().catch((e) => {
+  console.log(`Blog build stopped: ${e.message}`);
+  process.exitCode = 1;
+});

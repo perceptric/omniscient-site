@@ -21,6 +21,9 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `assets/logos/` | Logos of the tools Omniscient works with. |
 | `assets/brand/` | favicon.ico, icon.svg, apple-icon.png, share image, and `omniscient-brand.css` (the brand stylesheet for embeds, emails and decks). |
 | `tools/layout.mjs` | Copies the partials into every page, stamps the CSS and JS links and rebuilds `sitemap.xml`. |
+| `blog/_src/<slug>.md` | Blog posts in Markdown. `tools/blog.mjs` writes `blog/<slug>/index.html` and `blog/index.html`. A file whose name starts with `_` is a draft (`_sample.md` uses every block). |
+| `assets/blog.css`, `assets/blog.js` | Blog posts and the index: contents that follow the reading position, the topic filter, shots that play once. |
+| `assets/blog/<slug>/` | A post's pictures and `*.shot.html` snippets, plus the `cover.svg` and `og.png` share image the build writes. |
 | `.htaccess` | 404 page, https/www redirects, icon redirects, unknown paths to the app. |
 
 ## Editing
@@ -31,6 +34,12 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
   link, so browsers fetch the new file.
 - **New page:** copy a page folder, change the content and the tags under `<!-- head:end -->`
   (title, description, canonical, og tags), then run `node tools/layout.mjs`. It adds the page to `sitemap.xml`.
+- **Blog post:** write `blog/_src/<slug>.md`, then run `node tools/blog.mjs <slug>` to build that post alone, or
+  `node tools/blog.mjs --all` to build every post, the index and the sitemap. Frontmatter: `title`, `slug`, `topic`
+  (`linkedin` or `crm`), `updated` (YYYY-MM-DD), `meta_description`, `summary`, `type`, `target_keyword`, `read_minutes`.
+  Besides plain Markdown, fenced blocks `tools`, `callout`, `cta`, `faq` and `steps` render in the brand;
+  `![alt](chart.svg "caption")` and `![alt](name.shot.html)` sit in the gray grain band. The build prints what to fix
+  and skips a broken post. Share images need Playwright; without it pages use the default image.
 - **Privacy or Terms:** edit the text in `privacy/index.html` or `terms/index.html` and change the
   "Last updated" date. Google's OAuth review reads these pages, so keep the URLs `/privacy` and `/terms`.
 - **Footer year:** it is plain text in `partials/footer.html`. Change it each January.
