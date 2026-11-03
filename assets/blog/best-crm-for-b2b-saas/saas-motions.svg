@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 739" width="720" height="739" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Where B2B SaaS deals start and which CRMs to look at for each</title>
-<desc id="d">Five ways B2B SaaS deals start, what the CRM has to do for each, and where to look first. Inbound demo requests: route each form to a rep fast; look at HubSpot, Omniscient or Salesforce. Outbound to your ICP: find accounts and log every touch; look at Omniscient, Close or Freshsales. Deals with several buyers: every buyer on one deal, with call notes; look at Salesforce, HubSpot or Omniscient. Product led signups: product usage on the account; look at Attio or HubSpot. Renewals and expansion: renewal dates, MRR and ARR; look at Pipedrive, Attio or Salesforce.</desc>
+<desc id="d">Five ways B2B SaaS deals start, what the CRM has to do for each, and where to look first. Inbound demo requests: route each form to a rep fast; look at HubSpot, Omniscient or Salesforce. Outbound to your ICP: find accounts and log every touch; look at Omniscient, Close or Freshsales. Deals with several buyers: every buyer on one deal, with call notes; look at Salesforce, HubSpot or Omniscient. Product led signups: product usage on the account; look at Attio, Twenty or HubSpot. Renewals and expansion: renewal dates, MRR and ARR; look at Pipedrive, Attio or Salesforce.</desc>
 <rect width="720" height="739" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="738" fill="none" stroke="#0a0a0a"/>
 <rect x="32" y="35" width="11" height="11" fill="#10b981" stroke="#0a0a0a"/>
@@ -33,7 +33,7 @@
 <text x="48" y="513" font-size="21" font-weight="600" fill="#0a0a0a">Product led</text>
 <text x="48" y="539" font-size="21" font-weight="600" fill="#0a0a0a">signups</text>
 <text x="248" y="497" font-size="21" font-weight="600" fill="#0a0a0a">Product usage on the account</text>
-<text x="248" y="529" font-size="19" fill="#737373">Attio, HubSpot</text>
+<text x="248" y="529" font-size="19" fill="#737373">Attio, Twenty, HubSpot</text>
 <rect x="32.5" y="568.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
 <rect x="231.5" y="568.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="596" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">05</text>

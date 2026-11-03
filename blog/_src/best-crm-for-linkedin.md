@@ -1,20 +1,20 @@
 ---
-title: "Best CRM for LinkedIn Prospecting in 2026"
+title: "13 Best CRMs for LinkedIn Prospecting in 2026"
 slug: best-crm-for-linkedin
 target_keyword: "best crm for linkedin"
-meta_description: "The best CRM for LinkedIn prospecting in 2026: we compare seven CRMs on how LinkedIn replies reach the record and what each costs on its own pricing page."
+meta_description: "The 13 best CRMs for LinkedIn prospecting in 2026, compared on how LinkedIn replies reach the record and what each one costs on its own pricing page today."
 type: best-of
 topic: crm
 updated: 2026-11-03
-read_minutes: 11
-summary: "Seven CRMs for LinkedIn prospecting, compared on how each one connects to LinkedIn and what it costs today."
+read_minutes: 16
+summary: "13 CRMs for LinkedIn prospecting, compared on how each one connects to LinkedIn and what it costs today."
 ---
 
-# Best CRM for LinkedIn Prospecting in 2026
+# 13 Best CRMs for LinkedIn Prospecting in 2026
 
 When your deals start with a LinkedIn invitation, the most useful part of each conversation happens on a site your CRM can't see. The best CRM for LinkedIn prospecting brings those conversations onto the right record, so your team copies as little as possible by hand.
 
-We build Omniscient, a CRM with LinkedIn outreach inside it. Joining our sending engine to the CRM taught us which details decide whether a reply lands on the right person. This guide compares seven CRMs on how each one connects to LinkedIn and what it costs in November 2026.
+We build Omniscient, a CRM with LinkedIn outreach inside it. Joining our sending engine to the CRM taught us which details decide whether a reply lands on the right person. This guide compares 13 CRMs on how each one connects to LinkedIn and what it costs in November 2026.
 
 ```callout
 We read every price and LinkedIn feature on the vendors' own sites and LinkedIn's help pages in November 2026. We haven't run a full trial of each CRM, so we weigh what vendors say against what we learned building our own sending engine.
@@ -23,20 +23,29 @@ We read every price and LinkedIn feature on the vendors' own sites and LinkedIn'
 Our short answer, by how your team prospects:
 
 - Pick Omniscient if you want LinkedIn outreach your team approves inside a CRM that fills itself in from email and calendar.
-- Pick HubSpot or Salesforce if you already pay for Sales Navigator Advanced Plus and want LinkedIn's own CRM Sync.
+- Pick HubSpot, Salesforce or Microsoft Dynamics 365 Sales if you pay for Sales Navigator Advanced Plus and want LinkedIn's own CRM Sync.
 - Pick Zoho CRM if you want a free plan for 3 users, with Sales Navigator on your records later.
-- Pick folk or Salesflare if you want your CRM in a browser extension while you work in LinkedIn.
+- Pick Pipedrive or Attio if you like their pipelines and will add a LinkedIn app from their marketplace.
+- Pick folk, Salesflare or Nimble if you want your CRM in a browser extension while you work in LinkedIn.
+- Pick NetHunt CRM if you sell from Gmail and want email and LinkedIn messages in one sequence.
 - Pick Breakcold if you send every LinkedIn message yourself and want each thread on the deal.
+- Pick Kanbox if a LinkedIn inbox and a Kanban board are all the CRM you need.
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
 Omniscient | tryomniscient.com | A CRM with LinkedIn outreach your team approves | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that prospect on LinkedIn
 HubSpot | hubspot.com | A customer platform on LinkedIn's CRM Sync list | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams on Sales Navigator Advanced Plus
 Salesforce | salesforce.com | A CRM platform on LinkedIn's CRM Sync list | [Free for up to 2 users](https://www.salesforce.com/sales/pricing/) | Larger teams with a Salesforce admin
+Microsoft Dynamics 365 Sales | dynamics.microsoft.com | Microsoft's sales CRM, also sold bundled with Sales Navigator | [$65 per user a month, billed yearly](https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing) | Companies that run on Microsoft
 Zoho CRM | zoho.com | A sales CRM with a Sales Navigator extension | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Teams that want a free plan to start
+Pipedrive | pipedrive.com | A pipeline CRM that reaches LinkedIn through the Surfe app | check | Teams that plan their week by deal stage
+Attio | attio.com | A flexible CRM that logs LinkedIn activity through the HeyReach app | [Free for up to 3 seats](https://attio.com/pricing) | Teams that design their own data model
 folk | folk.app | A simple CRM with the folkX LinkedIn extension | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who save profiles as they browse
 Breakcold | breakcold.com | A CRM that syncs LinkedIn conversations | [$99 a month, billed monthly](https://www.breakcold.com/pricing) | Sellers who send every message themselves
 Salesflare | salesflare.com | A B2B CRM with a LinkedIn sidebar | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small teams that follow up by email
+NetHunt CRM | nethunt.com | A CRM inside Gmail with email and LinkedIn messages in one sequence | [$60 per user a month on Business, billed monthly](https://nethunt.com/pricing) | Teams that sell from Gmail
+Nimble | nimble.com | A relationship CRM with the Prospector extension for LinkedIn | [$24.90 per seat a month, billed yearly](https://www.nimble.com/pricing/) | Small teams that save profiles and follow up by email
+Kanbox | kanbox.io | A LinkedIn inbox with sequences and Kanban pipelines | [$20 a month, or $12 billed yearly](https://www.kanbox.io/en/pricing) | Solo sellers who work from LinkedIn alone
 ```
 
 ## What a CRM for LinkedIn prospecting needs to do
@@ -55,18 +64,19 @@ Honestly, vendors' pages say a lot about the first check and little about the re
 
 Side by side, the vendors' pages show four kinds of connection, and Omniscient uses two of them.
 
-![Four ways a CRM connects to LinkedIn: Sales Navigator inside the CRM, which needs LinkedIn's Advanced Plus plan, used by HubSpot, Salesforce and Zoho CRM; a browser extension that works on the LinkedIn page you have open, used by folk and Salesflare; a connected LinkedIn account where new messages land on the matching CRM person, used by Breakcold and Omniscient; and outreach inside the CRM that sends what your team approves, used by Omniscient](/assets/blog/best-crm-for-linkedin/four-ways.svg)
+![Four ways a CRM connects to LinkedIn: Sales Navigator inside the CRM, which needs LinkedIn's Advanced Plus plan, used by HubSpot, Salesforce, Microsoft Dynamics 365 Sales and Zoho CRM; a browser extension that works on the LinkedIn page you have open, used by folk, Salesflare and Nimble; a connected LinkedIn account where new messages land on the matching CRM person, used by Breakcold and Omniscient; and outreach inside the CRM that sends LinkedIn messages in sequences, used by Omniscient, NetHunt CRM and Kanbox. Pipedrive and Attio reach LinkedIn through marketplace apps such as Surfe and HeyReach](/assets/blog/best-crm-for-linkedin/four-ways.svg)
 
 - LinkedIn sells Sales Navigator CRM Sync itself on the Advanced Plus plan, and its [plan guide](https://www.linkedin.com/help/linkedin/answer/a104003) says it can "Log InMails, messages, notes, and Smart Links back to CRM."
-- A browser extension works on the LinkedIn page you have open: folkX saves the profile to your CRM, and Salesflare adds a CRM sidebar.
+- A browser extension works on the LinkedIn page you have open: folkX and Nimble Prospector save the profile to your CRM, and Salesflare adds a CRM sidebar.
 - A connected LinkedIn account sends new LinkedIn messages to the matching CRM person, as in Breakcold and Omniscient.
-- Outreach inside the CRM means it runs invitation and message sequences itself, which only Omniscient does among these seven.
+- Outreach inside the CRM means it runs LinkedIn message sequences itself, which Omniscient, NetHunt CRM and Kanbox do among these 13.
+- Pipedrive and Attio lean on apps from their marketplaces, such as Surfe and HeyReach, which use one of the methods above.
 
 Only the first is an integration LinkedIn sells. Its [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) lists "browser extensions that scrape, modify the appearance of, or automate activity on LinkedIn's website" among the tools it doesn't permit. Members who use them, it says, "risk having their accounts restricted or shut down."
 
-LinkedIn names no products there, but the risk applies to the last three groups, Omniscient included, so weigh it against the time each tool saves you.
+LinkedIn names no products there, but the risk applies to the other groups, Omniscient included, so weigh it against the time each tool saves you.
 
-## The 7 best CRMs for LinkedIn prospecting in 2026
+## The 13 best CRMs for LinkedIn prospecting in 2026
 
 ### 1. Omniscient
 
@@ -81,21 +91,15 @@ We built outreach and the CRM as one loop, so a lead's reply and the deal stay o
 
 ![Omniscient Inbox with a LinkedIn thread from Amara Kofi tagged Interested: her reply to a campaign message, a reply drafted by Otto waiting in the composer, and a side panel with her company, the post comment Scout found, the search that found her, her campaign marked replied with outreach stopped, and a Create opportunity button](/assets/blog/best-crm-for-linkedin/inbox.shot.html)
 
-Sending follows the pacing we describe in [how to automate LinkedIn outreach without getting restricted](/blog/automate-linkedin-outreach-without-getting-restricted/):
+Sending follows the pacing we describe in [how to automate LinkedIn outreach without getting restricted](/blog/automate-linkedin-outreach-without-getting-restricted/). Each sender keeps working hours in its own time zone, waits 3 to 12 minutes between actions and views a profile 1 to 4 hours before inviting.
 
-- Each sender keeps working hours in its own time zone, with a lunch break, and waits 3 to 12 minutes between actions at normal pace.
-- By default, a profile view comes 1 to 4 hours before each invitation.
-- A new account starts at 5 invitations a day and adds 2 a day, and each day's total lands between 80% and 100% of your limit.
-- A LinkedIn rate limit halves the pace for 3 days, and the next 3 days ease it back to normal.
-- A week with at least 20 invitations and under 1 in 5 accepted slows the sender the same way.
-
-LinkedIn's [help page on invitation limits](https://www.linkedin.com/help/linkedin/answer/a550555) doesn't publish a number, and our guide to the [LinkedIn connection request limit](/blog/linkedin-connection-request-limit/) explains the defaults we chose.
+A new account starts at 5 invitations a day and adds 2 a day, and a LinkedIn rate limit halves the pace for 3 days. LinkedIn's [help page on invitation limits](https://www.linkedin.com/help/linkedin/answer/a550555) doesn't publish a number, and our guide to the [LinkedIn connection request limit](/blog/linkedin-connection-request-limit/) explains the defaults we chose.
 
 On the CRM side, Omniscient builds people and companies from Gmail or Outlook and your calendar, and Otto writes meeting notes from your call transcripts. The [CRM page](/product/crm/) and the [LinkedIn Outbound page](/product/linkedin-outbound/) show both halves.
 
 Paid seats start at [$19 per seat a month, billed yearly](/#pricing), and Pro adds the pipeline board and forecast at $49. Monthly billing costs 20% more, and the 14 day trial needs no credit card.
 
-Admittedly, Omniscient isn't on LinkedIn's CRM Sync list and has no browser extension for saving profiles as you browse. Teams that live in Sales Navigator Advanced Plus will get more from HubSpot or Salesforce. If you follow up with email sequences, Salesflare fits better, since our campaigns run on LinkedIn only.
+Admittedly, Omniscient isn't on LinkedIn's CRM Sync list and has no browser extension for saving profiles as you browse. Teams that live in Sales Navigator Advanced Plus will get more from HubSpot, Salesforce or Dynamics 365. If you follow up with email sequences, Salesflare or NetHunt CRM fits better, since our campaigns run on LinkedIn only.
 
 ### 2. HubSpot
 
@@ -116,13 +120,25 @@ Salesforce is a CRM platform that scales from a free two user suite to large ent
 
 - [Free Suite covers up to 2 users](https://www.salesforce.com/crm/free-crm/), as long as you log in at least once every 60 days.
 - [Starter Suite costs $25 per user a month](https://www.salesforce.com/sales/pricing/), Pro Suite costs $100 billed yearly, and Core costs $195 billed yearly.
-- LinkedIn's [CRM Sync guide for Salesforce](https://content.linkedin.com/content/dam/help/sales-navigator/en-us/CRM_Sync_Salesforce_Technical_Guide_Final.pdf) lists Enterprise, Unlimited, Developer, Performance, or Professional with API access enabled.
+- LinkedIn's [CRM Sync guide for Salesforce](https://content.linkedin.com/content/dam/help/sales-navigator/en-us/CRM_Sync_Salesforce_Technical_Guide_Final.pdf) lists Enterprise, Unlimited, Developer, Performance or Professional with API access enabled.
 
 The same guide says a LinkedIn account representative turns CRM Sync on, and a Salesforce administrator installs the app. Salesforce now sells suites while LinkedIn's guide names editions, so ask Salesforce which suite qualifies before you buy.
 
 Personally, we'd pick Salesforce for LinkedIn prospecting only when an admin can own both sides of the sync.
 
-### 4. Zoho CRM
+### 4. Microsoft Dynamics 365 Sales
+
+Microsoft Dynamics 365 Sales is a sales CRM from Microsoft, which owns LinkedIn, and it's the only CRM here sold in a bundle with Sales Navigator. That bundle, Microsoft Relationship Sales, pairs Sales Enterprise with Sales Navigator Advanced Plus.
+
+- [Sales Professional costs $65 per user a month](https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing), Enterprise costs $105 and Premium costs $150, all billed yearly.
+- Relationship Sales is priced by Microsoft's sales team and needs at least 10 seats.
+- Microsoft's [setup guide](https://learn.microsoft.com/en-us/dynamics365/sales/linkedin/integrate-sales-navigator) asks for Relationship Sales or an Advanced Plus license, and says the Sales Navigator solution also runs in the Sales Professional app.
+
+Once it's set up, a Lead control on any form shows the person's top card, icebreakers, mutual connections and related leads. Features that add records, such as Add to CRM, need CRM Sync turned on.
+
+Fortunately, Microsoft offers a free trial of Dynamics 365 Sales, though the LinkedIn controls still need Advanced Plus. It fits a company that already runs on Microsoft and plans to buy Advanced Plus anyway.
+
+### 5. Zoho CRM
 
 Zoho CRM is a cloud CRM that helps sales teams run their pipeline, with a free plan for 3 users and an extension for LinkedIn Sales Navigator.
 
@@ -134,7 +150,30 @@ Once it's installed, leads, contacts, accounts and deals show a Sales Navigator 
 
 The help page doesn't name the Zoho CRM edition it needs, so confirm that with Zoho during your trial.
 
-### 5. folk
+### 6. Pipedrive
+
+Pipedrive is a sales CRM that helps small teams track deals by pipeline stage, and it reaches LinkedIn through apps in its marketplace. The most direct one is Surfe, whose [Pipedrive listing](https://www.pipedrive.com/en/marketplace/app/surfe/97c68091c72b436b) says it can "Sync LinkedIn messages into Pipedrive."
+
+- Surfe adds LinkedIn contacts to Pipedrive in one click and lets you edit their CRM fields from the LinkedIn page.
+- The same listing says it exports Sales Navigator lead lists to Pipedrive and finds work email addresses through partner tools.
+- The listing marks Surfe as free with a 2 week trial and says some features may need a paid Surfe account, so check its price on Surfe's own site.
+
+We couldn't load Pipedrive's pricing page in November 2026, so its prices are marked check here. Its [homepage](https://www.pipedrive.com/en) lists a 14 day free trial with no credit card, and the [pricing page](https://www.pipedrive.com/en/pricing) shows today's plans in your currency.
+
+Pipedrive suits a team that plans its week by deal stage and is happy to let an extension carry LinkedIn in. Before you commit, reply to a test message and confirm it lands on the person you already have.
+
+### 7. Attio
+
+Attio is a flexible CRM that you shape around your own objects and fields, and it logs your email and calendar once you connect them. LinkedIn comes in through apps such as HeyReach, an outreach tool that sends the invitations and messages.
+
+- HeyReach's [Attio listing](https://attio.com/apps/hey-reach) adds Attio people to HeyReach campaigns and logs connection requests, messages and replies back in Attio.
+- It matches leads "on email address and then LinkedIn URL," and creates a new person when no match exists.
+- [The Free plan covers up to 3 seats and 50,000 records](https://attio.com/pricing), Plus costs $35 per seat a month billed yearly or $44 monthly, and Pro costs $79, or $99 monthly.
+- Pro comes with a 14 day trial, and the HeyReach listing says logging to the person's timeline may need a paid Attio plan.
+
+Attio's own [Chrome extension page](https://attio.com/help/reference/tools-and-extensions/attio-chrome-extension) covers Gmail, Google Meet and any website, Twitter included, and it doesn't mention LinkedIn, so plan on a marketplace app for that side. Attio fits a team that enjoys designing its own data model, and [Omniscient vs Attio](/blog/omniscient-vs-attio/) puts the two side by side.
+
+### 8. folk
 
 folk is a CRM for small teams that captures contacts from LinkedIn and Sales Navigator with its folkX Chrome extension.
 
@@ -142,9 +181,9 @@ folk is a CRM for small teams that captures contacts from LinkedIn and Sales Nav
 - Email sequences start on Premium, at $48 per member a month billed yearly.
 - The trial lasts 2 weeks, includes every premium feature and needs no credit card.
 
-The [folkX help page](https://help.folk.app/en/articles/5587856-folkx-for-linkedin-chrome-extension) says your folk message templates appear inside LinkedIn. Interestingly, neither that page nor folk's pricing page says whether LinkedIn message history syncs into folk, so test it during the trial.
+The [folkX help page](https://help.folk.app/en/articles/5587856-folkx-for-linkedin-chrome-extension) says your folk message templates appear inside LinkedIn. Interestingly, neither that page nor folk's pricing page says whether LinkedIn message history syncs into folk, so test it during the trial. folk fits a founder who saves profiles while browsing and writes each message by hand.
 
-### 6. Breakcold
+### 9. Breakcold
 
 Breakcold is a CRM that syncs LinkedIn, email, WhatsApp and Telegram conversations into one inbox and pipeline.
 
@@ -152,9 +191,9 @@ Breakcold is a CRM that syncs LinkedIn, email, WhatsApp and Telegram conversatio
 - You can reply from Breakcold, and a feed of your prospects' posts lets you comment and message from the deal.
 - [X1 costs $99 a month, billed monthly](https://www.breakcold.com/pricing), for 1 seat and 2 connected accounts, and each extra seat or account costs $10 a month.
 
-Its pricing page lists a 14 day trial with a card up front and a tasks queue where "you approve every send." We didn't find automated invitation sequences there, so Breakcold suits a seller who sends LinkedIn messages one at a time.
+Its pricing page lists a 14 day trial with a card up front. It also lists a tasks queue where "you approve every send." We didn't find automated invitation sequences there, so Breakcold suits a seller who sends LinkedIn messages one at a time.
 
-### 7. Salesflare
+### 10. Salesflare
 
 Salesflare is a CRM for B2B teams that fills itself in from your inbox, email signatures and calendar, with a sidebar that works inside LinkedIn.
 
@@ -163,6 +202,40 @@ Salesflare is a CRM for B2B teams that fills itself in from your inbox, email si
 - The trial lasts 30 days with no credit card.
 
 Luckily for teams that prospect on LinkedIn and follow up by email, Salesflare keeps both in one place. Its pricing page doesn't say whether LinkedIn messages sync, so check before you rely on it.
+
+### 11. NetHunt CRM
+
+NetHunt CRM is a sales CRM that works inside Gmail and runs sequences that combine email with LinkedIn messages. Its [LinkedIn CRM page](https://nethunt.com/linkedin-crm) calls LinkedIn the "Professional Network" throughout.
+
+- That page says you can send and receive messages from the CRM and "See messages on customer timeline."
+- Its sequences "Combine emails and Professional Network messages to connect with buyers effectively."
+- [Business costs $60 per user a month billed monthly](https://nethunt.com/pricing), with yearly pricing on request, and it's the first plan with the Professional Network integration.
+- Basic costs $24 per user a month billed yearly, or $30 monthly, and leaves the LinkedIn features out.
+- The 14 day trial includes every feature except custom SMTP and has no user limit.
+
+Its pages don't say which LinkedIn steps run on their own, so confirm that in the trial. NetHunt fits a team that lives in Gmail and wants both channels in one sequence.
+
+### 12. Nimble
+
+Nimble is a relationship CRM for small teams that syncs your email, contacts and calendar, with a browser extension called Prospector for LinkedIn. Its homepage says you can "Find, enrich, and engage LinkedIn leads instantly with Nimble Prospector."
+
+- Prospector creates contact records from LinkedIn profiles, and its [product page](https://www.nimble.com/prospector/) says it builds records "with verified emails and phone numbers."
+- [One plan costs $24.90 per seat a month billed yearly, or $29.90 monthly](https://www.nimble.com/pricing/), with Prospector included.
+- The 14 day trial needs no credit card and covers up to 5 licenses.
+- You can send email blasts or a series of automated emails from your own address.
+
+Refreshingly, there's only one plan to choose. Nimble's pages don't say whether LinkedIn messages sync, so it fits a small team that saves profiles from LinkedIn and follows up by email.
+
+### 13. Kanbox
+
+Kanbox is a LinkedIn prospecting tool that puts lead imports, automated sequences, a smart inbox and Kanban pipelines in one place. Its homepage doesn't use the word CRM, though for a solo seller its pipelines can stand in for one.
+
+- Its automations cover profile visits, messages and follow ups, and the inbox brings LinkedIn and Sales Navigator messages together, linked to campaigns and pipelines.
+- You can import leads from Sales Navigator and LinkedIn Recruiter searches, and from people who liked or commented on a post.
+- [Starter costs $20 a month, or $12 billed yearly](https://www.kanbox.io/en/pricing), with one campaign running at a time, and Pro costs $80 a month, or $50 per LinkedIn account billed yearly.
+- The 15 day trial needs no credit card.
+
+We found no CRM integrations on its pricing page, only webhooks and an API on Pro, so replies stay in Kanbox unless you wire them to another tool. It suits a seller who works from LinkedIn alone and wants the smallest setup.
 
 ## Best CRM for LinkedIn compared
 
@@ -173,10 +246,16 @@ Luckily for teams that prospect on LinkedIn and follow up by email, Salesflare k
 | Omniscient | Connected LinkedIn account | Yes, after approval | In the Inbox, linked to the person | 14 day trial, no card |
 | HubSpot | Sales Navigator CRM Sync | No, sequence steps are reminders | Logged by CRM Sync on Advanced Plus | Free CRM for 2 users |
 | Salesforce | Sales Navigator CRM Sync | Not listed | Logged by CRM Sync on Advanced Plus | Free Suite for 2 users |
+| Microsoft Dynamics 365 Sales | Sales Navigator controls and CRM Sync | Not listed | Logged by CRM Sync on Advanced Plus | Free trial |
 | Zoho CRM | Sales Navigator extension | By hand, from the record | Not listed | Free plan for 3 users |
+| Pipedrive | Surfe app from its marketplace | Not listed | Synced by Surfe, per its listing | 14 days, no card |
+| Attio | HeyReach app from its marketplace | Through HeyReach | Logged by the HeyReach app | Free plan for 3 seats |
 | folk | folkX Chrome extension | Not listed | Not listed | 2 weeks, no card |
 | Breakcold | Connected LinkedIn account | Not listed | Yes, synced to the record | 14 days, card required |
 | Salesflare | LinkedIn sidebar | Not listed | Not listed | 30 days, no card |
+| NetHunt CRM | Professional Network integration on Business | Not listed, messages run in sequences | On the customer timeline | 14 days, no user limit |
+| Nimble | Prospector browser extension | Not listed | Not listed | 14 days, no card |
+| Kanbox | Its own LinkedIn inbox | Not listed, sequences send messages and follow ups | In Kanbox, with no CRM sync listed | 15 days, no card |
 
 Thankfully, every CRM here has a free plan or a trial, so you can run the checks below before paying for a seat.
 
@@ -209,20 +288,22 @@ Each rule makes a fair question for any CRM you try:
 
 LinkedIn's CRM Sync makes a similar call. Its Salesforce guide says each LinkedIn profile links to a single CRM record, so when you keep duplicates, it picks the best scoring match. Frankly, that's a good reason to merge duplicates before you turn on any LinkedIn connection.
 
-## When to keep your CRM and add a LinkedIn connector
+## When to keep your CRM and add a LinkedIn tool
 
-If Pipedrive or Attio already runs your pipeline, a connector from its marketplace can bring LinkedIn in without a switch:
+If a CRM already runs your pipeline, you don't have to switch to bring LinkedIn in. Pipedrive with Surfe and Attio with HeyReach show the pattern, so check your own CRM's marketplace for a LinkedIn app.
 
-- Surfe's [Pipedrive listing](https://www.pipedrive.com/en/marketplace/app/surfe/97c68091c72b436b) says it can "Sync LinkedIn messages into Pipedrive" and add LinkedIn contacts in one click.
-- HeyReach's [Attio listing](https://attio.com/apps/hey-reach) logs connection requests, messages and replies in Attio, and matches leads "on email address and then LinkedIn URL."
+Before you launch one, run two checks on a real lead:
 
-Before you launch, check that a reply lands on the person you already have and stops their sequence. Our guide to [LinkedIn outreach tools with a CRM](/blog/linkedin-outreach-tools-with-crm/) compares tools that bring their own pipeline.
+- Reply from a second LinkedIn account and confirm the reply lands on the person you already have, with no duplicate.
+- Confirm that reply stops any follow up still scheduled for that person.
+
+Our guide to [LinkedIn outreach tools with a CRM](/blog/linkedin-outreach-tools-with-crm/) compares tools that bring their own pipeline.
 
 ## How to choose a CRM for LinkedIn prospecting
 
 Start from how your team prospects today, then use the trial to test where LinkedIn meets the record.
 
-![Which CRM for LinkedIn prospecting to try first: a team that wants LinkedIn outreach it approves inside the CRM starts with Omniscient; one that already pays for Sales Navigator Advanced Plus starts with HubSpot or Salesforce; one that wants a free plan for up to 3 users starts with Zoho CRM; one that works in LinkedIn with a browser extension starts with folk or Salesflare; one that sends every LinkedIn message by hand starts with Breakcold](/assets/blog/best-crm-for-linkedin/pick-a-crm.svg)
+![Which CRM for LinkedIn prospecting to try first: a team that wants LinkedIn outreach it approves inside the CRM starts with Omniscient; one that already pays for Sales Navigator Advanced Plus starts with HubSpot, Salesforce or Dynamics 365; one that wants a free plan for up to 3 users starts with Zoho CRM; one that likes a pipeline CRM and will add a LinkedIn app starts with Pipedrive or Attio; one that works in LinkedIn with a browser extension starts with folk, Salesflare or Nimble; one that sells from Gmail with email and LinkedIn in one sequence starts with NetHunt CRM; one that sends every LinkedIn message by hand starts with Breakcold; one that needs only a LinkedIn inbox and a Kanban board starts with Kanbox](/assets/blog/best-crm-for-linkedin/pick-a-crm.svg)
 
 ```steps
 1. List your senders: Write down who sends LinkedIn invitations today and whether each person will connect their own account.
@@ -240,13 +321,15 @@ Find leads, send LinkedIn messages you approve and keep every reply with the rig
 
 ```faq
 Q: What is the best CRM for LinkedIn prospecting?
-A: For small B2B teams that prospect on LinkedIn, we'd start with Omniscient. Teams on Sales Navigator Advanced Plus should look at HubSpot or Salesforce, and sellers who work in LinkedIn by hand can try folk or Salesflare.
+A: For small B2B teams that prospect on LinkedIn, we'd start with Omniscient. Teams on Sales Navigator Advanced Plus should look at HubSpot, Salesforce or Microsoft Dynamics 365 Sales, and sellers who work in LinkedIn by hand can try folk, Salesflare or Nimble.
 Q: Which CRMs integrate with LinkedIn Sales Navigator?
 A: LinkedIn lists CRM Sync for HubSpot, Microsoft Dynamics 365, Oracle Sales and Salesforce, and it needs Sales Navigator Advanced Plus. Zoho CRM also has a Sales Navigator extension, which its help page ties to Advanced Plus.
 Q: Can a CRM sync my LinkedIn messages?
-A: Sales Navigator Advanced Plus logs InMails and messages to the four CRMs LinkedIn supports. Breakcold syncs LinkedIn conversations through a connected account, and Omniscient puts replies in its Inbox, linked to the CRM person.
+A: Sales Navigator Advanced Plus logs InMails and messages to the four CRMs LinkedIn supports. Breakcold syncs LinkedIn conversations through a connected account, NetHunt CRM shows them on the customer timeline, and Omniscient puts replies in its Inbox, linked to the CRM person.
+Q: Which CRM sends LinkedIn messages for me?
+A: Omniscient sends invitations and messages your team approves, NetHunt CRM mixes LinkedIn messages into email sequences, and Kanbox automates profile visits, messages and follow ups next to its own pipelines. Attio connects to HeyReach, which logs its activity back in Attio.
 Q: Is it safe to connect a CRM to LinkedIn?
 A: CRM Sync on Sales Navigator Advanced Plus is the integration LinkedIn sells itself. LinkedIn's help pages say third party tools that scrape or automate its site put accounts at risk of restriction. Omniscient paces every send to lower that risk, and no pacing removes it.
 Q: Do I need Sales Navigator to use a CRM with LinkedIn?
-A: You need Advanced Plus for LinkedIn's own CRM Sync and for Zoho's Sales Navigator extension. Other extensions, connected accounts and CRMs with outreach built in can work from a regular LinkedIn account.
+A: You need Advanced Plus for LinkedIn's own CRM Sync, for the Sales Navigator controls in Dynamics 365 and for Zoho's Sales Navigator extension. Other extensions, connected accounts and CRMs with outreach built in can work from a regular LinkedIn account.
 ```

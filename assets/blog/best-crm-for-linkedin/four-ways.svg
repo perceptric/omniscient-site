@@ -1,50 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 812" width="720" height="812" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 984" width="720" height="984" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Four ways a CRM connects to LinkedIn</title>
-<desc id="d">One: Sales Navigator inside the CRM, which needs LinkedIn's Sales Navigator Advanced Plus plan, used by HubSpot, Salesforce and Zoho CRM. Two: a browser extension that works on the LinkedIn page you have open, used by folk, which saves the profile, and Salesflare, which adds a CRM sidebar. Three: a connected LinkedIn account, where new LinkedIn messages land on the matching CRM person, used by Breakcold and Omniscient. Four: outreach inside the CRM, which sends the invitations and messages your team approves, used by Omniscient. Only the first is an integration LinkedIn sells. Its help pages list extensions that scrape or automate its site among the software it doesn't permit.</desc>
-<rect width="720" height="812" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="811" fill="none" stroke="#0a0a0a"/>
+<desc id="d">One: Sales Navigator inside the CRM, which needs LinkedIn&#39;s Sales Navigator Advanced Plus plan, used by HubSpot, Salesforce, Microsoft Dynamics 365 Sales and Zoho CRM. Two: a browser extension that works on the LinkedIn page you have open, used by folk and Nimble, which save the profile, and Salesflare, which adds a CRM sidebar. Three: a connected LinkedIn account, where new LinkedIn messages land on the matching CRM person, used by Breakcold and Omniscient. Four: outreach inside the CRM, which sends LinkedIn messages in sequences, used by Omniscient, NetHunt CRM and Kanbox. Pipedrive and Attio reach LinkedIn through marketplace apps such as Surfe and HeyReach. Only the first is an integration LinkedIn sells. Its help pages list extensions that scrape or automate its site among the software it doesn&#39;t permit.</desc>
+<rect width="720" height="984" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="983" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Four ways in]</text>
 <text x="32" y="86" font-size="30" font-weight="600" fill="#0a0a0a">How a CRM connects <tspan fill="#a3a3a3">to LinkedIn</tspan></text>
 
-<rect x="32.5" y="118.5" width="280" height="132" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="312.5" y="118.5" width="375" height="132" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32.5" y="118.5" width="280" height="160" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="312.5" y="118.5" width="375" height="160" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="50" y="150" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">01</text>
 <text x="50" y="180" font-size="23" font-weight="600" fill="#0a0a0a">Sales Navigator</text>
 <text x="50" y="207" font-size="23" font-weight="600" fill="#0a0a0a">inside the CRM</text>
 <rect x="50.5" y="220.5" width="13" height="13" fill="#10b981" stroke="#0a0a0a"/>
-<text x="73" y="232" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[LinkedIn's own]</text>
+<text x="73" y="232" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[LinkedIn&#39;s own]</text>
 <text x="332" y="158" font-size="21" fill="#0a0a0a">Needs Sales Navigator</text>
 <text x="332" y="185" font-size="21" fill="#0a0a0a">Advanced Plus from LinkedIn</text>
-<text x="332" y="228" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot, Salesforce, Zoho CRM</text>
+<text x="332" y="228" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot, Salesforce,</text>
+<text x="332" y="255" font-size="21" font-weight="600" fill="#0a0a0a">Dynamics 365, Zoho CRM</text>
 
-<rect x="32.5" y="264.5" width="280" height="132" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="312.5" y="264.5" width="375" height="132" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="296" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">02</text>
-<text x="50" y="326" font-size="23" font-weight="600" fill="#0a0a0a">A browser</text>
-<text x="50" y="353" font-size="23" font-weight="600" fill="#0a0a0a">extension</text>
-<text x="332" y="304" font-size="21" fill="#0a0a0a">Works on the LinkedIn</text>
-<text x="332" y="331" font-size="21" fill="#0a0a0a">page you have open</text>
-<text x="332" y="374" font-size="21" font-weight="600" fill="#0a0a0a">folk, Salesflare</text>
+<rect x="32.5" y="292.5" width="280" height="160" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="312.5" y="292.5" width="375" height="160" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="324" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">02</text>
+<text x="50" y="354" font-size="23" font-weight="600" fill="#0a0a0a">A browser</text>
+<text x="50" y="381" font-size="23" font-weight="600" fill="#0a0a0a">extension</text>
+<text x="332" y="332" font-size="21" fill="#0a0a0a">Works on the LinkedIn</text>
+<text x="332" y="359" font-size="21" fill="#0a0a0a">page you have open</text>
+<text x="332" y="414" font-size="21" font-weight="600" fill="#0a0a0a">folk, Salesflare, Nimble</text>
 
-<rect x="32.5" y="410.5" width="280" height="132" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="312.5" y="410.5" width="375" height="132" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="442" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">03</text>
-<text x="50" y="472" font-size="23" font-weight="600" fill="#0a0a0a">A connected</text>
-<text x="50" y="499" font-size="23" font-weight="600" fill="#0a0a0a">LinkedIn account</text>
-<text x="332" y="450" font-size="21" fill="#0a0a0a">New LinkedIn messages land</text>
-<text x="332" y="477" font-size="21" fill="#0a0a0a">on the matching CRM person</text>
-<text x="332" y="520" font-size="21" font-weight="600" fill="#0a0a0a">Breakcold, Omniscient</text>
+<rect x="32.5" y="466.5" width="280" height="160" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="312.5" y="466.5" width="375" height="160" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="498" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">03</text>
+<text x="50" y="528" font-size="23" font-weight="600" fill="#0a0a0a">A connected</text>
+<text x="50" y="555" font-size="23" font-weight="600" fill="#0a0a0a">LinkedIn account</text>
+<text x="332" y="506" font-size="21" fill="#0a0a0a">New LinkedIn messages land</text>
+<text x="332" y="533" font-size="21" fill="#0a0a0a">on the matching CRM person</text>
+<text x="332" y="588" font-size="21" font-weight="600" fill="#0a0a0a">Breakcold, Omniscient</text>
 
-<rect x="32.5" y="556.5" width="280" height="132" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="312.5" y="556.5" width="375" height="132" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="588" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">04</text>
-<text x="50" y="618" font-size="23" font-weight="600" fill="#0a0a0a">Outreach inside</text>
-<text x="50" y="645" font-size="23" font-weight="600" fill="#0a0a0a">the CRM</text>
-<text x="332" y="596" font-size="21" fill="#0a0a0a">Sends the invitations and</text>
-<text x="332" y="623" font-size="21" fill="#0a0a0a">messages your team approves</text>
-<text x="332" y="666" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<rect x="32.5" y="640.5" width="280" height="160" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="312.5" y="640.5" width="375" height="160" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="672" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">04</text>
+<text x="50" y="702" font-size="23" font-weight="600" fill="#0a0a0a">Outreach inside</text>
+<text x="50" y="729" font-size="23" font-weight="600" fill="#0a0a0a">the CRM</text>
+<text x="332" y="680" font-size="21" fill="#0a0a0a">Sends LinkedIn messages</text>
+<text x="332" y="707" font-size="21" fill="#0a0a0a">in sequences</text>
+<text x="332" y="750" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient, NetHunt CRM,</text>
+<text x="332" y="777" font-size="21" font-weight="600" fill="#0a0a0a">Kanbox</text>
 
-<text x="32" y="728" font-size="20" fill="#737373">Only the first is an integration LinkedIn sells. Its help</text>
-<text x="32" y="756" font-size="20" fill="#737373">pages list extensions that scrape or automate its site</text>
-<text x="32" y="784" font-size="20" fill="#737373">among the software it doesn't permit.</text>
+<text x="32" y="842" font-size="20" fill="#737373">Pipedrive and Attio reach LinkedIn through marketplace</text>
+<text x="32" y="870" font-size="20" fill="#737373">apps such as Surfe and HeyReach. Only the first way is</text>
+<text x="32" y="898" font-size="20" fill="#737373">an integration LinkedIn sells; its help pages list</text>
+<text x="32" y="926" font-size="20" fill="#737373">extensions that scrape or automate its site among the</text>
+<text x="32" y="954" font-size="20" fill="#737373">software it doesn&#39;t permit.</text>
 </svg>
