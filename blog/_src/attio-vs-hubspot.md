@@ -98,8 +98,6 @@ We saw this difference up close when we wrote importers for both tools:
 - Attio's deal stages arrive as a list of statuses without probabilities, so our importer reads the won stage from Attio's celebration setting and the lost one from its name.
 - HubSpot keeps leads and customers in one contact list sorted by lifecycle stage, so our importer brings contacts at a lead stage over as leads.
 
-Interestingly, each shape pays off in a different place. HubSpot's fixed objects make forecasts work early, and Attio's open ones fit an unusual process without workarounds.
-
 ## Email, sequences and calls in Attio and HubSpot
 
 Both tools log email on the right records and keep sequences for their higher plans:
@@ -129,17 +127,17 @@ HeyReach | heyreach.io | LinkedIn outreach priced per sender | [Growth from $79 
 
 HubSpot puts its LinkedIn steps inside sequences on Professional and Enterprise, and they need a Sales Navigator subscription of their own. Its [knowledge base](https://knowledge.hubspot.com/sequences/create-and-edit-sequences) calls them task reminders, and completing one opens Sales Navigator on the contact's record so you can send the InMail or connection request yourself.
 
-LinkedIn Sales Navigator is a prospecting software from LinkedIn that adds advanced lead search and InMail to your account. Core and Advanced both offer a free trial to members who haven't had one in the past year.
+LinkedIn Sales Navigator is a prospecting software from LinkedIn that adds advanced search filters and InMail to your account. Core and Advanced both offer a free trial to members without a paid LinkedIn plan who haven't had a free trial in the past year.
 
 ![LinkedIn Sales Navigator homepage](tool:sales.linkedin.com)
 
-Attio teams that prospect on LinkedIn add other tools instead. Attio's Chrome extension turns LinkedIn profiles into records in one click, says a 2023 [changelog entry](https://attio.com/changelog/2023/updated-chrome-extension), though its current [help page](https://attio.com/help/reference/tools-and-extensions/attio-chrome-extension) doesn't mention LinkedIn.
+Attio teams that prospect on LinkedIn connect a separate tool through Attio's app marketplace instead.
 
 lemlist is a sales engagement software that runs email and LinkedIn steps in one campaign. Attio built the [lemlist app](https://attio.com/apps/lemlist), which adds Attio people to a campaign, and LinkedIn steps start on lemlist's Multichannel plan.
 
 ![lemlist homepage](tool:lemlist.com)
 
-HeyReach is a LinkedIn outreach software that sends from many accounts at once and charges per sender. Its [Attio app](https://attio.com/apps/hey-reach), built by Neon Deer Data Labs, pushes Attio people into HeyReach campaigns. Helpfully, it also logs accepted invitations and replies on each person's timeline.
+HeyReach is a LinkedIn outreach software that sends from many accounts at once and charges per sender. Its [Attio app](https://attio.com/apps/hey-reach), built by Neon Deer Data Labs, pushes Attio people into HeyReach campaigns. Helpfully, it can also log accepted invitations and replies on each person's timeline.
 
 ![HeyReach homepage](tool:heyreach.io)
 
@@ -168,7 +166,7 @@ Both tools meter AI with credits, counted in different ways:
 
 HubSpot's [credits help page](https://knowledge.hubspot.com/account-management/understand-hubspot-credits-and-billing) adds that free users can't use credits. Without extra capacity, features that use credits pause until your next reset date.
 
-Thankfully, both let you cap what AI costs each month. HubSpot sets a limit per feature, and Attio's [credits guide](https://attio.com/help/reference/workspace-settings-billing/manage-workspace-and-seat-credits) lets admins cap Ask Attio's share of the pool.
+Thankfully, both let you put limits on credit use. HubSpot sets a limit per feature, and Attio's [credits guide](https://attio.com/help/reference/workspace-settings-billing/manage-workspace-and-seat-credits) lets admins cap Ask Attio's share of the pool.
 
 ## Attio vs HubSpot pricing
 
@@ -186,9 +184,9 @@ What moves the bill more than the headline price:
 
 Happily, Attio's [migration guide](https://attio.com/help/reference/imports-exports/migrate-data-from-another-crm) moves HubSpot data into any paid Attio plan through Import2, which it says is free for Attio users. It covers companies, people, deals, custom objects, notes, tasks and files.
 
-Going the other way, HubSpot's [CRM page](https://www.hubspot.com/products/crm) lists CRM import on its free plan. Two details from building our own importers apply in either direction:
+Going the other way, HubSpot's [CRM page](https://www.hubspot.com/products/crm) lists CRM import on its free plan. Two lessons from building our own importers carry over to either move:
 
-- Our importer matches deal owners by email address, so invite your team with the same emails before you import.
+- Our importer matches deal owners by email address, so we'd invite your team with the same emails before any import.
 - If your Attio workspace relies on custom objects, check your HubSpot plan first, since HubSpot lists them on Enterprise.
 
 ## Where Omniscient fits

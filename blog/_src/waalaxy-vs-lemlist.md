@@ -78,9 +78,9 @@ Both tools send invitations and follow up messages on a schedule, so the bigger 
 
 In a [help article](https://intercom.help/waalaxy/en/articles/15587366-waalaxy-is-now-fully-cloud-based) dated July 1, 2026, Waalaxy says it "is now 100% cloud" and that its Chrome extension has left the Chrome Web Store. Campaigns run from the web app in the background, so you don't need LinkedIn open while they work, and an optional extension called Alien Copilot only speeds up imports.
 
-![Waalaxy homepage](tool:waalaxy.com)
-
 Interestingly, reviews written before July 2026 may still describe Waalaxy as a Chrome extension, so check the date on anything you read.
+
+![Waalaxy homepage](tool:waalaxy.com)
 
 Waalaxy's other LinkedIn features, from its own pages:
 

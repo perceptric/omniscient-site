@@ -89,11 +89,11 @@ We picked these rules because a wrong amount in a forecast does more harm than a
 
 ## LinkedIn outreach in HubSpot and Omniscient
 
-LinkedIn Sales Navigator is LinkedIn's own paid tool for finding buyers and sending InMail, and HubSpot's LinkedIn card and InMail steps run through it.
+LinkedIn Sales Navigator is a paid prospecting tool from LinkedIn that helps you find buyers and send InMail. HubSpot's LinkedIn card and InMail steps run through it.
 
 ![LinkedIn Sales Navigator homepage](tool:sales.linkedin.com)
 
-LinkedIn's [plans page](https://business.linkedin.com/sales-solutions/compare-plans) lists Core at US$119.99 a month and Advanced at US$159.99. Advanced Plus, the plan HubSpot's integration asks for, has no listed price, so you request a demo to get one.
+LinkedIn's [plans page](https://business.linkedin.com/sales-solutions/compare-plans) lists Core at US$119.99 and Advanced at US$159.99 a month on monthly billing. Advanced Plus, the plan HubSpot's integration asks for, has no listed price, so you request a demo to get one.
 
 HubSpot reaches LinkedIn through its [Sales Navigator integration](https://knowledge.hubspot.com/integrations/how-to-connect-hubspot-and-linkedin-sales-navigator), which has its own requirements:
 
