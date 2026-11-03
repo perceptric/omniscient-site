@@ -1,6 +1,7 @@
 /* Scenes (assets/scenes.js): small product screens that play step by step. A part with data-at="n" comes in at step n,
    a part with data-off="n" leaves at step n. Only transform and opacity move. The fx- classes pick how a part comes
-   in. This file holds the engine and the Product menu's three scenes; product.css styles the product pages' scenes. */
+   in. This file holds the engine, the Product and Resources menus' scenes and the home page's security scenes; product.css
+   styles the product pages' scenes. */
 @property --o0 { syntax: "*"; inherits: false; }
 @property --from { syntax: "*"; inherits: false; }
 @property --on { syntax: "*"; inherits: false; }
@@ -99,6 +100,97 @@
 .mtoast { position: absolute; right: 6px; top: 30px; display: flex; align-items: center; gap: 5px; padding: 4px 7px 4px 4px; color: var(--ink); --from: translateX(10px); }
 .mtoast i { display: block; font-size: 8px; }
 .mpp .mtoast b { color: var(--ink); }
+
+/* ---------- Resources menu ---------- */
+.nav__panel--resources { width: min(538px, calc(100vw - 32px)); }
+
+/* Blog: a post's cover fills in, its ranked tools tick in, then its decision tree lights a path to a tool */
+.mini .blg img, .mini .bli img, .mini .bleaf img { border-radius: 3px; }
+.mini-blog .mi { padding: 0 4px; }
+.bpost { width: 84px; flex: none; padding: 5px; display: flex; flex-direction: column; gap: 5px; }
+.bcov { height: 40px; border-radius: 5px; background: var(--hover); display: grid; grid-template-columns: repeat(3, 13px); grid-auto-rows: 13px; gap: 4px; place-content: center; }
+.blg { position: relative; display: block; width: 13px; height: 13px; }
+.blg .bring { position: absolute; inset: -2.5px; border: 1.5px solid var(--signal); border-radius: 5px; }
+.mini .bpost > b { font-size: 9px; line-height: 1.2; padding: 0 1px 1px; }
+.bstage { flex: 1; min-width: 0; align-self: stretch; align-items: center; justify-items: stretch; }
+.blist { display: flex; flex-direction: column; gap: 5px; }
+.bli { display: flex; align-items: center; gap: 5px; height: 22px; padding: 0 7px; background: #fff; border-radius: 6px; box-shadow: var(--sh-chip); font-weight: 600; white-space: nowrap; }
+.bn { width: 7px; color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+.btree { display: flex; flex-direction: column; align-items: center; }
+.mini .bq { font-size: 8.5px; margin-bottom: 4px; white-space: nowrap; }
+.bbr { display: flex; gap: 3px; }
+.btree .mt { height: 16px; padding: 0 4px; font-size: 8.5px; }
+.mini .bln { display: block; width: 1px; height: 7px; background: var(--signal); transform-origin: 50% 0; }
+.bq2 { gap: 3px; } .mini .bq2 i { font-size: 8.5px; } .mini .bq2 b { color: var(--green); }
+.btree .bleaf { height: 19px; padding: 0 6px 0 4px; font-size: 9.5px; font-weight: 600; }
+
+/* Security: the mailbox is read only, its sign-in token is sealed, and an email's text gives a fact and is not kept */
+.sacc { width: 102px; flex: none; padding: 8px; display: flex; flex-direction: column; gap: 7px; }
+.sacc .mr { gap: 4px; }
+.sacc .mr .mt { margin-left: auto; height: 15px; padding: 0 4px; font-size: 8.5px; }
+.sfld { display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--line); padding-top: 6px; }
+.mini .sfld > i { font-size: 8.5px; }
+.stok { font-family: "Geist Mono", ui-monospace, monospace; font-size: 8.5px; letter-spacing: 0; color: var(--ink); white-space: nowrap; }
+.sseal svg, .slab svg { width: 8px; height: 8px; flex: none; }
+.smail { flex: 1; min-width: 0; padding: 8px; display: flex; flex-direction: column; gap: 6px; }
+.smail .mr { gap: 4px; flex-wrap: wrap; }
+.mini .smail .mr i { font-size: 8.5px; }
+.sbody { height: 17px; align-items: center; }
+.slines { display: flex; flex-direction: column; gap: 3px; width: 100%; }
+.slines u { display: block; height: 3px; border-radius: 2px; background: var(--line); }
+.slines u:nth-child(2) { width: 86%; } .slines u:nth-child(3) { width: 58%; }
+.smail .mn { margin-top: 0; }
+
+/* ---------- Home page security: one scene per item, played once in view (the engine above) ---------- */
+.mini.sec-tile { display: flex; align-items: center; justify-content: center; height: 120px; margin-bottom: 4px; overflow: hidden; border-radius: var(--r-sm); background: var(--hover); box-shadow: var(--sh-chip); color: var(--ink); font-size: 9.5px; line-height: 1.25; letter-spacing: 0; text-align: left; cursor: default; }
+.sec2 .mini b { font: inherit; font-weight: 600; letter-spacing: 0; color: var(--ink); }
+.sec2 .mini i { font-size: 8.5px; }
+
+/* Read only: each email and meeting is read into the record, and the inbox keeps its unread mark */
+.sbox { width: 100px; flex: none; padding: 6px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.srow { position: relative; isolation: isolate; display: flex; align-items: center; gap: 5px; align-self: stretch; padding: 3px 4px; border-radius: 5px; }
+.srow > span { display: flex; flex-direction: column; min-width: 0; }
+.sdot { position: absolute; right: 5px; top: 50%; width: 5px; height: 5px; margin-top: -2.5px; border-radius: 999px; background: var(--ink); }
+.sscan { position: absolute; inset: 0; border-radius: 5px; background: var(--signal-soft); box-shadow: inset 0 0 0 1px var(--signal-line); z-index: -1; --from: none; }
+.srow > * { position: relative; }
+.srow > .sscan, .srow > .sdot { position: absolute; }
+.sbox > .mt { margin: 2px 0 0 4px; }
+
+/* Encrypted twice: a sign-in token is sealed with AES-256, inside a database encrypted at rest */
+.sx-enc .mi { justify-content: center; }
+.slay { position: absolute; left: 50%; top: 50%; border-radius: 12px; }
+.slay2 { width: 200px; height: 92px; margin: -46px 0 0 -100px; border: 1px dashed var(--line-strong); background: rgba(255,255,255,.45); --from: scale(.94); }
+.slay1 { width: 150px; height: 58px; margin: -25px 0 0 -75px; border: 1.5px solid var(--signal-line); border-radius: 10px; background: #fff; --from: scale(.9); --ease: var(--ease-spring); }
+.slab { position: absolute; left: 10px; top: -9px; height: 15px; padding: 0 5px; font-size: 8.5px; }
+.slay2 .slab { top: -8px; color: var(--ink-2); }
+.stoken { position: relative; z-index: 1; margin: 8px auto 0; padding: 6px 9px; display: flex; flex-direction: column; gap: 3px; align-items: flex-start; }
+.mini .stoken > i { font-size: 8.5px; }
+.stok.scipher { color: var(--green); }
+
+/* Never used for training: an email and a call give notes; training on them is crossed out */
+.sx-train .msrc { width: 50px; }
+.snotes { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.snote { padding: 7px 8px; display: flex; flex-direction: column; gap: 4px; }
+.strain { display: flex; align-items: center; gap: 4px; }
+.strain > .mt:first-child { position: relative; color: var(--muted); }
+.sstrike { position: absolute; left: 5px; right: 5px; top: 50%; height: 1px; background: var(--ink-2); }
+.sno { background: var(--solid); color: #fff; box-shadow: none; --from: scale(.6); }
+
+/* Deleted when you leave: Disconnect, and each stored email and meeting goes */
+.sacct { width: 220px; padding: 7px 8px; display: flex; flex-direction: column; gap: 5px; }
+.shd { display: flex; align-items: center; gap: 5px; }
+.shd .swap { margin-right: auto; }
+.shd .mt { height: 15px; padding: 0 5px; font-size: 8.5px; }
+.sbtn { display: inline-flex; align-items: center; height: 17px; padding: 0 7px; border-radius: 999px; box-shadow: 0 0 0 1px var(--line-strong); font-weight: 500; transition: opacity var(--normal) var(--ease-out); }
+.sx-del.s2 .sbtn, .sx-del:not(.is-armed) .sbtn { opacity: .4; }
+.sx-del.is-live.s2 .sbtn { animation: sc-press 360ms var(--ease-spring); }
+@keyframes sc-press { 0%, 100% { transform: none; } 35% { transform: scale(.9); } }
+.slist { min-height: 58px; align-items: center; justify-items: stretch; border-top: 1px solid var(--line); padding-top: 4px; }
+.srows { display: flex; flex-direction: column; gap: 1px; }
+.sx-del .srow { padding: 2px 0; gap: 5px; --to: translateX(-12px); }
+.sx-del .srow i { margin-left: auto; }
+.sempty { display: flex; align-items: center; justify-content: center; gap: 5px; font-weight: 500; color: var(--green); }
+.sempty svg { width: 10px; height: 10px; }
 
 /* The same scenes on the product pages' "rest of the platform" cards */
 .p-other .menu__tile.mini { height: 140px; margin-bottom: 6px; border-radius: 12px; }
