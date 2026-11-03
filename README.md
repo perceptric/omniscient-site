@@ -63,6 +63,12 @@ Posts are Markdown files in `blog/_src/`. `tools/blog.mjs` (Node 22, no npm pack
 5. Commit the `.md` file, `blog/<slug>/`, `blog/index.html`, `sitemap.xml` and `assets/blog/<slug>/` (with the
    `cover.svg` and `og.png` the build writes).
 
+Covers are pictures with no words, drawn by `tools/covers.mjs` from the post's type and the tools in its first
+```tools block: alternatives circle the tool they replace, a versus post puts two tools face to face, a best-of post
+gets a podium and a ranked list. Posts about a topic (limits, pricing, safety, data entry, sync) have their own scene,
+listed in `SCENES` there. Logos come from `tools/cover-logos.json`: add a new tool's logo there (or let
+`tools/shot-tools.mjs` save it to `assets/blog/logos/`) so it shows on covers.
+
 ```
 ---
 title: "Best LinkedIn Automation Tools in 2026"
@@ -88,7 +94,7 @@ summary: "One sentence for the index card."
 | `summary` | One sentence for the index card. |
 | `target_keyword` | The search phrase the post is written for. |
 | `read_minutes` | Shown on the post and the card. Left out, the build counts it from the words. |
-| `published`, `cover` | Optional. The first publish date (defaults to `updated`), and `dark` or `light` for the cover. |
+| `published` | Optional. The first publish date (defaults to `updated`). |
 
 ### Blocks
 

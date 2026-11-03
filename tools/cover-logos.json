@@ -1,0 +1,287 @@
+{
+"affinity.co": {
+"color": "#3c0c3c",
+"mode": "fill",
+"src": "/assets/blog/logos/affinity.co.png"
+},
+"attio.com": {
+"color": "#0f0f0f",
+"mode": "inset",
+"src": "/assets/blog/marks/attio.com.svg"
+},
+"breakcold.com": {
+"color": "#0c54fc",
+"mode": "fill",
+"src": "/assets/blog/logos/breakcold.com.png"
+},
+"calendar.google.com": {
+"color": "#4285f4",
+"mode": "inset",
+"src": "/assets/logos/calendar.svg"
+},
+"clarify.ai": {
+"color": "#0c243c",
+"mode": "fill",
+"src": "/assets/blog/logos/clarify.ai.png"
+},
+"close.com": {
+"color": "#0c6cfc",
+"mode": "inset",
+"src": "/assets/blog/logos/close.com.png"
+},
+"closelyhq.com": {
+"color": "#8454cc",
+"mode": "inset",
+"src": "/assets/blog/logos/closelyhq.com.png"
+},
+"coffee.ai": {
+"color": "#333333",
+"mode": "inset",
+"src": "/assets/blog/logos/coffee.ai.png"
+},
+"copper.com": {
+"color": "#fc3c6c",
+"mode": "fill",
+"src": "/assets/blog/logos/copper.com.png"
+},
+"day.ai": {
+"color": "#333333",
+"mode": "fill",
+"src": "/assets/blog/logos/day.ai.png"
+},
+"dripify.com": {
+"color": "#6c6cfc",
+"mode": "inset",
+"src": "/assets/blog/logos/dripify.com.png"
+},
+"dux-soup.com": {
+"color": "#0c84b4",
+"mode": "inset",
+"src": "/assets/blog/logos/dux-soup.com.png"
+},
+"dynamics.microsoft.com": {
+"color": "#fc5424",
+"mode": "inset",
+"src": "/assets/blog/logos/dynamics.microsoft.com.png"
+},
+"engagebay.com": {
+"color": "#6c3c9c",
+"mode": "inset",
+"src": "/assets/blog/logos/engagebay.com.png"
+},
+"expandi.io": {
+"color": "#24b4e4",
+"mode": "inset",
+"src": "/assets/blog/logos/expandi.io.png"
+},
+"firstsales.io": {
+"color": "#cc3c0c",
+"mode": "inset",
+"src": "/assets/blog/logos/firstsales.io.png"
+},
+"folk.app": {
+"color": "#333333",
+"mode": "inset",
+"src": "/assets/blog/logos/folk.app.png"
+},
+"freshsales.io": {
+"color": "#fc5454",
+"mode": "fill",
+"src": "/assets/blog/logos/freshsales.io.png"
+},
+"freshworks.com": {
+"color": "#fc5454",
+"mode": "fill",
+"src": "/assets/blog/logos/freshworks.com.png"
+},
+"getdex.com": {
+"color": "#5484fc",
+"mode": "fill",
+"src": "/assets/blog/logos/getdex.com.png"
+},
+"getsales.io": {
+"color": "#fc543c",
+"mode": "fill",
+"src": "/assets/blog/logos/getsales.io.png"
+},
+"gmail.com": {
+"color": "#ea4335",
+"mode": "inset",
+"src": "/assets/logos/gmail.svg"
+},
+"heyreach.io": {
+"color": "#b4b4fc",
+"mode": "fill",
+"src": "/assets/blog/logos/heyreach.io.png"
+},
+"hubspot.com": {
+"color": "#ff5c35",
+"mode": "fill",
+"src": "/assets/blog/logos/hubspot.com.png"
+},
+"kanbox.io": {
+"color": "#3c6cfc",
+"mode": "inset",
+"src": "/assets/blog/logos/kanbox.io.png"
+},
+"lagrowthmachine.com": {
+"color": "#2484fc",
+"mode": "inset",
+"src": "/assets/blog/logos/lagrowthmachine.com.png"
+},
+"lemlist.com": {
+"color": "#316bff",
+"mode": "fill",
+"src": "/assets/blog/marks/lemlist.com.svg"
+},
+"lessannoyingcrm.com": {
+"color": "#333333",
+"mode": "fill",
+"src": "/assets/blog/logos/lessannoyingcrm.com.png"
+},
+"lightfield.com": {
+"color": "#333333",
+"mode": "inset",
+"src": "/assets/blog/logos/lightfield.com.png"
+},
+"linkedhelper.com": {
+"color": "#2f6f9e",
+"mode": "inset",
+"src": "/assets/blog/marks/linkedhelper.com.svg"
+},
+"linkedin.com": {
+"color": "#0a66c2",
+"mode": "inset",
+"src": "/assets/logos/linkedin.svg"
+},
+"meet.google.com": {
+"color": "#00897b",
+"mode": "inset",
+"src": "/assets/logos/meet.svg"
+},
+"meetalfred.com": {
+"color": "#2454cc",
+"mode": "fill",
+"src": "/assets/blog/logos/meetalfred.com.png"
+},
+"microsoft.com": {
+"color": "#fc5424",
+"mode": "inset",
+"src": "/assets/blog/logos/microsoft.com.png"
+},
+"monday.com": {
+"color": "#fccc0c",
+"mode": "inset",
+"src": "/assets/blog/logos/monday.com.png"
+},
+"nethunt.com": {
+"color": "#0c6cfc",
+"mode": "fill",
+"src": "/assets/blog/logos/nethunt.com.png"
+},
+"nimble.com": {
+"color": "#0c84cc",
+"mode": "fill",
+"src": "/assets/blog/logos/nimble.com.png"
+},
+"nutshell.com": {
+"color": "#fc540c",
+"mode": "inset",
+"src": "/assets/blog/logos/nutshell.com.png"
+},
+"outlook.com": {
+"color": "#0078d4",
+"mode": "fill",
+"src": "/assets/logos/outlook.jpg"
+},
+"overloop.com": {
+"color": "#b43ccc",
+"mode": "fill",
+"src": "/assets/blog/logos/overloop.com.png"
+},
+"pipedrive.com": {
+"color": "#0c6c3c",
+"mode": "fill",
+"src": "/assets/blog/logos/pipedrive.com.png"
+},
+"premium.linkedin.com": {
+"color": "#0a66c2",
+"mode": "inset",
+"src": "/assets/logos/linkedin.svg"
+},
+"sales.linkedin.com": {
+"color": "#0a66c2",
+"mode": "inset",
+"src": "/assets/logos/linkedin.svg"
+},
+"salesflare.com": {
+"color": "#0c54fc",
+"mode": "inset",
+"src": "/assets/blog/logos/salesflare.com.png"
+},
+"salesforce.com": {
+"color": "#00a1e0",
+"mode": "inset",
+"src": "/assets/logos/salesforce.svg"
+},
+"salesrobot.co": {
+"color": "#3cb4fc",
+"mode": "fill",
+"src": "/assets/blog/logos/salesrobot.co.png"
+},
+"skylead.io": {
+"color": "#0c84fc",
+"mode": "inset",
+"src": "/assets/blog/logos/skylead.io.png"
+},
+"slack.com": {
+"color": "#4a154b",
+"mode": "inset",
+"src": "/assets/logos/slack.svg"
+},
+"streak.com": {
+"color": "#fc6c3c",
+"mode": "inset",
+"src": "/assets/blog/logos/streak.com.png"
+},
+"superlinkin.com": {
+"color": "#0c6ccc",
+"mode": "fill",
+"src": "/assets/blog/logos/superlinkin.com.png"
+},
+"teams.microsoft.com": {
+"color": "#5059c9",
+"mode": "inset",
+"src": "/assets/logos/teams.png"
+},
+"topo.io": {
+"color": "#e4b40c",
+"mode": "inset",
+"src": "/assets/blog/logos/topo.io.png"
+},
+"tryomniscient.com": {
+"color": "#0c8c5e",
+"mode": "fill",
+"src": "/assets/blog/logos/tryomniscient.com.png"
+},
+"twenty.com": {
+"color": "#333333",
+"mode": "fill",
+"src": "/assets/blog/logos/twenty.com.png"
+},
+"waalaxy.com": {
+"color": "#2454cc",
+"mode": "inset",
+"src": "/assets/blog/logos/waalaxy.com.png"
+},
+"zoho.com": {
+"color": "#fcb424",
+"mode": "inset",
+"src": "/assets/blog/logos/zoho.com.png"
+},
+"zoom.us": {
+"color": "#2d8cff",
+"mode": "inset",
+"src": "/assets/logos/zoom.svg"
+}
+}
