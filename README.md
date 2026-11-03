@@ -15,9 +15,10 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `partials/header.html`, `partials/footer.html` | The site header and footer. |
 | `assets/base.css` | Brand tokens, reset, type, tags, buttons, the header with the Product and Resources menus, the phone menu, footer, reading pages. |
 | `assets/home.css`, `assets/home.js` | The home page (`docs/home-v3.md`): hero, three full-screen sections (pipeline, conversations, proposals) each with one big product screen, tools it replaces, security, pricing and questions. |
-| `product/linkedin-outbound/`, `product/crm/`, `product/deal-room/` | The three product pages, written by `tools/products/gen.py` (edit the copy there, then run it and `node tools/layout.mjs`). Styles in `assets/product.css`, shots reuse `assets/home.css`, `assets/product.js` plays each shot once. |
+| `product/linkedin-outbound/`, `product/crm/`, `product/deal-room/` | The three product pages, written by `tools/products/gen.py` (edit the copy there, then run it and `node tools/layout.mjs`). Styles in `assets/product.css`, shots reuse `assets/home.css`. Each feature's shot is a scene that plays what the feature does (see `assets/scenes.js`); `assets/product.js` plays the hero shots once. |
 | `assets/img/people/` | Portraits used in the product shots, from Unsplash (free to use, credited in the footer). |
 | `assets/site.js` | Opens and closes the menus, the phone menu, the header line on scroll and scroll reveals. |
+| `assets/scenes.js`, `assets/scenes.css` | Scenes: small product screens in HTML and CSS that play step by step. A part with `data-at="n"` comes in at step n and one with `data-off="n"` leaves; `data-t` lists the wait before each step. The Product menu's three scenes (written in `partials/header.html`, shown again on the product pages' other-product cards) play while the menu is open and loop on the hovered card; product page scenes play once in view and again on hover or tap. Transform and opacity only; reduced motion shows the last frame. |
 | `assets/logos/` | Logos of the tools Omniscient works with. |
 | `assets/brand/` | favicon.ico, icon.svg, apple-icon.png, share image, and `omniscient-brand.css` (the brand stylesheet for embeds, emails and decks). |
 | `tools/layout.mjs` | Copies the partials into every page, stamps the CSS and JS links and rebuilds `sitemap.xml`. |
