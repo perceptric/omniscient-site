@@ -2,93 +2,92 @@
 <title id="t">Which AI CRM to try first</title>
 <desc id="d">If you want LinkedIn outreach and a CRM in one, look at Omniscient. If you run marketing and sales on one platform, look at HubSpot. If you have an admin and need custom builds, look at Salesforce. If you run your company on Microsoft, look at Dynamics 365. If you want to design your own data model, look at Attio. If you want agents that work from team memory, look at Day AI. If you want to retire your recorder and sequencer, look at Lightfield. If you want unlimited seats on a small budget, look at Clarify. If you spend most of the day on the phone, look at Close. If you plan your week around pipeline stages, look at Pipedrive. If you already use other Zoho apps, look at Zoho CRM. If you already plan your work in monday.com, look at monday CRM. If you want AI lead scoring on a low seat price, look at Freshsales. If you track relationships that start on LinkedIn, look at folk.</desc>
 <rect width="720" height="1144" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="1143" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Pick a CRM]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Start from how you sell <tspan fill="#a3a3a3">then try two</tspan></text>
-<text x="32" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[If you]</text>
-<text x="508" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Look at]</text>
-<rect x="32.5" y="144.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="181" font-size="20" fill="#0a0a0a">Want LinkedIn outreach and a CRM in one</text>
-<line x1="484" x2="499" y1="174" y2="174" stroke="#0a0a0a"/>
-<polygon points="499,169 508,174 499,179" fill="#0a0a0a"/>
-<rect x="508.5" y="144.5" width="179" height="59" fill="#10b981" stroke="#0a0a0a"/>
-<text x="524" y="182" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
-<rect x="32.5" y="214.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="251" font-size="20" fill="#0a0a0a">Run marketing and sales on one platform</text>
-<line x1="484" x2="499" y1="244" y2="244" stroke="#0a0a0a"/>
-<polygon points="499,239 508,244 499,249" fill="#0a0a0a"/>
-<rect x="508.5" y="214.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="252" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot</text>
-<rect x="32.5" y="284.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="321" font-size="20" fill="#0a0a0a">Have an admin and need custom builds</text>
-<line x1="484" x2="499" y1="314" y2="314" stroke="#0a0a0a"/>
-<polygon points="499,309 508,314 499,319" fill="#0a0a0a"/>
-<rect x="508.5" y="284.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="322" font-size="21" font-weight="600" fill="#0a0a0a">Salesforce</text>
-<rect x="32.5" y="354.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="391" font-size="20" fill="#0a0a0a">Run your company on Microsoft</text>
-<line x1="484" x2="499" y1="384" y2="384" stroke="#0a0a0a"/>
-<polygon points="499,379 508,384 499,389" fill="#0a0a0a"/>
-<rect x="508.5" y="354.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="392" font-size="21" font-weight="600" fill="#0a0a0a">Dynamics 365</text>
-<rect x="32.5" y="424.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="461" font-size="20" fill="#0a0a0a">Want to design your own data model</text>
-<line x1="484" x2="499" y1="454" y2="454" stroke="#0a0a0a"/>
-<polygon points="499,449 508,454 499,459" fill="#0a0a0a"/>
-<rect x="508.5" y="424.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="462" font-size="21" font-weight="600" fill="#0a0a0a">Attio</text>
-<rect x="32.5" y="494.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="531" font-size="20" fill="#0a0a0a">Want agents that work from team memory</text>
-<line x1="484" x2="499" y1="524" y2="524" stroke="#0a0a0a"/>
-<polygon points="499,519 508,524 499,529" fill="#0a0a0a"/>
-<rect x="508.5" y="494.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="532" font-size="21" font-weight="600" fill="#0a0a0a">Day AI</text>
-<rect x="32.5" y="564.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="601" font-size="20" fill="#0a0a0a">Want to retire your recorder and sequencer</text>
-<line x1="484" x2="499" y1="594" y2="594" stroke="#0a0a0a"/>
-<polygon points="499,589 508,594 499,599" fill="#0a0a0a"/>
-<rect x="508.5" y="564.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="602" font-size="21" font-weight="600" fill="#0a0a0a">Lightfield</text>
-<rect x="32.5" y="634.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="671" font-size="20" fill="#0a0a0a">Want unlimited seats on a small budget</text>
-<line x1="484" x2="499" y1="664" y2="664" stroke="#0a0a0a"/>
-<polygon points="499,659 508,664 499,669" fill="#0a0a0a"/>
-<rect x="508.5" y="634.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="672" font-size="21" font-weight="600" fill="#0a0a0a">Clarify</text>
-<rect x="32.5" y="704.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="741" font-size="20" fill="#0a0a0a">Spend most of the day on the phone</text>
-<line x1="484" x2="499" y1="734" y2="734" stroke="#0a0a0a"/>
-<polygon points="499,729 508,734 499,739" fill="#0a0a0a"/>
-<rect x="508.5" y="704.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="742" font-size="21" font-weight="600" fill="#0a0a0a">Close</text>
-<rect x="32.5" y="774.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="811" font-size="20" fill="#0a0a0a">Plan your week around pipeline stages</text>
-<line x1="484" x2="499" y1="804" y2="804" stroke="#0a0a0a"/>
-<polygon points="499,799 508,804 499,809" fill="#0a0a0a"/>
-<rect x="508.5" y="774.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="812" font-size="21" font-weight="600" fill="#0a0a0a">Pipedrive</text>
-<rect x="32.5" y="844.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="881" font-size="20" fill="#0a0a0a">Already use other Zoho apps</text>
-<line x1="484" x2="499" y1="874" y2="874" stroke="#0a0a0a"/>
-<polygon points="499,869 508,874 499,879" fill="#0a0a0a"/>
-<rect x="508.5" y="844.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="882" font-size="21" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
-<rect x="32.5" y="914.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="951" font-size="20" fill="#0a0a0a">Already plan your work in monday.com</text>
-<line x1="484" x2="499" y1="944" y2="944" stroke="#0a0a0a"/>
-<polygon points="499,939 508,944 499,949" fill="#0a0a0a"/>
-<rect x="508.5" y="914.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="952" font-size="21" font-weight="600" fill="#0a0a0a">monday CRM</text>
-<rect x="32.5" y="984.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="1021" font-size="20" fill="#0a0a0a">Want AI lead scoring on a low seat price</text>
-<line x1="484" x2="499" y1="1014" y2="1014" stroke="#0a0a0a"/>
-<polygon points="499,1009 508,1014 499,1019" fill="#0a0a0a"/>
-<rect x="508.5" y="984.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="1022" font-size="21" font-weight="600" fill="#0a0a0a">Freshsales</text>
-<rect x="32.5" y="1054.5" width="451" height="59" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="1091" font-size="20" fill="#0a0a0a">Track relationships that start on LinkedIn</text>
-<line x1="484" x2="499" y1="1084" y2="1084" stroke="#0a0a0a"/>
-<polygon points="499,1079 508,1084 499,1089" fill="#0a0a0a"/>
-<rect x="508.5" y="1054.5" width="179" height="59" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="524" y="1092" font-size="21" font-weight="600" fill="#0a0a0a">folk</text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Pick a CRM</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Start from how you sell <tspan fill="#171717">then try two</tspan></text>
+<text x="32" y="128" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">If you</text>
+<text x="508" y="128" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Look at</text>
+<rect x="32.5" y="144.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="181" font-size="20" fill="#171717">Want LinkedIn outreach and a CRM in one</text>
+<line x1="484" x2="499" y1="174" y2="174" stroke="#8a8a85"/>
+<polygon points="499,169 508,174 499,179" fill="#333333"/>
+<rect x="508.5" y="144.5" width="179" height="59" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<text x="524" y="182" font-size="21" font-weight="500" fill="#171717">Omniscient</text>
+<rect x="32.5" y="214.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="251" font-size="20" fill="#171717">Run marketing and sales on one platform</text>
+<line x1="484" x2="499" y1="244" y2="244" stroke="#8a8a85"/>
+<polygon points="499,239 508,244 499,249" fill="#333333"/>
+<rect x="508.5" y="214.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="252" font-size="21" font-weight="500" fill="#171717">HubSpot</text>
+<rect x="32.5" y="284.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="321" font-size="20" fill="#171717">Have an admin and need custom builds</text>
+<line x1="484" x2="499" y1="314" y2="314" stroke="#8a8a85"/>
+<polygon points="499,309 508,314 499,319" fill="#333333"/>
+<rect x="508.5" y="284.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="322" font-size="21" font-weight="500" fill="#171717">Salesforce</text>
+<rect x="32.5" y="354.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="391" font-size="20" fill="#171717">Run your company on Microsoft</text>
+<line x1="484" x2="499" y1="384" y2="384" stroke="#8a8a85"/>
+<polygon points="499,379 508,384 499,389" fill="#333333"/>
+<rect x="508.5" y="354.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="392" font-size="21" font-weight="500" fill="#171717">Dynamics 365</text>
+<rect x="32.5" y="424.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="461" font-size="20" fill="#171717">Want to design your own data model</text>
+<line x1="484" x2="499" y1="454" y2="454" stroke="#8a8a85"/>
+<polygon points="499,449 508,454 499,459" fill="#333333"/>
+<rect x="508.5" y="424.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="462" font-size="21" font-weight="500" fill="#171717">Attio</text>
+<rect x="32.5" y="494.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="531" font-size="20" fill="#171717">Want agents that work from team memory</text>
+<line x1="484" x2="499" y1="524" y2="524" stroke="#8a8a85"/>
+<polygon points="499,519 508,524 499,529" fill="#333333"/>
+<rect x="508.5" y="494.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="532" font-size="21" font-weight="500" fill="#171717">Day AI</text>
+<rect x="32.5" y="564.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="601" font-size="20" fill="#171717">Want to retire your recorder and sequencer</text>
+<line x1="484" x2="499" y1="594" y2="594" stroke="#8a8a85"/>
+<polygon points="499,589 508,594 499,599" fill="#333333"/>
+<rect x="508.5" y="564.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="602" font-size="21" font-weight="500" fill="#171717">Lightfield</text>
+<rect x="32.5" y="634.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="671" font-size="20" fill="#171717">Want unlimited seats on a small budget</text>
+<line x1="484" x2="499" y1="664" y2="664" stroke="#8a8a85"/>
+<polygon points="499,659 508,664 499,669" fill="#333333"/>
+<rect x="508.5" y="634.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="672" font-size="21" font-weight="500" fill="#171717">Clarify</text>
+<rect x="32.5" y="704.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="741" font-size="20" fill="#171717">Spend most of the day on the phone</text>
+<line x1="484" x2="499" y1="734" y2="734" stroke="#8a8a85"/>
+<polygon points="499,729 508,734 499,739" fill="#333333"/>
+<rect x="508.5" y="704.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="742" font-size="21" font-weight="500" fill="#171717">Close</text>
+<rect x="32.5" y="774.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="811" font-size="20" fill="#171717">Plan your week around pipeline stages</text>
+<line x1="484" x2="499" y1="804" y2="804" stroke="#8a8a85"/>
+<polygon points="499,799 508,804 499,809" fill="#333333"/>
+<rect x="508.5" y="774.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="812" font-size="21" font-weight="500" fill="#171717">Pipedrive</text>
+<rect x="32.5" y="844.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="881" font-size="20" fill="#171717">Already use other Zoho apps</text>
+<line x1="484" x2="499" y1="874" y2="874" stroke="#8a8a85"/>
+<polygon points="499,869 508,874 499,879" fill="#333333"/>
+<rect x="508.5" y="844.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="882" font-size="21" font-weight="500" fill="#171717">Zoho CRM</text>
+<rect x="32.5" y="914.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="951" font-size="20" fill="#171717">Already plan your work in monday.com</text>
+<line x1="484" x2="499" y1="944" y2="944" stroke="#8a8a85"/>
+<polygon points="499,939 508,944 499,949" fill="#333333"/>
+<rect x="508.5" y="914.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="952" font-size="21" font-weight="500" fill="#171717">monday CRM</text>
+<rect x="32.5" y="984.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="1021" font-size="20" fill="#171717">Want AI lead scoring on a low seat price</text>
+<line x1="484" x2="499" y1="1014" y2="1014" stroke="#8a8a85"/>
+<polygon points="499,1009 508,1014 499,1019" fill="#333333"/>
+<rect x="508.5" y="984.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="1022" font-size="21" font-weight="500" fill="#171717">Freshsales</text>
+<rect x="32.5" y="1054.5" width="451" height="59" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="1091" font-size="20" fill="#171717">Track relationships that start on LinkedIn</text>
+<line x1="484" x2="499" y1="1084" y2="1084" stroke="#8a8a85"/>
+<polygon points="499,1079 508,1084 499,1089" fill="#333333"/>
+<rect x="508.5" y="1054.5" width="179" height="59" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="524" y="1092" font-size="21" font-weight="500" fill="#171717">folk</text>
 </svg>

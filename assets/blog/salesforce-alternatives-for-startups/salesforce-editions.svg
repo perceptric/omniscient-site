@@ -2,41 +2,40 @@
 <title id="t">Salesforce Sales Cloud editions, price per user a month</title>
 <desc id="d">Price per user a month for each Salesforce Sales Cloud edition, from Salesforce&#x27;s pricing page on November 3, 2026. Free Suite: $0, for up to 2 users. Starter Suite: $25, billed monthly or yearly. Pro Suite: $100, billed yearly, and the first edition with sales quoting and forecasting. Core: $195, Advanced: $395 and Max: $550, each billed yearly. Agentforce for Sales is an add on from $125 per user a month, and the page says AI can be added to Core and above.</desc>
 <rect width="560" height="660" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="659" fill="none" stroke="#0a0a0a"/>
-<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Salesforce Sales Cloud]</text>
-<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">Price per user a month <tspan fill="#a3a3a3">by edition</tspan></text>
-<line x1="200.0" y1="116" x2="200.0" y2="470" stroke="#e5e5e5"/>
-<text x="200.0" y="492" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$0</text>
-<line x1="298.2" y1="116" x2="298.2" y2="470" stroke="#e5e5e5"/>
-<text x="298.2" y="492" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$200</text>
-<line x1="396.4" y1="116" x2="396.4" y2="470" stroke="#e5e5e5"/>
-<text x="396.4" y="492" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$400</text>
-<text x="24" y="142" font-size="20" font-weight="600" fill="#0a0a0a">Free Suite</text>
+<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Salesforce Sales Cloud</text>
+<text x="24" y="84" font-size="26" font-weight="500" fill="#171717">Price per user a month <tspan fill="#171717">by edition</tspan></text>
+<line x1="200.0" y1="116" x2="200.0" y2="470" stroke="#ebebeb"/>
+<text x="200.0" y="492" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">$0</text>
+<line x1="298.2" y1="116" x2="298.2" y2="470" stroke="#ebebeb"/>
+<text x="298.2" y="492" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">$200</text>
+<line x1="396.4" y1="116" x2="396.4" y2="470" stroke="#ebebeb"/>
+<text x="396.4" y="492" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">$400</text>
+<text x="24" y="142" font-size="20" font-weight="500" fill="#171717">Free Suite</text>
 <text x="24" y="166" font-size="17" fill="#737373">Up to 2 users</text>
-<text x="210.0" y="152" font-size="19" font-weight="600" fill="#0a0a0a">$0</text>
-<text x="24" y="200" font-size="20" font-weight="600" fill="#0a0a0a">Starter Suite</text>
+<text x="210.0" y="152" font-size="19" font-weight="600" fill="#171717">$0</text>
+<text x="24" y="200" font-size="20" font-weight="500" fill="#171717">Starter Suite</text>
 <text x="24" y="224" font-size="17" fill="#737373">Monthly or yearly</text>
-<rect x="200" y="190" width="12.3" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="222.3" y="210" font-size="19" font-weight="600" fill="#0a0a0a">$25</text>
-<text x="24" y="258" font-size="20" font-weight="600" fill="#0a0a0a">Pro Suite</text>
+<rect x="200" y="190" width="12.3" height="26" fill="#333333" stroke="#ebebeb" rx="6"/>
+<text x="222.3" y="210" font-size="19" font-weight="600" fill="#171717">$25</text>
+<text x="24" y="258" font-size="20" font-weight="500" fill="#171717">Pro Suite</text>
 <text x="24" y="282" font-size="17" fill="#737373">Billed yearly</text>
-<rect x="200" y="248" width="49.1" height="26" fill="#10b981" stroke="#0a0a0a"/>
-<text x="259.1" y="268" font-size="19" font-weight="600" fill="#0a0a0a">$100</text>
-<text x="24" y="316" font-size="20" font-weight="600" fill="#0a0a0a">Core</text>
+<rect x="200" y="248" width="49.1" height="26" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<text x="259.1" y="268" font-size="19" font-weight="600" fill="#171717">$100</text>
+<text x="24" y="316" font-size="20" font-weight="500" fill="#171717">Core</text>
 <text x="24" y="340" font-size="17" fill="#737373">Billed yearly</text>
-<rect x="200" y="306" width="95.7" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="305.7" y="326" font-size="19" font-weight="600" fill="#0a0a0a">$195</text>
-<text x="24" y="374" font-size="20" font-weight="600" fill="#0a0a0a">Advanced</text>
+<rect x="200" y="306" width="95.7" height="26" fill="#333333" stroke="#ebebeb" rx="6"/>
+<text x="305.7" y="326" font-size="19" font-weight="600" fill="#171717">$195</text>
+<text x="24" y="374" font-size="20" font-weight="500" fill="#171717">Advanced</text>
 <text x="24" y="398" font-size="17" fill="#737373">Billed yearly</text>
-<rect x="200" y="364" width="193.9" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="403.9" y="384" font-size="19" font-weight="600" fill="#0a0a0a">$395</text>
-<text x="24" y="432" font-size="20" font-weight="600" fill="#0a0a0a">Max</text>
+<rect x="200" y="364" width="193.9" height="26" fill="#333333" stroke="#ebebeb" rx="6"/>
+<text x="403.9" y="384" font-size="19" font-weight="600" fill="#171717">$395</text>
+<text x="24" y="432" font-size="20" font-weight="500" fill="#171717">Max</text>
 <text x="24" y="456" font-size="17" fill="#737373">Billed yearly</text>
-<rect x="200" y="422" width="270.0" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="480.0" y="442" font-size="19" font-weight="600" fill="#0a0a0a">$550</text>
-<rect x="24" y="517" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<text x="52" y="532" font-size="17" fill="#0a0a0a">Quoting and forecasting start on Pro Suite</text>
-<text x="24" y="569" font-size="17" fill="#0a0a0a">Agentforce for Sales is an add on, from $125 a user</text>
-<text x="24" y="594" font-size="17" fill="#0a0a0a">a month. AI can be added to Core and above.</text>
-<text x="24" y="631" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">Salesforce pricing page, November 3, 2026</text>
+<rect x="200" y="422" width="270.0" height="26" fill="#333333" stroke="#ebebeb" rx="6"/>
+<text x="480.0" y="442" font-size="19" font-weight="600" fill="#171717">$550</text>
+<rect x="24" y="517" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="52" y="532" font-size="17" fill="#171717">Quoting and forecasting start on Pro Suite</text>
+<text x="24" y="569" font-size="17" fill="#171717">Agentforce for Sales is an add on, from $125 a user</text>
+<text x="24" y="594" font-size="17" fill="#171717">a month. AI can be added to Core and above.</text>
+<text x="24" y="631" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Salesforce pricing page, November 3, 2026</text>
 </svg>

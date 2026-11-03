@@ -38,9 +38,10 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 - **Privacy or Terms:** edit the text in `privacy/index.html` or `terms/index.html` and change the
   "Last updated" date. Google's OAuth review reads these pages, so keep the URLs `/privacy` and `/terms`.
 - **Footer year:** it is plain text in `partials/footer.html`. Change it each January.
-- **Brand:** follow `docs/brand.md` in the app repo. Black and white with plain grays, and emerald as the one signal
-  (shared with Claritia). Square corners everywhere, 1px black frames, no shadows, mono section labels in brackets,
-  gray bands with grain behind product shots (the app's #f5f5f5 and #ebebeb). No gradients. The logo is the O: a ring with an emerald point.
+- **Brand:** follow `docs/brand.md` in the app repo: the calm style shared with Claritia. A warm off-white page, white
+  cards lifted by soft ring shadows, corners that grow with the size of the thing, Inter for every word, green
+  (#0C8C5E) as the one accent and a dark gray primary button. Headings are one tone. Product shots sit on a soft rounded
+  field. No gradients. The logo is the O: a ring with a green point.
 - **Site plan:** `docs/site-architecture.md` (menus, sitemap, page template, build order). Hidden from visitors.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
@@ -57,7 +58,10 @@ Posts are Markdown files in `blog/_src/`. `tools/blog.mjs` (Node 22, no npm pack
 
 1. Write `blog/_src/<slug>.md`: the frontmatter, then one `#` title line, then the post.
 2. Put its pictures in `assets/blog/<slug>/`: SVG charts and diagrams, and `<name>.shot.html` snippets for product
-   shots drawn like the ones on the product pages. At least 3 per post.
+   shots drawn like the ones on the product pages. At least 3 per post. Charts follow the calm style: a white
+   ground with no outer frame (the page rounds it and adds the shadow), a small gray Inter label over a one-tone
+   title, light #EBEBEB lines, rounded boxes, dark gray (#333333) for marks and bars, and green (#0C8C5E) only for
+   Omniscient or the one thing that matters. Shots use `var(--frame)` for lines and `var(--solid)` for dark fills.
 3. Run `node tools/blog.mjs <slug>` and fix what it prints. Preview at http://localhost:8000/blog/<slug>/.
 4. Run `node tools/blog.mjs --all`, so the index, the related posts on other pages and `sitemap.xml` pick it up.
 5. Commit the `.md` file, `blog/<slug>/`, `blog/index.html`, `sitemap.xml` and `assets/blog/<slug>/` (with the
@@ -106,11 +110,11 @@ code and `---`. These fenced blocks render in the brand:
 |---|---|---|
 | ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. | A framed comparison table. Each tool gets its logo from `assets/blog/logos/`, else `assets/logos/`, else its site's favicon. |
 | ` ```rating ` | One line: `4.8 \| G2 \| https://www.g2.com/products/<tool>/reviews`. Only a rating read on that site. | Right under a numbered tool heading, above its screenshot: five stars filled to the score, "4.8/5" and the source's name, linked in a new tab with `rel="nofollow noopener"`. No JSON-LD, since Google doesn't allow review markup for ratings gathered from other sites. |
-| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/?utm_source=blog&utm_medium=<slug>`. | A black primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
-| ` ```callout ` | One or two sentences. | A framed note. |
+| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/?utm_source=blog&utm_medium=<slug>`. | A dark gray primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
+| ` ```callout ` | One or two sentences. | A note on a white card with a green dot. |
 | ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
 | ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. No heading above it. | A "FAQs" heading (in the contents list), questions that open and close, plus FAQPage JSON-LD. |
-| ` ```steps ` | `1. Title: text` lines. | A framed, numbered step list. |
+| ` ```steps ` | `1. Title: text` lines. | A numbered step list on a white card. |
 
 Pictures sit in the gray grain band:
 
@@ -173,7 +177,7 @@ You can try Salesflare free for 30 days. Paid plans, billed yearly:
 ````
 
 Inside a numbered tool, `####` headings are plain 16px semibold, their lists sit tight, and the lists under Pros
-and Cons get a small square + (emerald) or − (gray) in place of the bullet. Their ids start with the tool's
+and Cons get a small rounded + (green) or − (gray) in place of the bullet. Their ids start with the tool's
 (`#3-salesflare-pros`). On a desktop, the contents list shows a list's 3 to 15 numbered tools under its `##`
 while you read that section; the phone contents keep the `##` headings only.
 

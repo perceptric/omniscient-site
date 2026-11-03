@@ -2,58 +2,57 @@
 <title id="t">What folk Premium adds over Standard</title>
 <desc id="d">folk&#x27;s Standard plan costs $24 and Premium $48 per member a month, billed yearly. Email sequences, custom objects and deals, dashboards and API access are on Premium only. Monthly limits on Standard and Premium: find emails 500 and 1,000; magic fields 2,000 and 5,000; Workflow Assistant 1,500 and 10,000; messages per member 2,000 and 5,000; synced accounts per member 1 and 5; interactions shared with teammates, the last 30 on Standard and the full history on Premium. From folk&#x27;s pricing page, November 3, 2026.</desc>
 <rect width="560" height="774" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="773" fill="none" stroke="#0a0a0a"/>
-<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[folk plans, billed yearly]</text>
-<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">What Premium adds <tspan fill="#a3a3a3">over Standard</tspan></text>
-<rect x="426" y="112" width="110" height="532" fill="#f5f5f5"/>
-<rect x="24.5" y="112.5" width="511" height="531" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">folk plans, billed yearly</text>
+<text x="24" y="84" font-size="26" font-weight="500" fill="#171717">What Premium adds <tspan fill="#171717">over Standard</tspan></text>
+<rect x="426" y="112" width="110" height="532" fill="#f5f5f5" rx="4"/>
+<rect x="24.5" y="112.5" width="511" height="531" fill="none" stroke="#ebebeb" rx="10"/>
 <text x="371" y="142" text-anchor="middle" font-size="18" fill="#737373">Standard</text>
-<text x="371" y="170" text-anchor="middle" font-size="24" font-weight="600" fill="#0a0a0a">$24</text>
+<text x="371" y="170" text-anchor="middle" font-size="24" font-weight="500" fill="#171717">$24</text>
 <text x="481" y="142" text-anchor="middle" font-size="18" fill="#737373">Premium</text>
-<text x="481" y="170" text-anchor="middle" font-size="24" font-weight="600" fill="#0a0a0a">$48</text>
+<text x="481" y="170" text-anchor="middle" font-size="24" font-weight="500" fill="#171717">$48</text>
 <text x="40" y="156" font-size="18" fill="#737373">Per member a month</text>
-<line x1="24" y1="184" x2="536" y2="184" stroke="#0a0a0a"/>
-<text x="40" y="214" font-size="18" fill="#0a0a0a">Email sequences</text>
+<line x1="24" y1="184" x2="536" y2="184" stroke="#8a8a85"/>
+<text x="40" y="214" font-size="18" fill="#171717">Email sequences</text>
 <text x="371" y="214" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="199" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<line x1="24" y1="230" x2="536" y2="230" stroke="#e5e5e5"/>
-<text x="40" y="260" font-size="18" fill="#0a0a0a">Custom objects and deals</text>
+<rect x="473" y="199" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<line x1="24" y1="230" x2="536" y2="230" stroke="#ebebeb"/>
+<text x="40" y="260" font-size="18" fill="#171717">Custom objects and deals</text>
 <text x="371" y="260" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="245" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<line x1="24" y1="276" x2="536" y2="276" stroke="#e5e5e5"/>
-<text x="40" y="306" font-size="18" fill="#0a0a0a">Dashboards</text>
+<rect x="473" y="245" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<line x1="24" y1="276" x2="536" y2="276" stroke="#ebebeb"/>
+<text x="40" y="306" font-size="18" fill="#171717">Dashboards</text>
 <text x="371" y="306" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="291" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<line x1="24" y1="322" x2="536" y2="322" stroke="#e5e5e5"/>
-<text x="40" y="352" font-size="18" fill="#0a0a0a">API access</text>
+<rect x="473" y="291" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<line x1="24" y1="322" x2="536" y2="322" stroke="#ebebeb"/>
+<text x="40" y="352" font-size="18" fill="#171717">API access</text>
 <text x="371" y="352" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="337" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<line x1="24" y1="368" x2="536" y2="368" stroke="#e5e5e5"/>
-<text x="40" y="398" font-size="18" fill="#0a0a0a">Find emails a month</text>
-<text x="371" y="398" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">500</text>
-<text x="481" y="398" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">1,000</text>
-<line x1="24" y1="414" x2="536" y2="414" stroke="#e5e5e5"/>
-<text x="40" y="444" font-size="18" fill="#0a0a0a">Magic fields a month</text>
-<text x="371" y="444" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">2,000</text>
-<text x="481" y="444" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">5,000</text>
-<line x1="24" y1="460" x2="536" y2="460" stroke="#e5e5e5"/>
-<text x="40" y="490" font-size="18" fill="#0a0a0a">Workflow Assistant a month</text>
-<text x="371" y="490" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">1,500</text>
-<text x="481" y="490" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">10,000</text>
-<line x1="24" y1="506" x2="536" y2="506" stroke="#e5e5e5"/>
-<text x="40" y="536" font-size="18" fill="#0a0a0a">Messages per member a month</text>
-<text x="371" y="536" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">2,000</text>
-<text x="481" y="536" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">5,000</text>
-<line x1="24" y1="552" x2="536" y2="552" stroke="#e5e5e5"/>
-<text x="40" y="582" font-size="18" fill="#0a0a0a">Synced accounts per member</text>
-<text x="371" y="582" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">1</text>
-<text x="481" y="582" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">5</text>
-<line x1="24" y1="598" x2="536" y2="598" stroke="#e5e5e5"/>
-<text x="40" y="628" font-size="18" fill="#0a0a0a">Interactions shared</text>
-<text x="371" y="628" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">Last 30</text>
-<text x="481" y="628" text-anchor="middle" font-size="18" font-weight="600" fill="#0a0a0a">Full</text>
-<rect x="24" y="674" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<text x="52" y="689" font-size="18" fill="#0a0a0a">Included on the plan</text>
+<rect x="473" y="337" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<line x1="24" y1="368" x2="536" y2="368" stroke="#ebebeb"/>
+<text x="40" y="398" font-size="18" fill="#171717">Find emails a month</text>
+<text x="371" y="398" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">500</text>
+<text x="481" y="398" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">1,000</text>
+<line x1="24" y1="414" x2="536" y2="414" stroke="#ebebeb"/>
+<text x="40" y="444" font-size="18" fill="#171717">Magic fields a month</text>
+<text x="371" y="444" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">2,000</text>
+<text x="481" y="444" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">5,000</text>
+<line x1="24" y1="460" x2="536" y2="460" stroke="#ebebeb"/>
+<text x="40" y="490" font-size="18" fill="#171717">Workflow Assistant a month</text>
+<text x="371" y="490" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">1,500</text>
+<text x="481" y="490" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">10,000</text>
+<line x1="24" y1="506" x2="536" y2="506" stroke="#ebebeb"/>
+<text x="40" y="536" font-size="18" fill="#171717">Messages per member a month</text>
+<text x="371" y="536" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">2,000</text>
+<text x="481" y="536" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">5,000</text>
+<line x1="24" y1="552" x2="536" y2="552" stroke="#ebebeb"/>
+<text x="40" y="582" font-size="18" fill="#171717">Synced accounts per member</text>
+<text x="371" y="582" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">1</text>
+<text x="481" y="582" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">5</text>
+<line x1="24" y1="598" x2="536" y2="598" stroke="#ebebeb"/>
+<text x="40" y="628" font-size="18" fill="#171717">Interactions shared</text>
+<text x="371" y="628" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">Last 30</text>
+<text x="481" y="628" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">Full</text>
+<rect x="24" y="674" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="52" y="689" font-size="18" fill="#171717">Included on the plan</text>
 <text x="24" y="724" font-size="18" fill="#737373">Monthly billing: $30 and $60. Every plan has</text>
 <text x="24" y="750" font-size="18" fill="#737373">unlimited members. From folk.app/pricing.</text>
 </svg>

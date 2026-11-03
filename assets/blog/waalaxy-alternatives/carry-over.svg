@@ -2,36 +2,35 @@
 <title id="t">What carries over when you leave Waalaxy</title>
 <desc id="d">Six things to sort out when you switch. Prospect lists, export: save them as CSV while your access lasts. Sequences and templates, rebuild: copy your messages, then rebuild the steps. Pending invitations stay on LinkedIn: a careful tool checks them before it invites. Past conversations stay on LinkedIn: they remain in LinkedIn&#x27;s own messaging. CRM sync, reconnect: connect the new tool, or pick one with a CRM inside. Your sending pace, restart: warm the account up again in the new tool.</desc>
 <rect width="720" height="940" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="939" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="20" fill="#737373">[Switching]</text>
-<text x="32" y="94" font-size="31" font-weight="600" fill="#0a0a0a">What carries over <tspan fill="#a3a3a3">when you leave Waalaxy</tspan></text>
-<rect x="32.5" y="130.5" width="88" height="30" fill="#ecfdf5" stroke="#047857"/>
-<text x="76.5" y="151" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#047857">Export</text>
-<text x="32" y="198" font-size="26" font-weight="600" fill="#0a0a0a">Prospect lists</text>
+<text x="32" y="50" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#737373">Switching</text>
+<text x="32" y="94" font-size="31" font-weight="500" fill="#171717">What carries over <tspan fill="#171717">when you leave Waalaxy</tspan></text>
+<rect x="32.5" y="130.5" width="88" height="30" fill="#e3f4ec" stroke="#086444" rx="10"/>
+<text x="76.5" y="151" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#086444">Export</text>
+<text x="32" y="198" font-size="26" font-weight="500" fill="#171717">Prospect lists</text>
 <text x="32" y="230" font-size="22" fill="#737373">Save them as CSV while your access lasts.</text>
-<line x1="32" y1="252" x2="688" y2="252" stroke="#e5e5e5"/>
-<rect x="32.5" y="264.5" width="99" height="30" fill="#f5f5f5" stroke="#737373"/>
-<text x="82.0" y="285" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#525252">Rebuild</text>
-<text x="32" y="332" font-size="26" font-weight="600" fill="#0a0a0a">Sequences and templates</text>
+<line x1="32" y1="252" x2="688" y2="252" stroke="#ebebeb"/>
+<rect x="32.5" y="264.5" width="99" height="30" fill="#f5f5f5" stroke="#737373" rx="10"/>
+<text x="82.0" y="285" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#525252">Rebuild</text>
+<text x="32" y="332" font-size="26" font-weight="500" fill="#171717">Sequences and templates</text>
 <text x="32" y="364" font-size="22" fill="#737373">Copy your messages, then rebuild the steps.</text>
-<line x1="32" y1="386" x2="688" y2="386" stroke="#e5e5e5"/>
-<rect x="32.5" y="398.5" width="203" height="30" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="134.0" y="419" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">Stays on LinkedIn</text>
-<text x="32" y="466" font-size="26" font-weight="600" fill="#0a0a0a">Pending invitations</text>
+<line x1="32" y1="386" x2="688" y2="386" stroke="#ebebeb"/>
+<rect x="32.5" y="398.5" width="203" height="30" fill="#ffffff" stroke="#a3a3a3" rx="10"/>
+<text x="134.0" y="419" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717">Stays on LinkedIn</text>
+<text x="32" y="466" font-size="26" font-weight="500" fill="#171717">Pending invitations</text>
 <text x="32" y="498" font-size="22" fill="#737373">A careful tool checks them before it invites.</text>
-<line x1="32" y1="520" x2="688" y2="520" stroke="#e5e5e5"/>
-<rect x="32.5" y="532.5" width="203" height="30" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="134.0" y="553" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">Stays on LinkedIn</text>
-<text x="32" y="600" font-size="26" font-weight="600" fill="#0a0a0a">Past conversations</text>
+<line x1="32" y1="520" x2="688" y2="520" stroke="#ebebeb"/>
+<rect x="32.5" y="532.5" width="203" height="30" fill="#ffffff" stroke="#a3a3a3" rx="10"/>
+<text x="134.0" y="553" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717">Stays on LinkedIn</text>
+<text x="32" y="600" font-size="26" font-weight="500" fill="#171717">Past conversations</text>
 <text x="32" y="632" font-size="22" fill="#737373">They remain in LinkedIn&#x27;s own messaging.</text>
-<line x1="32" y1="654" x2="688" y2="654" stroke="#e5e5e5"/>
-<rect x="32.5" y="666.5" width="120" height="30" fill="#f5f5f5" stroke="#737373"/>
-<text x="92.5" y="687" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#525252">Reconnect</text>
-<text x="32" y="734" font-size="26" font-weight="600" fill="#0a0a0a">CRM sync</text>
+<line x1="32" y1="654" x2="688" y2="654" stroke="#ebebeb"/>
+<rect x="32.5" y="666.5" width="120" height="30" fill="#f5f5f5" stroke="#737373" rx="10"/>
+<text x="92.5" y="687" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#525252">Reconnect</text>
+<text x="32" y="734" font-size="26" font-weight="500" fill="#171717">CRM sync</text>
 <text x="32" y="766" font-size="22" fill="#737373">Connect the new tool, or pick one with a CRM inside.</text>
-<line x1="32" y1="788" x2="688" y2="788" stroke="#e5e5e5"/>
-<rect x="32.5" y="800.5" width="99" height="30" fill="#f5f5f5" stroke="#737373"/>
-<text x="82.0" y="821" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#525252">Restart</text>
-<text x="32" y="868" font-size="26" font-weight="600" fill="#0a0a0a">Your sending pace</text>
+<line x1="32" y1="788" x2="688" y2="788" stroke="#ebebeb"/>
+<rect x="32.5" y="800.5" width="99" height="30" fill="#f5f5f5" stroke="#737373" rx="10"/>
+<text x="82.0" y="821" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#525252">Restart</text>
+<text x="32" y="868" font-size="26" font-weight="500" fill="#171717">Your sending pace</text>
 <text x="32" y="900" font-size="22" fill="#737373">Warm the account up again in the new tool.</text>
 </svg>

@@ -2,33 +2,32 @@
 <title id="t">Where to start looking, by where your deals begin</title>
 <desc id="d">Where we&#x27;d start looking, by where most of your deals begin. Forms, ads and email campaigns, meaning inbound leads that marketing brings in: HubSpot, for marketing and sales on one record. Email to people you know, meaning warm leads and a process of your own: Attio, for objects you design and sequences on Pro. LinkedIn conversations, meaning outreach to buyers who fit: Omniscient, for LinkedIn messages you approve.</desc>
 <rect width="560" height="706" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="705" fill="none" stroke="#0a0a0a"/>
-<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Choosing]</text>
-<text x="24" y="82" font-size="26" font-weight="600" fill="#0a0a0a">Where most of your deals start</text>
-<rect x="24" y="108" width="512" height="160" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="108" width="512" height="80" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="42" y="142" font-size="20" font-weight="600" fill="#0a0a0a">Forms, ads and email campaigns</text>
+<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Choosing</text>
+<text x="24" y="82" font-size="26" font-weight="500" fill="#171717">Where most of your deals start</text>
+<rect x="24" y="108" width="512" height="160" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="108" width="512" height="80" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="42" y="142" font-size="20" font-weight="500" fill="#171717">Forms, ads and email campaigns</text>
 <text x="42" y="168" font-size="18" fill="#737373">Inbound leads that marketing brings in</text>
-<line x1="42" x2="58" y1="218" y2="218" stroke="#0a0a0a" stroke-width="1.5"/>
-<path d="M56 212 L67 218 L56 224 Z" fill="#0a0a0a"/>
-<text x="80" y="225" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot</text>
+<line x1="42" x2="58" y1="218" y2="218" stroke="#8a8a85" stroke-width="1.5"/>
+<path d="M56 212 L67 218 L56 224 Z" fill="#333333"/>
+<text x="80" y="225" font-size="21" font-weight="500" fill="#171717">HubSpot</text>
 <text x="80" y="248" font-size="18" fill="#737373">Marketing and sales on one record</text>
-<rect x="24" y="284" width="512" height="160" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="284" width="512" height="80" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="42" y="318" font-size="20" font-weight="600" fill="#0a0a0a">Email to people you know</text>
+<rect x="24" y="284" width="512" height="160" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="284" width="512" height="80" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="42" y="318" font-size="20" font-weight="500" fill="#171717">Email to people you know</text>
 <text x="42" y="344" font-size="18" fill="#737373">Warm leads and a process of your own</text>
-<line x1="42" x2="58" y1="394" y2="394" stroke="#0a0a0a" stroke-width="1.5"/>
-<path d="M56 388 L67 394 L56 400 Z" fill="#0a0a0a"/>
-<text x="80" y="401" font-size="21" font-weight="600" fill="#0a0a0a">Attio</text>
+<line x1="42" x2="58" y1="394" y2="394" stroke="#8a8a85" stroke-width="1.5"/>
+<path d="M56 388 L67 394 L56 400 Z" fill="#333333"/>
+<text x="80" y="401" font-size="21" font-weight="500" fill="#171717">Attio</text>
 <text x="80" y="424" font-size="18" fill="#737373">Objects you design, sequences on Pro</text>
-<rect x="24" y="460" width="512" height="160" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="460" width="512" height="80" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="42" y="494" font-size="20" font-weight="600" fill="#0a0a0a">LinkedIn conversations</text>
+<rect x="24" y="460" width="512" height="160" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="460" width="512" height="80" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="42" y="494" font-size="20" font-weight="500" fill="#171717">LinkedIn conversations</text>
 <text x="42" y="520" font-size="18" fill="#737373">Outreach to buyers who fit</text>
-<line x1="42" x2="58" y1="570" y2="570" stroke="#0a0a0a" stroke-width="1.5"/>
-<path d="M56 564 L67 570 L56 576 Z" fill="#0a0a0a"/>
-<rect x="80" y="563" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="102" y="577" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<line x1="42" x2="58" y1="570" y2="570" stroke="#8a8a85" stroke-width="1.5"/>
+<path d="M56 564 L67 570 L56 576 Z" fill="#333333"/>
+<rect x="80" y="563" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="102" y="577" font-size="21" font-weight="500" fill="#171717">Omniscient</text>
 <text x="80" y="600" font-size="18" fill="#737373">LinkedIn messages you approve</text>
 <text x="24" y="654" font-size="17" fill="#737373">Where we would start looking. Many teams use</text>
 <text x="24" y="678" font-size="17" fill="#737373">more than one channel.</text>

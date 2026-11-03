@@ -2,38 +2,37 @@
 <title id="t">What each HubSpot Sales Hub plan adds</title>
 <desc id="d">HubSpot Sales Hub plans and what each adds, from HubSpot&#x27;s pricing page on November 3, 2026. Free: $0, up to 2 users and 1,000 contacts, with HubSpot branding on emails. Starter: $20 a seat a month listed, from $7 for new customers, with 500 HubSpot Credits a month. Professional: from $90 a seat a month, with sequences, forecasting and 3,000 credits, plus a $1,500 onboarding fee paid once. Enterprise: from $150 a seat a month, with 5,000 credits, plus a $3,500 onboarding fee paid once.</desc>
 <rect width="560" height="696" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="695" fill="none" stroke="#0a0a0a"/>
-<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[HubSpot Sales Hub]</text>
-<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">Each plan <tspan fill="#a3a3a3">and what it adds</tspan></text>
-<rect x="24" y="116" width="512" height="130" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="40" y="150" font-size="22" font-weight="600" fill="#0a0a0a">Free</text>
-<text x="520" y="150" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#0a0a0a">$0</text>
-<rect x="40" y="164" width="480" height="10" fill="#f5f5f5"/>
-<rect x="40" y="164" width="3" height="10" fill="#0a0a0a"/>
+<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">HubSpot Sales Hub</text>
+<text x="24" y="84" font-size="26" font-weight="500" fill="#171717">Each plan <tspan fill="#171717">and what it adds</tspan></text>
+<rect x="24" y="116" width="512" height="130" fill="#ffffff" stroke="#ebebeb"/>
+<text x="40" y="150" font-size="22" font-weight="500" fill="#171717">Free</text>
+<text x="520" y="150" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#171717">$0</text>
+<rect x="40" y="164" width="480" height="10" fill="#f5f5f5" rx="5"/>
+<rect x="40" y="164" width="3" height="10" fill="#333333" rx="2"/>
 <text x="40" y="202" font-size="19" fill="#737373">Up to 2 users and 1,000 contacts</text>
 <text x="40" y="230" font-size="19" fill="#737373">HubSpot branding on emails</text>
-<rect x="24" y="246" width="512" height="130" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="40" y="280" font-size="22" font-weight="600" fill="#0a0a0a">Starter</text>
-<text x="520" y="280" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#0a0a0a">$20 a seat</text>
-<rect x="40" y="294" width="480" height="10" fill="#f5f5f5"/>
-<rect x="40" y="294" width="64" height="10" fill="#0a0a0a"/>
+<rect x="24" y="246" width="512" height="130" fill="#ffffff" stroke="#ebebeb"/>
+<text x="40" y="280" font-size="22" font-weight="500" fill="#171717">Starter</text>
+<text x="520" y="280" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#171717">$20 a seat</text>
+<rect x="40" y="294" width="480" height="10" fill="#f5f5f5" rx="5"/>
+<rect x="40" y="294" width="64" height="10" fill="#333333" rx="5"/>
 <text x="40" y="332" font-size="19" fill="#737373">500 HubSpot Credits a month</text>
 <text x="40" y="360" font-size="19" fill="#737373">From $7 for new customers</text>
-<rect x="24" y="376" width="512" height="130" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="40" y="410" font-size="22" font-weight="600" fill="#0a0a0a">Professional</text>
-<text x="520" y="410" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#0a0a0a">From $90 a seat</text>
-<rect x="40" y="424" width="480" height="10" fill="#f5f5f5"/>
-<rect x="40" y="424" width="288" height="10" fill="#0a0a0a"/>
+<rect x="24" y="376" width="512" height="130" fill="#ffffff" stroke="#ebebeb"/>
+<text x="40" y="410" font-size="22" font-weight="500" fill="#171717">Professional</text>
+<text x="520" y="410" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#171717">From $90 a seat</text>
+<rect x="40" y="424" width="480" height="10" fill="#f5f5f5" rx="5"/>
+<rect x="40" y="424" width="288" height="10" fill="#333333" rx="5"/>
 <text x="40" y="462" font-size="19" fill="#737373">Sequences, forecasting, 3,000 credits</text>
-<rect x="40" y="476" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="62" y="490" font-size="19" fill="#0a0a0a">Plus $1,500 onboarding, paid once</text>
-<rect x="24" y="506" width="512" height="130" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="40" y="540" font-size="22" font-weight="600" fill="#0a0a0a">Enterprise</text>
-<text x="520" y="540" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#0a0a0a">From $150 a seat</text>
-<rect x="40" y="554" width="480" height="10" fill="#f5f5f5"/>
-<rect x="40" y="554" width="480" height="10" fill="#0a0a0a"/>
+<rect x="40" y="476" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="62" y="490" font-size="19" fill="#171717">Plus $1,500 onboarding, paid once</text>
+<rect x="24" y="506" width="512" height="130" fill="#ffffff" stroke="#ebebeb"/>
+<text x="40" y="540" font-size="22" font-weight="500" fill="#171717">Enterprise</text>
+<text x="520" y="540" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#171717">From $150 a seat</text>
+<rect x="40" y="554" width="480" height="10" fill="#f5f5f5" rx="5"/>
+<rect x="40" y="554" width="480" height="10" fill="#333333" rx="5"/>
 <text x="40" y="592" font-size="19" fill="#737373">5,000 HubSpot Credits a month</text>
-<rect x="40" y="606" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="62" y="620" font-size="19" fill="#0a0a0a">Plus $3,500 onboarding, paid once</text>
-<text x="24" y="672" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">Per seat a month, hubspot.com/pricing/sales, Nov 3, 2026</text>
+<rect x="40" y="606" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="62" y="620" font-size="19" fill="#171717">Plus $3,500 onboarding, paid once</text>
+<text x="24" y="672" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Per seat a month, hubspot.com/pricing/sales, Nov 3, 2026</text>
 </svg>

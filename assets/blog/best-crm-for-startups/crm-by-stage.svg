@@ -2,40 +2,39 @@
 <title id="t">Which CRM fits each stage of a startup</title>
 <desc id="d">Four stages. A founder selling alone needs contacts and meetings captured without typing: look at Omniscient, folk, Streak or HubSpot's free CRM. A first sales hire needs a pipeline they can learn in a day: look at Pipedrive, Close, Salesflare or Omniscient. A small sales team needs a forecast and rules on who sees what: look at HubSpot, Attio, Zoho CRM or monday CRM. A custom sales process needs custom objects and an admin: look at Salesforce, Attio or Twenty.</desc>
 <rect width="720" height="640" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="639" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[By stage]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Your CRM at each stage <tspan fill="#a3a3a3">of a startup</tspan></text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">By stage</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Your CRM at each stage <tspan fill="#171717">of a startup</tspan></text>
 
-<rect x="32.5" y="124.5" width="199" height="99" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="231.5" y="124.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="152" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">01</text>
-<text x="48" y="180" font-size="21" font-weight="600" fill="#0a0a0a">Founder</text>
-<text x="48" y="206" font-size="21" font-weight="600" fill="#0a0a0a">selling alone</text>
-<text x="248" y="164" font-size="21" font-weight="600" fill="#0a0a0a">Capture without typing</text>
+<rect x="32.5" y="124.5" width="199" height="99" fill="#0c8c5e" stroke="#ebebeb"/>
+<rect x="231.5" y="124.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="152" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">01</text>
+<text x="48" y="180" font-size="21" font-weight="500" fill="#171717">Founder</text>
+<text x="48" y="206" font-size="21" font-weight="500" fill="#171717">selling alone</text>
+<text x="248" y="164" font-size="21" font-weight="500" fill="#171717">Capture without typing</text>
 <text x="248" y="196" font-size="19" fill="#737373">Omniscient, folk, Streak, HubSpot free CRM</text>
 
-<rect x="32.5" y="235.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="235.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="263" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">02</text>
-<text x="48" y="291" font-size="21" font-weight="600" fill="#0a0a0a">First</text>
-<text x="48" y="317" font-size="21" font-weight="600" fill="#0a0a0a">sales hire</text>
-<text x="248" y="275" font-size="21" font-weight="600" fill="#0a0a0a">A pipeline learned in a day</text>
+<rect x="32.5" y="235.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="235.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="263" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">02</text>
+<text x="48" y="291" font-size="21" font-weight="500" fill="#171717">First</text>
+<text x="48" y="317" font-size="21" font-weight="500" fill="#171717">sales hire</text>
+<text x="248" y="275" font-size="21" font-weight="500" fill="#171717">A pipeline learned in a day</text>
 <text x="248" y="307" font-size="19" fill="#737373">Pipedrive, Close, Salesflare, Omniscient</text>
 
-<rect x="32.5" y="346.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="346.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="374" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">03</text>
-<text x="48" y="402" font-size="21" font-weight="600" fill="#0a0a0a">A small</text>
-<text x="48" y="428" font-size="21" font-weight="600" fill="#0a0a0a">sales team</text>
-<text x="248" y="386" font-size="21" font-weight="600" fill="#0a0a0a">A forecast and access rules</text>
+<rect x="32.5" y="346.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="346.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="374" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">03</text>
+<text x="48" y="402" font-size="21" font-weight="500" fill="#171717">A small</text>
+<text x="48" y="428" font-size="21" font-weight="500" fill="#171717">sales team</text>
+<text x="248" y="386" font-size="21" font-weight="500" fill="#171717">A forecast and access rules</text>
 <text x="248" y="418" font-size="19" fill="#737373">HubSpot, Attio, Zoho CRM, monday CRM</text>
 
-<rect x="32.5" y="457.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="457.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="485" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">04</text>
-<text x="48" y="513" font-size="21" font-weight="600" fill="#0a0a0a">A custom</text>
-<text x="48" y="539" font-size="21" font-weight="600" fill="#0a0a0a">sales process</text>
-<text x="248" y="497" font-size="21" font-weight="600" fill="#0a0a0a">Custom objects and an admin</text>
+<rect x="32.5" y="457.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="457.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="485" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">04</text>
+<text x="48" y="513" font-size="21" font-weight="500" fill="#171717">A custom</text>
+<text x="48" y="539" font-size="21" font-weight="500" fill="#171717">sales process</text>
+<text x="248" y="497" font-size="21" font-weight="500" fill="#171717">Custom objects and an admin</text>
 <text x="248" y="529" font-size="19" fill="#737373">Salesforce, Attio, Twenty</text>
 
 <text x="32" y="600" font-size="17" fill="#737373">Our picks for each stage, November 2026.</text>

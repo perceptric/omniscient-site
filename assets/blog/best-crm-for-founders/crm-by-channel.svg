@@ -2,64 +2,63 @@
 <title id="t">Which CRM fits the way a founder sells</title>
 <desc id="d">Seven ways founders sell, each with what the CRM needs to do and the CRMs to look at. Email and meetings need capture without typing: Omniscient, Lightfield, Day AI or Clarify. Selling from Gmail all day needs a CRM inside the inbox: Streak. LinkedIn and introductions need people saved from LinkedIn: Omniscient, folk or Salesflare. Phone calls need a dialer next to each lead: Close. Tracking investors and partners too needs your own objects and pipelines: Attio or Twenty. A first sales hire needs a board of stages to share: Pipedrive or HubSpot. Keeping up with your network needs reminders to keep in touch: Dex.</desc>
 <rect width="720" height="880" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="879" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[By channel]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Which CRM fits <tspan fill="#a3a3a3">the way you sell</tspan></text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">By channel</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Which CRM fits <tspan fill="#171717">the way you sell</tspan></text>
 
-<rect x="32.5" y="124.5" width="199" height="87" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="231.5" y="124.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="149" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">01</text>
-<text x="48" y="175" font-size="20" font-weight="600" fill="#0a0a0a">Email and</text>
-<text x="48" y="199" font-size="20" font-weight="600" fill="#0a0a0a">meetings</text>
-<text x="248" y="161" font-size="20" font-weight="600" fill="#0a0a0a">Capture without typing</text>
+<rect x="32.5" y="124.5" width="199" height="87" fill="#0c8c5e" stroke="#ebebeb"/>
+<rect x="231.5" y="124.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="149" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">01</text>
+<text x="48" y="175" font-size="20" font-weight="500" fill="#171717">Email and</text>
+<text x="48" y="199" font-size="20" font-weight="500" fill="#171717">meetings</text>
+<text x="248" y="161" font-size="20" font-weight="500" fill="#171717">Capture without typing</text>
 <text x="248" y="191" font-size="18" fill="#737373">Omniscient, Lightfield, Day AI, Clarify</text>
 
-<rect x="32.5" y="224.5" width="199" height="87" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="224.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="249" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">02</text>
-<text x="48" y="275" font-size="20" font-weight="600" fill="#0a0a0a">Gmail</text>
-<text x="48" y="299" font-size="20" font-weight="600" fill="#0a0a0a">all day</text>
-<text x="248" y="261" font-size="20" font-weight="600" fill="#0a0a0a">A CRM inside the inbox</text>
+<rect x="32.5" y="224.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="224.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="249" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">02</text>
+<text x="48" y="275" font-size="20" font-weight="500" fill="#171717">Gmail</text>
+<text x="48" y="299" font-size="20" font-weight="500" fill="#171717">all day</text>
+<text x="248" y="261" font-size="20" font-weight="500" fill="#171717">A CRM inside the inbox</text>
 <text x="248" y="291" font-size="18" fill="#737373">Streak</text>
 
-<rect x="32.5" y="324.5" width="199" height="87" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="324.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="349" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">03</text>
-<text x="48" y="375" font-size="20" font-weight="600" fill="#0a0a0a">LinkedIn and</text>
-<text x="48" y="399" font-size="20" font-weight="600" fill="#0a0a0a">introductions</text>
-<text x="248" y="361" font-size="20" font-weight="600" fill="#0a0a0a">People saved from LinkedIn</text>
+<rect x="32.5" y="324.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="324.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="349" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">03</text>
+<text x="48" y="375" font-size="20" font-weight="500" fill="#171717">LinkedIn and</text>
+<text x="48" y="399" font-size="20" font-weight="500" fill="#171717">introductions</text>
+<text x="248" y="361" font-size="20" font-weight="500" fill="#171717">People saved from LinkedIn</text>
 <text x="248" y="391" font-size="18" fill="#737373">Omniscient, folk, Salesflare</text>
 
-<rect x="32.5" y="424.5" width="199" height="87" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="424.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="449" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">04</text>
-<text x="48" y="475" font-size="20" font-weight="600" fill="#0a0a0a">Phone</text>
-<text x="48" y="499" font-size="20" font-weight="600" fill="#0a0a0a">calls</text>
-<text x="248" y="461" font-size="20" font-weight="600" fill="#0a0a0a">A dialer next to each lead</text>
+<rect x="32.5" y="424.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="424.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="449" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">04</text>
+<text x="48" y="475" font-size="20" font-weight="500" fill="#171717">Phone</text>
+<text x="48" y="499" font-size="20" font-weight="500" fill="#171717">calls</text>
+<text x="248" y="461" font-size="20" font-weight="500" fill="#171717">A dialer next to each lead</text>
 <text x="248" y="491" font-size="18" fill="#737373">Close</text>
 
-<rect x="32.5" y="524.5" width="199" height="87" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="524.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="549" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">05</text>
-<text x="48" y="575" font-size="20" font-weight="600" fill="#0a0a0a">Investors and</text>
-<text x="48" y="599" font-size="20" font-weight="600" fill="#0a0a0a">partners too</text>
-<text x="248" y="561" font-size="20" font-weight="600" fill="#0a0a0a">Your own objects and pipelines</text>
+<rect x="32.5" y="524.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="524.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="549" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">05</text>
+<text x="48" y="575" font-size="20" font-weight="500" fill="#171717">Investors and</text>
+<text x="48" y="599" font-size="20" font-weight="500" fill="#171717">partners too</text>
+<text x="248" y="561" font-size="20" font-weight="500" fill="#171717">Your own objects and pipelines</text>
 <text x="248" y="591" font-size="18" fill="#737373">Attio, Twenty</text>
 
-<rect x="32.5" y="624.5" width="199" height="87" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="624.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="649" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">06</text>
-<text x="48" y="675" font-size="20" font-weight="600" fill="#0a0a0a">A first</text>
-<text x="48" y="699" font-size="20" font-weight="600" fill="#0a0a0a">sales hire</text>
-<text x="248" y="661" font-size="20" font-weight="600" fill="#0a0a0a">A board of stages to share</text>
+<rect x="32.5" y="624.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="624.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="649" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">06</text>
+<text x="48" y="675" font-size="20" font-weight="500" fill="#171717">A first</text>
+<text x="48" y="699" font-size="20" font-weight="500" fill="#171717">sales hire</text>
+<text x="248" y="661" font-size="20" font-weight="500" fill="#171717">A board of stages to share</text>
 <text x="248" y="691" font-size="18" fill="#737373">Pipedrive, HubSpot</text>
 
-<rect x="32.5" y="724.5" width="199" height="87" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="724.5" width="456" height="87" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="749" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#0a0a0a">07</text>
-<text x="48" y="775" font-size="20" font-weight="600" fill="#0a0a0a">Keeping up</text>
-<text x="48" y="799" font-size="20" font-weight="600" fill="#0a0a0a">your network</text>
-<text x="248" y="761" font-size="20" font-weight="600" fill="#0a0a0a">Reminders to keep in touch</text>
+<rect x="32.5" y="724.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="724.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="749" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">07</text>
+<text x="48" y="775" font-size="20" font-weight="500" fill="#171717">Keeping up</text>
+<text x="48" y="799" font-size="20" font-weight="500" fill="#171717">your network</text>
+<text x="248" y="761" font-size="20" font-weight="500" fill="#171717">Reminders to keep in touch</text>
 <text x="248" y="791" font-size="18" fill="#737373">Dex</text>
 
 <text x="32" y="852" font-size="16" fill="#737373">Our suggestions, based on each vendor's own site, November 2026.</text>

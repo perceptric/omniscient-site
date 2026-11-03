@@ -2,57 +2,56 @@
 <title id="t">Four kinds of LinkedIn outreach tool with a CRM</title>
 <desc id="d">Outreach and CRM in one product, which sends invitations and keeps full records: Omniscient and NetHunt CRM. LinkedIn automation with a light CRM of tags, notes and pipeline stages: Kanbox, Meet Alfred, Linked Helper, Dripify and Waalaxy. A CRM that holds LinkedIn contacts, where the record comes first: Breakcold, folk, Salesflare and HubSpot Sales Hub. Outreach synced into the CRM you keep: La Growth Machine, lemlist, HeyReach and Closely.</desc>
 <rect width="720" height="970" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="969" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Four kinds]</text>
-<text x="32" y="86" font-size="30" font-weight="600" fill="#0a0a0a">What the CRM part <tspan fill="#a3a3a3">really means</tspan></text>
-<rect x="32.5" y="124.5" width="300" height="150" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="124.5" width="355" height="150" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="166" font-weight="600" font-size="23" fill="#0a0a0a">Outreach and CRM</text>
-<text x="50" y="194" font-weight="600" font-size="23" fill="#0a0a0a">in one product</text>
-<text x="50" y="246" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Sends and records]</text>
-<rect x="354.5" y="157.5" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="382" y="172" font-size="22" fill="#0a0a0a">Omniscient</text>
-<rect x="354.5" y="195.5" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="382" y="210" font-size="22" fill="#0a0a0a">NetHunt CRM</text>
-<rect x="32.5" y="288.5" width="300" height="230" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="288.5" width="355" height="230" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="330" font-weight="600" font-size="23" fill="#0a0a0a">Automation with</text>
-<text x="50" y="358" font-weight="600" font-size="23" fill="#0a0a0a">a light CRM</text>
-<text x="50" y="490" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Tags, notes, stages]</text>
-<rect x="354.5" y="321.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="336" font-size="22" fill="#0a0a0a">Kanbox</text>
-<rect x="354.5" y="359.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="374" font-size="22" fill="#0a0a0a">Meet Alfred</text>
-<rect x="354.5" y="397.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="412" font-size="22" fill="#0a0a0a">Linked Helper</text>
-<rect x="354.5" y="435.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="450" font-size="22" fill="#0a0a0a">Dripify</text>
-<rect x="354.5" y="473.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="488" font-size="22" fill="#0a0a0a">Waalaxy</text>
-<rect x="32.5" y="532.5" width="300" height="192" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="532.5" width="355" height="192" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="574" font-weight="600" font-size="23" fill="#0a0a0a">A CRM that holds</text>
-<text x="50" y="602" font-weight="600" font-size="23" fill="#0a0a0a">LinkedIn contacts</text>
-<text x="50" y="696" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Record comes first]</text>
-<rect x="354.5" y="565.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="580" font-size="22" fill="#0a0a0a">Breakcold</text>
-<rect x="354.5" y="603.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="618" font-size="22" fill="#0a0a0a">folk</text>
-<rect x="354.5" y="641.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="656" font-size="22" fill="#0a0a0a">Salesflare</text>
-<rect x="354.5" y="679.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="694" font-size="22" fill="#0a0a0a">HubSpot Sales Hub</text>
-<rect x="32.5" y="738.5" width="300" height="192" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="738.5" width="355" height="192" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="780" font-weight="600" font-size="23" fill="#0a0a0a">Outreach synced</text>
-<text x="50" y="808" font-weight="600" font-size="23" fill="#0a0a0a">into your CRM</text>
-<text x="50" y="902" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[CRM you keep]</text>
-<rect x="354.5" y="771.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="786" font-size="22" fill="#0a0a0a">La Growth Machine</text>
-<rect x="354.5" y="809.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="824" font-size="22" fill="#0a0a0a">lemlist</text>
-<rect x="354.5" y="847.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="862" font-size="22" fill="#0a0a0a">HeyReach</text>
-<rect x="354.5" y="885.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="382" y="900" font-size="22" fill="#0a0a0a">Closely</text>
+<text x="32" y="46" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Four kinds</text>
+<text x="32" y="86" font-size="30" font-weight="500" fill="#171717">What the CRM part <tspan fill="#171717">really means</tspan></text>
+<rect x="32.5" y="124.5" width="300" height="150" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="124.5" width="355" height="150" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="166" font-weight="500" font-size="23" fill="#171717">Outreach and CRM</text>
+<text x="50" y="194" font-weight="500" font-size="23" fill="#171717">in one product</text>
+<text x="50" y="246" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Sends and records</text>
+<rect x="354.5" y="157.5" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="382" y="172" font-size="22" fill="#171717">Omniscient</text>
+<rect x="354.5" y="195.5" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="382" y="210" font-size="22" fill="#171717">NetHunt CRM</text>
+<rect x="32.5" y="288.5" width="300" height="230" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="288.5" width="355" height="230" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="330" font-weight="500" font-size="23" fill="#171717">Automation with</text>
+<text x="50" y="358" font-weight="500" font-size="23" fill="#171717">a light CRM</text>
+<text x="50" y="490" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Tags, notes, stages</text>
+<rect x="354.5" y="321.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="336" font-size="22" fill="#171717">Kanbox</text>
+<rect x="354.5" y="359.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="374" font-size="22" fill="#171717">Meet Alfred</text>
+<rect x="354.5" y="397.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="412" font-size="22" fill="#171717">Linked Helper</text>
+<rect x="354.5" y="435.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="450" font-size="22" fill="#171717">Dripify</text>
+<rect x="354.5" y="473.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="488" font-size="22" fill="#171717">Waalaxy</text>
+<rect x="32.5" y="532.5" width="300" height="192" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="532.5" width="355" height="192" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="574" font-weight="500" font-size="23" fill="#171717">A CRM that holds</text>
+<text x="50" y="602" font-weight="500" font-size="23" fill="#171717">LinkedIn contacts</text>
+<text x="50" y="696" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Record comes first</text>
+<rect x="354.5" y="565.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="580" font-size="22" fill="#171717">Breakcold</text>
+<rect x="354.5" y="603.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="618" font-size="22" fill="#171717">folk</text>
+<rect x="354.5" y="641.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="656" font-size="22" fill="#171717">Salesflare</text>
+<rect x="354.5" y="679.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="694" font-size="22" fill="#171717">HubSpot Sales Hub</text>
+<rect x="32.5" y="738.5" width="300" height="192" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="738.5" width="355" height="192" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="780" font-weight="500" font-size="23" fill="#171717">Outreach synced</text>
+<text x="50" y="808" font-weight="500" font-size="23" fill="#171717">into your CRM</text>
+<text x="50" y="902" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">CRM you keep</text>
+<rect x="354.5" y="771.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="786" font-size="22" fill="#171717">La Growth Machine</text>
+<rect x="354.5" y="809.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="824" font-size="22" fill="#171717">lemlist</text>
+<rect x="354.5" y="847.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="862" font-size="22" fill="#171717">HeyReach</text>
+<rect x="354.5" y="885.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="382" y="900" font-size="22" fill="#171717">Closely</text>
 </svg>

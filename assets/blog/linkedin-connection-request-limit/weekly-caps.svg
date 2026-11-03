@@ -2,38 +2,37 @@
 <title id="t">Weekly invitation caps by pace in Omniscient</title>
 <desc id="d">Careful allows 60 invitations a week, Normal 80 (the default for new senders), Fast 150, and the highest custom setting 200. A dashed line marks about 100 a week, the estimate most guides use. LinkedIn publishes no weekly number.</desc>
 <rect width="720" height="530" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="529" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Weekly limit]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Invitations a week <tspan fill="#a3a3a3">by pace</tspan></text>
-<line x1="300.0" x2="300.0" y1="114" y2="400" stroke="#e5e5e5"/>
-<line x1="500.0" x2="500.0" y1="114" y2="400" stroke="#e5e5e5"/>
-<line x1="600.0" x2="600.0" y1="114" y2="400" stroke="#e5e5e5"/>
-<line x1="400.0" x2="400.0" y1="114" y2="400" stroke="#0a0a0a" stroke-width="2" stroke-dasharray="7 6"/>
-<text x="32" y="146" font-size="22" font-weight="600" fill="#0a0a0a">Careful</text>
-<text x="32" y="169" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">10 a day</text>
-<rect x="200" y="124" width="120.0" height="48" fill="#d4d4d4" stroke="#0a0a0a"><title>Careful: 60 invitations a week</title></rect>
-<text x="308" y="157" text-anchor="end" font-size="24" font-weight="600" fill="#0a0a0a">60</text>
-<text x="32" y="218" font-size="22" font-weight="600" fill="#0a0a0a">Normal</text>
-<text x="32" y="241" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">15 a day</text>
-<rect x="200" y="196" width="160.0" height="48" fill="#10b981" stroke="#0a0a0a"><title>Normal: 80 invitations a week, the default</title></rect>
-<text x="348" y="229" text-anchor="end" font-size="24" font-weight="600" fill="#0a0a0a">80</text>
-<text x="32" y="290" font-size="22" font-weight="600" fill="#0a0a0a">Fast</text>
-<text x="32" y="313" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">25 a day</text>
-<rect x="200" y="268" width="300.0" height="48" fill="#d4d4d4" stroke="#0a0a0a"><title>Fast: 150 invitations a week</title></rect>
-<text x="488" y="301" text-anchor="end" font-size="24" font-weight="600" fill="#0a0a0a">150</text>
-<text x="32" y="362" font-size="22" font-weight="600" fill="#0a0a0a">Custom</text>
-<text x="32" y="385" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">up to 40 a day</text>
-<rect x="200" y="340" width="400.0" height="48" fill="#ffffff" stroke="#0a0a0a"><title>Custom: up to 200 invitations a week</title></rect>
-<text x="588" y="373" text-anchor="end" font-size="24" font-weight="600" fill="#0a0a0a">200</text>
-<line x1="200" x2="600.0" y1="400" y2="400" stroke="#0a0a0a"/>
-<text x="200.0" y="426" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">0</text>
-<text x="300.0" y="426" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">50</text>
-<text x="400.0" y="426" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">100</text>
-<text x="500.0" y="426" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">150</text>
-<text x="600.0" y="426" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">200</text>
-<rect x="32" y="449" width="20" height="20" fill="#10b981" stroke="#0a0a0a"/>
-<text x="62" y="466" font-size="20" fill="#0a0a0a">Default for new senders</text>
-<line x1="322" x2="358" y1="459" y2="459" stroke="#0a0a0a" stroke-width="2" stroke-dasharray="7 6"/>
-<text x="368" y="466" font-size="20" fill="#0a0a0a">About 100, the usual estimate</text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Weekly limit</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Invitations a week <tspan fill="#171717">by pace</tspan></text>
+<line x1="300.0" x2="300.0" y1="114" y2="400" stroke="#ebebeb"/>
+<line x1="500.0" x2="500.0" y1="114" y2="400" stroke="#ebebeb"/>
+<line x1="600.0" x2="600.0" y1="114" y2="400" stroke="#ebebeb"/>
+<line x1="400.0" x2="400.0" y1="114" y2="400" stroke="#8a8a85" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="32" y="146" font-size="22" font-weight="500" fill="#171717">Careful</text>
+<text x="32" y="169" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">10 a day</text>
+<rect x="200" y="124" width="120.0" height="48" fill="#d4d4d4" stroke="#ebebeb" rx="10"><title>Careful: 60 invitations a week</title></rect>
+<text x="308" y="157" text-anchor="end" font-size="24" font-weight="500" fill="#171717">60</text>
+<text x="32" y="218" font-size="22" font-weight="500" fill="#171717">Normal</text>
+<text x="32" y="241" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">15 a day</text>
+<rect x="200" y="196" width="160.0" height="48" fill="#0c8c5e" stroke="#ebebeb" rx="10"><title>Normal: 80 invitations a week, the default</title></rect>
+<text x="348" y="229" text-anchor="end" font-size="24" font-weight="500" fill="#171717">80</text>
+<text x="32" y="290" font-size="22" font-weight="500" fill="#171717">Fast</text>
+<text x="32" y="313" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">25 a day</text>
+<rect x="200" y="268" width="300.0" height="48" fill="#d4d4d4" stroke="#ebebeb" rx="10"><title>Fast: 150 invitations a week</title></rect>
+<text x="488" y="301" text-anchor="end" font-size="24" font-weight="500" fill="#171717">150</text>
+<text x="32" y="362" font-size="22" font-weight="500" fill="#171717">Custom</text>
+<text x="32" y="385" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">up to 40 a day</text>
+<rect x="200" y="340" width="400.0" height="48" fill="#ffffff" stroke="#ebebeb" rx="10"><title>Custom: up to 200 invitations a week</title></rect>
+<text x="588" y="373" text-anchor="end" font-size="24" font-weight="500" fill="#171717">200</text>
+<line x1="200" x2="600.0" y1="400" y2="400" stroke="#8a8a85"/>
+<text x="200.0" y="426" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">0</text>
+<text x="300.0" y="426" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">50</text>
+<text x="400.0" y="426" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">100</text>
+<text x="500.0" y="426" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">150</text>
+<text x="600.0" y="426" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">200</text>
+<rect x="32" y="449" width="20" height="20" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<text x="62" y="466" font-size="20" fill="#171717">Default for new senders</text>
+<line x1="322" x2="358" y1="459" y2="459" stroke="#8a8a85" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="368" y="466" font-size="20" fill="#171717">About 100, the usual estimate</text>
 <text x="32" y="502" font-size="19" fill="#737373">LinkedIn doesn't publish a weekly number.</text>
 </svg>

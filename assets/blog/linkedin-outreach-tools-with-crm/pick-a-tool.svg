@@ -2,68 +2,67 @@
 <title id="t">Which LinkedIn outreach tool with a CRM to try first</title>
 <desc id="d">If you want approved outreach and a full CRM, look at Omniscient. If you sell from Gmail and want email with LinkedIn, look at NetHunt CRM. If you want a simple LinkedIn pipeline, look at Kanbox. If you want LinkedIn, email and X in one tool, look at Meet Alfred. If you want the lowest price per LinkedIn account, look at Linked Helper. If you write every LinkedIn message yourself, look at Breakcold or folk. If you keep HubSpot or Pipedrive and want automated LinkedIn steps, look at La Growth Machine or lemlist. If you run many LinkedIn sender accounts, look at HeyReach. Test any pick with a short list of ten people first.</desc>
 <rect width="720" height="872" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="871" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Pick a tool]</text>
-<text x="32" y="86" font-size="30" font-weight="600" fill="#0a0a0a">Start from how you sell, <tspan fill="#a3a3a3">then try two</tspan></text>
-<text x="32" y="126" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[If you]</text>
-<text x="458" y="126" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Look at]</text>
-<rect x="32.5" y="140.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="171" font-size="21" fill="#0a0a0a">Want approved outreach</text>
-<text x="48" y="198" font-size="21" fill="#0a0a0a">and a full CRM</text>
-<line x1="426" x2="448" y1="176" y2="176" stroke="#0a0a0a"/>
-<polygon points="448,171 457,176 448,181" fill="#0a0a0a"/>
-<rect x="458.5" y="140.5" width="229" height="71" fill="#10b981" stroke="#0a0a0a"/>
-<text x="474" y="183" font-weight="600" font-size="22" fill="#0a0a0a">Omniscient</text>
-<rect x="32.5" y="224.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="255" font-size="21" fill="#0a0a0a">Sell from Gmail and want</text>
-<text x="48" y="282" font-size="21" fill="#0a0a0a">email with LinkedIn</text>
-<line x1="426" x2="448" y1="260" y2="260" stroke="#0a0a0a"/>
-<polygon points="448,255 457,260 448,265" fill="#0a0a0a"/>
-<rect x="458.5" y="224.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="267" font-weight="600" font-size="22" fill="#0a0a0a">NetHunt CRM</text>
-<rect x="32.5" y="308.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="339" font-size="21" fill="#0a0a0a">Want a simple</text>
-<text x="48" y="366" font-size="21" fill="#0a0a0a">LinkedIn pipeline</text>
-<line x1="426" x2="448" y1="344" y2="344" stroke="#0a0a0a"/>
-<polygon points="448,339 457,344 448,349" fill="#0a0a0a"/>
-<rect x="458.5" y="308.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="351" font-weight="600" font-size="22" fill="#0a0a0a">Kanbox</text>
-<rect x="32.5" y="392.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="423" font-size="21" fill="#0a0a0a">Want LinkedIn, email</text>
-<text x="48" y="450" font-size="21" fill="#0a0a0a">and X in one tool</text>
-<line x1="426" x2="448" y1="428" y2="428" stroke="#0a0a0a"/>
-<polygon points="448,423 457,428 448,433" fill="#0a0a0a"/>
-<rect x="458.5" y="392.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="435" font-weight="600" font-size="22" fill="#0a0a0a">Meet Alfred</text>
-<rect x="32.5" y="476.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="507" font-size="21" fill="#0a0a0a">Want the lowest price</text>
-<text x="48" y="534" font-size="21" fill="#0a0a0a">per LinkedIn account</text>
-<line x1="426" x2="448" y1="512" y2="512" stroke="#0a0a0a"/>
-<polygon points="448,507 457,512 448,517" fill="#0a0a0a"/>
-<rect x="458.5" y="476.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="519" font-weight="600" font-size="22" fill="#0a0a0a">Linked Helper</text>
-<rect x="32.5" y="560.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="591" font-size="21" fill="#0a0a0a">Write every LinkedIn</text>
-<text x="48" y="618" font-size="21" fill="#0a0a0a">message yourself</text>
-<line x1="426" x2="448" y1="596" y2="596" stroke="#0a0a0a"/>
-<polygon points="448,591 457,596 448,601" fill="#0a0a0a"/>
-<rect x="458.5" y="560.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="591" font-weight="600" font-size="22" fill="#0a0a0a">Breakcold</text>
-<text x="474" y="618" font-weight="600" font-size="22" fill="#0a0a0a">or folk</text>
-<rect x="32.5" y="644.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="675" font-size="21" fill="#0a0a0a">Keep HubSpot or Pipedrive</text>
-<text x="48" y="702" font-size="21" fill="#0a0a0a">and want automation</text>
-<line x1="426" x2="448" y1="680" y2="680" stroke="#0a0a0a"/>
-<polygon points="448,675 457,680 448,685" fill="#0a0a0a"/>
-<rect x="458.5" y="644.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="675" font-weight="600" font-size="19" fill="#0a0a0a">La Growth Machine</text>
-<text x="474" y="702" font-weight="600" font-size="19" fill="#0a0a0a">or lemlist</text>
-<rect x="32.5" y="728.5" width="393" height="71" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="759" font-size="21" fill="#0a0a0a">Run many LinkedIn</text>
-<text x="48" y="786" font-size="21" fill="#0a0a0a">sender accounts</text>
-<line x1="426" x2="448" y1="764" y2="764" stroke="#0a0a0a"/>
-<polygon points="448,759 457,764 448,769" fill="#0a0a0a"/>
-<rect x="458.5" y="728.5" width="229" height="71" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="474" y="771" font-weight="600" font-size="22" fill="#0a0a0a">HeyReach</text>
+<text x="32" y="46" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Pick a tool</text>
+<text x="32" y="86" font-size="30" font-weight="500" fill="#171717">Start from how you sell, <tspan fill="#171717">then try two</tspan></text>
+<text x="32" y="126" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">If you</text>
+<text x="458" y="126" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Look at</text>
+<rect x="32.5" y="140.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="171" font-size="21" fill="#171717">Want approved outreach</text>
+<text x="48" y="198" font-size="21" fill="#171717">and a full CRM</text>
+<line x1="426" x2="448" y1="176" y2="176" stroke="#8a8a85"/>
+<polygon points="448,171 457,176 448,181" fill="#333333"/>
+<rect x="458.5" y="140.5" width="229" height="71" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<text x="474" y="183" font-weight="500" font-size="22" fill="#171717">Omniscient</text>
+<rect x="32.5" y="224.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="255" font-size="21" fill="#171717">Sell from Gmail and want</text>
+<text x="48" y="282" font-size="21" fill="#171717">email with LinkedIn</text>
+<line x1="426" x2="448" y1="260" y2="260" stroke="#8a8a85"/>
+<polygon points="448,255 457,260 448,265" fill="#333333"/>
+<rect x="458.5" y="224.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="267" font-weight="500" font-size="22" fill="#171717">NetHunt CRM</text>
+<rect x="32.5" y="308.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="339" font-size="21" fill="#171717">Want a simple</text>
+<text x="48" y="366" font-size="21" fill="#171717">LinkedIn pipeline</text>
+<line x1="426" x2="448" y1="344" y2="344" stroke="#8a8a85"/>
+<polygon points="448,339 457,344 448,349" fill="#333333"/>
+<rect x="458.5" y="308.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="351" font-weight="500" font-size="22" fill="#171717">Kanbox</text>
+<rect x="32.5" y="392.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="423" font-size="21" fill="#171717">Want LinkedIn, email</text>
+<text x="48" y="450" font-size="21" fill="#171717">and X in one tool</text>
+<line x1="426" x2="448" y1="428" y2="428" stroke="#8a8a85"/>
+<polygon points="448,423 457,428 448,433" fill="#333333"/>
+<rect x="458.5" y="392.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="435" font-weight="500" font-size="22" fill="#171717">Meet Alfred</text>
+<rect x="32.5" y="476.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="507" font-size="21" fill="#171717">Want the lowest price</text>
+<text x="48" y="534" font-size="21" fill="#171717">per LinkedIn account</text>
+<line x1="426" x2="448" y1="512" y2="512" stroke="#8a8a85"/>
+<polygon points="448,507 457,512 448,517" fill="#333333"/>
+<rect x="458.5" y="476.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="519" font-weight="500" font-size="22" fill="#171717">Linked Helper</text>
+<rect x="32.5" y="560.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="591" font-size="21" fill="#171717">Write every LinkedIn</text>
+<text x="48" y="618" font-size="21" fill="#171717">message yourself</text>
+<line x1="426" x2="448" y1="596" y2="596" stroke="#8a8a85"/>
+<polygon points="448,591 457,596 448,601" fill="#333333"/>
+<rect x="458.5" y="560.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="591" font-weight="500" font-size="22" fill="#171717">Breakcold</text>
+<text x="474" y="618" font-weight="500" font-size="22" fill="#171717">or folk</text>
+<rect x="32.5" y="644.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="675" font-size="21" fill="#171717">Keep HubSpot or Pipedrive</text>
+<text x="48" y="702" font-size="21" fill="#171717">and want automation</text>
+<line x1="426" x2="448" y1="680" y2="680" stroke="#8a8a85"/>
+<polygon points="448,675 457,680 448,685" fill="#333333"/>
+<rect x="458.5" y="644.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="675" font-weight="600" font-size="19" fill="#171717">La Growth Machine</text>
+<text x="474" y="702" font-weight="600" font-size="19" fill="#171717">or lemlist</text>
+<rect x="32.5" y="728.5" width="393" height="71" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="48" y="759" font-size="21" fill="#171717">Run many LinkedIn</text>
+<text x="48" y="786" font-size="21" fill="#171717">sender accounts</text>
+<line x1="426" x2="448" y1="764" y2="764" stroke="#8a8a85"/>
+<polygon points="448,759 457,764 448,769" fill="#333333"/>
+<rect x="458.5" y="728.5" width="229" height="71" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="474" y="771" font-weight="500" font-size="22" fill="#171717">HeyReach</text>
 <text x="32" y="844" font-size="21" fill="#737373">Test any pick with a short list of ten people first.</text>
 </svg>

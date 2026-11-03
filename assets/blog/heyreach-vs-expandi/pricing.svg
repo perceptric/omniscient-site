@@ -2,43 +2,42 @@
 <title id="t">HeyReach and Expandi pricing compared</title>
 <desc id="d">What HeyReach and Expandi cost in November 2026. HeyReach bills per LinkedIn sender: Growth $79 per sender a month, or $64 billed yearly; Agency $999 a month for 25 senders; Unlimited $2,999 a month for up to 300 senders; a free trial of 14 days with no card and up to 3 accounts. Expandi bills per seat, one LinkedIn account each: Business $99 per seat a month, or $79 billed yearly; Agency from 10 seats, priced on request; images, GIFs and video as paid extras; a free trial of 7 days with every feature.</desc>
 <rect width="720" height="752" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="751" fill="none" stroke="#0a0a0a"/>
-<rect x="32" y="35" width="11" height="11" fill="#10b981" stroke="#0a0a0a"/>
-<text x="52" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Pricing]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">What each plan costs <tspan fill="#a3a3a3">today</tspan></text>
-<rect x="32" y="116" width="656" height="276" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="52" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[HeyReach] billed per LinkedIn sender</text>
-<text x="52" y="192" font-size="20" font-weight="600" fill="#0a0a0a">Growth</text>
+<rect x="32" y="35" width="11" height="11" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="52" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Pricing</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">What each plan costs <tspan fill="#171717">today</tspan></text>
+<rect x="32" y="116" width="656" height="276" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="52" y="146" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#404040">[HeyReach] billed per LinkedIn sender</text>
+<text x="52" y="192" font-size="20" font-weight="500" fill="#171717">Growth</text>
 <text x="668" y="192" font-size="19" fill="#404040" text-anchor="end">$79 per sender a month</text>
-<line x1="33" x2="687" y1="208" y2="208" stroke="#e5e5e5"/>
-<text x="52" y="238" font-size="20" font-weight="600" fill="#0a0a0a">Growth, billed yearly</text>
+<line x1="33" x2="687" y1="208" y2="208" stroke="#ebebeb"/>
+<text x="52" y="238" font-size="20" font-weight="500" fill="#171717">Growth, billed yearly</text>
 <text x="668" y="238" font-size="19" fill="#404040" text-anchor="end">$64 per sender a month</text>
-<line x1="33" x2="687" y1="254" y2="254" stroke="#e5e5e5"/>
-<text x="52" y="284" font-size="20" font-weight="600" fill="#0a0a0a">Agency</text>
+<line x1="33" x2="687" y1="254" y2="254" stroke="#ebebeb"/>
+<text x="52" y="284" font-size="20" font-weight="500" fill="#171717">Agency</text>
 <text x="668" y="284" font-size="19" fill="#404040" text-anchor="end">$999 a month for 25 senders</text>
-<line x1="33" x2="687" y1="300" y2="300" stroke="#e5e5e5"/>
-<text x="52" y="330" font-size="20" font-weight="600" fill="#0a0a0a">Unlimited</text>
+<line x1="33" x2="687" y1="300" y2="300" stroke="#ebebeb"/>
+<text x="52" y="330" font-size="20" font-weight="500" fill="#171717">Unlimited</text>
 <text x="668" y="330" font-size="19" fill="#404040" text-anchor="end">$2,999 a month, up to 300 senders</text>
-<line x1="33" x2="687" y1="346" y2="346" stroke="#e5e5e5"/>
-<text x="52" y="376" font-size="20" font-weight="600" fill="#0a0a0a">Free trial</text>
+<line x1="33" x2="687" y1="346" y2="346" stroke="#ebebeb"/>
+<text x="52" y="376" font-size="20" font-weight="500" fill="#171717">Free trial</text>
 <text x="668" y="376" font-size="19" fill="#404040" text-anchor="end">14 days, no card, up to 3 accounts</text>
-<rect x="32" y="414" width="656" height="276" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="32" y="414" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="52" y="444" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Expandi] billed per seat, one account each</text>
-<text x="52" y="490" font-size="20" font-weight="600" fill="#0a0a0a">Business</text>
+<rect x="32" y="414" width="656" height="276" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="32" y="414" width="656" height="46" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="52" y="444" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#404040">[Expandi] billed per seat, one account each</text>
+<text x="52" y="490" font-size="20" font-weight="500" fill="#171717">Business</text>
 <text x="668" y="490" font-size="19" fill="#404040" text-anchor="end">$99 per seat a month</text>
-<line x1="33" x2="687" y1="506" y2="506" stroke="#e5e5e5"/>
-<text x="52" y="536" font-size="20" font-weight="600" fill="#0a0a0a">Business, billed yearly</text>
+<line x1="33" x2="687" y1="506" y2="506" stroke="#ebebeb"/>
+<text x="52" y="536" font-size="20" font-weight="500" fill="#171717">Business, billed yearly</text>
 <text x="668" y="536" font-size="19" fill="#404040" text-anchor="end">$79 per seat a month</text>
-<line x1="33" x2="687" y1="552" y2="552" stroke="#e5e5e5"/>
-<text x="52" y="582" font-size="20" font-weight="600" fill="#0a0a0a">Agency</text>
+<line x1="33" x2="687" y1="552" y2="552" stroke="#ebebeb"/>
+<text x="52" y="582" font-size="20" font-weight="500" fill="#171717">Agency</text>
 <text x="668" y="582" font-size="19" fill="#404040" text-anchor="end">From 10 seats, priced on request</text>
-<line x1="33" x2="687" y1="598" y2="598" stroke="#e5e5e5"/>
-<text x="52" y="628" font-size="20" font-weight="600" fill="#0a0a0a">Images, GIFs, video</text>
+<line x1="33" x2="687" y1="598" y2="598" stroke="#ebebeb"/>
+<text x="52" y="628" font-size="20" font-weight="500" fill="#171717">Images, GIFs, video</text>
 <text x="668" y="628" font-size="19" fill="#404040" text-anchor="end">Paid extras</text>
-<line x1="33" x2="687" y1="644" y2="644" stroke="#e5e5e5"/>
-<text x="52" y="674" font-size="20" font-weight="600" fill="#0a0a0a">Free trial</text>
+<line x1="33" x2="687" y1="644" y2="644" stroke="#ebebeb"/>
+<text x="52" y="674" font-size="20" font-weight="500" fill="#171717">Free trial</text>
 <text x="668" y="674" font-size="19" fill="#404040" text-anchor="end">7 days, every feature</text>
 <text x="32" y="726" font-size="18" fill="#737373">List prices from each vendor&#x27;s pricing page, November 2026.</text>
 </svg>
