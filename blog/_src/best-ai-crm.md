@@ -615,7 +615,31 @@ Here's how to try each one and how each charges for the AI.
 
 If you're still torn, start from how your team sells and try the two that fit it best.
 
-![Decision chart: for LinkedIn outreach and a CRM in one, look at Omniscient; for marketing and sales on one platform, HubSpot; with an admin and custom builds, Salesforce; if your company runs on Microsoft, Dynamics 365; to design your own data model, Attio; for agents that work from team memory, Day AI; to replace your recorder and sequencer too, Lightfield; for unlimited seats on a small budget, Clarify; for teams on the phone, Close; for planning around pipeline stages, Pipedrive; if you already use Zoho apps, Zoho CRM; if your team plans work in monday.com, monday CRM; for AI lead scoring on a low seat price, Freshsales; for relationships that start on LinkedIn, folk](/assets/blog/best-ai-crm/pick-a-crm.svg)
+```tree
+# Which AI CRM to try first
+What decides it for your team?
+  Software you already use: Which one?
+    Microsoft: Microsoft Dynamics 365 Sales
+    Zoho apps: Zoho CRM
+    monday.com: monday CRM
+    Marketing on the same platform: HubSpot
+  How you sell: Where do your deals start?
+    LinkedIn: Should the CRM run the outreach?
+      Yes: Omniscient
+      No, you track relationships: folk
+    The phone: Close
+    Pipeline stages you plan around: Pipedrive
+  Budget, build and AI: What matters most?
+    A small budget: Which kind?
+      Unlimited seats: Clarify
+      AI lead scoring on a low seat price: Freshsales
+    Building it your way: Who builds it?
+      An admin, with custom builds: Salesforce
+      You, with your own data model: Attio
+    AI that does the work: Which work?
+      Agents that work from team memory: Day AI
+      Replacing your recorder and sequencer: Lightfield
+```
 
 ## How to choose an AI CRM
 

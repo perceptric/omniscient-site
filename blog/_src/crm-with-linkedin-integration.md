@@ -273,7 +273,21 @@ With HubSpot, Salesforce, Dynamics 365 or Zoho CRM, you pay for the CRM plan wit
 
 Start with where your reps write to buyers, since that decides which kind of integration catches their conversations.
 
-![Decision chart: reps in Sales Navigator with Advanced Plus seats, look at HubSpot, Salesforce or Dynamics 365; in Sales Navigator with a low CRM budget, Zoho CRM; in LinkedIn with outreach you approve, Omniscient; in LinkedIn writing every message yourself, Breakcold; in Gmail and LinkedIn in one sequence, NetHunt CRM; in LinkedIn alone with a Kanban board, Kanbox; in a pipeline CRM you already run, Pipedrive or Attio with a marketplace app; in LinkedIn when you only save profiles, folk, Salesflare or Nimble](/assets/blog/crm-with-linkedin-integration/pick-a-crm.svg)
+```tree
+# Pick a CRM by where your reps write to buyers
+Where do your reps write to buyers?
+  Sales Navigator: Which fits your team?
+    Advanced Plus seats: HubSpot, Salesforce, Dynamics 365
+    A low CRM budget: Zoho CRM
+  LinkedIn: What should the CRM do there?
+    Send outreach you approve: Omniscient
+    Hold messages you write yourself: Breakcold
+    Save profiles: folk, Salesflare, Nimble
+    Give LinkedIn a Kanban board: Kanbox
+  Gmail or a CRM you run: Which one?
+    Gmail, with LinkedIn in one sequence: NetHunt CRM
+    A pipeline CRM you already run: Pipedrive, Attio | With a marketplace app
+```
 
 Then test where LinkedIn meets the record during the trial:
 

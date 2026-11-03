@@ -209,6 +209,76 @@
 .bl-body .bl-shot .band { padding: 28px; }
 .bl-body .bl-shot .app { min-height: 0; }
 
+/* ═══ Decision trees (```tree): a question on top, labeled branches, tool cards at the ends ═══
+   Stacked by default: each question's branches hang under it on a rail. From 784px a question whose branches fit side
+   by side (the build marks it --row) draws them as a tree, joined by lines. Text always wraps, never cuts off. */
+.bl-band--tree { padding: 32px 28px; overflow-x: auto; overscroll-behavior-x: contain; }
+.bl-tree { --tl: var(--line-strong); min-width: 0; }
+.bl-tree ul { margin: 0; padding: 0; list-style: none; }
+.bl-body .bl-tree__title { margin: 0 0 24px; font: 500 18px/1.3 var(--font); letter-spacing: -0.015em; color: var(--ink); text-wrap: balance; }
+.bl-tree__node { display: flex; flex-direction: column; align-items: stretch; min-width: 0; }
+.bl-body .bl-tree__q {
+  align-self: flex-start; max-width: 100%; margin: 0; padding: 11px 14px; border-radius: var(--r-lg); background: var(--panel);
+  box-shadow: var(--sh-rest); font: 500 15px/1.45 var(--font); letter-spacing: -0.01em; color: var(--ink); text-wrap: pretty;
+}
+.bl-tree__kids { margin-left: 20px; }
+.bl-body .bl-tree__kid { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; margin: 0; padding: 12px 0 0 24px; }
+.bl-tree__kid::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; border-left: 1px solid var(--tl); }
+.bl-tree__kid:last-child::before { display: none; }
+.bl-tree__kid::after {
+  content: ""; position: absolute; left: 0; top: 0; width: 16px; height: 24px;
+  border-left: 1px solid var(--tl); border-bottom: 1px solid var(--tl); border-bottom-left-radius: 8px;
+}
+.bl-tree__label {
+  position: relative; display: inline-flex; align-items: center; min-height: 24px; max-width: 100%; padding: 4px 9px;
+  border-radius: 7px; background: var(--panel); box-shadow: var(--sh-chip); font: 500 12.5px/16px var(--font); color: var(--ink-2); text-wrap: balance;
+}
+.bl-tree__kid > .bl-tree__node, .bl-tree__kid > .bl-tree__leaf { margin-top: 12px; }
+.bl-tree__kid > .bl-tree__node { align-self: stretch; }
+.bl-tree__leaf { max-width: 100%; padding: 10px 12px; border-radius: var(--r-lg); background: var(--panel); box-shadow: var(--sh-rest); }
+.bl-tree__tools { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.bl-body .bl-tree__tools > li { margin: 0; padding: 0; }
+.bl-body .bl-tree__tool { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; font: 500 14px/1.35 var(--font); color: var(--ink); text-decoration: none; }
+.bl-tree__name { min-width: 0; overflow-wrap: anywhere; }
+.bl-body a.bl-tree__tool .bl-tree__name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: var(--line-strong); transition: text-decoration-color var(--fast) var(--ease-out); }
+.bl-body a.bl-tree__tool:hover .bl-tree__name { text-decoration-color: var(--ink); }
+.bl-tree__tool--own .bl-tree__name { color: var(--signal-text); }
+.bl-body a.bl-tree__tool--own .bl-tree__name { text-decoration-color: var(--signal-line); }
+.bl-tree__logo { display: inline-grid; place-items: center; flex: none; width: 24px; height: 24px; border-radius: 7px; background: #fff; box-shadow: var(--sh-chip); }
+.bl-tree__logo img { width: 16px; height: 16px; object-fit: contain; }
+.bl-body .bl-tree__note { margin: 6px 0 0; font: 400 12.5px/1.45 var(--font); color: var(--muted); }
+
+@media (min-width: 784px) {
+  .bl-body .bl-tree__node--row > .bl-tree__q { align-self: center; max-width: min(100%, 420px); text-align: center; text-wrap: balance; }
+  .bl-tree__node--row > .bl-tree__kids { position: relative; display: flex; align-items: flex-start; margin-left: 0; padding-top: 16px; }
+  .bl-tree__node--row > .bl-tree__kids::before { content: ""; position: absolute; left: 50%; top: 0; height: 16px; border-left: 1px solid var(--tl); }
+  .bl-body .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid { flex: 1 1 0; align-items: stretch; padding: 16px 8px 0; }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid::before {
+    display: block; left: 0; top: 0; bottom: auto; width: 50%; height: 0; border-left: 0; border-top: 1px solid var(--tl);
+  }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid::after {
+    left: 50%; top: 0; width: 50%; height: 16px; border-top: 1px solid var(--tl); border-left: 1px solid var(--tl); border-bottom: 0; border-radius: 0;
+  }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid:first-child::before { display: none; }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid:first-child::after { border-top-left-radius: 10px; }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid:last-child::before { width: calc(50% + 1px); height: 16px; border-right: 1px solid var(--tl); border-top-right-radius: 10px; }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid:last-child::after { display: none; }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid > .bl-tree__label { align-self: center; text-align: center; }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid > .bl-tree__label::after { content: ""; position: absolute; left: 50%; top: 100%; height: 12px; border-left: 1px solid var(--tl); }
+  .bl-tree__node--row > .bl-tree__kids > .bl-tree__kid > .bl-tree__leaf { align-self: stretch; }
+}
+
+/* Each step of the tree rises in after the one above it, once, as it scrolls into view (site.js adds is-in). */
+.js .bl-tree.reveal { opacity: 1; transform: none; }
+.js .bl-tree.reveal :is(.bl-tree__title, .bl-tree > .bl-tree__node > .bl-tree__q, .bl-tree__kid) {
+  opacity: 0; transform: translateY(8px);
+  transition: opacity var(--slow) var(--ease-out), transform var(--slow) var(--ease-out); transition-delay: calc(var(--d, 0) * 110ms);
+}
+.js .bl-tree.reveal.is-in :is(.bl-tree__title, .bl-tree > .bl-tree__node > .bl-tree__q, .bl-tree__kid) { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .bl-tree.reveal :is(.bl-tree__title, .bl-tree > .bl-tree__node > .bl-tree__q, .bl-tree__kid) { opacity: 1; transform: none; }
+}
+
 /* ═══ Cards: the index and related posts ═══ */
 .bl-cards { display: grid; gap: 24px; grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 640px) { .bl-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -275,6 +345,10 @@
   .bl-browser__dots { gap: 4px; }
   .bl-browser__dots i { width: 6px; height: 6px; }
   .bl-browser__url { font-size: 10.5px; }
+  .bl-band--tree { padding: 20px 14px; }
+  .bl-tree__kids { margin-left: 14px; }
+  .bl-body .bl-tree__kid { padding-left: 20px; }
+  .bl-tree__kid::after { width: 14px; }
   .bl-hero { padding-top: 48px; padding-bottom: 28px; }
   .bl-related { padding-top: 80px; }
   .bl-post, .bl-index { padding-bottom: 80px; }

@@ -537,7 +537,21 @@ You can download STACKED and start a free trial, or book a demo first. Prices pe
 
 If you're still torn, start from your situation and try the two tools that fit it best.
 
-![Decision chart: for outreach and a CRM in one place, look at Omniscient; for many accounts for clients, HeyReach or GetSales.io; for LinkedIn and cold email together, lemlist or La Growth Machine; for a careful cloud tool with email follow ups, Expandi or Dripify; for AI that answers first replies, SalesRobot; to also reach buyers on X, Meet Alfred; for a first try on your own, Waalaxy; for the lowest price for one account, Linked Helper](/assets/blog/best-linkedin-automation-tools/pick-a-tool.svg)
+```tree
+# Which LinkedIn automation tool to try first
+Who are you sending for?
+  Clients: HeyReach, GetSales.io | Many LinkedIn accounts
+  Your team: Do you want outreach and the CRM in one place?
+    Yes: Omniscient
+    No: What else should the tool do?
+      Cold email: lemlist, La Growth Machine
+      Careful cloud sending, with email: Expandi, Dripify
+      Answer first replies with AI: SalesRobot
+      Reach buyers on X: Meet Alfred
+  Just you: What matters most?
+    An easy first try: Waalaxy
+    The lowest price for one account: Linked Helper
+```
 
 ## What happens when someone replies
 

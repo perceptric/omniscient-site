@@ -56,9 +56,23 @@ Most of the reasons come down to how Dripify bills seats and where your replies 
 - Sequences mix LinkedIn and email steps, so a rep who also calls or reaches buyers on X keeps those in another tool.
 - Its ceiling of 75 connection requests a day sits well above the 40 our own engine allows at its highest setting.
 
-This chart points each reason to the tools we'd look at first:
+This tree walks each reason to the tools we'd look at first:
 
-![Where to look first when leaving Dripify, by reason. Replies on your CRM record: Omniscient. Salesforce or Pipedrive as your CRM: Expandi, SalesRobot, Closely, Skylead, Dux-Soup or Linked Helper. Many client accounts: HeyReach, GetSales, Skylead or Closely. Calls in the same sequence: La Growth Machine or lemlist. X steps in the same sequence: Meet Alfred or La Growth Machine. More replies from email than LinkedIn: lemlist or Skylead. Sending on your own with a smaller bill: Waalaxy, Kanbox or Linked Helper.](/assets/blog/dripify-alternatives/reasons.svg)
+```tree
+# Where to look first when leaving Dripify
+Who are you sending for?
+  Client accounts: HeyReach, GetSales, Skylead, Closely
+  Your team: What's missing in Dripify?
+    Replies on your CRM record: Omniscient
+    A Salesforce or Pipedrive sync: Email steps in the same sequence?
+      Yes: Expandi, SalesRobot, Closely, Skylead
+      No: Dux-Soup, Linked Helper
+    Calls or X steps: Which one?
+      Calls: La Growth Machine, lemlist
+      X steps: Meet Alfred, La Growth Machine
+    More replies from email: lemlist, Skylead
+  Just you: Waalaxy, Kanbox, Linked Helper | A smaller bill
+```
 
 ## Dripify's daily limits next to ours
 

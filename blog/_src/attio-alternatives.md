@@ -78,7 +78,25 @@ Every reason below comes from Attio's own pricing page, help center and app dire
 
 These matter most for a small sales team, and for anyone who opens most conversations on LinkedIn.
 
-![Twelve reasons teams leave Attio and the alternative that fits each: LinkedIn outreach with replies in the CRM points to Omniscient; email sequences below a $79 seat points to folk Premium; everyone on board with no per seat price points to Clarify; a flexible data model in open source points to Twenty; agents on a shared memory of your team points to Day AI; call recording and sequences in the CRM points to Lightfield; email campaigns on the first paid plan points to Salesflare; a team that lives in Gmail points to Copper; sales on the same boards as your projects points to monday CRM; deal flow at a fund points to Affinity; a team that sells by phone points to Close; a simple pipeline to plan your week points to Pipedrive. For many custom objects plus email, Attio may still fit best.](/assets/blog/attio-alternatives/reasons.svg)
+```tree
+# Your reason to leave Attio, and the CRM that fits
+What sent you looking past Attio?
+  Outreach: Where do you start conversations?
+    LinkedIn, with replies in the CRM: Omniscient
+    Email: Do you need many custom objects?
+      Yes: Attio (attio.com) | Attio may still fit best
+      No: folk Premium, Salesflare | Sequences below a $79 seat, or campaigns on the first paid plan
+    Calls: Close, Lightfield | Selling by phone, or call recording and sequences in the CRM
+  Seats and AI: What should change?
+    No price per seat: Clarify
+    Open source: Twenty
+    Agents on a shared memory: Day AI
+  How your team works: Where does the work live?
+    In Gmail: Copper
+    On project boards: monday CRM
+    In a fund's deal flow: Affinity
+    In a pipeline you plan around: Pipedrive
+```
 
 ## The 13 best Attio alternatives in 2026
 

@@ -77,7 +77,29 @@ Most reasons come down to where folk draws its plan lines and what its sequences
 
 Each pick below matches one reason for leaving folk, starting with the one we know from the inside.
 
-![13 reasons teams leave folk and the CRM that fits each: LinkedIn outreach that sends for you points to Omniscient; a data model you design yourself points to Attio; a free CRM with room for marketing points to HubSpot; email workflows and a LinkedIn sidebar point to Salesflare; LinkedIn and WhatsApp chats in one inbox point to Breakcold; a pipeline you plan your week around points to Pipedrive; an agency that works in Gmail points to Copper; pipelines inside your Gmail inbox point to Streak; open source you can host yourself points to Twenty; one team price with unlimited seats points to Clarify; a team that sells by phone points to Close; one plan with 25,000 contacts points to Nimble; your own network with no pipeline points to Dex. If you save LinkedIn profiles by hand and email from Premium, folk may still fit best.](/assets/blog/folk-crm-alternatives/reasons.svg)
+```tree
+# Your reason to leave folk, and the CRM that fits
+What sent you looking past folk?
+  LinkedIn and messages: What should happen on LinkedIn?
+    Outreach that sends for you: Omniscient
+    A sidebar, with email workflows: Salesflare
+    One inbox with WhatsApp: Breakcold
+    Profiles saved by hand, email from Premium: folk (folk.app) | folk may still fit best
+  How you sell: Where does your day happen?
+    Gmail: What do you need?
+      A CRM for an agency: Copper
+      Pipelines inside the inbox: Streak
+    The phone: Close
+    A pipeline you plan your week around: Pipedrive
+    Your own network, with no pipeline: Dex
+  Price and setup: What do you want?
+    A free start, with room for marketing: HubSpot
+    One team price, unlimited seats: Clarify
+    25,000 contacts on one plan: Nimble
+    Control: Of what?
+      The data model: Attio
+      The hosting, as open source: Twenty
+```
 
 ### 1. Omniscient
 
