@@ -157,7 +157,7 @@ Attio sends email from inside the CRM, one at a time or in bulk, with these limi
 | Pro | Unlimited | 50 | Yes |
 | Enterprise | Unlimited | 50 | Yes |
 
-Omniscient reads your mailbox and never sends, deletes or changes anything in it. Otto drafts the next email from the thread, and you send it from your own inbox.
+Omniscient reads your mailbox and never deletes or changes anything in it. Otto drafts the next email from the thread, and it goes out from your own account only when you click Send.
 
 We think a CRM that reads every email you write is easier to trust when it can't send from your inbox. Frankly, that choice costs you something if your outbound runs on email sequences to warm leads, since Attio's Pro plan covers them in one place and Omniscient doesn't.
 

@@ -353,6 +353,12 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .sec2 .n { font: 500 11px var(--font); color: var(--ink-2); }
 .sec2 b { font: 600 17px "Inter Tight", sans-serif; letter-spacing: -.01em; }
 .sec2 p { margin: 0; color: var(--ink-2); font-size: 13.5px; }
+/* Each item's scene needs about 260px, so the four items sit two by two until the page is wide enough. */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .sec2 .grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sec2 .grid4 > div:nth-child(3) { border-left: 0; }
+  .sec2 .grid4 > div:nth-child(n+3) { border-top: 1px solid var(--frame); }
+}
 
 /* Pricing */
 .pricing { padding-top: 120px; padding-bottom: 40px; }

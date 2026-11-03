@@ -2,7 +2,8 @@
 // A part with data-at="n" comes in at step n, a part with data-off="n" leaves at step n, and the scene gets the
 // classes s1 to sn as it goes (a part that is in has is-on, one that has left has is-gone). data-t lists the wait in ms before each step.
 // Product pages: a scene plays once when it comes into view and stays on its last frame; hover or tap plays it again.
-// Product menu: the scenes play while the menu is open, and the hovered or focused card's scene loops.
+// Product and Resources menus: the scenes play while the menu is open, and the hovered or focused card's scene loops.
+// Home page security: each item's scene plays once in view, like the product pages.
 // Reduced motion shows the last frame.
 (function () {
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -79,11 +80,13 @@
   var all = Array.prototype.slice.call(document.querySelectorAll("[data-scene]"));
   if (!all.length) return;
 
-  // The Product menu.
-  var panel = document.getElementById("menu-product");
-  var group = panel && panel.closest(".nav__group");
-  var minis = all.filter(function (el) { return panel && panel.contains(el); }).map(make);
-  if (group && minis.length && "MutationObserver" in window) {
+  // The header menus (Product and Resources).
+  var panels = Array.prototype.slice.call(document.querySelectorAll(".nav__panel"));
+  var inMenu = function (el) { return panels.some(function (p) { return p.contains(el); }); };
+  panels.forEach(function (panel) {
+    var group = panel.closest(".nav__group");
+    var minis = all.filter(function (el) { return panel.contains(el); }).map(make);
+    if (!group || !minis.length || !("MutationObserver" in window)) return;
     var open = false;
     new MutationObserver(function () {
       var now = group.classList.contains("is-open");
@@ -102,21 +105,23 @@
       card.addEventListener("pointerleave", off);
       card.addEventListener("blur", off);
     });
-  }
+  });
 
   // Scenes on the page.
   var hover = window.matchMedia("(hover: hover) and (pointer: fine)");
-  var shots = all.filter(function (el) { return !(panel && panel.contains(el)); }).map(make);
+  var shots = all.filter(function (el) { return !inMenu(el); }).map(make);
   shots.forEach(function (s) {
     s.root.addEventListener("pointerenter", function () { if (hover.matches) s.replay(); });
     s.root.addEventListener("click", function () { s.replay(); });
   });
   if (!("IntersectionObserver" in window)) return shots.forEach(function (s) { s.play(); });
+  // Scenes that come into view together start one after another.
   var io = new IntersectionObserver(function (entries) {
+    var n = 0;
     entries.forEach(function (e) {
       if (!e.isIntersecting) return;
       io.unobserve(e.target);
-      shots.forEach(function (s) { if (s.root === e.target) s.play(); });
+      shots.forEach(function (s) { if (s.root === e.target) s.later(n++ * 180); });
     });
   }, { threshold: 0.4 });
   shots.forEach(function (s) { io.observe(s.root); });
