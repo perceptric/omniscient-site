@@ -101,11 +101,11 @@ A few more habits shape each day of sending in our engine:
 - A profile view goes out 1 to 4 hours before each invitation, unless you turn that setting off.
 - A reconnected or restricted account starts its warmup again from 5 a day.
 
-LinkedIn's page on [invitation restrictions](https://www.linkedin.com/help/linkedin/answer/a551012) names "many invitations within a short amount of time" as one cause, along with invitations that are "ignored, left pending, or marked as spam." A lower daily pace helps with the second cause too, because a list people ignore shows up in your acceptance rate before many requests pile up.
+LinkedIn's page on [invitation restrictions](https://www.linkedin.com/help/linkedin/answer/a551012) names "many invitations within a short amount of time" as one cause. Another is invitations that are "ignored, left pending, or marked as spam." A lower daily pace helps with that one too, because a list people ignore shows up in your acceptance rate before many requests pile up.
 
 Spreading invitations out does cost speed: at the Normal pace of 80 a week, a list of 400 people takes at least five weeks to invite.
 
-Every tool on this list automates LinkedIn, ours included, and LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) says members who use such tools are "in violation of the User Agreement." So even a careful pace carries some risk for your account.
+Every tool on this list automates LinkedIn, ours included. LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) says members who use such tools are "in violation of the User Agreement," so even a careful pace carries some risk for your account.
 
 ## The 13 best lemlist alternatives for LinkedIn outreach
 
@@ -113,20 +113,15 @@ Every tool on this list automates LinkedIn, ours included, and LinkedIn's [prohi
 
 Omniscient is a CRM and LinkedIn outreach software that drafts a message for each lead and sends only what your team approves. Replies land in one Inbox next to the person's CRM record, and the CRM fills itself in from your email and calendar.
 
-In Omniscient, a campaign usually starts in Scout:
+A campaign usually starts in Scout. You describe your buyer in one sentence, and each match gets a score out of 100: up to 60 points for fit and up to 40 for timing signals like hiring or a new role.
 
-- You describe your buyer in one sentence, and Scout finds the people who match.
-- Each lead gets a score out of 100, with up to 60 points for fit and up to 40 for timing signals like hiring or a new role.
-- One click turns the people you pick into a campaign.
-
-Otto, our agent, then writes each person's connection request and messages from your pitch and the person's role and signals. You approve each person yourself, or approve everyone at launch. Editing a message after its approval clears that approval, so LinkedIn only ever receives text someone on your team approved.
+Otto, our agent, then writes each person's connection request and messages from your pitch and their signals. You approve each person, or everyone at launch, and editing a message clears its approval, so LinkedIn only receives text your team approved.
 
 ![Omniscient's campaign People tab. Five leads show their state: Ready, Needs approval, Ready and connected, or Active elsewhere because the person is already in another live campaign. Jordan Blake's panel is open and says Changed since approval, so his messages wait for a new Approve. Otto wrote his connection request, his opening message carries an Edited tag, and a box explains why he is in the list: Tallyfin is hiring 2 SDRs and he became Head of Sales in August.](/assets/blog/lemlist-alternatives/approve.shot.html)
 
-A few rules hold in every campaign:
+Two rules hold in every campaign:
 
-- A person can be in only one live campaign at a time, and a reply stops their outreach in every campaign.
-- Before each invitation, the engine checks the relationship on LinkedIn, so a person with a pending request never gets a second one.
+- A person can be in only one live campaign at a time, and a reply stops their outreach in all of them.
 - A send that times out is never retried on its own, because a doubled message can't be taken back.
 
 Admittedly, Omniscient sends on LinkedIn only, with no email or call steps. If email books most of your meetings, lemlist or La Growth Machine will suit you better, and an agency rotating dozens of client accounts should look at HeyReach.
@@ -139,10 +134,10 @@ La Growth Machine is a sales automation software that runs multichannel sequence
 
 - An identity is one person's set of accounts, and each one is billed separately.
 - Basic allows up to 3 identities, with 1 sending email each and 250 enriched leads a month.
-- Native HubSpot and Pipedrive sync comes with the Ultimate plan, which also adds X.
+- The plan table lists HubSpot and Pipedrive sync on Ultimate, which also adds X.
 - The free trial lasts 14 days with no card and covers 1 identity.
 
-Personally, we'd look here first if you like lemlist's mix of channels and want LinkedIn and email on the starting plan. The catch is that Basic sends from 1 email address per identity and saves the native CRM sync for Ultimate, so a team that lives in HubSpot ends up on the top plan.
+Personally, we'd look here first if you like lemlist's mix of channels and want LinkedIn and email on the starting plan. The catch is that Basic sends from 1 email address per identity. CRM sync appears only on Ultimate's card, so ask which plan your HubSpot setup needs.
 
 ### 3. Expandi
 
@@ -170,21 +165,22 @@ Skylead is a LinkedIn automation and cold email software that builds sequences w
 
 - Each seat includes unlimited email accounts, up to 100,000 emails a month, email warmup and an email finder and verifier.
 - The Agency plan costs $999 a month for 25 seats, or $1,999 for unlimited seats, listed as a first year promotion.
+- Agency adds an agency dashboard and a Unibox for client conversations.
 
-Skylead fits a team that sends a lot of cold email and wants LinkedIn in the same seat. Ask what the Agency promotion becomes in year two before you move clients over.
+Skylead fits a team that sends a lot of cold email and wants LinkedIn in the same seat. There's no cheaper LinkedIn only plan, so a seller who never sends email still pays for a seat that includes 100,000 emails a month. Ask what the Agency promotion becomes in year two before you move clients over.
 
 ### 6. SalesRobot
 
 SalesRobot is a LinkedIn and cold email automation software that runs sequences from the cloud and bills per LinkedIn account. Basic costs [$59 per LinkedIn account a month, or $39 billed yearly](https://www.salesrobot.co/pricing), and Advanced costs $79, or $59 billed yearly.
 
-- Every plan puts LinkedIn and email steps in one sequence, with a dedicated IP and an AI Appointment Setter that can answer replies.
+- Every plan puts LinkedIn and email steps in one sequence, with a dedicated local IP and an AI Appointment Setter Agent that keeps leads talking until they book.
 - Basic allows 1 active campaign and 20 connection requests a day, and Advanced lifts that to unlimited campaigns and 75 a day.
 - Native HubSpot, Pipedrive and Salesforce sync starts on Advanced, since Basic only moves leads through CSV files and Google Sheets.
 - The free trial lasts 14 days, and the pricing FAQ says it doesn't take your credit card.
 
 Basic's 20 requests a day matches the figure lemlist's help center suggests, which makes it a sensible place to start. We'd stay well under 75 even on Advanced.
 
-The AI that answers replies is the part to watch. We made the opposite call in Omniscient: Otto writes a suggested answer, and a person on your team decides whether it goes out. If you turn SalesRobot's setter on, read its first week of answers yourself.
+The AI setter is the part to watch. The pricing page lists it on every plan, while the homepage calls it an add-on, so confirm its price. We made the opposite call in Omniscient: Otto writes a suggested answer, and a person on your team decides whether it goes out. If you turn the setter on, read its first week of answers yourself.
 
 ### 7. Closely
 
@@ -194,17 +190,17 @@ Closely is a LinkedIn and email outreach software that runs sequences across bot
 - AI personalization, the email finder and live LinkedIn scraping start on Growth, at $159 a month for 3 senders, or $95 billed yearly.
 - Sequences pause on their own when a prospect replies, and teammates can assign and tag threads in the inbox.
 
-Helpfully, Starter keeps the CRM sync you had in lemlist, so moving doesn't cost you that link. The AI messages in Closely's headline sit one plan higher, though. The site doesn't say how long the free trial lasts, so ask before you schedule a test.
+Helpfully, Starter keeps the CRM sync you had in lemlist, so moving doesn't cost you that link. The AI personalization in Closely's headline starts one plan higher, though. The site doesn't say how long the free trial lasts, so ask before you schedule a test.
 
 Closely suits a small team that wants LinkedIn and email together with its CRM connected from the first plan.
 
 ### 8. Meet Alfred
 
-Meet Alfred is a LinkedIn automation software that runs sequences on LinkedIn, email and X from its own cloud, with nothing to install on your machine. On yearly billing, LinkedIn Only costs [$29 per user a month](https://meetalfred.com/pricing), Agency costs $39, and Multi-Channel, which adds email and X, costs $49.
+Meet Alfred is a LinkedIn automation software that runs sequences on LinkedIn, email and X from its own cloud, with nothing to install on your machine. On yearly billing, LinkedIn Only costs [$29 per user a month](https://meetalfred.com/pricing). Multi-Channel adds email and X for $49, and Agency costs $39.
 
 - Every plan has a Smart LinkedIn Inbox and human paced delays, and you can adjust daily limits and activity windows yourself.
-- InMail and the Sales Navigator inbox start on Multi-Channel.
-- Native HubSpot and Salesforce sync, a team inbox and white label come with Agency, which the comparison table calls Teams.
+- InMail and the Sales Navigator inbox come with Multi-Channel and Agency.
+- Agency has everything in Multi-Channel plus native HubSpot and Salesforce sync, a team inbox and white label. The page's top price list calls it Teams.
 - The free trial lasts 7 days with no credit card.
 
 LinkedIn Only fits a seller who left lemlist because they use only LinkedIn, since email is the part you stop paying for. The pricing page we read showed only yearly prices, so ask for the monthly rate if you'd rather not commit for a year.
@@ -215,12 +211,12 @@ Meet Alfred suits a small team that also reaches buyers on X. La Growth Machine 
 
 HeyReach is a LinkedIn automation software that runs outreach from many LinkedIn accounts at once, with every reply in one unified inbox. Growth costs [$79 per sender a month, or $64 billed yearly](https://www.heyreach.io/pricing), and Agency costs $999 a month for 25 senders.
 
-- HeyReach bills per LinkedIn sender, so adding teammates or clients costs nothing.
+- HeyReach bills per LinkedIn sender, so adding teammates costs nothing.
 - Email runs through native integrations with Instantly, Smartlead and EmailBison.
 - Agency adds white label and done for you onboarding.
 - The free trial lasts 14 days, with no card and up to 3 LinkedIn accounts.
 
-Happily for agencies, the Agency plan turns 25 client accounts into one predictable bill. The flip side is that email lives in a second tool, so if your sequences need it, you'll pay for Instantly, Smartlead or EmailBison as well.
+Happily for agencies, the Agency plan puts 25 senders on one fixed bill. The flip side is that email lives in a second tool, so if your sequences need it, you'll pay for Instantly, Smartlead or EmailBison as well.
 
 ### 10. GetSales.io
 
@@ -231,7 +227,7 @@ GetSales.io is a LinkedIn and email outreach software for agencies and GTM teams
 - Replies land in a team inbox with labels, and an AI SDR drafts answers and hands off the ones that need a person.
 - It sends leads to HubSpot, Pipedrive, Salesforce, folk and GoHighLevel, and the trial lasts 7 days for LinkedIn and email.
 
-Clients sign in to their own LinkedIn, so their password and 2FA code never pass through your agency. That's a real comfort when you run accounts you don't own.
+Clients sign in to their own LinkedIn, so their password and 2FA code never pass through your agency. That matters when you run accounts you don't own.
 
 The bill comes in separate parts for LinkedIn accounts, email capacity and data credits, so add them up before you compare it with lemlist. GetSales.io suits an agency that wants each client kept apart, with email and a managed proxy in the same app.
 
@@ -243,7 +239,7 @@ Waalaxy is a LinkedIn outreach software that finds prospects, sends invitations 
 - An Inbox for your LinkedIn conversations is an add on at €20 a month.
 - All three listed plans include CRM sync and a free trial of 14 days.
 
-Its homepage says "75% of our users had never done LinkedIn outreach before," and monthly quotas keep a beginner at a modest pace. Waalaxy's [subscriptions article](https://intercom.help/waalaxy/en/articles/6413101-what-are-the-different-subscriptions) gives Business a standard price of €139 a month, which can vary by country, and says the trial needs a credit card, so cancel before it ends if you're only testing.
+Its homepage says "75% of our users had never done LinkedIn outreach before," and monthly quotas keep a beginner at a modest pace. Waalaxy's [subscriptions article](https://intercom.help/waalaxy/en/articles/6413101-what-are-the-different-subscriptions) gives Business a standard price of €139 a month, which can vary by country. It also says the trial needs a credit card, so cancel before it ends if you're only testing.
 
 ### 12. Dux-Soup
 
@@ -292,7 +288,7 @@ Past the price, here's what we'd compare first:
 | Skylead | Yes, unlimited email accounts | Seat | 7 days |
 | SalesRobot | Yes | LinkedIn account | 14 days, no card |
 | Closely | Yes, unlimited email accounts | Sender | Check |
-| Meet Alfred | On Multi-Channel and up | User | 7 days, no card |
+| Meet Alfred | On Multi-Channel and Agency | User | 7 days, no card |
 | HeyReach | Through Instantly, Smartlead or EmailBison | LinkedIn sender | 14 days, no card |
 | GetSales.io | Yes, priced by inbox | LinkedIn account | 7 days |
 | Waalaxy | On the Business plan | User | 14 days, card needed |
@@ -324,7 +320,7 @@ A: It depends on why you're leaving. Omniscient fits small teams that want Linke
 Q: Is there a cheaper alternative to lemlist for LinkedIn?
 A: Yes. lemlist's LinkedIn steps come with the Multichannel plan at $109 per user a month, or $87 billed yearly. Linked Helper starts at $15 per LinkedIn account on a monthly term. On yearly billing, Waalaxy starts at €19 per user, Omniscient at $19 per seat and Meet Alfred at $29 per user.
 Q: Which lemlist alternatives keep email steps next to LinkedIn?
-A: La Growth Machine, Expandi, Dripify, Skylead, SalesRobot, Closely and GetSales.io all run email in the same app as LinkedIn. Meet Alfred adds email on its Multi-Channel plan, and HeyReach connects to Instantly, Smartlead or EmailBison.
+A: La Growth Machine, Expandi, Dripify, Skylead, SalesRobot, Closely and GetSales.io all run email in the same app as LinkedIn. Meet Alfred adds email on its Multi-Channel and Agency plans, and HeyReach connects to Instantly, Smartlead or EmailBison.
 Q: Does lemlist's Email plan include LinkedIn automation?
 A: No. lemlist's pricing page lists LinkedIn automation on the Multichannel and Enterprise plans only.
 ```
