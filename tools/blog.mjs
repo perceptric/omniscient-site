@@ -6,7 +6,8 @@
 //
 // Sources live in blog/_src/<slug>.md. A file whose name starts with "_" is a draft: it builds when named, with noindex,
 // and never shows in the index, related posts or the sitemap. A broken post is skipped with a message, never a crash.
-// Each post gets assets/blog/<slug>/cover.svg, and og.png (1200x630) when Playwright is installed.
+// Each post gets assets/blog/<slug>/cover.svg, a picture with no words drawn by tools/covers.mjs, and og.png (1200x630)
+// when Playwright is installed.
 // Tool screenshots and logos come from tools/shot-tools.mjs (assets/blog/tools/<domain>.webp, assets/blog/logos/<domain>.png).
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { join, basename, dirname, posix } from "node:path";
@@ -14,12 +15,12 @@ import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { applyLayout } from "./layout.mjs";
+import { coverArt, toolsOf } from "./covers.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const SRC = join(root, "blog", "_src");
 const SITE = "https://tryomniscient.com";
 const APP = "https://app.tryomniscient.com/";
-const FONTS = "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&family=Geist+Mono:wght@400;500&display=swap";
 const TOPICS = { linkedin: "LinkedIn", crm: "CRM" };
 const TYPES = ["best-of", "alternatives", "versus", "pricing", "how-to"];
 const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
@@ -764,76 +765,19 @@ function steps(body, ctx) {
 
 // ─── Covers ──────────────────────────────────────────────────────────────────────────────────────────────────────
 
-// Advance widths of Inter Tight 600 (em units, measured in Chromium). Used to wrap the title on the cover.
-const W600 = JSON.parse('{"0":0.63,"1":0.385,"2":0.584,"3":0.614,"4":0.628,"5":0.594,"6":0.609,"7":0.54,"8":0.61,"9":0.609," ":0.211,"!":0.292,"\\"":0.489,"#":0.606,"$":0.611,"%":0.806,"&":0.625,"\'":0.289,"(":0.334,")":0.334,"*":0.506,"+":0.635,",":0.297,"-":0.428,".":0.282,"/":0.341,":":0.282,";":0.292,"<":0.635,"=":0.635,">":0.635,"?":0.507,"@":0.962,"A":0.686,"B":0.62,"C":0.707,"D":0.687,"E":0.57,"F":0.548,"G":0.717,"H":0.706,"I":0.237,"J":0.523,"K":0.64,"L":0.528,"M":0.871,"N":0.704,"O":0.737,"P":0.606,"Q":0.738,"R":0.613,"S":0.611,"T":0.622,"U":0.696,"V":0.686,"W":0.972,"X":0.652,"Y":0.667,"Z":0.615,"[":0.334,"\\\\":0.341,"]":0.334,"^":0.444,"_":0.431,"`":0.417,"a":0.54,"b":0.586,"c":0.541,"d":0.586,"e":0.553,"f":0.341,"g":0.587,"h":0.577,"i":0.223,"j":0.223,"k":0.531,"l":0.223,"m":0.862,"n":0.574,"o":0.57,"p":0.586,"q":0.586,"r":0.359,"s":0.511,"t":0.343,"u":0.571,"v":0.539,"w":0.8,"x":0.525,"y":0.539,"z":0.524,"{":0.417,"|":0.321,"}":0.417,"~":0.635}');
-const TRACK = -0.035; // letter spacing, em
-
-function textWidth(s, size) {
-  let w = 0;
-  for (const ch of s) w += W600[ch] ?? 0.62;
-  return (w + TRACK * Math.max(0, [...s].length - 1)) * size;
+// The art itself lives in tools/covers.mjs. Here it gets its name for screen readers when it stands alone.
+function labelled(svg, title) {
+  return svg.replace(/^<svg /, `<svg role="img" aria-label="${esc(title)}" `).replace(/(<svg[^>]*>)/, `$1\n<title>${esc(title)}</title>`);
 }
 
-function wrap(words, size, max) {
-  const lines = [];
-  let cur = [];
-  for (const w of words) {
-    const next = [...cur, w];
-    if (cur.length && textWidth(next.map((x) => x.t).join(" "), size) > max) { lines.push(cur); cur = [w]; }
-    else cur = next;
-  }
-  if (cur.length) lines.push(cur);
-  return lines;
-}
-
-// Two tones like the site's headings: the point in black, the rest in gray (after a colon, or a trailing "in 2026").
-function toneWords(title) {
-  let head = title, tail = "";
-  const colon = title.indexOf(": ");
-  const year = title.match(/^(.*\S)\s+((?:in|for)\s+20\d\d|\(20\d\d\))$/i);
-  if (colon > 0) { head = title.slice(0, colon + 1); tail = title.slice(colon + 2); }
-  else if (year) { head = year[1]; tail = year[2]; }
-  const words = (s, two) => s.split(/\s+/).filter(Boolean).map((t) => ({ t, two }));
-  return [...words(head, false), ...words(tail, true)];
-}
-
-function hashOf(s) { let h = 0; for (const ch of s) h = (h * 31 + ch.codePointAt(0)) >>> 0; return h; }
-
-export function coverSvg({ title, label, slug, meta = "", tone, standalone = true }) {
-  const W = 1200, H = 630, X = 72, MAXW = W - 2 * X, TOP = 150, BOTTOM = 462;
-  const dark = tone === "dark" || (tone !== "light" && hashOf(slug) % 3 === 0);
-  const c = dark
-    ? { bg: "#0a0a0a", ink: "#ffffff", two: "#737373", muted: "#a3a3a3", rule: "#404040", point: "#18e299" }
-    : { bg: "#ffffff", ink: "#0a0a0a", two: "#a3a3a3", muted: "#737373", rule: "#0a0a0a", point: "#0c8c5e" };
-  const words = toneWords(title);
-  let size = 88, lines = wrap(words, size, MAXW);
-  while (size > 44 && (lines.length * size * 1.04 > BOTTOM - TOP || lines.length > 4)) lines = wrap(words, (size -= 2), MAXW);
-  const lh = size * 1.04;
-  const firstBase = BOTTOM - (lines.length - 1) * lh; // the title sits on the rule above the footer
-  const ls = (TRACK * size).toFixed(2);
-  const text = lines.map((line, n) => {
-    const runs = [];
-    for (const w of line) {
-      const last = runs[runs.length - 1];
-      if (last && last.two === w.two) last.t += ` ${w.t}`; else runs.push({ two: w.two, t: (runs.length ? " " : "") + w.t });
-    }
-    const spans = runs.map((r) => `<tspan fill="${r.two ? c.two : c.ink}">${esc(r.t)}</tspan>`).join("");
-    return `<text x="${X}" y="${(firstBase + n * lh).toFixed(1)}" xml:space="preserve">${spans}</text>`;
-  }).join("");
-  const fonts = standalone ? `<style>@import url("${FONTS.replace(/&/g, "&amp;")}");</style>` : "";
-  const frame = standalone ? `<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" fill="none" stroke="#0a0a0a" stroke-width="1" vector-effect="non-scaling-stroke"/>` : "";
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="${esc(title)}">
-<title>${esc(title)}</title>${fonts}
-<rect width="${W}" height="${H}" fill="${c.bg}"/>${frame}
-<rect x="${X}" y="76" width="14" height="14" fill="${c.point}"/>
-<text x="${X + 30}" y="90" font-family="'Geist Mono', ui-monospace, Menlo, monospace" font-size="24" font-weight="500" fill="${c.muted}">[ ${esc(label)} ]</text>
-<text x="${W - X}" y="90" text-anchor="end" font-family="'Geist Mono', ui-monospace, Menlo, monospace" font-size="24" fill="${c.muted}">${esc(meta)}</text>
-<g font-family="'Inter Tight', Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="${size}" letter-spacing="${ls}">${text}</g>
-<line x1="0" y1="520" x2="${W}" y2="520" stroke="${c.rule}" stroke-width="1" vector-effect="non-scaling-stroke"/>
-<g transform="translate(${X} 557)"><circle cx="18" cy="18" r="15.5" fill="none" stroke="${c.ink}" stroke-width="2.6"/><circle cx="18" cy="18" r="4.8" fill="${c.point}"/></g>
-<text x="${X + 54}" y="583" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="4.4" fill="${c.ink}">OMNISCIENT</text>
-<text x="${W - X}" y="583" text-anchor="end" font-family="'Geist Mono', ui-monospace, Menlo, monospace" font-size="20" fill="${c.muted}">tryomniscient.com/blog</text>
-</svg>`;
+// Logos in a cover are named by site path; the PNG render reads them from disk.
+const MIME = { ".png": "image/png", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp" };
+function inlineAssets(svg) {
+  return svg.replace(/href="(\/assets\/[^"]+)"/g, (m, path) => {
+    const file = join(root, path);
+    const type = MIME[(path.match(/\.\w+$/) || [""])[0].toLowerCase()];
+    return type && existsSync(file) ? `href="data:${type};base64,${readFileSync(file).toString("base64")}"` : m;
+  });
 }
 
 // Renders 1200x630 PNGs of covers with Playwright, when it's installed. Returns the set of written files.
@@ -849,15 +793,13 @@ async function renderPngs(jobs) {
   try {
     browser = await chromium.launch();
     const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-    let fontsOk = true;
     for (const job of jobs) {
-      await page.setContent(`<!doctype html><html><head><link rel="stylesheet" href="${FONTS}"><style>html,body{margin:0;background:#fff}svg{display:block}</style></head><body>${job.svg}</body></html>`, { waitUntil: "networkidle", timeout: 20000 }).catch(() => {});
-      fontsOk = (await page.evaluate(async () => { await document.fonts.ready; return document.fonts.check("600 40px 'Inter Tight'"); }).catch(() => false)) && fontsOk;
+      await page.setContent(`<!doctype html><html><head><style>html,body{margin:0;background:#fff}svg{display:block}</style></head><body>${inlineAssets(job.svg)}</body></html>`, { waitUntil: "load", timeout: 20000 }).catch(() => {});
+      await page.waitForTimeout(150); // the logos are inline data; give them a moment to paint
       mkdirSync(dirname(job.out), { recursive: true });
       await page.screenshot({ path: job.out, clip: { x: 0, y: 0, width: 1200, height: 630 } });
       done.add(job.out);
     }
-    if (!fontsOk) console.log("  Fonts didn't load from Google Fonts: share images use fallback fonts. Run again online.");
   } catch (e) {
     console.log(`  Share images skipped: ${e.message.split("\n")[0]}`);
   } finally {
@@ -897,7 +839,6 @@ function meta(file) {
     summary: data.summary || data.meta_description || "",
     keyword: data.target_keyword || "",
     readMinutes: parseInt(data.read_minutes, 10) || 0,
-    tone: (data.cover || "").toLowerCase(),
     data,
   };
 }
@@ -979,7 +920,7 @@ function shareImage(slug) {
   return existsSync(join(root, "assets", "blog", slug, "og.png")) ? { url: `${SITE}/assets/blog/${slug}/og.png`, w: 1200, h: 630 } : DEFAULT_IMAGE;
 }
 
-const coverFor = (p, standalone) => coverSvg({ title: p.title, label: topicName(p.topic), slug: p.slug, meta: `${p.readMinutes} min read`, tone: p.tone, standalone });
+const coverFor = (p) => labelled(coverArt({ slug: p.slug, type: p.type, topic: p.topic, title: p.title, body: p.body }), p.title);
 
 function card(p, level) {
   const svg = coverFor(p, false).replace(/ role="img" aria-label="[^"]*"/, ' aria-hidden="true" focusable="false"').replace(/<title>[\s\S]*?<\/title>/, "");
@@ -1034,7 +975,7 @@ function postPage(post, r, related) {
     ? `<ol class="bl-toc__sub">${t.subs.map((s) => `<li><a href="#${s.id}"><span class="bl-toc__n">${s.n}</span>${esc(s.name)}</a></li>`).join("")}</ol>`
     : "");
   const tocItems = (subs) => r.ctx.toc.map((t) => `<li${subs && subList(t) ? ' class="bl-toc__has"' : ""}><a href="#${t.id}">${t.html}</a>${subs ? subList(t) : ""}</li>`).join("");
-  const toc = r.ctx.toc.length ? `<nav class="bl-toc" aria-label="On this page"><p class="bl-label">[ On this page ]</p><ol class="bl-toc__list">${tocItems(true)}</ol></nav>` : "";
+  const toc = r.ctx.toc.length ? `<nav class="bl-toc" aria-label="On this page"><p class="bl-label">On this page</p><ol class="bl-toc__list">${tocItems(true)}</ol></nav>` : "";
   const tocPhone = r.ctx.toc.length ? `<details class="bl-toc-m"><summary>On this page</summary><ol class="bl-toc__list">${tocItems(false)}</ol></details>` : "";
   const cover = coverFor(post, false).replace(/ role="img" aria-label="[^"]*"/, ' aria-hidden="true" focusable="false"').replace(/<title>[\s\S]*?<\/title>/, "");
   const h1 = esc((post.h1 && plain(inline(post.h1, { slug: post.slug, warn() {}, links: [], visuals: 0 }))) || post.title);
@@ -1100,7 +1041,7 @@ function indexPage(posts) {
 <!-- header:end -->
 <main id="main" class="site-main bl-index">
   <section class="wrap bl-hero">
-    <p class="bl-label">[ Blog ]</p>
+    <p class="bl-label">Blog</p>
     <h1 class="bl-hero__title">LinkedIn outbound and CRM. <span class="two">Written by the team that builds Omniscient.</span></h1>
   </section>
   <section class="wrap bl-list" aria-label="Posts">
@@ -1199,7 +1140,11 @@ async function buildPosts(files, pool, { all }) {
 
 async function buildIndex(posts) {
   const list = posts.filter((p) => !p.draft).sort((a, b) => b.updated.localeCompare(a.updated) || a.title.localeCompare(b.title));
-  const svg = coverSvg({ title: "LinkedIn outbound and CRM, from the team that builds Omniscient", label: "Blog", slug: "blog", meta: "", tone: "dark" });
+  // The blog's own cover: Omniscient in the middle, the tools the posts cover most around it.
+  const count = new Map();
+  for (const p of list) for (const d of toolsOf(p.body)) if (d !== "tryomniscient.com") count.set(d, (count.get(d) || 0) + 1);
+  const tools = [...count.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([d]) => d).slice(0, 14);
+  const svg = labelled(coverArt({ slug: "blog", title: "Blog", tools }), "LinkedIn outbound and CRM, from the team that builds Omniscient");
   const changed = write(join(root, "assets", "blog", "cover.svg"), `${svg}\n`);
   if (changed || !existsSync(join(root, "assets", "blog", "og.png"))) await renderPngs([{ svg, out: join(root, "assets", "blog", "og.png") }]);
   write(join(root, "blog", "index.html"), applyLayout(indexPage(list)));
