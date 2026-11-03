@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 952" width="720" height="952" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Which emails become CRM data in Omniscient</title>
+<desc id="d">A new email comes in or goes out. Bulk mail like a newsletter is skipped. Mail from a no reply or billing address is skipped. An address or domain on your do not track list is skipped. A personal address like gmail.com is left out. Someone new who wrote to you first is not added. Every other email is filed under the person, company and deal, and Otto reads the thread for facts, each with its quote. Personal addresses and new senders follow your sync settings, shown the way we suggest them, and emails with only your own team on them are skipped too.</desc>
+<rect width="720" height="952" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="951" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Which emails reach a record]</text>
+<text x="32" y="88" font-size="27" font-weight="600" fill="#0a0a0a">Five checks before an email <tspan fill="#a3a3a3">counts</tspan></text>
+<rect x="32.5" y="124.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="164" font-size="20" fill="#0a0a0a">A new email comes in or goes out</text>
+<line x1="72" x2="72" y1="188" y2="215" stroke="#0a0a0a"/>
+<polygon points="67,215 72,224 77,215" fill="#0a0a0a"/>
+<rect x="32.5" y="224.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="264" font-size="20" fill="#0a0a0a">Bulk mail, like a newsletter?</text>
+<line x1="452" x2="489" y1="256" y2="256" stroke="#0a0a0a"/>
+<polygon points="489,251 498,256 489,261" fill="#0a0a0a"/>
+<text x="459" y="247" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
+<rect x="498.5" y="224.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="514" y="264" font-size="20" font-weight="600" fill="#0a0a0a">Skipped</text>
+<line x1="72" x2="72" y1="288" y2="315" stroke="#0a0a0a"/>
+<polygon points="67,315 72,324 77,315" fill="#0a0a0a"/>
+<text x="84" y="312" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
+<rect x="32.5" y="324.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="364" font-size="20" fill="#0a0a0a">From a no reply or billing address?</text>
+<line x1="452" x2="489" y1="356" y2="356" stroke="#0a0a0a"/>
+<polygon points="489,351 498,356 489,361" fill="#0a0a0a"/>
+<text x="459" y="347" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
+<rect x="498.5" y="324.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="514" y="364" font-size="20" font-weight="600" fill="#0a0a0a">Skipped</text>
+<line x1="72" x2="72" y1="388" y2="415" stroke="#0a0a0a"/>
+<polygon points="67,415 72,424 77,415" fill="#0a0a0a"/>
+<text x="84" y="412" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
+<rect x="32.5" y="424.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="464" font-size="20" fill="#0a0a0a">On your do not track list?</text>
+<line x1="452" x2="489" y1="456" y2="456" stroke="#0a0a0a"/>
+<polygon points="489,451 498,456 489,461" fill="#0a0a0a"/>
+<text x="459" y="447" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
+<rect x="498.5" y="424.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="514" y="464" font-size="20" font-weight="600" fill="#0a0a0a">Skipped</text>
+<line x1="72" x2="72" y1="488" y2="515" stroke="#0a0a0a"/>
+<polygon points="67,515 72,524 77,515" fill="#0a0a0a"/>
+<text x="84" y="512" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
+<rect x="32.5" y="524.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="564" font-size="20" fill="#0a0a0a">A personal address, like gmail.com?</text>
+<line x1="452" x2="489" y1="556" y2="556" stroke="#0a0a0a"/>
+<polygon points="489,551 498,556 489,561" fill="#0a0a0a"/>
+<text x="459" y="547" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
+<rect x="498.5" y="524.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="514" y="564" font-size="20" font-weight="600" fill="#0a0a0a">Left out</text>
+<line x1="72" x2="72" y1="588" y2="615" stroke="#0a0a0a"/>
+<polygon points="67,615 72,624 77,615" fill="#0a0a0a"/>
+<text x="84" y="612" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
+<rect x="32.5" y="624.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="664" font-size="20" fill="#0a0a0a">Someone new who wrote to you first?</text>
+<line x1="452" x2="489" y1="656" y2="656" stroke="#0a0a0a"/>
+<polygon points="489,651 498,656 489,661" fill="#0a0a0a"/>
+<text x="459" y="647" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
+<rect x="498.5" y="624.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="514" y="664" font-size="20" font-weight="600" fill="#0a0a0a">Not added</text>
+<line x1="72" x2="72" y1="688" y2="715" stroke="#0a0a0a"/>
+<polygon points="67,715 72,724 77,715" fill="#0a0a0a"/>
+<text x="84" y="712" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
+<rect x="32.5" y="724.5" width="655" height="83" fill="#10b981" stroke="#0a0a0a"/>
+<text x="48" y="759" font-size="21" font-weight="600" fill="#0a0a0a">Filed under the person, company and deal</text>
+<text x="48" y="788" font-size="19" fill="#0a0a0a">Otto reads the thread for facts, each with its quote</text>
+<text x="32" y="856" font-size="19" fill="#737373">Personal addresses and first emails from new people follow</text>
+<text x="32" y="884" font-size="19" fill="#737373">your sync settings, shown here the way we suggest them.</text>
+<text x="32" y="912" font-size="19" fill="#737373">Emails with only your own team on them are skipped too.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 974" width="560" height="974" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Attio and HubSpot Sales Hub prices per seat a month</title>
+<desc id="d">Per seat a month on yearly billing. Attio: Free $0 for up to 3 seats; Plus $35, or $44 billed monthly, up to 10 seats; Pro $79, or $99 billed monthly, with sequences and Call Intelligence; Enterprise custom, billed yearly. HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts; Starter from $7, or $10 billed monthly, as new customer prices, listed at $20; Professional from $90, or $100 billed monthly, with a yearly commitment either way and a $1,500 onboarding fee paid once; Enterprise from $150 with a $3,500 onboarding fee paid once. From attio.com/pricing and hubspot.com/pricing/sales, November 3, 2026.</desc>
+<rect width="560" height="974" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="973" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Pricing]</text>
+<text x="24" y="82" font-size="26" font-weight="600" fill="#0a0a0a">Per seat a month <tspan fill="#a3a3a3">billed yearly</tspan></text>
+<rect x="24" y="108" width="512" height="366" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="108" width="512" height="44" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="40" y="136" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Attio]</text>
+<text x="40" y="184" font-size="20" font-weight="600" fill="#0a0a0a">Free</text>
+<text x="520" y="184" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$0</text>
+<text x="40" y="210" font-size="18" fill="#737373">Up to 3 seats</text>
+<line x1="25" x2="535" y1="226" y2="226" stroke="#e5e5e5"/>
+<text x="40" y="258" font-size="20" font-weight="600" fill="#0a0a0a">Plus</text>
+<text x="520" y="258" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$35</text>
+<text x="40" y="284" font-size="18" fill="#737373">$44 billed monthly, up to 10 seats</text>
+<line x1="25" x2="535" y1="300" y2="300" stroke="#e5e5e5"/>
+<text x="40" y="332" font-size="20" font-weight="600" fill="#0a0a0a">Pro</text>
+<text x="520" y="332" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$79</text>
+<text x="40" y="358" font-size="18" fill="#737373">$99 billed monthly, adds sequences</text>
+<text x="40" y="384" font-size="18" fill="#737373">and Call Intelligence</text>
+<line x1="25" x2="535" y1="400" y2="400" stroke="#e5e5e5"/>
+<text x="40" y="432" font-size="20" font-weight="600" fill="#0a0a0a">Enterprise</text>
+<text x="520" y="432" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">Custom</text>
+<text x="40" y="458" font-size="18" fill="#737373">Billed yearly</text>
+<rect x="24" y="494" width="512" height="392" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="494" width="512" height="44" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="40" y="522" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[HubSpot Sales Hub]</text>
+<text x="40" y="570" font-size="20" font-weight="600" fill="#0a0a0a">Free</text>
+<text x="520" y="570" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$0</text>
+<text x="40" y="596" font-size="18" fill="#737373">Up to 2 users and 1,000 contacts</text>
+<line x1="25" x2="535" y1="612" y2="612" stroke="#e5e5e5"/>
+<text x="40" y="644" font-size="20" font-weight="600" fill="#0a0a0a">Starter</text>
+<text x="520" y="644" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">From $7</text>
+<text x="40" y="670" font-size="18" fill="#737373">$10 billed monthly, new customer prices,</text>
+<text x="40" y="696" font-size="18" fill="#737373">listed at $20</text>
+<line x1="25" x2="535" y1="712" y2="712" stroke="#e5e5e5"/>
+<text x="40" y="744" font-size="20" font-weight="600" fill="#0a0a0a">Professional</text>
+<text x="520" y="744" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">From $90</text>
+<text x="40" y="770" font-size="18" fill="#737373">$100 billed monthly, yearly commitment,</text>
+<text x="40" y="796" font-size="18" fill="#737373">$1,500 onboarding once</text>
+<line x1="25" x2="535" y1="812" y2="812" stroke="#e5e5e5"/>
+<text x="40" y="844" font-size="20" font-weight="600" fill="#0a0a0a">Enterprise</text>
+<text x="520" y="844" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">From $150</text>
+<text x="40" y="870" font-size="18" fill="#737373">$3,500 onboarding once</text>
+<text x="24" y="922" font-size="17" fill="#737373">From attio.com/pricing and hubspot.com/pricing/sales,</text>
+<text x="24" y="946" font-size="17" fill="#737373">November 3, 2026.</text>
+</svg>

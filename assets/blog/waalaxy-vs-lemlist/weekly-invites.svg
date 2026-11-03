@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">The most LinkedIn invitations in one week for one account, by each vendor&#x27;s own numbers</title>
+<desc id="d">lemlist&#x27;s help center: about 100 invitations a rolling week, which it gives as LinkedIn&#x27;s cap, and up to 20 a day on working days. Waalaxy Advanced and Business: 200 a week, which Waalaxy&#x27;s help center gives as LinkedIn&#x27;s limit, and 80 to 100 a day. Omniscient at the Normal pace, the default: 80 a week and 15 a day. Omniscient&#x27;s highest setting: 200 a week and 40 a day. LinkedIn publishes no number of its own.</desc>
+<rect width="600" height="600" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="599" height="599" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Invitations a week, one account]</text>
+<text x="32" y="92" font-size="30" font-weight="600" fill="#0a0a0a">Each vendor&#x27;s weekly <tspan fill="#a3a3a3">ceiling</tspan></text>
+<text x="32" y="140" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[From each help center]</text>
+<line x1="32" y1="152" x2="568" y2="152" stroke="#e5e5e5"/>
+<text x="32" y="190" font-size="22" font-weight="600" fill="#0a0a0a">lemlist <tspan font-weight="400" fill="#737373">up to 20 a day, working days</tspan></text>
+<rect x="32.5" y="204.5" width="220" height="30" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="264" y="227" font-size="20" font-weight="600" fill="#0a0a0a">about 100</text>
+<text x="32" y="272" font-size="22" font-weight="600" fill="#0a0a0a">Waalaxy Advanced, Business <tspan font-weight="400" fill="#737373">80 to 100 a day</tspan></text>
+<rect x="32.5" y="286.5" width="440" height="30" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="484" y="309" font-size="20" font-weight="600" fill="#0a0a0a">200</text>
+<text x="32" y="354" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[From our sender settings]</text>
+<line x1="32" y1="366" x2="568" y2="366" stroke="#e5e5e5"/>
+<text x="32" y="404" font-size="22" font-weight="600" fill="#0a0a0a">Omniscient, Normal pace <tspan font-weight="400" fill="#737373">15 a day</tspan></text>
+<rect x="32.5" y="418.5" width="176" height="30" fill="#10b981" stroke="#0a0a0a"/>
+<text x="220" y="441" font-size="20" font-weight="600" fill="#0a0a0a">80</text>
+<text x="32" y="486" font-size="22" font-weight="600" fill="#0a0a0a">Omniscient, highest setting <tspan font-weight="400" fill="#737373">40 a day</tspan></text>
+<rect x="32.5" y="500.5" width="440" height="30" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="484" y="523" font-size="20" font-weight="600" fill="#0a0a0a">200</text>
+<text x="32" y="572" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[LinkedIn publishes no number of its own]</text>
+</svg>

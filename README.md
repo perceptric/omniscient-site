@@ -21,6 +21,9 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `assets/logos/` | Logos of the tools Omniscient works with. |
 | `assets/brand/` | favicon.ico, icon.svg, apple-icon.png, share image, and `omniscient-brand.css` (the brand stylesheet for embeds, emails and decks). |
 | `tools/layout.mjs` | Copies the partials into every page, stamps the CSS and JS links and rebuilds `sitemap.xml`. |
+| `blog/_src/<slug>.md` | Blog posts in Markdown. `tools/blog.mjs` writes `blog/<slug>/index.html` and `blog/index.html`. A file whose name starts with `_` is a draft (`_sample.md` uses every block). |
+| `assets/blog.css`, `assets/blog.js` | Blog posts and the index: contents that follow the reading position, the topic filter, shots that play once. |
+| `assets/blog/<slug>/` | A post's pictures and `*.shot.html` snippets, plus the `cover.svg` and `og.png` share image the build writes. |
 | `.htaccess` | 404 page, https/www redirects, icon redirects, unknown paths to the app. |
 
 ## Editing
@@ -31,6 +34,7 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
   link, so browsers fetch the new file.
 - **New page:** copy a page folder, change the content and the tags under `<!-- head:end -->`
   (title, description, canonical, og tags), then run `node tools/layout.mjs`. It adds the page to `sitemap.xml`.
+- **Blog post:** write `blog/_src/<slug>.md` and build it. See "Blog" below.
 - **Privacy or Terms:** edit the text in `privacy/index.html` or `terms/index.html` and change the
   "Last updated" date. Google's OAuth review reads these pages, so keep the URLs `/privacy` and `/terms`.
 - **Footer year:** it is plain text in `partials/footer.html`. Change it each January.
@@ -43,6 +47,91 @@ Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 The `.htaccess` rules only run on Hostinger.
 
 Push to `main` and Hostinger deploys it.
+
+## Blog
+
+Posts are Markdown files in `blog/_src/`. `tools/blog.mjs` (Node 22, no npm packages) turns each one into
+`blog/<slug>/index.html` with the site's header and footer, and writes `blog/index.html` with every post.
+
+### Add a post
+
+1. Write `blog/_src/<slug>.md`: the frontmatter, then one `#` title line, then the post.
+2. Put its pictures in `assets/blog/<slug>/`: SVG charts and diagrams, and `<name>.shot.html` snippets for product
+   shots drawn like the ones on the product pages. At least 3 per post.
+3. Run `node tools/blog.mjs <slug>` and fix what it prints. Preview at http://localhost:8000/blog/<slug>/.
+4. Run `node tools/blog.mjs --all`, so the index, the related posts on other pages and `sitemap.xml` pick it up.
+5. Commit the `.md` file, `blog/<slug>/`, `blog/index.html`, `sitemap.xml` and `assets/blog/<slug>/` (with the
+   `cover.svg` and `og.png` the build writes).
+
+```
+---
+title: "Best LinkedIn Automation Tools in 2026"
+slug: best-linkedin-automation-tools
+target_keyword: "best linkedin automation tools"
+meta_description: "150 to 160 characters for search results."
+type: best-of
+topic: linkedin
+updated: 2026-11-03
+read_minutes: 9
+summary: "One sentence for the index card."
+---
+```
+
+| Key | What |
+|---|---|
+| `title` | The page title, the index card and the cover. |
+| `slug` | The URL, `/blog/<slug>/`. Keep it the same as the file name. |
+| `topic` | `linkedin` or `crm`. The tag on the card and the filter on the index. |
+| `type` | `best-of`, `alternatives`, `versus`, `pricing` or `how-to`. Sets the length the build checks for. |
+| `updated` | YYYY-MM-DD. Shown on the post, orders the index and is the post's date in `sitemap.xml`. |
+| `meta_description` | 150 to 160 characters. The search snippet and the share text. |
+| `summary` | One sentence for the index card. |
+| `target_keyword` | The search phrase the post is written for. |
+| `read_minutes` | Shown on the post and the card. Left out, the build counts it from the words. |
+| `published`, `cover` | Optional. The first publish date (defaults to `updated`), and `dark` or `light` for the cover. |
+
+### Blocks
+
+Plain Markdown works: `##` and `###` headings (they fill the contents list), paragraphs, `-` and `1.` lists,
+`**bold**`, `[links](/product/crm/)`, `>` quotes, `|` tables (wide ones scroll inside their frame on a phone),
+code and `---`. These fenced blocks render in the brand:
+
+| Block | Write | Renders |
+|---|---|---|
+| ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. A price of `check` shows "See site". | A framed comparison table. Each tool gets its logo from `assets/logos/`, else its site's favicon. |
+| ` ```callout ` | One or two sentences. | A framed note. |
+| ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
+| ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. | Questions that open and close, plus FAQPage JSON-LD. |
+| ` ```steps ` | `1. Title: text` lines. | A framed, numbered step list. |
+
+Pictures sit in the gray grain band:
+
+- `![alt](chart.svg "caption")` shows an image. A bare file name looks in `assets/blog/<slug>/`. The caption is
+  optional.
+- `![alt](name.shot.html)` inlines that HTML snippet, styled by `assets/home.css`, and plays it once in view.
+
+Every image needs alt text, and every SVG a `<title>`.
+
+### Build
+
+| Command | What it does |
+|---|---|
+| `node tools/blog.mjs <slug> [<slug> ...]` | Builds those posts and their covers. Touches nothing else. |
+| `node tools/blog.mjs --all` | Builds every post and `blog/index.html`, then runs `tools/layout.mjs` (header, footer, `sitemap.xml`). |
+| `node tools/blog.mjs --index` | Rebuilds `blog/index.html` only. |
+
+- **What the build checks:** missing pictures or alt text, links to pages that don't exist here (the server would
+  send them to the app), links to posts with no source yet, length outside the type's range, the
+  `meta_description` length, fewer than 3 pictures, prices marked `check`, em dashes, exclamation marks and banned
+  words. It prints each one under the post. A post it can't read is skipped, and the rest still build.
+- **Share images:** `og.png` (1200x630) needs Playwright. Without it, posts use the site's default share image.
+- **Drafts:** a file whose name starts with `_` builds only when named, with `noindex`, and never shows in the index,
+  related posts or the sitemap. `_sample.md` uses every block: build it with `node tools/blog.mjs _sample` to check
+  the layout after changing the builder or `assets/blog.css`, then delete `blog/_sample/` and the `cover.svg` and
+  `og.png` it writes.
+- **Not served:** `.htaccess` answers 403 for any path with a part that starts with `_` (so `blog/_src/`) and for
+  `*.shot.html`, since Hostinger deploys the whole repo.
+- **Removing a post:** delete its `.md`, `blog/<slug>/` and `assets/blog/<slug>/`, then run `--all`.
 
 ## Where the words come from
 
@@ -94,4 +183,5 @@ If LiteSpeed Cache is on for the site, purge it after a deploy.
 ## Running cost
 
 $0 extra a month at every stage (Beta 50 reps, Growth 500 reps). The site runs on the Hostinger plan we already pay
-for. It has no server code, no database and no paid service.
+for. It has no server code, no database and no paid service. The blog adds nothing: it builds on your machine (Node
+and Playwright are free) and ships as static files.

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 764" width="560" height="764" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What a seat costs on each plan, billed yearly</title>
+<desc id="d">Price per seat a month on yearly billing, for each plan, from each vendor&#x27;s pricing page in November 2026. Omniscient: Starter $19, Pro $49, Business $99. Twenty: Pro $9, Organization $39. folk: Standard $24, Premium $48, Enterprise from $80. Attio: Plus $35, Pro $79, Enterprise custom. Not shown: HubSpot and Close, whose pricing pages don&#x27;t label which price is yearly; Pipedrive, whose pricing page we couldn&#x27;t read; Clarify, which costs $50 a month for the whole team on Starter; and Affinity, which costs $2,000 per user a year on Essential.</desc>
+<rect width="560" height="764" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="763" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Per seat a month, billed yearly]</text>
+<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">What a seat costs <tspan fill="#a3a3a3">on each plan</tspan></text>
+<line x1="40.0" y1="154" x2="40.0" y2="234" stroke="#ebebeb"/>
+<line x1="143.0" y1="154" x2="143.0" y2="234" stroke="#ebebeb"/>
+<line x1="246.0" y1="154" x2="246.0" y2="234" stroke="#ebebeb"/>
+<line x1="349.0" y1="154" x2="349.0" y2="234" stroke="#ebebeb"/>
+<line x1="452.0" y1="154" x2="452.0" y2="234" stroke="#ebebeb"/>
+<text x="24" y="144" font-size="22" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<line x1="118.3" y1="194" x2="447.9" y2="194" stroke="#0a0a0a" stroke-width="2"/>
+<rect x="110.3" y="186" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
+<text x="118.3" y="178" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$19</text>
+<text x="118.3" y="226" text-anchor="middle" font-size="18" fill="#737373">Starter</text>
+<rect x="233.9" y="186" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
+<text x="241.9" y="178" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$49</text>
+<text x="241.9" y="226" text-anchor="middle" font-size="18" fill="#737373">Pro</text>
+<rect x="439.9" y="186" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
+<text x="447.9" y="178" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$99</text>
+<text x="447.9" y="226" text-anchor="middle" font-size="18" fill="#737373">Business</text>
+<line x1="24" y1="240" x2="536" y2="240" stroke="#e5e5e5"/>
+<line x1="40.0" y1="278" x2="40.0" y2="358" stroke="#ebebeb"/>
+<line x1="143.0" y1="278" x2="143.0" y2="358" stroke="#ebebeb"/>
+<line x1="246.0" y1="278" x2="246.0" y2="358" stroke="#ebebeb"/>
+<line x1="349.0" y1="278" x2="349.0" y2="358" stroke="#ebebeb"/>
+<line x1="452.0" y1="278" x2="452.0" y2="358" stroke="#ebebeb"/>
+<text x="24" y="268" font-size="22" font-weight="600" fill="#0a0a0a">Twenty</text>
+<line x1="77.1" y1="318" x2="200.7" y2="318" stroke="#a3a3a3" stroke-width="2"/>
+<rect x="69.1" y="310" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="77.1" y="302" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$9</text>
+<text x="77.1" y="350" text-anchor="middle" font-size="18" fill="#737373">Pro</text>
+<rect x="192.7" y="310" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="200.7" y="302" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$39</text>
+<text x="200.7" y="350" text-anchor="middle" font-size="18" fill="#737373">Organization</text>
+<line x1="24" y1="364" x2="536" y2="364" stroke="#e5e5e5"/>
+<line x1="40.0" y1="402" x2="40.0" y2="482" stroke="#ebebeb"/>
+<line x1="143.0" y1="402" x2="143.0" y2="482" stroke="#ebebeb"/>
+<line x1="246.0" y1="402" x2="246.0" y2="482" stroke="#ebebeb"/>
+<line x1="349.0" y1="402" x2="349.0" y2="482" stroke="#ebebeb"/>
+<line x1="452.0" y1="402" x2="452.0" y2="482" stroke="#ebebeb"/>
+<text x="24" y="392" font-size="22" font-weight="600" fill="#0a0a0a">folk</text>
+<line x1="138.9" y1="442" x2="369.6" y2="442" stroke="#a3a3a3" stroke-width="2"/>
+<rect x="130.9" y="434" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="138.9" y="426" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$24</text>
+<text x="138.9" y="474" text-anchor="middle" font-size="18" fill="#737373">Standard</text>
+<rect x="229.8" y="434" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="237.8" y="426" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$48</text>
+<text x="237.8" y="474" text-anchor="middle" font-size="18" fill="#737373">Premium</text>
+<rect x="361.6" y="434" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="369.6" y="426" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">From $80</text>
+<text x="369.6" y="474" text-anchor="middle" font-size="18" fill="#737373">Enterprise</text>
+<line x1="24" y1="488" x2="536" y2="488" stroke="#e5e5e5"/>
+<line x1="40.0" y1="526" x2="40.0" y2="606" stroke="#ebebeb"/>
+<line x1="143.0" y1="526" x2="143.0" y2="606" stroke="#ebebeb"/>
+<line x1="246.0" y1="526" x2="246.0" y2="606" stroke="#ebebeb"/>
+<line x1="349.0" y1="526" x2="349.0" y2="606" stroke="#ebebeb"/>
+<line x1="452.0" y1="526" x2="452.0" y2="606" stroke="#ebebeb"/>
+<text x="24" y="516" font-size="22" font-weight="600" fill="#0a0a0a">Attio</text>
+<line x1="184.2" y1="566" x2="496.0" y2="566" stroke="#a3a3a3" stroke-width="2"/>
+<rect x="176.2" y="558" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="184.2" y="550" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$35</text>
+<text x="184.2" y="598" text-anchor="middle" font-size="18" fill="#737373">Plus</text>
+<rect x="357.5" y="558" width="16" height="16" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="365.5" y="550" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">$79</text>
+<text x="365.5" y="598" text-anchor="middle" font-size="18" fill="#737373">Pro</text>
+<rect x="488.0" y="558" width="16" height="16" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="496.0" y="550" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">Custom</text>
+<text x="496.0" y="598" text-anchor="middle" font-size="18" fill="#737373">Enterprise</text>
+<line x1="24" y1="612" x2="536" y2="612" stroke="#e5e5e5"/>
+<text x="40.0" y="642" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">$0</text>
+<text x="143.0" y="642" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">$25</text>
+<text x="246.0" y="642" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">$50</text>
+<text x="349.0" y="642" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">$75</text>
+<text x="452.0" y="642" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">$100</text>
+<text x="24" y="688" font-size="18" fill="#737373">Not shown: HubSpot and Close (billing not labeled),</text>
+<text x="24" y="714" font-size="18" fill="#737373">Pipedrive (check), Clarify ($50 a month for the</text>
+<text x="24" y="740" font-size="18" fill="#737373">whole team) and Affinity ($2,000 per user a year).</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 802" width="720" height="802" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Safety checks for seven LinkedIn automation tools</title>
+<desc id="d">Five safety checks for seven LinkedIn automation tools, as each vendor lists them. Omniscient: sends with your laptop off, automatic warmup, daily totals that vary and backs off on its own; no own IP or proxy listed. Expandi: laptop off, dedicated IP, automatic warmup, varied daily totals; no automatic back off found. La Growth Machine: laptop off, mobile proxy, warmup by hand, backs off when LinkedIn caps invitations. Dripify: laptop off, dedicated IP, pace that adapts on the Advanced plan only. HeyReach: laptop off, proxy on the Growth plan, warmup by hand, stops invitations until Monday after LinkedIn&#39;s weekly limit. Linked Helper: runs while your computer or server is on, your own IP or a proxy, warmup by hand, varied daily totals. Waalaxy: laptop off and daily totals between 80 and 100 percent of the limit.</desc>
+<rect width="720" height="802" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="801" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Safety scorecard]</text>
+<text x="32" y="92" font-size="30" font-weight="600" fill="#0a0a0a">Safety work each tool <tspan fill="#a3a3a3">does for you</tspan></text>
+<text x="32" y="128" font-size="17" fill="#737373">From each vendor&#39;s own pages, read in November 2026</text>
+<rect x="32.5" y="168.5" width="654" height="64" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="48" y="206" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">[Tool]</text>
+<text x="277.5" y="196" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">Laptop</text>
+<text x="277.5" y="216" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">can be off</text>
+<text x="368.5" y="196" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">Own IP</text>
+<text x="368.5" y="216" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">or proxy</text>
+<text x="459.5" y="196" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">Automatic</text>
+<text x="459.5" y="216" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">warmup</text>
+<text x="550.5" y="196" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">Daily totals</text>
+<text x="550.5" y="216" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">vary</text>
+<text x="641.5" y="196" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">Backs off</text>
+<text x="641.5" y="216" text-anchor="middle" font-size="14.5" font-weight="600" fill="#0a0a0a">on its own</text>
+<rect x="32.5" y="232.5" width="654" height="377" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="265.5" font-size="18" fill="#0a0a0a" font-weight="600">Omniscient</text>
+<rect x="268.0" y="249.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="359.0" y="249.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="450.0" y="249.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="541.0" y="249.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="632.0" y="249.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<line x1="33" x2="686" y1="286.5" y2="286.5" stroke="#e5e5e5"/>
+<text x="48" y="319.5" font-size="18" fill="#0a0a0a">Expandi</text>
+<rect x="268.0" y="303.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="359.0" y="303.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="450.0" y="303.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="541.0" y="303.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="632.0" y="303.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<line x1="33" x2="686" y1="340.5" y2="340.5" stroke="#e5e5e5"/>
+<text x="48" y="373.5" font-size="18" fill="#0a0a0a">La Growth Machine</text>
+<rect x="268.0" y="357.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="359.0" y="357.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="450.0" y="357.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<rect x="541.0" y="357.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="632.0" y="357.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<line x1="33" x2="686" y1="394.5" y2="394.5" stroke="#e5e5e5"/>
+<text x="48" y="427.5" font-size="18" fill="#0a0a0a">Dripify</text>
+<rect x="268.0" y="411.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="359.0" y="411.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="450.0" y="411.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="541.0" y="411.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="632.0" y="411.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<line x1="33" x2="686" y1="448.5" y2="448.5" stroke="#e5e5e5"/>
+<text x="48" y="481.5" font-size="18" fill="#0a0a0a">HeyReach</text>
+<rect x="268.0" y="465.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="359.0" y="465.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<rect x="450.0" y="465.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<rect x="541.0" y="465.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="632.0" y="465.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<line x1="33" x2="686" y1="502.5" y2="502.5" stroke="#e5e5e5"/>
+<text x="48" y="535.5" font-size="18" fill="#0a0a0a">Linked Helper</text>
+<rect x="268.0" y="519.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<rect x="359.0" y="519.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="450.0" y="519.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<rect x="541.0" y="519.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="632.0" y="519.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<line x1="33" x2="686" y1="556.5" y2="556.5" stroke="#e5e5e5"/>
+<text x="48" y="589.5" font-size="18" fill="#0a0a0a">Waalaxy</text>
+<rect x="268.0" y="573.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="359.0" y="573.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="450.0" y="573.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<rect x="541.0" y="573.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="632.0" y="573.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<line x1="232.5" x2="232.5" y1="169" y2="609" stroke="#0a0a0a"/>
+<line x1="323.5" x2="323.5" y1="169" y2="609" stroke="#d4d4d4"/>
+<line x1="414.5" x2="414.5" y1="169" y2="609" stroke="#d4d4d4"/>
+<line x1="505.5" x2="505.5" y1="169" y2="609" stroke="#d4d4d4"/>
+<line x1="596.5" x2="596.5" y1="169" y2="609" stroke="#d4d4d4"/>
+<rect x="32.5" y="638.5" width="19" height="19" fill="#10b981" stroke="#0a0a0a"/>
+<text x="62" y="654" font-size="16" fill="#0a0a0a">Listed</text>
+<rect x="136.5" y="638.5" width="19" height="19" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="166" y="654" font-size="16" fill="#0a0a0a">Some plans, or by hand</text>
+<rect x="388.5" y="638.5" width="19" height="19" fill="#ffffff" stroke="#a3a3a3"/>
+<text x="418" y="654" font-size="16" fill="#0a0a0a">Not on the pages we read</text>
+<text x="32" y="698" font-size="16" fill="#737373">Gray marks: Linked Helper sends while your computer or server is on,</text>
+<text x="32" y="724" font-size="16" fill="#737373">HeyReach includes a proxy on Growth only, Dripify adapts pace on</text>
+<text x="32" y="750" font-size="16" fill="#737373">Advanced only, and three tools leave the warmup to you.</text>
+</svg>

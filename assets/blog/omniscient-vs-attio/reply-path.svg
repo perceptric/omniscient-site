@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Where a LinkedIn reply lands with Attio and with Omniscient</title>
+<desc id="d">Two paths side by side. Attio with a LinkedIn app: your LinkedIn app sends the invitations and messages, the reply arrives in the app's own inbox, the app syncs it to Attio if its integration covers replies, and you update the deal in Attio by hand or with a workflow. Omniscient: Otto drafts each message, you approve it and the engine sends it in working hours; the reply stops that person's outreach in every campaign; the thread opens in the Inbox next to the CRM record; and you create the opportunity from the thread.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#0a0a0a"/></marker></defs>
+<rect width="720" height="720" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="719" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Replies]</text>
+<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Where a LinkedIn reply <tspan fill="#a3a3a3">lands</tspan></text>
+<text x="32" y="140" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Attio with an app]</text>
+<rect x="378" y="127" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
+<text x="400" y="140" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Omniscient]</text>
+<g font-size="17" fill="#0a0a0a">
+<rect x="32" y="160" width="310" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="198">Your LinkedIn app sends the</text>
+<text x="50" y="224">invitations and messages</text>
+<line x1="187" x2="187" y1="252" y2="278" stroke="#0a0a0a" marker-end="url(#a)"/>
+<rect x="32" y="284" width="310" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="322">The reply arrives in the</text>
+<text x="50" y="348">app's own inbox</text>
+<line x1="187" x2="187" y1="376" y2="402" stroke="#0a0a0a" marker-end="url(#a)"/>
+<rect x="32" y="408" width="310" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="446">The app syncs it to Attio,</text>
+<text x="50" y="472">if its integration covers replies</text>
+<line x1="187" x2="187" y1="500" y2="526" stroke="#0a0a0a" marker-end="url(#a)"/>
+<rect x="32" y="532" width="310" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="570">You update the deal in Attio,</text>
+<text x="50" y="596">by hand or with a workflow</text>
+<rect x="378" y="160" width="310" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="396" y="198">Otto drafts, you approve, and</text>
+<text x="396" y="224">it sends in working hours</text>
+<line x1="533" x2="533" y1="252" y2="278" stroke="#0a0a0a" marker-end="url(#a)"/>
+<rect x="378" y="284" width="310" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="396" y="322">The reply stops that person's</text>
+<text x="396" y="348">outreach in every campaign</text>
+<line x1="533" x2="533" y1="376" y2="402" stroke="#0a0a0a" marker-end="url(#a)"/>
+<rect x="378" y="408" width="310" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="396" y="446">The thread opens in the Inbox,</text>
+<text x="396" y="472">next to the CRM record</text>
+<line x1="533" x2="533" y1="500" y2="526" stroke="#0a0a0a" marker-end="url(#a)"/>
+<rect x="378" y="532" width="310" height="92" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+<text x="396" y="570">You create the opportunity</text>
+<text x="396" y="596">from the thread</text>
+</g>
+<text x="32" y="672" font-size="17" fill="#737373">The Attio path depends on which LinkedIn app you connect</text>
+<text x="32" y="696" font-size="17" fill="#737373">and what its integration syncs.</text>
+</svg>

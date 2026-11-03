@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" width="720" height="520" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">The order a CRM import runs in</title>
+<desc id="d">Six steps in order. 1, companies, matched by web domain. 2, people, linked to their company. 3, companies with no website get one from their people's work email addresses, with free addresses like Gmail left out. 4, pipelines, with stages copied and won and lost kept. 5, deals, placed on the matching stage. 6, notes, kept on the record they belong to. Simplified from the order Omniscient's importer runs for HubSpot, Salesforce, Pipedrive and Attio.</desc>
+<rect width="720" height="520" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="519" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Migration]</text>
+<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">The order an import runs in <tspan fill="#a3a3a3">and why</tspan></text>
+<rect x="32.5" y="124.5" width="199" height="127" fill="#10b981" stroke="#0a0a0a"/>
+<text x="48" y="154" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">01</text>
+<text x="48" y="184" font-size="20" font-weight="600" fill="#0a0a0a">Companies</text>
+<text x="48" y="210" font-size="18" fill="#0a0a0a">Matched by</text>
+<text x="48" y="234" font-size="18" fill="#0a0a0a">web domain</text>
+<path d="M236 188.0H254" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<path d="M248 183.0L255 188.0L248 193.0" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<rect x="260.5" y="124.5" width="199" height="127" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="276" y="154" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">02</text>
+<text x="276" y="184" font-size="20" font-weight="600" fill="#0a0a0a">People</text>
+<text x="276" y="210" font-size="18" fill="#737373">Linked to their</text>
+<text x="276" y="234" font-size="18" fill="#737373">company</text>
+<path d="M464 188.0H482" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<path d="M476 183.0L483 188.0L476 193.0" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<rect x="488.5" y="124.5" width="199" height="127" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="504" y="154" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">03</text>
+<text x="504" y="184" font-size="20" font-weight="600" fill="#0a0a0a">Missing websites</text>
+<text x="504" y="210" font-size="18" fill="#737373">From their people's</text>
+<text x="504" y="234" font-size="18" fill="#737373">work emails</text>
+<rect x="32.5" y="300.5" width="199" height="127" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="330" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">04</text>
+<text x="48" y="360" font-size="20" font-weight="600" fill="#0a0a0a">Pipelines</text>
+<text x="48" y="386" font-size="18" fill="#737373">Stages copied,</text>
+<text x="48" y="410" font-size="18" fill="#737373">won and lost kept</text>
+<path d="M236 364.0H254" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<path d="M248 359.0L255 364.0L248 369.0" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<rect x="260.5" y="300.5" width="199" height="127" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="276" y="330" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">05</text>
+<text x="276" y="360" font-size="20" font-weight="600" fill="#0a0a0a">Deals</text>
+<text x="276" y="386" font-size="18" fill="#737373">Placed on the</text>
+<text x="276" y="410" font-size="18" fill="#737373">matching stage</text>
+<path d="M464 364.0H482" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<path d="M476 359.0L483 364.0L476 369.0" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<rect x="488.5" y="300.5" width="199" height="127" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="504" y="330" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">06</text>
+<text x="504" y="360" font-size="20" font-weight="600" fill="#0a0a0a">Notes</text>
+<text x="504" y="386" font-size="18" fill="#737373">Kept on the record</text>
+<text x="504" y="410" font-size="18" fill="#737373">they belong to</text>
+<path d="M588.0 256V276.0H132.0V295" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<path d="M127.0 288L132.0 296L137.0 288" stroke="#0a0a0a" stroke-width="1.5" fill="none"/>
+<text x="32" y="474" font-size="17" fill="#737373">Simplified from the order Omniscient's importer runs for HubSpot,</text>
+<text x="32" y="498" font-size="17" fill="#737373">Salesforce, Pipedrive and Attio. Free addresses like Gmail don't count.</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 792" width="720" height="792" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Most invitations one LinkedIn account can send in a day, Waalaxy&#x27;s plans next to Omniscient&#x27;s paces</title>
+<desc id="d">Waalaxy Pro: 11 invitations a day, about 300 a month. Waalaxy Advanced and Business: up to 100 a day, at most 200 a week. Omniscient at the Careful pace: 10 a day and 60 a week. At the Normal pace, the default: 15 a day and 80 a week. At the Fast pace: 25 a day and 150 a week. Omniscient&#x27;s highest setting: 40 a day and 200 a week. Sources: Waalaxy&#x27;s help center and Omniscient&#x27;s sender settings. LinkedIn publishes no number.</desc>
+<rect width="720" height="792" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="791" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="20" fill="#737373">[Invitation ceilings]</text>
+<text x="32" y="94" font-size="31" font-weight="600" fill="#0a0a0a">Most invitations in one day <tspan fill="#a3a3a3">per account</tspan></text>
+<text x="32" y="150" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Waalaxy]</text>
+<line x1="32" y1="164" x2="688" y2="164" stroke="#e5e5e5"/>
+<text x="32" y="204" font-size="24" font-weight="600" fill="#0a0a0a">Pro <tspan font-weight="400" fill="#737373">about 300 a month</tspan></text>
+<rect x="32.5" y="218.5" width="59.4" height="30" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="103" y="241" font-size="22" font-weight="600" fill="#0a0a0a">11 a day</text>
+<text x="32" y="288" font-size="24" font-weight="600" fill="#0a0a0a">Advanced and Business <tspan font-weight="400" fill="#737373">at most 200 a week</tspan></text>
+<rect x="32.5" y="302.5" width="540.0" height="30" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="584" y="325" font-size="22" font-weight="600" fill="#0a0a0a">100 a day</text>
+<text x="32" y="372" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Omniscient]</text>
+<line x1="32" y1="386" x2="688" y2="386" stroke="#e5e5e5"/>
+<text x="32" y="426" font-size="24" font-weight="600" fill="#0a0a0a">Careful <tspan font-weight="400" fill="#737373">60 a week</tspan></text>
+<rect x="32.5" y="440.5" width="54.0" height="30" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="98" y="463" font-size="22" font-weight="600" fill="#0a0a0a">10 a day</text>
+<text x="32" y="510" font-size="24" font-weight="600" fill="#0a0a0a">Normal, the default <tspan font-weight="400" fill="#737373">80 a week</tspan></text>
+<rect x="32.5" y="524.5" width="81.0" height="30" fill="#10b981" stroke="#0a0a0a"/>
+<text x="125" y="547" font-size="22" font-weight="600" fill="#0a0a0a">15 a day</text>
+<text x="32" y="594" font-size="24" font-weight="600" fill="#0a0a0a">Fast <tspan font-weight="400" fill="#737373">150 a week</tspan></text>
+<rect x="32.5" y="608.5" width="135.0" height="30" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="179" y="631" font-size="22" font-weight="600" fill="#0a0a0a">25 a day</text>
+<text x="32" y="678" font-size="24" font-weight="600" fill="#0a0a0a">Highest setting <tspan font-weight="400" fill="#737373">200 a week</tspan></text>
+<rect x="32.5" y="692.5" width="216.0" height="30" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="260" y="715" font-size="22" font-weight="600" fill="#0a0a0a">40 a day</text>
+<text x="32" y="766" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[LinkedIn publishes no number of its own]</text>
+</svg>

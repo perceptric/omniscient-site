@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" width="720" height="470" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">How a sender slows down when LinkedIn pushes back</title>
+<desc id="d">When fewer than 20% of the last week's invitations are accepted, or LinkedIn answers with rate limits, the sender drops to half pace for 3 days, then climbs back to full pace over the next 3 days.</desc>
+<rect width="720" height="470" fill="#ffffff"/><rect x="0.5" y="0.5" width="719" height="469" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Slow down]</text>
+<text x="32" y="82" font-size="26" font-weight="600" fill="#0a0a0a">Daily pace <tspan fill="#a3a3a3">after a warning sign</tspan></text>
+<line x1="96" x2="680" y1="265.0" y2="265.0" stroke="#e5e5e5"/>
+<text x="84" y="271.0" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">50%</text>
+<line x1="96" x2="680" y1="170.0" y2="170.0" stroke="#e5e5e5"/>
+<text x="84" y="176.0" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">100%</text>
+<line x1="96" x2="680" y1="360" y2="360" stroke="#0a0a0a"/>
+<text x="84" y="366" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">0</text>
+<rect x="193.3" y="164" width="194.7" height="196" fill="#f5f5f5"/>
+<path d="M96.0 170.0 L193.3 170.0 L193.3 265.0 L388.0 265.0 L582.7 170.0 L680.0 170.0" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="miter"/>
+<line x1="193.3" x2="193.3" y1="140" y2="360" stroke="#0a0a0a" stroke-dasharray="4 3"/>
+<text x="201.3" y="154" font-size="19" fill="#0a0a0a">Warning sign</text>
+<text x="290.7" y="250.0" text-anchor="middle" font-size="19" fill="#0a0a0a">Half pace, 3 days</text>
+<text x="499.3" y="236.5" font-size="19" fill="#0a0a0a">Back to full</text>
+<text x="499.3" y="259.5" font-size="19" fill="#0a0a0a">over 3 more days</text>
+<line x1="193.3" x2="193.3" y1="360" y2="366" stroke="#0a0a0a"/>
+<text x="193.3" y="388" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Day 0</text>
+<line x1="388.0" x2="388.0" y1="360" y2="366" stroke="#0a0a0a"/>
+<text x="388.0" y="388" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Day 3</text>
+<line x1="582.7" x2="582.7" y1="360" y2="366" stroke="#0a0a0a"/>
+<text x="582.7" y="388" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Day 6</text>
+<text x="32" y="426" font-size="18" fill="#0a0a0a">Warning signs: under 20% of last week's invitations accepted</text>
+<text x="32" y="452" font-size="18" fill="#0a0a0a">(once 20 or more went out), or LinkedIn answering with rate limits.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 708" width="720" height="708" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What a safe sending engine does when LinkedIn pushes back</title>
+<desc id="d">What Omniscient&#39;s sending engine does when LinkedIn pushes back. When under 20 percent of a week&#39;s invitations are accepted, after at least 20: half pace for 3 days, then back to full over 3 more. When LinkedIn says too many requests: it tries again after 15, then 30 minutes, and slows the sender for 3 days. When LinkedIn signs the account out: it pauses the sender until you reconnect, then warms up again. When LinkedIn refuses the account&#39;s actions: it marks the sender restricted and pauses, with nothing retried. When a send times out with no answer: it is treated as sent and never sent again on its own.</desc>
+<rect width="720" height="708" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="707" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[When LinkedIn pushes back]</text>
+<text x="32" y="92" font-size="30" font-weight="600" fill="#0a0a0a">What our engine does <tspan fill="#a3a3a3">next</tspan></text>
+<rect x="32.5" y="128.5" width="262" height="91" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="294.5" y="128.5" width="393" height="91" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="166" font-size="18" font-weight="600" fill="#0a0a0a">Acceptance under 20%</text>
+<text x="50" y="192" font-size="18" font-weight="600" fill="#0a0a0a">after 20 invitations</text>
+<rect x="312.5" y="167.5" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="338" y="166" font-size="18" fill="#0a0a0a">Half pace for 3 days, then</text>
+<text x="338" y="192" font-size="18" fill="#0a0a0a">back to full over 3 more</text>
+<rect x="32.5" y="232.5" width="262" height="91" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="294.5" y="232.5" width="393" height="91" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="270" font-size="18" font-weight="600" fill="#0a0a0a">LinkedIn says too</text>
+<text x="50" y="296" font-size="18" font-weight="600" fill="#0a0a0a">many requests</text>
+<rect x="312.5" y="271.5" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="338" y="270" font-size="18" fill="#0a0a0a">Tries again after 15, then 30</text>
+<text x="338" y="296" font-size="18" fill="#0a0a0a">minutes, and slows for 3 days</text>
+<rect x="32.5" y="336.5" width="262" height="91" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="294.5" y="336.5" width="393" height="91" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="374" font-size="18" font-weight="600" fill="#0a0a0a">LinkedIn signs the</text>
+<text x="50" y="400" font-size="18" font-weight="600" fill="#0a0a0a">account out</text>
+<rect x="312.5" y="375.5" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="338" y="374" font-size="18" fill="#0a0a0a">Pauses the sender until you</text>
+<text x="338" y="400" font-size="18" fill="#0a0a0a">reconnect, then warms up again</text>
+<rect x="32.5" y="440.5" width="262" height="91" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="294.5" y="440.5" width="393" height="91" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="478" font-size="18" font-weight="600" fill="#0a0a0a">LinkedIn refuses the</text>
+<text x="50" y="504" font-size="18" font-weight="600" fill="#0a0a0a">account&#39;s actions</text>
+<rect x="312.5" y="479.5" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="338" y="478" font-size="18" fill="#0a0a0a">Marks it restricted and pauses,</text>
+<text x="338" y="504" font-size="18" fill="#0a0a0a">with nothing retried around it</text>
+<rect x="32.5" y="544.5" width="262" height="91" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="294.5" y="544.5" width="393" height="91" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="50" y="582" font-size="18" font-weight="600" fill="#0a0a0a">A send times out</text>
+<text x="50" y="608" font-size="18" font-weight="600" fill="#0a0a0a">with no answer</text>
+<rect x="312.5" y="583.5" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="338" y="582" font-size="18" fill="#0a0a0a">Treats it as sent and never</text>
+<text x="338" y="608" font-size="18" fill="#0a0a0a">sends it again on its own</text>
+<text x="32" y="678" font-size="16" fill="#737373">Omniscient&#39;s engine, November 2026. A restart warms up from 5 a day.</text>
+</svg>

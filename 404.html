@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@500;600&family=Geist+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/base.css?v=e84d72bc">
+<link rel="stylesheet" href="/assets/base.css?v=686bb6bb">
 <script src="/assets/site.js?v=7ab70552" defer></script>
 <!-- head:end -->
 <title>Page not found · Omniscient</title>
@@ -39,8 +39,16 @@
             </div>
           </div>
         </li>
+        <li class="nav__group">
+          <button class="nav__trigger" type="button" aria-expanded="false" aria-controls="menu-resources">Resources<svg class="nav__chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="nav__panel nav__panel--resources" id="menu-resources">
+            <div class="menu menu--products menu--two">
+                <a class="menu__card" href="/blog/"><span class="menu__tile b-stone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><b>Blog</b><small>Guides to LinkedIn outbound and CRM</small></a>
+                <a class="menu__card" href="/#security"><span class="menu__tile b-gray"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="10"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><b>Security</b><small>How we handle your data</small></a>
+            </div>
+          </div>
+        </li>
         <li><a class="nav__link" href="/#pricing">Pricing</a></li>
-        <li><a class="nav__link" href="/#security">Security</a></li>
       </ul>
     </nav>
     <div class="site-actions">
@@ -62,8 +70,12 @@
         <a href="/product/crm/">Omniscient CRM</a>
         <a href="/product/deal-room/">Deal Room</a>
     </div>
+    <div class="sheet__group sheet__group--open">
+      <span class="sheet__label">Resources</span>
+        <a href="/blog/">Blog</a>
+        <a href="/#security">Security</a>
+    </div>
     <a class="sheet__plain" href="/#pricing">Pricing</a>
-    <a class="sheet__plain" href="/#security">Security</a>
     <a class="sheet__plain" href="https://app.tryomniscient.com/today">Sign in</a>
   </div>
   <div class="sheet__foot">
@@ -99,6 +111,7 @@
       <ul>
         <li><a href="/#pricing">Pricing</a></li>
         <li><a href="/#security">Security</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="mailto:hello@tryomniscient.com?subject=Omniscient%20demo">Book a demo</a></li>
       </ul>
     </nav>

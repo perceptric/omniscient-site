@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Where LinkedIn and email start in Waalaxy&#x27;s and lemlist&#x27;s plans</title>
+<desc id="d">Prices a month on yearly billing. Waalaxy Pro, 19 euros per user: LinkedIn yes, email no, about 300 invitations a month. Waalaxy Advanced, 49 euros per user: LinkedIn yes, email no, 800 invitations a month and the API. Waalaxy Business, 69 euros per user: LinkedIn and cold email sequences, where both channels start. lemlist Email, 55 dollars for the whole team: email only, 50,000 emails a month with unlimited users, no LinkedIn automation. lemlist Multichannel, 87 dollars per user: LinkedIn and email, plus calls, SMS and 5 senders per user, where both channels start. From each vendor&#x27;s pricing page, November 2026.</desc>
+<rect width="600" height="760" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="599" height="759" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="20" fill="#737373">[Plans side by side]</text>
+<text x="32" y="94" font-size="30" font-weight="600" fill="#0a0a0a">Where LinkedIn and email <tspan fill="#a3a3a3">start</tspan></text>
+<text x="438" y="150" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">LinkedIn</text>
+<text x="536" y="150" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Email</text>
+<text x="32" y="190" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Waalaxy, per user a month, yearly]</text>
+<line x1="32" y1="204" x2="568" y2="204" stroke="#0a0a0a"/>
+<text x="50" y="238" font-size="24" font-weight="600" fill="#0a0a0a">Pro <tspan font-weight="400" fill="#0a0a0a">€19</tspan></text>
+<text x="50" y="266" font-size="18" fill="#525252">About 300 invitations a month</text>
+<rect x="423.5" y="229.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M431 244.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<rect x="521.5" y="229.5" width="30" height="30" fill="#ffffff" stroke="#d4d4d4"/><line x1="530" y1="244.5" x2="543" y2="244.5" stroke="#a3a3a3" stroke-width="2.4"/>
+<line x1="32" y1="282" x2="568" y2="282" stroke="#e5e5e5"/>
+<text x="50" y="314" font-size="24" font-weight="600" fill="#0a0a0a">Advanced <tspan font-weight="400" fill="#0a0a0a">€49</tspan></text>
+<text x="50" y="342" font-size="18" fill="#525252">800 invitations a month, plus the API</text>
+<rect x="423.5" y="305.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M431 320.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<rect x="521.5" y="305.5" width="30" height="30" fill="#ffffff" stroke="#d4d4d4"/><line x1="530" y1="320.5" x2="543" y2="320.5" stroke="#a3a3a3" stroke-width="2.4"/>
+<line x1="32" y1="358" x2="568" y2="358" stroke="#e5e5e5"/>
+<rect x="32" y="359" width="6" height="74" fill="#10b981"/>
+<text x="50" y="390" font-size="24" font-weight="600" fill="#0a0a0a">Business <tspan font-weight="400" fill="#0a0a0a">€69</tspan></text>
+<text x="50" y="418" font-size="18" fill="#525252">Adds cold email sequences</text>
+<rect x="423.5" y="381.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M431 396.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<rect x="521.5" y="381.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M529 396.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<line x1="32" y1="434" x2="568" y2="434" stroke="#e5e5e5"/>
+<text x="32" y="484" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[lemlist, a month, billed yearly]</text>
+<line x1="32" y1="498" x2="568" y2="498" stroke="#0a0a0a"/>
+<text x="50" y="532" font-size="24" font-weight="600" fill="#0a0a0a">Email <tspan font-weight="400" fill="#0a0a0a">$55</tspan></text>
+<text x="50" y="560" font-size="18" fill="#525252">50,000 emails a month, unlimited users</text>
+<rect x="423.5" y="523.5" width="30" height="30" fill="#ffffff" stroke="#d4d4d4"/><line x1="432" y1="538.5" x2="445" y2="538.5" stroke="#a3a3a3" stroke-width="2.4"/>
+<rect x="521.5" y="523.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M529 538.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<line x1="32" y1="576" x2="568" y2="576" stroke="#e5e5e5"/>
+<rect x="32" y="577" width="6" height="74" fill="#10b981"/>
+<text x="50" y="608" font-size="24" font-weight="600" fill="#0a0a0a">Multichannel <tspan font-weight="400" fill="#0a0a0a">$87</tspan></text>
+<text x="50" y="636" font-size="18" fill="#525252">Per user, adds calls, SMS and 5 senders</text>
+<rect x="423.5" y="599.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M431 614.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<rect x="521.5" y="599.5" width="30" height="30" fill="#0a0a0a" stroke="#0a0a0a"/><path d="M529 614.5 l5 5 l10 -11" fill="none" stroke="#ffffff" stroke-width="2.6"/>
+<line x1="32" y1="652" x2="568" y2="652" stroke="#e5e5e5"/>
+<rect x="32.5" y="676.5" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
+<text x="58" y="689" font-size="18" fill="#0a0a0a">The first plan with LinkedIn and email together</text>
+<text x="32" y="734" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[From each pricing page, November 2026]</text>
+</svg>
