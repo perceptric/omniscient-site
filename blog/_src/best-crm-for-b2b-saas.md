@@ -67,7 +67,17 @@ A SaaS company sells a subscription to a group of people, then sells to the same
 
 Honestly, few teams need every row on day one. Weigh each CRM against the motion behind most of last quarter's revenue, then check that it can grow into your next one.
 
-![Five ways B2B SaaS deals start and where to look first. Inbound demo requests need each form routed to a rep fast: HubSpot, Omniscient or Salesforce. Outbound to your ICP needs accounts found and every touch logged: Omniscient, Close or Freshsales. Deals with several buyers need everyone on one deal, with call notes: Salesforce, HubSpot or Omniscient. Product led signups need product usage on the account: Attio, Twenty or HubSpot. Renewals and expansion need renewal dates, MRR and ARR: Pipedrive, Attio or Salesforce](/assets/blog/best-crm-for-b2b-saas/saas-motions.svg)
+```tree
+# Where your deals start, and which CRMs to look at
+Who starts most of your deals?
+  The buyer: Where do they raise their hand?
+    A demo request: HubSpot, Omniscient, Salesforce | Route each form to a rep fast
+    A product signup: Attio, Twenty, HubSpot | Product usage on the account
+  Your reps: What do they need most?
+    Accounts found and every touch logged: Omniscient, Close, Freshsales | Outbound to your ICP
+    Every buyer on one deal, with call notes: Salesforce, HubSpot, Omniscient | Deals with several buyers
+  A customer you have: Pipedrive, Attio, Salesforce | Renewal dates, MRR and ARR
+```
 
 ## What we learned building a CRM for SaaS sales
 

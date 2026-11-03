@@ -69,7 +69,18 @@ Most of the reasons come down to how HeyReach is built:
 
 These matter most for a small sales team, or for anyone whose replies need to land in a CRM without somebody copying them over.
 
-![Five reasons teams leave HeyReach and where to look for each: a lower price for one or two senders points to Omniscient, Waalaxy, Kanbox or Linked Helper; email in the same sequence points to Expandi, Skylead, SalesRobot or lemlist; replies on a CRM record points to Omniscient; an agency plan with email built in points to GetSales.io, Skylead Agency or Expandi Agency; a gradual ramp for new accounts points to Omniscient, Expandi or GetSales.io](/assets/blog/heyreach-alternatives/reasons.svg)
+```tree
+# Why you might leave HeyReach, and where to look
+Do you run LinkedIn accounts for clients?
+  Yes: Do you need email built into the plan?
+    Yes: GetSales.io, Skylead Agency, Expandi Agency
+    No, with 25 or more accounts: HeyReach (heyreach.io) | Its Agency plan may still fit best
+  No: What do you want most?
+    A lower price for one or two senders: Omniscient, Waalaxy, Kanbox, Linked Helper
+    Email in the same sequence: Expandi, Skylead, SalesRobot, lemlist
+    Replies on a CRM record: Omniscient
+    A gradual ramp for new accounts: Omniscient, Expandi, GetSales.io
+```
 
 ## HeyReach's safety limits next to ours
 

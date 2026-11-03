@@ -76,7 +76,22 @@ Each reason below starts from lemlist's own pages:
 - Only invitations ramp up, so on a new account its limits article tells you to lower messages, profile visits and follows by hand for two to three weeks.
 - After a LinkedIn warning, the help center asks you to pause all LinkedIn steps for at least 48 hours, then restart at about 5 actions a day.
 
-![Six reasons teams look past lemlist for LinkedIn outreach and where to look for each. LinkedIn is the only channel you use: Omniscient, HeyReach, Waalaxy, Linked Helper or Dux-Soup. You want email steps on the starting plan: La Growth Machine, Dripify, Expandi, Skylead, SalesRobot or Closely. You want new accounts to warm up on their own: Omniscient, Expandi or GetSales.io. You want replies and deals in one app: Omniscient. You run many client LinkedIn accounts: HeyReach, GetSales.io or Skylead Agency. You also reach buyers on X: Meet Alfred or La Growth Machine. If email books most meetings, lemlist may still fit best.](/assets/blog/lemlist-alternatives/reasons.svg)
+```tree
+# Why you might leave lemlist for LinkedIn, and where to look
+Which channel books most of your meetings?
+  Email: lemlist (lemlist.com) | lemlist may still fit best
+  LinkedIn: Do you run many client LinkedIn accounts?
+    Yes: HeyReach, GetSales.io, Skylead Agency
+    No: What do you want from the switch?
+      LinkedIn as the only channel: Replies and deals in one app?
+        Yes: Omniscient
+        No: HeyReach, Waalaxy, Linked Helper, Dux-Soup
+      Email steps on the starting plan: Do you need unlimited email accounts?
+        Yes: Skylead, Closely
+        Not needed: La Growth Machine, Dripify, Expandi, SalesRobot
+      X steps too: Meet Alfred, La Growth Machine
+      New accounts that warm up on their own: Omniscient, Expandi, GetSales.io
+```
 
 ## lemlist's LinkedIn limits next to our pacing
 

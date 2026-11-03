@@ -116,6 +116,31 @@ code and `---`. These fenced blocks render in the brand:
 | ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
 | ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. No heading above it. | A "FAQs" heading (in the contents list), questions that open and close, plus FAQPage JSON-LD. |
 | ` ```steps ` | `1. Title: text` lines. | A numbered step list on a white card. |
+| ` ```tree ` | A decision tree: `# Title`, then one question, then its branches indented under it as `Label: answer`. An answer ending in `?` is a further question with its own branches; any other answer ends the path with 1 to 4 tools split by commas, plus `\| a short note` if needed. See below. | A tree on the gray band: the question on top, labeled branches joined by lines, and tool cards with each tool's logo, linked to its numbered `###` section. Steps rise in once in view. |
+
+A ` ```tree ` replaces a "reason → tools" picture. Put the most decisive question first, give each question 2 to 4
+branches, and end every path in the 1 to 4 tools that truly fit it:
+
+````
+```tree
+# Where to look first when leaving Dripify
+Who are you sending for?
+  Client accounts: HeyReach, GetSales, Skylead, Closely
+  Your team: What's missing in Dripify?
+    Replies on your CRM record: Omniscient
+    Calls or X steps: Which one?
+      Calls: La Growth Machine, lemlist
+      X: Meet Alfred, La Growth Machine
+  Just you: Waalaxy, Kanbox, Linked Helper | A smaller bill
+```
+````
+
+Tool names come from the post's tools block (logo and link to the tool's numbered heading); a longer name like
+`Skylead Agency` finds Skylead and keeps its own wording. Write `Attio (attio.com)` for a tool outside the list, such
+as the one the post replaces: it gets its logo and no link. On a desktop, a question whose branches fit the reading
+column draws them side by side; the rest stack under their question on a rail, as the whole tree does below 784px.
+The build warns about a line it can't read, a question without 2 to 4 branches, a path with more than 4 tools and a
+tool with no heading to link to. A tree counts as a picture, and its words don't count toward the post's length.
 
 Pictures sit in the gray grain band:
 

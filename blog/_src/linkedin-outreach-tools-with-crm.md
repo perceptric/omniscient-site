@@ -695,7 +695,20 @@ Realistically, a sync is the faster route when your team already lives in its CR
 
 Pick the kind first, then use the free trial to test the places where sending meets the record.
 
-![Decision chart: for approved outreach and a full CRM, look at Omniscient; for teams that sell from Gmail and want email with LinkedIn, NetHunt CRM; for a simple LinkedIn pipeline, Kanbox; for LinkedIn, email and X in one tool, Meet Alfred; for the lowest price per account, Linked Helper; if you write every LinkedIn message yourself, Breakcold or folk; if you keep HubSpot or Pipedrive, La Growth Machine or lemlist; for many sender accounts, HeyReach](/assets/blog/linkedin-outreach-tools-with-crm/pick-a-tool.svg)
+```tree
+# Which LinkedIn outreach tool with a CRM to try first
+Who writes the LinkedIn messages?
+  You, every one: Breakcold, folk
+  The tool, with automated steps: What matters most?
+    Keeping HubSpot or Pipedrive: La Growth Machine, lemlist
+    A CRM in the tool: Which kind?
+      Approved outreach and a full CRM: Omniscient
+      Selling from Gmail, with email and LinkedIn: NetHunt CRM
+      A simple LinkedIn pipeline: Kanbox
+      LinkedIn, email and X in one tool: Meet Alfred
+    The lowest price per account: Linked Helper
+    Many sender accounts: HeyReach
+```
 
 ```steps
 1. Add a lead you already have: Put someone from your CRM in a test campaign and see whether the tool finds their existing record.

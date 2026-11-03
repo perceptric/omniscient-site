@@ -303,7 +303,21 @@ Our guide to [LinkedIn outreach tools with a CRM](/blog/linkedin-outreach-tools-
 
 Start from how your team prospects today, then use the trial to test where LinkedIn meets the record.
 
-![Which CRM for LinkedIn prospecting to try first: a team that wants LinkedIn outreach it approves inside the CRM starts with Omniscient; one that already pays for Sales Navigator Advanced Plus starts with HubSpot, Salesforce or Dynamics 365; one that wants a free plan for up to 3 users starts with Zoho CRM; one that likes a pipeline CRM and will add a LinkedIn app starts with Pipedrive or Attio; one that works in LinkedIn with a browser extension starts with folk, Salesflare or Nimble; one that sells from Gmail with email and LinkedIn in one sequence starts with NetHunt CRM; one that sends every LinkedIn message by hand starts with Breakcold; one that needs only a LinkedIn inbox and a Kanban board starts with Kanbox](/assets/blog/best-crm-for-linkedin/pick-a-crm.svg)
+```tree
+# Which CRM for LinkedIn prospecting to try first
+Where does your team prospect?
+  Sales Navigator: What matters more?
+    LinkedIn's CRM Sync, on Advanced Plus: HubSpot, Salesforce, Microsoft Dynamics 365 Sales
+    A free plan for up to 3 users: Zoho CRM
+  LinkedIn itself: What should the CRM do there?
+    Send outreach you approve: Omniscient
+    Hold every message you send by hand: Breakcold
+    Sit in a browser extension: folk, Salesflare, Nimble
+    Give you a LinkedIn inbox and a Kanban board: Kanbox
+  Gmail or a pipeline CRM: Which one?
+    Gmail, with email and LinkedIn in one sequence: NetHunt CRM
+    A pipeline CRM with a LinkedIn app: Pipedrive, Attio | Added from its marketplace
+```
 
 ```steps
 1. List your senders: Write down who sends LinkedIn invitations today and whether each person will connect their own account.

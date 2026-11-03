@@ -464,6 +464,7 @@ function toolHeading(raw, text, id, ctx) {
   if (!fig && tool.domain) ctx.warn(`no screenshot for ${name} (${tool.domain}): run node tools/shot-tools.mjs ${tool.domain}`);
   const n = m[1].padStart(2, "0");
   ctx.pendingFig = fig;
+  ctx.toolIds.set(toolKey(tool.name), id);
   ctx.review = { id, part: null };
   ctx.toc[ctx.toc.length - 1]?.subs.push({ id, n, name });
   return `<h3 id="${id}" class="bl-toolh"><span class="bl-toolh__n">${n}</span>${img}<span class="bl-toolh__name">${rest}</span></h3>`;
@@ -588,6 +589,7 @@ function special(kind, body, ctx) {
     case "shot": return body.filter((l) => l.trim()).map((l) => shot(l.trim(), "", "", ctx)).join("\n");
     case "rating": return rating(body, ctx, false);
     case "try": return tryButton(body, ctx);
+    case "tree": return tree(body, ctx);
     default:
       if (kind && !["", "text", "txt", "html", "css", "js", "json", "bash", "sh", "md", "markdown", "sql", "ts", "tsx", "yaml"].includes(kind)) ctx.warn(`unknown block \`\`\`${kind}: shown as code`);
       return `<pre class="bl-code"><code>${esc(body.join("\n"))}</code></pre>`;
@@ -763,6 +765,141 @@ function steps(body, ctx) {
   return `<ol class="bl-steps">\n${lis}\n</ol>`;
 }
 
+// ```tree: a decision tree. One question, then its branches indented under it as "Label: answer". An answer that ends
+// in "?" is another question with its own branches, indented under it; any other answer ends the path: one to four tool
+// names split by commas, then "| a short note" if needed. A first line "# Title" names the tree. A tool from the tools
+// block links to its numbered section ("Skylead Agency" finds Skylead); "Name (domain.com)" is a tool outside the list,
+// shown with its logo and no link.
+//
+//   # Where to look first
+//   Do you want replies on your CRM record?
+//     Yes: Omniscient
+//     No: Do you run many client accounts?
+//       Yes: HeyReach, GetSales.io
+//       No: Waalaxy | The smallest bill
+//
+// On a desktop a question whose branches fit side by side draws them as a tree; the rest stack under their question
+// with a rail, as every tree does on a phone. The widths here are the smallest each part reads well at.
+const TREE = { W: 664, LEAF: 150, Q: 180, GAP: 16, INDENT: 28 };
+
+function parseTree(body, ctx) {
+  let title = "";
+  const items = [];
+  for (const raw of body) {
+    if (!raw.trim()) continue;
+    const t = raw.trim();
+    if (!items.length && !title && /^#\s+/.test(t)) { title = t.replace(/^#\s+/, ""); continue; }
+    items.push({ ind: raw.replace(/\t/g, "  ").match(/^ */)[0].length, t });
+  }
+  if (!items.length) return null;
+  const root = { kind: "q", text: items[0].t, kids: [], ind: items[0].ind };
+  if (!/\?$/.test(root.text)) ctx.warn(`tree: the first line should be a question: ${root.text}`);
+  const stack = [root];
+  for (const it of items.slice(1)) {
+    while (stack.length > 1 && it.ind <= stack[stack.length - 1].ind) stack.pop();
+    const parent = stack[stack.length - 1];
+    if (it.ind <= parent.ind) { ctx.warn(`tree: "${it.t}" isn't indented under a question; left out`); continue; }
+    if (parent.kind !== "q") { ctx.warn(`tree: "${it.t}" sits under an answer, not a question; left out`); continue; }
+    const m = it.t.match(/^([^:]+?):\s+(.+)$/);
+    if (!m) { ctx.warn(`tree: "${it.t}" needs "Label: answer"; left out`); continue; }
+    const node = /\?$/.test(m[2])
+      ? { kind: "q", label: m[1], text: m[2], kids: [], ind: it.ind }
+      : { kind: "leaf", label: m[1], tools: m[2].split("|")[0].split(",").map((x) => x.trim()).filter(Boolean), note: m[2].split("|").slice(1).join("|").trim(), ind: it.ind };
+    parent.kids.push(node);
+    stack.push(node);
+  }
+  const check = (n) => {
+    if (n.kind === "leaf") { if (n.tools.length < 1 || n.tools.length > 4) ctx.warn(`tree: "${n.label}" ends in ${n.tools.length} tools (1 to 4 read best)`); return; }
+    if (n.kids.length < 2 || n.kids.length > 4) ctx.warn(`tree: "${n.text}" has ${n.kids.length} branch${n.kids.length === 1 ? "" : "es"} (2 to 4)`);
+    n.kids.forEach(check);
+  };
+  check(root);
+  return { title, root };
+}
+
+// The width each part needs: min is the narrowest it reads well at (stacked when its branches don't fit side by side),
+// pref is what it takes with every branch side by side.
+function treeNeed(n) {
+  if (n.kind === "leaf") return (n.need = { min: TREE.LEAF, pref: TREE.LEAF, row: TREE.LEAF });
+  const kids = n.kids.map(treeNeed);
+  const gaps = TREE.GAP * Math.max(0, n.kids.length - 1);
+  const row = kids.reduce((a, k) => a + k.min, 0) + gaps;
+  const col = Math.max(TREE.Q, TREE.INDENT + Math.max(0, ...kids.map((k) => k.min)));
+  return (n.need = { min: Math.min(row, col), pref: Math.max(TREE.Q, kids.reduce((a, k) => a + k.pref, 0) + gaps), row });
+}
+
+// Side by side when the branches fit; each then gets its smallest width plus a share of what's left, by how much more it
+// could use.
+function treeLayout(n, avail) {
+  if (n.kind === "leaf") return;
+  n.row = n.kids.length > 1 && n.need.row <= avail;
+  if (!n.row) { n.kids.forEach((k) => treeLayout(k, avail - TREE.INDENT)); return; }
+  const free = avail - n.need.row;
+  const extra = n.kids.reduce((a, k) => a + k.need.pref - k.need.min, 0);
+  for (const k of n.kids) {
+    k.w = k.need.min + (extra ? (free * (k.need.pref - k.need.min)) / extra : free / n.kids.length);
+    treeLayout(k, k.w);
+  }
+}
+
+// A tool at the end of a path. Its link is filled in by treeLinks() once the numbered headings below have their ids.
+function treeTool(raw, ctx) {
+  const out = raw.match(/^(.*?)\s*\(([a-z0-9-]+(?:\.[a-z0-9-]+)+)\)$/i);
+  let tool = null, label = raw;
+  if (out) { label = out[1]; tool = { name: out[1], domain: cleanDomain(out[2]) }; }
+  else {
+    const key = toolKey(raw);
+    tool = ctx.tools.get(key);
+    if (!tool) {
+      const words = (s) => ` ${s.replace(/[^a-z0-9.]+/g, " ").trim()} `;
+      const hits = [...ctx.tools.values()].filter((t) => words(key).includes(words(toolKey(t.name))) || words(toolKey(t.name)).includes(words(key)));
+      tool = hits.sort((a, b) => b.name.length - a.name.length)[0] || null;
+    }
+    if (!tool) ctx.warn(`tree: "${raw}" isn't in the tools block, so it has no logo or link (write "${raw} (domain.com)" for a tool outside the list)`);
+  }
+  const logo = tool ? logoFor(tool.name, tool.domain) : null;
+  const own = tool && (tool.domain === "tryomniscient.com" || /omniscient/i.test(tool.name));
+  const img = logo ? `<span class="bl-tree__logo"><img src="${esc(logo)}" alt="" width="16" height="16" loading="lazy" decoding="async"></span>` : "";
+  const inner = `${img}<span class="bl-tree__name">${inline(label, ctx)}</span>`;
+  const cls = `bl-tree__tool${own ? " bl-tree__tool--own" : ""}`;
+  if (!tool || out) return `<span class="${cls}">${inner}</span>`;
+  return `\u0001${toolKey(tool.name)}\u0001${cls}\u0001${inner}\u0002`;
+}
+
+function treeNode(n, ctx, depth) {
+  if (n.kind === "leaf") {
+    const tools = n.tools.map((t) => `<li>${treeTool(t, ctx)}</li>`).join("");
+    const note = n.note ? `<p class="bl-tree__note">${inline(n.note, ctx)}</p>` : "";
+    return `<div class="bl-tree__leaf"><ul class="bl-tree__tools" role="list">${tools}</ul>${note}</div>`;
+  }
+  const kids = n.kids.map((k) => {
+    const style = `--d:${depth + 1}${n.row ? `;flex-grow:${Math.round(k.w)}` : ""}`;
+    return `<li class="bl-tree__kid" style="${style}"><span class="bl-tree__label">${inline(k.label, ctx)}</span>${treeNode(k, ctx, depth + 1)}</li>`;
+  }).join("\n");
+  return `<div class="bl-tree__node bl-tree__node--${n.row ? "row" : "col"}"><p class="bl-tree__q">${inline(n.text, ctx)}</p><ul class="bl-tree__kids" role="list">\n${kids}\n</ul></div>`;
+}
+
+function tree(body, ctx) {
+  const t = parseTree(body, ctx);
+  if (!t) { ctx.warn("a ```tree block is empty"); return ""; }
+  treeNeed(t.root);
+  treeLayout(t.root, TREE.W);
+  ctx.visuals++;
+  const id = `bl-tree-${(ctx.trees = (ctx.trees || 0) + 1)}`;
+  const title = t.title ? `<p class="bl-tree__title" id="${id}">${inline(t.title, ctx)}</p>` : "";
+  const name = t.title ? ` aria-labelledby="${id}"` : ' aria-label="Decision tree"';
+  return `<figure class="bl-fig bl-treefig"${name}><div class="bl-band bl-band--tree"><div class="bl-tree reveal">${title}\n${treeNode(t.root, ctx, 0)}\n</div></div></figure>`;
+}
+
+// Points each tree tool at its numbered heading ("#3-heyreach"); a tool with no heading on the page shows unlinked.
+function treeLinks(html, ctx) {
+  return html.replace(/\u0001([^\u0001]*)\u0001([^\u0001]*)\u0001([\s\S]*?)\u0002/g, (_, key, cls, inner) => {
+    const id = ctx.toolIds.get(key);
+    if (!id) { ctx.warn(`tree: ${plain(inner)} has no numbered heading on this page, so it isn't linked`); return `<span class="${cls}">${inner}</span>`; }
+    return `<a class="${cls}" href="#${id}">${inner}</a>`;
+  });
+}
+
 // ─── Covers ──────────────────────────────────────────────────────────────────────────────────────────────────────
 
 // The art itself lives in tools/covers.mjs. Here it gets its name for screen readers when it stands alone.
@@ -847,11 +984,12 @@ function render(post, known) {
   const warnings = [];
   const ctx = {
     slug: post.slug, toc: [], faq: [], ids: new Set(), h1s: [], links: [], checks: [], visuals: 0, usesShot: false,
-    review: null, listDepth: 0, ratings: 0, pendingFig: undefined,
+    review: null, listDepth: 0, ratings: 0, trees: 0, pendingFig: undefined, toolIds: new Map(),
     warn: (m) => warnings.push(m), tools: toolsIn(post.body.split("\n")),
   };
-  const html = blocks(post.body.split("\n"), ctx);
-  const words = plain(html).split(/\s+/).filter(Boolean).length;
+  const html = treeLinks(blocks(post.body.split("\n"), ctx), ctx);
+  // Trees are pictures: their words don't count toward the post's length.
+  const words = plain(html.replace(/<figure class="bl-fig bl-treefig"[\s\S]*?<\/figure>/g, " ")).split(/\s+/).filter(Boolean).length;
 
   // Checks that help writers; none of them stop the build.
   if (post.slug !== post.fileSlug) ctx.warn(`slug "${post.slug}" differs from the file name; the page goes to /blog/${post.slug}/`);
