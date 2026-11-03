@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 834" width="720" height="834" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1108" width="720" height="1108" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What Expandi and its alternatives put in one sequence</title>
-<desc id="d">What Expandi and eight alternatives put in one sequence next to LinkedIn, from each vendor&#x27;s own pages in November 2026. Email steps on the starting plan: Expandi, Skylead, La Growth Machine and Dripify. Email on a higher plan: Meet Alfred and Waalaxy. Email through another tool: HeyReach, through Instantly or Smartlead, and Linked Helper, which hands found emails to your cold email tool. Omniscient has no email steps. Calls: La Growth Machine on a higher plan; not listed for the others. X: La Growth Machine and Meet Alfred on a higher plan; not listed for the others. A full CRM built in, with deals, email and meetings: Omniscient only. Expandi, Meet Alfred and Linked Helper keep tags or notes on contacts, and every alternative syncs to a CRM you run separately.</desc>
-<rect width="720" height="834" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="833" fill="none" stroke="#0a0a0a"/>
+<desc id="d">What Expandi and 13 alternatives put in one sequence next to LinkedIn, from each vendor&#x27;s own pages in November 2026. Email steps on the starting plan: Expandi, Skylead, La Growth Machine, lemlist on Multichannel, the plan its LinkedIn steps need, and Dripify. Email on a higher plan or as an add on: GetSales.io, SalesRobot, Meet Alfred and Waalaxy. Email through another tool: HeyReach, through Instantly or Smartlead, and Linked Helper, which hands found emails to your cold email tool. No email steps listed: Omniscient, Dux-Soup and Kanbox. Calls: lemlist on Multichannel and La Growth Machine on a higher plan; not listed for the others. X: La Growth Machine and Meet Alfred on a higher plan; not listed for the others. A full CRM built in, with deals, email and meetings: Omniscient only. The rest sync to a CRM you run separately, Kanbox through webhooks and GetSales.io through integrations it lists as coming.</desc>
+<rect width="720" height="1108" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="1107" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Channels]</text>
 <text x="32" y="88" font-size="29" font-weight="600" fill="#0a0a0a">Beyond LinkedIn <tspan fill="#a3a3a3">in one sequence</tspan></text>
 <text x="338" y="130" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">Email</text>
@@ -11,68 +11,98 @@
 <text x="544" y="154" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">X</text>
 <text x="640" y="130" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">Full CRM</text>
 <text x="640" y="154" text-anchor="middle" font-size="20" font-weight="600" fill="#0a0a0a">built in</text>
-<rect x="32" y="168" width="656" height="504" fill="none" stroke="#0a0a0a"/>
+<rect x="32" y="168" width="656" height="784" fill="none" stroke="#0a0a0a"/>
 <rect x="32.5" y="168.5" width="655" height="55" fill="#f5f5f5"/>
 <text x="48" y="203.0" font-size="24" font-weight="600" fill="#0a0a0a">Expandi</text>
 <g><title>Expandi: email steps on the starting plan</title><rect x="325.0" y="183.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
-<g><title>Expandi: calls not listed</title><rect x="440" y="195.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Expandi: X not listed</title><rect x="538" y="195.0" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Expandi: calls not listed</title><rect x="440" y="195" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Expandi: X not listed</title><rect x="538" y="195" width="12" height="2" fill="#d4d4d4"/></g>
 <g><title>Expandi: syncs to a separate CRM</title><rect x="627.0" y="183.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="224" x2="688" y2="224" stroke="#e5e5e5"/>
 <text x="48" y="259.0" font-size="24" font-weight="600" fill="#0a0a0a">Omniscient</text>
-<g><title>Omniscient: email steps not listed</title><rect x="332" y="251.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Omniscient: calls not listed</title><rect x="440" y="251.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Omniscient: X not listed</title><rect x="538" y="251.0" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Omniscient: email steps not listed</title><rect x="332" y="251" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Omniscient: calls not listed</title><rect x="440" y="251" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Omniscient: X not listed</title><rect x="538" y="251" width="12" height="2" fill="#d4d4d4"/></g>
 <g><title>Omniscient: a built in CRM</title><rect x="627.0" y="239.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
 <line x1="32" y1="280" x2="688" y2="280" stroke="#e5e5e5"/>
 <text x="48" y="315.0" font-size="24" fill="#0a0a0a">HeyReach</text>
-<g><title>HeyReach: email steps through another tool</title><rect x="325.0" y="295.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
-<g><title>HeyReach: calls not listed</title><rect x="440" y="307.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>HeyReach: X not listed</title><rect x="538" y="307.0" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>HeyReach: email steps through Instantly or Smartlead</title><rect x="325.0" y="295.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<g><title>HeyReach: calls not listed</title><rect x="440" y="307" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>HeyReach: X not listed</title><rect x="538" y="307" width="12" height="2" fill="#d4d4d4"/></g>
 <g><title>HeyReach: syncs to a separate CRM</title><rect x="627.0" y="295.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="336" x2="688" y2="336" stroke="#e5e5e5"/>
 <text x="48" y="371.0" font-size="24" fill="#0a0a0a">Skylead</text>
 <g><title>Skylead: email steps on the starting plan</title><rect x="325.0" y="351.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
-<g><title>Skylead: calls not listed</title><rect x="440" y="363.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Skylead: X not listed</title><rect x="538" y="363.0" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Skylead: calls not listed</title><rect x="440" y="363" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Skylead: X not listed</title><rect x="538" y="363" width="12" height="2" fill="#d4d4d4"/></g>
 <g><title>Skylead: syncs to a separate CRM</title><rect x="627.0" y="351.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="392" x2="688" y2="392" stroke="#e5e5e5"/>
-<text x="48" y="427.0" font-size="24" fill="#0a0a0a">La Growth Machine</text>
-<g><title>La Growth Machine: email steps on the starting plan</title><rect x="325.0" y="407.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
-<g><title>La Growth Machine: calls on a higher plan</title><rect x="433.0" y="407.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="441" y="415.0" width="10" height="10" fill="#10b981"/></g>
-<g><title>La Growth Machine: X on a higher plan</title><rect x="531.0" y="407.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="539" y="415.0" width="10" height="10" fill="#10b981"/></g>
-<g><title>La Growth Machine: syncs to a separate CRM</title><rect x="627.0" y="407.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<text x="48" y="427.0" font-size="24" fill="#0a0a0a">GetSales.io</text>
+<g><title>GetSales.io: email as a separate paid module</title><rect x="325.0" y="407.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="333" y="415.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>GetSales.io: calls not listed</title><rect x="440" y="419" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>GetSales.io: X not listed</title><rect x="538" y="419" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>GetSales.io: CRM integrations listed as coming</title><rect x="627.0" y="407.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="448" x2="688" y2="448" stroke="#e5e5e5"/>
-<text x="48" y="483.0" font-size="24" fill="#0a0a0a">Dripify</text>
-<g><title>Dripify: email steps on the starting plan</title><rect x="325.0" y="463.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
-<g><title>Dripify: calls not listed</title><rect x="440" y="475.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Dripify: X not listed</title><rect x="538" y="475.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Dripify: syncs to a separate CRM</title><rect x="627.0" y="463.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<text x="48" y="483.0" font-size="24" fill="#0a0a0a">La Growth Machine</text>
+<g><title>La Growth Machine: email steps on the starting plan</title><rect x="325.0" y="463.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
+<g><title>La Growth Machine: calls on a higher plan</title><rect x="433.0" y="463.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="441" y="471.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>La Growth Machine: X on a higher plan</title><rect x="531.0" y="463.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="539" y="471.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>La Growth Machine: syncs to a separate CRM</title><rect x="627.0" y="463.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="504" x2="688" y2="504" stroke="#e5e5e5"/>
-<text x="48" y="539.0" font-size="24" fill="#0a0a0a">Meet Alfred</text>
-<g><title>Meet Alfred: email steps on a higher plan</title><rect x="325.0" y="519.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="333" y="527.0" width="10" height="10" fill="#10b981"/></g>
-<g><title>Meet Alfred: calls not listed</title><rect x="440" y="531.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Meet Alfred: X on a higher plan</title><rect x="531.0" y="519.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="539" y="527.0" width="10" height="10" fill="#10b981"/></g>
-<g><title>Meet Alfred: syncs to a separate CRM</title><rect x="627.0" y="519.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<text x="48" y="539.0" font-size="24" fill="#0a0a0a">lemlist</text>
+<g><title>lemlist: email on Multichannel, the plan LinkedIn needs</title><rect x="325.0" y="519.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
+<g><title>lemlist: calls on Multichannel, the plan LinkedIn needs</title><rect x="433.0" y="519.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
+<g><title>lemlist: X not listed</title><rect x="538" y="531" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>lemlist: syncs to a separate CRM</title><rect x="627.0" y="519.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="560" x2="688" y2="560" stroke="#e5e5e5"/>
-<text x="48" y="595.0" font-size="24" fill="#0a0a0a">Waalaxy</text>
-<g><title>Waalaxy: email steps on a higher plan</title><rect x="325.0" y="575.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="333" y="583.0" width="10" height="10" fill="#10b981"/></g>
-<g><title>Waalaxy: calls not listed</title><rect x="440" y="587.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Waalaxy: X not listed</title><rect x="538" y="587.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Waalaxy: syncs to a separate CRM</title><rect x="627.0" y="575.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<text x="48" y="595.0" font-size="24" fill="#0a0a0a">SalesRobot</text>
+<g><title>SalesRobot: email as an add on per email account</title><rect x="325.0" y="575.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="333" y="583.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>SalesRobot: calls not listed</title><rect x="440" y="587" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>SalesRobot: X not listed</title><rect x="538" y="587" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>SalesRobot: syncs to a separate CRM</title><rect x="627.0" y="575.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
 <line x1="32" y1="616" x2="688" y2="616" stroke="#e5e5e5"/>
-<text x="48" y="651.0" font-size="24" fill="#0a0a0a">Linked Helper</text>
-<g><title>Linked Helper: email steps through another tool</title><rect x="325.0" y="631.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
-<g><title>Linked Helper: calls not listed</title><rect x="440" y="643.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Linked Helper: X not listed</title><rect x="538" y="643.0" width="12" height="2" fill="#d4d4d4"/></g>
-<g><title>Linked Helper: syncs to a separate CRM</title><rect x="627.0" y="631.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
-<g><title>On the starting plan</title><rect x="47.0" y="698.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
-<text x="86" y="718" font-size="22" fill="#0a0a0a">On the starting plan</text>
-<g><title>On a higher plan</title><rect x="379.0" y="698.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="387" y="706" width="10" height="10" fill="#10b981"/></g>
-<text x="418" y="718" font-size="22" fill="#0a0a0a">On a higher plan</text>
-<g><title>Through another tool</title><rect x="47.0" y="744.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
-<text x="86" y="764" font-size="22" fill="#0a0a0a">Through another tool</text>
-<g><title>Not listed</title><rect x="386" y="756" width="12" height="2" fill="#d4d4d4"/></g>
-<text x="418" y="764" font-size="22" fill="#0a0a0a">Not listed</text>
-<text x="32" y="808" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[From each vendor's pricing page, November 2026]</text>
+<text x="48" y="651.0" font-size="24" fill="#0a0a0a">Dripify</text>
+<g><title>Dripify: email steps on the starting plan</title><rect x="325.0" y="631.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
+<g><title>Dripify: calls not listed</title><rect x="440" y="643" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Dripify: X not listed</title><rect x="538" y="643" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Dripify: syncs to a separate CRM</title><rect x="627.0" y="631.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<line x1="32" y1="672" x2="688" y2="672" stroke="#e5e5e5"/>
+<text x="48" y="707.0" font-size="24" fill="#0a0a0a">Meet Alfred</text>
+<g><title>Meet Alfred: email steps on a higher plan</title><rect x="325.0" y="687.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="333" y="695.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>Meet Alfred: calls not listed</title><rect x="440" y="699" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Meet Alfred: X on a higher plan</title><rect x="531.0" y="687.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="539" y="695.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>Meet Alfred: syncs to a separate CRM</title><rect x="627.0" y="687.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<line x1="32" y1="728" x2="688" y2="728" stroke="#e5e5e5"/>
+<text x="48" y="763.0" font-size="24" fill="#0a0a0a">Dux-Soup</text>
+<g><title>Dux-Soup: email steps not listed</title><rect x="332" y="755" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Dux-Soup: calls not listed</title><rect x="440" y="755" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Dux-Soup: X not listed</title><rect x="538" y="755" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Dux-Soup: syncs to a separate CRM</title><rect x="627.0" y="743.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<line x1="32" y1="784" x2="688" y2="784" stroke="#e5e5e5"/>
+<text x="48" y="819.0" font-size="24" fill="#0a0a0a">Waalaxy</text>
+<g><title>Waalaxy: email steps on a higher plan</title><rect x="325.0" y="799.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="333" y="807.0" width="10" height="10" fill="#10b981"/></g>
+<g><title>Waalaxy: calls not listed</title><rect x="440" y="811" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Waalaxy: X not listed</title><rect x="538" y="811" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Waalaxy: syncs to a separate CRM</title><rect x="627.0" y="799.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<line x1="32" y1="840" x2="688" y2="840" stroke="#e5e5e5"/>
+<text x="48" y="875.0" font-size="24" fill="#0a0a0a">Kanbox</text>
+<g><title>Kanbox: email steps not listed, email finder only</title><rect x="332" y="867" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Kanbox: calls not listed</title><rect x="440" y="867" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Kanbox: X not listed</title><rect x="538" y="867" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Kanbox: webhooks and API, no CRM integration listed</title><rect x="627.0" y="855.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<line x1="32" y1="896" x2="688" y2="896" stroke="#e5e5e5"/>
+<text x="48" y="931.0" font-size="24" fill="#0a0a0a">Linked Helper</text>
+<g><title>Linked Helper: email steps through another tool</title><rect x="325.0" y="911.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<g><title>Linked Helper: calls not listed</title><rect x="440" y="923" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Linked Helper: X not listed</title><rect x="538" y="923" width="12" height="2" fill="#d4d4d4"/></g>
+<g><title>Linked Helper: syncs to a separate CRM</title><rect x="627.0" y="911.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<g><title>On the starting plan</title><rect x="47.0" y="978.0" width="26" height="26" fill="#10b981" stroke="#0a0a0a"/></g>
+<text x="86" y="998" font-size="22" fill="#0a0a0a">On the starting plan</text>
+<g><title>On a higher plan or as an add on</title><rect x="379.0" y="978.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a"/><rect x="387" y="986" width="10" height="10" fill="#10b981"/></g>
+<text x="418" y="998" font-size="22" fill="#0a0a0a">Higher plan or add on</text>
+<g><title>Through another tool</title><rect x="47.0" y="1024.0" width="26" height="26" fill="#ffffff" stroke="#0a0a0a" stroke-dasharray="4 3"/></g>
+<text x="86" y="1044" font-size="22" fill="#0a0a0a">Through another tool</text>
+<g><title>Not listed</title><rect x="386" y="1036" width="12" height="2" fill="#d4d4d4"/></g>
+<text x="418" y="1044" font-size="22" fill="#0a0a0a">Not listed</text>
+<text x="32" y="1088" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[From each vendor's own pages, November 2026]</text>
 </svg>

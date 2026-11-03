@@ -1,20 +1,20 @@
 ---
-title: "Best Waalaxy Alternatives in 2026"
+title: "13 Best Waalaxy Alternatives in 2026"
 slug: waalaxy-alternatives
 target_keyword: "waalaxy alternatives"
-meta_description: "The 8 best Waalaxy alternatives for 2026, matched to your reason for leaving, with each vendor's current prices and where your LinkedIn replies end up."
+meta_description: "The 13 best Waalaxy alternatives for 2026, matched to your reason for leaving, with each vendor's current prices and where your LinkedIn replies end up."
 type: alternatives
 topic: linkedin
 updated: 2026-11-03
-read_minutes: 12
-summary: "Eight Waalaxy alternatives matched to your reason for leaving, with current prices from each vendor and the invitation limits behind them."
+read_minutes: 18
+summary: "13 Waalaxy alternatives matched to your reason for leaving, with current prices from each vendor and the invitation limits behind them."
 ---
 
-# Best Waalaxy Alternatives in 2026
+# 13 Best Waalaxy Alternatives in 2026
 
 Waalaxy is a LinkedIn outreach software that sends invitations and follow ups from simple campaigns, with an invitation quota on each plan. If you're comparing Waalaxy alternatives, you've probably outgrown the Pro quota, or you'd like email and a CRM without paying for each one separately.
 
-We built the LinkedIn sending engine inside Omniscient this year, and much of that work went into the question Waalaxy answers with its quotas: how many invitations a day is sensible. Below are the eight tools we'd shortlist, with what each one costs and who it suits.
+We built the LinkedIn sending engine inside Omniscient this year, and much of that work went into the question Waalaxy answers with its quotas: how many invitations a day is sensible. Below are the 13 tools we'd shortlist, with what each one costs, where it falls short and who it suits.
 
 ```callout
 Prices come from each vendor's own pages, read in November 2026. We haven't run campaigns in these tools, so we compare what each vendor publishes with what we learned building our own engine.
@@ -66,10 +66,15 @@ Here's where we'd look first for each reason:
 - You want LinkedIn replies on the same record as emails and meetings: Omniscient.
 - You email and call as much as you message: La Growth Machine.
 - Your outreach starts in email and LinkedIn comes second: lemlist.
+- You like Waalaxy's simple cloud setup and want X in your sequences too: Meet Alfred.
 - You mostly want a better LinkedIn inbox: Kanbox.
+- You want email steps and an AI appointment setter on every plan: SalesRobot.
 - You want email steps on the starting plan and simple team controls: Dripify.
 - You want a dedicated IP and an automatic warmup: Expandi.
-- You run many client accounts: HeyReach.
+- You want one plan with every feature and unlimited email accounts: Skylead.
+- You run dozens of client accounts at one flat price: HeyReach.
+- You want a workspace per client and a price per account that falls as you grow: GetSales.
+- You want deep CRM integrations and a choice of desktop or cloud: Dux-Soup.
 - You want the lowest price per account and a desktop app is fine: Linked Helper.
 
 ```tools
@@ -77,10 +82,15 @@ Name | Domain | What it is | Starting price | Best for
 Omniscient | tryomniscient.com | LinkedIn outreach you approve, inside a CRM that fills itself in | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want outreach and a CRM together
 La Growth Machine | lagrowthmachine.com | Multichannel sequences on LinkedIn, email, calls and X | [€60 per identity a month](https://lagrowthmachine.com/pricing/) | Founders who email and call as much as they message
 lemlist | lemlist.com | Sales engagement across email, LinkedIn and calls | [$109 per user a month](https://www.lemlist.com/pricing) | Teams where cold email leads and LinkedIn follows
+Meet Alfred | meetalfred.com | Cloud campaigns across LinkedIn, email and X with one smart inbox | [$29 per user a month, billed yearly](https://meetalfred.com/pricing) | Waalaxy users who want a similar cloud tool with more channels
 Kanbox | kanbox.io | LinkedIn sequences with a smart inbox and Kanban pipelines | [$20 a month](https://www.kanbox.io/en/pricing) | Solo sellers who work from their LinkedIn messages
+SalesRobot | salesrobot.co | Cloud LinkedIn and email sequences with an AI appointment setter | [$59 per LinkedIn account a month](https://www.salesrobot.co/pricing) | Founders who want AI reply help and email steps
 Dripify | dripify.com | Drip campaigns that mix LinkedIn and email steps | [$79 per user a month](https://dripify.com/pricing/) | Small teams that want email steps on the first plan
 Expandi | expandi.io | Cloud LinkedIn sequences with email steps and a dedicated IP in your country | [$99 per seat a month](https://expandi.io/pricing/) | Teams that want a careful cloud tool
+Skylead | skylead.io | LinkedIn automation and cold email with if/else sequences | [$100 per seat a month](https://www.skylead.io/pricing) | Teams that want one plan with no feature gates
 HeyReach | heyreach.io | LinkedIn outreach from many accounts with one unified inbox | [$79 per sender a month](https://www.heyreach.io/pricing) | Agencies with many client senders
+GetSales | getsales.io | LinkedIn and email outreach with a workspace and inbox per client | [$69 a month for 1 LinkedIn account](https://getsales.io/pricing/) | Agencies and GTM teams adding senders over time
+Dux-Soup | dux-soup.com | LinkedIn drip campaigns from a desktop app or its cloud | [$55 per seat a month](https://www.dux-soup.com/pricing) | Teams that live in HubSpot, Salesforce or Pipedrive
 Linked Helper | linkedhelper.com | Desktop LinkedIn automation that runs on your own computer | [$15 per LinkedIn account a month](https://www.linkedhelper.com/pricing) | The lowest price per account
 ```
 
@@ -106,7 +116,7 @@ Our sender settings recommend 100 or fewer invitations a week, or up to 150 to 2
 
 Every tool on this list automates LinkedIn, ours included. LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) says members who use such tools "risk having their accounts restricted or shut down." Our guide to the [LinkedIn connection request limit](/blog/linkedin-connection-request-limit/) explains where the common weekly numbers come from.
 
-## The 8 best Waalaxy alternatives in 2026
+## The 13 best Waalaxy alternatives in 2026
 
 ### 1. Omniscient
 
@@ -149,9 +159,24 @@ lemlist is a sales engagement software that runs sequences across email, LinkedI
 
 On that plan, LinkedIn steps cover profile visits, follows, invitations, text and voice messages, and InMail. You also get 5 email senders per user and a built in call dialer, and HubSpot, Salesforce and Pipedrive integrations come with every plan.
 
-The FAQ lists a 14 day trial of the Multichannel features with 200 free credits, and a banner on the page offers 30 days. lemlist suits a team whose outreach starts in email, with LinkedIn as the second channel.
+The FAQ lists a 14 day trial of the Multichannel features with 200 free credits, and a banner on the page offers 30 days.
 
-### 4. Kanbox
+The catch for a Waalaxy user is the entry price. LinkedIn steps start on Multichannel, so a team that mostly messages on LinkedIn pays for an email stack it may barely touch. lemlist suits a team whose outreach starts in email, with LinkedIn as the second channel.
+
+### 4. Meet Alfred
+
+Meet Alfred is a LinkedIn automation software that runs campaigns across LinkedIn, email and X from the cloud, with every reply in one inbox. LinkedIn Only costs [$29 per user a month, billed yearly](https://meetalfred.com/pricing), and Multi-Channel costs $49.
+
+Of everything on this list, Meet Alfred is closest to Waalaxy in shape. Both run in the cloud with nothing to install, and both keep email off the starting plan:
+
+- LinkedIn Only includes the Smart LinkedIn Inbox, templates, reply management and automated greetings.
+- Multi-Channel adds email and X steps, Sales Navigator and InMail campaigns, social post scheduling, Zapier and webhooks.
+- Native HubSpot and Salesforce come with Agency, at $39 per user a month for 3 seats or more, which also adds white label.
+- The homepage offers a 7 day free trial with no credit card.
+
+Unlike Waalaxy, Meet Alfred keeps its inbox inside the starting plan. The pricing page shows only yearly prices, though, so ask for the monthly rate before you pay. We'd pick it if Waalaxy's style suits you and you'd like X steps in the same sequence.
+
+### 5. Kanbox
 
 Kanbox is a LinkedIn automation software that combines lead imports, automated sequences, a smart LinkedIn inbox and Kanban pipelines. Starter costs [$20 a month, or $12 billed yearly](https://www.kanbox.io/en/pricing), and Essential costs $45 a month, or $30 per LinkedIn account billed yearly.
 
@@ -163,7 +188,19 @@ Kanbox is a LinkedIn automation software that combines lead imports, automated s
 
 Happily, every Kanbox plan includes the kind of inbox Waalaxy sells as an extra. Its pricing page names no CRM integrations, only webhooks and an API on Pro, so check how your CRM would get the data.
 
-### 5. Dripify
+### 6. SalesRobot
+
+SalesRobot is a LinkedIn automation software that runs LinkedIn and email sequences from the cloud, with an AI appointment setter on every plan. Basic costs [$59 per LinkedIn account a month, or $39 billed yearly](https://www.salesrobot.co/pricing), Advanced costs $79, or $59 yearly, and Professional costs $99, or $79 yearly.
+
+- The comparison table ticks LinkedIn and email sequences on all three plans, and the page also lists Email Automation at $15 per email account a month, so check whether you need both.
+- Basic runs 1 campaign at a time and caps connection requests at 20 a day.
+- Advanced lifts that to 75 a day and adds the unified LinkedIn and email inbox, HubSpot, Pipedrive and Salesforce sync, webhooks and Zapier.
+- Team management needs Professional.
+- The free trial lasts 14 days, includes every feature and needs no card.
+
+Most people leaving Waalaxy for its quotas would land on Advanced, since the inbox and the CRM sync both start there. Frankly, we liked one line on the pricing page: it says using SalesRobot "may not comply with LinkedIn's User Agreement," which is true of every tool here.
+
+### 7. Dripify
 
 Dripify is a LinkedIn automation software that runs drip campaigns mixing LinkedIn and email steps. Pro costs [$79 per user a month, or $59 billed yearly](https://dripify.com/pricing/), and Advanced costs $99, or $79 billed yearly.
 
@@ -173,7 +210,7 @@ Dripify is a LinkedIn automation software that runs drip campaigns mixing Linked
 
 Dripify puts email steps on its starting plan, where Waalaxy keeps them for Business. Its pricing page lists a daily quota of 75 connection requests, a high ceiling we'd stay well under.
 
-### 6. Expandi
+### 8. Expandi
 
 Expandi is a LinkedIn automation software that runs outreach sequences from the cloud, with a dedicated IP address in your country for each seat. The Business plan costs [$99 per seat a month, or $79 a month on annual billing](https://expandi.io/pricing/).
 
@@ -183,7 +220,20 @@ Expandi is a LinkedIn automation software that runs outreach sequences from the 
 
 Thankfully, Expandi sets up the IP address and the warmup for you. Its free trial lasts 7 days, so plan your test week before you sign up.
 
-### 7. HeyReach
+### 9. Skylead
+
+Skylead is a LinkedIn automation and cold email software that builds sequences with if/else conditions, so each lead's next step depends on what they did. It sells one main plan, All-in-one, at [$100 per seat a month](https://www.skylead.io/pricing), and the annual option charges 10 months for a full year.
+
+Refreshingly, a single seat carries every feature:
+
+- Each seat connects unlimited email accounts and sends up to 100,000 emails a month, with email warmup.
+- The seat includes an email finder and verifier, plus unlimited image and GIF personalization.
+- Agency costs $999 a month for 25 seats as a first year offer, and adds one Unibox for client conversations and an agency dashboard.
+- The pricing page offers a 7 day free trial.
+
+The homepage lists real time CRM integration without naming a CRM, and the pricing page lists only an API, so ask how replies would reach your HubSpot or Pipedrive. Skylead fits a team that wants cold email at volume next to LinkedIn, without paying more as it adds mailboxes.
+
+### 10. HeyReach
 
 HeyReach is a LinkedIn automation software that runs outreach from many LinkedIn accounts at once, with every reply in one unified inbox. Growth costs [$79 per sender a month, or $64 billed yearly](https://www.heyreach.io/pricing), and each sender comes with a dedicated residential proxy and 100 enrichment credits.
 
@@ -194,7 +244,29 @@ HeyReach is a LinkedIn automation software that runs outreach from many LinkedIn
 
 One flat price across 25 senders makes Agency a strong fit for agencies, and more tool than a founder with one account needs.
 
-### 8. Linked Helper
+### 11. GetSales
+
+GetSales is a LinkedIn and email outreach software for agencies and GTM teams that sends from many accounts and puts every reply in one team inbox. LinkedIn costs [$69 a month for 1 account](https://getsales.io/pricing/), or $195 a month for 5, and the page says the price per account falls from $39 to $10 at scale.
+
+- Each LinkedIn account includes unlimited actions, a gradual ramp and a managed ISP proxy.
+- Workflows mix invitations, messages, InMail, profile visits and email, and branch on timers or on what the person does.
+- Email is its own module, at $59 a month for 100 inboxes.
+- Each client gets a workspace with its own accounts and inbox, and clients connect LinkedIn without sharing a password.
+- Leads go out to HubSpot, Pipedrive, Salesforce, folk and GoHighLevel.
+
+The AI SDR gives each reply one of 15 labels and suggests a next move. White label needs the Business setup, listed from $500 a month, and the trial lasts 7 days for LinkedIn and email. GetSales suits an agency that adds senders month by month and wants each client kept apart, while a founder with one account will find a lot of it unused.
+
+### 12. Dux-Soup
+
+Dux-Soup is a LinkedIn automation software that runs multi step drip campaigns from a desktop app on your computer or from Dux-Soup's cloud. STACKED local costs [$55 per seat a month, or $41.25 billed yearly](https://www.dux-soup.com/pricing), and STACKED cloud costs $99, or $74.17 billed yearly.
+
+- Campaigns use up to 12 LinkedIn actions, among them visits, invitations, messages, InMail, endorsements, follows and likes.
+- Both plans run unlimited campaigns at once and store your LinkedIn messages and replies.
+- Native integrations cover HubSpot, Salesforce, Pipedrive, Freshsales, SharpSpring and HighLevel, with Zapier, Make, Slack and Microsoft Teams too.
+
+The pricing page lists no email steps, so you'd pair it with an email tool for anything beyond LinkedIn. Neither page gives a trial length either, so check that before you plan a test. Its homepage calls it "The original LinkedIn automation tool," and it suits a team that runs its pipeline in a big CRM and wants LinkedIn activity to land there.
+
+### 13. Linked Helper
 
 Linked Helper is a LinkedIn automation software that runs as a desktop app on your own computer or on a server you control. Standard costs [$15 per LinkedIn account a month](https://www.linkedhelper.com/pricing) on a monthly term, and a 12 month term takes 45% off.
 
@@ -215,10 +287,15 @@ Check the billing unit first, since it decides what a team of three really pays:
 | Omniscient | Seat | None, LinkedIn only | Inbox next to the CRM record | 14 days, no card |
 | La Growth Machine | Identity | Basic plan | One inbox from Pro | 14 days, no card |
 | lemlist | User | Multichannel plan | lemlist, synced to your CRM | 14 days |
+| Meet Alfred | User | Multi-Channel plan | Smart inbox, with HubSpot and Salesforce on Agency | 7 days, no card |
 | Kanbox | LinkedIn account, or flat on Starter | Not listed | Smart inbox and Kanban pipelines | 15 days, no card |
+| SalesRobot | LinkedIn account | Every plan, check the email add-on | Unified inbox and CRM sync from Advanced | 14 days, no card |
 | Dripify | User, one LinkedIn account each | Pro plan | Dripify's inbox, with HubSpot sync | 7 days, no card |
 | Expandi | Seat | Business plan | Inbox with tags and notes | 7 days |
+| Skylead | Seat, or flat on Agency | All-in-one plan | Skylead, with an API for your CRM | 7 days |
 | HeyReach | Sender, or flat on Agency | Through Instantly or Smartlead | Unified inbox | 14 days, no card |
+| GetSales | LinkedIn account, email inboxes apart | Email module | Team inbox, then HubSpot, Pipedrive or Salesforce | 7 days |
+| Dux-Soup | Seat | Not listed | Your CRM through native integrations | Check |
 | Linked Helper | LinkedIn account | Through another tool | Your CRM through its integrations | 14 days, no card |
 
 ## How to switch from Waalaxy without losing your place
@@ -248,9 +325,11 @@ Keep each LinkedIn reply on the same CRM record as your emails and meetings, and
 
 ```faq
 Q: What is the best alternative to Waalaxy?
-A: It depends on why you're leaving: Omniscient for outreach and a CRM together, La Growth Machine or lemlist if you also email and call, HeyReach for agencies, and Linked Helper for the lowest price per account.
+A: It depends on why you're leaving: Omniscient for outreach and a CRM together, La Growth Machine or lemlist if you also email and call, Meet Alfred for a similar cloud tool with X steps, HeyReach or GetSales for agencies, and Linked Helper for the lowest price per account.
 Q: Is there a cheaper alternative to Waalaxy?
-A: Linked Helper starts at $15 per LinkedIn account a month, and Kanbox Starter costs $20 a month, or $12 billed yearly. Waalaxy Pro shows €19 per user a month on its yearly tab, so compare it with other tools' yearly prices.
+A: Linked Helper starts at $15 per LinkedIn account a month, and Kanbox Starter costs $20 a month, or $12 billed yearly. Waalaxy Pro shows €19 per user a month on its yearly tab, so compare it with other tools' yearly prices, such as Meet Alfred's $29 per user a month.
+Q: Which Waalaxy alternatives include cold email?
+A: La Growth Machine, lemlist, Meet Alfred's Multi-Channel plan, SalesRobot, Dripify, Expandi, Skylead and GetSales all put email steps next to LinkedIn steps. Omniscient's campaigns, Kanbox, Dux-Soup and Linked Helper focus on LinkedIn.
 Q: Is Waalaxy still a Chrome extension?
 A: No. In a help article dated July 1, 2026, Waalaxy says its extension has left the Chrome Web Store and that Waalaxy now runs 100% in the cloud.
 Q: How many invitations can Waalaxy send per week?
