@@ -234,8 +234,6 @@ Our guide to the [safest LinkedIn automation tools](/blog/safest-linkedin-automa
 Keep every LinkedIn reply, email and meeting on one CRM record, and approve each message before it sends. Try Omniscient free for 14 days with no credit card.
 ```
 
-## Questions about Expandi alternatives
-
 ```faq
 Q: What is the best alternative to Expandi?
 A: It depends on why you're leaving. Omniscient fits teams that want outreach and a CRM together, HeyReach and Skylead fit agencies, La Growth Machine fits reps who also call, and Linked Helper costs the least per account.

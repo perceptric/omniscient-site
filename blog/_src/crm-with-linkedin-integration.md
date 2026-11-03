@@ -232,8 +232,6 @@ Luckily, a handful of test contacts in the first week of a trial covers all five
 Keep every LinkedIn conversation next to the right CRM record, with email and meetings filled in for you, free for 14 days.
 ```
 
-## Questions about CRMs with LinkedIn integration
-
 ```faq
 Q: Which CRMs integrate with LinkedIn Sales Navigator?
 A: LinkedIn lists HubSpot, Microsoft Dynamics, Oracle Sales and Salesforce for CRM Sync, plus embedded profiles in Pega, SAP and SugarCRM. Zoho CRM has its own extension, and all of them need Sales Navigator Advanced Plus.

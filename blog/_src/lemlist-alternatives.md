@@ -239,8 +239,6 @@ Thankfully, a careful tool handles part of this for you. Before every invitation
 Approve every LinkedIn message and keep each reply on the CRM record. Try Omniscient free for 14 days with no credit card.
 ```
 
-## Questions about lemlist alternatives
-
 ```faq
 Q: What is the best lemlist alternative for LinkedIn outreach?
 A: It depends on why you're leaving. Omniscient fits small teams that want LinkedIn outreach and a CRM together. If you still want email steps, look at La Growth Machine or Expandi, and if you run many client accounts, look at HeyReach.

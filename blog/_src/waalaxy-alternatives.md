@@ -246,8 +246,6 @@ LinkedIn's page on [invitation restrictions](https://www.linkedin.com/help/linke
 Keep each LinkedIn reply on the same CRM record as your emails and meetings, and approve messages before they send.
 ```
 
-## Questions about Waalaxy alternatives
-
 ```faq
 Q: What is the best alternative to Waalaxy?
 A: It depends on why you're leaving: Omniscient for outreach and a CRM together, La Growth Machine or lemlist if you also email and call, HeyReach for agencies, and Linked Helper for the lowest price per account.

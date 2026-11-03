@@ -229,8 +229,6 @@ Happily, none of these checks needs your full lead list, so you can finish them 
 Run your agency's own LinkedIn outreach with messages you approve, and keep every reply on the CRM record.
 ```
 
-## Questions about LinkedIn automation tools for agencies
-
 ```faq
 Q: What is the best LinkedIn automation tool for agencies?
 A: HeyReach, Skylead and GetSales.io suit many client senders, and Expandi and Meet Alfred add branded client access. Omniscient fits your agency's own new business, with the CRM and proposals in one place.

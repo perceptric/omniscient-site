@@ -235,8 +235,6 @@ Fortunately, every CRM here has a free plan or a free trial, so you can run thes
 Connect Gmail or Outlook and watch Omniscient fill in your contacts, meetings and deals, with the source behind every value.
 ```
 
-## Questions about CRMs with automatic data entry
-
 ```faq
 Q: What is a CRM with automatic data entry?
 A: It's a CRM that writes its own records from your email, calendar, calls and web forms, so contacts, meetings and deal details appear without anyone typing them.

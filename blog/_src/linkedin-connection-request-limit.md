@@ -164,8 +164,6 @@ If you're still choosing a tool, we compare the options in [the best LinkedIn au
 Connect your LinkedIn account and let Omniscient pace your invitations inside the limits you set.
 ```
 
-## Questions about LinkedIn connection request limits
-
 ```faq
 Q: What is the LinkedIn connection request limit per week?
 A: LinkedIn doesn't publish a weekly number for invitations. The figure most outreach vendors report is about 100 invitations a week, counted over a rolling seven days, and our default is 80.

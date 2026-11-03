@@ -224,8 +224,6 @@ If none of these eight fit, our guide to the [best CRM for LinkedIn](/blog/best-
 Run Omniscient next to folk for 14 days, with LinkedIn outreach you approve and a CRM that fills itself in.
 ```
 
-## Questions about folk alternatives
-
 ```faq
 Q: What is the best folk CRM alternative?
 A: That depends on why you're leaving folk. Omniscient fits teams that want LinkedIn outreach sent for them, Salesflare fits teams that want email workflows, and Attio fits teams that want to design their own objects.

@@ -221,8 +221,6 @@ If you'd rather not run it yourself, we migrate your companies, contacts, deals 
 Import your HubSpot data and run Omniscient next to it for 14 days, with LinkedIn outreach you approve.
 ```
 
-## Questions about HubSpot CRM alternatives
-
 ```faq
 Q: What is the best HubSpot CRM alternative for a small team?
 A: Omniscient is our pick for small B2B teams that prospect on LinkedIn and want the CRM to fill itself in. Pipedrive fits teams that want a clear pipeline, EngageBay fits teams that still want marketing and sales in one app, and Close fits teams that sell by phone.

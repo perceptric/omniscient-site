@@ -219,8 +219,6 @@ Choose Omniscient if:
 Import your HubSpot data and run Omniscient next to it, free for 14 days.
 ```
 
-## Questions about Omniscient vs HubSpot
-
 ```faq
 Q: Is Omniscient cheaper than HubSpot?
 A: Omniscient's paid seats start at $19 a month billed yearly, and HubSpot's Starter card shows $7 and $20 a seat. For a forecast, Omniscient Pro is $49 a seat billed yearly, and HubSpot Professional starts at $90 a seat plus a $1,500 onboarding fee paid once.

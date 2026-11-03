@@ -230,8 +230,6 @@ A send that times out is never retried on its own either. We chose that because 
 Approve every LinkedIn message and keep each reply on the CRM record. Try Omniscient free for 14 days with no credit card.
 ```
 
-## Questions about HeyReach alternatives
-
 ```faq
 Q: What is the best HeyReach alternative?
 A: It depends on why you're leaving. Omniscient fits small teams that want outreach and a CRM together, and Expandi or Skylead fit teams that want email in the same sequence. For the lowest price per account, look at Linked Helper.

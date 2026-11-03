@@ -224,8 +224,6 @@ If you'd rather not run the import yourself, send us an export and we map your f
 Run Omniscient next to Pipedrive for 14 days, with your pipeline imported and no credit card.
 ```
 
-## Questions about Pipedrive alternatives
-
 ```faq
 Q: What is the best alternative to Pipedrive?
 A: It depends on why you're leaving. Omniscient fits small teams that prospect on LinkedIn, Close fits teams that sell by phone, and HubSpot fits teams that want a free CRM with room for marketing.

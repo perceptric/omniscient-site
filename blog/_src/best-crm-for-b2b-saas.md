@@ -244,8 +244,6 @@ Fortunately, you can try every CRM here before you pay, so run these checks firs
 Connect your inbox, add your demo form and watch Omniscient build your pipeline from the conversations you already have.
 ```
 
-## Questions about CRMs for B2B SaaS
-
 ```faq
 Q: What is the best CRM for B2B SaaS in 2026?
 A: For SaaS teams whose deals start in email, meetings and LinkedIn, we'd start with Omniscient. HubSpot fits teams where marketing runs inbound, Attio fits teams that want product data in the CRM, and Salesforce fits enterprise sales with an admin.

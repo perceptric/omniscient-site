@@ -250,8 +250,6 @@ For a closer look at AI that fills in records, our list of the [best AI CRMs](/b
 Connect your inbox and let Omniscient build your first CRM from the people you already sell to.
 ```
 
-## Questions about CRMs for startups
-
 ```faq
 Q: What is the best CRM for startups in 2026?
 A: For B2B startups that sell through email, meetings and LinkedIn, we'd start with Omniscient. HubSpot fits startups that run marketing and sales together, and Pipedrive suits a first sales hire.

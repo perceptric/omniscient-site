@@ -223,8 +223,6 @@ LinkedIn's page on [invitation restrictions](https://www.linkedin.com/help/linke
 Approve every LinkedIn message before it goes out, and keep each reply on its CRM record. Try Omniscient free for 14 days with no credit card.
 ```
 
-## Questions about Linked Helper alternatives
-
 ```faq
 Q: What is the best alternative to Linked Helper?
 A: It depends on why you're leaving. Omniscient fits small teams that want outreach and a CRM together, and HeyReach suits agencies with many senders. STACKED by Dux-Soup is the closest match if you'd like a desktop and a cloud option.

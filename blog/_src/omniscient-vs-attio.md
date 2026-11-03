@@ -219,8 +219,6 @@ If you plan to keep Attio for email, our roundup of the [best LinkedIn automatio
 Try Omniscient free for 14 days, next to the CRM you use today.
 ```
 
-## Questions about Omniscient vs Attio
-
 ```faq
 Q: Does Attio have LinkedIn automation?
 A: Attio doesn't send on LinkedIn. Its sequences send email only, so teams that prospect on LinkedIn add an app from Attio's directory, such as lemlist or HeyReach.

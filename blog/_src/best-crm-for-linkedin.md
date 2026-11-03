@@ -238,8 +238,6 @@ Happily, all five checks fit inside the shortest trial here.
 Find leads, send LinkedIn messages you approve and keep every reply with the right CRM person, free for 14 days.
 ```
 
-## Questions about CRMs for LinkedIn
-
 ```faq
 Q: What is the best CRM for LinkedIn prospecting?
 A: For small B2B teams that prospect on LinkedIn, we'd start with Omniscient. Teams on Sales Navigator Advanced Plus should look at HubSpot or Salesforce, and sellers who work in LinkedIn by hand can try folk or Salesflare.

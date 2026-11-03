@@ -227,8 +227,6 @@ If you'd rather not run it yourself, we migrate your companies, contacts, deals 
 Connect Salesforce, bring your accounts and opportunities over, and run Omniscient next to it for 14 days.
 ```
 
-## Questions about Salesforce alternatives for startups
-
 ```faq
 Q: What is the best Salesforce alternative for a startup?
 A: Omniscient is our pick for B2B startups that sell through email, meetings and LinkedIn and want the CRM to fill itself in. If you need custom objects like Salesforce's, look at Attio first, and if your team sells by phone, Close is the stronger fit. HubSpot suits teams that run marketing and sales together.

@@ -219,8 +219,6 @@ Happily, you can run all six checks in the first week of a trial with a list of 
 Run LinkedIn outreach you approve and keep every reply, email and meeting on one CRM record, free for 14 days.
 ```
 
-## Questions about LinkedIn outreach tools with a CRM
-
 ```faq
 Q: What is the best LinkedIn outreach tool with a CRM?
 A: Omniscient fits teams that want approved LinkedIn outreach and a full CRM that fills itself in from email and calendar. NetHunt CRM suits Gmail teams that want email and LinkedIn steps together, and Kanbox or Meet Alfred suit smaller teams that want a simple pipeline.

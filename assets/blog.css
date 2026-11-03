@@ -148,7 +148,28 @@
 .bl-band img { display: block; max-width: 100%; height: auto; margin-inline: auto; }
 .bl-band img[src$=".svg"] { width: 100%; }
 .bl-fig figcaption { margin-top: 10px; font: 400 12px/1.5 var(--mono); color: var(--muted); }
+.bl-fig figcaption a { color: inherit; }
 .bl-shot { font-size: 12.5px; line-height: 1.5; color: var(--ink); }
+
+/* Tool headings: "### 3. Name" with the number in a square mono tag and the tool's logo */
+.bl-body .bl-toolh { display: flex; align-items: center; gap: 10px; margin-top: 48px; }
+.bl-toolh__n {
+  display: inline-grid; place-items: center; flex: none; min-width: 32px; height: 28px; padding: 0 6px;
+  border: 1px solid var(--frame); background: var(--panel); font: 500 12px/1 var(--mono); letter-spacing: 0; color: var(--ink);
+}
+.bl-toolh__logo { display: inline-grid; place-items: center; flex: none; width: 28px; height: 28px; border: 1px solid var(--line); background: #fff; }
+.bl-toolh__logo img { width: 20px; height: 20px; object-fit: contain; }
+.bl-toolh__name { min-width: 0; }
+.bl-body .bl-toolh + .bl-site { margin-top: 16px; }
+
+/* A tool's homepage in a plain browser frame: three squares and the domain on top */
+.bl-browser { border: 1px solid var(--frame); background: #fff; }
+.bl-browser__bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 30px; padding: 0 12px; border-bottom: 1px solid var(--frame); background: var(--panel); }
+.bl-browser__dots { display: flex; gap: 6px; }
+.bl-browser__dots i { width: 8px; height: 8px; border: 1px solid var(--frame); }
+.bl-browser__dots i:first-child { background: var(--ink); }
+.bl-browser__url { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 400 11.5px/1 var(--mono); color: var(--muted); }
+.bl-band .bl-browser img { width: 100%; margin: 0; }
 .bl-body .bl-shot .band { padding: 28px; }
 .bl-body .bl-shot .app { min-height: 0; }
 
@@ -206,6 +227,14 @@
   .bl-steps li { grid-template-columns: 44px minmax(0, 1fr); }
   .bl-steps li > div { padding: 14px 16px; }
   .bl-tools tbody th[scope="row"] { min-width: 136px; }
+  .bl-body .bl-toolh { gap: 8px; margin-top: 40px; }
+  .bl-toolh__n { min-width: 30px; height: 26px; }
+  .bl-toolh__logo { width: 26px; height: 26px; }
+  .bl-toolh__logo img { width: 18px; height: 18px; }
+  .bl-browser__bar { height: 24px; padding: 0 8px; }
+  .bl-browser__dots { gap: 4px; }
+  .bl-browser__dots i { width: 6px; height: 6px; }
+  .bl-browser__url { font-size: 10.5px; }
   .bl-hero { padding-top: 48px; padding-bottom: 28px; }
   .bl-related { padding-top: 80px; }
   .bl-post, .bl-index { padding-bottom: 80px; }

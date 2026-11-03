@@ -240,8 +240,6 @@ Happily, you can work through this list in the first week of a trial, before you
 Approve each LinkedIn message before it goes out and keep every reply on the CRM record, free for 14 days.
 ```
 
-## Questions about LinkedIn automation tools
-
 ```faq
 Q: What is the best LinkedIn automation tool in 2026?
 A: Start from what you need most: Omniscient fits teams that want outreach and a CRM together, and HeyReach fits agencies with many accounts. lemlist suits teams mixing LinkedIn with email, and Linked Helper has the lowest price per account.

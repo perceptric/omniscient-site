@@ -215,8 +215,6 @@ If none of the three fits, our roundups of [HubSpot CRM alternatives](/blog/hubs
 Try Omniscient free for 14 days, next to Attio or HubSpot.
 ```
 
-## Questions about Attio vs HubSpot
-
 ```faq
 Q: Is Attio cheaper than HubSpot?
 A: At the first paid plan, HubSpot costs less for new customers: Sales Hub Starter starts at $7 a seat billed yearly and lists at $20, while Attio Plus costs $35 billed yearly. At the plans with sequences, Attio Pro costs $79 billed yearly and HubSpot Professional costs $90, plus a $1,500 onboarding fee paid once.

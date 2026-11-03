@@ -197,8 +197,6 @@ Omniscient isn't the right pick if you want more than 40 invitations a day or 20
 Connect your LinkedIn account and let Omniscient pace your outreach for you.
 ```
 
-## Questions about LinkedIn automation
-
 ```faq
 Q: Is LinkedIn automation against LinkedIn's rules?
 A: Yes, section 8.2 of LinkedIn's User Agreement bans bots and unauthorized automated methods that add contacts or send messages. Careful pacing lowers the risk of a restriction, but no tool can remove it.

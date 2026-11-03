@@ -225,8 +225,6 @@ If none of these eight fit, our roundup of the [best AI CRMs](/blog/best-ai-crm/
 Run Omniscient next to Attio for 14 days, with LinkedIn outreach and a CRM that fills itself in.
 ```
 
-## Questions about Attio alternatives
-
 ```faq
 Q: What is the best Attio alternative?
 A: That depends on why you're leaving Attio. Omniscient fits small teams that prospect on LinkedIn and want replies on the CRM record. HubSpot fits teams that want a free CRM with room for marketing, and Twenty fits teams that want a flexible data model in open source.

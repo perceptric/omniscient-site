@@ -182,8 +182,6 @@ Frankly, we'd let your email setup decide between the first two. If email alread
 Approve your LinkedIn messages before they send, and keep each reply on a CRM record that fills itself in. Try Omniscient free for 14 days with no credit card.
 ```
 
-## Questions about HeyReach vs Expandi
-
 ```faq
 Q: Is HeyReach cheaper than Expandi?
 A: At list price, yes. HeyReach Growth costs $79 per sender a month against $99 per seat for Expandi Business, or $64 and $79 billed yearly. HeyReach's email steps need a separate Instantly, Smartlead or EmailBison plan, though, and Expandi's images and video cost extra.

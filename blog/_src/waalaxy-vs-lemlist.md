@@ -179,8 +179,6 @@ Admittedly, Omniscient sends on LinkedIn only, with no email, call or SMS steps.
 Approve your LinkedIn messages before they go and keep every reply on the CRM record.
 ```
 
-## Questions about Waalaxy vs lemlist
-
 ```faq
 Q: Is Waalaxy cheaper than lemlist?
 A: For LinkedIn alone, yes. Waalaxy Pro costs €19 per user a month on the yearly tab, and lemlist's LinkedIn automation starts on Multichannel at $87 per user a month billed yearly. For LinkedIn and email together, Waalaxy Business costs €69 against the same $87 lemlist plan.

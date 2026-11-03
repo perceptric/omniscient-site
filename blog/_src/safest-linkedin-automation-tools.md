@@ -215,8 +215,6 @@ For the full pacing playbook, read [how to automate LinkedIn outreach without ge
 Let Omniscient warm up your account and slow down when LinkedIn pushes back, with every message approved first, free for 14 days.
 ```
 
-## Questions about safe LinkedIn automation
-
 ```faq
 Q: What is the safest LinkedIn automation tool in 2026?
 A: The safest tool is the one that does the safety work for you: an automatic warmup, daily totals that vary, working hours and a slowdown when acceptance drops. Omniscient and Expandi cover most of that on their own, and Linked Helper suits teams that want everything on their own network.

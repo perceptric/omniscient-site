@@ -217,8 +217,6 @@ To compare the same ten on pacing and replies, read our roundup of the [best Lin
 Get LinkedIn outreach and a CRM that fills itself in for one price per seat.
 ```
 
-## Questions about LinkedIn automation pricing
-
 ```faq
 Q: How much does LinkedIn automation cost per month?
 A: In November 2026, entry plans for one LinkedIn account run from $15 a month at Linked Helper to $109 at lemlist on monthly billing, and yearly billing lowers most of them.

@@ -223,8 +223,6 @@ LinkedIn's page on [invitation restrictions](https://www.linkedin.com/help/linke
 Keep every LinkedIn reply, email and meeting on one CRM record, and approve each message before it goes out. Try Omniscient free for 14 days with no credit card.
 ```
 
-## Questions about Dripify alternatives
-
 ```faq
 Q: What is the best alternative to Dripify?
 A: It depends on why you're leaving. Omniscient fits small teams that want outreach and a CRM together, and Expandi fits teams on Salesforce or Pipedrive. HeyReach suits agencies with many senders, and Linked Helper costs the least per account.

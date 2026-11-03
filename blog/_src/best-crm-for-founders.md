@@ -241,8 +241,6 @@ Most trials here last 14 days, which is enough if you run real selling through t
 Connect the inbox you sell from, and Otto fills in your CRM while you keep selling.
 ```
 
-## Questions about CRMs for founders
-
 ```faq
 Q: What is the best CRM for founders in 2026?
 A: For founders who sell B2B through email, meetings and LinkedIn, we'd start with Omniscient. folk suits founders who sell through their network, and Close suits founders who sell by phone.
