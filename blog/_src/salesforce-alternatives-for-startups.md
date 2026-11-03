@@ -14,7 +14,7 @@ summary: "13 Salesforce alternatives for startups, with today's prices from each
 
 Salesforce's Free Suite covers two users, so a pair of founders can run their first deals on it at no cost. The search for Salesforce alternatives for startups often starts a little later, when a third person joins or the team wants a forecast.
 
-We build Omniscient, a CRM with LinkedIn outreach for small B2B teams, and we wrote our own Salesforce importer. Reading Salesforce data through its API showed us where a startup's sales history sits, and below are the 13 alternatives we'd shortlist for a startup.
+We build Omniscient, a CRM with proposals and contracts built in for small B2B teams, and we wrote our own Salesforce importer. Reading Salesforce data through its API showed us where a startup's sales history sits, and below are the 13 alternatives we'd shortlist for a startup.
 
 ```callout
 We read every price on the vendor's own site on November 3, 2026, except Pipedrive's, whose pricing page didn't load for us. We haven't put a sales team through all 13, so our views rest on published plans and on building a CRM ourselves.
@@ -24,7 +24,7 @@ Here's where we'd look first, by what you want instead:
 
 | What you want instead | Where we'd look first |
 |---|---|
-| A CRM that fills itself in from email, meetings and LinkedIn | Omniscient |
+| A CRM that fills itself in, with proposals and contracts built from each deal | Omniscient |
 | Marketing and sales in one place, with a startup discount | HubSpot |
 | Custom objects like Salesforce's, with less setup | Attio |
 | A simple pipeline for your first sales hire | Pipedrive |
@@ -40,7 +40,7 @@ Here's where we'd look first, by what you want instead:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams selling through email, meetings and LinkedIn
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams selling through email, meetings and proposals
 HubSpot | hubspot.com | A customer platform with a free CRM and paid sales tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
 Attio | attio.com | A CRM you shape around your own objects and fields | [Free for up to 3 seats](https://attio.com/pricing) | Teams that liked Salesforce's custom objects
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | A first sales hire who works by stage
@@ -86,7 +86,7 @@ A startup whose Salesforce setup already works has less to gain from a move. We'
 
 ### 1. Omniscient
 
-Omniscient is an AI CRM that fills in its records from the email, calendar and call transcripts you connect, with LinkedIn outreach in the same app. Otto, our AI agent, writes your meeting notes and proposes field values, each with the quote that backs it.
+Omniscient is an AI CRM that fills in its records from the email, calendar and call transcripts you connect, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes your meeting notes and proposes field values, each with the quote that backs it.
 
 Coming from Salesforce, the big change is who does the typing. Each email and meeting lands on the right company and person, so records stay current in your busiest weeks.
 
@@ -97,7 +97,9 @@ Coming from Salesforce, the big change is who does the typing. Each email and me
 
 Otto fills a field only when it's empty, he's at least 85% sure and he can show the quote. He never changes a value your team typed, because a wrong amount in a forecast costs more than an empty one.
 
-On the [LinkedIn side](/product/linkedin-outbound/), Scout finds people who match a buyer you describe in a sentence, and Otto drafts each message for a teammate to approve. LinkedIn [doesn't publish an exact invitation limit](https://www.linkedin.com/help/linkedin/answer/a550555), so a new sender starts at 5 a day and adds 2 a day.
+Salesforce starts quoting on Pro Suite at $100. In Omniscient, the [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library, shows who viewed each part, and lets the buyer approve on the page. A full proposal uses 40 of the proposal credits each paid seat adds every month.
+
+[Contract Management](/product/contract-management/) comes with the seat. It drafts the contract from the approved proposal and your template, keeps every redline, sends a discount or a changed term to an approver and collects e-signatures with a link for each signer. It also reads each contract's end date and notice period, and opens a renewal opportunity 90 days before the end date.
 
 Admittedly, Omniscient covers less ground than Salesforce in places. We don't send marketing emails or email sequences, there's no dialer, and our importer leaves custom objects and custom fields behind. Everything else is on the [CRM page](/product/crm/).
 
@@ -306,7 +308,7 @@ Connect Salesforce, bring your accounts and opportunities over, and run Omniscie
 
 ```faq
 Q: What is the best Salesforce alternative for a startup?
-A: Omniscient is our pick for B2B startups that sell through email, meetings and LinkedIn and want the CRM to fill itself in. If you need custom objects like Salesforce's, look at Attio first, and if your team sells by phone, Close is the stronger fit. HubSpot suits teams that run marketing and sales together, and Salesflare suits teams that want email campaigns with automatic capture.
+A: Omniscient is our pick for B2B startups that sell through email and meetings, close on proposals and contracts, and want the CRM to fill itself in. If you need custom objects like Salesforce's, look at Attio first, and if your team sells by phone, Close is the stronger fit. HubSpot suits teams that run marketing and sales together, and Salesflare suits teams that want email campaigns with automatic capture.
 Q: Which Salesforce alternative is cheapest for a startup?
 A: HubSpot, Attio and Zoho CRM all have free plans, for 2, 3 and 3 users. On paid plans billed yearly, Freshsales Growth and Twenty Pro start at $9 per user a month, and Omniscient Starter costs $19 per seat with free seats for teammates who only view or log data.
 Q: Is Salesforce free for startups?

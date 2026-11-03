@@ -18,7 +18,7 @@ We built the CRM inside Omniscient, and the hardest call we made was deciding wh
 
 If you're short on time, here's where we'd start:
 
-- Pick Omniscient if you want a CRM that fills itself in and LinkedIn outreach in the same place.
+- Pick Omniscient if you want a CRM that fills itself in, with proposals and contracts built from each deal.
 - Pick HubSpot if marketing and sales should share one platform.
 - Pick Salesforce if you have an admin and need enterprise controls and custom builds.
 - Pick Microsoft Dynamics 365 Sales if your company already runs on Microsoft 365.
@@ -28,7 +28,7 @@ If you're short on time, here's where we'd start:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want CRM and outreach together
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 HubSpot | hubspot.com | A customer platform with marketing, sales and service tools on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that run marketing and sales together
 Salesforce | salesforce.com | A CRM with editions up to large enterprise and Agentforce agents | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | Larger teams with an admin
 Microsoft Dynamics 365 Sales | dynamics.microsoft.com | Microsoft's sales CRM with Copilot and prebuilt sales agents | [$65 per user a month, paid yearly](https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing) | Companies that run on Microsoft
@@ -86,7 +86,7 @@ The same idea gives you a quick test for any AI CRM in a trial. Click a value th
 
 ### 1. Omniscient
 
-[Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B sales teams that want their records to fill themselves in and their LinkedIn outreach in the same place. It works from your email and the transcripts of your calls, and Otto, our AI agent, proposes each value with the quote it came from. Nothing a person typed ever gets overwritten.
+[Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B sales teams that want their records to fill themselves in and their proposals and contracts built from the same deal. It works from your email and the transcripts of your calls, and Otto, our AI agent, proposes each value with the quote it came from. Nothing a person typed ever gets overwritten.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=best-ai-crm
@@ -99,7 +99,8 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Ask Omniscient:** Ask about your pipeline in plain words and get an answer that links every company, contact and deal it mentions.
 - **Privacy per inbox:** Set each inbox to share everything, only that a conversation happened, or nothing, and the database enforces your choice.
 - **Drafts and briefs:** Otto drafts your follow up email after a meeting, and Pro adds a short prep brief before the next one.
-- **LinkedIn outreach you approve:** Scout finds leads from a sentence, Otto drafts each message, and nothing sends until a teammate approves it.
+- **Deal Room proposals:** Build a proposal page for each deal from the deal, your calls and your Library, see who viewed each part, and let the buyer approve on the page.
+- **Contract Management:** Draft the contract from the approved proposal and your template, keep every redline, collect e-signatures on the page and get a renewal opportunity 90 days before the end date.
 - **Migration done for you:** We move your companies, contacts, deals and notes over from HubSpot, Salesforce, Pipedrive or Attio.
 
 ![Omniscient opportunity record for Pallet Cloud, where Otto filled the amount, close date and decision maker from a discovery call with the quote behind each one, and two more changes wait in Suggestions](/assets/blog/best-ai-crm/record.shot.html)
@@ -109,13 +110,14 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Proof you can click:** Any AI value shows the sentence it came from, so a wrong amount gets caught before it reaches a forecast.
 - **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat, so leadership and finance follow deals at no cost.
 - **AI inside the seat price:** Paid seats include the CRM's AI, so a month full of meetings never adds a usage bill.
-- **CRM and outreach together:** LinkedIn replies land next to the person's record, and nobody has to copy conversations between tools.
+- **Proposal to renewal in one app:** The proposal, the signed contract and the renewal read from the same deal, so nobody copies terms between tools.
 
 #### Cons
 
 - **No phone dialer:** Omniscient doesn't make calls, and teams that sell by phone will be happier with Close.
 - **No email sequences:** There's no cold email or marketing email, and HubSpot fits better when those are your main channels.
 - **The best parts start on Pro:** Fields filled with proof, free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat.
+- **No lead search:** Omniscient doesn't find new leads for you, so they come from your own forms, events and imports.
 - **Newer product:** Admittedly, Omniscient is younger than most CRMs here and has a shorter public track record.
 
 #### Price and plans
@@ -127,7 +129,7 @@ You can try Omniscient free for 14 days with no credit card. Paid seats, billed 
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
 
-Call recording with a bot is an add on at $25 per seat. The [LinkedIn Outbound page](/product/linkedin-outbound/) walks through a campaign from search to reply.
+Call recording with a bot is an add on at $25 per seat. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month, with 40 for a full proposal. The [Contract Management page](/product/contract-management/) walks through a contract from draft to signature.
 
 ### 2. HubSpot
 
@@ -623,10 +625,9 @@ What decides it for your team?
     Zoho apps: Zoho CRM
     monday.com: monday CRM
     Marketing on the same platform: HubSpot
-  How you sell: Where do your deals start?
-    LinkedIn: Should the CRM run the outreach?
-      Yes: Omniscient
-      No, you track relationships: folk
+  How you sell: What should the CRM handle?
+    Proposals and contracts: Omniscient
+    Relationships from your network: folk
     The phone: Close
     Pipeline stages you plan around: Pipedrive
   Budget, build and AI: What matters most?
@@ -663,7 +664,7 @@ Connect your inbox and watch Omniscient fill in your CRM, with the quote behind 
 
 ```faq
 Q: What is the best AI CRM in 2026?
-A: For small B2B teams that want a CRM that fills itself in plus LinkedIn outreach, we'd start with Omniscient. HubSpot fits teams running marketing and sales together, Salesforce and Microsoft Dynamics 365 Sales fit large teams with an admin, and Close suits teams that sell by phone.
+A: For small B2B teams that want a CRM that fills itself in, plus proposals and contracts built from each deal, we'd start with Omniscient. HubSpot fits teams running marketing and sales together, Salesforce and Microsoft Dynamics 365 Sales fit large teams with an admin, and Close suits teams that sell by phone.
 Q: What is an AI CRM?
 A: An AI CRM fills in its own records from your email, meetings and calls, and the most useful ones show the source behind every value they write.
 Q: Is there a free AI CRM?

@@ -108,7 +108,7 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .shead ul { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 6px; font-size: 14px; }
 .shead li { display: flex; gap: 8px; } .shead li::before { content: ""; width: 7px; height: 7px; margin-top: 8px; background: var(--solid); flex: none; }
 
-/* Scout */
+/* Search sentence */
 .sentence { font: 600 22px/1.25 "Inter Tight", sans-serif; letter-spacing: -.025em; padding: 18px 16px 6px; max-width: 760px; }
 .sentence u { text-decoration: none; background: linear-gradient(var(--ink), var(--ink)) 0 100% / 0 1.5px no-repeat; transition: background-size .7s cubic-bezier(.2,.8,.2,1); }
 .in .sentence u { background-size: 100% 1.5px; }
@@ -199,7 +199,7 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .chev-cap { color: var(--ink-2); margin-bottom: 10px; }
 .stage .shot { position: relative; }
 
-/* Scout signals column */
+/* Signals column */
 .sig { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
 .sig i { width: 6px; height: 6px; background: var(--signal); flex: none; }
 
@@ -486,27 +486,27 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .ra i { font-style: normal; }
 
 /* Lead database: a search and three scored leads. */
-.ra-leads .rw { background: #fff; border: 1px solid var(--frame); }
-.ra-leads .rq { display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 8px; border-bottom: 1px solid var(--frame); font: 500 9.5px var(--font); white-space: nowrap; overflow: hidden; }
-.ra-leads .rq span { overflow: hidden; text-overflow: ellipsis; }
-.ra-leads .rl { display: grid; grid-template-columns: 20px 1fr auto; gap: 7px; align-items: center; padding: 6px 8px; border-bottom: 1px solid var(--line); }
-.ra-leads .rl:last-child { border-bottom: 0; }
-.ra-leads .av { width: 20px; height: 20px; font-size: 7.5px; }
-.ra-leads .nm { min-width: 0; } .ra-leads .nm b, .ra-leads .nm i { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ra-leads .nm i { color: var(--ink-2); font-size: 9px; margin-top: 1px; }
-.ra-leads .sc { font: 600 10px var(--font); padding: 1px 4px; background: var(--solid); color: #fff; }
-.ra-leads .sc.lo { background: #fff; color: var(--ink); border: 1px solid var(--frame); padding: 0 3px; }
+.ra-ct .rw { background: #fff; border: 1px solid var(--frame); }
+.ra-ct .rq { display: flex; align-items: center; gap: 6px; height: 28px; padding: 0 8px; border-bottom: 1px solid var(--frame); font: 500 9.5px var(--font); white-space: nowrap; overflow: hidden; }
+.ra-ct .rq span { overflow: hidden; text-overflow: ellipsis; }
+.ra-ct .rl { display: grid; grid-template-columns: 20px 1fr auto; gap: 7px; align-items: center; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.ra-ct .rl:last-child { border-bottom: 0; }
+.ra-ct .av { width: 20px; height: 20px; font-size: 7.5px; }
+.ra-ct .nm { min-width: 0; } .ra-ct .nm b, .ra-ct .nm i { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ra-ct .nm i { color: var(--ink-2); font-size: 9px; margin-top: 1px; }
+.ra-ct .sc { font: 600 10px var(--font); padding: 1px 4px; background: var(--solid); color: #fff; }
+.ra-ct .sc.lo { background: #fff; color: var(--ink); border: 1px solid var(--frame); padding: 0 3px; }
 
 /* LinkedIn outreach: a three-step sequence with an approval. */
-.ra-li .seq { display: flex; flex-direction: column; align-items: stretch; }
-.ra-li .sn { display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 8px; background: #fff; border: 1px solid var(--frame); white-space: nowrap; }
-.ra-li .sn b { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
-.ra-li .sn.on { outline: 1px solid var(--frame); }
-.ra-li .ok { font-size: 9px; padding: 0 4px; border: 1px solid currentColor; color: var(--green-11); background: var(--green-3); }
-.ra-li .ap { font-size: 9px; padding: 1px 5px; background: var(--solid); color: #fff; }
-.ra-li .mut { font-size: 9px; color: var(--ink-2); }
-.ra-li .wt { position: relative; display: block; height: 18px; padding-left: calc(50% + 6px); font: 500 8.5px/18px var(--font); color: var(--ink-2); }
-.ra-li .wt::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--solid); }
+.ra-sign .seq { display: flex; flex-direction: column; align-items: stretch; }
+.ra-sign .sn { display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 8px; background: #fff; border: 1px solid var(--frame); white-space: nowrap; }
+.ra-sign .sn b { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.ra-sign .sn.on { outline: 1px solid var(--frame); }
+.ra-sign .ok { font-size: 9px; padding: 0 4px; border: 1px solid currentColor; color: var(--green-11); background: var(--green-3); }
+.ra-sign .ap { font-size: 9px; padding: 1px 5px; background: var(--solid); color: #fff; }
+.ra-sign .mut { font-size: 9px; color: var(--ink-2); }
+.ra-sign .wt { position: relative; display: block; height: 18px; padding-left: calc(50% + 6px); font: 500 8.5px/18px var(--font); color: var(--ink-2); }
+.ra-sign .wt::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--solid); }
 
 /* CRM: a small pipeline board, the open deal in black. */
 .ra-crm .kb { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; align-items: start; }
@@ -540,12 +540,12 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .ra-prop .seen { position: absolute; z-index: 2; right: 8px; bottom: 8px; display: inline-flex; align-items: center; gap: 4px; padding: 2px 6px; background: #fff; border: 1px solid var(--frame); font: 500 9px var(--font); }
 
 /* They build in once, when the row comes into view. */
-.grid5[data-anim] .ra-leads .rl, .grid5[data-anim] .ra-li .sn, .grid5[data-anim] .ra-li .wt, .grid5[data-anim] .ra-crm .cd, .grid5[data-anim] .ra-call .fx, .grid5[data-anim] .ra-prop .tiles i, .grid5[data-anim] .ra-prop .seen { opacity: 0; transform: translateY(5px); transition: opacity .4s, transform .4s cubic-bezier(.2,.8,.2,1); }
+.grid5[data-anim] .ra-ct .rl, .grid5[data-anim] .ra-sign .sn, .grid5[data-anim] .ra-sign .wt, .grid5[data-anim] .ra-crm .cd, .grid5[data-anim] .ra-call .fx, .grid5[data-anim] .ra-prop .tiles i, .grid5[data-anim] .ra-prop .seen { opacity: 0; transform: translateY(5px); transition: opacity .4s, transform .4s cubic-bezier(.2,.8,.2,1); }
 .grid5[data-anim] .ra-call .wave i { transform: scaleY(.15); transition: transform .5s cubic-bezier(.2,.8,.2,1); }
-.grid5.in .ra-leads .rl, .grid5.in .ra-li .sn, .grid5.in .ra-li .wt, .grid5.in .ra-crm .cd, .grid5.in .ra-call .fx, .grid5.in .ra-prop .tiles i, .grid5.in .ra-prop .seen { opacity: 1; transform: none; }
+.grid5.in .ra-ct .rl, .grid5.in .ra-sign .sn, .grid5.in .ra-sign .wt, .grid5.in .ra-crm .cd, .grid5.in .ra-call .fx, .grid5.in .ra-prop .tiles i, .grid5.in .ra-prop .seen { opacity: 1; transform: none; }
 .grid5.in .ra-call .wave i { transform: none; }
-.ra-leads .rl:nth-child(3), .ra-li > .seq > :nth-child(2), .ra-li > .seq > :nth-child(3), .ra-crm .col:nth-child(2) .cd, .ra-call .fx:nth-of-type(3), .ra-prop .tiles i:nth-child(2) { transition-delay: .1s !important; }
-.ra-leads .rl:nth-child(4), .ra-li > .seq > :nth-child(4), .ra-li > .seq > :nth-child(5), .ra-crm .col:nth-child(3) .cd, .ra-call .fx:nth-of-type(4), .ra-prop .tiles i:nth-child(3) { transition-delay: .2s !important; }
+.ra-ct .rl:nth-child(3), .ra-sign > .seq > :nth-child(2), .ra-sign > .seq > :nth-child(3), .ra-crm .col:nth-child(2) .cd, .ra-call .fx:nth-of-type(3), .ra-prop .tiles i:nth-child(2) { transition-delay: .1s !important; }
+.ra-ct .rl:nth-child(4), .ra-sign > .seq > :nth-child(4), .ra-sign > .seq > :nth-child(5), .ra-crm .col:nth-child(3) .cd, .ra-call .fx:nth-of-type(4), .ra-prop .tiles i:nth-child(3) { transition-delay: .2s !important; }
 .ra-prop .seen { transition-delay: .45s !important; }
 .ra-call .wave i:nth-child(1) { height: 30%; } .ra-call .wave i:nth-child(2) { height: 55%; } .ra-call .wave i:nth-child(3) { height: 80%; } .ra-call .wave i:nth-child(4) { height: 45%; }
 .ra-call .wave i:nth-child(5) { height: 100%; } .ra-call .wave i:nth-child(6) { height: 60%; } .ra-call .wave i:nth-child(7) { height: 35%; } .ra-call .wave i:nth-child(8) { height: 70%; }
@@ -581,8 +581,8 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .screen-fit .unify { min-height: 0; }
 .prop { position: relative; }
 
-/* What each screen plays. Scout: the search underlines, rows arrive, the count runs. CRM: sources slide in, wires
-   draw, the timeline fills in. Deal Room: tiles fill, the watch bar runs, and a notice says who's watching. */
+/* What each screen plays. CRM: sources slide in, wires draw, the timeline fills in. Deal Room: tiles fill, the
+   watch bar runs, and a notice says who's watching. Contracts: the signers and dates fill in. */
 .show-stage .rows tr { transition-duration: .5s; }
 .in .rows tr:nth-child(2) { transition-delay: .25s; } .in .rows tr:nth-child(3) { transition-delay: .5s; } .in .rows tr:nth-child(4) { transition-delay: .75s; } .in .rows tr:nth-child(5) { transition-delay: 1s; }
 .show-stage .tl div { opacity: 0; transform: translateY(6px); transition: opacity .4s, transform .4s cubic-bezier(.2,.8,.2,1); }
@@ -626,8 +626,8 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .stage .node { border-radius: 999px; }
 .seg, .tabs3 { border-radius: 8px; overflow: hidden; }
 .step .si, .composer2 .go, .replace .tool .art, .om-home .ui-btn { border-radius: 8px; }
-.magnet .pdf, .cite, .src .k, .upd .no, .upd .ok, .ra-crm .cd, .ra-prop .seen, .ra-leads .sc, .ra-li .ap, .endf { border-radius: 6px; }
-.ra-leads .rw, .ra-crm .col, .ra-call .cw, .ra-prop .pp { border-radius: 8px; }
+.magnet .pdf, .cite, .src .k, .upd .no, .upd .ok, .ra-crm .cd, .ra-prop .seen, .ra-ct .sc, .ra-sign .ap, .endf { border-radius: 6px; }
+.ra-ct .rw, .ra-crm .col, .ra-call .cw, .ra-prop .pp { border-radius: 8px; }
 .replace .grid5 { border-radius: 12px 12px 0 0; overflow: hidden; }
 .sec2 .grid4 { border-radius: 12px; overflow: hidden; }
 .replace .sum { border-radius: 0 0 12px 12px; }

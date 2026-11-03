@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" width="720" height="880" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Which CRM fits the way a founder sells</title>
-<desc id="d">Seven ways founders sell, each with what the CRM needs to do and the CRMs to look at. Email and meetings need capture without typing: Omniscient, Lightfield, Day AI or Clarify. Selling from Gmail all day needs a CRM inside the inbox: Streak. LinkedIn and introductions need people saved from LinkedIn: Omniscient, folk or Salesflare. Phone calls need a dialer next to each lead: Close. Tracking investors and partners too needs your own objects and pipelines: Attio or Twenty. A first sales hire needs a board of stages to share: Pipedrive or HubSpot. Keeping up with your network needs reminders to keep in touch: Dex.</desc>
+<desc id="d">Seven ways founders sell, each with what the CRM needs to do and the CRMs to look at. Email and meetings need capture without typing: Omniscient, Lightfield, Day AI or Clarify. Selling from Gmail all day needs a CRM inside the inbox: Streak. LinkedIn and introductions need people saved from LinkedIn: folk or Salesflare. Phone calls need a dialer next to each lead: Close. Tracking investors and partners too needs your own objects and pipelines: Attio or Twenty. A first sales hire needs a board of stages to share: Pipedrive or HubSpot. Keeping up with your network needs reminders to keep in touch: Dex.</desc>
 <rect width="720" height="880" fill="#ffffff"/>
 <text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">By channel</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Which CRM fits <tspan fill="#171717">the way you sell</tspan></text>
@@ -27,7 +27,7 @@
 <text x="48" y="375" font-size="20" font-weight="500" fill="#171717">LinkedIn and</text>
 <text x="48" y="399" font-size="20" font-weight="500" fill="#171717">introductions</text>
 <text x="248" y="361" font-size="20" font-weight="500" fill="#171717">People saved from LinkedIn</text>
-<text x="248" y="391" font-size="18" fill="#737373">Omniscient, folk, Salesflare</text>
+<text x="248" y="391" font-size="18" fill="#737373">folk, Salesflare</text>
 
 <rect x="32.5" y="424.5" width="199" height="87" fill="#f5f5f5" stroke="#ebebeb"/>
 <rect x="231.5" y="424.5" width="456" height="87" fill="#ffffff" stroke="#ebebeb"/>

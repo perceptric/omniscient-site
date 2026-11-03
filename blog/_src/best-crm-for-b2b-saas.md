@@ -22,7 +22,7 @@ We read each vendor's homepage and pricing page on November 2 and 3, 2026, thoug
 
 The short version, by how your team sells:
 
-- Pick Omniscient if deals start in your inbox, meetings and LinkedIn, and you want a CRM that fills itself in.
+- Pick Omniscient if deals start in your inbox and meetings, close on a proposal and a contract, and you want a CRM that fills itself in.
 - Pick HubSpot if marketing runs inbound and sales works from the same records.
 - Pick Attio if you want product usage and custom objects in your CRM.
 - Pick Salesforce if you sell to large companies and have an admin.
@@ -38,7 +38,7 @@ The short version, by how your team sells:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [$19 per seat a month, billed yearly](/#pricing) | SaaS teams selling through email, meetings and LinkedIn
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | SaaS teams selling through email, meetings and proposals
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams where inbound marketing feeds sales
 Attio | attio.com | A flexible CRM with AI agents and custom objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want product data in a data model they design
 Salesforce | salesforce.com | A CRM platform from a free suite to enterprise editions | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | SaaS companies selling to enterprises, with an admin
@@ -74,9 +74,9 @@ Who starts most of your deals?
     A demo request: HubSpot, Omniscient, Salesforce | Route each form to a rep fast
     A product signup: Attio, Twenty, HubSpot | Product usage on the account
   Your reps: What do they need most?
-    Accounts found and every touch logged: Omniscient, Close, Freshsales | Outbound to your ICP
+    Accounts found and every touch logged: Close, Freshsales | Outbound to your ICP
     Every buyer on one deal, with call notes: Salesforce, HubSpot, Omniscient | Deals with several buyers
-  A customer you have: Pipedrive, Attio, Salesforce | Renewal dates, MRR and ARR
+  A customer you have: Omniscient, Pipedrive, Attio, Salesforce | Renewal dates, MRR and ARR
 ```
 
 ## What we learned building a CRM for SaaS sales
@@ -107,7 +107,7 @@ For a SaaS deal, we'd add these fields first:
 - Champion, the person pushing for the purchase on their side.
 - Seats wanted, the number of users they expect to start with.
 - Competitor named, the other tools they're comparing you with.
-- Renewal date and contract value on the company, once the account pays.
+- Contract value on the company, once the account pays. The renewal date comes from the signed contract, since Contract Management reads each contract's end date.
 
 Otto drops any value it's under 60% sure of or can't back with a quote. On a Fill when empty field, it writes by itself only at 85% or more, and it never changes what a person typed.
 
@@ -129,17 +129,18 @@ Luckily, you don't need a warehouse on day one. A nightly script that sends each
 
 ### 1. Omniscient
 
-Omniscient is an AI CRM that builds its records from your email, calendar and call transcripts, and runs LinkedIn outreach you approve in the same app. Otto writes your meeting notes and drafts your follow up emails.
+Omniscient is an AI CRM that builds its records from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto writes your meeting notes and drafts your follow up emails.
 
 - Website forms and webhooks open an opportunity for each new lead and route it to an owner, as shown above.
-- For [LinkedIn outbound](/product/linkedin-outbound/), Scout finds people from a one sentence description of your buyer, and Otto drafts each message for a teammate to approve.
+- The [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library, with a row for each person in the buying group. You see who viewed what, and the buyer approves on the page.
+- [Contract Management](/product/contract-management/) drafts the contract from the approved proposal and your template, keeps every redline and collects e-signatures. It reads the end date, notice period and auto-renew from each contract and opens a renewal opportunity 90 days before the end date.
 - Meeting notes come from the transcripts Google Meet, Zoom or Teams already make. If you'd rather have a recording bot join, it costs $25 per seat.
-- Seats start at [$19 a month, billed yearly](/#pricing), with AI included, and monthly billing costs 20% more.
+- Seats start at [$19 a month, billed yearly](/#pricing), with AI and Contract Management included, and monthly billing costs 20% more.
 - Pro, at $49, adds the pipeline board and forecast, custom fields, fields filled with proof and meeting prep briefs.
 - On Pro and Business, teammates who only view or log data are free, which suits customer success and finance.
 - We move your companies, contacts, deals and notes over from HubSpot, Salesforce, Pipedrive or Attio.
 
-The free trial lasts 14 days with no card, and LinkedIn sending keeps to working hours with a slow start for new accounts.
+The free trial lasts 14 days with no card, and you can import the PDF contracts you signed before, so renewals already on the books show up on the pipeline.
 
 Admittedly, Omniscient has no phone dialer and no email sequences, so Close or Freshsales suits teams that book demos that way. Product led teams will also get more from Attio or HubSpot today, since we don't sync product usage on our own.
 
@@ -288,7 +289,7 @@ The table shows what you can try for free and what outreach comes with each CRM.
 
 | CRM | Free option | Free trial | Outreach built in |
 |---|---|---|---|
-| Omniscient | Free seats for teammates on Pro and Business | 14 days, no card | LinkedIn messages you approve |
+| Omniscient | Free seats for teammates on Pro and Business | 14 days, no card | Single emails you send, plus proposals in the Deal Room |
 | HubSpot | Free CRM for up to 2 users | Use the free CRM | Email sequences (check tier) |
 | Attio | Up to 3 seats | 14 days of Pro | Sequences on Pro |
 | Salesforce | Free Suite | Length not stated | Email marketing on Starter Suite |
@@ -333,11 +334,11 @@ Connect your inbox, add your demo form and watch Omniscient build your pipeline 
 
 ```faq
 Q: What is the best CRM for B2B SaaS in 2026?
-A: For SaaS teams whose deals start in email, meetings and LinkedIn, we'd start with Omniscient. HubSpot fits teams where marketing runs inbound, Attio fits teams that want product data in the CRM, Salesforce fits enterprise sales with an admin, and Twenty fits teams whose engineers want to own the CRM.
+A: For SaaS teams whose deals start in email and meetings and close on a proposal and a contract, we'd start with Omniscient. HubSpot fits teams where marketing runs inbound, Attio fits teams that want product data in the CRM, Salesforce fits enterprise sales with an admin, and Twenty fits teams whose engineers want to own the CRM.
 Q: Does a B2B SaaS company need a special CRM?
 A: Any solid CRM can work, as long as it handles several contacts per deal, renewal dates and contract value, product usage on the account and the channel behind each demo request.
 Q: Which CRM tracks MRR and ARR?
-A: Pipedrive's recurring products work out MRR and ARR on each deal, on Growth and higher plans. On Omniscient's Pro plan you can add your own contract value and renewal date fields, and Salesforce sells Revenue Cloud for product to cash from $200 per user a month.
+A: Pipedrive's recurring products work out MRR and ARR on each deal, on Growth and higher plans. On Omniscient's Pro plan you can add a contract value field, and Contract Management reads each contract's end date and opens the renewal 90 days ahead. Salesforce sells Revenue Cloud for product to cash from $200 per user a month.
 Q: Can a CRM show product usage?
 A: Several can, with a sync from your product or warehouse. Attio lists product usage among the data it keeps live, and its app store has sync tools like Polytomic and Hightouch. Twenty and Omniscient take product data through their APIs, and Clarify adds warehouse access on its Growth plan.
 Q: How much does a CRM for a B2B SaaS team cost?

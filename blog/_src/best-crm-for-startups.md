@@ -18,7 +18,7 @@ We build Omniscient, a CRM for small B2B teams where the founder still sells. Th
 
 If you only have a minute, here's where we'd start:
 
-- Pick Omniscient if you sell B2B through your inbox, meetings and LinkedIn, and want the CRM to fill itself in.
+- Pick Omniscient if you sell B2B through your inbox and meetings, close on proposals and contracts, and want the CRM to fill itself in.
 - Pick HubSpot if marketing and sales will share one system.
 - Pick Attio if you want to design your own data model.
 - Pick Pipedrive if your first sales hire wants a simple pipeline with AI meeting briefs on every plan.
@@ -29,7 +29,7 @@ If you only have a minute, here's where we'd start:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [$19 per seat a month, billed yearly](/#pricing) | B2B startups selling through email, meetings and LinkedIn
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | B2B startups selling through email, meetings and proposals
 HubSpot | hubspot.com | A customer platform with marketing, sales and service on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
 Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their data model
 Pipedrive | pipedrive.com | A pipeline CRM with AI meeting briefs on every plan | [See pricing](https://www.pipedrive.com/en/pricing) | A first sales hire who works by stage
@@ -80,7 +80,7 @@ Thankfully, you can run the same test on any CRM during its trial. Connect one r
 
 ### 1. Omniscient
 
-[Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B teams where the founder still sells. It fills in contacts and companies from your email and calendar and writes meeting notes from your call transcripts. LinkedIn outreach you approve runs in the same app, and the replies land on the records your team already uses.
+[Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B teams where the founder still sells. It fills in contacts and companies from your email and calendar and writes meeting notes from your call transcripts. The Deal Room builds a proposal for each deal, and Contract Management turns the approved proposal into a contract your buyer signs on the page.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=best-crm-for-startups
@@ -93,18 +93,19 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Fields filled with proof:** Every value Otto writes shows the quote and source behind it, and values a person typed are never changed.
 - **Follow up drafts and a daily digest:** Otto drafts your follow up emails, and a digest each weekday morning lists the meetings, replies and deals that need you.
 - **Sharing rules per inbox:** Each person decides whether teammates see full emails, only who and when, or nothing, and the database enforces it.
-- **LinkedIn outreach you approve:** Describe your buyer in a sentence, Scout finds people who match, and Otto drafts each message for a teammate to approve.
+- **Deal Room proposals:** A proposal page for each deal, built from the deal, your calls and your Library, that shows who viewed each part and lets the buyer approve.
+- **Contract Management:** Contracts drafted from the approved proposal and your template, with every redline kept, e-signature on the page and a renewal opportunity 90 days before the end date.
 - **Importer for your old CRM:** Companies, contacts, deals and notes come across from HubSpot, Salesforce, Pipedrive or Attio.
 
 #### Pros
 
 - **Very little typing:** The CRM fills itself in from email and meetings you already have, which suits a founder who sells between other jobs.
 - **Free seats for viewers:** On Pro and Business, teammates who only view or log data don't need a paid seat.
-- **Outreach and deals in one place:** LinkedIn replies land beside the person's CRM record, so you don't copy threads into a second tool.
+- **Deal to contract in one place:** The proposal and the contract read from the same deal, so a small team doesn't pay for a proposal tool and a signing app on top.
 
 #### Cons
 
-- **No dialer or email sequences:** Admittedly, outreach runs on LinkedIn only, so a team that sells by phone or cold email needs another tool for that.
+- **No dialer or email sequences:** Admittedly, Omniscient doesn't call or send cold email, and it doesn't find new leads, so a team that books meetings that way needs another tool.
 - **Pipeline board starts on Pro:** Starter covers records, notes and drafts, while the board and forecast come with Pro.
 - **Newer product:** Omniscient is younger than most CRMs here and has a shorter track record with larger sales teams.
 
@@ -117,7 +118,7 @@ You can try Omniscient free for 14 days with no credit card. Prices are per seat
 - **Pro:** $49 per seat, per month.
 - **Business:** $99 per seat, per month.
 
-Monthly billing costs 20% more, and call recording is a $25 per seat add on. The [CRM page](/product/crm/) and the [LinkedIn Outbound page](/product/linkedin-outbound/) show the rest.
+Monthly billing costs 20% more, and call recording is a $25 per seat add on. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest.
 
 ### 2. HubSpot
 
@@ -605,7 +606,7 @@ The right CRM changes as you hire, so here's our match for four common startup s
 
 ![Which CRM fits each stage of a startup: a founder selling alone needs capture without typing, from Omniscient, folk, Streak or HubSpot's free CRM; a first sales hire needs a pipeline learned in a day, from Pipedrive, Close, Salesflare or Omniscient; a small sales team needs a forecast and access rules, from HubSpot, Attio, Zoho CRM or monday CRM; a custom sales process needs custom objects and an admin, from Salesforce, Attio or Twenty](/assets/blog/best-crm-for-startups/crm-by-stage.svg)
 
-If your deals start on LinkedIn, our guide to [LinkedIn outreach tools with a CRM](/blog/linkedin-outreach-tools-with-crm/) covers the outbound side.
+If your deals close on a proposal and a contract, the [Deal Room page](/product/deal-room/) shows how Omniscient builds a proposal from the deal.
 
 ## How to switch CRMs later without losing data
 
@@ -643,7 +644,7 @@ Connect your inbox and let Omniscient build your first CRM from the people you a
 
 ```faq
 Q: What is the best CRM for startups in 2026?
-A: For B2B startups that sell through email, meetings and LinkedIn, we'd start with Omniscient. HubSpot fits startups that run marketing and sales together, and Pipedrive suits a first sales hire who wants a simple pipeline.
+A: For B2B startups that sell through email and meetings and close on proposals and contracts, we'd start with Omniscient. HubSpot fits startups that run marketing and sales together, and Pipedrive suits a first sales hire who wants a simple pipeline.
 Q: Is there a free CRM for startups?
 A: Yes. HubSpot, Attio, Zoho CRM and Salesforce all have free plans for 2 or 3 users, and Twenty is free to host yourself. Streak's free plan adds tracking and mail merge to Gmail but has no pipelines, and on its Pro and Business plans Omniscient gives free seats to teammates who only view or log data.
 Q: Do CRMs offer startup discounts?

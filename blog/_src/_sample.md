@@ -4,7 +4,7 @@ slug: _sample
 target_keyword: "blog builder sample"
 meta_description: "A draft that never publishes. It uses every block tools/blog.mjs renders, so the layout can be checked at desktop and phone widths after any change."
 type: how-to
-topic: linkedin
+topic: crm
 updated: 2026-11-02
 read_minutes: 3
 summary: "Every Markdown block the builder renders, in one draft that never publishes."
@@ -22,7 +22,7 @@ A callout is a short framed note, one or two sentences long.
 
 Bulleted lists use square bullets:
 
-- One item with a [link](/product/linkedin-outbound/)
+- One item with a [link](/product/contract-management/)
 - A second item that runs long enough to wrap onto a second line on a phone, so the indent can be checked
   - A nested item
 - A third item
@@ -39,27 +39,27 @@ Numbered lists use mono numbers:
 
 | Tool | Starting price | Free plan | Best for | Notes |
 |---|---|---|---|---|
-| Omniscient | $19 per seat a month | Yes, for teammates | Teams that want outbound and CRM together | AI included |
+| Omniscient | $19 per seat a month | Yes, for teammates | Teams that want proposals, contracts and CRM together | AI included |
 | A long tool name that wraps | check | No | Wide tables scroll inside their frame on a phone | Five columns |
 | Another tool | $99 a month | No | Testing alignment | Last row |
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | LinkedIn outbound and a CRM that fills itself in | [$19 per seat a month](/#pricing) | Small B2B sales teams
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts | [$19 per seat a month](/#pricing) | Small B2B sales teams
 HubSpot | hubspot.com | A CRM with marketing and service hubs | check | Teams already on HubSpot
 Pipedrive | pipedrive.com | A pipeline-first CRM for small sales teams | check | Visual pipeline management
-LinkedIn Sales Navigator | linkedin.com | LinkedIn's own search and lead lists | check | Finding people on LinkedIn
+Attio | attio.com | A flexible CRM you shape around your own objects | check | Teams that design their own data model
 ```
 
 ## Steps and pictures
 
 ```steps
 1. Connect your inbox: Omniscient reads email and calendar to fill in each record.
-2. Describe your buyer: Scout finds people who match and explains why.
-3. Approve the messages: nothing goes out until someone on your team approves it.
+2. Build a proposal: the Deal Room writes one from the deal, your calls and your Library.
+3. Send the contract: each signer signs on the page from their own link.
 ```
 
-![Sample bar chart of invitations a day during a six-day warmup](chart.svg "A caption comes from the image title, in quotes after the address.")
+![Sample bar chart of proposals sent each week over six weeks](chart.svg "A caption comes from the image title, in quotes after the address.")
 
 ### A product shot
 
@@ -70,8 +70,8 @@ LinkedIn Sales Navigator | linkedin.com | LinkedIn's own search and lead lists |
 A code block keeps its spacing:
 
 ```text
-pace: normal
-working hours: 09:00 to 17:30
+renewal: 90 days before the end date
+notice period: 60 days
 ```
 
 ```cta
