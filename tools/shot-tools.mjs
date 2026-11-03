@@ -20,6 +20,8 @@ const SHOTS = join(root, "assets", "blog", "tools");
 const LOGOS = join(root, "assets", "blog", "logos");
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36";
 const MAX_BYTES = 150 * 1024;
+// Chat widgets, blocked before they load: some dock a panel that squeezes the page.
+const CHAT_HOSTS = /^https?:\/\/([^/]+\.)?(qualified\.com|intercom\.io|intercomcdn\.com|widget\.intercom\.io|drift\.com|driftt\.com|crisp\.chat|usemessages\.com|tidio\.co|tidiochat\.com|zdassets\.com|livechatinc\.com|frontapp\.com|chatlio\.com|gist\.build|getgist\.com|helpscout\.net|olark\.com|tawk\.to|salesiq\.zoho\.[a-z.]+|zopim\.com|chatbase\.co|voiceflow\.com)\//i;
 const PARALLEL = 3;
 
 // Buttons that accept a cookie or consent notice, by id or class, then by their words.
@@ -45,7 +47,8 @@ const HIDE_CSS = `
 #fc_frame, #freshworks-container, #launcher-frame, #tidio-chat, #tidio-chat-iframe, #chat-widget-container, #front-chat-container,
 .zsiq_floatmain, #zsiq_float, [id^="zsiq"], #livechat-compact-container, #chat-widget, iframe[title*="chat" i], iframe[src*="intercom"],
 .qualified-iframe-container, #qualified-container, [class*="chatlio"], #gist-app, .gist-messenger-bubble-iframe, #beacon-container,
-.grecaptcha-badge { display: none !important; visibility: hidden !important; }
+.grecaptcha-badge, q-root, #q-messenger-frame, [id^="_qualified"], iframe[src*="qualified.com"], [class*="scrim" i]
+{ display: none !important; visibility: hidden !important; }
 html, body { overflow: visible !important; }
 *, *::before, *::after { caret-color: transparent !important; }
 `;
@@ -166,8 +169,14 @@ async function hideLayers(page) {
       const bottomBar = r.bottom >= vh - 4 && r.height < vh * 0.5;
       const corner = r.width < vw * 0.4 && r.height < vh * 0.7; // chat bubbles and small popups
       const text = (el.id + " " + (typeof el.className === "string" ? el.className : "")).toLowerCase();
-      const looksLayer = /cookie|consent|gdpr|modal|popup|pop-up|overlay|newsletter|chat|banner|toast|backdrop|lightbox|dialog/.test(text) || el.getAttribute("role") === "dialog" || el.getAttribute("aria-modal") === "true";
+      const looksLayer = /cookie|consent|gdpr|modal|popup|pop-up|overlay|newsletter|chat|banner|toast|backdrop|scrim|lightbox|dialog/.test(text) || el.getAttribute("role") === "dialog" || el.getAttribute("aria-modal") === "true";
       if (big || bottomBar || corner || looksLayer) el.style.setProperty("display", "none", "important");
+    }
+    // A chat panel docked at the side can squeeze the page; give it its full width back.
+    for (const el of [document.documentElement, document.body]) {
+      if (!el) continue;
+      el.style.setProperty("margin-right", "0", "important");
+      el.style.setProperty("width", "auto", "important");
     }
     document.documentElement.style.setProperty("overflow", "visible", "important");
     document.body && document.body.style.setProperty("overflow", "visible", "important");
@@ -185,6 +194,7 @@ function wallReason(title, text) {
 async function captureShot(context, domain, wait) {
   const out = join(SHOTS, `${domain}.webp`);
   const page = await context.newPage();
+  await page.route(CHAT_HOSTS, (route) => route.abort()).catch(() => {});
   const raw = tmp(`${domain}.png`);
   try {
     let resp = null;
