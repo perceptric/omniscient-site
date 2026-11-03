@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 818" width="720" height="818" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What Omniscient fills on its own and what waits for you</title>
-<desc id="d">How Omniscient's agent Otto writes to records. Fills on its own: new people and companies by your sync settings, each email and meeting on the right record, call notes and facts each with its quote, company details from the company's own website when empty, amount and close date when empty and Otto is at least 85% sure, and fields set to Fill when empty on the same terms. Waits in Suggestions for you: every change of stage, a value that would replace one already there, a value Otto is less than 85% sure of, and anything read from a private inbox. Left alone or dropped: a field a person typed stays as it is, and a field rule value under 60% sure or with no quote is dropped.</desc>
+<desc id="d">How Omniscient's agent Otto writes to records. Fills on its own: new people and companies by your sync settings, each email and meeting on the right record, call notes and facts with their quotes, company details from the company's own website when empty, amount and close date when empty and Otto is at least 85% sure, and fields set to Fill when empty on the same terms. Waits for you to accept or skip: every change of stage, a value that would replace one already there, a value Otto is less than 85% sure of, and a field value read from a private inbox. Left alone or dropped: a field a person typed stays as it is, and a field rule value under 60% sure or with no quote is dropped.</desc>
 <rect width="720" height="818" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="817" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[What Otto may write]</text>
@@ -13,7 +13,7 @@
 <rect x="50" y="224" width="7" height="7" fill="#0a0a0a"/>
 <text x="70" y="233" font-size="19" fill="#0a0a0a">Each email and meeting, on the right record</text>
 <rect x="50" y="260" width="7" height="7" fill="#0a0a0a"/>
-<text x="70" y="269" font-size="19" fill="#0a0a0a">Call notes and facts, each with its quote</text>
+<text x="70" y="269" font-size="19" fill="#0a0a0a">Call notes, and facts with their quotes</text>
 <rect x="50" y="296" width="7" height="7" fill="#0a0a0a"/>
 <text x="70" y="305" font-size="19" fill="#0a0a0a">Company details from its own website, when empty</text>
 <rect x="50" y="332" width="7" height="7" fill="#0a0a0a"/>
@@ -22,7 +22,7 @@
 <text x="70" y="377" font-size="19" fill="#0a0a0a">Fields set to Fill when empty, on the same terms</text>
 <rect x="32.5" y="422.5" width="655" height="202" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="32.5" y="422.5" width="655" height="44" fill="#ebebeb" stroke="#0a0a0a"/>
-<text x="48" y="451" font-size="20" font-weight="600" fill="#0a0a0a">Waits in Suggestions for you</text>
+<text x="48" y="451" font-size="20" font-weight="600" fill="#0a0a0a">Waits for you to accept or skip</text>
 <rect x="50" y="486" width="7" height="7" fill="#0a0a0a"/>
 <text x="70" y="495" font-size="19" fill="#0a0a0a">Every change of stage</text>
 <rect x="50" y="522" width="7" height="7" fill="#0a0a0a"/>
@@ -30,7 +30,7 @@
 <rect x="50" y="558" width="7" height="7" fill="#0a0a0a"/>
 <text x="70" y="567" font-size="19" fill="#0a0a0a">A value Otto is less than 85% sure of</text>
 <rect x="50" y="594" width="7" height="7" fill="#0a0a0a"/>
-<text x="70" y="603" font-size="19" fill="#0a0a0a">Anything read from a private inbox</text>
+<text x="70" y="603" font-size="19" fill="#0a0a0a">A field value from a private inbox</text>
 <rect x="32.5" y="648.5" width="655" height="130" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="32.5" y="648.5" width="655" height="44" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="677" font-size="20" font-weight="600" fill="#0a0a0a">Left alone or dropped</text>

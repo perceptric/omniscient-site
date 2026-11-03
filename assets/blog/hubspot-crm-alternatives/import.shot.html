@@ -1,0 +1,21 @@
+<style>.hca-body{padding:14px 16px 16px;display:grid;gap:12px}.hca-pick{display:flex;flex-wrap:wrap;gap:8px}.hca-pick>span{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--line)}.hca-pick>span.on{border:2px solid var(--ink)}.hca-pick img{width:24px;height:24px}.hca-csv{display:grid;place-items:center;width:24px;height:24px;border:1px solid var(--line);font-size:8px;font-weight:500;color:var(--ink)}.hca-go{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;height:32px;background:var(--fill);color:var(--ink-3);font-size:12px;font-weight:500}.hca-go img{width:16px;height:16px}.hca-list{border:1px solid var(--line)}.hca-row{display:flex;align-items:center;gap:10px;padding:10px 12px;font-size:12.5px}.hca-row b{display:block;font-weight:600}.hca-row small{display:block;color:var(--ink-2);font-size:11.5px}.hca-run{color:var(--ink)}.hca-x{width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--ink);font-size:14px}.hca-f{display:flex;justify-content:flex-end;padding:10px 16px;border-top:1px solid var(--line)}</style>
+<div class="app" style="grid-template-columns:minmax(0,1fr);min-height:0;max-width:620px;margin:0 auto" role="img" aria-label="An example of Omniscient's Import dialog. A line says it brings over accounts, contacts, opportunities with their stages, and notes, and that records already in the workspace are matched and filled in. Below it is a row of square tiles for a CSV file, HubSpot, Salesforce, Attio and Pipedrive, with HubSpot picked. The Connect HubSpot button is grayed out while a HubSpot import runs: it is on opportunities after bringing over 1,180 accounts, 3,402 contacts and 615 leads, marked Running">
+  <div class="main">
+    <div class="ph"><b>Import</b><span class="grow"></span><span class="hca-x" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></span></div>
+    <div class="hca-body">
+      <p class="sub" style="margin:0;font-size:12.5px">Accounts, contacts, opportunities with their stages, and notes. Records already here are matched and filled in.</p>
+      <div class="hca-pick">
+        <span><span class="hca-csv">CSV</span></span>
+        <span class="on"><img class="lg" src="/assets/logos/hubspot.svg" alt="" width="24" height="24"></span>
+        <span><img class="lg" src="/assets/logos/salesforce.svg" alt="" width="24" height="24"></span>
+        <span><img class="lg" src="/assets/logos/attio.png" alt="" width="24" height="24"></span>
+        <span><img class="lg" src="/assets/logos/pipedrive.png" alt="" width="24" height="24"></span>
+      </div>
+      <span class="hca-go"><img class="lg" src="/assets/logos/hubspot.svg" alt="" width="16" height="16">Connect HubSpot</span>
+      <div class="hca-list">
+        <div class="hca-row"><img class="lg" src="/assets/logos/hubspot.svg" alt="" width="20" height="20"><span style="min-width:0;flex:1"><b>HubSpot portal 48291</b><small>Opportunities, 1,180 accounts, 3,402 contacts, 615 leads</small></span><span class="tag hca-run">Running</span></div>
+      </div>
+    </div>
+    <div class="hca-f"><span style="font-size:12.5px;font-weight:500">Close</span></div>
+  </div>
+</div>

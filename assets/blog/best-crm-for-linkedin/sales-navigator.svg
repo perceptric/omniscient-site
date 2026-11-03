@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 718" width="720" height="718" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Which Sales Navigator plan connects to a CRM</title>
-<desc id="d">Sales Navigator Core costs US$119.99 a month or US$1,079.88 a year per license and has no CRM sync; it gives one seller search and alerts. Advanced costs US$159.99 a month or US$1,799.88 a year per license and has no CRM sync; it adds shared lists, Buyer Intent and Smart Links. Advanced Plus is priced by LinkedIn's sales team and includes CRM sync with HubSpot, Microsoft Dynamics 365, Oracle Sales and Salesforce, logging InMails, messages and notes back to the CRM. Prices from LinkedIn's compare plans page, read in November 2026.</desc>
+<desc id="d">Sales Navigator Core costs US$119.99 a month or US$1,079.88 a year per license and has no CRM sync; it gives one seller search and alerts. Advanced costs US$159.99 a month or US$1,799.88 a year per license and has no CRM sync; it adds shared lists, Buyer Intent and Smart Links. Advanced Plus is priced by LinkedIn's sales team and includes CRM sync with HubSpot, Microsoft Dynamics 365, Oracle Sales and Salesforce, logging InMails, messages and notes back to the CRM. Prices from LinkedIn's compare plans page, read in November 2026, which calls them estimates that may exclude VAT or GST.</desc>
 <rect width="720" height="718" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="717" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Sales Navigator plans]</text>
@@ -37,6 +37,6 @@
 <text x="352" y="554" font-size="21" fill="#0a0a0a">Oracle Sales, Salesforce</text>
 <text x="352" y="596" font-size="21" fill="#737373">Logs InMails, messages, notes</text>
 
-<text x="32" y="664" font-size="20" fill="#737373">Per license. Prices from LinkedIn's compare plans page,</text>
-<text x="32" y="690" font-size="20" fill="#737373">read in November 2026.</text>
+<text x="32" y="664" font-size="20" fill="#737373">Per license, LinkedIn's estimates, may exclude VAT or GST.</text>
+<text x="32" y="690" font-size="20" fill="#737373">From its compare plans page, read in November 2026.</text>
 </svg>

@@ -13,56 +13,56 @@
 <text x="48" y="264" font-size="20" fill="#0a0a0a">Bulk mail, like a newsletter?</text>
 <line x1="452" x2="489" y1="256" y2="256" stroke="#0a0a0a"/>
 <polygon points="489,251 498,256 489,261" fill="#0a0a0a"/>
-<text x="459" y="247" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">Yes</text>
+<text x="459" y="247" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
 <rect x="498.5" y="224.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="514" y="264" font-size="20" font-weight="600" fill="#0a0a0a">Skipped</text>
 <line x1="72" x2="72" y1="288" y2="315" stroke="#0a0a0a"/>
 <polygon points="67,315 72,324 77,315" fill="#0a0a0a"/>
-<text x="84" y="312" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">No</text>
+<text x="84" y="312" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
 <rect x="32.5" y="324.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="364" font-size="20" fill="#0a0a0a">From a no reply or billing address?</text>
 <line x1="452" x2="489" y1="356" y2="356" stroke="#0a0a0a"/>
 <polygon points="489,351 498,356 489,361" fill="#0a0a0a"/>
-<text x="459" y="347" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">Yes</text>
+<text x="459" y="347" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
 <rect x="498.5" y="324.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="514" y="364" font-size="20" font-weight="600" fill="#0a0a0a">Skipped</text>
 <line x1="72" x2="72" y1="388" y2="415" stroke="#0a0a0a"/>
 <polygon points="67,415 72,424 77,415" fill="#0a0a0a"/>
-<text x="84" y="412" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">No</text>
+<text x="84" y="412" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
 <rect x="32.5" y="424.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="464" font-size="20" fill="#0a0a0a">On your do not track list?</text>
 <line x1="452" x2="489" y1="456" y2="456" stroke="#0a0a0a"/>
 <polygon points="489,451 498,456 489,461" fill="#0a0a0a"/>
-<text x="459" y="447" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">Yes</text>
+<text x="459" y="447" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
 <rect x="498.5" y="424.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="514" y="464" font-size="20" font-weight="600" fill="#0a0a0a">Skipped</text>
 <line x1="72" x2="72" y1="488" y2="515" stroke="#0a0a0a"/>
 <polygon points="67,515 72,524 77,515" fill="#0a0a0a"/>
-<text x="84" y="512" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">No</text>
+<text x="84" y="512" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
 <rect x="32.5" y="524.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="564" font-size="20" fill="#0a0a0a">A personal address, like gmail.com?</text>
 <line x1="452" x2="489" y1="556" y2="556" stroke="#0a0a0a"/>
 <polygon points="489,551 498,556 489,561" fill="#0a0a0a"/>
-<text x="459" y="547" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">Yes</text>
+<text x="459" y="547" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
 <rect x="498.5" y="524.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="514" y="564" font-size="20" font-weight="600" fill="#0a0a0a">Left out</text>
 <line x1="72" x2="72" y1="588" y2="615" stroke="#0a0a0a"/>
 <polygon points="67,615 72,624 77,615" fill="#0a0a0a"/>
-<text x="84" y="612" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">No</text>
+<text x="84" y="612" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
 <rect x="32.5" y="624.5" width="419" height="63" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="664" font-size="20" fill="#0a0a0a">Someone new who wrote to you first?</text>
 <line x1="452" x2="489" y1="656" y2="656" stroke="#0a0a0a"/>
 <polygon points="489,651 498,656 489,661" fill="#0a0a0a"/>
-<text x="459" y="647" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">Yes</text>
+<text x="459" y="647" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Yes</text>
 <rect x="498.5" y="624.5" width="189" height="63" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="514" y="664" font-size="20" font-weight="600" fill="#0a0a0a">Not added</text>
 <line x1="72" x2="72" y1="688" y2="715" stroke="#0a0a0a"/>
 <polygon points="67,715 72,724 77,715" fill="#0a0a0a"/>
-<text x="84" y="712" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">No</text>
+<text x="84" y="712" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">No</text>
 <rect x="32.5" y="724.5" width="655" height="83" fill="#10b981" stroke="#0a0a0a"/>
 <text x="48" y="759" font-size="21" font-weight="600" fill="#0a0a0a">Filed under the person, company and deal</text>
 <text x="48" y="788" font-size="19" fill="#0a0a0a">Otto reads the thread for facts, each with its quote</text>
-<text x="32" y="856" font-size="18" fill="#737373">Personal addresses and first emails from new people follow</text>
-<text x="32" y="884" font-size="18" fill="#737373">your sync settings, shown here the way we suggest them.</text>
-<text x="32" y="912" font-size="18" fill="#737373">Emails with only your own team on them are skipped too.</text>
+<text x="32" y="856" font-size="19" fill="#737373">Personal addresses and first emails from new people follow</text>
+<text x="32" y="884" font-size="19" fill="#737373">your sync settings, shown here the way we suggest them.</text>
+<text x="32" y="912" font-size="19" fill="#737373">Emails with only your own team on them are skipped too.</text>
 </svg>

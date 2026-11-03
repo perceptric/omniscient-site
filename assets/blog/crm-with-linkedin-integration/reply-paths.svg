@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 774" width="720" height="774" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Where a LinkedIn reply ends up in each kind of CRM integration</title>
-<desc id="d">Through Sales Navigator CRM Sync, in HubSpot, Salesforce and Dynamics 365: the rep messages in Sales Navigator, writeback logs the activity the rep picks, and the activity lands on the matched record. Through a browser extension, in folk and the Pipedrive and Attio apps: the rep saves the LinkedIn profile, the person lands in the CRM, and the thread stays in LinkedIn unless the app logs it. Through a connected account, in Omniscient and Breakcold: the reply arrives on LinkedIn, it is matched by LinkedIn member ID or address, and the thread sits beside the record.</desc>
+<desc id="d">Through Sales Navigator CRM Sync, in HubSpot, Salesforce and Dynamics 365: the rep messages in Sales Navigator, writeback logs the activity the rep picks, and the activity lands on the matched record. Through a browser extension, in folk and the Pipedrive and Attio apps: the rep saves the LinkedIn profile, the person lands in the CRM, and the thread stays in LinkedIn unless the app logs it. Through a connected account, in Omniscient and Breakcold: the reply arrives on LinkedIn, the CRM matches it to the right person, and the thread sits beside the record.</desc>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#0a0a0a"/></marker></defs>
 <rect width="720" height="774" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="773" fill="none" stroke="#0a0a0a"/>
@@ -42,9 +42,9 @@
 <text x="48" y="690" font-size="20" fill="#0a0a0a">on LinkedIn</text>
 <line x1="229" y1="670.5" x2="260" y2="670.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
 <rect x="262.5" y="610.5" width="196" height="120" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="278" y="652" font-size="20" fill="#0a0a0a">Matched by</text>
-<text x="278" y="677" font-size="20" fill="#0a0a0a">LinkedIn member</text>
-<text x="278" y="702" font-size="20" fill="#0a0a0a">ID or address</text>
+<text x="278" y="652" font-size="20" fill="#0a0a0a">The CRM</text>
+<text x="278" y="677" font-size="20" fill="#0a0a0a">matches it to</text>
+<text x="278" y="702" font-size="20" fill="#0a0a0a">the right person</text>
 <line x1="459" y1="670.5" x2="490" y2="670.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
 <rect x="492.5" y="610.5" width="195" height="120" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="508.5" y="624.5" width="13" height="13" fill="#10b981" stroke="#0a0a0a"/>

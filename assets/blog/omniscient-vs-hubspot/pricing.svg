@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 900" width="560" height="900" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">HubSpot Sales Hub and Omniscient starting prices per seat a month</title>
+<desc id="d">HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts; Starter from $7 per seat a month, with $20 also listed and discounts for new customers only; Professional from $90 per seat a month on a yearly commitment, or $100 paying monthly, plus a $1,500 onboarding fee paid once; Enterprise from $150 per seat a month, plus a $3,500 onboarding fee paid once. Omniscient, per seat a month billed yearly: Free $0 for teammates who only view or log data; Starter $19, and monthly billing costs 20% more; Pro $49 with the pipeline board and forecast; Business $99 with the manager view and call coaching. From hubspot.com/pricing/sales and tryomniscient.com, November 3, 2026.</desc>
+<rect width="560" height="900" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="899" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Pricing]</text>
+<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">Per seat a month <tspan fill="#a3a3a3">starting prices</tspan></text>
+<rect x="24" y="110" width="512" height="340" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="110" width="512" height="44" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="40" y="138" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[HubSpot Sales Hub]</text>
+<text x="40" y="185" font-size="20" font-weight="600" fill="#0a0a0a">Free</text>
+<text x="520" y="185" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$0</text>
+<text x="40" y="211" font-size="17" fill="#737373">Up to 2 users and 1,000 contacts</text>
+<line x1="25" x2="535" y1="228" y2="228" stroke="#e5e5e5"/>
+<text x="40" y="259" font-size="20" font-weight="600" fill="#0a0a0a">Starter</text>
+<text x="520" y="259" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">From $7</text>
+<text x="40" y="285" font-size="17" fill="#737373">$20 also listed, discounts for new customers only</text>
+<line x1="25" x2="535" y1="302" y2="302" stroke="#e5e5e5"/>
+<text x="40" y="333" font-size="20" font-weight="600" fill="#0a0a0a">Professional</text>
+<text x="520" y="333" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">From $90</text>
+<text x="40" y="359" font-size="17" fill="#737373">Yearly commitment, plus $1,500 onboarding once</text>
+<line x1="25" x2="535" y1="376" y2="376" stroke="#e5e5e5"/>
+<text x="40" y="407" font-size="20" font-weight="600" fill="#0a0a0a">Enterprise</text>
+<text x="520" y="407" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">From $150</text>
+<text x="40" y="433" font-size="17" fill="#737373">Plus $3,500 onboarding once</text>
+<rect x="24" y="474" width="512" height="340" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="474" width="512" height="44" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="40" y="489" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
+<text x="62" y="502" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[Omniscient, billed yearly]</text>
+<text x="40" y="549" font-size="20" font-weight="600" fill="#0a0a0a">Free</text>
+<text x="520" y="549" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$0</text>
+<text x="40" y="575" font-size="17" fill="#737373">For teammates who only view or log data</text>
+<line x1="25" x2="535" y1="592" y2="592" stroke="#e5e5e5"/>
+<text x="40" y="623" font-size="20" font-weight="600" fill="#0a0a0a">Starter</text>
+<text x="520" y="623" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$19</text>
+<text x="40" y="649" font-size="17" fill="#737373">Monthly billing costs 20% more</text>
+<line x1="25" x2="535" y1="666" y2="666" stroke="#e5e5e5"/>
+<text x="40" y="697" font-size="20" font-weight="600" fill="#0a0a0a">Pro</text>
+<text x="520" y="697" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$49</text>
+<text x="40" y="723" font-size="17" fill="#737373">Adds the pipeline board and forecast</text>
+<line x1="25" x2="535" y1="740" y2="740" stroke="#e5e5e5"/>
+<text x="40" y="771" font-size="20" font-weight="600" fill="#0a0a0a">Business</text>
+<text x="520" y="771" text-anchor="end" font-size="21" font-weight="600" fill="#0a0a0a">$99</text>
+<text x="40" y="797" font-size="17" fill="#737373">Adds the manager view and call coaching</text>
+<text x="24" y="854" font-size="16" fill="#737373">From hubspot.com/pricing/sales and tryomniscient.com,</text>
+<text x="24" y="876" font-size="16" fill="#737373">read on November 3, 2026.</text>
+</svg>

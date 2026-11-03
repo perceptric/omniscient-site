@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" width="720" height="620" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What a teammate sees from your inbox in Omniscient</title>
-<desc id="d">Each connected inbox has one of three sharing rules. Full access shows teammates who and when, the subject and preview, Otto's facts and the quotes behind them. Who and when only shows who you emailed or met and when, plus Otto's facts without their quotes. Only me shows teammates nothing from that inbox. Separately, emails and domains on the do not track list are left out of the sync for everyone.</desc>
+<desc id="d">Each connected inbox has one of three sharing rules. Full access shows teammates who and when, the subject and preview, Otto's facts and the quotes behind them. Who and when only shows who you emailed or met and when, plus Otto's facts without their quotes. Only me shows teammates nothing from that inbox. Separately, people whose emails or domains are on your do not track list are never synced from your inbox.</desc>
 <rect width="720" height="620" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="619" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Inbox sharing]</text>
@@ -54,7 +54,7 @@
 
 <rect x="32.5" y="472.5" width="655" height="83" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="506" font-size="19" font-weight="600" fill="#0a0a0a">Do not track list</text>
-<text x="48" y="536" font-size="17" fill="#737373">Emails and domains you add are left out of the sync for everyone</text>
+<text x="48" y="536" font-size="17" fill="#737373">People at the emails and domains you add never sync from your inbox</text>
 
 <text x="32" y="596" font-size="16" fill="#737373">From Omniscient's inbox settings. Only an inbox's owner can change its rule.</text>
 </svg>

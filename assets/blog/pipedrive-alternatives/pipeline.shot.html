@@ -1,0 +1,32 @@
+<style>.pda-body{padding:14px 16px 16px;display:grid;gap:12px}.pda-kb{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-items:start}.pda-col{border:1px solid var(--ink);background:#fff;display:flex;flex-direction:column;gap:6px;padding:6px}.pda-ch{display:flex;align-items:baseline;gap:6px;padding:2px 2px 6px;border-bottom:1px solid var(--line);white-space:nowrap;min-width:0}.pda-ch b{font-size:12px;font-weight:600;overflow:hidden;text-overflow:ellipsis}.pda-ch i{font:500 10.5px var(--mono);font-style:normal;color:var(--ink-2)}.pda-cd{border:1px solid var(--ink);padding:7px 8px;display:grid;gap:3px;background:#fff}.pda-cd b{font-size:12px;font-weight:600}.pda-cd span{display:flex;align-items:center;gap:6px;font:500 10.5px var(--mono);color:var(--ink-2)}.pda-cd small{font-size:11px;color:var(--ink-2);line-height:1.35}.pda-cd.on{background:var(--ink);color:#fff}.pda-cd.on span,.pda-cd.on small{color:#c9c9c9}.pda-cd .av{width:18px;height:18px;font-size:8px;font-style:normal;margin-left:auto;color:var(--ink)}.pda-rev{border:1px solid var(--ink)}.pda-rev .upd{border-bottom:0}.pda-rev .upd .tag{flex:none}@media (max-width:560px){.pda-kb{grid-template-columns:repeat(2,minmax(0,1fr))}.pda-ph-tag .pda-nm{display:none}}</style>
+<div class="app" style="grid-template-columns:minmax(0,1fr);min-height:0;max-width:760px;margin:0 auto" role="img" aria-label="Omniscient's pipeline board after a Pipedrive import. The opportunities sit in the stages brought over from Pipedrive: Qualified with Atlas Cargo at $18,000 and Shiftwise at $24,000; Contact made with Tallyfin at $36,000 and Ledgerly at $12,500; Demo scheduled with Pallet Cloud at $18,000, the open card, and Verda Robotics at $61,000; Proposal made with Harbor and Pine at $126,500. Each card shows its next step and owner. Below the board, a suggested update from a call raises Pallet Cloud's amount from $18,000 to $30,000, waiting to be accepted or skipped">
+  <div class="main">
+    <div class="ph"><b>Opportunities <span>Pipeline</span></b><span style="flex:1"></span><span class="tag t-gray pda-ph-tag"><img class="lg" src="/assets/logos/pipedrive.png" alt="" width="12" height="12"><span class="pda-nm">From Pipedrive</span></span></div>
+    <div class="pda-body">
+      <div class="pda-kb">
+        <div class="pda-col">
+          <div class="pda-ch"><b>Qualified</b><i>2</i></div>
+          <div class="pda-cd"><b>Atlas Cargo</b><span>$18,000<em class="av">JB</em></span><small>Next step: intro call, Nov 6</small></div>
+          <div class="pda-cd"><b>Shiftwise</b><span>$24,000<em class="av">AK</em></span><small>Next step: send the case study</small></div>
+        </div>
+        <div class="pda-col">
+          <div class="pda-ch"><b>Contact made</b><i>2</i></div>
+          <div class="pda-cd"><b>Tallyfin</b><span>$36,000<em class="av">JB</em></span><small>Next step: demo with the ops lead</small></div>
+          <div class="pda-cd"><b>Ledgerly</b><span>$12,500<em class="av">DM</em></span><small>Next step: confirm seat count</small></div>
+        </div>
+        <div class="pda-col">
+          <div class="pda-ch"><b>Demo scheduled</b><i>2</i></div>
+          <div class="pda-cd on"><b>Pallet Cloud</b><span>$18,000<em class="av">AK</em></span><small>Next step: demo with Marcus, Nov 12</small></div>
+          <div class="pda-cd"><b>Verda Robotics</b><span>$61,000<em class="av">DM</em></span><small>Next step: security review</small></div>
+        </div>
+        <div class="pda-col">
+          <div class="pda-ch"><b>Proposal made</b><i>1</i></div>
+          <div class="pda-cd"><b>Harbor &amp; Pine</b><span>$126,500<em class="av">JB</em></span><small>Next step: pricing call, Nov 8</small></div>
+        </div>
+      </div>
+      <div class="pda-rev">
+        <div class="upd"><span class="tag t-blue">Suggested</span><span>Pallet Cloud amount <s>$18,000</s> $30,000, from the Oct 21 call</span><span class="ok"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.6"/></svg></span><span class="no">×</span></div>
+      </div>
+    </div>
+  </div>
+</div>

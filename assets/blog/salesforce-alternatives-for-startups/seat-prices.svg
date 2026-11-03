@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" width="560" height="720" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">First paid seat on each Salesforce alternative, billed yearly</title>
+<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan, from each vendor&#x27;s pricing page on November 3, 2026: Twenty Pro $9, Zoho CRM Standard $14, Omniscient Starter $19, folk Standard $24 and Attio Plus $35. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite, the first edition with forecasting, at $100. Plans include different features. Not shown: HubSpot and Close, whose pricing pages don&#x27;t label which price is yearly, and Pipedrive, whose pricing page didn&#x27;t load for us.</desc>
+<rect width="560" height="720" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="719" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Per seat a month, billed yearly]</text>
+<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">First paid seat <tspan fill="#a3a3a3">next to Salesforce</tspan></text>
+<line x1="200.0" y1="116" x2="200.0" y2="528" stroke="#e5e5e5"/>
+<text x="200.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$0</text>
+<line x1="265.0" y1="116" x2="265.0" y2="528" stroke="#e5e5e5"/>
+<text x="265.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$25</text>
+<line x1="330.0" y1="116" x2="330.0" y2="528" stroke="#e5e5e5"/>
+<text x="330.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$50</text>
+<line x1="395.0" y1="116" x2="395.0" y2="528" stroke="#e5e5e5"/>
+<text x="395.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$75</text>
+<line x1="460.0" y1="116" x2="460.0" y2="528" stroke="#e5e5e5"/>
+<text x="460.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$100</text>
+<text x="24" y="142" font-size="20" font-weight="600" fill="#0a0a0a">Twenty</text>
+<text x="24" y="166" font-size="17" fill="#737373">Pro</text>
+<rect x="200" y="132" width="23.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="233.4" y="152" font-size="19" font-weight="600" fill="#0a0a0a">$9</text>
+<text x="24" y="200" font-size="20" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
+<text x="24" y="224" font-size="17" fill="#737373">Standard</text>
+<rect x="200" y="190" width="36.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="246.4" y="210" font-size="19" font-weight="600" fill="#0a0a0a">$14</text>
+<text x="24" y="258" font-size="20" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<text x="24" y="282" font-size="17" fill="#737373">Starter</text>
+<rect x="200" y="248" width="49.4" height="26" fill="#10b981" stroke="#0a0a0a"/>
+<text x="259.4" y="268" font-size="19" font-weight="600" fill="#0a0a0a">$19</text>
+<text x="24" y="316" font-size="20" font-weight="600" fill="#0a0a0a">folk</text>
+<text x="24" y="340" font-size="17" fill="#737373">Standard</text>
+<rect x="200" y="306" width="62.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="272.4" y="326" font-size="19" font-weight="600" fill="#0a0a0a">$24</text>
+<text x="24" y="374" font-size="20" font-weight="600" fill="#0a0a0a">Salesforce</text>
+<text x="24" y="398" font-size="17" fill="#737373">Starter Suite</text>
+<rect x="200" y="364" width="65.0" height="26" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="275.0" y="384" font-size="19" font-weight="600" fill="#0a0a0a">$25</text>
+<text x="24" y="432" font-size="20" font-weight="600" fill="#0a0a0a">Attio</text>
+<text x="24" y="456" font-size="17" fill="#737373">Plus</text>
+<rect x="200" y="422" width="91.0" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="301.0" y="442" font-size="19" font-weight="600" fill="#0a0a0a">$35</text>
+<text x="24" y="490" font-size="20" font-weight="600" fill="#0a0a0a">Salesforce</text>
+<text x="24" y="514" font-size="17" fill="#737373">Pro Suite</text>
+<rect x="200" y="480" width="260.0" height="26" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="470.0" y="500" font-size="19" font-weight="600" fill="#0a0a0a">$100</text>
+<rect x="24" y="575" width="16" height="16" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="52" y="590" font-size="17" fill="#0a0a0a">Salesforce, for comparison</text>
+<text x="24" y="627" font-size="17" fill="#737373">Not shown: HubSpot and Close, whose pricing pages</text>
+<text x="24" y="652" font-size="17" fill="#737373">don&#x27;t label which price is yearly, and Pipedrive,</text>
+<text x="24" y="677" font-size="17" fill="#737373">whose pricing page didn&#x27;t load for us.</text>
+</svg>

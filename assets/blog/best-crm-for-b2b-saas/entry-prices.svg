@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 680" width="720" height="680" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">First paid plan per seat a month for seven B2B SaaS CRMs</title>
-<desc id="d">The first paid plan for a team, per seat a month, from each vendor&#x27;s pricing page on November 2, 2026. Freshsales Growth $9 billed yearly. Omniscient Starter $19 billed yearly. HubSpot Sales Hub Starter $20 list price. Day AI Turbo $24 per agent billed yearly. Salesforce Starter Suite $25 billed monthly or yearly. Attio Plus $35 billed yearly. Close Essentials $35 billed yearly. HubSpot also shows a $7 price for new customers, and Close Solo costs $9 for one user. Pipedrive is left out because its pricing page blocked our reader.</desc>
+<desc id="d">The first paid plan for a team, per seat a month, from each vendor&#x27;s pricing page in November 2026. Freshsales Growth $9 billed yearly. Omniscient Starter $19 billed yearly. HubSpot Sales Hub Starter $20 list price. Day AI Turbo $24 per agent billed yearly. Salesforce Starter Suite $25 billed monthly or yearly. Attio Plus $35 billed yearly. Close Essentials $35 billed yearly. HubSpot also shows a $7 price for new customers, and Close Solo costs $9 for one user. Pipedrive is left out because its pricing page blocked our reader.</desc>
 <rect width="720" height="680" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="679" fill="none" stroke="#0a0a0a"/>
 <rect x="32" y="35" width="11" height="11" fill="#10b981" stroke="#0a0a0a"/>
@@ -41,7 +41,7 @@
 <rect x="330.5" y="530.5" width="301" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
 <text x="643" y="550" font-size="19" font-weight="600" fill="#0a0a0a">$35</text>
 <line x1="32" x2="688" y1="576" y2="576" stroke="#0a0a0a"/>
-<text x="32" y="610" font-size="16" fill="#737373">From each pricing page, November 2, 2026. HubSpot also shows $7 for new</text>
+<text x="32" y="610" font-size="16" fill="#737373">From each pricing page, November 2026. HubSpot also shows $7 for new</text>
 <text x="32" y="632" font-size="16" fill="#737373">customers, and Close Solo is $9 for one user. Pipedrive is left out because</text>
 <text x="32" y="654" font-size="16" fill="#737373">its pricing page blocked our reader.</text>
 </svg>

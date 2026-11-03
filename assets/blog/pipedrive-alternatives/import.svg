@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 760" width="560" height="760" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What comes over when you import Pipedrive into Omniscient</title>
+<desc id="d">How Omniscient's importer maps Pipedrive records. Organizations become companies, each taking its website from its people's work email. Persons become people, matched by email so nobody is added twice. Pipelines become pipelines, keeping each stage's win probability and adding Won and Lost stages when missing. Deals become opportunities, and won and lost deals keep their status. Notes stay linked to the same company, person or deal. People without an email are skipped, and activities, leads, products and custom fields stay behind, so export them first.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#0a0a0a"/></marker></defs>
+<rect width="560" height="760" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="759" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Pipedrive to Omniscient]</text>
+<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">What comes over <tspan fill="#a3a3a3">in the import</tspan></text>
+<text x="24" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Pipedrive</text>
+<text x="250" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">Omniscient</text>
+
+<rect x="24" y="142" width="170" height="50" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="109" y="174" text-anchor="middle" font-size="19" font-weight="600" fill="#0a0a0a">Organizations</text>
+<line x1="194" y1="167" x2="246" y2="167" stroke="#0a0a0a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="250" y="142" width="286" height="50" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="266" y="174" font-size="19" font-weight="600" fill="#0a0a0a">Companies</text>
+<text x="250" y="220" font-size="17" fill="#737373">Website from people's work email</text>
+
+<rect x="24" y="244" width="170" height="50" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="109" y="276" text-anchor="middle" font-size="19" font-weight="600" fill="#0a0a0a">Persons</text>
+<line x1="194" y1="269" x2="246" y2="269" stroke="#0a0a0a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="250" y="244" width="286" height="50" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="266" y="276" font-size="19" font-weight="600" fill="#0a0a0a">People</text>
+<text x="250" y="322" font-size="17" fill="#737373">Matched by email, no duplicates</text>
+
+<rect x="24" y="346" width="170" height="50" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="109" y="378" text-anchor="middle" font-size="19" font-weight="600" fill="#0a0a0a">Pipelines</text>
+<line x1="194" y1="371" x2="246" y2="371" stroke="#0a0a0a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="250" y="346" width="286" height="50" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="266" y="378" font-size="19" font-weight="600" fill="#0a0a0a">Pipelines and stages</text>
+<text x="250" y="424" font-size="17" fill="#737373">Win odds kept, plus Won and Lost</text>
+
+<rect x="24" y="448" width="170" height="50" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="109" y="480" text-anchor="middle" font-size="19" font-weight="600" fill="#0a0a0a">Deals</text>
+<line x1="194" y1="473" x2="246" y2="473" stroke="#0a0a0a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="250" y="448" width="286" height="50" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="266" y="480" font-size="19" font-weight="600" fill="#ffffff">Opportunities</text>
+<text x="250" y="526" font-size="17" fill="#737373">Won and lost keep their status</text>
+
+<rect x="24" y="550" width="170" height="50" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="109" y="582" text-anchor="middle" font-size="19" font-weight="600" fill="#0a0a0a">Notes</text>
+<line x1="194" y1="575" x2="246" y2="575" stroke="#0a0a0a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="250" y="550" width="286" height="50" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="266" y="582" font-size="19" font-weight="600" fill="#0a0a0a">Notes</text>
+<text x="250" y="628" font-size="17" fill="#737373">Linked to the same records</text>
+
+<line x1="24" y1="656" x2="536" y2="656" stroke="#e5e5e5"/>
+<rect x="24" y="676" width="20" height="20" fill="#10b981" stroke="#0a0a0a"/>
+<text x="56" y="693" font-size="18" fill="#0a0a0a">People without an email are skipped.</text>
+<text x="56" y="721" font-size="18" fill="#0a0a0a">Activities, leads, products and custom</text>
+<text x="56" y="745" font-size="18" fill="#0a0a0a">fields stay behind, so export them first.</text>
+</svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 882" width="720" height="882" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Four kinds of CRM with LinkedIn integration</title>
-<desc id="d">A LinkedIn profile inside the record, which puts a Sales Navigator card on records and needs Sales Navigator Advanced Plus: Zoho CRM, Dynamics 365 and HubSpot. Sales Navigator CRM Sync, which syncs records and activity and needs Advanced Plus: HubSpot, Salesforce, Dynamics 365 and Oracle Sales. A browser extension that saves LinkedIn profiles and works with any LinkedIn account: folk, and apps for Pipedrive and Attio. A connected LinkedIn account, where conversations reach records and any LinkedIn account works: Omniscient, Breakcold and NetHunt CRM.</desc>
+<desc id="d">A LinkedIn profile inside the record, which puts a Sales Navigator card on records and needs Sales Navigator Advanced Plus: Zoho CRM, Dynamics 365, HubSpot and Salesforce. Sales Navigator CRM Sync, which syncs records and activity and needs Advanced Plus: HubSpot, Salesforce, Dynamics 365 and Oracle Sales. A browser extension that saves LinkedIn profiles and works with any LinkedIn account: folk, and apps for Pipedrive and Attio. A connected LinkedIn account, where conversations reach records and any LinkedIn account works: Omniscient, Breakcold and NetHunt CRM.</desc>
 <rect width="720" height="882" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="881" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Four kinds]</text>
@@ -10,12 +10,14 @@
 <text x="50" y="168" font-size="23" font-weight="600" fill="#0a0a0a">Profile inside the record</text>
 <text x="50" y="200" font-size="20" fill="#737373">A LinkedIn card on records</text>
 <text x="50" y="256" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Needs Advanced Plus]</text>
-<rect x="402.5" y="154.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="170.0" font-size="22" fill="#0a0a0a">Zoho CRM</text>
-<rect x="402.5" y="194.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="210.0" font-size="22" fill="#0a0a0a">Dynamics 365</text>
-<rect x="402.5" y="234.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="250.0" font-size="22" fill="#0a0a0a">HubSpot</text>
+<rect x="402.5" y="143.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="159.0" font-size="22" fill="#0a0a0a">Zoho CRM</text>
+<rect x="402.5" y="177.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="193.0" font-size="22" fill="#0a0a0a">Dynamics 365</text>
+<rect x="402.5" y="211.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="227.0" font-size="22" fill="#0a0a0a">HubSpot</text>
+<rect x="402.5" y="245.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="261.0" font-size="22" fill="#0a0a0a">Salesforce</text>
 <rect x="32.5" y="296.5" width="350" height="158" fill="#f5f5f5" stroke="#0a0a0a"/>
 <rect x="382.5" y="296.5" width="305" height="158" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="50" y="340" font-size="23" font-weight="600" fill="#0a0a0a">Sales Navigator CRM Sync</text>
