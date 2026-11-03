@@ -2,39 +2,38 @@
 <title id="t">Startup discounts step down each year</title>
 <desc id="d">HubSpot for Startups takes 90% off in year one, 50% in year two and 25% in year three, then list price from year four, for startups that have raised up to a Series A and commit to a year. Attio for Startups takes 80% off the yearly Pro plan and credits in year one and 30% in year two, then list price from year three, for workspaces of up to 10 seats. HubSpot's discount typically runs two years, so ask whether year three applies to you.</desc>
 <rect width="720" height="690" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="689" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Startup discounts]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Discounts step down <tspan fill="#a3a3a3">each year</tspan></text>
-<text x="32" y="144" font-size="22" font-weight="600" fill="#0a0a0a">HubSpot for Startups</text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Startup discounts</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Discounts step down <tspan fill="#171717">each year</tspan></text>
+<text x="32" y="144" font-size="22" font-weight="500" fill="#171717">HubSpot for Startups</text>
 <text x="32" y="172" font-size="19" fill="#737373">Raised up to a Series A, with a yearly commitment</text>
-<g font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#0a0a0a">
+<g font-family="Inter, system-ui, sans-serif" font-size="18" fill="#171717">
 <text x="32" y="215">Year 1</text>
 <text x="32" y="259">Year 2</text>
 <text x="32" y="303">Year 3</text>
 <text x="32" y="347">Year 4</text>
 </g>
-<rect x="128.5" y="192.5" width="450" height="31" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="128.5" y="236.5" width="250" height="31" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="128.5" y="280.5" width="125" height="31" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="128.5" y="324.5" width="2" height="31" fill="#0a0a0a"/>
-<g font-size="19" font-weight="600" fill="#0a0a0a">
+<rect x="128.5" y="192.5" width="450" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="236.5" width="250" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="280.5" width="125" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="324.5" width="2" height="31" fill="#333333" rx="1"/>
+<g font-size="19" font-weight="600" fill="#171717">
 <text x="592" y="215">90% off</text>
 <text x="392" y="259">50% off</text>
 <text x="267" y="303">25% off</text>
 </g>
 <text x="144" y="347" font-size="19" fill="#737373">List price</text>
-<line x1="32" y1="388.5" x2="688" y2="388.5" stroke="#e5e5e5"/>
-<text x="32" y="434" font-size="22" font-weight="600" fill="#0a0a0a">Attio for Startups</text>
+<line x1="32" y1="388.5" x2="688" y2="388.5" stroke="#ebebeb"/>
+<text x="32" y="434" font-size="22" font-weight="500" fill="#171717">Attio for Startups</text>
 <text x="32" y="462" font-size="19" fill="#737373">Yearly Pro plan and credits, workspaces up to 10 seats</text>
-<g font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#0a0a0a">
+<g font-family="Inter, system-ui, sans-serif" font-size="18" fill="#171717">
 <text x="32" y="505">Year 1</text>
 <text x="32" y="549">Year 2</text>
 <text x="32" y="593">Year 3</text>
 </g>
-<rect x="128.5" y="482.5" width="400" height="31" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="128.5" y="526.5" width="150" height="31" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="128.5" y="570.5" width="2" height="31" fill="#0a0a0a"/>
-<g font-size="19" font-weight="600" fill="#0a0a0a">
+<rect x="128.5" y="482.5" width="400" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="526.5" width="150" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="570.5" width="2" height="31" fill="#333333" rx="1"/>
+<g font-size="19" font-weight="600" fill="#171717">
 <text x="542" y="505">80% off</text>
 <text x="292" y="549">30% off</text>
 </g>

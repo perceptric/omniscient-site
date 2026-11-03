@@ -2,39 +2,38 @@
 <title id="t">Which Sales Navigator plan connects to a CRM</title>
 <desc id="d">Sales Navigator Core costs US$119.99 a month or US$1,079.88 a year per license and has no CRM sync; it gives one seller search and alerts. Advanced costs US$159.99 a month or US$1,799.88 a year per license and has no CRM sync; it adds shared lists, Buyer Intent and Smart Links. Advanced Plus is priced by LinkedIn's sales team and includes CRM sync with HubSpot, Microsoft Dynamics 365, Oracle Sales and Salesforce, logging InMails, messages and notes back to the CRM. Prices from LinkedIn's compare plans page, read in November 2026, which calls them estimates that may exclude VAT or GST.</desc>
 <rect width="720" height="718" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="717" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Sales Navigator plans]</text>
-<text x="32" y="86" font-size="30" font-weight="600" fill="#0a0a0a">Only Advanced Plus <tspan fill="#a3a3a3">syncs a CRM</tspan></text>
+<text x="32" y="46" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Sales Navigator plans</text>
+<text x="32" y="86" font-size="30" font-weight="500" fill="#171717">Only Advanced Plus <tspan fill="#171717">syncs a CRM</tspan></text>
 
-<rect x="32.5" y="118.5" width="300" height="150" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="118.5" width="355" height="150" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="162" font-size="24" font-weight="600" fill="#0a0a0a">Core</text>
-<text x="50" y="200" font-size="21" fill="#0a0a0a">US$119.99 a month</text>
+<rect x="32.5" y="118.5" width="300" height="150" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="118.5" width="355" height="150" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="162" font-size="24" font-weight="500" fill="#171717">Core</text>
+<text x="50" y="200" font-size="21" fill="#171717">US$119.99 a month</text>
 <text x="50" y="226" font-size="21" fill="#737373">or US$1,079.88 a year</text>
-<rect x="352.5" y="147.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="378" y="162" font-size="22" font-weight="600" fill="#0a0a0a">No CRM sync</text>
-<text x="352" y="200" font-size="21" fill="#0a0a0a">Search and alerts for</text>
-<text x="352" y="226" font-size="21" fill="#0a0a0a">one seller</text>
+<rect x="352.5" y="147.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="378" y="162" font-size="22" font-weight="500" fill="#171717">No CRM sync</text>
+<text x="352" y="200" font-size="21" fill="#171717">Search and alerts for</text>
+<text x="352" y="226" font-size="21" fill="#171717">one seller</text>
 
-<rect x="32.5" y="282.5" width="300" height="150" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="282.5" width="355" height="150" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="326" font-size="24" font-weight="600" fill="#0a0a0a">Advanced</text>
-<text x="50" y="364" font-size="21" fill="#0a0a0a">US$159.99 a month</text>
+<rect x="32.5" y="282.5" width="300" height="150" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="282.5" width="355" height="150" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="326" font-size="24" font-weight="500" fill="#171717">Advanced</text>
+<text x="50" y="364" font-size="21" fill="#171717">US$159.99 a month</text>
 <text x="50" y="390" font-size="21" fill="#737373">or US$1,799.88 a year</text>
-<rect x="352.5" y="311.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="378" y="326" font-size="22" font-weight="600" fill="#0a0a0a">No CRM sync</text>
-<text x="352" y="364" font-size="21" fill="#0a0a0a">Adds shared lists, Buyer</text>
-<text x="352" y="390" font-size="21" fill="#0a0a0a">Intent and Smart Links</text>
+<rect x="352.5" y="311.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="378" y="326" font-size="22" font-weight="500" fill="#171717">No CRM sync</text>
+<text x="352" y="364" font-size="21" fill="#171717">Adds shared lists, Buyer</text>
+<text x="352" y="390" font-size="21" fill="#171717">Intent and Smart Links</text>
 
-<rect x="32.5" y="446.5" width="300" height="176" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="332.5" y="446.5" width="355" height="176" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="490" font-size="24" font-weight="600" fill="#0a0a0a">Advanced Plus</text>
-<text x="50" y="528" font-size="21" fill="#0a0a0a">Priced by LinkedIn's</text>
+<rect x="32.5" y="446.5" width="300" height="176" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="332.5" y="446.5" width="355" height="176" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="490" font-size="24" font-weight="500" fill="#171717">Advanced Plus</text>
+<text x="50" y="528" font-size="21" fill="#171717">Priced by LinkedIn's</text>
 <text x="50" y="554" font-size="21" fill="#737373">sales team</text>
-<rect x="352.5" y="475.5" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="378" y="490" font-size="22" font-weight="600" fill="#0a0a0a">CRM sync</text>
-<text x="352" y="528" font-size="21" fill="#0a0a0a">HubSpot, Dynamics 365,</text>
-<text x="352" y="554" font-size="21" fill="#0a0a0a">Oracle Sales, Salesforce</text>
+<rect x="352.5" y="475.5" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="378" y="490" font-size="22" font-weight="500" fill="#171717">CRM sync</text>
+<text x="352" y="528" font-size="21" fill="#171717">HubSpot, Dynamics 365,</text>
+<text x="352" y="554" font-size="21" fill="#171717">Oracle Sales, Salesforce</text>
 <text x="352" y="596" font-size="21" fill="#737373">Logs InMails, messages, notes</text>
 
 <text x="32" y="664" font-size="20" fill="#737373">Per license, LinkedIn's estimates, may exclude VAT or GST.</text>

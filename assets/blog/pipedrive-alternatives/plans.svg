@@ -2,42 +2,41 @@
 <title id="t">What each Pipedrive plan adds</title>
 <desc id="d">Pipedrive's four plans and what each one adds, from Pipedrive's help center, updated September 2026. Lite: 2,500 leads and deals per user, with LeadBooster at extra cost. Growth: sequences and the forecast view, 5,000 leads and deals per user, up to 50 reports. Premium: LeadBooster and the team inbox included, up to 25 sequences, 15,000 leads and deals for the whole company. Ultimate: up to 500 custom fields and 500 reports per user. LinkedIn isn't part of any plan; Marketplace apps such as LinkMatch add it. Prices are on Pipedrive's pricing page.</desc>
 <rect width="560" height="700" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="699" fill="none" stroke="#0a0a0a"/>
-<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Pipedrive help center, Sept 2026]</text>
-<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">What each plan adds <tspan fill="#a3a3a3">on Pipedrive</tspan></text>
+<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Pipedrive help center, Sept 2026</text>
+<text x="24" y="84" font-size="26" font-weight="500" fill="#171717">What each plan adds <tspan fill="#171717">on Pipedrive</tspan></text>
 
-<rect x="24" y="112" width="512" height="96" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="112" width="140" height="96" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="94" y="158" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">Lite</text>
-<text x="94" y="184" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">plan 1</text>
-<text x="184" y="150" font-size="19" fill="#0a0a0a">2,500 leads and deals per user</text>
+<rect x="24" y="112" width="512" height="96" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="112" width="140" height="96" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="94" y="158" text-anchor="middle" font-size="22" font-weight="500" fill="#171717">Lite</text>
+<text x="94" y="184" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">plan 1</text>
+<text x="184" y="150" font-size="19" fill="#171717">2,500 leads and deals per user</text>
 <text x="184" y="180" font-size="19" fill="#737373">LeadBooster at extra cost</text>
 
-<rect x="24" y="208" width="512" height="124" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="208" width="140" height="124" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="94" y="268" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">Growth</text>
-<text x="94" y="294" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">plan 2</text>
-<text x="184" y="246" font-size="19" fill="#0a0a0a">Sequences and forecast view</text>
-<text x="184" y="276" font-size="19" fill="#0a0a0a">5,000 leads and deals per user</text>
+<rect x="24" y="208" width="512" height="124" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="208" width="140" height="124" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="94" y="268" text-anchor="middle" font-size="22" font-weight="500" fill="#171717">Growth</text>
+<text x="94" y="294" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">plan 2</text>
+<text x="184" y="246" font-size="19" fill="#171717">Sequences and forecast view</text>
+<text x="184" y="276" font-size="19" fill="#171717">5,000 leads and deals per user</text>
 <text x="184" y="306" font-size="19" fill="#737373">Up to 50 reports</text>
 
-<rect x="24" y="332" width="512" height="124" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="332" width="140" height="124" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="94" y="392" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">Premium</text>
-<text x="94" y="418" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">plan 3</text>
-<text x="184" y="370" font-size="19" fill="#0a0a0a">LeadBooster and team inbox</text>
-<text x="184" y="400" font-size="19" fill="#0a0a0a">Up to 25 sequences</text>
+<rect x="24" y="332" width="512" height="124" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="332" width="140" height="124" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="94" y="392" text-anchor="middle" font-size="22" font-weight="500" fill="#171717">Premium</text>
+<text x="94" y="418" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">plan 3</text>
+<text x="184" y="370" font-size="19" fill="#171717">LeadBooster and team inbox</text>
+<text x="184" y="400" font-size="19" fill="#171717">Up to 25 sequences</text>
 <text x="184" y="430" font-size="19" fill="#737373">15,000 leads and deals in total</text>
 
-<rect x="24" y="456" width="512" height="96" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="24" y="456" width="140" height="96" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="94" y="502" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">Ultimate</text>
-<text x="94" y="528" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">plan 4</text>
-<text x="184" y="494" font-size="19" fill="#0a0a0a">Up to 500 custom fields</text>
+<rect x="24" y="456" width="512" height="96" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="456" width="140" height="96" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="94" y="502" text-anchor="middle" font-size="22" font-weight="500" fill="#171717">Ultimate</text>
+<text x="94" y="528" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">plan 4</text>
+<text x="184" y="494" font-size="19" fill="#171717">Up to 500 custom fields</text>
 <text x="184" y="524" font-size="19" fill="#737373">500 reports per user</text>
 
-<rect x="24" y="582" width="20" height="20" fill="#10b981" stroke="#0a0a0a"/>
-<text x="56" y="599" font-size="19" fill="#0a0a0a">LinkedIn isn't part of any plan. Marketplace</text>
-<text x="56" y="627" font-size="19" fill="#0a0a0a">apps such as LinkMatch add it.</text>
+<rect x="24" y="582" width="20" height="20" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<text x="56" y="599" font-size="19" fill="#171717">LinkedIn isn't part of any plan. Marketplace</text>
+<text x="56" y="627" font-size="19" fill="#171717">apps such as LinkMatch add it.</text>
 <text x="56" y="668" font-size="17" fill="#737373">Prices: see pipedrive.com/en/pricing</text>
 </svg>

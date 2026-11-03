@@ -2,55 +2,54 @@
 <title id="t">Where LinkedIn automation tools run</title>
 <desc id="d">Three kinds of LinkedIn automation tool. Cloud tools send from the vendor's servers while your laptop is closed: Omniscient, HeyReach, Expandi, Waalaxy, Dripify, La Growth Machine, Skylead, GetSales.io, SalesRobot, Meet Alfred and the Dux-Soup cloud plan. Desktop apps send only while that computer is on: Linked Helper and the Dux-Soup local plan. Browser extensions work through your own browser session: lemlist, whose help center says its Chrome extension is required for LinkedIn automation. LinkedIn bans bots in all three.</desc>
 <rect width="720" height="712" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="711" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="50" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Where it runs]</text>
-<text x="32" y="92" font-size="30" font-weight="600" fill="#0a0a0a">Where each tool runs <tspan fill="#a3a3a3">and when it sends</tspan></text>
-<rect x="32.5" y="120.5" width="230" height="206" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="262.5" y="120.5" width="425" height="206" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="160" font-size="22" font-weight="600" fill="#0a0a0a">Cloud</text>
-<text x="50" y="186" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">[Vendor&#39;s servers]</text>
-<text x="50" y="224" font-size="19" fill="#0a0a0a">Sends with your</text>
-<text x="50" y="248" font-size="19" fill="#0a0a0a">laptop closed</text>
-<rect x="284.5" y="151.5" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
-<text x="308" y="164" font-size="19" fill="#0a0a0a">Omniscient</text>
-<rect x="284.5" y="181.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="194" font-size="19" fill="#0a0a0a">HeyReach</text>
-<rect x="284.5" y="211.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="224" font-size="19" fill="#0a0a0a">Expandi</text>
-<rect x="284.5" y="241.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="254" font-size="19" fill="#0a0a0a">Waalaxy</text>
-<rect x="284.5" y="271.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="284" font-size="19" fill="#0a0a0a">Dripify</text>
-<rect x="284.5" y="301.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="314" font-size="19" fill="#0a0a0a">La Growth Machine</text>
-<rect x="480.5" y="151.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="504" y="164" font-size="19" fill="#0a0a0a">Skylead</text>
-<rect x="480.5" y="181.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="504" y="194" font-size="19" fill="#0a0a0a">GetSales.io</text>
-<rect x="480.5" y="211.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="504" y="224" font-size="19" fill="#0a0a0a">SalesRobot</text>
-<rect x="480.5" y="241.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="504" y="254" font-size="19" fill="#0a0a0a">Meet Alfred</text>
-<rect x="480.5" y="271.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="504" y="284" font-size="19" fill="#0a0a0a">Dux-Soup cloud</text>
-<rect x="32.5" y="342.5" width="230" height="146" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="262.5" y="342.5" width="425" height="146" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="382" font-size="22" font-weight="600" fill="#0a0a0a">Desktop app</text>
-<text x="50" y="408" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">[Your computer]</text>
-<text x="50" y="446" font-size="19" fill="#0a0a0a">Sends while that</text>
-<text x="50" y="470" font-size="19" fill="#0a0a0a">machine is on</text>
-<rect x="284.5" y="372.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="385" font-size="19" fill="#0a0a0a">Linked Helper</text>
-<rect x="284.5" y="402.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="415" font-size="19" fill="#0a0a0a">Dux-Soup local</text>
-<rect x="32.5" y="504.5" width="230" height="146" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="262.5" y="504.5" width="425" height="146" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="544" font-size="22" font-weight="600" fill="#0a0a0a">Browser extension</text>
-<text x="50" y="570" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">[Your browser]</text>
-<text x="50" y="608" font-size="19" fill="#0a0a0a">Works through your</text>
-<text x="50" y="632" font-size="19" fill="#0a0a0a">browser session</text>
-<rect x="284.5" y="534.5" width="12" height="12" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="308" y="547" font-size="19" fill="#0a0a0a">lemlist</text>
+<text x="32" y="50" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Where it runs</text>
+<text x="32" y="92" font-size="30" font-weight="500" fill="#171717">Where each tool runs <tspan fill="#171717">and when it sends</tspan></text>
+<rect x="32.5" y="120.5" width="230" height="206" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="262.5" y="120.5" width="425" height="206" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="160" font-size="22" font-weight="500" fill="#171717">Cloud</text>
+<text x="50" y="186" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Vendor&#39;s servers</text>
+<text x="50" y="224" font-size="19" fill="#171717">Sends with your</text>
+<text x="50" y="248" font-size="19" fill="#171717">laptop closed</text>
+<rect x="284.5" y="151.5" width="12" height="12" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="308" y="164" font-size="19" fill="#171717">Omniscient</text>
+<rect x="284.5" y="181.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="194" font-size="19" fill="#171717">HeyReach</text>
+<rect x="284.5" y="211.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="224" font-size="19" fill="#171717">Expandi</text>
+<rect x="284.5" y="241.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="254" font-size="19" fill="#171717">Waalaxy</text>
+<rect x="284.5" y="271.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="284" font-size="19" fill="#171717">Dripify</text>
+<rect x="284.5" y="301.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="314" font-size="19" fill="#171717">La Growth Machine</text>
+<rect x="480.5" y="151.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="504" y="164" font-size="19" fill="#171717">Skylead</text>
+<rect x="480.5" y="181.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="504" y="194" font-size="19" fill="#171717">GetSales.io</text>
+<rect x="480.5" y="211.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="504" y="224" font-size="19" fill="#171717">SalesRobot</text>
+<rect x="480.5" y="241.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="504" y="254" font-size="19" fill="#171717">Meet Alfred</text>
+<rect x="480.5" y="271.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="504" y="284" font-size="19" fill="#171717">Dux-Soup cloud</text>
+<rect x="32.5" y="342.5" width="230" height="146" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="262.5" y="342.5" width="425" height="146" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="382" font-size="22" font-weight="500" fill="#171717">Desktop app</text>
+<text x="50" y="408" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Your computer</text>
+<text x="50" y="446" font-size="19" fill="#171717">Sends while that</text>
+<text x="50" y="470" font-size="19" fill="#171717">machine is on</text>
+<rect x="284.5" y="372.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="385" font-size="19" fill="#171717">Linked Helper</text>
+<rect x="284.5" y="402.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="415" font-size="19" fill="#171717">Dux-Soup local</text>
+<rect x="32.5" y="504.5" width="230" height="146" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="262.5" y="504.5" width="425" height="146" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="544" font-size="22" font-weight="500" fill="#171717">Browser extension</text>
+<text x="50" y="570" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Your browser</text>
+<text x="50" y="608" font-size="19" fill="#171717">Works through your</text>
+<text x="50" y="632" font-size="19" fill="#171717">browser session</text>
+<rect x="284.5" y="534.5" width="12" height="12" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="308" y="547" font-size="19" fill="#171717">lemlist</text>
 <text x="284" y="588" font-size="18" fill="#737373">Its help center says the Chrome extension</text>
 <text x="284" y="614" font-size="18" fill="#737373">is required for LinkedIn steps</text>
 <text x="32" y="682" font-size="18" fill="#737373">LinkedIn bans bots in all three, so pacing matters everywhere.</text>

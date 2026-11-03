@@ -2,44 +2,43 @@
 <title id="t">Where B2B SaaS deals start and which CRMs to look at for each</title>
 <desc id="d">Five ways B2B SaaS deals start, what the CRM has to do for each, and where to look first. Inbound demo requests: route each form to a rep fast; look at HubSpot, Omniscient or Salesforce. Outbound to your ICP: find accounts and log every touch; look at Omniscient, Close or Freshsales. Deals with several buyers: every buyer on one deal, with call notes; look at Salesforce, HubSpot or Omniscient. Product led signups: product usage on the account; look at Attio, Twenty or HubSpot. Renewals and expansion: renewal dates, MRR and ARR; look at Pipedrive, Attio or Salesforce.</desc>
 <rect width="720" height="739" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="738" fill="none" stroke="#0a0a0a"/>
-<rect x="32" y="35" width="11" height="11" fill="#10b981" stroke="#0a0a0a"/>
-<text x="52" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Sales motions]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Start from your <tspan fill="#a3a3a3">sales motion</tspan></text>
-<rect x="32.5" y="124.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="124.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="152" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">01</text>
-<text x="48" y="180" font-size="21" font-weight="600" fill="#0a0a0a">Inbound demo</text>
-<text x="48" y="206" font-size="21" font-weight="600" fill="#0a0a0a">requests</text>
-<text x="248" y="164" font-size="21" font-weight="600" fill="#0a0a0a">Route each form to a rep fast</text>
+<rect x="32" y="35" width="11" height="11" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="52" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Sales motions</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Start from your <tspan fill="#171717">sales motion</tspan></text>
+<rect x="32.5" y="124.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="124.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="152" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">01</text>
+<text x="48" y="180" font-size="21" font-weight="500" fill="#171717">Inbound demo</text>
+<text x="48" y="206" font-size="21" font-weight="500" fill="#171717">requests</text>
+<text x="248" y="164" font-size="21" font-weight="500" fill="#171717">Route each form to a rep fast</text>
 <text x="248" y="196" font-size="19" fill="#737373">HubSpot, Omniscient, Salesforce</text>
-<rect x="32.5" y="235.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="235.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="263" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">02</text>
-<text x="48" y="291" font-size="21" font-weight="600" fill="#0a0a0a">Outbound to</text>
-<text x="48" y="317" font-size="21" font-weight="600" fill="#0a0a0a">your ICP</text>
-<text x="248" y="275" font-size="21" font-weight="600" fill="#0a0a0a">Find accounts and log every touch</text>
+<rect x="32.5" y="235.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="235.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="263" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">02</text>
+<text x="48" y="291" font-size="21" font-weight="500" fill="#171717">Outbound to</text>
+<text x="48" y="317" font-size="21" font-weight="500" fill="#171717">your ICP</text>
+<text x="248" y="275" font-size="21" font-weight="500" fill="#171717">Find accounts and log every touch</text>
 <text x="248" y="307" font-size="19" fill="#737373">Omniscient, Close, Freshsales</text>
-<rect x="32.5" y="346.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="346.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="374" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">03</text>
-<text x="48" y="402" font-size="21" font-weight="600" fill="#0a0a0a">Deals with</text>
-<text x="48" y="428" font-size="21" font-weight="600" fill="#0a0a0a">several buyers</text>
-<text x="248" y="386" font-size="21" font-weight="600" fill="#0a0a0a">Buyers on one deal, with call notes</text>
+<rect x="32.5" y="346.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="346.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="374" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">03</text>
+<text x="48" y="402" font-size="21" font-weight="500" fill="#171717">Deals with</text>
+<text x="48" y="428" font-size="21" font-weight="500" fill="#171717">several buyers</text>
+<text x="248" y="386" font-size="21" font-weight="500" fill="#171717">Buyers on one deal, with call notes</text>
 <text x="248" y="418" font-size="19" fill="#737373">Salesforce, HubSpot, Omniscient</text>
-<rect x="32.5" y="457.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="457.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="485" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">04</text>
-<text x="48" y="513" font-size="21" font-weight="600" fill="#0a0a0a">Product led</text>
-<text x="48" y="539" font-size="21" font-weight="600" fill="#0a0a0a">signups</text>
-<text x="248" y="497" font-size="21" font-weight="600" fill="#0a0a0a">Product usage on the account</text>
+<rect x="32.5" y="457.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="457.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="485" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">04</text>
+<text x="48" y="513" font-size="21" font-weight="500" fill="#171717">Product led</text>
+<text x="48" y="539" font-size="21" font-weight="500" fill="#171717">signups</text>
+<text x="248" y="497" font-size="21" font-weight="500" fill="#171717">Product usage on the account</text>
 <text x="248" y="529" font-size="19" fill="#737373">Attio, Twenty, HubSpot</text>
-<rect x="32.5" y="568.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="231.5" y="568.5" width="456" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="596" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#0a0a0a">05</text>
-<text x="48" y="624" font-size="21" font-weight="600" fill="#0a0a0a">Renewals and</text>
-<text x="48" y="650" font-size="21" font-weight="600" fill="#0a0a0a">expansion</text>
-<text x="248" y="608" font-size="21" font-weight="600" fill="#0a0a0a">Renewal dates, MRR and ARR</text>
+<rect x="32.5" y="568.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="231.5" y="568.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="596" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">05</text>
+<text x="48" y="624" font-size="21" font-weight="500" fill="#171717">Renewals and</text>
+<text x="48" y="650" font-size="21" font-weight="500" fill="#171717">expansion</text>
+<text x="248" y="608" font-size="21" font-weight="500" fill="#171717">Renewal dates, MRR and ARR</text>
 <text x="248" y="640" font-size="19" fill="#737373">Pipedrive, Attio, Salesforce</text>
 <text x="32" y="709" font-size="18" fill="#737373">Our picks, from each vendor&#x27;s own site, November 2026.</text>
 </svg>

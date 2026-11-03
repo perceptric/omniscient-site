@@ -1,4 +1,4 @@
-<style>.lap-plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px}.lap-plan{display:flex;flex-direction:column;border:1px solid var(--line);padding:14px}.lap-plan.on{border-color:var(--ink)}.lap-plan ul{list-style:none;margin:12px 0 0;padding:0;display:grid;align-content:start;gap:7px;flex:1}.lap-plan li{display:flex;align-items:flex-start;gap:7px;font-size:12px}.lap-plan li svg{flex:none;margin-top:2px}.lap-fig{font:600 20px/1.1 "Inter Tight","Inter",sans-serif;letter-spacing:-.02em;margin-top:6px}.lap-fig span{font:400 11.5px "Inter",sans-serif;letter-spacing:0;color:var(--ink-2)}.lap-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line)}.lap-row>span:first-child{width:96px;flex:none;color:var(--ink-2)}</style>
+<style>.lap-plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px}.lap-plan{display:flex;flex-direction:column;border:1px solid var(--line);padding:14px;border-radius:10px;overflow:hidden}.lap-plan.on{border-color:var(--signal)}.lap-plan ul{list-style:none;margin:12px 0 0;padding:0;display:grid;align-content:start;gap:7px;flex:1}.lap-plan li{display:flex;align-items:flex-start;gap:7px;font-size:12px}.lap-plan li svg{flex:none;margin-top:2px}.lap-fig{font:600 20px/1.1 "Inter Tight","Inter",sans-serif;letter-spacing:-.02em;margin-top:6px}.lap-fig span{font:400 11.5px "Inter",sans-serif;letter-spacing:0;color:var(--ink-2)}.lap-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line)}.lap-row>span:first-child{width:96px;flex:none;color:var(--ink-2)}</style>
 <div class="app" style="grid-template-columns:minmax(0,1fr);min-height:0" role="img" aria-label="Omniscient's Billing settings during the free trial: the Pro plan with 9 days left, 3 seller seats and 2 free seats, and the yearly plan cards for Starter at $19, Pro at $49 and Business at $99 per seat a month">
   <div class="main">
     <div class="ph"><b>Billing <span>Your plan and seats</span></b></div>
@@ -7,16 +7,16 @@
     <div style="padding:14px 16px 18px">
       <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
         <span class="mono" style="color:var(--ink-2);font-size:11px">[Choose a plan]</span>
-        <span style="display:inline-flex;border:1px solid var(--ink)"><span style="padding:4px 10px;font-size:12px;background:var(--ink);color:#fff">Yearly</span><span style="padding:4px 10px;font-size:12px;border-left:1px solid var(--ink)">Monthly</span></span>
+        <span style="display:inline-flex;border:1px solid var(--frame);border-radius:10px;overflow:hidden"><span style="padding:4px 10px;font-size:12px;background:var(--solid);color:#fff">Yearly</span><span style="padding:4px 10px;font-size:12px;border-left:1px solid var(--frame)">Monthly</span></span>
       </div>
       <div class="lap-plans">
         <div class="lap-plan">
           <b style="font-weight:600;font-size:13.5px">Starter</b>
           <div class="lap-fig">$19 <span>/ seat / month</span></div>
           <ul>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Meeting notes and drafts</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Ask Omniscient</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>2 agents</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Meeting notes and drafts</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Ask Omniscient</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>2 agents</li>
           </ul>
           <span class="ui-btn" style="justify-content:center;margin-top:14px">Choose Starter</span>
         </div>
@@ -24,11 +24,11 @@
           <b style="font-weight:600;font-size:13.5px">Pro</b>
           <div class="lap-fig">$49 <span>/ seat / month</span></div>
           <ul>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Pipeline board and forecast</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Fields filled by rules</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Prep briefs and field packs</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>5 agents</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free teammate seats</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Pipeline board and forecast</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Fields filled by rules</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Prep briefs and field packs</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>5 agents</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free teammate seats</li>
           </ul>
           <span class="ui-btn pri" style="justify-content:center;margin-top:14px">Choose Pro</span>
         </div>
@@ -36,10 +36,10 @@
           <b style="font-weight:600;font-size:13.5px">Business</b>
           <div class="lap-fig">$99 <span>/ seat / month</span></div>
           <ul>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Manager mode and coaching</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>MEDDIC from every call</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>15 agents</li>
-            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Admin controls</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Manager mode and coaching</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>MEDDIC from every call</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>15 agents</li>
+            <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2.5" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Admin controls</li>
           </ul>
           <span class="ui-btn" style="justify-content:center;margin-top:14px">Choose Business</span>
         </div>

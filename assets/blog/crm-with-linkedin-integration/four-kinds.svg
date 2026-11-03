@@ -2,62 +2,61 @@
 <title id="t">Four kinds of CRM with LinkedIn integration</title>
 <desc id="d">A LinkedIn profile inside the record, which puts a Sales Navigator card on records and needs Sales Navigator Advanced Plus: Zoho CRM, Dynamics 365, HubSpot and Salesforce. Sales Navigator CRM Sync, which syncs records and activity and needs Advanced Plus: HubSpot, Salesforce, Dynamics 365 and Oracle Sales. A browser extension that saves LinkedIn profiles and works with any LinkedIn account: folk, Salesflare, Nimble, and apps for Pipedrive and Attio. A connected LinkedIn account, where conversations reach records and any LinkedIn account works: Omniscient, Breakcold, NetHunt CRM and Kanbox.</desc>
 <rect width="720" height="882" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="881" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Four kinds]</text>
-<text x="32" y="88" font-size="31" font-weight="600" fill="#0a0a0a">What LinkedIn integration <tspan fill="#a3a3a3">means</tspan></text>
-<rect x="32.5" y="124.5" width="350" height="158" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="382.5" y="124.5" width="305" height="158" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="168" font-size="23" font-weight="600" fill="#0a0a0a">Profile inside the record</text>
+<text x="32" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Four kinds</text>
+<text x="32" y="88" font-size="31" font-weight="500" fill="#171717">What LinkedIn integration <tspan fill="#171717">means</tspan></text>
+<rect x="32.5" y="124.5" width="350" height="158" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="382.5" y="124.5" width="305" height="158" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="168" font-size="23" font-weight="500" fill="#171717">Profile inside the record</text>
 <text x="50" y="200" font-size="20" fill="#737373">A LinkedIn card on records</text>
-<text x="50" y="256" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Needs Advanced Plus]</text>
-<rect x="402.5" y="143.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="159.0" font-size="22" fill="#0a0a0a">Zoho CRM</text>
-<rect x="402.5" y="177.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="193.0" font-size="22" fill="#0a0a0a">Dynamics 365</text>
-<rect x="402.5" y="211.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="227.0" font-size="22" fill="#0a0a0a">HubSpot</text>
-<rect x="402.5" y="245.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="261.0" font-size="22" fill="#0a0a0a">Salesforce</text>
-<rect x="32.5" y="296.5" width="350" height="158" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="382.5" y="296.5" width="305" height="158" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="340" font-size="23" font-weight="600" fill="#0a0a0a">Sales Navigator CRM Sync</text>
+<text x="50" y="256" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717">Needs Advanced Plus</text>
+<rect x="402.5" y="143.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="159.0" font-size="22" fill="#171717">Zoho CRM</text>
+<rect x="402.5" y="177.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="193.0" font-size="22" fill="#171717">Dynamics 365</text>
+<rect x="402.5" y="211.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="227.0" font-size="22" fill="#171717">HubSpot</text>
+<rect x="402.5" y="245.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="261.0" font-size="22" fill="#171717">Salesforce</text>
+<rect x="32.5" y="296.5" width="350" height="158" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="382.5" y="296.5" width="305" height="158" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="340" font-size="23" font-weight="500" fill="#171717">Sales Navigator CRM Sync</text>
 <text x="50" y="372" font-size="20" fill="#737373">Records and activity sync</text>
-<text x="50" y="428" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Needs Advanced Plus]</text>
-<rect x="402.5" y="315.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="331.0" font-size="22" fill="#0a0a0a">HubSpot</text>
-<rect x="402.5" y="349.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="365.0" font-size="22" fill="#0a0a0a">Salesforce</text>
-<rect x="402.5" y="383.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="399.0" font-size="22" fill="#0a0a0a">Dynamics 365</text>
-<rect x="402.5" y="417.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="433.0" font-size="22" fill="#0a0a0a">Oracle Sales</text>
-<rect x="32.5" y="468.5" width="350" height="158" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="382.5" y="468.5" width="305" height="158" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="512" font-size="23" font-weight="600" fill="#0a0a0a">Browser extension</text>
+<text x="50" y="428" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717">Needs Advanced Plus</text>
+<rect x="402.5" y="315.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="331.0" font-size="22" fill="#171717">HubSpot</text>
+<rect x="402.5" y="349.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="365.0" font-size="22" fill="#171717">Salesforce</text>
+<rect x="402.5" y="383.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="399.0" font-size="22" fill="#171717">Dynamics 365</text>
+<rect x="402.5" y="417.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="433.0" font-size="22" fill="#171717">Oracle Sales</text>
+<rect x="32.5" y="468.5" width="350" height="158" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="382.5" y="468.5" width="305" height="158" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="512" font-size="23" font-weight="500" fill="#171717">Browser extension</text>
 <text x="50" y="544" font-size="20" fill="#737373">Saves LinkedIn profiles</text>
-<text x="50" y="600" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Any LinkedIn account]</text>
-<rect x="402.5" y="482.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="428" y="496" font-size="20" fill="#0a0a0a">folk</text>
-<rect x="402.5" y="510.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="428" y="524" font-size="20" fill="#0a0a0a">Salesflare</text>
-<rect x="402.5" y="538.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="428" y="552" font-size="20" fill="#0a0a0a">Nimble</text>
-<rect x="402.5" y="566.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="428" y="580" font-size="20" fill="#0a0a0a">Apps for Pipedrive</text>
-<rect x="402.5" y="594.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="428" y="608" font-size="20" fill="#0a0a0a">Apps for Attio</text>
-<rect x="32.5" y="640.5" width="350" height="158" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="382.5" y="640.5" width="305" height="158" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="50" y="684" font-size="23" font-weight="600" fill="#0a0a0a">Connected account</text>
+<text x="50" y="600" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717">Any LinkedIn account</text>
+<rect x="402.5" y="482.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="428" y="496" font-size="20" fill="#171717">folk</text>
+<rect x="402.5" y="510.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="428" y="524" font-size="20" fill="#171717">Salesflare</text>
+<rect x="402.5" y="538.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="428" y="552" font-size="20" fill="#171717">Nimble</text>
+<rect x="402.5" y="566.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="428" y="580" font-size="20" fill="#171717">Apps for Pipedrive</text>
+<rect x="402.5" y="594.5" width="14" height="14" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="428" y="608" font-size="20" fill="#171717">Apps for Attio</text>
+<rect x="32.5" y="640.5" width="350" height="158" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="382.5" y="640.5" width="305" height="158" fill="#ffffff" stroke="#ebebeb"/>
+<text x="50" y="684" font-size="23" font-weight="500" fill="#171717">Connected account</text>
 <text x="50" y="716" font-size="20" fill="#737373">Conversations reach records</text>
-<text x="50" y="772" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Any LinkedIn account]</text>
-<rect x="402.5" y="659.5" width="15" height="15" fill="#10b981" stroke="#0a0a0a"/>
-<text x="430" y="675.0" font-size="22" fill="#0a0a0a">Omniscient</text>
-<rect x="402.5" y="693.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="709.0" font-size="22" fill="#0a0a0a">Breakcold</text>
-<rect x="402.5" y="727.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="743.0" font-size="22" fill="#0a0a0a">NetHunt CRM</text>
-<rect x="402.5" y="761.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="777.0" font-size="22" fill="#0a0a0a">Kanbox</text>
+<text x="50" y="772" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717">Any LinkedIn account</text>
+<rect x="402.5" y="659.5" width="15" height="15" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="430" y="675.0" font-size="22" fill="#171717">Omniscient</text>
+<rect x="402.5" y="693.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="709.0" font-size="22" fill="#171717">Breakcold</text>
+<rect x="402.5" y="727.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="743.0" font-size="22" fill="#171717">NetHunt CRM</text>
+<rect x="402.5" y="761.5" width="15" height="15" fill="#d4d4d4" stroke="#333333" rx="3"/>
+<text x="430" y="777.0" font-size="22" fill="#171717">Kanbox</text>
 <text x="32" y="852" font-size="18" fill="#737373">From LinkedIn's help center and vendor pages, November 2026</text>
 </svg>

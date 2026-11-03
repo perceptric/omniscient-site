@@ -2,38 +2,37 @@
 <title id="t">How AI CRMs charge for AI</title>
 <desc id="d">Omniscient includes AI in each paid seat, from $19 a month billed yearly. HubSpot, Attio, Close, folk and monday CRM add AI credits to the seat. Day AI prices each paid seat as an agent, and Lightfield charges for capture seats with free viewer seats on Pro. Clarify has a free plan, then charges $40 a month for the team billed yearly, with credits and any number of seats. Salesforce adds AI on Core and above, Microsoft Dynamics 365 Sales from Enterprise, Zoho CRM puts its agents on Professional and above, and Pipedrive and Freshsales keep their richer AI for higher plans.</desc>
 <rect width="720" height="640" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="639" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[AI pricing]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Five ways to pay for AI <tspan fill="#a3a3a3">in a CRM</tspan></text>
-<rect x="32.5" y="124.5" width="199" height="83" fill="#10b981" stroke="#0a0a0a"/>
-<rect x="232.5" y="124.5" width="455" height="83" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="160" font-size="21" font-weight="600" fill="#0a0a0a">Included</text>
-<text x="48" y="186" font-size="21" font-weight="600" fill="#0a0a0a">in the seat</text>
-<text x="248" y="160" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">AI pricing</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Five ways to pay for AI <tspan fill="#171717">in a CRM</tspan></text>
+<rect x="32.5" y="124.5" width="199" height="83" fill="#0c8c5e" stroke="#ebebeb"/>
+<rect x="232.5" y="124.5" width="455" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="160" font-size="21" font-weight="500" fill="#171717">Included</text>
+<text x="48" y="186" font-size="21" font-weight="500" fill="#171717">in the seat</text>
+<text x="248" y="160" font-size="21" font-weight="500" fill="#171717">Omniscient</text>
 <text x="248" y="188" font-size="19" fill="#737373">Paid seats from $19 a month, billed yearly</text>
-<rect x="32.5" y="220.5" width="199" height="83" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="232.5" y="220.5" width="455" height="83" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="256" font-size="21" font-weight="600" fill="#0a0a0a">Seat plus</text>
-<text x="48" y="282" font-size="21" font-weight="600" fill="#0a0a0a">AI credits</text>
-<text x="248" y="256" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot, Attio, Close,</text>
-<text x="248" y="282" font-size="21" font-weight="600" fill="#0a0a0a">folk, monday CRM</text>
-<rect x="32.5" y="316.5" width="199" height="83" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="232.5" y="316.5" width="455" height="83" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="352" font-size="21" font-weight="600" fill="#0a0a0a">Per agent or</text>
-<text x="48" y="378" font-size="21" font-weight="600" fill="#0a0a0a">capture seat</text>
-<text x="248" y="352" font-size="21" font-weight="600" fill="#0a0a0a">Day AI, Lightfield</text>
+<rect x="32.5" y="220.5" width="199" height="83" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="232.5" y="220.5" width="455" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="256" font-size="21" font-weight="500" fill="#171717">Seat plus</text>
+<text x="48" y="282" font-size="21" font-weight="500" fill="#171717">AI credits</text>
+<text x="248" y="256" font-size="21" font-weight="500" fill="#171717">HubSpot, Attio, Close,</text>
+<text x="248" y="282" font-size="21" font-weight="500" fill="#171717">folk, monday CRM</text>
+<rect x="32.5" y="316.5" width="199" height="83" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="232.5" y="316.5" width="455" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="352" font-size="21" font-weight="500" fill="#171717">Per agent or</text>
+<text x="48" y="378" font-size="21" font-weight="500" fill="#171717">capture seat</text>
+<text x="248" y="352" font-size="21" font-weight="500" fill="#171717">Day AI, Lightfield</text>
 <text x="248" y="380" font-size="19" fill="#737373">Free viewer seats, paid seats for AI work</text>
-<rect x="32.5" y="412.5" width="199" height="83" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="232.5" y="412.5" width="455" height="83" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="448" font-size="21" font-weight="600" fill="#0a0a0a">Credits,</text>
-<text x="48" y="474" font-size="21" font-weight="600" fill="#0a0a0a">any seats</text>
-<text x="248" y="448" font-size="21" font-weight="600" fill="#0a0a0a">Clarify</text>
+<rect x="32.5" y="412.5" width="199" height="83" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="232.5" y="412.5" width="455" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="448" font-size="21" font-weight="500" fill="#171717">Credits,</text>
+<text x="48" y="474" font-size="21" font-weight="500" fill="#171717">any seats</text>
+<text x="248" y="448" font-size="21" font-weight="500" fill="#171717">Clarify</text>
 <text x="248" y="476" font-size="19" fill="#737373">Free plan, then $40 a month, billed yearly</text>
-<rect x="32.5" y="508.5" width="199" height="99" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="232.5" y="508.5" width="455" height="99" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="544" font-size="21" font-weight="600" fill="#0a0a0a">On higher</text>
-<text x="48" y="570" font-size="21" font-weight="600" fill="#0a0a0a">editions</text>
-<text x="248" y="544" font-size="21" font-weight="600" fill="#0a0a0a">Salesforce, Dynamics 365,</text>
-<text x="248" y="570" font-size="21" font-weight="600" fill="#0a0a0a">Zoho CRM, Pipedrive,</text>
-<text x="248" y="596" font-size="21" font-weight="600" fill="#0a0a0a">Freshsales</text>
+<rect x="32.5" y="508.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="232.5" y="508.5" width="455" height="99" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="544" font-size="21" font-weight="500" fill="#171717">On higher</text>
+<text x="48" y="570" font-size="21" font-weight="500" fill="#171717">editions</text>
+<text x="248" y="544" font-size="21" font-weight="500" fill="#171717">Salesforce, Dynamics 365,</text>
+<text x="248" y="570" font-size="21" font-weight="500" fill="#171717">Zoho CRM, Pipedrive,</text>
+<text x="248" y="596" font-size="21" font-weight="500" fill="#171717">Freshsales</text>
 </svg>

@@ -2,43 +2,42 @@
 <title id="t">Attio and Omniscient prices per seat a month, billed yearly</title>
 <desc id="d">Attio, per user a month billed yearly: Free $0 for up to 3 seats; Plus $35, or $44 billed monthly, up to 10 seats; Pro $79, or $99 billed monthly, with sequences and Call Intelligence; Enterprise custom, billed yearly. Omniscient, per seat a month billed yearly: Free $0 for teammates who only view or log data; Starter $19; Pro $49 with the pipeline board and forecast; Business $99 with the manager view and call coaching. Omniscient's monthly billing costs 20% more. From attio.com/pricing and tryomniscient.com, November 2, 2026.</desc>
 <rect width="720" height="840" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="839" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Pricing]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Per seat a month <tspan fill="#a3a3a3">billed yearly</tspan></text>
-<rect x="32" y="116" width="656" height="318" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="52" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Attio]</text>
-<text x="52" y="194" font-size="20" font-weight="600" fill="#0a0a0a">Free</text>
-<text x="668" y="194" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$0</text>
+<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Pricing</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Per seat a month <tspan fill="#171717">billed yearly</tspan></text>
+<rect x="32" y="116" width="656" height="318" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="52" y="146" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#404040">Attio</text>
+<text x="52" y="194" font-size="20" font-weight="500" fill="#171717">Free</text>
+<text x="668" y="194" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$0</text>
 <text x="52" y="220" font-size="18" fill="#737373">Up to 3 seats</text>
-<line x1="33" x2="687" y1="238" y2="238" stroke="#e5e5e5"/>
-<text x="52" y="270" font-size="20" font-weight="600" fill="#0a0a0a">Plus</text>
-<text x="668" y="270" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$35</text>
+<line x1="33" x2="687" y1="238" y2="238" stroke="#ebebeb"/>
+<text x="52" y="270" font-size="20" font-weight="500" fill="#171717">Plus</text>
+<text x="668" y="270" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$35</text>
 <text x="52" y="296" font-size="18" fill="#737373">$44 billed monthly, up to 10 seats</text>
-<line x1="33" x2="687" y1="314" y2="314" stroke="#e5e5e5"/>
-<text x="52" y="346" font-size="20" font-weight="600" fill="#0a0a0a">Pro</text>
-<text x="668" y="346" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$79</text>
+<line x1="33" x2="687" y1="314" y2="314" stroke="#ebebeb"/>
+<text x="52" y="346" font-size="20" font-weight="500" fill="#171717">Pro</text>
+<text x="668" y="346" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$79</text>
 <text x="52" y="372" font-size="18" fill="#737373">$99 billed monthly, adds sequences and Call Intelligence</text>
-<line x1="33" x2="687" y1="390" y2="390" stroke="#e5e5e5"/>
-<text x="52" y="420" font-size="20" font-weight="600" fill="#0a0a0a">Enterprise</text>
-<text x="668" y="420" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">Custom</text>
-<rect x="32" y="458" width="656" height="318" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="32" y="458" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="52" y="474" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
-<text x="76" y="488" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Omniscient]</text>
-<text x="52" y="536" font-size="20" font-weight="600" fill="#0a0a0a">Free</text>
-<text x="668" y="536" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$0</text>
+<line x1="33" x2="687" y1="390" y2="390" stroke="#ebebeb"/>
+<text x="52" y="420" font-size="20" font-weight="500" fill="#171717">Enterprise</text>
+<text x="668" y="420" text-anchor="end" font-size="22" font-weight="500" fill="#171717">Custom</text>
+<rect x="32" y="458" width="656" height="318" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="32" y="458" width="656" height="46" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="52" y="474" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="76" y="488" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#404040">Omniscient</text>
+<text x="52" y="536" font-size="20" font-weight="500" fill="#171717">Free</text>
+<text x="668" y="536" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$0</text>
 <text x="52" y="562" font-size="18" fill="#737373">For teammates who only view or log data</text>
-<line x1="33" x2="687" y1="580" y2="580" stroke="#e5e5e5"/>
-<text x="52" y="612" font-size="20" font-weight="600" fill="#0a0a0a">Starter</text>
-<text x="668" y="612" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$19</text>
+<line x1="33" x2="687" y1="580" y2="580" stroke="#ebebeb"/>
+<text x="52" y="612" font-size="20" font-weight="500" fill="#171717">Starter</text>
+<text x="668" y="612" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$19</text>
 <text x="52" y="638" font-size="18" fill="#737373">Monthly billing costs 20% more</text>
-<line x1="33" x2="687" y1="656" y2="656" stroke="#e5e5e5"/>
-<text x="52" y="688" font-size="20" font-weight="600" fill="#0a0a0a">Pro</text>
-<text x="668" y="688" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$49</text>
+<line x1="33" x2="687" y1="656" y2="656" stroke="#ebebeb"/>
+<text x="52" y="688" font-size="20" font-weight="500" fill="#171717">Pro</text>
+<text x="668" y="688" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$49</text>
 <text x="52" y="714" font-size="18" fill="#737373">Adds the pipeline board and forecast</text>
-<line x1="33" x2="687" y1="732" y2="732" stroke="#e5e5e5"/>
-<text x="52" y="762" font-size="20" font-weight="600" fill="#0a0a0a">Business</text>
-<text x="668" y="762" text-anchor="end" font-size="22" font-weight="600" fill="#0a0a0a">$99</text>
+<line x1="33" x2="687" y1="732" y2="732" stroke="#ebebeb"/>
+<text x="52" y="762" font-size="20" font-weight="500" fill="#171717">Business</text>
+<text x="668" y="762" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$99</text>
 <text x="32" y="812" font-size="18" fill="#737373">From attio.com/pricing and tryomniscient.com, November 2, 2026.</text>
 </svg>

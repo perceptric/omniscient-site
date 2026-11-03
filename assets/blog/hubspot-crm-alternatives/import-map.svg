@@ -2,52 +2,51 @@
 <title id="t">What a HubSpot import brings over to Omniscient</title>
 <desc id="d">What Omniscient&#x27;s HubSpot importer brings over and where each record lands. Companies with their name and website become accounts, matched by domain. Contacts at any lifecycle stage become people, matched by email. Deal pipelines with their stages and probabilities become pipelines, with won and lost stages kept. Deals with amount, close date and owner become opportunities, with the owner matched to a teammate by email. Notes come over as plain text and land on the deal they belong to, or else on the account, or else on the person. Contacts with no email address are skipped, and the importer only reads from HubSpot, so HubSpot stays as it is.</desc>
 <rect width="560" height="656" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="655" fill="none" stroke="#0a0a0a"/>
-<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[HubSpot import]</text>
-<text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">What comes over <tspan fill="#a3a3a3">and where it lands</tspan></text>
-<text x="24" y="132" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">HubSpot</text>
-<text x="302" y="132" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">Omniscient</text>
-<rect x="24" y="146" width="236" height="72" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="38" y="177" font-size="20" font-weight="600" fill="#0a0a0a">Companies</text>
+<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">HubSpot import</text>
+<text x="24" y="84" font-size="26" font-weight="500" fill="#171717">What comes over <tspan fill="#171717">and where it lands</tspan></text>
+<text x="24" y="132" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#737373">HubSpot</text>
+<text x="302" y="132" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#737373">Omniscient</text>
+<rect x="24" y="146" width="236" height="72" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="38" y="177" font-size="20" font-weight="500" fill="#171717">Companies</text>
 <text x="38" y="202" font-size="16" fill="#737373">name and website</text>
-<line x1="266" y1="182" x2="290" y2="182" stroke="#0a0a0a" stroke-width="2"/>
-<path d="M284 176 L292 182 L284 188" fill="none" stroke="#0a0a0a" stroke-width="2"/>
-<rect x="300" y="146" width="236" height="72" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="314" y="177" font-size="20" font-weight="600" fill="#0a0a0a">Accounts</text>
+<line x1="266" y1="182" x2="290" y2="182" stroke="#8a8a85" stroke-width="2"/>
+<path d="M284 176 L292 182 L284 188" fill="none" stroke="#8a8a85" stroke-width="2"/>
+<rect x="300" y="146" width="236" height="72" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="314" y="177" font-size="20" font-weight="500" fill="#171717">Accounts</text>
 <text x="314" y="202" font-size="16" fill="#737373">matched by domain</text>
-<rect x="24" y="232" width="236" height="72" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="38" y="263" font-size="20" font-weight="600" fill="#0a0a0a">Contacts</text>
+<rect x="24" y="232" width="236" height="72" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="38" y="263" font-size="20" font-weight="500" fill="#171717">Contacts</text>
 <text x="38" y="288" font-size="16" fill="#737373">any lifecycle stage</text>
-<line x1="266" y1="268" x2="290" y2="268" stroke="#0a0a0a" stroke-width="2"/>
-<path d="M284 262 L292 268 L284 274" fill="none" stroke="#0a0a0a" stroke-width="2"/>
-<rect x="300" y="232" width="236" height="72" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="314" y="263" font-size="20" font-weight="600" fill="#0a0a0a">People</text>
+<line x1="266" y1="268" x2="290" y2="268" stroke="#8a8a85" stroke-width="2"/>
+<path d="M284 262 L292 268 L284 274" fill="none" stroke="#8a8a85" stroke-width="2"/>
+<rect x="300" y="232" width="236" height="72" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="314" y="263" font-size="20" font-weight="500" fill="#171717">People</text>
 <text x="314" y="288" font-size="16" fill="#737373">matched by email</text>
-<rect x="24" y="318" width="236" height="72" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="38" y="349" font-size="20" font-weight="600" fill="#0a0a0a">Pipelines</text>
+<rect x="24" y="318" width="236" height="72" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="38" y="349" font-size="20" font-weight="500" fill="#171717">Pipelines</text>
 <text x="38" y="374" font-size="16" fill="#737373">stages and probability</text>
-<line x1="266" y1="354" x2="290" y2="354" stroke="#0a0a0a" stroke-width="2"/>
-<path d="M284 348 L292 354 L284 360" fill="none" stroke="#0a0a0a" stroke-width="2"/>
-<rect x="300" y="318" width="236" height="72" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="314" y="349" font-size="20" font-weight="600" fill="#0a0a0a">Pipelines</text>
+<line x1="266" y1="354" x2="290" y2="354" stroke="#8a8a85" stroke-width="2"/>
+<path d="M284 348 L292 354 L284 360" fill="none" stroke="#8a8a85" stroke-width="2"/>
+<rect x="300" y="318" width="236" height="72" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="314" y="349" font-size="20" font-weight="500" fill="#171717">Pipelines</text>
 <text x="314" y="374" font-size="16" fill="#737373">won and lost stages kept</text>
-<rect x="24" y="404" width="236" height="72" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="38" y="435" font-size="20" font-weight="600" fill="#0a0a0a">Deals</text>
+<rect x="24" y="404" width="236" height="72" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="38" y="435" font-size="20" font-weight="500" fill="#171717">Deals</text>
 <text x="38" y="460" font-size="16" fill="#737373">amount, close date, owner</text>
-<line x1="266" y1="440" x2="290" y2="440" stroke="#0a0a0a" stroke-width="2"/>
-<path d="M284 434 L292 440 L284 446" fill="none" stroke="#0a0a0a" stroke-width="2"/>
-<rect x="300" y="404" width="236" height="72" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="314" y="435" font-size="20" font-weight="600" fill="#0a0a0a">Opportunities</text>
+<line x1="266" y1="440" x2="290" y2="440" stroke="#8a8a85" stroke-width="2"/>
+<path d="M284 434 L292 440 L284 446" fill="none" stroke="#8a8a85" stroke-width="2"/>
+<rect x="300" y="404" width="236" height="72" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="314" y="435" font-size="20" font-weight="500" fill="#171717">Opportunities</text>
 <text x="314" y="460" font-size="16" fill="#737373">owner matched by email</text>
-<rect x="24" y="490" width="236" height="72" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="38" y="521" font-size="20" font-weight="600" fill="#0a0a0a">Notes</text>
+<rect x="24" y="490" width="236" height="72" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
+<text x="38" y="521" font-size="20" font-weight="500" fill="#171717">Notes</text>
 <text x="38" y="546" font-size="16" fill="#737373">on any record</text>
-<line x1="266" y1="526" x2="290" y2="526" stroke="#0a0a0a" stroke-width="2"/>
-<path d="M284 520 L292 526 L284 532" fill="none" stroke="#0a0a0a" stroke-width="2"/>
-<rect x="300" y="490" width="236" height="72" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="314" y="521" font-size="20" font-weight="600" fill="#0a0a0a">Notes</text>
+<line x1="266" y1="526" x2="290" y2="526" stroke="#8a8a85" stroke-width="2"/>
+<path d="M284 520 L292 526 L284 532" fill="none" stroke="#8a8a85" stroke-width="2"/>
+<rect x="300" y="490" width="236" height="72" fill="#ffffff" stroke="#ebebeb" rx="10"/>
+<text x="314" y="521" font-size="20" font-weight="500" fill="#171717">Notes</text>
 <text x="314" y="546" font-size="16" fill="#737373">deal first, then account</text>
-<rect x="24" y="575" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
-<text x="52" y="590" font-size="19" fill="#0a0a0a">Skipped: contacts with no email address</text>
-<text x="24" y="630" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">Read only access, so HubSpot stays as it is</text>
+<rect x="24" y="575" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="52" y="590" font-size="19" fill="#171717">Skipped: contacts with no email address</text>
+<text x="24" y="630" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Read only access, so HubSpot stays as it is</text>
 </svg>

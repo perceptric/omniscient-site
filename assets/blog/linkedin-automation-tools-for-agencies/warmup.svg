@@ -2,52 +2,51 @@
 <title id="t">How a newly connected client account warms up in Omniscient</title>
 <desc id="d">Invitations a day for a newly connected LinkedIn account at the Normal pace of 15 a day and 80 a week. The day's ceiling starts at 5 and rises by 2 a day: day 1 up to 5, day 2 up to 7, day 3 up to 9, day 4 up to 11, day 5 up to 13, day 6 up to 15, then 15 a day. Each day's cap is drawn between 80% and 100% of that ceiling. A reconnected account warms up again, and the weekly cap is a hard stop.</desc>
 <rect width="560" height="520" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="519" fill="none" stroke="#0a0a0a"/>
-<text x="20" y="40" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Warmup]</text>
-<text x="20" y="76" font-size="26" font-weight="600" fill="#0a0a0a">A new client account <tspan fill="#a3a3a3">starts slow</tspan></text>
+<text x="20" y="40" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#737373">Warmup</text>
+<text x="20" y="76" font-size="26" font-weight="500" fill="#171717">A new client account <tspan fill="#171717">starts slow</tspan></text>
 <text x="20" y="106" font-size="16" fill="#404040">Invitations a day at the Normal pace (15 a day)</text>
-<rect x="20.5" y="124.5" width="14" height="14" fill="#10b981" stroke="#0a0a0a"/>
+<rect x="20.5" y="124.5" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
 <text x="42" y="137" font-size="15" fill="#404040">Where each day's cap lands: 80% to 100% of the ceiling</text>
-<line x1="56" x2="540" y1="410.5" y2="410.5" stroke="#0a0a0a"/>
-<text x="46" y="415.0" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">0</text>
-<line x1="56" x2="540" y1="337.2" y2="337.2" stroke="#e5e5e5"/>
-<text x="46" y="341.7" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">5</text>
-<line x1="56" x2="540" y1="263.8" y2="263.8" stroke="#e5e5e5"/>
-<text x="46" y="268.3" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">10</text>
-<line x1="56" x2="540" y1="190.5" y2="190.5" stroke="#e5e5e5"/>
-<text x="46" y="195.0" text-anchor="end" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">15</text>
-<rect x="67.8" y="351.8" width="37" height="57.7" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="67.8" y="337.2" width="37" height="14.7" fill="#10b981" stroke="#0a0a0a"/>
-<text x="86.2" y="327.7" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">5</text>
-<text x="86.2" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">1</text>
-<rect x="128.2" y="328.4" width="37" height="81.1" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="128.2" y="307.8" width="37" height="20.5" fill="#10b981" stroke="#0a0a0a"/>
-<text x="146.8" y="298.3" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">7</text>
-<text x="146.8" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">2</text>
-<rect x="188.8" y="304.9" width="37" height="104.6" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="188.8" y="278.5" width="37" height="26.4" fill="#10b981" stroke="#0a0a0a"/>
-<text x="207.2" y="269.0" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">9</text>
-<text x="207.2" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">3</text>
-<rect x="249.2" y="281.4" width="37" height="128.1" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="249.2" y="249.2" width="37" height="32.3" fill="#10b981" stroke="#0a0a0a"/>
-<text x="267.8" y="239.7" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">11</text>
-<text x="267.8" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">4</text>
-<rect x="309.8" y="258.0" width="37" height="151.5" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="309.8" y="219.8" width="37" height="38.1" fill="#10b981" stroke="#0a0a0a"/>
-<text x="328.2" y="210.3" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">13</text>
-<text x="328.2" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">5</text>
-<rect x="370.2" y="234.5" width="37" height="175.0" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="370.2" y="190.5" width="37" height="44.0" fill="#10b981" stroke="#0a0a0a"/>
-<text x="388.8" y="181.0" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">15</text>
-<text x="388.8" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">6</text>
-<rect x="430.8" y="234.5" width="37" height="175.0" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="430.8" y="190.5" width="37" height="44.0" fill="#10b981" stroke="#0a0a0a"/>
-<text x="449.2" y="181.0" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">15</text>
-<text x="449.2" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">7</text>
-<rect x="491.2" y="234.5" width="37" height="175.0" fill="#ebebeb" stroke="#0a0a0a"/>
-<rect x="491.2" y="190.5" width="37" height="44.0" fill="#10b981" stroke="#0a0a0a"/>
-<text x="509.8" y="181.0" text-anchor="middle" font-size="17" font-weight="600" fill="#0a0a0a">15</text>
-<text x="509.8" y="436" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#404040">8</text>
-<text x="298" y="462" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">[Day since it connected]</text>
+<line x1="56" x2="540" y1="410.5" y2="410.5" stroke="#8a8a85"/>
+<text x="46" y="415.0" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">0</text>
+<line x1="56" x2="540" y1="337.2" y2="337.2" stroke="#ebebeb"/>
+<text x="46" y="341.7" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">5</text>
+<line x1="56" x2="540" y1="263.8" y2="263.8" stroke="#ebebeb"/>
+<text x="46" y="268.3" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">10</text>
+<line x1="56" x2="540" y1="190.5" y2="190.5" stroke="#ebebeb"/>
+<text x="46" y="195.0" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">15</text>
+<rect x="67.8" y="351.8" width="37" height="57.7" fill="#ebebeb" stroke="#ebebeb" rx="10"/>
+<rect x="67.8" y="337.2" width="37" height="14.7" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="86.2" y="327.7" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">5</text>
+<text x="86.2" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">1</text>
+<rect x="128.2" y="328.4" width="37" height="81.1" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="128.2" y="307.8" width="37" height="20.5" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="146.8" y="298.3" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">7</text>
+<text x="146.8" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">2</text>
+<rect x="188.8" y="304.9" width="37" height="104.6" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="188.8" y="278.5" width="37" height="26.4" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="207.2" y="269.0" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">9</text>
+<text x="207.2" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">3</text>
+<rect x="249.2" y="281.4" width="37" height="128.1" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="249.2" y="249.2" width="37" height="32.3" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="267.8" y="239.7" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">11</text>
+<text x="267.8" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">4</text>
+<rect x="309.8" y="258.0" width="37" height="151.5" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="309.8" y="219.8" width="37" height="38.1" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="328.2" y="210.3" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">13</text>
+<text x="328.2" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">5</text>
+<rect x="370.2" y="234.5" width="37" height="175.0" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="370.2" y="190.5" width="37" height="44.0" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="388.8" y="181.0" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">15</text>
+<text x="388.8" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">6</text>
+<rect x="430.8" y="234.5" width="37" height="175.0" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="430.8" y="190.5" width="37" height="44.0" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="449.2" y="181.0" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">15</text>
+<text x="449.2" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">7</text>
+<rect x="491.2" y="234.5" width="37" height="175.0" fill="#ebebeb" stroke="#ebebeb"/>
+<rect x="491.2" y="190.5" width="37" height="44.0" fill="#0c8c5e" stroke="#ebebeb"/>
+<text x="509.8" y="181.0" text-anchor="middle" font-size="17" font-weight="600" fill="#171717">15</text>
+<text x="509.8" y="436" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#404040">8</text>
+<text x="298" y="462" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Day since it connected</text>
 <text x="20" y="498" font-size="15" fill="#737373">A reconnected account warms up again.</text>
 </svg>
