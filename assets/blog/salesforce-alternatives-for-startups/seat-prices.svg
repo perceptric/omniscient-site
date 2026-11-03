@@ -6,15 +6,15 @@
 <text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Per seat a month, billed yearly]</text>
 <text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">First paid seat <tspan fill="#a3a3a3">next to Salesforce</tspan></text>
 <line x1="200.0" y1="116" x2="200.0" y2="528" stroke="#e5e5e5"/>
-<text x="200.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$0</text>
+<text x="200.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$0</text>
 <line x1="265.0" y1="116" x2="265.0" y2="528" stroke="#e5e5e5"/>
-<text x="265.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$25</text>
+<text x="265.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$25</text>
 <line x1="330.0" y1="116" x2="330.0" y2="528" stroke="#e5e5e5"/>
-<text x="330.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$50</text>
+<text x="330.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$50</text>
 <line x1="395.0" y1="116" x2="395.0" y2="528" stroke="#e5e5e5"/>
-<text x="395.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$75</text>
+<text x="395.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$75</text>
 <line x1="460.0" y1="116" x2="460.0" y2="528" stroke="#e5e5e5"/>
-<text x="460.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$100</text>
+<text x="460.0" y="550" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">$100</text>
 <text x="24" y="142" font-size="20" font-weight="600" fill="#0a0a0a">Twenty</text>
 <text x="24" y="166" font-size="17" fill="#737373">Pro</text>
 <rect x="200" y="132" width="23.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>

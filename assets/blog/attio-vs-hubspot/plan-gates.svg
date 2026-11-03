@@ -1,62 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 736" width="720" height="736" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 836" width="560" height="836" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Where each feature starts in Attio and HubSpot Sales Hub</title>
-<desc id="d">Which plan each feature starts on. Workflows: Attio Free, HubSpot Sales Hub Starter; AI credits included: Attio Free, HubSpot Sales Hub Starter; Email without vendor branding: Attio Plus, HubSpot Sales Hub Starter; Email sequences: Attio Pro, HubSpot Sales Hub Professional; Meeting recording: Attio Pro (Call Intelligence), HubSpot Sales Hub Starter (Notetaker); LinkedIn steps: Attio through apps, HubSpot Sales Hub Professional; Custom objects: Attio Pro, HubSpot Sales Hub Enterprise. HubSpot's LinkedIn steps are task reminders and need a Sales Navigator subscription. From attio.com/pricing, hubspot.com/pricing/sales and hubspot.com/products/crm, November 3, 2026.</desc>
-<rect width="720" height="736" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="735" fill="none" stroke="#0a0a0a"/>
-<text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Plans]</text>
-<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">Where each feature starts</text>
-<rect x="32" y="116" width="656" height="480" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="52" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[Feature]</text>
-<text x="368" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[Attio]</text>
-<text x="520" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[HubSpot]</text>
-<line x1="352" x2="352" y1="116" y2="596" stroke="#e5e5e5"/>
-<line x1="504" x2="504" y1="116" y2="596" stroke="#e5e5e5"/>
-<text x="52" y="200" font-size="19" font-weight="600" fill="#0a0a0a">Workflows</text>
-<rect x="368" y="177" width="77" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="380" y="187" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
-<text x="398" y="199" font-size="17" font-weight="500" fill="#0a0a0a">Free</text>
-<rect x="520" y="177" width="86" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="199" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
-<line x1="33" x2="687" y1="224" y2="224" stroke="#e5e5e5"/>
-<text x="52" y="262" font-size="19" font-weight="600" fill="#0a0a0a">AI credits included</text>
-<rect x="368" y="239" width="77" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="380" y="249" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
-<text x="398" y="261" font-size="17" font-weight="500" fill="#0a0a0a">Free</text>
-<rect x="520" y="239" width="86" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="261" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
-<line x1="33" x2="687" y1="286" y2="286" stroke="#e5e5e5"/>
-<text x="52" y="324" font-size="19" font-weight="600" fill="#0a0a0a">Email without vendor branding</text>
-<rect x="368" y="301" width="59" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="380" y="323" font-size="17" font-weight="500" fill="#0a0a0a">Plus</text>
-<rect x="520" y="301" width="86" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="323" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
-<line x1="33" x2="687" y1="348" y2="348" stroke="#e5e5e5"/>
-<text x="52" y="386" font-size="19" font-weight="600" fill="#0a0a0a">Email sequences</text>
-<rect x="368" y="363" width="50" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="380" y="385" font-size="17" font-weight="500" fill="#0a0a0a">Pro</text>
-<rect x="520" y="363" width="130" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="385" font-size="17" font-weight="500" fill="#0a0a0a">Professional</text>
-<line x1="33" x2="687" y1="410" y2="410" stroke="#e5e5e5"/>
-<text x="52" y="448" font-size="19" font-weight="600" fill="#0a0a0a">Meeting recording</text>
-<rect x="368" y="425" width="50" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="380" y="447" font-size="17" font-weight="500" fill="#0a0a0a">Pro</text>
-<rect x="520" y="425" width="86" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="447" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
-<line x1="33" x2="687" y1="472" y2="472" stroke="#e5e5e5"/>
-<text x="52" y="510" font-size="19" font-weight="600" fill="#0a0a0a">LinkedIn steps</text>
-<text x="368" y="510" font-size="17" fill="#737373">Through apps</text>
-<rect x="520" y="487" width="139" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="509" font-size="17" font-weight="500" fill="#0a0a0a">Professional*</text>
-<line x1="33" x2="687" y1="534" y2="534" stroke="#e5e5e5"/>
-<text x="52" y="572" font-size="19" font-weight="600" fill="#0a0a0a">Custom objects</text>
-<rect x="368" y="549" width="50" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="380" y="571" font-size="17" font-weight="500" fill="#0a0a0a">Pro</text>
-<rect x="520" y="549" width="113" height="32" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="532" y="571" font-size="17" font-weight="500" fill="#0a0a0a">Enterprise</text>
-<rect x="32" y="619" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
-<text x="52" y="630" font-size="16" fill="#737373">On the free plan</text>
-<text x="32" y="660" font-size="16" fill="#737373">* Task reminders that open Sales Navigator, which needs its own subscription.</text>
-<text x="32" y="688" font-size="16" fill="#737373">From attio.com/pricing, hubspot.com/pricing/sales and</text>
-<text x="32" y="712" font-size="16" fill="#737373">hubspot.com/products/crm, November 3, 2026.</text>
+<desc id="d">Which plan each feature starts on. Workflows: Attio Free, HubSpot Sales Hub Starter; AI credits included: Attio Free, HubSpot Sales Hub Starter; Email without vendor branding: Attio Plus, HubSpot Sales Hub Starter; Email sequences: Attio Pro, HubSpot Sales Hub Professional; Meeting recording: Attio Pro (Call Intelligence), HubSpot Sales Hub Starter (Notetaker); LinkedIn steps: Attio through apps, HubSpot Sales Hub Professional; Custom objects: Attio Pro, HubSpot Sales Hub Enterprise. HubSpot&#x27;s LinkedIn steps are task reminders and need a Sales Navigator subscription. From attio.com/pricing, hubspot.com/pricing/sales and hubspot.com/products/crm, November 3, 2026.</desc>
+<rect width="560" height="836" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="835" fill="none" stroke="#0a0a0a"/>
+<text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Plans]</text>
+<text x="24" y="82" font-size="26" font-weight="600" fill="#0a0a0a">Where each feature starts</text>
+<rect x="24" y="108" width="512" height="548" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="108" width="512" height="44" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="40" y="136" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[Feature]</text>
+<text x="228" y="136" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[Attio]</text>
+<text x="380" y="136" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#404040">[HubSpot]</text>
+<line x1="214" x2="214" y1="108" y2="656" stroke="#e5e5e5"/>
+<line x1="366" x2="366" y1="108" y2="656" stroke="#e5e5e5"/>
+<text x="40" y="195" font-size="19" font-weight="600" fill="#0a0a0a">Workflows</text>
+<rect x="228" y="171" width="80" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="239" y="182" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="259" y="194" font-size="17" font-weight="500" fill="#0a0a0a">Free</text>
+<rect x="380" y="171" width="81" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="194" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
+<line x1="25" x2="535" y1="224" y2="224" stroke="#e5e5e5"/>
+<text x="40" y="255" font-size="19" font-weight="600" fill="#0a0a0a">AI credits</text>
+<text x="40" y="279" font-size="19" font-weight="600" fill="#0a0a0a">included</text>
+<rect x="228" y="243" width="80" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="239" y="254" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="259" y="266" font-size="17" font-weight="500" fill="#0a0a0a">Free</text>
+<rect x="380" y="243" width="81" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="266" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
+<line x1="25" x2="535" y1="296" y2="296" stroke="#e5e5e5"/>
+<text x="40" y="327" font-size="19" font-weight="600" fill="#0a0a0a">Email without</text>
+<text x="40" y="351" font-size="19" font-weight="600" fill="#0a0a0a">vendor branding</text>
+<rect x="228" y="315" width="59" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="239" y="338" font-size="17" font-weight="500" fill="#0a0a0a">Plus</text>
+<rect x="380" y="315" width="81" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="338" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
+<line x1="25" x2="535" y1="368" y2="368" stroke="#e5e5e5"/>
+<text x="40" y="399" font-size="19" font-weight="600" fill="#0a0a0a">Email</text>
+<text x="40" y="423" font-size="19" font-weight="600" fill="#0a0a0a">sequences</text>
+<rect x="228" y="387" width="51" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="239" y="410" font-size="17" font-weight="500" fill="#0a0a0a">Pro</text>
+<rect x="380" y="387" width="128" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="410" font-size="17" font-weight="500" fill="#0a0a0a">Professional</text>
+<line x1="25" x2="535" y1="440" y2="440" stroke="#e5e5e5"/>
+<text x="40" y="471" font-size="19" font-weight="600" fill="#0a0a0a">Meeting</text>
+<text x="40" y="495" font-size="19" font-weight="600" fill="#0a0a0a">recording</text>
+<rect x="228" y="459" width="51" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="239" y="482" font-size="17" font-weight="500" fill="#0a0a0a">Pro</text>
+<rect x="380" y="459" width="81" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="482" font-size="17" font-weight="500" fill="#0a0a0a">Starter</text>
+<line x1="25" x2="535" y1="512" y2="512" stroke="#e5e5e5"/>
+<text x="40" y="555" font-size="19" font-weight="600" fill="#0a0a0a">LinkedIn steps</text>
+<text x="228" y="554" font-size="17" fill="#737373">Through apps</text>
+<rect x="380" y="531" width="138" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="554" font-size="17" font-weight="500" fill="#0a0a0a">Professional*</text>
+<line x1="25" x2="535" y1="584" y2="584" stroke="#e5e5e5"/>
+<text x="40" y="627" font-size="19" font-weight="600" fill="#0a0a0a">Custom objects</text>
+<rect x="228" y="603" width="51" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="239" y="626" font-size="17" font-weight="500" fill="#0a0a0a">Pro</text>
+<rect x="380" y="603" width="111" height="34" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="391" y="626" font-size="17" font-weight="500" fill="#0a0a0a">Enterprise</text>
+<rect x="24" y="680" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="44" y="692" font-size="17" fill="#737373">On the free plan</text>
+<text x="24" y="726" font-size="17" fill="#737373">* Task reminders that open Sales Navigator,</text>
+<text x="24" y="750" font-size="17" fill="#737373">which needs its own subscription.</text>
+<text x="24" y="784" font-size="17" fill="#737373">From attio.com/pricing, hubspot.com/pricing/sales</text>
+<text x="24" y="808" font-size="17" fill="#737373">and hubspot.com/products/crm, November 3, 2026.</text>
 </svg>

@@ -61,5 +61,5 @@
 <text x="24" y="776" font-size="18" fill="#0a0a0a">Enhanced notes, custom objects and fields</text>
 <rect x="24" y="801" width="16" height="16" fill="#10b981" stroke="#0a0a0a"/>
 <text x="52" y="816" font-size="18" fill="#0a0a0a">Skipped: contacts and leads with no email</text>
-<text x="24" y="860" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">Reads only. Its login is deleted at the end.</text>
+<text x="24" y="860" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">Reads only. Its login is deleted at the end.</text>
 </svg>

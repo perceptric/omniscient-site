@@ -50,6 +50,6 @@
 <text x="82" y="793" font-size="18" fill="#0a0a0a">Go live, which turns sending on</text>
 <line x1="25" x2="535" y1="816" y2="816" stroke="#e5e5e5"/>
 <text x="40" y="850" font-size="17" fill="#737373">Then a new sender starts at 5 a day, adding 2 a day</text>
-<text x="24" y="910" font-size="16" fill="#737373">From HubSpot's pricing page and knowledge base,</text>
-<text x="24" y="932" font-size="16" fill="#737373">read on November 3, 2026.</text>
+<text x="24" y="910" font-size="16" fill="#737373">From HubSpot's pricing page and knowledge base and</text>
+<text x="24" y="932" font-size="16" fill="#737373">the Omniscient app, read on November 3, 2026.</text>
 </svg>
