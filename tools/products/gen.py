@@ -1,4 +1,4 @@
-# Writes the three product pages: product/linkedin-outbound, product/crm and product/deal-room.
+# Writes the three product pages: product/crm, product/deal-room and product/contract-management.
 # Each page: hero with the email field and the main product shot, feature rows with a shot each, what's included,
 # questions, the other two products and a closing band. Shots reuse the home page's product-shot styles (home.css);
 # each feature's shot is a scene that plays what the feature does (assets/scenes.js, styles in product.css).
@@ -56,119 +56,6 @@ HL = ' class="hl"'
 LDR = '<span class="ldr"><i></i><i></i><i></i><i></i></span>'
 DOTS = '<span class="dots3"><i></i><i></i><i></i></span>'
 
-LEADS = [("Jordan Blake", "jordan", 8, "Commented on a CRM post", "Tallyfin"), ("Rina Sato", "rina", 8, "Hiring 3 sales reps", "Pallet Cloud"), ("Diego Marín", "diego", 7, "New in role", "Shiftwise"), ("Amara Kofi", "amara", 8, "Posted about pipeline", "Ledgerly")]
-
-# ---- Outbound LinkedIn shots ----
-LI_HERO = shot(
-    '<div class="canvas"><div class="dots">'
-    f'<div class="step"><span class="si">{logo("linkedin", 14)}</span><span><b>Send an invite</b><small>With a short, personal note</small></span></div><div class="wait">Wait 2 days</div>'
-    '<div class="step" style="flex-direction:column;align-items:stretch"><span style="display:flex;gap:10px;align-items:center"><span class="si"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5h14v10H9l-4 4z"/></svg></span><span><b>Message with lead magnet</b><small>After they accept</small></span></span><span class="magnet"><span class="pdf">PDF</span><span><b>Sales handoff benchmark</b><small>Made for Pallet Cloud</small></span></span></div><div class="wait">Wait 3 days</div>'
-    '<div class="step"><span class="si"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5h14v10H9l-4 4z"/></svg></span><span><b>Follow up</b><small>Stops when they reply</small></span></div></div>'
-    '<div class="people"><div class="hd"><span>People <span class="sub mono">250</span></span><span class="ui-btn pri" style="height:26px">Approve 250</span></div>'
-    + "".join(f'<div class="pr">{face(f)}<span class="nm"><b>{n}</b><span>{co}</span></span><span class="tag t-gray">Needs approval</span></div>' for n, f, _, _, co in LEADS)
-    + "</div></div>",
-    "b-gray",
-    '<span class="sub mono crumb">Campaigns /</span><b>US SaaS founders</b><span class="tag t-gray" style="margin-left:6px">Draft</span><span class="grow"></span><span class="ui-btn pri">Go live</span>',
-)
-def lead_row(c, at):  # a lead arrives, then its fit squares fill
-    n, f, fit, sig, co = c
-    q = "".join("<i></i>" if i < (4 if fit == 8 else 3) else '<i class="off"></i>' for i in range(4))
-    return f'<tr{A(at)}><td><span class="who">{face(f)}{n}</span></td><td><span class="fit"><span class="q">{q}</span>{fit}/8</span></td><td><span class="sig"><i></i>{sig}</span></td><td class="hide-s">{co}</td></tr>'
-
-
-# Scout: the search is read, then leads arrive with their fit.
-LI_FIND = scene(
-    f'<div class="sentence" style="font-size:18px">Founders in <u class="fx-u"{A(1)}>United States</u> at <u class="fx-u"{A(2)}>software</u> companies with <u class="fx-u"{A(3)}>11 to 200 people</u></div>'
-    f'<div class="meta">{sw((LDR + "Searching people and companies", 4, 5, "fx-fade"), ("<b>1,920</b> people match", 5, None, "fx-fade"))}</div>'
-    '<div class="scroll-x"><table class="tb"><thead><tr><th>Name</th><th>Fit</th><th>Signal</th><th class="hide-s">Company</th></tr></thead><tbody>'
-    + "".join(lead_row(c, 5 + i) for i, c in enumerate(LEADS)) + "</tbody></table></div>",
-    "b-stone", [250, 220, 220, 300, 1100, 240, 240, 240])
-
-# Fit: each reason lands and adds to the score.
-WHY = [("t-green", "Match", "Role: Founder or CEO", "Profile"), ("t-green", "Match", "Company size: 38 people", "Profile"), ("t-purple", "Signal", "Hiring 3 sales reps", "2d ago"), ("t-purple", "Signal", "Commented on a CRM post", "5d ago")]
-LI_WHY = scene(
-    f'<div class="rec"><div class="top2">{face("rina", 40)}<div class="grow"><h4>Rina Sato</h4><span class="sub">Co-founder &amp; CEO, Pallet Cloud</span></div>'
-    '<div class="fitm"><span class="segs">' + "".join(f'<i class="fx-pop"{A(k // 2 + 1, d=(k % 2) * 90)}></i>' for k in range(8)) + "</span>"
-    f'<b>Fit {sw(*[(f"{2 * k}/8", k or None, k + 1 if k < 4 else None, "") for k in range(5)])}</b></div></div>'
-    '<div class="tl">' + "".join(f'<div class="fx-l"{A(i + 1)}><span class="tag {t}">{k}</span>{x}<span class="when">{w}</span></div>' for i, (t, k, x, w) in enumerate(WHY)) + "</div></div>",
-    "b-gray", [400, 650, 650, 650])
-
-# The message: Otto reads the signal, writes, the reason is marked, and the rep approves.
-MSG = "Rina, I saw Pallet Cloud is hiring three sales reps. I put together a short benchmark on how teams your size hand leads from marketing to sales. Want a copy?"
-LI_WRITE = scene(
-    f'<div class="tl" style="margin:14px 14px 0"><div{A(1)}><span class="tag t-purple">Signal</span>Hiring 3 sales reps<span class="when">LinkedIn, 2d ago</span></div></div>'
-    f'<div class="msgs"><div class="bub me"{A(2)}><div class="m">{OWL}{sw(("Writing " + DOTS, 2, 3, "fx-fade"), ("Written by Omniscient", 3, None, "fx-fade"))}</div>{words(MSG, 3, (6, 10))}</div></div>'
-    f'<div class="bulk"><span class="sub">Message 1 of 3</span><span class="grow"></span><span class="ui-btn">Edit</span>{sw(("Approve", None, 5, "ui-btn pri"), (CK + "Approved", 5, None, "ui-btn pri done fx-pop"))}</div>',
-    "b-stone", [300, 600, 700, 1700, 900])
-
-
-def mag(kind, title, sub, at, extra=""):
-    return f'<span class="magnet"{A(at)}><span class="pdf"><s></s><s></s><s></s>{kind}</span><span class="grow"><b>{title}</b><small>{sub}</small></span>{extra}</span>'
-
-
-# Lead magnets: one is made for each company, then the first goes into the message.
-LI_MAGNET = scene(
-    '<div class="mags">'
-    + mag("PDF", "Sales handoff benchmark", "Made for Pallet Cloud, 6 pages", 1, f'<span class="tag t-green fx-pop"{A(5, d=200)}>In message 1</span>')
-    + mag("PDF", "Pipeline review checklist", "Made for Tallyfin, 2 pages", 2) + mag("WEB", "CRM audit", "Made for Ledgerly, 5 questions", 3)
-    + f'<div class="bub me full"{A(4)}>Rina, here is the benchmark I mentioned, made for Pallet Cloud.<span class="att fx-drop"{A(5)}><span class="pdf">PDF</span><b>Sales handoff benchmark</b></span></div></div>',
-    "b-stone", [300, 500, 500, 700, 800])
-
-
-# Pacing: the day runs from 9:00, actions land at uneven gaps, nothing in the lunch break, and the warm-up cap is kept.
-def pct(m):  # minutes after midnight on a 7:00 to 19:00 bar
-    return round((m - 420) / 7.2, 2)
-
-
-SWEEP = 4000
-def when(m):
-    return round((m - 540) / (980 - 540) * SWEEP)
-
-
-INV = [552, 571, 598, 641, 667, 712, 824, 860, 898, 937, 965]
-MSGS = [580, 622, 690, 734, 838, 912, 950]
-SENT = [("t-green", "Sent", "Invite to Jordan Blake", 552), ("t-green", "Sent", "Message 1 to Rina Sato", 580), ("t-gray", "Stopped", "Amara Kofi replied", 605)]
-LI_SAFE = scene(
-    '<div class="day"><div class="dh"><b>Today</b><span class="tag t-green">Warming up, day 4</span><span class="grow"></span><span class="lgd"><i class="iv"></i>Invites</span><span class="lgd"><i class="ms"></i>Messages</span></div>'
-    f'<div class="track"><span class="win" style="left:{pct(540)}%;width:{pct(1020) - pct(540)}%"></span><span class="lunch" style="left:{pct(750)}%;width:{pct(810) - pct(750)}%"></span>'
-    + "".join(f'<i class="dt {k} fx-pop"{A(1, d=when(m), s=f"left:{pct(m)}%")}></i>' for k, ms in (("iv", INV), ("ms", MSGS)) for m in ms)
-    + f'<span class="now"{A(1, s=f"--from:translateX({pct(540)}%);--on:translateX({pct(980)}%)")}><i></i></span></div>'
-    f'<div class="ticks"><span style="left:{pct(540)}%">9:00</span><span style="left:{pct(780)}%">Lunch</span><span style="left:{pct(1020)}%">17:00</span></div></div>'
-    '<div class="facts" style="margin:0 14px">'
-    f'<div><small>Invites today</small>11 of 11<span class="pbar"><i class="fx-x lin"{A(1, s="width:100%")}></i></span></div>'
-    f'<div><small>Messages today</small>7 of 30<span class="pbar"><i class="fx-x lin"{A(1, s="width:23%")}></i></span></div>'
-    '<div><small>Gap between actions</small>4 to 9 min</div></div>'
-    '<div class="tl" style="margin:10px 14px 14px">' + "".join(f'<div class="fx-l"{A(1, d=when(m))}><span class="tag {t}">{k}</span>{x}<span class="when">{m // 60}:{m % 60:02d}</span></div>' for t, k, x, m in SENT) + "</div>",
-    "b-gray", [300, 4200])
-
-# Inbox: replies land, get sorted, the sequence stops and an answer is drafted.
-THREADS = [("Rina Sato", "Thanks for the benchmark. What would a trial look like?", "t-green", "Interested"), ("Jordan Blake", "Next Tuesday works for a call.", "t-green", "Interested"), ("Amara Kofi", "Looping in our head of sales.", "t-yellow", "Needs reply")]
-REPLY = "Happy to set it up. You get 14 days free for your team, and I can walk you through it on a 20-minute call. Does Thursday work?"
-LI_INBOX = scene(
-    '<div class="tabs3"><span class="on">All</span><span>Needs reply</span><span>Interested</span></div>'
-    + "".join(f'<div class="th fx-drop"{A(i + 1)}><span class="un"></span><span class="grow"><b>{n}</b><span class="sub">{m}</span></span><span class="tag {t} fx-pop"{A(4, d=i * 120)}>{k}</span></div>' for i, (n, m, t, k) in enumerate(THREADS))
-    + f'<div class="draft"{A(5)}><div class="m">{OWL}Reply drafted for Rina</div>{words(REPLY, 5, d=250)}<div class="drf"><span class="tag t-gray fx-pop"{A(6)}>Sequence stopped</span><span class="grow"></span><span class="ui-btn">Edit</span><span class="ui-btn pri">Send</span></div></div>',
-    "b-gray", [300, 500, 500, 700, 700, 1700], "<b>Inbox <span>3 to answer</span></b>")
-
-# Results: the funnel fills, then the weekly reply rate.
-FUN = [("Invites sent", "250", 100), ("Accepted", "103 (41%)", 41), ("Replied", "53 (21%)", 21), ("Meetings", "12", 4.8)]
-LI_RESULTS = scene(
-    '<div class="fun">' + "".join(f'<span>{l}</span><span class="pbar"><i class="fx-x"{A(i + 1, s=f"width:{w}%")}></i></span><b class="fx-fade"{A(i + 1, d=200)}>{v}</b>' for i, (l, v, w) in enumerate(FUN)) + "</div>"
-    '<div class="learn" style="border-top:1px solid var(--frame)"><span class="mono" style="color:var(--ink-2)">Reply rate, last 4 weeks</span><span class="bars2">'
-    + "".join(f'<i class="fx-y"{A(5, d=k * 110, s=f"height:{h}%")}></i>' for k, h in enumerate([40, 52, 66, 84]))
-    + f'</span><span class="big fx-pop"{A(6)}>21%</span></div>',
-    "b-gray", [300, 450, 450, 450, 600, 700], '<b>US SaaS founders</b><span class="grow"></span><span class="sub mono">Last 4 weeks</span>')
-
-LI = [
-    ("Find leads with buying intent", "Type who you want to reach. Scout searches people and companies and gives each lead a fit score against your rules.", LI_FIND),
-    ("See why each lead fits", "Each lead shows the rules it matches and the signals behind the score: posts, comments, new roles and hiring.", LI_WHY),
-    ("Write a personal message for every lead", "Omniscient writes each message from the lead's profile and recent activity. Edit it or approve it as it is.", LI_WRITE),
-    ("Attach a lead magnet", "Open the conversation with something useful: a benchmark, a guide or a short audit made for the lead's company.", LI_MAGNET),
-    ("Run LinkedIn sequences safely", "Invites, messages and follow-ups go out in your working hours, with a lunch break, uneven gaps and a warm-up for new accounts, within daily limits that protect your account. A sequence stops as soon as the lead replies.", LI_SAFE),
-    ("Answer every reply in one inbox", "Replies from all campaigns go to one inbox, sorted into Needs reply, Interested and Later, with an answer drafted for each.", LI_INBOX),
-    ("Track campaign results", "See invites accepted, replies and meetings booked for each campaign, week by week.", LI_RESULTS),
-]
-
 # ---- CRM shots ----
 CRM_HERO = shot(
     '<div class="scroll-x"><table class="tb"><thead><tr><th>Company</th><th>Stage</th><th class="hide-s">Source</th><th>Last touch</th><th class="hide-s">Pipeline</th></tr></thead><tbody class="rows">'
@@ -176,8 +63,8 @@ CRM_HERO = shot(
               for n, i, bg, t, st, src, lt, v, o in [
                   ("Northwind Health", "NW", "#efe3ff", "t-green", "Customer", "Inbound form", "Email, 2h ago", "$84,000", 0),
                   ("Harbor &amp; Pine", "HP", "#dbeafe", "t-yellow", "Proposal", "Event", "Call, yesterday", "$126,500", 1),
-                  ("Pallet Cloud", "PC", "#fde68a", "t-blue", "Discovery", f'<span style="display:inline-flex;align-items:center;gap:6px">{logo("linkedin", 14)}LinkedIn campaign</span>', "LinkedIn, 3d ago", "$42,000", 0),
-                  ("Verda Robotics", "VR", "#d1fae5", "t-purple", "Meeting set", "Scout", "Meeting, 4d ago", "$61,000", 0),
+                  ("Pallet Cloud", "PC", "#fde68a", "t-blue", "Discovery", "Referral", "Meeting, 3d ago", "$42,000", 0),
+                  ("Verda Robotics", "VR", "#d1fae5", "t-purple", "Meeting set", "Website chat", "Email, 4d ago", "$61,000", 0),
                   ("Atlas Cargo", "AC", "#fee2e2", "t-gray", "Lead", f'<span style="display:inline-flex;align-items:center;gap:6px">{logo("hubspot", 14)}HubSpot import</span>', "Email, 1w ago", "$18,000", 0)])
     + "</tbody></table></div>",
     "b-stone",
@@ -196,9 +83,9 @@ CRM_CAPTURE = scene(
     "b-gray", [300, 700, 800, 800, 700])
 
 # One record: four copies of the same lead are matched and become one record with the full history.
-DUPS = [("t-gray", "Event", "Rina Sato", "Scanned at SaaS Connect", "translate(40px,24px) scale(.5)"), ("t-purple", "LinkedIn", "Rina S.", "Replied to a campaign", "translate(-40px,24px) scale(.5)"),
+DUPS = [("t-gray", "Event", "Rina Sato", "Scanned at SaaS Connect", "translate(40px,24px) scale(.5)"), ("t-purple", "Meeting", "Rina S.", "Booked a demo", "translate(-40px,24px) scale(.5)"),
         ("t-blue", "Email", "rina@palletcloud.com", "Asked for pricing", "translate(40px,-24px) scale(.5)"), ("t-green", "Inbound", "R. Sato", "Filled the pricing form", "translate(-40px,-24px) scale(.5)")]
-HIST = [("t-gray", "Event", "Scanned at SaaS Connect", "Oct 14"), ("t-purple", "LinkedIn", "Replied to a campaign", "Oct 9"), ("t-blue", "Email", "Asked for pricing", "Oct 3"), ("t-green", "Inbound", "Filled the pricing form", "Oct 2")]
+HIST = [("t-gray", "Event", "Scanned at SaaS Connect", "Oct 14"), ("t-purple", "Meeting", "Booked a demo", "Oct 9"), ("t-blue", "Email", "Asked for pricing", "Oct 3"), ("t-green", "Inbound", "Filled the pricing form", "Oct 2")]
 CRM_ONE = scene(
     '<div class="merge"><div class="dups">'
     + "".join(f'<span class="dup"{A(i + 1, 6, s="--to:" + to)}><span class="tag {t}">{k}</span><b>{n}</b><small>{x}</small></span>' for i, (t, k, n, x, to) in enumerate(DUPS))
@@ -265,7 +152,7 @@ CRM_MIG = scene(
 
 CRM = [
     ("Emails and meetings recorded for you", "Connect Gmail or Outlook and your calendar. Every email and meeting is added to the right person, company and deal.", CRM_CAPTURE),
-    ("One record for every lead", "Leads from website forms, LinkedIn campaigns, events and imports are matched by email, LinkedIn and company domain. Each person gets one record with their full history.", CRM_ONE),
+    ("One record for every lead", "Leads from website forms, emails, meetings, events and imports are matched by email, LinkedIn profile and company domain. Each person gets one record with their full history.", CRM_ONE),
     ("Call notes written for you", "Omniscient reads the transcripts from Google Meet, Zoom and Teams and writes notes, next steps and key facts with quotes.", CRM_CALL),
     ("Deal updates you approve", "When a call or email changes a deal, Omniscient suggests the update with its source. Accept it or skip it. Values your team typed are never changed.", CRM_UPDATES),
     ("Ask Omniscient about any account", "Ask a question in plain English. The answer links to the emails, calls and notes it came from.", CRM_ASK),
@@ -353,13 +240,13 @@ DR_WATCH = scene(
 
 # Approve: the buyer approves on the page, the deal moves to Won and the team hears about it.
 DR_WIN = scene(
-    f'<div class="prop sign"{A(1)}><div class="pnav"><b>Lumen Labs × Pallet Cloud</b></div><div class="sg"><span><small>CONTRACT</small><b>25 seats, $30,000 a year</b></span>'
+    f'<div class="prop sign"{A(1)}><div class="pnav"><b>Lumen Labs × Pallet Cloud</b></div><div class="sg"><span><small>PROPOSAL</small><b>25 seats, $30,000 a year</b></span>'
     + sw(("Approve", None, 2, "play"), (CK + "Approved", 2, None, "play ok fx-pop")) + "</div></div>"
-    f'<div class="feed" style="border:0"><div class="ev"{A(3)}>{face("marcus", 22)}<span>Marcus approved the contract<small>Thu, 16:48</small></span></div>'
+    f'<div class="feed" style="border:0"><div class="ev"{A(3)}>{face("marcus", 22)}<span>Marcus approved the proposal<small>Thu, 16:48</small></span></div>'
     '<div class="won" style="margin-top:0"><span class="sub">Stage</span><span class="wt">'
-    + sw(("Proposal", None, 4, "tag t-yellow"), ("Won", 4, None, "tag t-green fx-pop"))
-    + f'<span class="burst"{A(4)}>' + "".join(f'<i style="--bx:{x}px;--by:{y}px"></i>' for x, y in [(-22, -12), (20, -14), (-16, 12), (24, 10), (2, -20), (-4, 18)]) + "</span></span>"
-    + f'<span class="tag t-gray fx-pop"{A(5)}>{logo("slack", 12)}Team alerted</span><span class="grow"></span><span class="sub mono">$30,000</span></div></div>',
+    + sw(("Proposal", None, 4, "tag t-yellow"), ("Contract", 4, None, "tag t-blue fx-pop"))
+    + "</span>"
+    + f'<span class="tag t-gray fx-pop"{A(5)}>Contract drafted</span><span class="grow"></span><span class="sub mono">$30,000</span></div></div>',
     "b-gray", [300, 900, 700, 800, 700], "<b>Pallet Cloud, 25 seats</b>")
 
 DR = [
@@ -369,26 +256,107 @@ DR = [
     ("Your prices, or a quote after a call", "Omniscient uses your saved price list. If it has no prices, it asks you once how you price and saves the answer. You can also choose to quote after a call.", DR_PRICE),
     ("Send it from your own inbox", "Send the proposal link from Gmail or Outlook. Each person gets their own link, so you know who opened it.", DR_SEND),
     ("See who watched what", "See which person opened the proposal, which videos they watched and which pages they read. Get an alert by email or Slack when the buying team is active.", DR_WATCH),
-    ("Approve on the page", "Buyers approve the proposal on the page. The deal moves to Won and the team gets an alert.", DR_WIN),
+    ("Approve on the page", "Buyers approve the proposal on the page. Omniscient drafts the contract from it, and the team gets an alert.", DR_WIN),
+]
+
+# ---- Contract Management shots ----
+CTS = [("Pallet Cloud", "PC", "#fde68a", "Order form, 25 seats", "t-yellow", "Out for signature", "$30,000", "Oct 2027"),
+       ("Northwind Health", "NW", "#efe3ff", "Master agreement", "t-green", "Signed", "$84,000", "Mar 2027"),
+       ("Harbor &amp; Pine", "HP", "#dbeafe", "Order form, 60 seats", "t-blue", "In review", "$126,500", "Dec 2027"),
+       ("Verda Robotics", "VR", "#d1fae5", "Renewal, year 2", "t-purple", "Draft", "$61,000", "Jan 2028"),
+       ("Atlas Cargo", "AC", "#fee2e2", "Data processing terms", "t-green", "Signed", "Included", "Feb 2027")]
+CT_HERO = shot(
+    '<div class="scroll-x"><table class="tb"><thead><tr><th>Company</th><th>Contract</th><th>Status</th><th class="hide-s">Value</th><th class="hide-s">Renews</th></tr></thead><tbody class="rows">'
+    + "".join(f'<tr{" class=open" if k == 0 else ""}><td><span class="who"><span class="av" style="background:{bg}">{i}</span>{n}</span></td><td class="sub">{c}</td><td><span class="tag {t}">{st}</span></td><td class="hide-s">{v}</td><td class="hide-s sub">{r}</td></tr>'
+              for k, (n, i, bg, c, t, st, v, r) in enumerate(CTS))
+    + "</tbody></table></div>",
+    "b-gray",
+    '<b>Contracts <span>214</span></b><span class="grow"></span><span class="ui-btn pri">+ New contract</span>',
+)
+
+# Draft: the rep asks, Otto writes each part of the contract from the deal, the approved proposal and the template.
+PARTS = [("Parties and dates", "From the deal"), ("Seats and price", "From the approved proposal"), ("Payment terms", "Your template"), ("Data processing", "Your template"), ("Signers", "Rina Sato, Marcus Lee")]
+CT_DRAFT = scene(
+    f'<div class="msgs"><div class="bub me fx-r"{A(1)}>Draft the order form for Pallet Cloud</div><div class="bub fx-l"{A(2)}><div class="m" style="display:flex;align-items:center;gap:6px">{OWL}Omniscient</div>Using the approved proposal and your order form template.</div></div>'
+    '<div class="tl" style="margin:0 14px 14px">'
+    + "".join(f'<div{A(3, d=k * 60)}>' + sw(*([("Queued", None, 3 + k, "tag t-gray")] if k else []), ("Writing", 3 + k, 4 + k, "tag t-yellow"), ("Done", 4 + k, None, "tag t-green fx-pop")) + f'{n}<span class="when fx-fade"{A(4 + k)}>{x}</span></div>' for k, (n, x) in enumerate(PARTS))
+    + f'</div><div class="bulk"><span class="sub">Order form, 25 seats, $30,000 a year</span><span class="grow"></span><span class="ui-btn pri fx-pop"{A(9)}>Open contract</span></div>',
+    "b-stone", [300, 700, 500, 700, 600, 600, 600, 600, 500], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Ask Omniscient</b></span>')
+
+# Redlines: the buyer's changes come in with who made them; the rep accepts or skips, and a new version is saved.
+RED = [('Payment terms <s class="strk">Net 30</s> Net 45', "Marcus, v2", 1), ('Term <s class="strk">24 months</s> 12 months', "Marcus, v2", 0), ("Notice period: 60 days", "Dana, v2", 1), ("Liability cap: fees paid in 12 months", "Dana, v2", 1)]
+CT_REDLINE = scene(
+    "".join(f'<div class="upd{"" if ok else " sk"}"{A(1, d=i * 90)}><span class="ut">{x}<span class="cite">{src}</span></span>'
+            + sw((f'<span class="ok">{CK}</span><span class="no">×</span>', None, 3 + i, "btns"), ("Accepted" if ok else "Skipped", 3 + i, None, "tag fx-pop " + ("t-green" if ok else "t-gray"))) + "</div>"
+            for i, (x, src, ok) in enumerate(RED))
+    + f'<div class="tl" style="margin:10px 14px 14px"><div class="fx-l"{A(7)}><span class="tag t-green">Saved</span>Version 3, sent to Marcus and Dana<span class="when">Today</span></div></div>',
+    "b-gray", [300, 800, 900, 700, 700, 700, 600],
+    f'<b>Changes to review <span>{sw(("4", None, 3, ""), ("3", 3, 4, ""), ("2", 4, 5, ""), ("1", 5, 6, ""), ("0", 6, None, ""))}</span></b>')
+
+# Approvals: a discount over the rule waits for the manager, who approves it, and the contract can go out.
+CT_APPROVE = scene(
+    '<div class="facts" style="margin:14px">'
+    f'<div><small>List price</small>$36,000</div><div><small>Discount</small>{sw(("0%", None, 1, ""), ("17%", 1, None, "fx-fade"))}</div><div><small>Your rule</small>Up to 15%</div></div>'
+    '<div class="tl" style="margin:0 14px 14px">'
+    f'<div class="fx-l"{A(2)}><span class="tag t-yellow">Rule</span>Discount is over 15%<span class="when">Needs approval</span></div>'
+    f'<div class="fx-l"{A(3)}>{face("theo", 18)}Sent to Theo Walsh, head of sales<span class="when">9:40</span></div>'
+    f'<div class="fx-l"{A(4)}>{sw(("Waiting", None, 5, "tag t-gray"), ("Approved", 5, None, "tag t-green fx-pop"))}Theo approved 17% for a 2-year term<span class="when">10:05</span></div></div>'
+    f'<div class="bulk"><span class="sub">Order form, 25 seats</span><span class="grow"></span>{sw(("Send for signature", None, 6, "ui-btn"), ("Send for signature", 6, None, "ui-btn pri fx-pop"))}</div>',
+    "b-stone", [300, 700, 700, 700, 900, 600], "<b>Approvals</b>")
+
+# Signing: each signer gets their own link and signs in order; the deal moves to Won and the team hears about it.
+SIGN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17c3-1 4-9 7-9s-1 8 2 8 3-4 5-4 2 3 4 3"/></svg>'
+CT_SIGN = scene(
+    f'<div class="prop sign"{A(1)}><div class="pnav"><b>Lumen Labs × Pallet Cloud</b></div><div class="sg"><span><small>ORDER FORM</small><b>25 seats, $30,000 a year</b></span>'
+    + sw(("Sign", None, 2, "play"), (CK + "Signed", 2, None, "play ok fx-pop")) + "</div></div>"
+    f'<div class="feed" style="border:0"><div class="ev"{A(2)}>{face("rina", 22)}<span>Rina Sato signed<small>Thu, 11:20</small></span></div>'
+    f'<div class="ev"{A(3)}>{face("marcus", 22)}<span>Marcus Lee signed<small>Thu, 16:48</small></span></div>'
+    '<div class="won" style="margin-top:0"><span class="sub">Stage</span><span class="wt">'
+    + sw(("Contract sent", None, 4, "tag t-yellow"), ("Won", 4, None, "tag t-green fx-pop"))
+    + f'<span class="burst"{A(4)}>' + "".join(f'<i style="--bx:{x}px;--by:{y}px"></i>' for x, y in [(-22, -12), (20, -14), (-16, 12), (24, 10), (2, -20), (-4, 18)]) + "</span></span>"
+    + f'<span class="tag t-gray fx-pop"{A(5)}>{logo("slack", 12)}Team alerted</span><span class="grow"></span><span class="sub mono">$30,000</span></div></div>',
+    "b-gray", [300, 900, 900, 800, 700], f'<span style="display:flex;align-items:center;gap:8px">{SIGN}<b>Signing, 2 signers</b></span>')
+
+# Dates: the terms are read from the contract, and a renewal opportunity is made 90 days before the end date.
+CT_DATES = scene(
+    '<div class="facts f4" style="margin:14px">'
+    + "".join(f'<div><small>{k}</small>{sw((NIL, None, i + 1, ""), (v, i + 1, None, "fx-r"))}</div>' for i, (k, v) in enumerate([("Start", "Nov 1, 2026"), ("End", "Oct 31, 2027"), ("Notice", "60 days"), ("Renews", "On its own")]))
+    + '</div><div class="tl" style="margin:0 14px 14px">'
+    f'<div class="fx-l"{A(5)}><span class="tag t-blue">Opportunity</span>Pallet Cloud renewal, $30,000<span class="when">Aug 2, 2027</span></div>'
+    f'<div class="fx-l"{A(6)}><span class="tag t-yellow">Reminder</span>Last day to give notice<span class="when">Sep 1, 2027</span></div></div>',
+    "b-gray", [300, 500, 500, 500, 500, 800, 700], "<b>Key dates</b><span class=\"grow\"></span><span class=\"sub\">Read from the signed order form</span>")
+
+# Ask: a question across every contract, and each answer links to the clause it came from.
+CT_ASK = scene(
+    f'<div class="thread2" style="padding:16px"><div class="ask fx-r"{A(1)}>Which contracts renew in the next 90 days?</div>'
+    f'<div class="ans"><span class="fx-pop"{A(2)}>{OWL}</span><div class="body">{sw((LDR + "Reading 214 contracts", 2, 3, "fx-fade"), ("Three contracts, $171,000 in total.", 3, None, "fx-fade"))}<ul>'
+    f'<li{A(4)}><span>Northwind Health renews on March 1 at $84,000.<span class="cite fx-pop"{A(4, d=250)}>Section 9.1</span></span></li>'
+    f'<li{A(5)}><span>Atlas Cargo can leave with 30 days notice.<span class="cite fx-pop"{A(5, d=250)}>Section 4.2</span></span></li></ul></div></div></div>',
+    "b-stone", [300, 600, 1400, 600, 600], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Ask Omniscient</b></span>')
+
+def mag(kind, title, sub, at, extra=""):  # a file card: its page lines draw in, then its name and what it is
+    return f'<span class="magnet"{A(at)}><span class="pdf"><s></s><s></s><s></s>{kind}</span><span class="grow"><b>{title}</b><small>{sub}</small></span>{extra}</span>'
+
+
+# Import: old contracts come in as PDFs, each is read, and its terms land on the company.
+OLD = [("Northwind Health MSA.pdf", "Master agreement, renews Mar 1"), ("Atlas Cargo DPA.pdf", "Data processing terms"), ("Harbor and Pine order form.pdf", "60 seats, ends Dec 31")]
+CT_IMPORT = scene(
+    '<div class="mags">'
+    + "".join(mag("PDF", n, sw(("Reading " + DOTS, i + 1, i + 2, "fx-fade"), (x, i + 2, None, "fx-fade")), i + 1, f'<span class="tag t-green fx-pop"{A(i + 2, d=200)}>Added</span>') for i, (n, x) in enumerate(OLD))
+    + "</div>",
+    "b-gray", [300, 800, 800, 800], '<b>Import contracts</b><span class="grow"></span><span class="ui-btn">Upload</span>')
+
+CT = [
+    ("Draft the contract from the deal", "Pick a won proposal. Omniscient writes the contract from the deal, the proposal and your own template, part by part, with the right signers.", CT_DRAFT),
+    ("Redlines with every version kept", "Buyers suggest changes on the page. Accept or skip each one, and every version is saved with who changed what.", CT_REDLINE),
+    ("Approval rules for discounts and terms", "Set rules for discounts and changed terms. A contract that breaks one waits for the right person to approve it before it goes out.", CT_APPROVE),
+    ("Sign on the page", "Each signer gets their own link and signs in order. When the last person signs, the deal moves to Won and the team gets an alert.", CT_SIGN),
+    ("Key dates and renewals", "Start, end, notice period and renewal terms are read from each signed contract. A renewal opportunity is made 90 days before the end date.", CT_DATES),
+    ("Ask about any contract", "Ask a question across all your contracts in plain English. Each answer links to the clause it came from.", CT_ASK),
+    ("Bring in the contracts you already have", "Upload your signed PDFs. Omniscient reads the terms and dates and adds each contract to the right company.", CT_IMPORT),
 ]
 
 PAGES = [
-    {
-        "slug": "linkedin-outbound", "name": "Outbound LinkedIn", "band": "b-gray",
-        "title": "Outbound LinkedIn: find leads and message them on LinkedIn | Omniscient",
-        "desc": "Find leads with buying intent, write a personal message for each one, attach a lead magnet and run LinkedIn sequences you approve.",
-        "h1": 'Find leads and message them on LinkedIn.', "h1b": "You approve every message.",
-        "lede": "Search for leads, get a personal message written for each one, and run LinkedIn sequences with safe daily limits.",
-        "hero": LI_HERO, "feats": LI,
-        "list": ["Lead search in plain English", "Fit score with reasons", "Intent signals", "Personal messages for each lead", "Lead magnets per company", "Invites, messages and follow-ups", "Approval before sending", "Safe daily limits", "One inbox for all replies", "Campaign results by week"],
-        "faq": [
-            ("Does Omniscient send LinkedIn messages on its own?", "No. Omniscient writes each message, and nothing is sent until someone on your team approves it."),
-            ("Is it safe for my LinkedIn account?", "Sending stays within daily limits for invites and messages, only during your working hours. You can lower the limits in the campaign's settings."),
-            ("Where do the leads come from?", "Scout searches people and companies by role, company, size and location, and finds people who engaged with posts on your topic."),
-            ("What happens when a lead replies?", "The sequence stops for that lead, and the reply goes to your inbox with a drafted answer."),
-            ("Can I use my own lists?", "Yes. Add people from your CRM or from a saved Scout list to any campaign."),
-        ],
-    },
     {
         "slug": "crm", "name": "Omniscient CRM", "band": "b-stone",
         "title": "Omniscient CRM: emails, calls and leads in one place | Omniscient",
@@ -396,7 +364,7 @@ PAGES = [
         "h1": "A CRM that fills itself in.", "h1b": "Emails, calls and leads in one place.",
         "lede": "Omniscient records your emails, meetings and calls, keeps one record for every lead, and answers questions about any account.",
         "hero": CRM_HERO, "feats": CRM,
-        "list": ["Email and calendar capture", "One record per lead", "Inbound, outbound and event leads", "Call notes from transcripts", "Facts with quotes", "Deal updates you approve", "Ask Omniscient", "Pipeline and forecast", "Custom fields and views", "Migration from your CRM"],
+        "list": ["Email and calendar capture", "One record per lead", "Inbound, referral and event leads", "Call notes from transcripts", "Facts with quotes", "Deal updates you approve", "Ask Omniscient", "Pipeline and forecast", "Custom fields and views", "Migration from your CRM"],
         "faq": [
             ("Do I have to leave my current CRM?", "No. Connect your email and calendar and run both side by side. When you are ready, we migrate your companies, contacts, deals and notes for you."),
             ("How does migration work?", "Send us an export from your CRM or a spreadsheet. We map your fields to Omniscient, run a test import and check it with you, then move everything over. We support HubSpot, Salesforce, Pipedrive and Attio."),
@@ -419,7 +387,23 @@ PAGES = [
             ("Where does the content come from?", "From your Library: your website, case studies, decks and videos. Omniscient only uses facts from the deal, your calls and your Library."),
             ("What does a proposal cost?", "A proposal uses 40 proposal credits and an edit uses 2. Every paid seat adds credits each month. A proposal that fails to build is refunded."),
             ("Can I edit the proposal?", "Yes. Change any text, section or style in the builder before you send it."),
-            ("How do buyers approve?", "On the proposal page. The deal moves to Won and your team gets an alert."),
+            ("How do buyers approve?", "On the proposal page. Omniscient drafts the contract from the approved proposal, and your team gets an alert."),
+        ],
+    },
+    {
+        "slug": "contract-management", "name": "Contract Management", "band": "b-stone",
+        "title": "Contract Management: draft, sign and renew contracts | Omniscient",
+        "desc": "Draft each contract from the deal and your template, review redlines, get approvals, sign on the page and never miss a renewal date.",
+        "h1": "Contracts drafted, signed and renewed.", "h1b": "Right next to the deal.",
+        "lede": "Omniscient drafts each contract from the deal and your template, tracks every change, gets it signed on the page and reminds you before it renews.",
+        "hero": CT_HERO, "feats": CT,
+        "list": ["Contracts drafted from the deal", "Your own templates", "Redlines and versions", "Approval rules", "Signing on the page", "A link for each signer", "Key dates read for you", "Renewal opportunities", "Ask across contracts", "Import of signed PDFs"],
+        "faq": [
+            ("Do I need a separate e-signature tool?", "No. Buyers sign on the contract page. Each signer gets their own link, and you see who has signed."),
+            ("Can I use my own contract templates?", "Yes. Add your templates to the Library. Omniscient fills them from the deal and the approved proposal, and you can edit any part before you send it."),
+            ("What happens when the buyer asks for changes?", "They suggest changes on the page. You accept or skip each one, and every version is saved with who changed what."),
+            ("How do renewals work?", "Omniscient reads the end date, notice period and renewal terms from the signed contract and makes a renewal opportunity 90 days before the end date."),
+            ("Can I bring in contracts I already signed?", "Yes. Upload the PDFs. Omniscient reads the terms and dates and adds each one to the right company."),
         ],
     },
 ]

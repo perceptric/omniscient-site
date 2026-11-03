@@ -10,13 +10,13 @@ The home page after folk's layout, in the app's square style. Replaces home v2 (
 
 ## Order
 1. Hero: headline, one line on what Omniscient does, email field to start a trial, the Companies screen.
-2. Works with: Gmail, Outlook, LinkedIn, HubSpot, Salesforce, Zoom, Slack.
+2. Works with: Gmail, Outlook, HubSpot, Salesforce, Zoom, Slack.
 3. Three things it does, a full screen each, after Lightfield: a short title and one line on the left, and one big
    product screen on the right that runs off the edge of the page. On phones the words sit above the screen.
-   - Build high-quality pipeline: Scout.
    - Unify all conversations: the CRM, one person's record with every source flowing into it.
    - Close deals with Netflix-like proposals: the Deal Room proposal, with rows for each person.
-4. Replace five tools with one.
+   - Contracts signed and renewed: one contract's record with its signers, versions and renewal date.
+4. Replace five tools with one: CRM, call notes, proposals, e-signature and contract management.
 5. Security, Pricing, Questions, a closing band with the trial form.
 
 ## Motion

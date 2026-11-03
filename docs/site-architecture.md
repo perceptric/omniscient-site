@@ -2,7 +2,7 @@
 
 The plan for tryomniscient.com, built the way Attio builds attio.com: two big menus, one page per feature, and one page template used everywhere. The site stays plain HTML on Hostinger (see `README.md`).
 
-The feature list comes from the app's sidebar (`src/components/ClientApp.tsx` in the app repo): Home and Ask, Outreach (Scout, Campaigns, Inbox), CRM (Companies, People, Opportunities, Lists, Dashboards), Resources (Meetings, Emails, Notes, Automation, Knowledge) and Deal Room (Experiences, Library).
+The feature list comes from the app's sidebar (`src/components/ClientApp.tsx` in the app repo): Home and Ask, CRM (Companies, People, Opportunities, Dashboards), Resources (Meetings, Emails, Notes, Automation, Knowledge), Deal Room (Experiences, Library) and Contracts. Scout and LinkedIn outreach are no longer on the site.
 
 ## 1. Header
 
@@ -16,15 +16,7 @@ The feature list comes from the app's sidebar (`src/components/ClientApp.tsx` in
 
 ## 2. Product menu
 
-Three sections that run end to end, in the order a deal moves: Revenue finds the buyer, CRM keeps the whole story, Deal Room closes. Ecosystem sits beside them, with a tinted panel on the right, like Attio's menu. Names are plain and say what the feature does.
-
-### Revenue
-
-| Name | Line | In the app |
-|---|---|---|
-| **B2B Lead Scouting** | Find the right buyers and see why they fit | Scout |
-| **LinkedIn Outreach** | LinkedIn campaigns you approve before they send | Campaigns |
-| **Unified Inbox** | Every reply in one place, next to the record | Inbox |
+Three sections that run end to end, in the order a deal moves: CRM keeps the whole story, Deal Room closes, Contracts gets it signed and renewed. Ecosystem sits beside them, with a tinted panel on the right, like Attio's menu. Names are plain and say what the feature does.
 
 ### CRM
 
@@ -43,6 +35,12 @@ Three sections that run end to end, in the order a deal moves: Revenue finds the
 | **Deal Room** | A private website for every deal | Experiences |
 | **Content Experiences** | Turn your content into journeys buyers want to finish | Library, tracks, hubs |
 | **Interactive Proposals** | Proposals buyers can explore, price and act on | Proposal templates, pricing elements |
+
+### Contracts
+
+| Name | Line | In the app |
+|---|---|---|
+| **Contract Management** | Contracts drafted, signed and renewed | Contracts: templates, redlines, approvals, signing, key dates |
 
 ### Ecosystem
 
@@ -74,15 +72,12 @@ Otto, Ask Omniscient and Workflows show up inside every section's pages, where t
 
 ## 4. Sitemap
 
-Every page lives in its own folder (the URL is the folder path). All marketing pages sit under a prefix, because `.htaccess` sends any path with no page here to the app. App routes such as `/ask`, `/meetings`, `/library`, `/workflows`, `/inbox` and `/scout` must keep reaching the app, so the site never uses them at the root.
+Every page lives in its own folder (the URL is the folder path). All marketing pages sit under a prefix, because `.htaccess` sends any path with no page here to the app. App routes such as `/ask`, `/meetings`, `/library`, `/workflows`, `/inbox` and `/contracts` must keep reaching the app, so the site never uses them at the root.
 
 | URL | Page | Phase |
 |---|---|---|
 | `/` | Home | 1 (rework) |
 | `/product/` | Product overview: the three sections and Ecosystem as a page | 1 |
-| `/product/lead-scouting/` | B2B Lead Scouting | 1 |
-| `/product/linkedin-outreach/` | LinkedIn Outreach | 1 |
-| `/product/unified-inbox/` | Unified Inbox | 2 |
 | `/product/single-source-of-truth/` | Single Source of Truth | 1 |
 | `/product/call-meeting-intelligence/` | Call & Meeting Intelligence | 1 |
 | `/product/self-driving-crm/` | Self-Driving CRM | 1 |
@@ -91,6 +86,7 @@ Every page lives in its own folder (the URL is the folder path). All marketing p
 | `/product/deal-room/` | Deal Room | 1 |
 | `/product/content-experiences/` | Content Experiences | 2 |
 | `/product/proposals/` | Interactive Proposals | 2 |
+| `/product/contract-management/` | Contract Management | Built |
 | `/integrations/` | Apps: a grid of logos with filters by kind | 2 |
 | `/integrations/<tool>/` | One page per tool: gmail, outlook, google-calendar, slack, zoom, google-meet, teams, hubspot, salesforce, attio, pipedrive, claritia, arrowsterr | 3 |
 | `/switch/` | One-Click Switch (imports) | 2 |
@@ -121,7 +117,7 @@ About 45 pages at the end of phase 3, plus help articles, templates and blog pos
 
 Like Attio's feature pages, each one follows the same order, so a new page is mostly words and one mock.
 
-1. **Hero.** A small label with the section ("Revenue"), a big title (the page's one bold thing), one lead line, Start free and Book a demo, and a live HTML mock of the screen below. Mocks are HTML and CSS, the same way the home page does `HeroMock` today. No screenshots, so they stay sharp and match the brand.
+1. **Hero.** A small label with the section ("CRM"), a big title (the page's one bold thing), one lead line, Start free and Book a demo, and a live HTML mock of the screen below. Mocks are HTML and CSS, the same way the home page does `HeroMock` today. No screenshots, so they stay sharp and match the brand.
 2. **Works with.** A row of tool logos that apply to this feature.
 3. **Feature rows.** Two to four rows, words on one side and a small mock on the other, switching sides each row.
 4. **Otto at work.** What the agent does on this feature, tagged `ByOtto`, with Otto in his working state.
@@ -140,34 +136,34 @@ The home page tells one idea, then walks the three sections in order. Each secti
 
 **Hero title:** Know everything. Close more.
 
-**Lead:** Omniscient runs your whole sales motion in one place, from the first LinkedIn message to the signed deal.
+**Lead:** Omniscient runs every deal in one place, from the first email to the signed contract and its renewal.
 
 **The why:**
 
 > Selling comes down to knowing your buyer and knowing when to move.
 >
-> Most teams spread that knowledge across a lead tool, a LinkedIn tab, an inbox, a CRM nobody updates and a folder of proposals. Reps spend their days copying between them, and the real story of each deal gets lost along the way.
+> Most teams spread that knowledge across an inbox, a CRM that falls behind, a folder of proposals and a separate tool for contracts. Reps spend their days copying between them, and the real story of each deal gets lost along the way.
 >
-> Omniscient keeps the whole story in one place. It finds the buyers who fit and starts the conversation. It remembers every email, call and meeting, and keeps each record up to date on its own. When a deal is ready, it builds the room where the buyer says yes.
+> Omniscient keeps the whole story in one place. It remembers every email, call and meeting, and keeps each record up to date on its own. When a deal is ready, it builds the room where the buyer says yes, then drafts the contract and keeps its dates.
 >
 > Every fact links back to where it came from, so your team can trust what it sees. Otto, our agent, does the typing. Your team does the selling.
 
-**Closing line:** One system, from first hello to closed deal.
+**Closing line:** One system, from first hello to signed contract.
 
 ### The three sections (one band each)
 
 | Band | Title | Lead |
 |---|---|---|
-| Revenue | Find the buyers worth your time | Scout the right accounts, reach them on LinkedIn and handle every reply in one inbox. |
 | CRM | Remember everything | Every email, call and meeting turns into records that keep themselves current. |
 | Deal Room | Close with one link | Give every buyer a private site with the plan, the content and the price. |
+| Contracts | Signed and renewed | Draft the contract from the deal, sign it on the page and never miss a renewal. |
 
 ### Page order
 
 1. Hero, 50/50: the title, lead and buttons on the left, the product tour video on the right (a placeholder until the film is ready).
 2. Logo strip of the tools it connects to.
 3. The why, as a short block of large text.
-4. The tour, "From first hello to closed deal": a sidebar that follows the scroll on the left (Revenue, CRM and Deal Room, with the open section's features under it and a blue bar on the current one) and one block per feature on the right, each with its own mock. On a phone the sidebar becomes a strip of section tabs under the header.
+4. The tour, "From first hello to closed deal": a sidebar that follows the scroll on the left (CRM, Deal Room and Contracts, with the open section's features under it and a blue bar on the current one) and one block per feature on the right, each with its own mock. On a phone the sidebar becomes a strip of section tabs under the header.
 5. Meet Otto: Ask Omniscient with sources.
 6. One-Click Switch: the HubSpot, Salesforce, Attio and Pipedrive logos.
 7. Security in brief.
@@ -176,7 +172,7 @@ The home page tells one idea, then walks the three sections in order. Each secti
 
 ## 7. Footer
 
-Five columns of links, the same groups as the menus: Revenue, CRM, Deal Room, Ecosystem, and Resources merged with Company. Under them: the logo, Privacy, Terms, the email address and the year.
+Five columns of links, the same groups as the menus: CRM, Deal Room, Contracts, Ecosystem, and Resources merged with Company. Under them: the logo, Privacy, Terms, the email address and the year.
 
 ## 8. How it's built
 
@@ -198,7 +194,7 @@ Built so far: the header and both menus, the phone menu, the footer, the home pa
 
 | Phase | What ships |
 |---|---|
-| 1 | New header with both menus and the phone sheet, new footer, the feature template and mock parts, Home rework, `/product/`, B2B Lead Scouting, LinkedIn Outreach, Single Source of Truth, Call & Meeting Intelligence, Self-Driving CRM, Deal Room, Pricing, Security, Demo |
+| 1 | New header with both menus and the phone sheet, new footer, the feature template and mock parts, Home rework, `/product/`, Single Source of Truth, Call & Meeting Intelligence, Self-Driving CRM, Deal Room, Pricing, Security, Demo |
 | 2 | The other product pages, Apps, Switch, Developers, the three solution pages, Omniscient 101, the template gallery, Compare and five rival pages, Changelog |
 | 3 | One page per tool and per template, API reference, the suite page, help center, guides, blog, About |
 | Later | Customers, once three stories are signed off |

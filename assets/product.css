@@ -1,4 +1,4 @@
-/* The product pages (Outbound LinkedIn, Omniscient CRM, Deal Room), written by tools/products/gen.py. Product
+/* The product pages (Omniscient CRM, Deal Room, Contract Management), written by tools/products/gen.py. Product
    shots use the home page's shot styles (home.css); this file lays out the hero, feature rows and the rest. */
 .om-product .p-hero { text-align: center; padding-top: 72px; padding-bottom: 36px; }
 .om-product .p-hero h1 { font-size: clamp(36px, 5.6vw, 68px); max-width: 900px; }
@@ -71,32 +71,11 @@
 .sc .ui-btn svg { margin-right: 2px; }
 .sc .card .ch svg, .sc .bub .m svg, .sc .draft .m svg { flex: none; }
 
-/* Scout: the search is underlined part by part, then leads arrive and their fit squares fill */
-.sc .sentence u { background: none; display: inline-block; position: relative; }
-.sc .fx-u { --o0: 1; --from: none; }
-.sc .fx-u::after { content: ""; position: absolute; left: 0; right: 0; bottom: 1px; height: 1.5px; background: var(--ink); transform-origin: 0 50%; transition: transform var(--slow) var(--ease-out); }
-.sc.is-armed .fx-u:not(.is-on)::after { transform: scaleX(0); transition-duration: var(--fast); }
-.sc .q i { transition: transform var(--normal) var(--ease-spring); }
-.sc tr.is-on .q i:nth-child(1) { transition-delay: 150ms; } .sc tr.is-on .q i:nth-child(2) { transition-delay: 210ms; } .sc tr.is-on .q i:nth-child(3) { transition-delay: 270ms; } .sc tr.is-on .q i:nth-child(4) { transition-delay: 330ms; }
-.sc.is-armed tr:not(.is-on) .q i { transform: scale(0); }
-.sc .meta { min-height: 30px; }
-
-/* Fit: two squares per reason */
-.sc .rec .top2 { flex-wrap: wrap; }
-.fitm { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 10px; background: var(--fill); }
-.fitm b { font-variant-numeric: tabular-nums; }
-.segs { display: grid; grid-template-columns: repeat(4, 7px); gap: 2px; }
-.segs i { width: 7px; height: 7px; border-radius: 2px; background: var(--signal); }
-
-/* The message */
+/* Chat bubbles */
 .sc .msgs { flex: none; }
 .sc .bub .m { display: flex; align-items: center; gap: 6px; }
-.sc .hl { position: relative; }
-.sc .hl::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; border-radius: 1px; background: var(--signal); transform-origin: 0 50%; transition: transform var(--normal) var(--ease-out); }
-.sc.s4 .hl:nth-child(8)::after { transition-delay: 60ms; } .sc.s4 .hl:nth-child(9)::after { transition-delay: 120ms; } .sc.s4 .hl:nth-child(10)::after { transition-delay: 180ms; }
-.sc.is-armed:not(.s4) .hl::after { transform: scaleX(0); }
 
-/* Lead magnets */
+/* File cards */
 .mags { padding: 16px; display: grid; gap: 8px; }
 .sc .magnet { margin: 0; border: 0; border-radius: 12px; background: #fff; box-shadow: var(--sh-chip); flex-wrap: wrap; }
 .sc .magnet .pdf { position: relative; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 3px; padding: 6px 5px 4px; border-radius: 4px; }
@@ -107,39 +86,6 @@
 .sc .bub.full { max-width: none; align-self: stretch; display: flex; flex-direction: column; gap: 8px; }
 .att { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 8px; background: #fff; box-shadow: var(--sh-chip); }
 .att .pdf { width: 22px; height: 28px; border-radius: 4px; display: grid; place-items: center; font: 500 7px var(--font); box-shadow: inset 0 0 0 1px var(--frame); flex: none; }
-
-/* Pacing: the day bar */
-.day { padding: 14px; }
-.dh { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-.lgd { display: inline-flex; align-items: center; gap: 5px; color: var(--ink-2); font-size: 11px; }
-.lgd i, .dt { width: 7px; height: 7px; border-radius: 999px; }
-.iv { background: var(--blue-9); } .ms { background: var(--purple-11); }
-.track { position: relative; height: 40px; border-radius: 8px; background: var(--fill); overflow: hidden; }
-.win { position: absolute; top: 0; bottom: 0; background: #fff; box-shadow: inset 0 0 0 1px var(--frame); }
-.lunch { position: absolute; top: 0; bottom: 0; background: repeating-linear-gradient(45deg, var(--line-2) 0 1px, transparent 1px 6px); }
-.dt { position: absolute; top: 11px; margin-left: -3.5px; } .dt.ms { top: 23px; }
-.now { position: absolute; inset: 0; --o0: 1; --dur: 4000ms; --ease: linear; pointer-events: none; }
-.now i { position: absolute; left: -1px; top: 0; bottom: 0; width: 2px; background: var(--signal); }
-.ticks { position: relative; height: 18px; margin-top: 4px; font-size: 10.5px; color: var(--ink-2); }
-.ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
-
-/* Inbox */
-.sc .th { align-items: flex-start; }
-.sc .th .sub { white-space: normal; overflow: visible; max-width: none; }
-.sc .th .tag { margin-top: 2px; }
-.draft { margin: 12px 14px 14px; padding: 10px 12px; border-radius: 12px; background: var(--band-gray); }
-.draft .m { display: flex; align-items: center; gap: 6px; color: var(--ink-2); font-size: 10.5px; margin-bottom: 4px; }
-.drf { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-
-/* Results */
-.fun { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px 12px; padding: 16px; }
-.fun .pbar { height: 10px; margin: 0; border-radius: 4px; }
-.fun .pbar i { border-radius: 4px; }
-.fun > span:first-child, .fun > span:nth-child(3n + 1) { color: var(--ink-2); }
-.fun b { font-variant-numeric: tabular-nums; }
-.bars2 { display: flex; align-items: flex-end; gap: 6px; height: 44px; }
-.bars2 i { flex: 1; border-radius: 3px; background: var(--fill-2); box-shadow: inset 0 0 0 1px var(--frame); }
-.bars2 i:last-child { background: var(--signal); box-shadow: none; }
 
 /* Capture */
 .cap { display: grid; grid-template-columns: 220px minmax(0, 1fr); }
@@ -178,6 +124,9 @@
 .strk::after { content: ""; position: absolute; left: -1px; right: -1px; top: 50%; height: 1px; background: currentColor; transform-origin: 0 50%; transition: transform var(--normal) var(--ease-out); }
 .sc.is-armed:not(.s2) .strk::after { transform: scaleX(0); }
 .sc.s5 .upd.sk .ut, .sc:not(.is-armed) .upd.sk .ut { opacity: .45; }
+
+/* Key dates: four facts in a row */
+.facts.f4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
 /* Ask */
 .sc .thread2 { display: flex; flex-direction: column; gap: 12px; }
@@ -263,10 +212,10 @@
 @media (max-width: 900px) {
   .cap { grid-template-columns: minmax(0, 1fr); }
   .cap .srcs { border-right: 0; border-bottom: 1px solid var(--frame); }
-  .pipe { grid-template-columns: 1fr 1fr; }
-  .pipe div + div { border-left: 0; border-top: 0; }
-  .pipe div:nth-child(2n) { border-left: 1px solid var(--frame); }
-  .pipe div:nth-child(n + 3) { border-top: 1px solid var(--frame); }
+  .pipe, .facts.f4 { grid-template-columns: 1fr 1fr; }
+  .pipe div + div, .facts.f4 div + div { border-left: 0; border-top: 0; }
+  .pipe div:nth-child(2n), .facts.f4 div:nth-child(2n) { border-left: 1px solid var(--frame); }
+  .pipe div:nth-child(n + 3), .facts.f4 div:nth-child(n + 3) { border-top: 1px solid var(--frame); }
   .fc { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .fc > .mono { grid-column: 1 / -1; }
   .rail { grid-auto-columns: 44%; }

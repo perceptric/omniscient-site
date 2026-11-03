@@ -2,7 +2,7 @@
 
 Static site for Omniscient. Plain HTML: no WordPress, no build step.
 
-The app itself lives at app.tryomniscient.com. This repo is only the marketing site: the home page, three product pages (Outbound LinkedIn, Omniscient CRM, Deal Room), Privacy and Terms. More pages follow `docs/site-architecture.md`.
+The app itself lives at app.tryomniscient.com. This repo is only the marketing site: the home page, three product pages (Omniscient CRM, Deal Room, Contract Management), Privacy and Terms. More pages follow `docs/site-architecture.md`.
 
 ## How it's laid out
 
@@ -14,8 +14,8 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `partials/head.html` | Icons, fonts and the shared CSS. |
 | `partials/header.html`, `partials/footer.html` | The site header and footer. |
 | `assets/base.css` | Brand tokens, reset, type, tags, buttons, the header with the Product and Resources menus, the phone menu, footer, reading pages. |
-| `assets/home.css`, `assets/home.js` | The home page (`docs/home-v3.md`): hero, three full-screen sections (pipeline, conversations, proposals) each with one big product screen, tools it replaces, security, pricing and questions. |
-| `product/linkedin-outbound/`, `product/crm/`, `product/deal-room/` | The three product pages, written by `tools/products/gen.py` (edit the copy there, then run it and `node tools/layout.mjs`). Styles in `assets/product.css`, shots reuse `assets/home.css`. Each feature's shot is a scene that plays what the feature does (see `assets/scenes.js`); `assets/product.js` plays the hero shots once. |
+| `assets/home.css`, `assets/home.js` | The home page (`docs/home-v3.md`): hero, three full-screen sections (conversations, proposals, contracts) each with one big product screen, tools it replaces, security, pricing and questions. |
+| `product/crm/`, `product/deal-room/`, `product/contract-management/` | The three product pages, written by `tools/products/gen.py` (edit the copy there, then run it and `node tools/layout.mjs`). Styles in `assets/product.css`, shots reuse `assets/home.css`. Each feature's shot is a scene that plays what the feature does (see `assets/scenes.js`); `assets/product.js` plays the hero shots once. |
 | `assets/img/people/` | Portraits used in the product shots, from Unsplash (free to use, credited in the footer). |
 | `assets/site.js` | Opens and closes the menus, the phone menu, the header line on scroll and scroll reveals. |
 | `assets/scenes.js`, `assets/scenes.css` | Scenes: small product screens in HTML and CSS that play step by step. A part with `data-at="n"` comes in at step n and one with `data-off="n"` leaves; `data-t` lists the wait before each step. The Product and Resources menus' scenes (written in `partials/header.html`; the product ones are shown again on the product pages' other-product cards) play while the menu is open and loop on the hovered card; product page scenes and the home page's four security scenes play once in view and again on hover or tap. Transform and opacity only; reduced motion shows the last frame. |
@@ -76,12 +76,12 @@ listed in `SCENES` there. Logos come from `tools/cover-logos.json`: add a new to
 
 ```
 ---
-title: "Best LinkedIn Automation Tools in 2026"
-slug: best-linkedin-automation-tools
-target_keyword: "best linkedin automation tools"
+title: "Best CRMs for Startups in 2026"
+slug: best-crm-for-startups
+target_keyword: "best crm for startups"
 meta_description: "150 to 160 characters for search results."
 type: best-of
-topic: linkedin
+topic: crm
 updated: 2026-11-03
 read_minutes: 9
 summary: "One sentence for the index card."
@@ -92,7 +92,7 @@ summary: "One sentence for the index card."
 |---|---|
 | `title` | The page title, the index card and the cover. |
 | `slug` | The URL, `/blog/<slug>/`. Keep it the same as the file name. |
-| `topic` | `linkedin` or `crm`. The tag on the card and the filter on the index. |
+| `topic` | `crm`. The tag on the card and the filter on the index. |
 | `type` | `best-of`, `alternatives`, `versus`, `pricing` or `how-to`. Sets the length the build checks for. |
 | `updated` | YYYY-MM-DD. Shown on the post, orders the index and is the post's date in `sitemap.xml`. |
 | `meta_description` | 150 to 160 characters. The search snippet and the share text. |
@@ -229,7 +229,7 @@ Every image needs alt text, and every SVG a `<title>`.
   copy named `_something.md`, build it the same way and delete the copy and its output after.
 - **Not served:** `.htaccess` answers 403 for any path with a part that starts with `_` (so `blog/_src/`) and for
   `*.shot.html`, since Hostinger deploys the whole repo.
-- **Removing a post:** delete its `.md`, `blog/<slug>/` and `assets/blog/<slug>/`, then run `--all`.
+- **Removing a post:** delete its `.md`, `blog/<slug>/` and `assets/blog/<slug>/`, add its path to the "Removed pages" redirect in `.htaccess` (else the server sends it to the app), then run `--all`.
 
 ## Where the words come from
 

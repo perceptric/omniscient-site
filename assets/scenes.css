@@ -55,17 +55,6 @@
 .mr { display: flex; align-items: center; gap: 6px; }
 .mr i { display: block; font-size: 8.5px; }
 
-/* Outbound LinkedIn: a lead is scored, invited, accepts, gets two messages and replies */
-.mini-li .ml { width: 100px; flex: none; padding: 8px; display: flex; flex-direction: column; gap: 7px; align-items: flex-start; }
-.mfit { display: flex; align-items: center; gap: 5px; }
-.mq { display: grid; grid-template-columns: 5px 5px; gap: 1px; }
-.mq i { width: 5px; height: 5px; border-radius: 1px; background: var(--signal); }
-.mchat { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-.mb { padding: 4px 7px; border-radius: 8px; max-width: 100%; }
-.mb.me { align-self: flex-end; background: var(--solid); color: #fff; border-bottom-right-radius: 3px; }
-.mb.them { align-self: flex-start; background: #fff; box-shadow: var(--sh-chip); display: flex; align-items: center; gap: 4px; border-bottom-left-radius: 3px; }
-.mbw { justify-items: end; align-self: stretch; }
-
 /* CRM: an email, an invite and a call note fly into a person's record and fill it in */
 .msrc { width: 74px; flex: none; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; position: relative; z-index: 1; }
 .msrc > .mt { position: relative; }
@@ -81,6 +70,19 @@
 .mn { display: flex; align-items: center; gap: 5px; margin-top: 2px; padding: 3px 5px; border-radius: 5px; background: var(--green-soft); }
 .mn b { color: var(--green); }
 .mn svg { width: 11px; height: 11px; flex: none; }
+
+/* Contract Management: the contract is drafted, each signer signs, and the renewal date is set */
+.mdoc { width: 96px; flex: none; padding: 8px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.mdoc > i { font-size: 8.5px; }
+.mln { display: flex; flex-direction: column; gap: 3px; align-self: stretch; margin: 2px 0; }
+.mln s { display: block; height: 3px; border-radius: 2px; background: var(--line); }
+.mln s:nth-child(2) { width: 84%; } .mln s:nth-child(3) { width: 60%; }
+.msig { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+.ms { padding: 5px 6px; gap: 5px; }
+.ms > span:not(.swap) { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ms .swap { justify-items: end; }
+.ms .mt { height: 15px; padding: 0 5px; font-size: 8.5px; }
+.ms .mt svg { width: 9px; height: 9px; flex: none; }
 
 /* Deal Room: a proposal's row scrolls like Netflix, a tile opens and a view shows up */
 .mini-dr .mi { padding: 0; }
