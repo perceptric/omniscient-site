@@ -69,7 +69,7 @@ That's honestly a strong list, and the safety part reads a lot like the one we b
 Each point below starts from Expandi's own pages:
 
 - Each seat covers one LinkedIn account at a time, says its [help center](https://help.expandi.io/en/articles/10261458-manage-subscriptions-seats-for-your-linkedin-accounts-workspace), so every rep needs a Business seat until you reach the Agency plan's 10 seats.
-- The free trial lasts 7 days, while eight tools on this list give you 14 days or more.
+- The free trial lasts 7 days, while nine tools on this list give you 14 days or more.
 - Personalized images, GIFs and Sendspark video cost extra on top of the plan.
 - Email follow ups go out through the email provider you connect, and the pricing page lists no email finder, so finding addresses takes another tool.
 - Replies land in Expandi's inbox and reach your CRM through a sync, so the CRM stays a second tool with its own bill.
@@ -224,7 +224,7 @@ Dux-Soup is a LinkedIn automation software that runs drip campaigns through its 
 - Native integrations include Salesforce, HubSpot, Pipedrive, Freshsales and HighLevel, plus Zapier and Make.
 - Shared team campaigns need 2 or more seats.
 
-STACKED cloud costs the same as Expandi's monthly Business price, and the local app costs less as long as your computer stays on. Reassuringly, the homepage lists daily limits that ramp up gradually, speed throttling and an auto snooze, though it keeps the exact numbers confidential. The site offers a free trial without saying how long it lasts.
+STACKED cloud costs the same as Expandi's monthly Business price, and the local app costs less as long as your computer stays on. Reassuringly, the homepage lists daily limits that ramp up gradually, speed throttling and an auto snooze, though it keeps the exact numbers confidential. Its [drip campaigns page](https://www.dux-soup.com/product/features/drip-campaigns) offers a free trial of 14 days.
 
 ### 11. Waalaxy
 
@@ -259,7 +259,7 @@ Linked Helper is a LinkedIn automation software that runs as a desktop app on yo
 - Standard caps about a dozen actions at 20 a day, such as likes, group messages and contacts sent to your CRM, and Pro lifts those caps.
 - The trial gives 14 days of full Pro access with no card, and nothing renews on its own.
 
-Luckily for teams watching every dollar, Linked Helper has the lowest price per account here. In return, you give up Expandi's cloud IP, and email stays in your cold email tool.
+Luckily for teams watching every dollar, Linked Helper has the lowest monthly price per account here. In return, you give up Expandi's cloud IP, and email stays in your cold email tool.
 
 ## Expandi alternatives compared
 
@@ -281,7 +281,7 @@ Expandi, Meet Alfred, Kanbox and Linked Helper also keep tags, notes or pipeline
 | SalesRobot | LinkedIn account | Cloud, with a dedicated IP per account | 14 days, no card |
 | Dripify | User, one LinkedIn account each | Cloud, with a dedicated IP | 7 days, no card |
 | Meet Alfred | User, Agency from 3 seats | Cloud | 7 days, no card |
-| Dux-Soup | Seat | Your computer, or the cloud on STACKED cloud | check |
+| Dux-Soup | Seat | Your computer, or the cloud on STACKED cloud | 14 days |
 | Waalaxy | User | Cloud on Advanced and Business | 14 days |
 | Kanbox | LinkedIn account, or flat on Agency 10 | Chrome extension | 15 days, no card |
 | Linked Helper | LinkedIn account | Your computer or server | 14 days, no card |

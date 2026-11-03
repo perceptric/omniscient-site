@@ -45,7 +45,7 @@ folk | folk.app | A simple CRM that captures LinkedIn contacts with its Chrome e
 Salesflare | salesflare.com | A B2B CRM that fills itself in, with a sidebar inside LinkedIn | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small teams that meet on LinkedIn and follow up by email
 HubSpot Sales Hub | hubspot.com | A full CRM whose sequences add LinkedIn steps as manual tasks | [$90 per seat a month on Professional, annual commitment](https://www.hubspot.com/pricing/sales) | Companies that already run HubSpot
 La Growth Machine | lagrowthmachine.com | Multichannel sequences on LinkedIn, email, calls and X with native HubSpot and Pipedrive sync | [€60 per identity a month](https://lagrowthmachine.com/pricing/) | Teams on HubSpot or Pipedrive that call and email too
-lemlist | lemlist.com | Sales engagement across email, LinkedIn and calls with HubSpot, Salesforce and Pipedrive sync | [$109 a month on Multichannel, billed monthly](https://www.lemlist.com/pricing) | Teams where cold email leads and LinkedIn follows
+lemlist | lemlist.com | Sales engagement across email, LinkedIn and calls with HubSpot, Salesforce and Pipedrive sync | [$109 per user a month on Multichannel, billed monthly](https://www.lemlist.com/pricing) | Teams where cold email leads and LinkedIn follows
 HeyReach | heyreach.io | LinkedIn outreach from many accounts at once, with one unified inbox | [$79 per sender a month](https://www.heyreach.io/pricing) | Agencies and teams with many senders
 Closely | closelyhq.com | LinkedIn and email outreach with a Smart Inbox and white label on every plan | [$65 a month for 1 LinkedIn account](https://www.closelyhq.com/pricing) | Small agencies that keep deals in a client's CRM
 ```
@@ -151,22 +151,22 @@ Luckily for anyone on a tight budget, it has the lowest price per account on thi
 Dripify is a LinkedIn automation software that runs drip campaigns of LinkedIn and email steps from the cloud. Its pricing page gives every plan a small CRM section: a central dashboard, notes on each lead, imports and exports, and the option to resume a lead in a sequence.
 
 - Pro costs [$79 per user a month billed monthly](https://dripify.com/pricing/), or $59 billed yearly, with email steps in the same sequence and a dedicated inbox.
-- Advanced costs $99 a month billed monthly, or $79 yearly, and adds lead tagging, team management and A/B tests.
+- Advanced costs $99 per user a month billed monthly, or $79 yearly, and adds lead tagging, team management and A/B tests.
 - A HubSpot integration comes with Pro, next to webhooks, Zapier and an open API.
 - The trial lasts 7 days with Advanced features and no credit card.
 
-Its pricing page lists up to 75 connection requests a day. Our own settings stop at 40, so we'd set a lower daily number on the first day. Dripify fits a small team that wants notes on each lead today and a HubSpot sync once deals pile up.
+Its pricing page lists up to 75 connection requests a day on Pro and Advanced. Our own settings stop at 40 a day, so we'd start a new account far below that and raise it slowly. Dripify fits a small team that wants notes on each lead today and a HubSpot sync once deals pile up.
 
 ### 7. Waalaxy
 
-Waalaxy is a LinkedIn prospecting software that runs invitation and message sequences from the cloud with monthly invitation quotas. Every plan lists CRM sync with "2000+ tools," duplicate prevention across your team and smart reply detection.
+Waalaxy is a LinkedIn prospecting software that runs invitation and message sequences from the cloud with monthly invitation quotas. Pro includes CRM synchronization, and the plan comparison lists CRM sync with "2000+ tools," duplicate prevention across your team and smart reply detection.
 
 - Pro costs [€19 per user a month](https://www.waalaxy.com/pricing) with 300 invitations a month, and the page offers monthly, quarterly and yearly terms without saying which one that price uses.
 - Cold email sequences start on Business, at €69 per user a month.
 - The LinkedIn Inbox costs €20 a month extra and adds tags, templates, scheduled follow ups and CRM export, with your first 500 conversations free.
 - Each plan comes with a 14 day free trial.
 
-The pricing page doesn't describe a CRM of Waalaxy's own beyond those Inbox tags. It suits a founder who already keeps a CRM and wants simple LinkedIn outreach next to it. Plan campaigns across the month, since the quota resets monthly.
+The pricing page doesn't describe a CRM of Waalaxy's own beyond those Inbox tags. It suits a founder who already keeps a CRM and wants simple LinkedIn outreach next to it. Because the quota counts per month, spread your campaigns across all four weeks.
 
 ### 8. Breakcold
 
@@ -203,11 +203,11 @@ Its pricing page doesn't mention automated LinkedIn invitations, so those stay m
 HubSpot Sales Hub is a CRM software whose sequences can include LinkedIn steps through the Sales Navigator integration. HubSpot's [knowledge base](https://knowledge.hubspot.com/sequences/create-and-edit-sequences) describes them as tasks that remind you "to manually send a connection request" or an InMail, and Sales Navigator opens on the contact when you work the task.
 
 - Sequences need a Sales or Service seat on Professional or Enterprise.
-- Sales Hub Professional costs [$90 per seat a month with an annual commitment](https://www.hubspot.com/pricing/sales), or $100 billed monthly, plus a $1,500 onboarding fee paid once.
+- Sales Hub Professional costs [$90 per seat a month paid yearly](https://www.hubspot.com/pricing/sales), or $100 paid monthly, both on an annual commitment, plus a required $1,500 onboarding fee paid once.
 - LinkedIn actions need your own Sales Navigator subscription on top.
 - HubSpot's free CRM covers up to 2 users, without sequences.
 
-Refreshingly, nothing here sends on LinkedIn by itself, so your account runs no automation at all. The catch is that a rep still clicks every invitation. HubSpot Sales Hub fits a company that already runs HubSpot and wants LinkedIn steps tracked on the same contact.
+Refreshingly, nothing here sends on LinkedIn by itself, so HubSpot runs no automation on your LinkedIn account. The catch is that a rep still clicks every invitation. HubSpot Sales Hub fits a company that already runs HubSpot and wants LinkedIn steps tracked on the same contact.
 
 ### 12. La Growth Machine
 
@@ -223,7 +223,7 @@ Oddly, the Ultimate card showed the same €120 as Pro when we checked, so confi
 
 lemlist is a sales engagement software that runs sequences across email, LinkedIn and calls. Its pricing page lists contact management and task management on every plan, plus CRM integrations with HubSpot, Salesforce and Pipedrive.
 
-- Multichannel, the plan with LinkedIn steps, costs [$109 a month billed monthly](https://www.lemlist.com/pricing), or $87 billed yearly, and the FAQ says pricing depends on your number of users.
+- Multichannel, the plan with LinkedIn steps and calls, costs [$109 per user a month billed monthly](https://www.lemlist.com/pricing), or $87 billed yearly.
 - The Email plan costs $69 a month and leaves LinkedIn steps out.
 - Working in lemlist from inside your CRM is an Enterprise feature.
 - The FAQ mentions a 14 day free trial while a banner on the same page offers 30 days, so check which one you get.
@@ -239,7 +239,7 @@ HeyReach is a LinkedIn automation software that runs outreach from many LinkedIn
 - Email comes through native Instantly and Smartlead integrations.
 - The FAQ describes a 14 day trial with 3 LinkedIn accounts and no card, for a plan the page doesn't list, so check the terms.
 
-HeyReach's pricing page doesn't describe a CRM of its own, so you'd pair it with HubSpot or another CRM. It fits agencies and teams that rotate many senders. With one or two senders, a tool higher on this list saves you a second subscription.
+HeyReach's pricing page doesn't describe a CRM of its own, so you'd pair it with HubSpot or another CRM. It fits agencies and teams that rotate many senders. With one or two senders, a tool with its own CRM, such as NetHunt CRM or Omniscient, saves you a second subscription.
 
 ### 15. Closely
 
@@ -327,5 +327,5 @@ A: No. HubSpot sequences add LinkedIn connection requests and InMails as tasks t
 Q: Is LinkedIn automation allowed?
 A: Section 8.2 of LinkedIn's User Agreement bans bots and other unauthorized automated methods, and LinkedIn says members who use them risk having their accounts restricted. Careful pacing lowers that risk, and no tool can remove it.
 Q: How much does a LinkedIn outreach tool with a CRM cost?
-A: On the vendors' own pages today, entry prices in this guide run from $8.25 a month for Linked Helper's local version on longer terms to $99 a month for Breakcold, and HubSpot's sequences need Sales Hub Professional at $90 per seat a month with an annual commitment. Omniscient starts at $19 per seat a month, billed yearly.
+A: On the vendors' own pages today, entry prices in this guide run from $8.25 a month for Linked Helper's local version on longer terms to $109 per user a month for lemlist's Multichannel plan billed monthly, and HubSpot's sequences need Sales Hub Professional at $90 per seat a month with an annual commitment. Omniscient starts at $19 per seat a month, billed yearly.
 ```
