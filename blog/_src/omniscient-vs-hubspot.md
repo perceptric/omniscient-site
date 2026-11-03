@@ -14,7 +14,7 @@ summary: "HubSpot Sales Hub and Omniscient side by side on records, LinkedIn out
 
 If you're comparing Omniscient vs HubSpot, you probably sell to other businesses and start a good share of your deals on LinkedIn. You might be on HubSpot's free CRM today or close to paying for Sales Hub. The two tools differ most on LinkedIn outreach, email sending, how AI is billed and setup.
 
-Omniscient is our product, so weigh what follows with that in mind. We read HubSpot's pricing page, product pages and knowledge base on November 3, 2026. We also wrote Omniscient's HubSpot importer, though we haven't run Sales Hub with a live sales team.
+Omniscient is our product, so weigh what follows with that in mind. We read HubSpot's pricing page, product pages and knowledge base on November 3, 2026, plus LinkedIn's Sales Navigator plans page. We also wrote Omniscient's HubSpot importer, though we haven't run Sales Hub with a live sales team.
 
 Where your buyers first hear from you settles most of the choice:
 
@@ -26,6 +26,7 @@ Where your buyers first hear from you settles most of the choice:
 Name | Domain | What it is | Starting price | Best for
 Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through LinkedIn and meetings
 HubSpot | hubspot.com | A CRM platform with sales, marketing and service hubs | [Free CRM for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales tools on one database
+LinkedIn Sales Navigator | sales.linkedin.com | LinkedIn's paid prospecting tool, needed for HubSpot's Sales Navigator integration | [Core US$119.99 a month, Advanced Plus on request](https://business.linkedin.com/sales-solutions/compare-plans) | HubSpot Professional teams that send LinkedIn steps by hand
 ```
 
 ## Omniscient vs HubSpot features compared
@@ -49,6 +50,8 @@ HubSpot's column comes from its [Sales Hub pricing page](https://www.hubspot.com
 
 HubSpot is a CRM platform that puts sales, marketing, service and website tools on one shared customer database, and Sales Hub is the part built for sales teams.
 
+![HubSpot homepage](tool:hubspot.com)
+
 From HubSpot's own pages, a few things stand out for a small team:
 
 - The [free CRM](https://www.hubspot.com/products/crm) covers up to two users and 1,000 contacts, and HubSpot calls it "100% free with no expiration date."
@@ -60,6 +63,8 @@ Honestly, if your team runs newsletters and landing pages next to sales, HubSpot
 ## What Omniscient does well
 
 Omniscient is a CRM that fills in each record from your email, calendar and meeting transcripts, with LinkedIn outreach built into the same app. Otto, our AI agent, drafts your meeting notes and LinkedIn messages, and proposes field values with the quote behind each one.
+
+![Omniscient homepage](tool:tryomniscient.com)
 
 A few details from the app:
 
@@ -83,6 +88,12 @@ In Omniscient, each field on Pro can be off, suggest values or fill itself, and 
 We picked these rules because a wrong amount in a forecast does more harm than a blank one. Our guide to [CRMs with automatic data entry](/blog/crm-with-automatic-data-entry/) compares how other tools handle it.
 
 ## LinkedIn outreach in HubSpot and Omniscient
+
+LinkedIn Sales Navigator is LinkedIn's own paid tool for finding buyers and sending InMail, and HubSpot's LinkedIn card and InMail steps run through it.
+
+![LinkedIn Sales Navigator homepage](tool:sales.linkedin.com)
+
+LinkedIn's [plans page](https://business.linkedin.com/sales-solutions/compare-plans) lists Core at US$119.99 a month and Advanced at US$159.99. Advanced Plus, the plan HubSpot's integration asks for, has no listed price, so you request a demo to get one.
 
 HubSpot reaches LinkedIn through its [Sales Navigator integration](https://knowledge.hubspot.com/integrations/how-to-connect-hubspot-and-linkedin-sales-navigator), which has its own requirements:
 
@@ -161,7 +172,7 @@ HubSpot's Starter card shows both $7 and $20 a seat, with a note that discounts 
 
 Before you compare totals, check where the features you need start:
 
-- On HubSpot, sequences, forecasting and the Sales Navigator integration start on Professional, and Sales Navigator Advanced Plus is a separate LinkedIn subscription.
+- On HubSpot, sequences, forecasting and the Sales Navigator integration start on Professional, and Sales Navigator Advanced Plus is a separate LinkedIn subscription that LinkedIn prices on request.
 - On Omniscient, the pipeline board, forecast and fields filled with proof start on Pro, and a call recording bot costs $25 per seat on top.
 
 ## Omniscient vs HubSpot setup

@@ -6,7 +6,7 @@ meta_description: "There's no published LinkedIn connection request limit. Here'
 type: how-to
 topic: linkedin
 updated: 2026-11-03
-read_minutes: 10
+read_minutes: 11
 summary: "What LinkedIn's help pages really say about invitation limits, next to the daily and weekly caps we chose for our own sending engine."
 ---
 
@@ -14,7 +14,7 @@ summary: "What LinkedIn's help pages really say about invitation limits, next to
 
 There's no published LinkedIn connection request limit, so most outreach tools work from an estimate of about 100 invitations a week over a rolling seven days. LinkedIn's help pages do confirm that every member has a limit, Premium members included.
 
-We still had to pick real numbers when we built the LinkedIn sending engine inside Omniscient. Below, we separate what LinkedIn says from what vendors estimate, then walk you through the daily and weekly caps we chose and why.
+We still had to pick real numbers when we built the LinkedIn sending engine inside Omniscient. You'll find LinkedIn's own wording first, then vendor estimates, then the daily and weekly caps we chose and why.
 
 ```callout
 Plan on 100 invitations a week or fewer, spread over your working days at about 15 to 20 a day. Any figure more exact than that is an estimate, ours included.
@@ -38,13 +38,13 @@ Here's what we could confirm on LinkedIn's own help pages, next to what outreach
 | Withdrawing an invitation | You can't invite that person again for up to three weeks | Withdrawing doesn't give back weekly room |
 | Total connections | 30,000 first degree connections | The same |
 
-The vendor column comes from guides by outreach software companies, such as [La Growth Machine](https://lagrowthmachine.com/linkedin-limits/), [Overloop](https://overloop.com/blog/linkedin-limits), [FirstSales](https://firstsales.io/blog/linkedin-connection-request-limits-2026/) and [Topo](https://www.topo.io/blog/linkedin-invitation-limit-guide). LinkedIn hasn't confirmed any of their numbers, and the guides don't always agree with each other.
+The vendor column comes from limit guides by [four outreach software companies](#where-the-vendor-linkedin-limit-estimates-come-from). LinkedIn hasn't confirmed any of their numbers, and the guides don't always agree with each other.
 
 Frankly, LinkedIn's help pages don't agree with each other either. Its page on [personalizing invitations](https://www.linkedin.com/help/linkedin/answer/a563153) allows notes on three requests a month without Premium, while its [invitation limit](https://www.linkedin.com/help/linkedin/answer/a550555) page and its [InMail comparison](https://www.linkedin.com/help/linkedin/answer/a6239760) page both say five. The hint in our own settings uses three, the lower number, to stay on the safe side.
 
 ## How many LinkedIn connection requests you can send per week
 
-The weekly figure most guides use is about 100, and several, including FirstSales, describe it as a rolling window. In that model, an invitation stops counting seven days after you send it, so nothing resets on Monday morning.
+The weekly figure most guides use is about 100, and several, including FirstSales and Overloop, describe it as a rolling window. In that model, an invitation stops counting seven days after you send it, so nothing resets on Monday morning.
 
 Omniscient counts the same way: it adds up every invitation a sender made in the last seven days and treats your weekly setting as a hard cap.
 
@@ -93,7 +93,15 @@ Paying for LinkedIn changes less than you might hope, since LinkedIn's help page
 | Note length | 200 characters | 300 characters on one help page, 200 on another |
 | Who you can message | Your connections | Your connections, plus InMail to others with credits |
 
-Sales Navigator is a LinkedIn sales software that helps sellers find the right buyers and build relationships with them. Vendor guides report 150 to 200 invitations a week on older Sales Navigator accounts. LinkedIn hasn't confirmed any figure, so we'd treat that range as an upper bound you work up to.
+LinkedIn Premium is a paid LinkedIn subscription that adds InMail credits and a note on every invitation. Its [Premium page](https://premium.linkedin.com/) offers Career, Business and All-in-One plans, plus a Premium Company Page, with a free trial for eligible members. The page itself lists no prices.
+
+![LinkedIn Premium homepage](tool:premium.linkedin.com)
+
+LinkedIn Sales Navigator is a LinkedIn sales software that helps sellers find the right buyers and build relationships with them. Its [plans page](https://business.linkedin.com/sell/sales-navigator/compare-plans) lists Core at US$119.99 a month, or US$1,079.88 a year, with 50 InMails a month on every plan.
+
+![LinkedIn Sales Navigator homepage](tool:sales.linkedin.com)
+
+Vendor guides report 150 to 200 invitations a week on older Sales Navigator accounts. LinkedIn hasn't confirmed any figure, so we'd treat that range as an upper bound you work up to.
 
 Interestingly, LinkedIn's [comparison page](https://www.linkedin.com/help/linkedin/answer/a6239760) treats InMail as its own message type, apart from invitations. We read that as a way to reach a few important people while your invitations are paused, as long as your plan includes credits.
 
@@ -140,9 +148,33 @@ Luckily, LinkedIn says most restrictions lift on their own within one week. Thes
 
 Our engine also checks acceptance every hour once a sender has made 20 or more invitations in the last seven days. If fewer than 20% of them were accepted, it drops to half pace for 3 days, then climbs back to full pace over the next 3. A rate limit from LinkedIn sets off the same slowdown.
 
+## Where the vendor LinkedIn limit estimates come from
+
+Four companies that sell outreach software wrote the guides behind our vendor column. Each guide puts the weekly limit at about 100, which LinkedIn hasn't confirmed.
+
+La Growth Machine is a multichannel outreach software that runs sequences on LinkedIn and email, with calls and X on its higher plans. Its Basic plan costs [€60 per identity a month](https://lagrowthmachine.com/pricing/), and its [limits guide](https://lagrowthmachine.com/linkedin-limits/) calls 100 a week LinkedIn's official limit, though LinkedIn publishes no such number.
+
+![La Growth Machine homepage](tool:lagrowthmachine.com)
+
+Overloop is an AI sales prospecting software that finds prospects who fit your business and contacts them with email and LinkedIn in one sequence. Starter costs [$69 per user a month](https://overloop.com/pricing) after a 7-day free trial. Its [limits guide](https://overloop.com/blog/linkedin-limits) is careful to say LinkedIn doesn't publish the number.
+
+![Overloop homepage](tool:overloop.com)
+
+FirstSales is a cold email software whose AI agents write each email and follow up until people reply. LinkedIn only appears in Signals, which watches LinkedIn posts to find leads. Starter costs [$29 a month](https://firstsales.io/pricing) with unlimited team members, and its [guide](https://firstsales.io/blog/linkedin-connection-request-limits-2026/) explains the rolling seven-day window well.
+
+![FirstSales homepage](tool:firstsales.io)
+
+Topo is an outbound sales software with an AI agent that works beside your reps to find leads and send email and LinkedIn sequences. Its Solo plan costs [$89 per seat a month](https://www.topo.io/pricing), and we cite its [invitation limit guide](https://www.topo.io/blog/linkedin-invitation-limit-guide) in the vendor column too.
+
+![Topo homepage](tool:topo.io)
+
+We'd pick Overloop, La Growth Machine or Topo over Omniscient if you want email and LinkedIn in one sequence. Our default of 80 a week stays below the guides' shared 100 because none of them speaks for LinkedIn.
+
 ## How we set connection request limits in Omniscient
 
 Omniscient is a CRM and LinkedIn outreach software that sends the LinkedIn messages you approve and keeps every reply on the person's record. Its sender settings cover the daily and weekly limits from this guide, with the safer options switched on by default.
+
+![Omniscient homepage](tool:tryomniscient.com)
 
 ![Omniscient's LinkedIn sender settings: today's acceptance and pending tags, today's counts against each daily cap, and a Custom pace of 15 invitations a day and 80 a week, with the hint for the weekly field open](/assets/blog/linkedin-connection-request-limit/pace.shot.html)
 
@@ -158,7 +190,20 @@ Otto, our agent, can personalize each invitation note and message for the person
 
 Omniscient fits best if you want your CRM and your LinkedIn outreach in one place, with the pacing handled for you. It won't suit you if you want more than 40 invitations a day or 200 a week from one account, since those are our hard caps.
 
-If you're still choosing a tool, we compare the options in [the best LinkedIn automation tools](/blog/best-linkedin-automation-tools/) and [the safest LinkedIn automation tools](/blog/safest-linkedin-automation-tools/). Paid seats start at $19 per seat a month, billed yearly, and you can [try Omniscient free for 14 days](/#pricing) with no credit card.
+Here are all seven tools from this guide side by side. LinkedIn hasn't confirmed that any of them lifts your invitation limit:
+
+```tools
+Name | Domain | What it is | Starting price | Best for
+Omniscient | tryomniscient.com | A CRM that paces your LinkedIn invitations inside the limits you set | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want pacing and a CRM in one place
+LinkedIn Premium | premium.linkedin.com | LinkedIn's paid plan with InMail credits and a note on every invitation | check | People who want to add a note to every invitation
+LinkedIn Sales Navigator | sales.linkedin.com | LinkedIn's sales plan for finding buyers, with 50 InMails a month | [US$119.99 a month for Core](https://business.linkedin.com/sell/sales-navigator/compare-plans) | Sellers who search LinkedIn for buyers every day
+La Growth Machine | lagrowthmachine.com | Multichannel sequences on LinkedIn, email, calls and X | [€60 per identity a month](https://lagrowthmachine.com/pricing/) | Teams that want several channels per sender
+Overloop | overloop.com | AI prospecting with email and LinkedIn in one sequence | [$69 per user a month](https://overloop.com/pricing) | Teams that want prospects found and contacted for them
+FirstSales | firstsales.io | AI cold email, with LinkedIn post signals for finding leads | [$29 a month for the whole team](https://firstsales.io/pricing) | Teams whose outbound runs mostly on email
+Topo | topo.io | An outbound sales platform with an AI agent for leads, email and LinkedIn | [$89 per seat a month](https://www.topo.io/pricing) | Outbound teams that want an AI agent beside their reps
+```
+
+If you're still choosing a tool, we compare the options in [the best LinkedIn automation tools](/blog/best-linkedin-automation-tools/) and [the safest LinkedIn automation tools](/blog/safest-linkedin-automation-tools/). You can also [try Omniscient free for 14 days](/#pricing) with no credit card.
 
 ```cta
 Connect your LinkedIn account and let Omniscient pace your invitations inside the limits you set.
@@ -175,6 +220,4 @@ Q: How many connection requests can I send per day on LinkedIn?
 A: LinkedIn doesn't publish a daily number, and it lists many invitations in a short time as a reason for restrictions. Our default setting is 15 a day, spread across working hours, and vendor guides suggest 10 to 25.
 Q: How many pending LinkedIn invitations is too many?
 A: LinkedIn doesn't give a number, only that too many can restrict you for up to a month. Several vendor guides quote a ceiling of about 1,500, and Omniscient flags a sender above 400.
-Q: How many connections can you have on LinkedIn?
-A: LinkedIn caps every member at 30,000 first degree connections. At 80 invitations a week, you'd need more than seven years of accepted invitations to get there, so the weekly limit is the one you'll feel.
 ```

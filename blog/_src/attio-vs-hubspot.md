@@ -14,7 +14,7 @@ summary: "Attio and HubSpot side by side on data model, sequences, LinkedIn, AI 
 
 If you're weighing Attio vs HubSpot, you're choosing between a CRM you shape yourself and a platform that already has a hub for each team. Both start free, and both put email sequences on their second paid plan.
 
-We build Omniscient, a CRM with LinkedIn outreach, and we wrote the importers that bring data over from both tools. We read both pricing pages on November 3, 2026. We haven't run either tool with a live sales team, so the features here come from what each vendor publishes.
+We build Omniscient, a CRM with LinkedIn outreach, and we wrote the importers that bring data over from both tools. We read both pricing pages on November 3, 2026, plus the sites of the LinkedIn tools each one leans on. We haven't run either tool with a live sales team, so the features here come from what each vendor publishes.
 
 Here's our short answer:
 
@@ -48,6 +48,8 @@ Every line below comes from [Attio's pricing page](https://attio.com/pricing), H
 
 Attio is a flexible CRM that builds records from your email and calendar and lets you shape objects and fields around how your business works.
 
+![Attio homepage](tool:attio.com)
+
 These parts stood out to us on its [pricing page](https://attio.com/pricing):
 
 - Email and calendar sync come on every plan, and even Free fills in first interaction, last interaction and connection strength for each contact.
@@ -59,6 +61,8 @@ Honestly, Attio is where we'd point a team whose process doesn't look like a sta
 ## What HubSpot does well
 
 HubSpot is a customer platform that runs marketing, sales and service tools on one shared CRM. Its pricing page lists over 2,000 apps you can connect.
+
+![HubSpot homepage](tool:hubspot.com)
 
 On the [Sales Hub pricing page](https://www.hubspot.com/pricing/sales), these are the parts we'd look at first:
 
@@ -76,15 +80,15 @@ The clearest difference shows up when you ask which plan each feature starts on:
 
 ![Which plan each feature starts on, from both vendors' pages on November 3, 2026. Workflows: Attio Free, HubSpot Starter. AI credits included: Attio Free, HubSpot Starter. Email without vendor branding: Attio Plus, HubSpot Starter. Email sequences: Attio Pro, HubSpot Professional. Meeting recording: Attio Pro, HubSpot Starter. LinkedIn steps: Attio through apps, HubSpot Professional as task reminders that need a Sales Navigator subscription. Custom objects: Attio Pro, HubSpot Enterprise.](plan-gates.svg)
 
-In practice, three rows in the chart decide which plan you'd really buy:
+In practice, three rows decide which plan you'd really buy:
 
-- Sequences start on Pro in Attio and on Professional in HubSpot, so if you need them, compare those two plans and skip the cheaper ones.
-- Meeting recording starts lower in HubSpot, where Notetaker comes with Starter, while Attio's Call Intelligence starts on Pro.
-- Custom objects arrive a plan earlier in Attio, while HubSpot's [CRM page](https://www.hubspot.com/products/crm) lists them on Enterprise.
+- If you need sequences, compare Attio Pro with HubSpot Professional and skip the cheaper plans.
+- Meeting recording starts lower in HubSpot, on Starter, while Attio's Call Intelligence starts on Pro.
+- Custom objects start on Pro in Attio and on Enterprise in HubSpot, says its [CRM page](https://www.hubspot.com/products/crm).
 
 ## Data model: custom objects in Attio and HubSpot
 
-Attio treats objects as something you design, starting from people, companies and deals. You then add objects and attributes of your own, such as investors or partners, and link them the way your business works.
+Attio treats objects as something you design, starting from people, companies and deals. You then add your own, such as investors or partners, and link them the way your business works.
 
 HubSpot starts from fixed objects that most sales teams share, like contacts, companies and deals. That shape fits a standard sales process from the first day.
 
@@ -94,7 +98,7 @@ We saw this difference up close when we wrote importers for both tools:
 - Attio's deal stages arrive as a list of statuses without probabilities, so our importer reads the won stage from Attio's celebration setting and the lost one from its name.
 - HubSpot keeps leads and customers in one contact list sorted by lifecycle stage, so our importer brings contacts at a lead stage over as leads.
 
-Interestingly, building both importers left us thinking that each shape pays off in a different place. HubSpot's fixed objects make reports and forecasts work early, and Attio's open ones fit an unusual process without workarounds.
+Interestingly, each shape pays off in a different place. HubSpot's fixed objects make forecasts work early, and Attio's open ones fit an unusual process without workarounds.
 
 ## Email, sequences and calls in Attio and HubSpot
 
@@ -114,21 +118,37 @@ Frankly, if your reps live on the phone, HubSpot has the edge here, since callin
 
 ## LinkedIn outreach in Attio and HubSpot
 
-Neither Attio nor HubSpot sends LinkedIn invitations or messages for you, which matters if LinkedIn is where your first conversations happen.
+Neither Attio nor HubSpot sends LinkedIn invitations or messages for you, which matters if LinkedIn is where your first conversations happen. Each one leans on a LinkedIn tool you buy separately, and these are the ones you'll meet first:
+
+```tools
+Name | Domain | What it is | Starting price | Best for
+LinkedIn Sales Navigator | sales.linkedin.com | LinkedIn's prospecting tool, needed for HubSpot's LinkedIn steps | [Core from $119.99 a month, or $1,079.88 a year](https://business.linkedin.com/sales-solutions/compare-plans) | HubSpot teams that message by hand
+lemlist | lemlist.com | Email and LinkedIn steps in one campaign | [Multichannel from $87 per user a month, billed yearly](https://www.lemlist.com/pricing) | Attio teams mixing email and LinkedIn
+HeyReach | heyreach.io | LinkedIn outreach priced per sender | [Growth from $79 per sender a month, or $64 billed yearly](https://www.heyreach.io/pricing) | Attio teams with several senders
+```
 
 HubSpot puts its LinkedIn steps inside sequences on Professional and Enterprise, and they need a Sales Navigator subscription of their own. Its [knowledge base](https://knowledge.hubspot.com/sequences/create-and-edit-sequences) calls them task reminders, and completing one opens Sales Navigator on the contact's record so you can send the InMail or connection request yourself.
 
-Attio teams that prospect on LinkedIn add other tools instead:
+LinkedIn Sales Navigator is a prospecting software from LinkedIn that adds advanced lead search and InMail to your account. Core and Advanced both offer a free trial to members who haven't had one in the past year.
 
-- Attio's Chrome extension turns LinkedIn profiles into records in one click, says a 2023 [changelog entry](https://attio.com/changelog/2023/updated-chrome-extension), though its current [help page](https://attio.com/help/reference/tools-and-extensions/attio-chrome-extension) doesn't mention LinkedIn.
-- Its app directory lists outreach tools such as [lemlist](https://attio.com/apps/lemlist), which runs multichannel campaigns, and a [HeyReach app](https://attio.com/apps/hey-reach) that pushes Attio people into HeyReach's LinkedIn campaigns.
+![LinkedIn Sales Navigator homepage](tool:sales.linkedin.com)
 
-Either way, the LinkedIn tool is a second bill, and its pacing settings shape how safe your account stays. We built our own sending engine this year and spent most of our care on pacing, because LinkedIn's [invitation limit page](https://www.linkedin.com/help/linkedin/answer/a550555) doesn't publish an exact number.
+Attio teams that prospect on LinkedIn add other tools instead. Attio's Chrome extension turns LinkedIn profiles into records in one click, says a 2023 [changelog entry](https://attio.com/changelog/2023/updated-chrome-extension), though its current [help page](https://attio.com/help/reference/tools-and-extensions/attio-chrome-extension) doesn't mention LinkedIn.
+
+lemlist is a sales engagement software that runs email and LinkedIn steps in one campaign. Attio built the [lemlist app](https://attio.com/apps/lemlist), which adds Attio people to a campaign, and LinkedIn steps start on lemlist's Multichannel plan.
+
+![lemlist homepage](tool:lemlist.com)
+
+HeyReach is a LinkedIn outreach software that sends from many accounts at once and charges per sender. Its [Attio app](https://attio.com/apps/hey-reach), built by Neon Deer Data Labs, pushes Attio people into HeyReach campaigns. Helpfully, it also logs accepted invitations and replies on each person's timeline.
+
+![HeyReach homepage](tool:heyreach.io)
+
+Whichever you pick, the LinkedIn tool is a second bill, and its pacing settings shape how safe your account stays. We built our own sending engine this year and spent most of our care on pacing, because LinkedIn's [invitation limit page](https://www.linkedin.com/help/linkedin/answer/a550555) doesn't publish an exact number.
 
 At the normal pace, our engine follows these rules for each sender:
 
 - A new sender starts at 5 invitations a day and adds 2 a day until it reaches your limit.
-- Each day's total lands somewhere between 80% and 100% of that limit, so the count changes from day to day.
+- Each day's total lands somewhere between 80% and 100% of that limit.
 - It sends only in the sender's working hours, with a lunch break and a random gap of 3 to 12 minutes between actions.
 - It views a person's profile 1 to 4 hours before it sends the invitation.
 - It drops to half pace for 3 days when LinkedIn rate limits the sender or the past week's acceptance falls under 20%, then eases back over 3 more days.
@@ -148,17 +168,17 @@ Both tools meter AI with credits, counted in different ways:
 
 HubSpot's [credits help page](https://knowledge.hubspot.com/account-management/understand-hubspot-credits-and-billing) adds that free users can't use credits. Without extra capacity, features that use credits pause until your next reset date.
 
-Thankfully, both give you some control over what AI costs you each month. HubSpot lets you set how much each feature can spend, and Attio's [credits guide](https://attio.com/help/reference/workspace-settings-billing/manage-workspace-and-seat-credits) lets admins cap how much of the shared pool Ask Attio uses.
+Thankfully, both let you cap what AI costs each month. HubSpot sets a limit per feature, and Attio's [credits guide](https://attio.com/help/reference/workspace-settings-billing/manage-workspace-and-seat-credits) lets admins cap Ask Attio's share of the pool.
 
 ## Attio vs HubSpot pricing
 
-Both charge per seat and give a lower price for yearly billing. These are the plans [Attio's pricing page](https://attio.com/pricing) and [HubSpot's Sales Hub pricing page](https://www.hubspot.com/pricing/sales) listed on November 3, 2026:
+Both charge per seat, with lower prices for yearly billing. These are the plans [Attio's pricing page](https://attio.com/pricing) and [HubSpot's Sales Hub pricing page](https://www.hubspot.com/pricing/sales) listed on November 3, 2026:
 
 ![Attio and HubSpot Sales Hub prices per seat a month on yearly billing, November 3, 2026. Attio: Free $0 for up to 3 seats, Plus $35 or $44 billed monthly for up to 10 seats, Pro $79 or $99 billed monthly with sequences and Call Intelligence, Enterprise custom and billed yearly. HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts, Starter from $7 or $10 billed monthly as new customer prices and listed at $20, Professional from $90 or $100 billed monthly with a yearly commitment and a $1,500 onboarding fee paid once, Enterprise from $150 with a $3,500 onboarding fee paid once.](pricing.svg)
 
 What moves the bill more than the headline price:
 
-- HubSpot shows Starter's $7 yearly and $10 monthly prices as discounts for new customers next to a listed $20, so ask what a seat costs when you renew.
+- HubSpot's $7 and $10 Starter prices are new customer discounts on a listed $20, so ask what a seat costs at renewal.
 - HubSpot Professional asks for a yearly commitment even when you pay monthly, plus the $1,500 onboarding fee.
 - Attio's Plus plan stops at 10 seats, so a team of 11 or more starts on Pro.
 
@@ -166,16 +186,16 @@ What moves the bill more than the headline price:
 
 Happily, Attio's [migration guide](https://attio.com/help/reference/imports-exports/migrate-data-from-another-crm) moves HubSpot data into any paid Attio plan through Import2, which it says is free for Attio users. It covers companies, people, deals, custom objects, notes, tasks and files.
 
-Going the other way, HubSpot's [CRM page](https://www.hubspot.com/products/crm) lists CRM import among the features of its free plan. These details from building our own importers are worth checking in either direction:
+Going the other way, HubSpot's [CRM page](https://www.hubspot.com/products/crm) lists CRM import on its free plan. Two details from building our own importers apply in either direction:
 
 - Our importer matches deal owners by email address, so invite your team with the same emails before you import.
-- If your Attio workspace relies on custom objects, HubSpot lists them only on Enterprise, so check which plan can hold them before you move.
+- If your Attio workspace relies on custom objects, check your HubSpot plan first, since HubSpot lists them on Enterprise.
 
 ## Where Omniscient fits
 
 Omniscient is a CRM that fills itself in from your email, calendar and call transcripts, and it runs LinkedIn outreach that your team approves. Otto, our AI agent, drafts each LinkedIn note and message from the person's profile and recent activity, and nothing sends until a teammate approves it.
 
-![An Omniscient LinkedIn campaign with four people: two waiting for approval, one approved and one marked changed since approval. Rina Sato's record is open with a fit score of 82, the signal that her company is hiring two SDRs, and Otto's drafted invitation note above the Edit and Approve buttons.](approval.shot.html)
+![Omniscient homepage](tool:tryomniscient.com)
 
 Our [plans](/#pricing) compare like this:
 
@@ -183,6 +203,8 @@ Our [plans](/#pricing) compare like this:
 - Teammates who only view or log data are free, and the CRM's AI is part of the seat price.
 - Each approval is tied to the exact text, so an edited message shows as changed since approval until someone approves it again.
 - Our importer brings companies, contacts, deals with their stages, and notes over from HubSpot or Attio.
+
+![An Omniscient LinkedIn campaign with four people: two waiting for approval, one approved and one marked changed since approval. Rina Sato's record is open with a fit score of 82, the signal that her company is hiring two SDRs, and Otto's drafted invitation note above the Edit and Approve buttons.](approval.shot.html)
 
 Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/crm/) and the [LinkedIn outbound page](/product/linkedin-outbound/) show both sides.
 
@@ -196,17 +218,17 @@ Start with where your first conversation with a buyer usually happens:
 
 Choose HubSpot if:
 
-- Your leads come from forms, ads and email campaigns, and you want marketing and sales working from the same record.
-- Your reps make calls and want calling minutes, meeting notes and call transcripts in the CRM.
+- Your leads come from forms, ads and email campaigns, and marketing and sales should share one record.
+- Your reps make calls and want calling minutes and transcripts in the CRM.
 
 Choose Attio if:
 
-- Your process needs objects of your own, like investors or partners, linked the way you work.
-- You sell mostly by email to people you know and want sequences inside the CRM on Pro.
+- Your process needs objects of your own, like investors or partners.
+- You sell mostly by email to people you know and want sequences on Pro.
 
 Choose Omniscient if:
 
-- Most of your deals start in LinkedIn conversations, and you want each reply on a record that fills itself in.
+- Most of your deals start in LinkedIn conversations.
 - You want a teammate to approve LinkedIn messages before they go out.
 
 If none of the three fits, our roundups of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) and [Attio alternatives](/blog/attio-alternatives/) compare more options.
@@ -219,7 +241,7 @@ Try Omniscient free for 14 days, next to Attio or HubSpot.
 Q: Is Attio cheaper than HubSpot?
 A: At the first paid plan, HubSpot costs less for new customers: Sales Hub Starter starts at $7 a seat billed yearly and lists at $20, while Attio Plus costs $35 billed yearly. At the plans with sequences, Attio Pro costs $79 billed yearly and HubSpot Professional costs $90, plus a $1,500 onboarding fee paid once.
 Q: Does Attio have a free trial?
-A: Yes. Attio's pricing page offers a 14-day trial of its Pro plan, and its Free plan covers up to 3 seats.
+A: Yes. Attio's pricing page offers a 14 day trial of its Pro plan, and its Free plan covers up to 3 seats.
 Q: Which is better for a startup, Attio or HubSpot?
 A: Attio fits a startup that wants to shape its own data model, and its startup program offers up to 80% off for eligible teams. HubSpot fits a startup whose leads come from marketing, and it runs its own HubSpot for Startups program.
 ```
