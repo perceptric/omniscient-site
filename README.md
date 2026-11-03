@@ -98,7 +98,9 @@ code and `---`. These fenced blocks render in the brand:
 
 | Block | Write | Renders |
 |---|---|---|
-| ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. A price of `check` shows "See site". | A framed comparison table. Each tool gets its logo from `assets/blog/logos/`, else `assets/logos/`, else its site's favicon. |
+| ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. | A framed comparison table. Each tool gets its logo from `assets/blog/logos/`, else `assets/logos/`, else its site's favicon. |
+| ` ```rating ` | One line: `4.8 \| G2 \| https://www.g2.com/products/<tool>/reviews`. Only a rating read on that site. | Right under a numbered tool heading, above its screenshot: five stars filled to the score, "4.8/5" and the source's name, linked in a new tab with `rel="nofollow noopener"`. No JSON-LD, since Google doesn't allow review markup for ratings gathered from other sites. |
+| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/?utm_source=blog&utm_medium=<slug>`. | A black primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
 | ` ```callout ` | One or two sentences. | A framed note. |
 | ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
 | ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. No heading above it. | A "FAQs" heading (in the contents list), questions that open and close, plus FAQPage JSON-LD. |
@@ -110,6 +112,12 @@ Pictures sit in the gray grain band:
   optional.
 - `![alt](name.shot.html)` inlines that HTML snippet, styled by `assets/home.css`, and plays it once in view.
 - `![Name homepage](tool:domain.com)` shows that tool's homepage screenshot in a browser frame.
+
+Prices: in the tools block and in any table, a cell that reads `check`, `See pricing` or (in the tools block's price
+column) nothing shows "See pricing", linked to `https://<domain>/pricing` for that row's tool (the row's first cell
+names a tool from the tools block, or links to its site). When the pricing page lives elsewhere, write
+`[See pricing](https://vendor.com/en/pricing)`. Write `Custom` for tools sold only by quote. The word "check" never
+reaches the page.
 
 ### Tools: numbered headings, screenshots and logos
 
@@ -126,6 +134,43 @@ It opens each homepage at 1440x900 through Playwright, accepts or hides cookie, 
 unless `--force`, and prints ok or the reason it failed for each domain. A bot wall or blank page fails: try once
 with `--wait 8000`, else leave that tool without a screenshot.
 
+Each numbered tool reads like a review. Under the heading, in this order: the ` ```rating ` block (only when you
+read the rating today), a 2 or 3 sentence intro, the ` ```try ` block for Omniscient only, then four `####`
+headings:
+
+````
+### 3. Salesflare
+
+```rating
+4.8 | G2 | https://www.g2.com/products/salesflare/reviews
+```
+
+[Salesflare](https://salesflare.com/) is a sales CRM built for small and medium B2B teams that ...
+
+#### Key features
+
+- **Automated data entry:** Captures contact and company details and logs meetings and calls.
+
+#### Pros
+
+- **Low CRM admin:** ...
+
+#### Cons
+
+- **No free plan:** ...
+
+#### Price and plans
+
+You can try Salesflare free for 30 days. Paid plans, billed yearly:
+
+- **Growth:** $29 per user, per month.
+````
+
+Inside a numbered tool, `####` headings are plain 16px semibold, their lists sit tight, and the lists under Pros
+and Cons get a small square + (emerald) or − (gray) in place of the bullet. Their ids start with the tool's
+(`#3-salesflare-pros`). On a desktop, the contents list shows a list's 3 to 15 numbered tools under its `##`
+while you read that section; the phone contents keep the `##` headings only.
+
 Every image needs alt text, and every SVG a `<title>`.
 
 ### Build
@@ -138,13 +183,14 @@ Every image needs alt text, and every SVG a `<title>`.
 
 - **What the build checks:** missing pictures or alt text, links to pages that don't exist here (the server would
   send them to the app), links to posts with no source yet, length outside the type's range, the
-  `meta_description` length, fewer than 3 pictures, prices marked `check`, em dashes, exclamation marks and banned
-  words. It prints each one under the post. A post it can't read is skipped, and the rest still build.
+  `meta_description` length, fewer than 3 pictures, prices left as `check` or empty, a `rating` or `try` line it
+  can't read, a rating away from its tool heading, em dashes, exclamation marks and banned words. It prints each one under the post. A post it can't read is skipped, and the rest still build.
 - **Share images:** `og.png` (1200x630) needs Playwright. Without it, posts use the site's default share image.
 - **Drafts:** a file whose name starts with `_` builds only when named, with `noindex`, and never shows in the index,
-  related posts or the sitemap. `_sample.md` uses every block: build it with `node tools/blog.mjs _sample` to check
+  related posts or the sitemap. `_sample.md` uses most blocks: build it with `node tools/blog.mjs _sample` to check
   the layout after changing the builder or `assets/blog.css`, then delete `blog/_sample/` and the `cover.svg` and
-  `og.png` it writes.
+  `og.png` it writes. To check `rating`, `try` and a tool's `####` sections, add a numbered tool with them to a
+  copy named `_something.md`, build it the same way and delete the copy and its output after.
 - **Not served:** `.htaccess` answers 403 for any path with a part that starts with `_` (so `blog/_src/`) and for
   `*.shot.html`, since Hostinger deploys the whole repo.
 - **Removing a post:** delete its `.md`, `blog/<slug>/` and `assets/blog/<slug>/`, then run `--all`.

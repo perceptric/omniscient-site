@@ -28,6 +28,13 @@
 }
 .bl-toc a:hover { color: var(--ink); }
 .bl-toc a[aria-current="true"] { color: var(--ink); border-left-color: var(--ink); font-weight: 500; }
+/* The numbered tools under a list's heading: shown while that section is read (blog.js), always without JavaScript */
+.bl-toc .bl-toc__sub { margin: 0 0 6px; border-left: 0; }
+.bl-toc .bl-toc__sub a { display: flex; gap: 8px; padding: 3px 0 3px 26px; font-size: 12.5px; line-height: 1.35; }
+.bl-toc__n { flex: none; font: 400 11px/1.6 var(--mono); color: var(--faint); }
+.bl-toc .bl-toc__sub a[aria-current="true"] .bl-toc__n { color: var(--muted); }
+.bl-toc .bl-toc__has.is-open > a { color: var(--ink); }
+.js .bl-toc__has:not(.is-open) > .bl-toc__sub { display: none; }
 
 /* Head: breadcrumb, title, date and read time */
 .bl-crumb ol { display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
@@ -111,7 +118,8 @@
 .bl-tools .bl-tools__name a { text-decoration: none; }
 .bl-tools .bl-tools__name a:hover { text-decoration: underline; }
 .bl-tools__price { min-width: 128px; }
-.bl-tools a.bl-tools__see { color: var(--muted); }
+.bl-table a.bl-see { color: var(--muted); }
+.bl-table a.bl-see:hover { color: var(--ink); }
 
 /* ═══ Blocks ═══ */
 .bl-callout { position: relative; margin: 28px 0; padding: 18px 20px 18px 44px; border: 1px solid var(--frame); background: var(--tint); }
@@ -160,7 +168,35 @@
 .bl-toolh__logo { display: inline-grid; place-items: center; flex: none; width: 28px; height: 28px; border: 1px solid var(--line); background: #fff; }
 .bl-toolh__logo img { width: 20px; height: 20px; object-fit: contain; }
 .bl-toolh__name { min-width: 0; }
-.bl-body .bl-toolh + .bl-site { margin-top: 16px; }
+.bl-body .bl-toolh + .bl-site, .bl-body .bl-rating + .bl-site { margin-top: 16px; }
+
+/* Under a tool heading: five stars filled to the score, the score in mono and the source */
+.bl-rating { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: -2px 0 16px; font-size: 13px; line-height: 1.4; color: var(--muted); }
+.bl-stars { display: block; flex: none; overflow: visible; }
+.bl-stars__off { color: var(--faint); }
+.bl-stars__on { color: var(--signal); }
+.bl-rating__score { font: 500 12.5px/1.4 var(--mono); color: var(--ink); }
+.bl-body .bl-rating a { color: var(--ink-2); }
+
+/* The try button under a tool's intro */
+.bl-try { margin: 4px 0 28px; }
+
+/* Inside a numbered tool: Key features, Pros, Cons, Price and plans */
+.bl-body .bl-revh { margin: 28px 0 10px; font: 600 16px/1.35 var(--font); letter-spacing: -0.01em; color: var(--ink); }
+.bl-body ul[data-rev] { margin-bottom: 20px; padding-left: 30px; }
+.bl-body ul[data-rev] > li { margin-bottom: 6px; }
+.bl-body ul[data-rev] > li:last-child { margin-bottom: 0; }
+.bl-body ul[data-rev="list"] > li::before { left: -25px; }
+/* Pros and Cons: a small square + (emerald) or − (gray) in place of the bullet, the text in line with the lists above */
+.bl-body ul:is([data-rev="pros"], [data-rev="cons"]) > li::before {
+  left: -30px; top: calc(0.85em - 8px); width: 16px; height: 16px;
+  border: 1px solid var(--signal-line); background: var(--signal-soft) no-repeat center / 10px 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M5 1v8M1 5h8' stroke='%230a7a52' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+.bl-body ul[data-rev="cons"] > li::before {
+  border-color: var(--line-strong); background-color: var(--tint);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M1 5h8' stroke='%23737373' stroke-width='1.5'/%3E%3C/svg%3E");
+}
 
 /* A tool's homepage in a plain browser frame: three squares and the domain on top */
 .bl-browser { border: 1px solid var(--frame); background: #fff; }
@@ -228,6 +264,10 @@
   .bl-steps li > div { padding: 14px 16px; }
   .bl-tools tbody th[scope="row"] { min-width: 136px; }
   .bl-body .bl-toolh { gap: 8px; margin-top: 40px; }
+  .bl-body .bl-revh { margin-top: 24px; font-size: 15.5px; }
+  .bl-body ul[data-rev] { padding-left: 28px; }
+  .bl-body ul[data-rev="list"] > li::before { left: -23px; }
+  .bl-body ul:is([data-rev="pros"], [data-rev="cons"]) > li::before { left: -28px; }
   .bl-toolh__n { min-width: 30px; height: 26px; }
   .bl-toolh__logo { width: 26px; height: 26px; }
   .bl-toolh__logo img { width: 18px; height: 18px; }

@@ -18,12 +18,22 @@
 })();
 
 (function () {
-  // Contents: the section being read is marked in the side list.
+  // Contents: the section being read is marked in the side list. A list's numbered tools show under its heading
+  // while that section is read, and the side list scrolls to keep the marked line in view.
+  var toc = document.querySelector(".bl-toc");
   var links = Array.prototype.slice.call(document.querySelectorAll(".bl-toc a[href^='#']"));
-  if (!links.length) return;
+  if (!toc || !links.length) return;
   var heads = links.map(function (a) { return document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1))); });
+  var groups = Array.prototype.slice.call(toc.querySelectorAll(".bl-toc__has"));
   var current = -1;
   var ticking = false;
+  function keepInView(a) {
+    if (toc.scrollHeight <= toc.clientHeight) return;
+    var box = toc.getBoundingClientRect();
+    var r = a.getBoundingClientRect();
+    if (r.top < box.top + 8) toc.scrollTop -= box.top + 8 - r.top;
+    else if (r.bottom > box.bottom - 8) toc.scrollTop += r.bottom - box.bottom + 8;
+  }
   function update() {
     ticking = false;
     // Just below where a contents jump lands a heading (base.css scroll-padding-top: header + 16px).
@@ -36,6 +46,8 @@
     if (current > -1) links[current].removeAttribute("aria-current");
     if (i > -1) links[i].setAttribute("aria-current", "true");
     current = i;
+    groups.forEach(function (g) { g.classList.toggle("is-open", i > -1 && g.contains(links[i])); });
+    if (i > -1) keepInView(links[i]);
   }
   window.addEventListener("scroll", function () {
     if (!ticking) { ticking = true; requestAnimationFrame(update); }

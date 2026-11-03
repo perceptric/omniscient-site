@@ -329,6 +329,19 @@ const blank = (l) => l === undefined || !l.trim();
 const isTableStart = (lines, i) => lines[i].includes("|") && i + 1 < lines.length && lines[i + 1].includes("-") && TABLE_SEP.test(lines[i + 1]) && (lines[i + 1].includes("|") || lines[i].trim().startsWith("|"));
 const startsBlock = (lines, i) => FENCE.test(lines[i]) || HEADING.test(lines[i]) || HR.test(lines[i]) || QUOTE.test(lines[i]) || /^\s{0,3}([-*+]|1[.)])\s+\S/.test(lines[i]) || isTableStart(lines, i) || /^\s*<!--/.test(lines[i]);
 
+// Reads the fenced block that opens at line i: its kind, its lines and the line after it.
+function readFence(lines, i) {
+  const f = lines[i].match(FENCE);
+  const mark = f[1];
+  const body = [];
+  for (let j = i + 1; j < lines.length; j++) {
+    const t = lines[j].trim();
+    if (t.startsWith(mark) && t.replace(/[`~]/g, "") === "" && t[0] === mark[0]) return { mark, kind: f[2].toLowerCase(), body, closed: true, next: j + 1 };
+    body.push(lines[j]);
+  }
+  return { mark, kind: f[2].toLowerCase(), body, closed: false, next: lines.length };
+}
+
 function blocks(lines, ctx, tight = false) {
   const out = [];
   let i = 0;
@@ -344,20 +357,13 @@ function blocks(lines, ctx, tight = false) {
       i++; continue;
     }
 
-    const fence = line.match(FENCE);
-    if (fence) {
-      const mark = fence[1];
-      const body = [];
-      let closed = false;
-      for (i++; i < lines.length; i++) {
-        const t = lines[i].trim();
-        if (t.startsWith(mark) && t.replace(/[`~]/g, "") === "" && t[0] === mark[0]) { closed = true; i++; break; }
-        body.push(lines[i]);
-      }
-      if (!closed) ctx.warn(`a ${mark}${fence[2]} block never closes; it runs to the end of the post`);
-      if (fence[2].toLowerCase() === "faq" && lastH2 !== null) ctx.warn(`the ## "${lastH2}" heading sits right before the faq block, which prints its own "FAQs" heading; delete it`);
+    if (FENCE.test(line)) {
+      const f = readFence(lines, i);
+      i = f.next;
+      if (!f.closed) ctx.warn(`a ${f.mark}${f.kind} block never closes; it runs to the end of the post`);
+      if (f.kind === "faq" && lastH2 !== null) ctx.warn(`the ## "${lastH2}" heading sits right before the faq block, which prints its own "FAQs" heading; delete it`);
       lastH2 = null;
-      out.push(special(fence[2].toLowerCase(), body, ctx));
+      out.push(special(f.kind, f.body, ctx));
       continue;
     }
 
@@ -365,7 +371,22 @@ function blocks(lines, ctx, tight = false) {
     if (h) {
       const html = heading(h[1].length, h[2], ctx);
       lastH2 = /^<h2\b/.test(html) ? plain(html) : null;
-      out.push(html); i++; continue;
+      out.push(html); i++;
+      // A numbered tool heading: its ```rating line (when it comes next) sits under the name, then the screenshot.
+      if (ctx.pendingFig !== undefined) {
+        const fig = ctx.pendingFig;
+        ctx.pendingFig = undefined;
+        let j = i;
+        while (j < lines.length && blank(lines[j])) j++;
+        if (j < lines.length && FENCE.test(lines[j]) && readFence(lines, j).kind === "rating") {
+          const f = readFence(lines, j);
+          if (!f.closed) ctx.warn("a rating block never closes; it runs to the end of the post");
+          out.push(rating(f.body, ctx, true));
+          i = f.next;
+        }
+        if (fig) out.push(fig);
+      }
+      continue;
     }
     lastH2 = null;
 
@@ -407,19 +428,28 @@ function heading(level, raw, ctx) {
     level = 2;
   }
   if (level > 4) level = 4;
-  let id = slugify(text);
-  for (let n = 2; ctx.ids.has(id); n++) id = `${slugify(text)}-${n}`;
+  // A tool's #### headings take its id first ("1-omniscient-pros"), so each one can be linked to.
+  const base = level === 4 && ctx.review ? `${ctx.review.id}-${slugify(text)}` : slugify(text);
+  let id = base;
+  for (let n = 2; ctx.ids.has(id); n++) id = `${base}-${n}`;
   ctx.ids.add(id);
-  if (level === 2) ctx.toc.push({ id, html: html.replace(/<a\b[^>]*>|<\/a>/g, "") });
+  // A numbered tool section runs from its ### heading to the next ## or ###. Its #### headings (Key features, Pros,
+  // Cons, Price and plans) get the review style, and the lists under Pros and Cons get + and − markers.
+  if (level <= 3) ctx.review = null;
+  if (level === 2) ctx.toc.push({ id, html: html.replace(/<a\b[^>]*>|<\/a>/g, ""), subs: [] });
   if (level === 3) {
     const tool = toolHeading(raw, text, id, ctx);
     if (tool) return tool;
+  }
+  if (level === 4 && ctx.review) {
+    ctx.review.part = /^pros\b/i.test(text) ? "pros" : /^cons\b/i.test(text) ? "cons" : "list";
+    return `<h4 id="${id}" class="bl-revh">${html}</h4>`;
   }
   return `<h${level} id="${id}">${html}</h${level}>`;
 }
 
 // "### 3. Name" or "### 3. Name: subtitle", when Name is in the post's tools block: the number in a square tag, the
-// logo and the name, then the tool's homepage screenshot right under it.
+// logo and the name. blocks() puts the tool's ```rating line (if it comes next) and its homepage screenshot under it.
 function toolHeading(raw, text, id, ctx) {
   const m = text.match(/^(\d{1,2})\.\s+(.+?)(?::\s+.*)?$/);
   if (!m) return "";
@@ -431,7 +461,11 @@ function toolHeading(raw, text, id, ctx) {
   const img = logo ? `<span class="bl-toolh__logo"><img src="${esc(logo)}" alt="" width="20" height="20" loading="lazy" decoding="async"></span>` : "";
   const fig = toolFigure(tool.domain, name, "", ctx);
   if (!fig && tool.domain) ctx.warn(`no screenshot for ${name} (${tool.domain}): run node tools/shot-tools.mjs ${tool.domain}`);
-  return `<h3 id="${id}" class="bl-toolh"><span class="bl-toolh__n">${m[1].padStart(2, "0")}</span>${img}<span class="bl-toolh__name">${rest}</span></h3>${fig ? `\n${fig}` : ""}`;
+  const n = m[1].padStart(2, "0");
+  ctx.pendingFig = fig;
+  ctx.review = { id, part: null };
+  ctx.toc[ctx.toc.length - 1]?.subs.push({ id, n, name });
+  return `<h3 id="${id}" class="bl-toolh"><span class="bl-toolh__n">${n}</span>${img}<span class="bl-toolh__name">${rest}</span></h3>`;
 }
 
 function list(lines, start, ctx) {
@@ -466,8 +500,13 @@ function list(lines, start, ctx) {
   const tag = ordered ? "ol" : "ul";
   const num = ordered ? parseInt(first[2], 10) : 1;
   const startAttr = ordered && num !== 1 ? ` start="${num}"` : "";
+  // A top-level list under a #### in a tool section: data-rev="pros", "cons" or "list" (see ctx.review in heading()).
+  const part = !ctx.listDepth && ctx.review?.part;
+  const revAttr = part ? ` data-rev="${ordered ? "list" : part}"` : "";
+  ctx.listDepth = (ctx.listDepth || 0) + 1;
   const lis = items.map((it) => `<li>${blocks(it.lines, ctx, !loose)}</li>`).join("\n");
-  return { html: `<${tag}${startAttr}>\n${lis}\n</${tag}>`, next: i };
+  ctx.listDepth--;
+  return { html: `<${tag}${startAttr}${revAttr}>\n${lis}\n</${tag}>`, next: i };
 }
 
 // Splits a table row on "|" outside code spans and links.
@@ -498,15 +537,42 @@ function table(lines, start, ctx) {
   for (; i < lines.length && !blank(lines[i]) && lines[i].includes("|"); i++) rows.push(cells(lines[i]));
   const cols = head.length;
   rows.forEach((r, n) => { if (r.length !== cols) ctx.warn(`table "${plain(inline(head[0], ctx))}": row ${n + 1} has ${r.length} cells, the header has ${cols}`); });
-  const td = (tag, c, k) => `<${tag}${align[k] ? ` style="text-align:${align[k]}"` : ""}>${inline(c || "", ctx)}</${tag}>`;
+  const td = (tag, c, k, row) => `<${tag}${align[k] ? ` style="text-align:${align[k]}"` : ""}>${row && k > 0 ? priceCell(c || "", row[0] || "", ctx) : inline(c || "", ctx)}</${tag}>`;
   // Three columns fit a phone; four or more scroll inside the frame.
   const minW = cols >= 4 ? ` style="min-width:${Math.min(cols * 130, 700)}px"` : "";
   const html = `<div class="bl-table" role="region" aria-label="Table" tabindex="0"><table${minW}>
 <thead><tr>${head.map((c, k) => td("th", c, k)).join("")}</tr></thead>
 <tbody>
-${rows.map((r) => `<tr>${Array.from({ length: cols }, (_, k) => td("td", r[k], k)).join("")}</tr>`).join("\n")}
+${rows.map((r) => `<tr>${Array.from({ length: cols }, (_, k) => td("td", r[k], k, r)).join("")}</tr>`).join("\n")}
 </tbody></table></div>`;
   return { html, next: i };
+}
+
+// A vendor's pricing page: https://<domain>/pricing (Omniscient's is the pricing section on the home page).
+const pricingUrl = (domain) => (domain === "tryomniscient.com" ? "/#pricing" : `https://${domain}/pricing`);
+
+// The domain for a table row: its first cell names a tool in the tools block, or links to the tool's site.
+function rowDomain(first, ctx) {
+  const tool = ctx.tools.get(toolKey(plain(inline(first, { ...ctx, warn() {}, links: [] }))));
+  if (tool?.domain) return tool.domain;
+  const l = first.match(/\]\((https?:\/\/[^)\s]+)/i);
+  return l ? cleanDomain(l[1]) : "";
+}
+
+// A cell (in the tools block or a table) that reads "check", "See pricing" or nothing becomes "See pricing", linked
+// to the row's pricing page, so no "check" ever shows. "[See pricing](url)" keeps its own address. Other text renders
+// as written. Empty cells stay empty in plain tables (pass price=true for the tools block's price column).
+function priceCell(raw, first, ctx, price = false) {
+  const text = plain(inline(raw, { ...ctx, warn() {}, links: [] }));
+  const see = /^see pricing$/i.test(text);
+  if (see && /\]\(/.test(raw)) return inline(raw, ctx).replace(/^<a href="([^"]*)"/, (_, h) => `<a class="bl-see" href="${h}"${h.startsWith("/") ? "" : ' rel="nofollow"'}`);
+  if (!see && !/^check$/i.test(text) && !(price && !text)) return inline(raw, ctx);
+  const name = plain(inline(first, { ...ctx, warn() {}, links: [] })) || "a row";
+  if (!see) ctx.checks.push(name);
+  const domain = rowDomain(first, ctx);
+  if (!domain) { ctx.warn(`"See pricing" for ${name} has no link: add ${name} to the tools block, or write [See pricing](url)`); return "See pricing"; }
+  const url = pricingUrl(domain);
+  return `<a class="bl-see" href="${esc(url)}"${url.startsWith("/") ? "" : ' rel="nofollow"'}>See pricing</a>`;
 }
 
 // ─── Special blocks ──────────────────────────────────────────────────────────────────────────────────────────────
@@ -519,6 +585,8 @@ function special(kind, body, ctx) {
     case "faq": return faq(body, ctx);
     case "steps": return steps(body, ctx);
     case "shot": return body.filter((l) => l.trim()).map((l) => shot(l.trim(), "", "", ctx)).join("\n");
+    case "rating": return rating(body, ctx, false);
+    case "try": return tryButton(body, ctx);
     default:
       if (kind && !["", "text", "txt", "html", "css", "js", "json", "bash", "sh", "md", "markdown", "sql", "ts", "tsx", "yaml"].includes(kind)) ctx.warn(`unknown block \`\`\`${kind}: shown as code`);
       return `<pre class="bl-code"><code>${esc(body.join("\n"))}</code></pre>`;
@@ -565,17 +633,12 @@ function toolRows(body, warn) {
 // above the table still finds its tool.
 function toolsIn(lines) {
   const map = new Map();
-  for (let i = 0; i < lines.length; i++) {
-    const f = lines[i].match(FENCE);
-    if (!f) continue;
-    const body = [];
-    for (i++; i < lines.length; i++) {
-      const t = lines[i].trim();
-      if (t.startsWith(f[1]) && t.replace(/[`~]/g, "") === "" && t[0] === f[1][0]) break;
-      body.push(lines[i]);
-    }
-    if (f[2].toLowerCase() !== "tools") continue;
-    for (const r of toolRows(body, () => {})) if (!map.has(toolKey(r.name))) map.set(toolKey(r.name), r);
+  for (let i = 0; i < lines.length;) {
+    if (!FENCE.test(lines[i])) { i++; continue; }
+    const f = readFence(lines, i);
+    i = f.next;
+    if (f.kind !== "tools") continue;
+    for (const r of toolRows(f.body, () => {})) if (!map.has(toolKey(r.name))) map.set(toolKey(r.name), r);
   }
   return map;
 }
@@ -588,11 +651,7 @@ function tools(body, ctx) {
     const img = logo ? `<img src="${esc(logo)}" alt="" width="20" height="20" loading="lazy" decoding="async">` : "";
     const href = r.domain === "tryomniscient.com" ? "/" : r.domain ? `https://${r.domain}/` : "";
     const name = href ? `<a href="${esc(href)}"${href === "/" ? "" : ' rel="nofollow"'}>${inline(r.name, ctx)}</a>` : inline(r.name, ctx);
-    let price;
-    if (/^check$/i.test(plain(r.price)) || !r.price) {
-      ctx.checks.push(r.name);
-      price = r.domain ? `<a class="bl-tools__see" href="https://${esc(r.domain)}/" rel="nofollow">See site</a>` : "";
-    } else price = inline(r.price, ctx);
+    const price = priceCell(r.price, r.name, ctx, true);
     return `<tr><th scope="row"><span class="bl-tools__name"><span class="bl-tools__logo">${img}</span>${name}</span></th><td>${inline(r.what, ctx)}</td><td class="bl-tools__price">${price}</td><td>${inline(r.best, ctx)}</td></tr>`;
   }).join("\n");
   return `<div class="bl-table bl-tools" role="region" aria-label="Tools compared" tabindex="0"><table>
@@ -606,6 +665,55 @@ function cta(body, ctx) {
   const text = body.map((l) => l.trim()).filter(Boolean).join(" ");
   if (!text) ctx.warn("a ```cta block is empty");
   return `<aside class="bl-cta"><p class="bl-cta__text">${inline(text || "Try Omniscient free for 14 days.", ctx)}</p><div class="bl-cta__row"><a class="btn btn--primary btn--lg" href="${APP}">Start free <span class="nudge" aria-hidden="true">→</span></a><span class="bl-mono">14 days free. No credit card required.</span></div></aside>`;
+}
+
+// Five square-cornered stars in a 14px row: gray outlines, and an emerald copy on top clipped to the score.
+const STAR = { size: 14, gap: 3, R: 6, r: 6 * 0.42 };
+const STAR_PATH = (() => {
+  const { size, R, r } = STAR;
+  const cx = size / 2, cy = size / 2 + (R - R * Math.cos(Math.PI / 5)) / 2;
+  const pts = Array.from({ length: 10 }, (_, k) => {
+    const a = -Math.PI / 2 + (k * Math.PI) / 5, d = k % 2 ? r : R;
+    return `${(cx + d * Math.cos(a)).toFixed(2)} ${(cy + d * Math.sin(a)).toFixed(2)}`;
+  });
+  return `M${pts.join("L")}Z`;
+})();
+
+// ```rating: one line, "4.8 | G2 | https://www.g2.com/products/.../reviews". Shown under a numbered tool heading:
+// the stars, the score and the source's name linked. No JSON-LD: Google's review snippet rules forbid marking up
+// ratings gathered from other websites ("Don't aggregate reviews or ratings from other websites").
+function rating(body, ctx, attached) {
+  const lines = body.map((l) => l.trim()).filter(Boolean);
+  if (lines.length !== 1) ctx.warn(`a rating block needs one line, "4.8 | G2 | https://...", and has ${lines.length}`);
+  if (!lines.length) return "";
+  const [scoreRaw = "", source = "", urlRaw = ""] = cells(lines[0]);
+  const m = scoreRaw.match(/^(\d(?:[.,]\d{1,2})?)(?:\s*\/\s*5)?$/);
+  const score = m ? Number(m[1].replace(",", ".")) : NaN;
+  if (!(score >= 0 && score <= 5) || !source) { ctx.warn(`rating "${lines[0]}" needs "4.8 | G2 | https://..." with a score from 0 to 5`); return ""; }
+  if (!attached) ctx.warn(`the ${source} rating isn't right under a numbered tool heading`);
+  const url = /^https:\/\/\S+$/i.test(urlRaw) ? urlRaw : "";
+  if (!url) ctx.warn(`the ${source} rating has no https:// address, so ${source} isn't linked`);
+  const { size, gap, R } = STAR;
+  const full = Math.floor(score), frac = score - full, total = 5 * size + 4 * gap;
+  const edge = size / 2 - R * Math.sin((2 * Math.PI) / 5); // where a star's outline starts inside its cell
+  const clip = full >= 5 ? total + 2 : full * (size + gap) + (frac > 0 ? edge + frac * (size - 2 * edge) : -gap / 2);
+  const stars = Array.from({ length: 5 }, (_, k) => `<path transform="translate(${k * (size + gap)} 0)" d="${STAR_PATH}"/>`).join("");
+  const id = `bl-rate-${(ctx.ratings = (ctx.ratings || 0) + 1)}`;
+  const svg = `<svg class="bl-stars" viewBox="0 0 ${total} ${size}" width="${total}" height="${size}" aria-hidden="true" focusable="false"><defs><clipPath id="${id}"><rect x="-2" y="-2" width="${(clip + 2).toFixed(2)}" height="${size + 4}"/></clipPath></defs><g class="bl-stars__off" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="miter">${stars}</g><g class="bl-stars__on" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="miter" clip-path="url(#${id})">${stars}</g></svg>`;
+  const name = url ? `<a href="${esc(url)}" target="_blank" rel="nofollow noopener">${esc(source)}</a>` : esc(source);
+  return `<div class="bl-rating">${svg} <span class="bl-rating__score">${m[1].replace(",", ".")}/5</span> <span class="bl-rating__src">on ${name}</span></div>`;
+}
+
+// ```try: one line, "Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog". A primary button in the
+// flow of the text, under a tool's intro. Links off tryomniscient.com get rel="nofollow noopener".
+function tryButton(body, ctx) {
+  const lines = body.map((l) => l.trim()).filter(Boolean);
+  const [label = "", urlRaw = ""] = lines.length ? cells(lines[0]) : [];
+  const url = /^(https:\/\/\S+|\/\S*)$/i.test(urlRaw) ? urlRaw : "";
+  if (lines.length !== 1 || !label || !url) { ctx.warn(`a try block needs one line, "Label | https://...": ${lines.join(" ") || "(empty)"}`); return ""; }
+  ctx.links.push(url);
+  const own = url.startsWith("/") || /^https:\/\/([\w-]+\.)*tryomniscient\.com(?=[/?#]|$)/i.test(url);
+  return `<div class="bl-try"><a class="btn btn--primary btn--lg" href="${esc(url)}"${own ? "" : ' rel="nofollow noopener"'}>${esc(label)} <span class="nudge" aria-hidden="true">→</span></a></div>`;
 }
 
 function faq(body, ctx) {
@@ -798,6 +906,7 @@ function render(post, known) {
   const warnings = [];
   const ctx = {
     slug: post.slug, toc: [], faq: [], ids: new Set(), h1s: [], links: [], checks: [], visuals: 0, usesShot: false,
+    review: null, listDepth: 0, ratings: 0, pendingFig: undefined,
     warn: (m) => warnings.push(m), tools: toolsIn(post.body.split("\n")),
   };
   const html = blocks(post.body.split("\n"), ctx);
@@ -815,7 +924,7 @@ function render(post, known) {
   const range = LENGTH[post.type];
   if (range && (words < range[0] * 0.95 || words > range[1] * 1.05)) ctx.warn(`${words} words; a ${post.type} post runs ${range[0]} to ${range[1]}`);
   if (ctx.visuals < 3) ctx.warn(`${ctx.visuals} visual${ctx.visuals === 1 ? "" : "s"} found; posts need at least 3`);
-  if (ctx.checks.length) ctx.warn(`price is "check" for ${ctx.checks.join(", ")} (the page shows "See site")`);
+  if (ctx.checks.length) ctx.warn(`"check" or no price for ${[...new Set(ctx.checks)].join(", ")}: the page shows "See pricing" linked to each pricing page; write the confirmed price, "Custom", or [See pricing](url) when the page isn't at /pricing`);
   const prose = post.body.replace(/^(`{3,}|~{3,})[\s\S]*?^\1/gm, "");
   const dashes = (prose.match(/—/g) || []).length;
   if (dashes) ctx.warn(`${dashes} em dash${dashes > 1 ? "es" : ""}`);
@@ -919,9 +1028,14 @@ function postPage(post, r, related) {
     `<script src="/assets/blog.js" defer></script>`,
   ].filter(Boolean).join("\n");
 
-  const tocItems = r.ctx.toc.map((t) => `<li><a href="#${t.id}">${t.html}</a></li>`).join("");
-  const toc = tocItems ? `<nav class="bl-toc" aria-label="On this page"><p class="bl-label">[ On this page ]</p><ol class="bl-toc__list">${tocItems}</ol></nav>` : "";
-  const tocPhone = tocItems ? `<details class="bl-toc-m"><summary>On this page</summary><ol class="bl-toc__list">${tocItems}</ol></details>` : "";
+  // The desktop contents list the numbered tools under their ## (3 to 15 of them); blog.js shows them while you read
+  // that section. The phone contents keep the ## headings only.
+  const subList = (t) => (t.subs.length >= 3 && t.subs.length <= 15
+    ? `<ol class="bl-toc__sub">${t.subs.map((s) => `<li><a href="#${s.id}"><span class="bl-toc__n">${s.n}</span>${esc(s.name)}</a></li>`).join("")}</ol>`
+    : "");
+  const tocItems = (subs) => r.ctx.toc.map((t) => `<li${subs && subList(t) ? ' class="bl-toc__has"' : ""}><a href="#${t.id}">${t.html}</a>${subs ? subList(t) : ""}</li>`).join("");
+  const toc = r.ctx.toc.length ? `<nav class="bl-toc" aria-label="On this page"><p class="bl-label">[ On this page ]</p><ol class="bl-toc__list">${tocItems(true)}</ol></nav>` : "";
+  const tocPhone = r.ctx.toc.length ? `<details class="bl-toc-m"><summary>On this page</summary><ol class="bl-toc__list">${tocItems(false)}</ol></details>` : "";
   const cover = coverFor(post, false).replace(/ role="img" aria-label="[^"]*"/, ' aria-hidden="true" focusable="false"').replace(/<title>[\s\S]*?<\/title>/, "");
   const h1 = esc((post.h1 && plain(inline(post.h1, { slug: post.slug, warn() {}, links: [], visuals: 0 }))) || post.title);
   const relatedHtml = related.length ? `
