@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 690" width="720" height="690" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Startup discounts step down each year</title>
-<desc id="d">HubSpot for Startups takes 90% off in year one, 50% in year two and 25% in year three, then list price from year four, for startups that have raised up to a Series A and commit to a year. Attio for Startups takes 80% off the yearly Pro plan and credits in year one and 30% in year two, then list price from year three, for workspaces of up to 10 seats. HubSpot's FAQ says its discount typically lasts two years.</desc>
+<desc id="d">HubSpot for Startups takes 90% off in year one, 50% in year two and 25% in year three, then list price from year four, for startups that have raised up to a Series A and commit to a year. Attio for Startups takes 80% off the yearly Pro plan and credits in year one and 30% in year two, then list price from year three, for workspaces of up to 10 seats. HubSpot's discount typically runs two years, so ask whether year three applies to you.</desc>
 <rect width="720" height="690" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="689" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Startup discounts]</text>
@@ -40,5 +40,5 @@
 </g>
 <text x="144" y="593" font-size="19" fill="#737373">List price</text>
 <text x="32" y="636" font-size="17" fill="#737373">Sources: hubspot.com/startups/about and attio.com/startups</text>
-<text x="32" y="662" font-size="17" fill="#737373">HubSpot's FAQ says its discount typically lasts two years.</text>
+<text x="32" y="662" font-size="17" fill="#737373">HubSpot's discount typically runs two years, so ask about year 3.</text>
 </svg>

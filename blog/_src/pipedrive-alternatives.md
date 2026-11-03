@@ -63,7 +63,7 @@ Honestly, if your team plans its week around a pipeline board and sells mostly b
 
 ## Why teams look for a Pipedrive alternative
 
-Pipedrive's plans are now Lite, Growth, Premium and Ultimate, and its [guide to the new plans](https://support.pipedrive.com/en/article/new-pipedrive-plans) sets limits at every step:
+Pipedrive now sells four plans, Lite, Growth, Premium and Ultimate, and [every plan draws a line](https://support.pipedrive.com/en/article/new-pipedrive-plans) that a growing team runs into:
 
 - Lite allows 2,500 leads and deals per user, and Growth allows 5,000.
 - Sequences and the forecast view start on Growth, so a Lite team has neither.
@@ -87,11 +87,11 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 
 #### Key features
 
-- **Records that fill themselves in:** Email and calendar capture works even on free seats, so new people and companies appear without anyone typing them.
+- **Records that fill themselves in:** Email and calendar capture adds new people and companies on its own, even for teammates on free seats.
 - **Fields filled with proof:** On Pro, every value Otto writes shows the quote and source behind it, and a value a person typed is never changed.
 - **Meeting notes without a bot:** Notes come from the transcripts Google Meet, Zoom and Teams already create, and Otto drafts your follow up email from them.
 - **LinkedIn outreach you approve:** Scout finds leads from a sentence describing who you want, Otto drafts each message, and editing a message after approval clears that approval.
-- **Paced sending:** A new sender starts at 5 invitations a day and adds 2 a day, and each day's total lands between 80% and 100% of your limit.
+- **Paced sending:** New senders start at 5 invitations a day and add 2 daily, and each day's total lands between 80% and 100% of your limit.
 - **One Inbox for replies:** Replies sit next to the person's CRM record, and a reply stops that person's outreach in every campaign.
 - **Migration done for you:** We move your companies, contacts, deals and notes from Pipedrive, HubSpot, Salesforce or Attio.
 
@@ -99,10 +99,10 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 
 #### Pros
 
-- **Free seats for viewers:** Teammates who only view or log data cost nothing, so a manager can follow deals without a paid seat.
-- **AI in the seat price:** Paid seats include the CRM's AI, so a month full of meetings never adds a usage bill.
+- **Free seats on Pro:** Once your workspace has a Pro or Business seat, teammates who only need their email captured and records in view cost nothing.
+- **AI in the seat price:** Meeting notes, follow up drafts and Ask Omniscient come with every paid seat, with no AI credits to top up.
 - **Your Pipedrive stages come along:** Each imported pipeline keeps its stages and their win probabilities.
-- **CRM and LinkedIn together:** LinkedIn replies land on the person's record, so nobody copies conversations between tools.
+- **CRM and LinkedIn together:** A LinkedIn reply lands on the person's record, next to their emails and meetings.
 
 #### Cons
 
@@ -113,9 +113,9 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 
 #### Price and plans
 
-You can try Omniscient free for 14 days with no credit card. Paid seats, billed yearly (monthly billing costs 20% more):
+You can try Omniscient free for 14 days with no credit card. Per seat a month, billed yearly (monthly billing costs 20% more):
 
-- **Free:** $0 for teammates who only view or log data.
+- **Free:** $0 for teammates who only need email capture and record access, once the workspace has a Pro or Business seat.
 - **Starter:** $19 per seat a month.
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
@@ -172,19 +172,19 @@ Our [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) guide covers wha
 
 #### Key features
 
-- **Free edition:** Contact management, follow up reminders, workflow automation and mobile apps for up to 3 users.
+- **Free edition:** Up to 3 users get contact management, follow up reminders, workflow automation and the mobile apps at no cost.
 - **Cadences:** Zoho's version of sequences starts on Standard, with up to 10 active at a time in each module.
 - **More pipelines:** Free keeps the default pipeline only, Standard allows 5 and Professional 10.
 - **Zia Agents:** From Professional, you hire prebuilt agents from the Zia Agent Store or build your own in Zia Agent Studio.
-- **Blueprint:** Process management, which Zoho calls Blueprint, starts on Professional.
-- **Sales Navigator integration:** Every paid edition connects to LinkedIn Sales Navigator.
+- **Blueprint:** Professional adds Blueprint, Zoho's process management, which keeps every deal moving through the steps you set.
+- **Sales Navigator integration:** Teams already paying for LinkedIn Sales Navigator can connect it on every paid edition.
 - **MCP access:** Connect Zoho CRM to Claude, ChatGPT and other assistants for your own sales operations.
 
 #### Pros
 
 - **Free for a team of three:** You can rebuild one Pipedrive pipeline at no cost and keep it as long as you like.
 - **Low seat prices:** Standard costs $14 a user on yearly billing, and Professional, with AI agents, costs $23.
-- **Help to set up:** Zoho includes free onboarding and human support, so a small team can get started without a consultant.
+- **Help to set up:** A small team can get going without a consultant, thanks to free onboarding and human support.
 
 #### Cons
 
@@ -215,7 +215,7 @@ Zoho CRM is free for up to 3 users, and every paid edition has a free trial. Per
 - **Built in calling and SMS:** Call and text from Close, with usage billed at cost and most outbound calls around $0.02 a minute.
 - **Power and Predictive Dialers:** Growth adds a Power Dialer that calls down a lead list for you, and Scale adds a Predictive Dialer.
 - **Chloe:** The AI sales agent calls your leads, has qualifying conversations, books meetings and updates the CRM.
-- **Agents:** Give an agent a job and your rules, and it runs that job on its own and logs the work, starting with a Voice Agent for new leads.
+- **Agents in beta:** An agent takes a job and your rules, runs it on its own and logs the work, starting with a Voice Agent for new leads.
 - **Workflows:** From Growth, a lead that arrives on Friday evening gets an email, a text on Saturday and a call on your rep's list for Monday.
 - **AI credits on every plan:** Each plan includes a monthly allowance, from 500 to 2,000 credits per user.
 
@@ -252,8 +252,8 @@ Frankly, Close is the CRM we'd hand a team that lives on the phone, and we say t
 
 #### Key features
 
-- **Intent scores:** Freddy AI scores leads on intent, so your team knows who to call first.
-- **Deal recommendations:** Freddy suggests actions on open deals to help you avoid bottlenecks and plan accurately.
+- **Intent scores:** Freddy AI scores every lead on intent and shows your team who to call first.
+- **Deal recommendations:** Freddy recommends actions on your open deals and points reps to the ones that have stalled.
 - **Chat, email and phone:** Growth includes all three channels next to a Kanban view of your pipeline.
 - **Sales sequences:** Pro adds sequences, contact scoring, deal insights and territory management.
 - **Forecasting insights:** Enterprise adds forecasting insights, custom modules, a sandbox and audit logs.
@@ -302,7 +302,7 @@ Branded documents are an add on at $19 per user a month.
 
 - **Fits monday teams:** A team that already plans projects in monday keeps its deals on the same boards.
 - **Careful agent rollout:** Simulation mode and the action log let you trust an agent before it touches real deals.
-- **Mobile apps:** iOS and Android apps come with Standard.
+- **Mobile apps:** Standard adds the iOS and Android apps for reps who update deals between meetings.
 
 #### Cons
 
@@ -332,8 +332,8 @@ You can try monday CRM free for 14 days with no credit card. Per seat a month, b
 - **folkX extension:** Import single profiles or bulk lists from LinkedIn, Sales Navigator and other social sites straight into folk.
 - **Magic fields:** AI fills in custom fields for you, 2,000 a month on Standard and 5,000 on Premium.
 - **Follow up and recap assistants:** Both come with Standard, along with a research assistant and a workflow assistant.
-- **Email campaigns and sequences:** Standard sends email campaigns, and Premium adds email sequences.
-- **Email, calendar and WhatsApp sync:** Conversations from all three land on the contact's timeline.
+- **Email campaigns and sequences:** Standard sends email campaigns to your lists, and Premium adds email sequences for follow ups.
+- **Email, calendar and WhatsApp sync:** Conversations from email, calendar and WhatsApp all land on the contact's timeline in folk.
 - **Phone call recording:** Prep, call, record and review conversations from your own number inside folk.
 - **Integrations:** Standard connects to 5,000+ apps, and Premium adds API access.
 
@@ -375,7 +375,7 @@ Our list of the [best CRM for LinkedIn](/blog/best-crm-for-linkedin/) compares h
 
 - **Your own data model:** Custom objects and relationships let the CRM match how you sell instead of the other way round.
 - **Useful free plan:** Up to 3 seats are free, with real time contact syncing and automatic enrichment.
-- **Startup discount:** Eligible startups can get up to 80% off.
+- **Startup discount:** Startups that qualify can get up to 80% off, a big cut for a team watching its runway.
 
 #### Cons
 
@@ -400,7 +400,7 @@ Our [Attio alternatives](/blog/attio-alternatives/) guide covers the trip in the
 
 #### Key features
 
-- **Call and meeting notetakers:** Nutshell writes up your calls and meetings, so the notes reach the CRM without typing.
+- **Call and meeting notetakers:** Nutshell writes up each call and meeting and files the notes in the CRM for you.
 - **Email and calendar sync:** Two way sync with Gmail and Outlook keeps emails and meetings on each contact.
 - **Marketing on every plan:** Webchat, an AI chatbot, forms, landing pages and email marketing come with any CRM plan.
 - **AI outcomes:** Each plan includes a monthly allowance, from 10 on Foundation to 150 on Enterprise, for work like call summaries and lead research.
@@ -410,13 +410,13 @@ Our [Attio alternatives](/blog/attio-alternatives/) guide covers the trip in the
 #### Pros
 
 - **Free migration:** Fortunately, Nutshell moves your data for free during the trial, which covers the hardest part of a switch.
-- **Free live support:** Every plan gets live support and free onboarding.
-- **Unlimited contacts:** Every plan stores unlimited contacts, with no seat minimums.
+- **Free live support:** Every plan includes free live support, and every customer gets free onboarding to start.
+- **Unlimited contacts:** Every plan stores unlimited contacts, and Nutshell charges no setup fees.
 
 #### Cons
 
 - **Pipelines and automation start on Pro:** Custom pipelines and sales automation begin at $42 a user on yearly billing.
-- **Small AI allowance at the bottom:** Foundation includes 10 AI outcomes a month.
+- **Tight limits on Foundation:** The entry plan holds up to 100 open leads and includes 10 AI outcomes a month.
 - **Add ons add up:** Marketing costs $49 a month, and the Engagement add on for SMS and social messages costs $16 per user a month.
 
 #### Price and plans
@@ -449,14 +449,14 @@ You can try Nutshell free for 14 days with no credit card. Per user a month:
 #### Pros
 
 - **Low CRM admin:** Automatic capture keeps contacts and activity current without much typing.
-- **A month to decide:** The trial runs 30 days with no credit card.
+- **A month to decide:** The trial runs 30 days with no credit card, long enough to watch the automatic capture work.
 - **Migration on Enterprise:** Enterprise includes data migration done for you, plus setup and training.
 
 #### Cons
 
 - **No free plan:** After the trial, you need a paid plan to keep going.
 - **Email workflows need Pro:** Workflows of several emails, user permissions and custom dashboards start at $49.
-- **Enterprise minimum:** The Enterprise plan needs at least 5 users.
+- **Enterprise minimum:** Enterprise needs at least 5 users, which rules it out for a founder selling alone.
 
 #### Price and plans
 
@@ -483,8 +483,8 @@ Of every tool here, Salesflare's pitch sits closest to ours. When we built our o
 - **Pipelines with alerts:** Drag and drop pipelines come with AI flags and alerts for deals that slip.
 - **Projects:** Duplicate a closed deal into a project to run onboarding and service delivery.
 - **Email automation:** Professional adds bulk email and workflow automation, and Business adds email series.
-- **AI email tools:** Generate email templates and rewrite drafts with AI.
-- **Mobile app:** Calls and texts are logged on their own, so accounts stay current on the road.
+- **AI email tools:** Generate email templates and rewrite your drafts with AI without leaving Copper.
+- **Mobile app:** On the road, the app logs your calls and texts by itself and keeps accounts current.
 
 #### Pros
 
@@ -494,7 +494,7 @@ Of every tool here, Salesflare's pitch sits closest to ours. When we built our o
 
 #### Cons
 
-- **Contact limits:** Basic stops at 2,500 contacts and Professional at 15,000.
+- **Contact limits:** Basic stops at 2,500 contacts and Professional at 15,000, and only Business is unlimited.
 - **Sequences wait for Business:** Email series start at $99 a seat on yearly billing.
 - **Google first:** Copper is built to work inside Google Workspace, so a team on Outlook gives up its best feature.
 
@@ -532,9 +532,9 @@ You can try Copper free for 14 days with no credit card. Per seat a month:
 
 #### Cons
 
-- **Gmail only:** Streak is built for Gmail, so it doesn't suit a team on Outlook.
+- **Gmail only:** Streak runs inside Gmail, and a team on Outlook has no way in.
 - **Highest entry price here:** Pro costs $49 a user on yearly billing, the most expensive first paid plan in this list.
-- **Automations need Pro+:** Integrations, automations and advanced reports start at $69.
+- **Automations need Pro+:** Integrations, automations and advanced reports start on Pro+, at $69 a user on yearly billing.
 
 #### Price and plans
 
@@ -565,7 +565,7 @@ Streak's email tools are free forever, and Pro+ comes with a 14 day trial. Per u
 
 - **One price, nothing to upgrade:** Refreshingly, every feature sits on one plan, the opposite of Pipedrive's four tiers with a limit at each step.
 - **Free human support:** Email and phone support are free for everyone, including people on the trial.
-- **Your data stays yours:** You can export everything to Excel whenever you like.
+- **Your data stays yours:** You can export everything to Excel whenever you like, so you're never locked in.
 
 #### Cons
 
@@ -585,7 +585,7 @@ Past the seat price, two questions sort this list fastest: how you can try each 
 | CRM | How to try it free | First paid plan | Sequences or email automation from |
 |---|---|---|---|
 | Pipedrive | Free trial, no card | [See pricing](https://www.pipedrive.com/en/pricing) | Growth |
-| Omniscient | 14 days, no card, plus free seats for viewers | Starter, $19 a seat billed yearly | LinkedIn campaigns only, no email sequences |
+| Omniscient | 14 days, no card | Starter, $19 a seat billed yearly | LinkedIn campaigns only, no email sequences |
 | HubSpot | Free CRM for up to 2 users | Starter, $20 a seat, or $7 for new customers | Professional |
 | Zoho CRM | Free for up to 3 users | Standard, $14 a user billed yearly | Standard, as cadences |
 | Close | 14 days, no card | Solo, $9 billed yearly for one user | Growth, as workflows |
@@ -646,7 +646,7 @@ Run Omniscient next to Pipedrive for 14 days, with your pipeline imported and no
 
 ```faq
 Q: What is the best alternative to Pipedrive?
-A: It depends on why you're leaving. Omniscient fits small teams that prospect on LinkedIn, Close fits teams that sell by phone, and HubSpot fits teams that want a free CRM with room for marketing.
+A: Pick by your reason for leaving. Omniscient fits small teams that prospect on LinkedIn, Close fits teams that sell by phone, and HubSpot fits teams that want a free CRM with room for marketing.
 Q: Is there a free alternative to Pipedrive?
 A: Yes. HubSpot's free CRM covers up to 2 users, Zoho CRM's free edition covers 3 users, and Attio's free plan covers up to 3 seats.
 Q: Is there a cheaper alternative to Pipedrive?
