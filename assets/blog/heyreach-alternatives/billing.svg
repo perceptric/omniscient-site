@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1190" width="720" height="1190" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">How HeyReach and its alternatives bill you</title>
-<desc id="d">How HeyReach and its alternatives bill for LinkedIn sending. Per LinkedIn account: Linked Helper $15 per account a month, Kanbox $20 a month for 1 account, SalesRobot $59 per account a month, La Growth Machine €60 per identity a month, GetSales.io $69 a month for 1 account, HeyReach Growth $79 per sender a month. Per seat or user: Omniscient $19 per seat a month, billed yearly, Waalaxy €19 per user a month, Meet Alfred $29 per user a month, billed yearly, Dux-Soup $55 per seat a month, Dripify $79 per user a month, lemlist $87 per user a month, billed yearly, Expandi $99 a month, Skylead $100 per seat a month. Flat for a team of senders: Kanbox Agency 10 $399 a month for 5 to 10 accounts, HeyReach Agency $999 a month for 25 senders, Skylead Agency $999 a month for 25 seats, first year, HeyReach Unlimited $2,999 a month, up to 300 senders.</desc>
+<desc id="d">How HeyReach and its alternatives bill for LinkedIn sending. Per LinkedIn account: Linked Helper $15 per account a month, Kanbox $20 a month for 1 account, SalesRobot $59 per account a month, La Growth Machine €60 per identity a month, GetSales.io $69 a month for 1 account, HeyReach Growth $79 per sender a month. Per seat or user: Omniscient $19 per seat a month, billed yearly, Waalaxy $19 per user a month, Meet Alfred $39 per user a month, billed yearly, Dux-Soup $55 per seat a month, Dripify $79 per user a month, lemlist $87 per user a month, billed yearly, Expandi $99 a month, Skylead $100 per seat a month. Flat for a team of senders: Kanbox Agency 10 $399 a month for 5 to 10 accounts, HeyReach Agency $999 a month for 25 senders, Skylead Agency $999 a month for 25 seats, first year, HeyReach Unlimited $2,999 a month for up to 300 senders.</desc>
 <rect width="720" height="1190" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="1189" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Pricing]</text>
@@ -33,10 +33,10 @@
 <text x="668" y="536" text-anchor="end" font-size="19" fill="#404040">$19 per seat a month, billed yearly</text>
 <line x1="33" x2="687" y1="552" y2="552" stroke="#e5e5e5"/>
 <text x="52" y="582" font-size="20" font-weight="600" fill="#0a0a0a">Waalaxy</text>
-<text x="668" y="582" text-anchor="end" font-size="19" fill="#404040">€19 per user a month</text>
+<text x="668" y="582" text-anchor="end" font-size="19" fill="#404040">$19 per user a month</text>
 <line x1="33" x2="687" y1="598" y2="598" stroke="#e5e5e5"/>
 <text x="52" y="628" font-size="20" font-weight="600" fill="#0a0a0a">Meet Alfred</text>
-<text x="668" y="628" text-anchor="end" font-size="19" fill="#404040">$29 per user a month, billed yearly</text>
+<text x="668" y="628" text-anchor="end" font-size="19" fill="#404040">$39 per user a month, billed yearly</text>
 <line x1="33" x2="687" y1="644" y2="644" stroke="#e5e5e5"/>
 <text x="52" y="674" font-size="20" font-weight="600" fill="#0a0a0a">Dux-Soup</text>
 <text x="668" y="674" text-anchor="end" font-size="19" fill="#404040">$55 per seat a month</text>
@@ -66,5 +66,5 @@
 <line x1="33" x2="687" y1="1080" y2="1080" stroke="#e5e5e5"/>
 <text x="52" y="1110" font-size="20" font-weight="600" fill="#0a0a0a">HeyReach Unlimited</text>
 <text x="668" y="1110" text-anchor="end" font-size="19" fill="#404040">$2,999 a month, up to 300 senders</text>
-<text x="32" y="1156" font-size="18" fill="#737373">Starting prices from each vendor&#x27;s pricing page, November 2026.</text>
+<text x="32" y="1156" font-size="18" fill="#737373">Starting prices on monthly billing unless marked yearly, November 2026.</text>
 </svg>

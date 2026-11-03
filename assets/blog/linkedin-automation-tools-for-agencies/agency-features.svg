@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 978" width="560" height="978" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What each LinkedIn automation tool gives an agency</title>
-<desc id="d">How 13 LinkedIn automation tools handle agency needs, from each vendor&#x27;s own pages in November 2026. Omniscient: clients kept apart by each client inviting you to its workspace; white label no; email steps no. HeyReach: clients kept apart by workspaces and permissions; white label on the agency plan; email steps through Instantly or Smartlead. Expandi: clients kept apart by roles and permissions for clients; white label on the agency plan; email steps yes. Skylead: clients kept apart by an agency dashboard for all clients; white label on the agency plan; email steps yes. GetSales.io: clients kept apart by a workspace per client; white label with setups from $500 a month; email steps yes. Closely: separate client workspaces not listed; white label on every plan; email steps yes. Meet Alfred: clients kept apart by a workspace per client; white label on the agency plan; email steps yes. Dripify: clients kept apart by a separate team per client through its agency program; white label not listed; email steps yes. SalesRobot: clients kept apart by one dashboard for all clients; white label through its partner program; email steps yes. Dux-Soup: client accounts run from one agency dashboard; white label not listed; email steps not listed. La Growth Machine: client separation not listed; white label not listed; email steps yes. Waalaxy: clients kept apart by a dedicated account per client in a team workspace; white label no; email steps on the Business plan. Linked Helper: clients kept apart by a workspace per client; white label not listed; email steps not listed.</desc>
+<desc id="d">How 13 LinkedIn automation tools handle agency needs. Omniscient: clients kept apart by each client inviting you to its workspace; white label no; email steps no. HeyReach: clients kept apart by workspaces and permissions; white label on the agency plans; email steps through Instantly, Smartlead or EmailBison. Expandi: clients kept apart by roles and permissions for clients; white label on the agency plan; email steps yes. Skylead: clients kept apart by an agency dashboard for all clients; white label on the agency plan; email steps yes. GetSales.io: clients kept apart by a workspace per client; white label with the Business setup; email steps yes. Closely: clients log in to a branded client portal; white label on every plan; email steps yes. Meet Alfred: clients kept apart by a workspace per client; white label on the agency plan; email steps yes. Dripify: clients kept apart by a separate team per client through its partner program; email steps yes. SalesRobot: clients kept apart by one dashboard for all clients; white label through its partner program; email steps yes. Dux-Soup: client accounts run from one agency dashboard. La Growth Machine: email steps yes. Waalaxy: clients kept apart by a dedicated account per client in a team workspace; white label no; email steps on the Business plan. Linked Helper: clients kept apart by a workspace per client.</desc>
 <rect width="560" height="978" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="559" height="977" fill="none" stroke="#0a0a0a"/>
 <text x="20" y="40" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Agency needs]</text>
 <text x="20" y="76" font-size="26" font-weight="600" fill="#0a0a0a">What each tool gives <tspan fill="#a3a3a3">an agency</tspan></text>
-<text x="20" y="108" font-size="16" fill="#737373">13 tools, from each vendor's own pages, November 2026</text>
+<text x="20" y="108" font-size="16" fill="#737373">13 tools on client separation, white label and email</text>
 <rect x="20.5" y="136.5" width="519" height="693" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="20.5" y="136.5" width="519" height="43" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="30" y="164" font-family="Geist Mono, ui-monospace, monospace" font-size="14" fill="#404040">[Tool]</text>
@@ -38,11 +38,11 @@
 <line x1="21" x2="539" y1="379.5" y2="379.5" stroke="#e5e5e5"/>
 <text x="30" y="411" font-size="17" font-weight="600" fill="#0a0a0a">GetSales.io</text>
 <text x="206" y="411" font-size="16" fill="#0a0a0a">Per client</text>
-<text x="328" y="411" font-size="16" fill="#0a0a0a">Big setups</text>
+<text x="328" y="411" font-size="16" fill="#0a0a0a">Business</text>
 <text x="456" y="411" font-size="16" fill="#0a0a0a">Yes</text>
 <line x1="21" x2="539" y1="429.5" y2="429.5" stroke="#e5e5e5"/>
 <text x="30" y="461" font-size="17" font-weight="600" fill="#0a0a0a">Closely</text>
-<text x="206" y="461" font-size="16" fill="#a3a3a3">Not listed</text>
+<text x="206" y="461" font-size="16" fill="#0a0a0a">Client portal</text>
 <text x="328" y="461" font-size="16" fill="#0a0a0a">Every plan</text>
 <text x="456" y="461" font-size="16" fill="#0a0a0a">Yes</text>
 <line x1="21" x2="539" y1="479.5" y2="479.5" stroke="#e5e5e5"/>
@@ -53,7 +53,6 @@
 <line x1="21" x2="539" y1="529.5" y2="529.5" stroke="#e5e5e5"/>
 <text x="30" y="561" font-size="17" font-weight="600" fill="#0a0a0a">Dripify</text>
 <text x="206" y="561" font-size="16" fill="#0a0a0a">Per client</text>
-<text x="328" y="561" font-size="16" fill="#a3a3a3">Not listed</text>
 <text x="456" y="561" font-size="16" fill="#0a0a0a">Yes</text>
 <line x1="21" x2="539" y1="579.5" y2="579.5" stroke="#e5e5e5"/>
 <text x="30" y="611" font-size="17" font-weight="600" fill="#0a0a0a">SalesRobot</text>
@@ -63,13 +62,9 @@
 <line x1="21" x2="539" y1="629.5" y2="629.5" stroke="#e5e5e5"/>
 <text x="30" y="661" font-size="17" font-weight="600" fill="#0a0a0a">Dux-Soup</text>
 <text x="206" y="661" font-size="16" fill="#0a0a0a">Dashboard</text>
-<text x="328" y="661" font-size="16" fill="#a3a3a3">Not listed</text>
-<text x="456" y="661" font-size="16" fill="#a3a3a3">Not listed</text>
 <line x1="21" x2="539" y1="679.5" y2="679.5" stroke="#e5e5e5"/>
 <text x="30" y="702" font-size="17" font-weight="600" fill="#0a0a0a">La Growth</text>
 <text x="30" y="721" font-size="17" font-weight="600" fill="#0a0a0a">Machine</text>
-<text x="206" y="711" font-size="16" fill="#a3a3a3">Not listed</text>
-<text x="328" y="711" font-size="16" fill="#a3a3a3">Not listed</text>
 <text x="456" y="711" font-size="16" fill="#0a0a0a">Yes</text>
 <line x1="21" x2="539" y1="729.5" y2="729.5" stroke="#e5e5e5"/>
 <text x="30" y="761" font-size="17" font-weight="600" fill="#0a0a0a">Waalaxy</text>
@@ -79,10 +74,8 @@
 <line x1="21" x2="539" y1="779.5" y2="779.5" stroke="#e5e5e5"/>
 <text x="30" y="811" font-size="17" font-weight="600" fill="#0a0a0a">Linked Helper</text>
 <text x="206" y="811" font-size="16" fill="#0a0a0a">Per client</text>
-<text x="328" y="811" font-size="16" fill="#a3a3a3">Not listed</text>
-<text x="456" y="811" font-size="16" fill="#a3a3a3">Not listed</text>
 <text x="20" y="866" font-size="15" fill="#737373">Per client: a separate workspace or team for each client.</text>
 <text x="20" y="890" font-size="15" fill="#737373">Dashboard: one agency view across every client.</text>
 <text x="20" y="914" font-size="15" fill="#737373">Via apps: HeyReach sends email through Instantly or Smartlead.</text>
-<text x="20" y="938" font-size="15" fill="#737373">Business: Waalaxy's email steps need its Business plan.</text>
+<text x="20" y="938" font-size="15" fill="#737373">Business: GetSales.io's Business setup, or Waalaxy's Business plan.</text>
 </svg>
