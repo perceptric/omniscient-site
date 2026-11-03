@@ -1,54 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 956" width="560" height="956" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
-<title id="t">What HubSpot and Omniscient need before the first LinkedIn invitation</title>
-<desc id="d">What each tool needs before the first LinkedIn invitation goes out. HubSpot Professional: a Sales Hub Professional or Enterprise seat, the required onboarding at $1,500 paid once, a LinkedIn Sales Navigator Advanced Plus account, the Sales Navigator integration connected, and a sequence with a connection request task; then each rep sends the requests by hand from Sales Navigator. Omniscient: a LinkedIn account connected as a sender, a list of people from Scout, messages your team has approved, and going live, which turns sending on; then a new sender starts at 5 invitations a day and adds 2 a day. From HubSpot's pricing page and knowledge base and the Omniscient app, November 3, 2026.</desc>
-<rect width="560" height="956" fill="#ffffff"/>
-<text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Setup</text>
-<text x="24" y="84" font-size="24" font-weight="500" fill="#171717">Before the first invitation <tspan fill="#171717">goes out</tspan></text>
-<rect x="24" y="110" width="512" height="398" fill="#ffffff" stroke="#ebebeb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 922" width="560" height="922" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What HubSpot and Omniscient need before the forecast works</title>
+<desc id="d">What each tool needs before the forecast works. HubSpot Professional: a Sales Hub Professional or Enterprise seat, a yearly commitment even when you pay monthly, the required onboarding at $1,500 paid once, and your pipelines set up or imported; then sequences and the forecast are on. Omniscient Pro: a Pro seat with no onboarding fee, Gmail or Outlook and your calendar connected, your HubSpot data imported read only, and pipelines that keep their stages from HubSpot; then the forecast reads from your deals. From HubSpot&#x27;s pricing page and knowledge base and the Omniscient app, November 3, 2026.</desc>
+<rect width="560" height="922" fill="#ffffff"/>
+<text x="24" y="48" font-size="19" fill="#737373">Setup</text>
+<text x="24" y="88" font-size="24" font-weight="500" fill="#171717">Before the forecast works</text>
+<rect x="24" y="110" width="512" height="344" fill="#ffffff" stroke="#ebebeb"/>
 <rect x="24" y="110" width="512" height="44" fill="#f5f5f5" stroke="#ebebeb"/>
-<text x="40" y="138" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#404040">HubSpot Professional</text>
+<text x="40" y="138" font-size="17" fill="#404040">HubSpot Professional</text>
 <rect x="40" y="170" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">1</text>
+<text x="54" y="190" text-anchor="middle" font-size="15" fill="#171717">1</text>
 <text x="82" y="191" font-size="18" fill="#171717">A Sales Hub Professional or Enterprise seat</text>
 <line x1="25" x2="535" y1="214" y2="214" stroke="#ebebeb"/>
 <rect x="40" y="230" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="250" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">2</text>
-<text x="82" y="251" font-size="18" fill="#171717">Required onboarding, $1,500 paid once</text>
+<text x="54" y="250" text-anchor="middle" font-size="15" fill="#171717">2</text>
+<text x="82" y="251" font-size="18" fill="#171717">A yearly commitment, even paid monthly</text>
 <line x1="25" x2="535" y1="274" y2="274" stroke="#ebebeb"/>
 <rect x="40" y="290" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="310" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">3</text>
-<text x="82" y="311" font-size="18" fill="#171717">A Sales Navigator Advanced Plus account</text>
+<text x="54" y="310" text-anchor="middle" font-size="15" fill="#171717">3</text>
+<text x="82" y="311" font-size="18" fill="#171717">Required onboarding, $1,500 paid once</text>
 <line x1="25" x2="535" y1="334" y2="334" stroke="#ebebeb"/>
 <rect x="40" y="350" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="370" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">4</text>
-<text x="82" y="371" font-size="18" fill="#171717">The Sales Navigator integration, connected</text>
+<text x="54" y="370" text-anchor="middle" font-size="15" fill="#171717">4</text>
+<text x="82" y="371" font-size="18" fill="#171717">Your pipelines, set up or imported</text>
 <line x1="25" x2="535" y1="394" y2="394" stroke="#ebebeb"/>
-<rect x="40" y="410" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="430" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">5</text>
-<text x="82" y="431" font-size="18" fill="#171717">A sequence with a connection request task</text>
-<line x1="25" x2="535" y1="454" y2="454" stroke="#ebebeb"/>
-<text x="40" y="488" font-size="17" fill="#737373">Then each rep sends requests by hand</text>
-<rect x="24" y="532" width="512" height="338" fill="#ffffff" stroke="#ebebeb"/>
-<rect x="24" y="532" width="512" height="44" fill="#f5f5f5" stroke="#ebebeb"/>
-<rect x="40" y="547" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
-<text x="62" y="560" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#404040">Omniscient</text>
-<rect x="40" y="592" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="612" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">1</text>
-<text x="82" y="613" font-size="18" fill="#171717">A LinkedIn account connected as a sender</text>
-<line x1="25" x2="535" y1="636" y2="636" stroke="#ebebeb"/>
-<rect x="40" y="652" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="672" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">2</text>
-<text x="82" y="673" font-size="18" fill="#171717">A list of people from Scout</text>
-<line x1="25" x2="535" y1="696" y2="696" stroke="#ebebeb"/>
-<rect x="40" y="712" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="732" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">3</text>
-<text x="82" y="733" font-size="18" fill="#171717">Messages your team has approved</text>
-<line x1="25" x2="535" y1="756" y2="756" stroke="#ebebeb"/>
-<rect x="40" y="772" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
-<text x="54" y="792" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#171717">4</text>
-<text x="82" y="793" font-size="18" fill="#171717">Go live, which turns sending on</text>
-<line x1="25" x2="535" y1="816" y2="816" stroke="#ebebeb"/>
-<text x="40" y="850" font-size="17" fill="#737373">Then a new sender starts at 5 a day, adding 2 a day</text>
-<text x="24" y="910" font-size="16" fill="#737373">From HubSpot's pricing page and knowledge base and</text>
-<text x="24" y="932" font-size="16" fill="#737373">the Omniscient app, read on November 3, 2026.</text>
+<text x="40" y="428" font-size="17" fill="#737373">Then sequences and the forecast are on</text>
+<rect x="24" y="478" width="512" height="344" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="24" y="478" width="512" height="44" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="40" y="493" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<text x="62" y="506" font-size="17" fill="#404040">Omniscient Pro</text>
+<rect x="40" y="538" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
+<text x="54" y="558" text-anchor="middle" font-size="15" fill="#171717">1</text>
+<text x="82" y="559" font-size="18" fill="#171717">A Pro seat, with no onboarding fee</text>
+<line x1="25" x2="535" y1="582" y2="582" stroke="#ebebeb"/>
+<rect x="40" y="598" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
+<text x="54" y="618" text-anchor="middle" font-size="15" fill="#171717">2</text>
+<text x="82" y="619" font-size="18" fill="#171717">Gmail or Outlook and your calendar</text>
+<line x1="25" x2="535" y1="642" y2="642" stroke="#ebebeb"/>
+<rect x="40" y="658" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
+<text x="54" y="678" text-anchor="middle" font-size="15" fill="#171717">3</text>
+<text x="82" y="679" font-size="18" fill="#171717">Your HubSpot data, imported read only</text>
+<line x1="25" x2="535" y1="702" y2="702" stroke="#ebebeb"/>
+<rect x="40" y="718" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
+<text x="54" y="738" text-anchor="middle" font-size="15" fill="#171717">4</text>
+<text x="82" y="739" font-size="18" fill="#171717">Pipelines that keep their HubSpot stages</text>
+<line x1="25" x2="535" y1="762" y2="762" stroke="#ebebeb"/>
+<text x="40" y="796" font-size="17" fill="#737373">Then the forecast reads from your deals</text>
+<text x="24" y="870" font-size="16" fill="#737373">From HubSpot&#x27;s pricing page and knowledge base and</text>
+<text x="24" y="894" font-size="16" fill="#737373">the Omniscient app, read on November 3, 2026.</text>
 </svg>

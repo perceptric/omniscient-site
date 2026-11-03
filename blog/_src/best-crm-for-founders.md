@@ -22,7 +22,7 @@ Every price below comes from the vendor's own site in November 2026, except Pipe
 
 Our quick picks, by the way you sell:
 
-- Pick Omniscient if you sell B2B through email, meetings and LinkedIn, and want the CRM to fill itself in.
+- Pick Omniscient if you sell B2B through email and meetings, close on a proposal and a contract, and want the CRM to fill itself in.
 - Pick folk if your deals come from your network and your LinkedIn contacts.
 - Pick Attio if you want investors and partners next to your customers, in a workspace you design.
 - Pick HubSpot if you and a cofounder want a free CRM to start with.
@@ -35,7 +35,7 @@ Our quick picks, by the way you sell:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [$19 per seat a month, billed yearly](/#pricing) | Founders selling B2B through email, meetings and LinkedIn
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Founders selling B2B through email, meetings and proposals
 folk | folk.app | An AI CRM for small teams, with a LinkedIn extension | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who sell through their network
 Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Founders who track investors and partners too
 HubSpot | hubspot.com | A CRM platform with a free plan that doesn't expire | [Free for up to 2 users](https://www.hubspot.com/products/crm) | Cofounders who want a free start
@@ -86,7 +86,7 @@ Thankfully, you can test all of this on a free plan or a trial before you commit
 
 ### 1. Omniscient
 
-Omniscient is an AI CRM that builds its records from your email, calendar and call transcripts, and runs LinkedIn outreach you approve in the same app. Otto, our AI agent, writes your meeting notes and drafts your follow ups.
+Omniscient is an AI CRM that builds its records from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes your meeting notes and drafts your follow ups.
 
 - Paid seats start at [$19 per seat a month, billed yearly](/#pricing), with AI included, and monthly billing costs 20% more.
 - Starter covers meeting notes from the transcripts Google Meet, Zoom or Teams already make, follow up drafts, Ask Omniscient and the daily digest.
@@ -97,9 +97,9 @@ Each weekday morning, the digest lists your meetings and the emails to answer. I
 
 ![Omniscient's weekday morning digest for a founder: two meetings today, three emails to answer from Pallet Cloud, Shiftwise and Ledgerly, and two deals that need attention, Verda with no contact in 16 days and Ledgerly with a passed close date](/assets/blog/best-crm-for-founders/digest.shot.html)
 
-For [LinkedIn outbound](/product/linkedin-outbound/), you type who you want to reach and Scout finds people who match, ranking people your team already talks to higher. Otto drafts each message, and nothing sends until someone on your team approves it.
+When a buyer asks for a proposal, the [Deal Room](/product/deal-room/) builds one from the deal, your calls and your Library, in your brand. You see who on their side viewed which part, and they approve on the page, so you don't spend an evening on a deck between investor meetings.
 
-Sending runs only during your working hours, and the normal pace leaves a random gap of 3 to 12 minutes between actions. We chose random gaps so a day of sending looks like a person working through a list.
+[Contract Management](/product/contract-management/) comes with the seat. It drafts the contract from the approved proposal and your own template, keeps every redline, and collects e-signatures with a link for each signer. It also reads each contract's end date and notice period, and opens a renewal opportunity 90 days before the end date, which helps when nobody else at the company is watching renewals yet.
 
 Admittedly, Omniscient has no phone dialer and no email sequences, so Close suits a founder who sells by phone. The pipeline board also starts on Pro, so a founder who only wants a free board may prefer HubSpot's free CRM.
 
@@ -270,9 +270,9 @@ For published startup discounts, our guide to the [best CRM for startups](/blog/
 
 Founders sell through different channels, so we matched each of the 13 CRMs to the channel it handles best, based on each vendor's own site. Look at where your last five deals started, and build your shortlist from that row of the chart.
 
-![Which CRM fits the way a founder sells: email and meetings need capture without typing, from Omniscient, Lightfield, Day AI or Clarify; selling from Gmail all day fits Streak; LinkedIn and introductions need people saved from LinkedIn, from Omniscient, folk or Salesflare; phone calls need a dialer next to each lead, from Close; tracking investors and partners too needs your own objects and pipelines, from Attio or Twenty; a first sales hire needs a board of stages to share, from Pipedrive or HubSpot; keeping in touch with your network needs reminders, from Dex](/assets/blog/best-crm-for-founders/crm-by-channel.svg)
+![Which CRM fits the way a founder sells: email and meetings need capture without typing, from Omniscient, Lightfield, Day AI or Clarify; selling from Gmail all day fits Streak; LinkedIn and introductions need people saved from LinkedIn, from folk or Salesflare; phone calls need a dialer next to each lead, from Close; tracking investors and partners too needs your own objects and pipelines, from Attio or Twenty; a first sales hire needs a board of stages to share, from Pipedrive or HubSpot; keeping in touch with your network needs reminders, from Dex](/assets/blog/best-crm-for-founders/crm-by-channel.svg)
 
-If most of your deals start on LinkedIn, our guide to [LinkedIn outreach tools with a CRM](/blog/linkedin-outreach-tools-with-crm/) covers the outbound side in more depth.
+If most of your deals start on LinkedIn, folk and Salesflare save people from LinkedIn into the CRM, and our guide to [folk CRM alternatives](/blog/folk-crm-alternatives/) compares more tools that do.
 
 ## How to hand your deals to a first sales hire
 
@@ -286,7 +286,7 @@ This is the order we'd follow:
 4. Stay on the deals where you hold the relationship, and bring the rep to the next call.
 5. Ask the rep to read five deal timelines and tell you what's missing.
 
-In Omniscient, the next step lives on each opportunity, and the morning digest flags open deals with a passed close date or 14 days without contact. Personally, we'd finish this list before the rep starts, so their first week goes to buyers instead of old threads.
+In Omniscient, the next step lives on each opportunity, and the morning digest flags open deals with a passed close date or 14 days without contact. Signed contracts sit on each account too, with their end dates and the renewal opportunity made 90 days ahead. Personally, we'd finish this list before the rep starts, so their first week goes to buyers instead of old threads.
 
 ## How to choose a CRM as a founder
 
@@ -306,7 +306,7 @@ Connect the inbox you sell from, and Otto fills in your CRM while you keep selli
 
 ```faq
 Q: What is the best CRM for founders in 2026?
-A: For founders who sell B2B through email, meetings and LinkedIn, we'd start with Omniscient. folk suits founders who sell through their network, and Close suits founders who sell by phone.
+A: For founders who sell B2B through email and meetings and close on proposals and contracts, we'd start with Omniscient. folk suits founders who sell through their network, and Close suits founders who sell by phone.
 Q: Is there a free CRM for founders?
 A: Yes, HubSpot's free CRM covers 2 users and 1,000 contacts, Attio's Free plan covers up to 3 seats, and Clarify's Free plan has unlimited seats with 1,000 AI credits a month. Omniscient and Day AI give free seats to teammates, but only once your workspace pays for one Pro seat or one Professional agent.
 Q: When should a founder start using a CRM?

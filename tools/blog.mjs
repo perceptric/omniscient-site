@@ -21,7 +21,7 @@ const root = fileURLToPath(new URL("..", import.meta.url));
 const SRC = join(root, "blog", "_src");
 const SITE = "https://tryomniscient.com";
 const APP = "https://app.tryomniscient.com/";
-const TOPICS = { linkedin: "LinkedIn", crm: "CRM" };
+const TOPICS = { crm: "CRM" };
 const TYPES = ["best-of", "alternatives", "versus", "pricing", "how-to"];
 const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
 const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly"];
@@ -1163,7 +1163,7 @@ function indexPage(posts) {
   const button = (t, label, n, on) => `<button class="bl-filter__btn" type="button" data-topic="${esc(t)}" aria-pressed="${on}">${esc(label)}<span>${n}</span></button>`;
   const filter = posts.length ? `<div class="bl-filter" role="group" aria-label="Filter by topic">${button("all", "All", posts.length, true)}${topics.map((t) => button(t, topicName(t), counts[t], false)).join("")}</div>` : "";
   const image = existsSync(join(root, "assets", "blog", "og.png")) ? { url: `${SITE}/assets/blog/og.png`, w: 1200, h: 630 } : DEFAULT_IMAGE;
-  const description = "Guides, comparisons and pricing for LinkedIn outbound and CRM, written by the team that builds Omniscient.";
+  const description = "Guides, comparisons and pricing for CRM, proposals and contracts, written by the team that builds Omniscient.";
   const extra = [
     `<link rel="stylesheet" href="/assets/blog.css">`,
     jsonLd({
@@ -1173,14 +1173,14 @@ function indexPage(posts) {
     }),
     `<script src="/assets/blog.js" defer></script>`,
   ].join("\n");
-  return `${head({ title: "Blog: LinkedIn outbound and CRM | Omniscient", description, canonical: url, image, extra })}
+  return `${head({ title: "Blog: CRM, proposals and contracts | Omniscient", description, canonical: url, image, extra })}
 <body class="om om-blog">
 <!-- header:start -->
 <!-- header:end -->
 <main id="main" class="site-main bl-index">
   <section class="wrap bl-hero">
     <p class="bl-label">Blog</p>
-    <h1 class="bl-hero__title">LinkedIn outbound and CRM. <span class="two">Written by the team that builds Omniscient.</span></h1>
+    <h1 class="bl-hero__title">CRM, proposals and contracts. <span class="two">Written by the team that builds Omniscient.</span></h1>
   </section>
   <section class="wrap bl-list" aria-label="Posts">
     ${filter}
@@ -1282,7 +1282,7 @@ async function buildIndex(posts) {
   const count = new Map();
   for (const p of list) for (const d of toolsOf(p.body)) if (d !== "tryomniscient.com") count.set(d, (count.get(d) || 0) + 1);
   const tools = [...count.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([d]) => d).slice(0, 14);
-  const svg = labelled(coverArt({ slug: "blog", title: "Blog", tools }), "LinkedIn outbound and CRM, from the team that builds Omniscient");
+  const svg = labelled(coverArt({ slug: "blog", title: "Blog", tools }), "CRM, proposals and contracts, from the team that builds Omniscient");
   const changed = write(join(root, "assets", "blog", "cover.svg"), `${svg}\n`);
   if (changed || !existsSync(join(root, "assets", "blog", "og.png"))) await renderPngs([{ svg, out: join(root, "assets", "blog", "og.png") }]);
   write(join(root, "blog", "index.html"), applyLayout(indexPage(list)));

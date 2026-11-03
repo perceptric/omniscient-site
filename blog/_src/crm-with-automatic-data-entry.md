@@ -22,7 +22,7 @@ We read each vendor's own site on November 3, 2026, and every price we could rea
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in from email, calendar and call transcripts, with LinkedIn outreach | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want to see where each value came from
+Omniscient | tryomniscient.com | A CRM that fills itself in from email, calendar, call transcripts and signed contracts | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want to see where each value came from
 HubSpot | hubspot.com | A CRM platform that logs email from connected inboxes | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that run marketing and sales together
 Salesforce | salesforce.com | A CRM whose Starter Suite syncs emails, events and contacts | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | Teams with an admin and a custom sales process
 Attio | attio.com | A flexible CRM with email sync and enrichment on every plan | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -39,7 +39,7 @@ Affinity | affinity.co | A CRM for private capital firms that captures email and
 
 The short version, by what you want filled in for you:
 
-- Pick Omniscient if you want the quote behind each value, with LinkedIn outreach in the same place.
+- Pick Omniscient if you want the quote behind each value, with proposals and contracts built from the same deal.
 - Pick Salesflare if you want contacts filled in from your inbox and email signatures.
 - Pick Coffee if your team is staying on Salesforce or HubSpot.
 - Pick Clarify if you want call notes on a free plan with unlimited seats.
@@ -50,7 +50,7 @@ The short version, by what you want filled in for you:
 
 Automatic data entry means the CRM writes its own records from the tools your team already uses. Your team stops copying email addresses into contacts and typing up notes after each call.
 
-It comes in six kinds, and a CRM can handle some of them well and skip the rest:
+It comes in seven kinds, and a CRM can handle some of them well and skip the rest:
 
 | Kind | What gets filled | Where it comes from |
 |---|---|---|
@@ -60,8 +60,9 @@ It comes in six kinds, and a CRM can handle some of them well and skip the rest:
 | Deal fields | Amount, close date, stage and next step | Emails and calls, read by AI |
 | Enrichment | Industry, size, location and job titles | The company's website or a data provider |
 | Lead capture | New leads and where each one came from | Web forms and webhooks |
+| Contract terms | End date, notice period and auto-renew | Signed contracts and imported PDFs |
 
-Honestly, contact capture and activity logging are common now, and every CRM in this guide offers some form of them. The differences sit in the last four rows and in the rules each CRM follows when an email or call is unclear.
+Honestly, contact capture and activity logging are common now, and every CRM in this guide offers some form of them. The differences sit in the last five rows and in the rules each CRM follows when an email or call is unclear.
 
 These are the questions we'd put to any vendor that promises a CRM that fills itself in:
 
@@ -72,7 +73,7 @@ These are the questions we'd put to any vendor that promises a CRM that fills it
 
 ## What we learned building automatic data entry
 
-[Omniscient's CRM](/product/crm/) fills itself in from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms and LinkedIn replies, and much of our work went into rules for what to leave out.
+[Omniscient's CRM](/product/crm/) fills itself in from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms and your signed contracts, and much of our work went into rules for what to leave out.
 
 ### Not every email should become a contact
 
@@ -130,12 +131,13 @@ Otto writes the notes and facts from the transcript, and the transcript itself i
 
 ### 1. Omniscient
 
-Omniscient is an AI CRM that fills itself in from your email and meetings, and runs LinkedIn outreach your team approves. Each fact it pulls from a conversation keeps its quote, and every value it writes is marked as Otto's.
+Omniscient is an AI CRM that fills itself in from your email and meetings, with a Deal Room for proposals and Contract Management in the same app. Each fact it pulls from a conversation keeps its quote, and every value it writes is marked as Otto's.
 
 - Email and calendar capture works on every seat, and on a Pro workspace, teammates who only view or log data get free seats.
 - Meeting notes, follow up drafts and Ask Omniscient start on Starter, at [$19 per seat a month billed yearly](/#pricing), and Pro at $49 adds fields filled with proof.
 - Website forms and webhooks from tools like Typeform add leads, along with where each visitor came from, such as Organic search.
-- Replies to your [LinkedIn campaigns](/product/linkedin-outbound/) land on the same person record.
+- [Contract Management](/product/contract-management/) reads the end date, notice period and auto-renew from each contract, including old PDFs you import, and opens a renewal opportunity 90 days before the end date.
+- The [Deal Room](/product/deal-room/) builds each proposal from the deal and your calls, so the facts on the record don't get typed a second time.
 - We move your data over from HubSpot, Salesforce, Pipedrive or Attio for you.
 
 The free trial gives you Pro for 14 days, with no credit card. Admittedly, Omniscient has no phone dialer and no newsletter tool. Teams that send marketing email from their CRM should look at HubSpot, and large teams that need custom builds will find more room in Salesforce.

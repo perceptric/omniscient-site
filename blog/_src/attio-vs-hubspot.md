@@ -14,19 +14,19 @@ summary: "Attio and HubSpot side by side on data model, sequences, LinkedIn, AI 
 
 If you're weighing Attio vs HubSpot, you're choosing between a CRM you shape yourself and a platform that already has a hub for each team. Both start free, and both put email sequences on their second paid plan.
 
-We build Omniscient, a CRM with LinkedIn outreach, and we wrote the importers that bring data over from both tools. We read both pricing pages on November 3, 2026, plus the sites of the LinkedIn tools each one leans on. We haven't run either tool with a live sales team, so the features here come from what each vendor publishes.
+We build Omniscient, a CRM with proposals and contracts built in, and we wrote the importers that bring data over from both tools. We read both pricing pages on November 3, 2026, plus the sites of the LinkedIn tools each one leans on. We haven't run either tool with a live sales team, so the features here come from what each vendor publishes.
 
 Here's our short answer:
 
 - Pick HubSpot if marketing brings in most of your leads and you want forms, ads, email campaigns and the sales pipeline on one shared record.
 - Pick Attio if your process doesn't fit a standard pipeline and you want to design your own objects, or if you sell mostly by email to people you know.
-- Look at Omniscient if most of your deals start in LinkedIn conversations, since neither Attio nor HubSpot sends LinkedIn messages for you.
+- Look at Omniscient if your deals close on a proposal and a contract, since neither Attio's nor HubSpot's Sales Hub pricing page lists a proposal builder or e-signature.
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
 Attio | attio.com | A flexible CRM with email sync, sequences on Pro and AI on credits | [Free for up to 3 seats, Plus from $35 per user a month billed yearly](https://attio.com/pricing) | Teams that want to design their own data model
 HubSpot | hubspot.com | A customer platform with marketing, sales and service hubs on one CRM | [Free for up to 2 users, Sales Hub Starter from $7 per seat a month billed yearly for new customers](https://www.hubspot.com/pricing/sales) | Teams whose leads come from marketing
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through LinkedIn
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 ```
 
 ## Attio vs HubSpot at a glance
@@ -141,17 +141,7 @@ HeyReach is a LinkedIn outreach software that sends from many accounts at once a
 
 ![HeyReach homepage](tool:heyreach.io)
 
-Whichever you pick, the LinkedIn tool is a second bill, and its pacing settings shape how safe your account stays. We built our own sending engine this year and spent most of our care on pacing, because LinkedIn's [invitation limit page](https://www.linkedin.com/help/linkedin/answer/a550555) doesn't publish an exact number.
-
-At the normal pace, our engine follows these rules for each sender:
-
-- A new sender starts at 5 invitations a day and adds 2 a day until it reaches your limit.
-- Each day's total lands somewhere between 80% and 100% of that limit.
-- It sends only in the sender's working hours, with a lunch break and a random gap of 3 to 12 minutes between actions.
-- It views a person's profile 1 to 4 hours before it sends the invitation.
-- It drops to half pace for 3 days when LinkedIn rate limits the sender or the past week's acceptance falls under 20%, then eases back over 3 more days.
-
-Pacing lowers the risk without removing it, since LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) says automation tools can get an account restricted. Our guide to [automating LinkedIn outreach without getting restricted](/blog/automate-linkedin-outreach-without-getting-restricted/) goes deeper.
+Whichever you pick, the LinkedIn tool is a second bill, and its pacing settings shape how safe your account stays. LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) says automation tools can get an account restricted, so read each tool's limits before you connect an account.
 
 ## AI and credits in Attio and HubSpot
 
@@ -191,7 +181,7 @@ Going the other way, HubSpot's [CRM page](https://www.hubspot.com/products/crm) 
 
 ## Where Omniscient fits
 
-Omniscient is a CRM that fills itself in from your email, calendar and call transcripts, and it runs LinkedIn outreach that your team approves. Otto, our AI agent, drafts each LinkedIn note and message from the person's profile and recent activity, and nothing sends until a teammate approves it.
+Omniscient is a CRM that fills itself in from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes meeting notes and suggests deal updates with the quote behind each one, and you accept or skip them.
 
 ![Omniscient homepage](tool:tryomniscient.com)
 
@@ -199,20 +189,21 @@ Our [plans](/#pricing) compare like this:
 
 - Starter costs $19 per seat a month billed yearly, and Pro costs $49 with the pipeline board, the forecast and fields filled with the quote that backs them.
 - Teammates who only view or log data are free, and the CRM's AI is part of the seat price.
-- Each approval is tied to the exact text, so an edited message shows as changed since approval until someone approves it again.
+- The Deal Room builds a proposal page for each deal, shows who viewed which part, and lets the buyer approve on the page. A full proposal uses 40 of the proposal credits each paid seat adds every month.
+- Contract Management comes with the seat. It drafts the contract from the approved proposal and your template, keeps every redline, collects e-signatures and makes a renewal opportunity 90 days before the end date.
 - Our importer brings companies, contacts, deals with their stages, and notes over from HubSpot or Attio.
 
-![An Omniscient LinkedIn campaign with four people: two waiting for approval, one approved and one marked changed since approval. Rina Sato's record is open with a fit score of 82, the signal that her company is hiring two SDRs, and Otto's drafted invitation note above the Edit and Approve buttons.](approval.shot.html)
+![An Omniscient proposal for Pallet Cloud, approved by Rina Sato, with the deal moved to Won. The views list shows Rina watched the overview and read the rollout plan, Marcus Lee viewed the pricing for 25 seats twice, and Amara Kofi read the security guide. A Draft contract button sits beside the approval](proposal.shot.html)
 
-Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/crm/) and the [LinkedIn outbound page](/product/linkedin-outbound/) show both sides.
+Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/crm/), the [Deal Room page](/product/deal-room/) and the [Contract Management page](/product/contract-management/) show each part.
 
 Omniscient won't suit every team, since we don't send marketing email or email sequences and don't have a mobile app or a dialer yet. If campaigns drive your pipeline, HubSpot fits better, and if you sell by email to warm leads, Attio's Pro plan does.
 
 ## Attio vs HubSpot: which one to choose
 
-Start with where your first conversation with a buyer usually happens:
+Start with how your team usually sells:
 
-![Where we'd start looking, by where most of your deals begin. Forms, ads and email campaigns point to HubSpot, for marketing and sales on one record. Email to people you know points to Attio, for objects you design and sequences on Pro. LinkedIn conversations point to Omniscient, for LinkedIn messages you approve.](decision.svg)
+![Where we'd start looking, by how your team sells. Forms, ads and email campaigns point to HubSpot, for marketing and sales on one record. Email to people you know points to Attio, for objects you design and sequences on Pro. Meetings, proposals and contracts point to Omniscient, for proposals and contracts built from the deal.](decision.svg)
 
 Choose HubSpot if:
 
@@ -226,8 +217,8 @@ Choose Attio if:
 
 Choose Omniscient if:
 
-- Most of your deals start in LinkedIn conversations.
-- You want a teammate to approve LinkedIn messages before they go out.
+- Most of your deals close on a proposal and a contract, and you want both built from the deal.
+- You want each contract's end date and notice period tracked for you.
 
 If none of the three fits, our roundups of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) and [Attio alternatives](/blog/attio-alternatives/) compare more options.
 

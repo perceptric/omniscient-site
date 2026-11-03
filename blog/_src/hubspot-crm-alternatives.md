@@ -14,7 +14,7 @@ summary: "13 HubSpot CRM alternatives for small teams, with today's prices from 
 
 HubSpot's free CRM covers 2 users and 1,000 contacts with no end date, so plenty of small teams start there. The search for HubSpot CRM alternatives usually begins a step later, when the team needs email sequences or a forecast and sees what Sales Hub Professional costs.
 
-We build Omniscient, a CRM with LinkedIn outreach for small B2B teams, and we wrote our own HubSpot importer. Building it meant reading companies, contacts, pipelines, deals and notes through HubSpot's API, so we've seen which parts of an account move over cleanly. Below are the 13 alternatives we'd shortlist for a small team in 2026, with what each one does well and where it falls short.
+We build Omniscient, a CRM with proposals and contracts built in for small B2B teams, and we wrote our own HubSpot importer. Building it meant reading companies, contacts, pipelines, deals and notes through HubSpot's API, so we've seen which parts of an account move over cleanly. Below are the 13 alternatives we'd shortlist for a small team in 2026, with what each one does well and where it falls short.
 
 ```callout
 We read every price on the vendor's own site on November 3, 2026, except Pipedrive's, whose pricing page didn't load for us. We haven't run all 13 with a sales team, so our views come from their published plans and from building our own CRM.
@@ -24,7 +24,7 @@ If you only have a minute, match your reason for leaving HubSpot to the tool we'
 
 | Your reason for leaving HubSpot | Where we'd look first |
 |---|---|
-| You prospect on LinkedIn and want each reply on a CRM record | Omniscient |
+| You close on proposals and contracts and want both built from the CRM record | Omniscient |
 | You want a clear pipeline more than marketing tools | Pipedrive |
 | You've run out of free users | Zoho CRM or EngageBay |
 | You want to design your own objects and fields | Attio |
@@ -39,7 +39,7 @@ If you only have a minute, match your reason for leaving HubSpot to the tool we'
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with LinkedIn outreach you approve | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through LinkedIn and meetings
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through meetings and proposals
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | Teams that plan their week by pipeline stage
 Zoho CRM | zoho.com | A sales CRM with a free edition and AI agents from Zia | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Teams that want a free plan and help moving off HubSpot
 Attio | attio.com | A flexible CRM that connects to your inbox and calendar | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -61,7 +61,7 @@ HubSpot's free CRM is generous, and a team of two may never outgrow it. The bill
 - The [free CRM](https://www.hubspot.com/products/crm) covers up to 2 users and 1,000 contacts with "no expiration date," and it adds HubSpot branding to your emails and meeting links.
 - Starter lists $20 per seat a month, next to a "starts at" price of $7 that HubSpot marks as a discount for new customers.
 - Professional starts at $90 per seat a month on a yearly commitment, as HubSpot's [pricing guide](https://blog.hubspot.com/sales/hubspot-sales-hub-pricing) explains, plus a required onboarding fee of $1,500 that you pay once.
-- Sequences and forecasting start on Professional, and LinkedIn actions in sequences need a separate Sales Navigator subscription.
+- Sequences and forecasting start on Professional, and CPQ, billing and payments come in Revenue Hub, a separate product HubSpot sells as a bundle add-on.
 - AI runs on HubSpot Credits, 500 a month on Starter and 3,000 on Professional, and unused credits don't roll over to the next month.
 
 ![HubSpot Sales Hub plans and what each adds, from HubSpot's pricing page on November 3, 2026. Free: $0, up to 2 users and 1,000 contacts, with HubSpot branding on emails. Starter: $20 a seat a month listed, from $7 for new customers, with 500 HubSpot Credits a month. Professional: from $90 a seat a month, with sequences, forecasting and 3,000 credits, plus a $1,500 onboarding fee paid once. Enterprise: from $150 a seat a month, with 5,000 credits, plus a $3,500 onboarding fee paid once.](/assets/blog/hubspot-crm-alternatives/hubspot-plans.svg)
@@ -72,7 +72,7 @@ Honestly, if two founders only need a contact list and a deal pipeline, the free
 
 ### 1. Omniscient
 
-Omniscient is a CRM software that builds its records from your email, calendar and call transcripts, and runs LinkedIn outreach from the same app. Otto, our AI agent, writes your meeting notes and proposes field values with the quote that backs each one.
+Omniscient is a CRM software that builds its records from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes your meeting notes and proposes field values with the quote that backs each one.
 
 For a team leaving HubSpot, our [plans](/#pricing) line up like this:
 
@@ -84,19 +84,18 @@ For a team leaving HubSpot, our [plans](/#pricing) line up like this:
 
 Fields set to auto follow a rule we chose on purpose. Otto fills an empty value only when he's at least 85% sure and has a quote to show, and he never changes a value someone on your team typed. Values he's less sure of wait in Suggestions for a teammate to accept, because one wrong amount in a forecast costs more than an empty field.
 
-On the [LinkedIn side](/product/linkedin-outbound/), you describe the people you want in Scout's chat and approve its search plan. You judge a few sample leads before it finds the full list. Otto drafts each message, and nothing sends until a teammate approves it, either person by person or for everyone at launch.
+Past the pipeline, the [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library of case studies, decks and videos. You see who on the buying team viewed which part, and the buyer approves on the page, which moves the deal to Won. A full proposal uses 40 of the proposal credits each paid seat adds every month.
 
-LinkedIn's [invitation limit page](https://www.linkedin.com/help/linkedin/answer/a550555) gives no exact number, so we built each sender to pace itself:
+Contract Management comes with the seat and picks up from the approved proposal:
 
-- A new sender starts at 5 invitations a day and adds 2 a day until it reaches the limit you set.
-- Each day's total lands somewhere between 80% and 100% of that limit, so no two days look the same.
-- It works inside the sender's hours, with a lunch break and random gaps of 3 to 12 minutes.
-- It views the profile 1 to 4 hours before it sends the invitation.
-- It slows down for 3 days when LinkedIn rate limits the account or acceptance falls under 20%.
+- It drafts the contract from the deal, the proposal and your own template.
+- It keeps every redline as a version, and approval rules send a discount or a changed term to the right person.
+- Each signer signs on the page from their own link.
+- It reads the end date, notice period and auto-renew from each contract, including PDFs you import, and opens a renewal opportunity 90 days before the end date.
 
 Admittedly, Omniscient does less than HubSpot in a few places. We don't send marketing emails or email sequences, so Otto's drafts go out only when you send them yourself. There's no dialer either, so a team that sells by phone will be better served by Close.
 
-The [CRM page](/product/crm/) shows the rest, and moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
+The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest, and moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
 
 ### 2. Pipedrive
 
@@ -254,7 +253,7 @@ Beyond the seat price, check these before you book a demo:
 | CRM | Free plan | Free trial | Email sequences start on |
 |---|---|---|---|
 | HubSpot | 2 users, 1,000 contacts | Not on the pricing page | Professional |
-| Omniscient | Free seats for teammates who view or log data | 14 days of Pro, no card | None, LinkedIn sequences instead |
+| Omniscient | Free seats for teammates who view or log data | 14 days of Pro, no card | None, single emails you send yourself |
 | Pipedrive | check | 14 days, no card | check |
 | Zoho CRM | 3 users | Length not stated | check |
 | Attio | Up to 3 seats | 14 days of Pro, no card | Pro |
@@ -299,12 +298,12 @@ We'd run the new CRM next to HubSpot for a couple of weeks and switch in this or
 If you'd rather not run it yourself, we migrate your companies, contacts, deals and notes from HubSpot for you. Our [Omniscient vs HubSpot](/blog/omniscient-vs-hubspot/) comparison goes deeper on the two, and our guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers a few more options.
 
 ```cta
-Import your HubSpot data and run Omniscient next to it for 14 days, with LinkedIn outreach you approve.
+Import your HubSpot data and run Omniscient next to it for 14 days, with proposals and contracts built from each deal.
 ```
 
 ```faq
 Q: What is the best HubSpot CRM alternative for a small team?
-A: Omniscient is our pick for small B2B teams that prospect on LinkedIn and want the CRM to fill itself in. Pipedrive fits teams that want a clear pipeline, EngageBay and Nutshell fit teams that still want marketing and sales in one app, Close fits teams that sell by phone, and Less Annoying CRM fits teams that want something simpler.
+A: Omniscient is our pick for small B2B teams that close on proposals and contracts and want the CRM to fill itself in. Pipedrive fits teams that want a clear pipeline, EngageBay and Nutshell fit teams that still want marketing and sales in one app, Close fits teams that sell by phone, and Less Annoying CRM fits teams that want something simpler.
 Q: Is there a free alternative to HubSpot CRM?
 A: Yes. Zoho CRM's Free edition covers 3 users, and EngageBay's free plan covers up to 15 users with 250 contacts. Attio's Free plan also covers up to 3 seats.
 Q: Which HubSpot alternatives have email sequences for less than Sales Hub Professional?
@@ -313,6 +312,6 @@ Q: Can I move my data from HubSpot to another CRM?
 A: Yes. Omniscient's importer brings over companies, contacts, deal pipelines, deals and notes, or we migrate them for you. Zoho offers free migration help, and Attio's help center has a guide to moving from another CRM, HubSpot included.
 Q: What is the simplest HubSpot alternative for a small business?
 A: Less Annoying CRM has one plan at $15 per user a month, with unlimited contacts, email and calendar logging and free phone support. Its trial lasts 30 days and needs no credit card.
-Q: Does HubSpot CRM work with LinkedIn?
-A: HubSpot lists a LinkedIn Sales Navigator integration, and its pricing page says LinkedIn actions in sequences need a Sales Navigator subscription. Omniscient sends LinkedIn invitations and messages from your own account, and only after a teammate approves them.
+Q: Does HubSpot build proposals and contracts?
+A: HubSpot's Sales Hub pricing page doesn't list proposals, e-signature or contracts, and it sells CPQ, billing and payments as Revenue Hub, a separate product. Omniscient builds a proposal for each deal in its Deal Room, and Contract Management drafts the contract and collects signatures on the page.
 ```
