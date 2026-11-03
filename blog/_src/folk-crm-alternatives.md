@@ -18,7 +18,7 @@ We build Omniscient, a CRM with a Deal Room for proposals and Contract Managemen
 
 The short answer, by the reason you're leaving:
 
-- Pick Omniscient if you want proposals and contracts built from a CRM record that fills itself in.
+- Pick Omniscient if you want proposals and contracts on a CRM record that fills itself in.
 - Pick Attio if you want to design your own objects.
 - Pick HubSpot if you want a free CRM now and marketing tools later.
 - Pick Salesflare if you want automatic data entry with a LinkedIn sidebar and email workflows.
@@ -34,7 +34,7 @@ The short answer, by the reason you're leaving:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 Attio | attio.com | A CRM with records built from your inbox and a data model you shape | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want their own objects
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
 Salesflare | salesflare.com | A B2B CRM that fills itself in, with a LinkedIn sidebar | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small teams that follow up by email
@@ -81,7 +81,7 @@ Each pick below matches one reason for leaving folk, starting with the one we kn
 ```tree
 # Your reason to leave folk, and the CRM that fits
 What sent you looking past folk?
-  Closing deals: Omniscient | Proposals and contracts built from the deal
+  Closing deals: Omniscient | Proposals from the deal, contracts signed in one app
   LinkedIn and messages: What should happen on LinkedIn?
     A sidebar, with email workflows: Salesflare
     One inbox with WhatsApp: Breakcold
@@ -104,7 +104,7 @@ What sent you looking past folk?
 
 ### 1. Omniscient
 
-[Omniscient](https://tryomniscient.com/) is a CRM built for small B2B teams that want their records to fill themselves in, with a Deal Room for proposals and Contract Management in the same app. Where folk stops at the pipeline, Omniscient builds the proposal from the deal and turns the approved proposal into a contract your buyer signs on the page.
+[Omniscient](https://tryomniscient.com/) is a CRM built for small B2B teams that want their records to fill themselves in, with a Deal Room for proposals and Contract Management in the same app. Where folk stops at the pipeline, Omniscient builds the proposal from the deal and gets the contract you upload signed on the page.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=folk-crm-alternatives
@@ -116,21 +116,21 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Fields filled with proof:** On Pro, Otto, our AI agent, shows the quote behind each value and fills an empty field on his own only when he's 85% sure.
 - **Meeting notes from transcripts:** Notes come from the transcripts Google Meet, Zoom and Teams already make, so no bot has to join.
 - **Deal Room proposals:** A proposal page for each deal, built from the deal, your calls and your Library, with a row for each person on the buying team.
-- **Views and approval on the page:** You see who viewed which part, and when the buyer approves, the deal moves to Won.
-- **Contracts from the proposal:** Contract Management drafts the contract from the approved proposal and your template, and keeps every redline as a version.
-- **E-signature and approval rules:** Each signer signs from their own link, and a discount or a changed term goes to an approver first.
-- **Key dates and renewals:** The end date, notice period and auto-renew are read from each contract, and a renewal opportunity opens 90 days before the end date.
+- **Views and approval on the page:** You see who viewed which part, and when the buyer approves, your team gets an alert.
+- **Contracts with every version:** Upload the contract as a PDF or Word file, and every new upload, including changes a signer sends back, is kept as a version you can compare.
+- **Approval and e-signature:** Teammates approve each version first, then each signer signs from their own link on a page in your brand.
+- **Key dates and renewals:** Otto reads the end date, notice period and auto-renewal from each signed contract for a person to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date.
 
 #### Pros
 
 - **A forecast near folk's Premium price:** Omniscient Pro, at $49, has the pipeline board, the forecast and fields filled with proof, against $48 for folk Premium.
 - **One app to signature:** The proposal, the contract and the renewal read from the same deal, so nobody copies terms between tools.
-- **Old contracts read for you:** Import the PDF contracts you already signed, and their terms and renewal dates are filled in.
+- **Old contracts read for you:** Upload the contracts you already signed, and Otto suggests their terms and renewal dates for you to confirm.
 - **Free seats for viewers:** Teammates who only view or log data cost nothing, and paid seats include the CRM's AI and Contract Management.
 
 #### Cons
 
-- **No email sequences:** Omniscient drafts single emails you send yourself, so teams that follow up in sequences will do better with Salesflare or folk Premium.
+- **Sequences from your own mailbox only:** Email sequences run as Automation workflows from each rep's own mailbox with a daily cap, so a team that sends cold email in volume will do better with a dedicated outreach tool.
 - **No mobile app or extension:** There's no app for your phone and nothing like folkX for saving profiles as you browse.
 - **No lead search:** Omniscient doesn't find new people for you, so your leads come from your own forms, events and imports.
 - **Newer product:** Admittedly, Omniscient is younger than folk and most CRMs here, so it has a shorter public track record.
@@ -144,7 +144,7 @@ You can try Omniscient free for 14 days with no credit card. Prices are billed y
 - **Pro:** $49 per seat a month, with fields filled with proof and the pipeline forecast.
 - **Business:** $99 per seat a month.
 
-Each paid seat adds Deal Room proposal credits every month, and a full proposal uses 40. The [Contract Management page](/product/contract-management/) walks through a contract from draft to signature, and the [CRM page](/product/crm/) shows the records side.
+Each paid seat adds Deal Room proposal credits every month, and a full proposal uses 40. The [Contract Management page](/product/contract-management/) walks through a contract from upload to signature, and the [CRM page](/product/crm/) shows the records side.
 
 ### 2. Attio
 
@@ -612,14 +612,14 @@ We'd point a founder to Dex when folk was mostly a place to remember investors a
 
 Two things sort this list fastest: the seat price and the plan where email follow ups begin. The chart shows both on yearly billing for the tools that price per seat.
 
-![Price per seat a month on yearly billing. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, no email sequences. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Streak: Pro $49, with mail merge and automatic follow ups. Twenty: Pro $9, with workflows on every plan. Nimble: one plan at $24.90, email sequences included. Dex: Premium $12, mail merge on Professional at $20. Close: Solo $9 for one user, workflows on Growth at $99. HubSpot, Pipedrive, Breakcold and Clarify are not shown](/assets/blog/folk-crm-alternatives/seat-prices.svg)
+![Price per seat a month on yearly billing. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, with email sequences as Automation workflows. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Streak: Pro $49, with mail merge and automatic follow ups. Twenty: Pro $9, with workflows on every plan. Nimble: one plan at $24.90, email sequences included. Dex: Premium $12, mail merge on Professional at $20. Close: Solo $9 for one user, workflows on Growth at $99. HubSpot, Pipedrive, Breakcold and Clarify are not shown](/assets/blog/folk-crm-alternatives/seat-prices.svg)
 
 The table adds how each tool lets you start for free, including the four the chart leaves out. Its prices are per month on yearly billing.
 
 | CRM | Free way to start | Email follow ups start on |
 |---|---|---|
 | folk | 2 week trial, no card | Premium, $48 a member |
-| Omniscient | 14 day trial, no card, free seats for viewers | No email steps, single emails you send yourself |
+| Omniscient | 14 day trial, no card, free seats for viewers | Starter, $19 a seat, as Automation workflows |
 | Attio | Free for 3 seats, 14 day Pro trial | Pro, $79 a user |
 | HubSpot | Free CRM for 2 users | Professional, plus a $1,500 onboarding fee |
 | Salesflare | 30 day trial, no card | Pro, $49 a user |
@@ -638,7 +638,7 @@ The table adds how each tool lets you start for free, including the four the cha
 Start from the reason you're leaving, then run the two tools that match it with your own contacts for a week. These questions settle most cases:
 
 - If your deals start on LinkedIn, decide whether you want a tool that keeps your chats together (Breakcold), a sidebar beside each profile (Salesflare), or one that adds prospects as you browse (Copper or Nimble).
-- If your deals close on a proposal and a contract, Omniscient builds both from the deal.
+- If your deals close on a proposal and a contract, Omniscient builds the proposal from the deal and gets the contract signed in the same app.
 - If email follow ups are the gap, Nimble includes sequences in its one plan, while Salesflare Pro and Streak Pro cost $49 a user on yearly billing, against $48 for folk Premium.
 - If seat count drives your bill, look at Clarify's unlimited seats, Breakcold's X5 or Omniscient's free seats for viewers.
 - If your team calls more than it writes, go straight to Close.
@@ -656,7 +656,7 @@ We'd move in this order, with Omniscient as the example:
 3. Import companies first: Bring them in with their domains, so Omniscient puts each imported person on the company that matches their email domain.
 4. Import people: Match each CSV column to a field, and keep in mind that rows without a valid email address are skipped.
 5. Rebuild open deals: Recreate them as opportunities, and keep folk's notes file next to them for reference.
-6. Bring your contracts: Import signed contracts as PDFs, so each account shows its end date and renewal terms from the first week.
+6. Bring your contracts: Upload your signed contracts, so each account shows its end date and renewal terms from the first week.
 ```
 
 Omniscient's CSV import takes people or companies, where people need an email address and companies need a domain. Fortunately, a record already in your workspace is matched on those and filled in, without overwriting anything your team set.
@@ -671,7 +671,7 @@ Run Omniscient next to folk for 14 days, with proposals, contracts and a CRM tha
 
 ```faq
 Q: What is the best folk CRM alternative?
-A: That depends on why you're leaving folk. Omniscient fits teams that want proposals and contracts built from the deal, and Salesflare fits teams that want automatic data entry with email workflows. Attio suits teams that design their own objects, and Close suits teams that sell by phone.
+A: That depends on why you're leaving folk. Omniscient fits teams that want proposals built from the deal and contracts signed in the same app, and Salesflare fits teams that want automatic data entry with email workflows. Attio suits teams that design their own objects, and Close suits teams that sell by phone.
 Q: Is there a cheaper alternative to folk?
 A: Yes. folk Standard costs $24 per member a month billed yearly, while Twenty starts at $9 per user, Dex at $12 a month, Omniscient at $19 per seat and Copper at $23 per seat, all billed yearly. HubSpot, Attio and Clarify also have free plans.
 Q: Does folk automate LinkedIn outreach?

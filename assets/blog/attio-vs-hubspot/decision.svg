@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 706" width="560" height="706" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Where to start looking, by how your team sells</title>
-<desc id="d">Where we&#x27;d start looking, by how your team sells. Forms, ads and email campaigns, meaning inbound leads that marketing brings in: HubSpot, for marketing and sales on one record. Email to people you know, meaning warm leads and a process of your own: Attio, for objects you design and sequences on Pro. Meetings, proposals and contracts, meaning deals that close on a signed contract: Omniscient, for proposals and contracts built from the deal.</desc>
+<desc id="d">Where we&#x27;d start looking, by how your team sells. Forms, ads and email campaigns, meaning inbound leads that marketing brings in: HubSpot, for marketing and sales on one record. Email to people you know, meaning warm leads and a process of your own: Attio, for objects you design and sequences on Pro. Meetings, proposals and contracts, meaning deals that close on a signed contract: Omniscient, for proposals built from the deal and contracts signed in the same app.</desc>
 <rect width="560" height="706" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Choosing</text>
 <text x="24" y="82" font-size="26" font-weight="500" fill="#171717">How your team sells</text>
@@ -28,7 +28,7 @@
 <path d="M56 564 L67 570 L56 576 Z" fill="#333333"/>
 <rect x="80" y="563" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
 <text x="102" y="577" font-size="21" font-weight="500" fill="#171717">Omniscient</text>
-<text x="80" y="600" font-size="18" fill="#737373">Proposals and contracts from the deal</text>
+<text x="80" y="600" font-size="18" fill="#737373">Proposals from the deal, contracts signed</text>
 <text x="24" y="654" font-size="17" fill="#737373">Where we would start looking. Many teams sell</text>
 <text x="24" y="678" font-size="17" fill="#737373">in more than one way.</text>
 </svg>

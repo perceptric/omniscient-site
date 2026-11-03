@@ -42,7 +42,7 @@
 .sc:not(.is-live) .dots3 i, .sc:not(.is-live) .ldr i { animation-play-state: paused; }
 
 /* ---------- Product menu: one small scene per product ---------- */
-.nav__panel--products { width: min(808px, calc(100vw - 32px)); }
+.nav__panel--products { width: min(1080px, calc(100vw - 32px)); }
 .menu__tile.mini { height: 120px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #f2f2ee; color: var(--ink); font-size: 9.5px; line-height: 1.25; letter-spacing: 0; text-align: left; }
 .mini .mi { position: relative; width: 236px; height: 104px; flex: none; display: flex; gap: 8px; padding: 0 8px; align-items: center; }
 .mini b { font-weight: 600; color: var(--ink); font-size: inherit; letter-spacing: 0; }
@@ -71,8 +71,8 @@
 .mn b { color: var(--green); }
 .mn svg { width: 11px; height: 11px; flex: none; }
 
-/* Contract Management: the contract is drafted, each signer signs, and the renewal date is set */
-.mdoc { width: 96px; flex: none; padding: 8px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+/* Contract Management: the uploaded order form is approved, each signer signs, and Otto reads the notice date */
+.mdoc { width: 88px; flex: none; padding: 8px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
 .mdoc > i { font-size: 8.5px; }
 .mln { display: flex; flex-direction: column; gap: 3px; align-self: stretch; margin: 2px 0; }
 .mln s { display: block; height: 3px; border-radius: 2px; background: var(--line); }
@@ -83,6 +83,16 @@
 .ms .swap { justify-items: end; }
 .ms .mt { height: 15px; padding: 0 5px; font-size: 8.5px; }
 .ms .mt svg { width: 9px; height: 9px; flex: none; }
+
+/* Automation: a meeting starts the workflow, the approved email goes out, and a reply stops the run */
+.mflow { width: 86px; flex: none; display: flex; flex-direction: column; align-items: flex-start; }
+.mflow svg { width: 10px; height: 10px; flex: none; }
+.mini .mln2 { display: block; width: 1px; height: 8px; margin-left: 12px; background: var(--line-strong); transform-origin: 50% 0; }
+.mini .mok { display: grid; place-items: center; width: 11px; height: 11px; margin-left: 1px; border-radius: 999px; background: var(--green-soft); color: var(--green); }
+.mini .mok svg { width: 7px; height: 7px; }
+.mrun { flex: 1; min-width: 0; padding: 8px; display: flex; flex-direction: column; gap: 4px; }
+.mrun .mr { margin-bottom: 2px; }
+.mrun .mn svg { width: 10px; height: 10px; color: var(--green); }
 
 /* Deal Room: a proposal's row scrolls like Netflix, a tile opens and a view shows up */
 .mini-dr .mi { padding: 0; }
@@ -102,6 +112,8 @@
 .mtoast { position: absolute; right: 6px; top: 30px; display: flex; align-items: center; gap: 5px; padding: 4px 7px 4px 4px; color: var(--ink); --from: translateX(10px); }
 .mtoast i { display: block; font-size: 8px; }
 .mpp .mtoast b { color: var(--ink); }
+
+@media (max-width: 1111px) { .menu--products .mini .mi { transform: scale(.9); } }
 
 /* ---------- Resources menu ---------- */
 .nav__panel--resources { width: min(538px, calc(100vw - 32px)); }

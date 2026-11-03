@@ -40,7 +40,7 @@ Three sections that run end to end, in the order a deal moves: CRM keeps the who
 
 | Name | Line | In the app |
 |---|---|---|
-| **Contract Management** | Contracts drafted, signed and renewed | Contracts: templates, redlines, approvals, signing, key dates |
+| **Contract Management** | Contracts signed, tracked and renewed | Contracts: uploads, versions, approval, signing, key dates (no drafting, no contract templates) |
 
 ### Ecosystem
 
@@ -144,7 +144,7 @@ The home page tells one idea, then walks the three sections in order. Each secti
 >
 > Most teams spread that knowledge across an inbox, a CRM that falls behind, a folder of proposals and a separate tool for contracts. Reps spend their days copying between them, and the real story of each deal gets lost along the way.
 >
-> Omniscient keeps the whole story in one place. It remembers every email, call and meeting, and keeps each record up to date on its own. When a deal is ready, it builds the room where the buyer says yes, then drafts the contract and keeps its dates.
+> Omniscient keeps the whole story in one place. It remembers every email, call and meeting, and keeps each record up to date on its own. When a deal is ready, it builds the room where the buyer says yes, then gets the contract you upload signed and keeps its dates.
 >
 > Every fact links back to where it came from, so your team can trust what it sees. Otto, our agent, does the typing. Your team does the selling.
 
@@ -156,7 +156,7 @@ The home page tells one idea, then walks the three sections in order. Each secti
 |---|---|---|
 | CRM | Remember everything | Every email, call and meeting turns into records that keep themselves current. |
 | Deal Room | Close with one link | Give every buyer a private site with the plan, the content and the price. |
-| Contracts | Signed and renewed | Draft the contract from the deal, sign it on the page and never miss a renewal. |
+| Contracts | Signed and renewed | Upload the contract, sign it on the page and never miss a renewal. |
 
 ### Page order
 

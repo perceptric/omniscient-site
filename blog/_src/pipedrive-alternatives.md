@@ -20,7 +20,7 @@ If you only have a minute, match your reason for leaving to the tool we'd open f
 
 | Your reason for leaving Pipedrive | Where we'd look first |
 |---|---|
-| You want proposals and contracts built from a CRM record that fills itself in | Omniscient |
+| You want proposals and contracts on a CRM record that fills itself in | Omniscient |
 | You want a free CRM today and room for marketing tools later | HubSpot |
 | You want a free plan for up to 3 users | Zoho CRM |
 | Your reps spend most of the day on the phone | Close |
@@ -35,7 +35,7 @@ If you only have a minute, match your reason for leaving to the tool we'd open f
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 HubSpot | hubspot.com | A customer platform with marketing, sales and service tools on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
 Zoho CRM | zoho.com | A sales CRM with a free edition and Zia AI agents | [Free for up to 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Small teams that want to start free
 Close | close.com | A sales CRM with calling, SMS and email built in | [$9 a month for one user, billed yearly](https://www.close.com/pricing) | Teams that sell by phone
@@ -91,8 +91,8 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Fields filled with proof:** On Pro, every value Otto writes shows the quote and source behind it, and a value a person typed is never changed.
 - **Meeting notes without a bot:** Notes come from the transcripts Google Meet, Zoom and Teams already create, and Otto drafts your follow up email from them.
 - **Deal Room proposals:** A proposal page for each deal, built from the deal, your calls and your Library, that shows who viewed each part and lets the buyer approve on the page.
-- **Contracts from the proposal:** Contract Management drafts the contract from the approved proposal and your template, keeps every redline and collects e-signatures with a link for each signer.
-- **Renewals on the pipeline:** The end date, notice period and auto-renew are read from each contract, and a renewal opportunity opens 90 days before the end date.
+- **Contracts in the same app:** Contract Management keeps every version of the contracts you upload and collects e-signatures with a link for each signer.
+- **Renewal alerts:** Otto reads the end date, notice period and auto-renewal from each signed contract for a person to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date.
 - **Migration done for you:** We move your companies, contacts, deals and notes from Pipedrive, HubSpot, Salesforce or Attio.
 
 ![Omniscient's pipeline board after a Pipedrive import, with opportunities in the stages brought over from Pipedrive: Qualified, Contact made, Demo scheduled and Proposal made. Each card shows its amount, owner and next step, and a suggested update from a call raises Pallet Cloud's amount from $18,000 to $30,000, waiting to be accepted or skipped.](/assets/blog/pipedrive-alternatives/pipeline.shot.html)
@@ -102,13 +102,13 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Free seats on Pro:** Once your workspace has a Pro or Business seat, teammates who only need their email captured and records in view cost nothing.
 - **AI in the seat price:** Meeting notes, follow up drafts and Ask Omniscient come with every paid seat, with no AI credits to top up.
 - **Your Pipedrive stages come along:** Each imported pipeline keeps its stages and their win probabilities.
-- **Proposal to signature in one app:** When the buyer approves the proposal, the deal moves to Won and the contract is drafted from the same record.
+- **Proposal to signature in one app:** When the buyer approves the proposal, your team gets an alert, and the contract goes out for signature from the same record.
 
 #### Cons
 
 - **Pipeline board starts on Pro:** The board and forecast come with the $49 Pro seat, which matters if your team works from Pipedrive's board every day.
 - **No phone dialer:** Calling isn't part of Omniscient, so teams that sell by phone will do better with Close.
-- **No email sequences:** Each email Otto drafts goes out when you send it, so teams that run email cadences should look at HubSpot Professional or Freshsales Pro.
+- **Sequences from your own mailbox only:** Email sequences run as Automation workflows from each rep's own mailbox with a daily cap, so teams that run cold email cadences in volume should look at HubSpot Professional or Freshsales Pro.
 - **Newer product:** Admittedly, Omniscient is younger than most CRMs here, with a shorter public track record.
 
 #### Price and plans
@@ -585,7 +585,7 @@ Past the seat price, two questions sort this list fastest: how you can try each 
 | CRM | How to try it free | First paid plan | Sequences or email automation from |
 |---|---|---|---|
 | Pipedrive | Free trial, no card | [See pricing](https://www.pipedrive.com/en/pricing) | Growth |
-| Omniscient | 14 days, no card | Starter, $19 a seat billed yearly | No email sequences, single emails you send yourself |
+| Omniscient | 14 days, no card | Starter, $19 a seat billed yearly | Starter, as Automation workflows |
 | HubSpot | Free CRM for up to 2 users | Starter, $20 a seat, or $7 for new customers | Professional |
 | Zoho CRM | Free for up to 3 users | Standard, $14 a user billed yearly | Standard, as cadences |
 | Close | 14 days, no card | Solo, $9 billed yearly for one user | Growth, as workflows |

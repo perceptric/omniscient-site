@@ -19,12 +19,12 @@ We build Omniscient, so read this knowing which side we sit on. We read Attio's 
 Our short answer depends mostly on how your deals close:
 
 - Pick Attio if your team works mostly in email and wants to shape the CRM around custom objects of its own.
-- Pick Omniscient if your deals close on a proposal and a contract, and you want both built from a record that fills itself in from your email and calls.
+- Pick Omniscient if your deals close on a proposal and a contract, and you want both on a record that fills itself in from your email and calls.
 - Run both for a few weeks if you're unsure, since Omniscient works beside your current CRM.
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 Attio | attio.com | A flexible CRM with email sequences, call recording and AI on credits | [Paid from $35 per user a month, billed yearly](https://attio.com/pricing) | Teams that live in email and want their own data model
 ```
 
@@ -54,9 +54,9 @@ One app covers the path from a first meeting to a signed contract:
 - Connect Gmail or Outlook and your calendar, and each email and meeting lands on the right person, company and deal.
 - Leads from forms, events and imports merge into one record per person, matched by email, with companies matched by domain.
 - The Deal Room builds a proposal for each deal from the deal, your calls and your Library, in your brand, and shows you who viewed each part.
-- Contract Management drafts the contract from the deal, the approved proposal and your own template, keeps every redline, and collects signatures on the page.
+- Contract Management keeps every version of the contracts you upload, gets your team's approval and collects signatures on the page.
 
-Admittedly, Omniscient is narrower than Attio in a few places. We don't run email sequences or offer a mobile app, and we don't search for new leads, so yours come from your own forms, events and lists.
+Admittedly, Omniscient is narrower than Attio in a few places. We don't offer bulk sends or a mobile app, and we don't search for new leads, so yours come from your own forms, events and lists.
 
 ## Omniscient vs Attio feature by feature
 
@@ -65,9 +65,9 @@ Attio's details below come from its [pricing page](https://attio.com/pricing) an
 | | Attio | Omniscient |
 |---|---|---|
 | Email and calendar sync | Every plan, 1 account per user on Free and Plus, 2 on Pro | Every seat, free ones included |
-| Sends email | Yes, with email sequences on Pro and Enterprise | Otto drafts each email, and it goes out when you click Send |
+| Sends email | Yes, with email sequences on Pro and Enterprise | Single emails when you click Send, and sequences as Automation workflows on every plan |
 | Proposals | Not listed on its pricing page | Deal Room, one proposal page per deal, with views and approval on the page |
-| Contracts | Not listed on its pricing page | Drafts, redlines, e-signature and key dates, in the seat price |
+| Contracts | Not listed on its pricing page | Uploads, versions, approval, e-signature and key dates, in the seat price |
 | Call notes | Call Intelligence records calls, from Pro | From Meet, Zoom and Teams transcripts, with recording at $25 a seat |
 | AI on emails and calls | Email summaries and labels from Plus, call summaries on Pro | Meeting notes from Starter, fields filled with the source quote from Pro |
 | Custom objects | From Pro, with up to 12 objects in all | Yes, in the data model |
@@ -94,28 +94,28 @@ Whichever tools you pick, two things follow:
 - You pay for each one on top of Attio, and each keeps its own copy of the deal.
 - The deal in Attio updates only as far as each integration carries it, or as far as someone updates it by hand.
 
-![Two paths from a proposal to a signed contract. With Attio, you write the proposal in a doc or deck tool, draft the contract in another tool, send it through an e-signature app and update the deal in Attio by hand or with a workflow. With Omniscient, the Deal Room builds the proposal from the deal, the buyer approves it on the page, the contract is drafted from the deal and the approved proposal, each signer signs from their own link, and the key dates land on the record](deal-path.svg)
+![Two paths from a proposal to a signed contract. With Attio, you write the proposal in a doc or deck tool, pass contract versions around by email, send it through an e-signature app and update the deal in Attio by hand or with a workflow. With Omniscient, the Deal Room builds the proposal from the deal, the buyer approves it on the page, you upload the contract and your team approves it, and each signer signs from their own link while Otto reads the key dates](deal-path.svg)
 
 In Omniscient, the proposal and the contract read from the same record as the CRM. The [Deal Room](/product/deal-room/) builds a proposal page for one deal from the deal, your calls and your Library of case studies, decks and videos. The top shows the buyer's goals, your plan and the price, and below it are rows for each person on the buying team.
 
-You see who viewed which part, and when the buyer approves on the page, the deal moves to Won and your team gets an alert.
+You see who viewed which part, and when the buyer approves on the page, your team gets an alert.
 
 Contract Management picks up from there:
 
 | Step | What Omniscient does |
 |---|---|
-| Draft | Writes the contract from the deal, the approved proposal and your own template |
-| Redlines | Keeps every version, so you can see what changed between drafts |
-| Approval | Sends a discount or a changed term to the approver your rules name |
-| Signature | Collects e-signatures on the page, with a link for each signer |
-| Key dates | Reads the end date, notice period and auto-renew from each contract |
-| Renewal | Makes a renewal opportunity 90 days before the end date |
+| Upload | Keeps the PDF or Word contract you upload, on its opportunity and company |
+| Versions | Keeps every upload, including changes a signer sends back, and compares any two side by side |
+| Approval | Asks the teammates you pick to approve each version |
+| Signature | Collects e-signatures on a page in your brand, with a link for each signer and a certificate on the signed copy |
+| Key dates | Otto reads the end date, notice period and auto-renewal from each signed contract, with a quote for a person to confirm |
+| Renewal | Alerts the owner 90, 60 and 30 days before the renewal notice date |
 
-![An example contract timeline read by Omniscient: the contract starts on January 15, 2027, a renewal opportunity is made on October 17, 2027, 90 days before the end, the 60 day notice period starts on November 16, and the contract ends and renews on its own on January 15, 2028](contract-dates.svg)
+![An example contract timeline read by Otto and confirmed by a person: the contract starts on January 15, 2027, the first renewal alert comes on August 18, 2027, 90 days before the notice date, notice is due by November 16, 60 days before the end, and the contract ends and renews on its own on January 15, 2028](contract-dates.svg)
 
 We read the dates from every contract because a missed notice date can lock a customer into a year they didn't want, or let a good account lapse. Either one costs more than an early reminder.
 
-You can also ask questions across all your contracts, such as which ones renew next quarter, and import the signed PDF contracts you already have so their terms are read for you. The [Contract Management page](/product/contract-management/) shows the flow screen by screen.
+You can also ask questions across all your contracts, such as which ones renew next quarter, and upload the contracts you already signed so Otto reads their terms for you to confirm. The [Contract Management page](/product/contract-management/) shows the flow screen by screen.
 
 ## Email sending: where Attio is ahead
 
@@ -128,9 +128,9 @@ Attio sends email from inside the CRM, one at a time or in bulk, with these limi
 | Pro | Unlimited | 50 | Yes |
 | Enterprise | Unlimited | 50 | Yes |
 
-Omniscient reads your mailbox and never deletes or changes anything in it. Otto drafts the next email from the thread, and it goes out from your own account only when you click Send.
+Omniscient reads your mailbox and never deletes or changes anything in it. Otto drafts the next email from the thread, and it goes out from your own account when you click Send.
 
-We think a CRM that reads every email you write is easier to trust when it never sends on its own. Frankly, that choice costs you something if your outbound runs on email sequences to warm leads, since Attio's Pro plan covers them in one place and Omniscient doesn't.
+Email sequences run as Automation workflows on every plan. Each email in a workflow needs a person's approval before Publish, it goes from the owner's own mailbox at a steady pace with a daily cap, and a reply stops the run. Frankly, there's no bulk send, so Attio covers one-off email blasts to a list better.
 
 ## AI in Attio and Omniscient
 
@@ -179,7 +179,7 @@ Thankfully, you don't have to switch in one go. Omniscient runs beside your curr
 1. Connect your inbox: Add Gmail or Outlook and your calendar while Attio keeps running.
 2. Bring your records over: Our importer reads companies, people, deals with their stages, and notes from Attio, or our team migrates you from an export.
 3. Rebuild what's custom: The importer leaves Attio's custom objects behind, so recreate them in Omniscient's data model or send them to us as a spreadsheet.
-4. Add your contracts: Upload the template you use today, and import signed PDF contracts so their end dates and renewal terms are read for you.
+4. Add your contracts: Upload the contracts you signed before, so Otto reads their end dates and renewal terms for you to confirm.
 ```
 
 The [CRM page](/product/crm/) walks through how we run a migration, and our roundup of the [best AI CRMs](/blog/best-ai-crm/) covers other CRMs worth a look if neither tool fits.
@@ -190,14 +190,14 @@ Luckily, the choice mostly comes down to two questions: how your deals close, an
 
 Choose Attio if:
 
-- Your team sells mostly by email and wants sequences for warm leads inside the CRM.
+- Your team sends one-off emails in bulk to lists from inside the CRM.
 - You need custom objects, or a process like deal flow that a standard CRM doesn't fit.
 - Your reps want mobile apps for days away from the desk.
 
 Choose Omniscient if:
 
-- You send a proposal and a contract for most deals and want both built from the CRM record.
-- You want each contract's end date and notice period tracked, with the renewal on the pipeline in time.
+- You send a proposal and a contract for most deals and want both on the CRM record.
+- You want each contract's end date and notice period tracked, with alerts before the notice date.
 - You want records that fill themselves in, with the quote behind each value.
 - You'd rather have the CRM's AI in the seat price than a credit balance to watch.
 
@@ -209,11 +209,11 @@ Try Omniscient free for 14 days, next to the CRM you use today.
 
 ```faq
 Q: Can Attio build proposals or contracts?
-A: Attio's pricing page lists no proposal builder or e-signature, so Attio teams add other tools for those steps. Omniscient builds proposals in its Deal Room, and Contract Management drafts contracts, keeps redlines and collects signatures on the page.
+A: Attio's pricing page lists no proposal builder or e-signature, so Attio teams add other tools for those steps. Omniscient builds proposals in its Deal Room, and Contract Management keeps every version of the contracts you upload and collects signatures on the page.
 Q: Is Omniscient cheaper than Attio?
 A: Paid seats start at $19 a month on Omniscient and $35 on Attio, billed yearly. Compare the plan you'd really use: Attio's sequences and call recording start on Pro at $79, and Omniscient's forecast starts on Pro at $49.
 Q: Can I move my data from Attio to Omniscient?
 A: Yes. Our importer reads companies, people, deals with their stages, and notes from Attio, or our team migrates you from an export. You recreate custom objects in Omniscient, or send them to us as a spreadsheet.
 Q: Can Omniscient read contracts we already signed?
-A: Yes. Import your existing PDF contracts and Omniscient reads their terms, including the end date, the notice period and auto-renew. It then makes a renewal opportunity 90 days before each end date.
+A: Yes. Upload them as already signed, and Otto reads their terms, including the end date, the notice period and auto-renewal, each with a quote for you to confirm. The owner then gets alerts 90, 60 and 30 days before each notice date.
 ```

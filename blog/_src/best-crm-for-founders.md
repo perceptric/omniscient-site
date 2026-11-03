@@ -35,7 +35,7 @@ Our quick picks, by the way you sell:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Founders selling B2B through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Founders selling B2B through email, meetings and proposals
 folk | folk.app | An AI CRM for small teams, with a LinkedIn extension | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who sell through their network
 Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Founders who track investors and partners too
 HubSpot | hubspot.com | A CRM platform with a free plan that doesn't expire | [Free for up to 2 users](https://www.hubspot.com/products/crm) | Cofounders who want a free start
@@ -99,9 +99,9 @@ Each weekday morning, the digest lists your meetings and the emails to answer. I
 
 When a buyer asks for a proposal, the [Deal Room](/product/deal-room/) builds one from the deal, your calls and your Library, in your brand. You see who on their side viewed which part, and they approve on the page, so you don't spend an evening on a deck between investor meetings.
 
-[Contract Management](/product/contract-management/) comes with the seat. It drafts the contract from the approved proposal and your own template, keeps every redline, and collects e-signatures with a link for each signer. It also reads each contract's end date and notice period, and opens a renewal opportunity 90 days before the end date, which helps when nobody else at the company is watching renewals yet.
+[Contract Management](/product/contract-management/) comes with the seat. You upload each contract, and it keeps every version and collects e-signatures with a link for each signer. Otto also reads each signed contract's end date and notice period for you to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date, which helps when no one else at the company is watching renewals yet.
 
-Admittedly, Omniscient has no phone dialer and no email sequences, so Close suits a founder who sells by phone. The pipeline board also starts on Pro, so a founder who only wants a free board may prefer HubSpot's free CRM.
+Admittedly, Omniscient has no phone dialer, so Close suits a founder who sells by phone. Email sequences run as Automation workflows from your own mailbox, and a reply stops them. The pipeline board also starts on Pro, so a founder who only wants a free board may prefer HubSpot's free CRM.
 
 ### 2. folk
 
@@ -286,7 +286,7 @@ This is the order we'd follow:
 4. Stay on the deals where you hold the relationship, and bring the rep to the next call.
 5. Ask the rep to read five deal timelines and tell you what's missing.
 
-In Omniscient, the next step lives on each opportunity, and the morning digest flags open deals with a passed close date or 14 days without contact. Signed contracts sit on each account too, with their end dates and the renewal opportunity made 90 days ahead. Personally, we'd finish this list before the rep starts, so their first week goes to buyers instead of old threads.
+In Omniscient, the next step lives on each opportunity, and the morning digest flags open deals with a passed close date or 14 days without contact. Signed contracts sit on each account too, with their end dates and renewal alerts 90, 60 and 30 days before the notice date. Personally, we'd finish this list before the rep starts, so their first week goes to buyers instead of old threads.
 
 ## How to choose a CRM as a founder
 

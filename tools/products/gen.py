@@ -1,6 +1,6 @@
-# Writes the three product pages: product/crm, product/deal-room and product/contract-management.
+# Writes the four product pages: product/crm, product/automation, product/deal-room and product/contract-management.
 # Each page: hero with the email field and the main product shot, feature rows with a shot each, what's included,
-# questions, the other two products and a closing band. Shots reuse the home page's product-shot styles (home.css);
+# questions, the other three products and a closing band. Shots reuse the home page's product-shot styles (home.css);
 # each feature's shot is a scene that plays what the feature does (assets/scenes.js, styles in product.css).
 # Run: python3 tools/products/gen.py && node tools/layout.mjs
 import html, json, math, os, re
@@ -54,7 +54,6 @@ def words(text, at, hl=None, d=0):  # a message's words come in one after anothe
 
 HL = ' class="hl"'
 LDR = '<span class="ldr"><i></i><i></i><i></i><i></i></span>'
-DOTS = '<span class="dots3"><i></i><i></i><i></i></span>'
 
 # ---- CRM shots ----
 CRM_HERO = shot(
@@ -238,16 +237,14 @@ DR_WATCH = scene(
     + f'</div><div class="alert fx-r"{A(4)}>{logo("slack", 16, "Slack")}<span><b>Pallet Cloud is active</b><small>Marcus and Dana are viewing Pricing</small></span></div>',
     "b-gray", [300, 900, 700, 900], '<b>Activity</b><span class="grow"></span><span class="live">Live</span>')
 
-# Approve: the buyer approves on the page, the deal moves to Won and the team hears about it.
+# Approve: the buyer approves on the page, and the team hears about it by Slack and email.
 DR_WIN = scene(
     f'<div class="prop sign"{A(1)}><div class="pnav"><b>Lumen Labs × Pallet Cloud</b></div><div class="sg"><span><small>PROPOSAL</small><b>25 seats, $30,000 a year</b></span>'
     + sw(("Approve", None, 2, "play"), (CK + "Approved", 2, None, "play ok fx-pop")) + "</div></div>"
     f'<div class="feed" style="border:0"><div class="ev"{A(3)}>{face("marcus", 22)}<span>Marcus approved the proposal<small>Thu, 16:48</small></span></div>'
-    '<div class="won" style="margin-top:0"><span class="sub">Stage</span><span class="wt">'
-    + sw(("Proposal", None, 4, "tag t-yellow"), ("Contract", 4, None, "tag t-blue fx-pop"))
-    + "</span>"
-    + f'<span class="tag t-gray fx-pop"{A(5)}>Contract drafted</span><span class="grow"></span><span class="sub mono">$30,000</span></div></div>',
-    "b-gray", [300, 900, 700, 800, 700], "<b>Pallet Cloud, 25 seats</b>")
+    '<div class="won" style="margin-top:0"><span class="sub">Alert sent</span>'
+    + f'<span class="tag t-gray fx-pop"{A(4)}>{logo("slack", 12)}Slack</span><span class="tag t-gray fx-pop"{A(4, d=120)}>Email</span><span class="grow"></span><span class="sub mono">$30,000</span></div></div>',
+    "b-gray", [300, 900, 700, 800], "<b>Pallet Cloud, 25 seats</b>")
 
 DR = [
     ("Keep your sales content in one library", "Import your website, case studies, decks and videos. Omniscient tags each item by industry, use case and objection.", DR_LIB),
@@ -256,104 +253,297 @@ DR = [
     ("Your prices, or a quote after a call", "Omniscient uses your saved price list. If it has no prices, it asks you once how you price and saves the answer. You can also choose to quote after a call.", DR_PRICE),
     ("Send it from your own inbox", "Send the proposal link from Gmail or Outlook. Each person gets their own link, so you know who opened it.", DR_SEND),
     ("See who watched what", "See which person opened the proposal, which videos they watched and which pages they read. Get an alert by email or Slack when the buying team is active.", DR_WATCH),
-    ("Approve on the page", "Buyers approve the proposal on the page. Omniscient drafts the contract from it, and the team gets an alert.", DR_WIN),
+    ("Approve on the page", "Buyers approve the proposal on the page, and your team gets an alert by email or Slack. The contract you upload goes out for signature from Contract Management.", DR_WIN),
 ]
 
-# ---- Contract Management shots ----
-CTS = [("Pallet Cloud", "PC", "#fde68a", "Order form, 25 seats", "t-yellow", "Out for signature", "$30,000", "Oct 2027"),
-       ("Northwind Health", "NW", "#efe3ff", "Master agreement", "t-green", "Signed", "$84,000", "Mar 2027"),
-       ("Harbor &amp; Pine", "HP", "#dbeafe", "Order form, 60 seats", "t-blue", "In review", "$126,500", "Dec 2027"),
-       ("Verda Robotics", "VR", "#d1fae5", "Renewal, year 2", "t-purple", "Draft", "$61,000", "Jan 2028"),
-       ("Atlas Cargo", "AC", "#fee2e2", "Data processing terms", "t-green", "Signed", "Included", "Feb 2027")]
+# ---- Line icons for the Contract Management and Automation shots ----
+def ic(d, s=13, w=2):
+    return f'<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{d}</svg>'
+
+
+I_UP = '<path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/>'
+I_MAIL = '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>'
+I_CLOCK = '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'
+I_BRANCH = '<circle cx="6" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="7" r="2.5"/><path d="M6 7.5v9M18 9.5c0 5-6 4-11 7.5"/>'
+I_BELL = '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>'
+I_PEN = '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>'
+I_CODE = '<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>'
+I_STOP = '<circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/>'
+I_BOLT = '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>'
+I_REPLY = '<path d="M9 17 4 12l5-5"/><path d="M20 18v-2a4 4 0 0 0-4-4H4"/>'
+I_EYE = '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>'
+I_SIGN = '<path d="M3 17c3-1 4-9 7-9s-1 8 2 8 3-4 5-4 2 3 4 3"/>'
+I_CAL = '<rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>'
+I_FOLDER = '<path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>'
+I_PLUS = '<path d="M12 5v14M5 12h14"/>'
+I_CHECK = '<path d="m5 12 5 5 9-10"/>'
+
+# ---- Contract Management shots (in the app: src/lib/contracts, src/components/contracts, docs/deal-room.md) ----
+# Contracts come only from files people upload. Otto never writes contract text: he reads an uploaded or signed file
+# and suggests facts, each with its quote, for a person to confirm.
+CTS = [("Pallet Cloud", "PC", "#fde68a", "Order form, 25 seats", "t-blue", "Sent", "$30,000", "None"),
+       ("Northwind Health", "NW", "#efe3ff", "Master agreement", "t-yellow", "Expiring", "$84,000", "Nov 30, 2026"),
+       ("Harbor &amp; Pine", "HP", "#dbeafe", "Order form, 60 seats", "t-yellow", "In review", "$126,500", "None"),
+       ("Verda Robotics", "VR", "#d1fae5", "Order form, 40 seats", "t-purple", "Approved", "$61,000", "None"),
+       ("Orbit Mills", "OM", "#e0f2fe", "Master agreement", "t-green", "Active", "$210,000", "Jan 29, 2027")]
 CT_HERO = shot(
-    '<div class="scroll-x"><table class="tb"><thead><tr><th>Company</th><th>Contract</th><th>Status</th><th class="hide-s">Value</th><th class="hide-s">Renews</th></tr></thead><tbody class="rows">'
+    '<div class="seg cseg"><span class="on">All</span><span>Renewals coming up</span><span>For you</span></div>'
+    '<div class="scroll-x"><table class="tb"><thead><tr><th>Company</th><th>Contract</th><th>Status</th><th class="hide-s">Value</th><th class="hide-s">Renewal notice</th></tr></thead><tbody class="rows">'
     + "".join(f'<tr{" class=open" if k == 0 else ""}><td><span class="who"><span class="av" style="background:{bg}">{i}</span>{n}</span></td><td class="sub">{c}</td><td><span class="tag {t}">{st}</span></td><td class="hide-s">{v}</td><td class="hide-s sub">{r}</td></tr>'
               for k, (n, i, bg, c, t, st, v, r) in enumerate(CTS))
     + "</tbody></table></div>",
     "b-gray",
-    '<b>Contracts <span>214</span></b><span class="grow"></span><span class="ui-btn pri">+ New contract</span>',
+    f'<b>Contracts <span>214</span></b><span class="grow"></span><span class="ui-btn pri">{ic(I_UP)}Upload contract</span>',
 )
 
-# Draft: the rep asks, Otto writes each part of the contract from the deal, the approved proposal and the template.
-PARTS = [("Parties and dates", "From the deal"), ("Seats and price", "From the approved proposal"), ("Payment terms", "Your template"), ("Data processing", "Your template"), ("Signers", "Rina Sato, Marcus Lee")]
-CT_DRAFT = scene(
-    f'<div class="msgs"><div class="bub me fx-r"{A(1)}>Draft the order form for Pallet Cloud</div><div class="bub fx-l"{A(2)}><div class="m" style="display:flex;align-items:center;gap:6px">{OWL}Omniscient</div>Using the approved proposal and your order form template.</div></div>'
-    '<div class="tl" style="margin:0 14px 14px">'
-    + "".join(f'<div{A(3, d=k * 60)}>' + sw(*([("Queued", None, 3 + k, "tag t-gray")] if k else []), ("Writing", 3 + k, 4 + k, "tag t-yellow"), ("Done", 4 + k, None, "tag t-green fx-pop")) + f'{n}<span class="when fx-fade"{A(4 + k)}>{x}</span></div>' for k, (n, x) in enumerate(PARTS))
-    + f'</div><div class="bulk"><span class="sub">Order form, 25 seats, $30,000 a year</span><span class="grow"></span><span class="ui-btn pri fx-pop"{A(9)}>Open contract</span></div>',
-    "b-stone", [300, 700, 500, 700, 600, 600, 600, 600, 500], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Ask Omniscient</b></span>')
+# Versions: each upload is the next version and nothing is written over; the contract sits on its company and opportunity.
+VERS = [(3, "Order form v3.docx", "DOCX", "Upload, Sam Okoye, Oct 21"), (2, "Order form, Marcus changes.pdf", "PDF", "Changes from signer, Marcus Lee, Oct 18"), (1, "Order form.pdf", "PDF", "Upload, Sam Okoye, Oct 14")]
+CT_VERSIONS = scene(
+    '<div class="vlist">'
+    + "".join(f'<div class="vrow fx-drop"{A(n)}><span class="vfile">{k}</span><span class="grow"><b>{f}</b><small>Version {n}. {w}</small></span>'
+              f'<span class="tag t-gray fx-pop"{A(n, None if n == 3 else n + 1, d=200)}>Current</span></div>' for n, f, k, w in VERS)
+    + f'</div><div class="bulk"><span class="sub">Linked to</span><span class="tag t-gray fx-pop"{A(4)}>Pallet Cloud</span><span class="tag t-gray fx-pop"{A(4, d=120)}>Pallet Cloud, 25 seats</span></div>',
+    "b-gray", [300, 700, 900, 900, 700], f'<b>Versions</b><span class="grow"></span><span class="ui-btn">{ic(I_UP)}Upload a new version</span>')
 
-# Redlines: the buyer's changes come in with who made them; the rep accepts or skips, and a new version is saved.
-RED = [('Payment terms <s class="strk">Net 30</s> Net 45', "Marcus, v2", 1), ('Term <s class="strk">24 months</s> 12 months', "Marcus, v2", 0), ("Notice period: 60 days", "Dana, v2", 1), ("Liability cap: fees paid in 12 months", "Dana, v2", 1)]
-CT_REDLINE = scene(
-    "".join(f'<div class="upd{"" if ok else " sk"}"{A(1, d=i * 90)}><span class="ut">{x}<span class="cite">{src}</span></span>'
-            + sw((f'<span class="ok">{CK}</span><span class="no">×</span>', None, 3 + i, "btns"), ("Accepted" if ok else "Skipped", 3 + i, None, "tag fx-pop " + ("t-green" if ok else "t-gray"))) + "</div>"
-            for i, (x, src, ok) in enumerate(RED))
-    + f'<div class="tl" style="margin:10px 14px 14px"><div class="fx-l"{A(7)}><span class="tag t-green">Saved</span>Version 3, sent to Marcus and Dana<span class="when">Today</span></div></div>',
-    "b-gray", [300, 800, 900, 700, 700, 700, 600],
-    f'<b>Changes to review <span>{sw(("4", None, 3, ""), ("3", 3, 4, ""), ("2", 4, 5, ""), ("1", 5, 6, ""), ("0", 6, None, ""))}</span></b>')
 
-# Approvals: a discount over the rule waits for the manager, who approves it, and the contract can go out.
-CT_APPROVE = scene(
-    '<div class="facts" style="margin:14px">'
-    f'<div><small>List price</small>$36,000</div><div><small>Discount</small>{sw(("0%", None, 1, ""), ("17%", 1, None, "fx-fade"))}</div><div><small>Your rule</small>Up to 15%</div></div>'
-    '<div class="tl" style="margin:0 14px 14px">'
-    f'<div class="fx-l"{A(2)}><span class="tag t-yellow">Rule</span>Discount is over 15%<span class="when">Needs approval</span></div>'
-    f'<div class="fx-l"{A(3)}>{face("theo", 18)}Sent to Theo Walsh, head of sales<span class="when">9:40</span></div>'
-    f'<div class="fx-l"{A(4)}>{sw(("Waiting", None, 5, "tag t-gray"), ("Approved", 5, None, "tag t-green fx-pop"))}Theo approved 17% for a 2-year term<span class="when">10:05</span></div></div>'
-    f'<div class="bulk"><span class="sub">Order form, 25 seats</span><span class="grow"></span>{sw(("Send for signature", None, 6, "ui-btn"), ("Send for signature", 6, None, "ui-btn pri fx-pop"))}</div>',
-    "b-stone", [300, 700, 700, 700, 900, 600], "<b>Approvals</b>")
+def mk(word, kind, at, d=None):  # a word the compare marks as taken out or put in
+    return f'<span class="mk {kind}">{word}<i class="fx-fade"{A(at, d=d)}></i></span>'
 
-# Signing: each signer gets their own link and signs in order; the deal moves to Won and the team hears about it.
-SIGN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17c3-1 4-9 7-9s-1 8 2 8 3-4 5-4 2 3 4 3"/></svg>'
+
+# Compare: two versions side by side, with what was taken out and put in marked.
+CT_COMPARE = scene(
+    '<div class="cmph"><span class="tag t-gray">Version 1</span><span class="sub">and</span><span class="tag t-gray">Version 2</span><span class="grow"></span><span class="sub">Only changes</span><span class="tog"></span></div>'
+    '<div class="vcmp">'
+    f'<div class="fx-fade"{A(1)}><small>Version 1, upload</small><p>Invoices are due {mk("thirty (30)", "del", 2)} days after receipt.</p>'
+    f'<p>This order form runs for {mk("twenty-four (24)", "del", 2, 150)} months from November 1, 2026.</p></div>'
+    f'<div class="fx-fade"{A(1, d=120)}><small>Version 2, changes from signer</small><p>Invoices are due {mk("forty-five (45)", "ins", 3)} days after receipt.</p>'
+    f'<p>This order form runs for {mk("twelve (12)", "ins", 3, 150)} months from November 1, 2026.</p></div></div>'
+    f'<div class="bulk"><span class="sub fx-fade"{A(4)}>2 changes, side by side</span><span class="grow"></span><span class="ui-btn">Open version 2</span></div>',
+    "b-stone", [300, 600, 900, 900, 600], "<b>Compare versions</b>")
+
+# Approval: teammates are asked in the app and by email, each approves with a comment, and the version can go out.
+APPR = [("theo", "Theo Walsh", "Head of sales", "Net 45 is fine for a 12-month term.", 2), ("leo", "Leo Park", "Finance", "Approved.", 3)]
+CT_APPROVAL = scene(
+    '<div class="tl" style="margin:14px">'
+    f'<div class="fx-l"{A(1)}><span class="tag t-gray">Asked</span>Theo and Leo, in the app and by email<span class="when">9:40</span></div>'
+    + "".join(f'<div class="fx-l"{A(1, d=100 + k * 100)}>{face(f, 22)}<span class="grow"><b>{n}</b> <span class="sub">{r}</span><small class="cmt fx-fade"{A(at, d=200)}>{c}</small></span>'
+              + sw(("Waiting", None, at, "tag t-gray"), ("Approved", at, None, "tag t-green fx-pop")) + "</div>" for k, (f, n, r, c, at) in enumerate(APPR))
+    + '</div><div class="bulk"><span class="sub">Order form, version 3</span><span class="grow"></span>' + sw(("Send for signature", None, 4, "ui-btn"), (ic(I_SIGN) + "Send for signature", 4, None, "ui-btn pri fx-pop")) + "</div>",
+    "b-stone", [300, 900, 900, 700],
+    "<b>Approval</b>" + sw(("In review", None, 4, "tag t-yellow"), ("Approved", 4, None, "tag t-purple fx-pop")))
+
+# Signing: the private link opens the contract in the seller's brand; Rina agrees, draws her signature and signs, and
+# Marcus, next in order, gets his link.
+SIGWAVE = '<svg class="sigline" viewBox="0 0 200 50" aria-hidden="true"><path d="M6 36c14-2 18-26 30-26 9 0-4 30 8 30 10 0 12-22 22-22 8 0 2 18 12 18s16-14 26-14 6 12 16 12 18-8 30-10 22-2 40-2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>'
 CT_SIGN = scene(
-    f'<div class="prop sign"{A(1)}><div class="pnav"><b>Lumen Labs × Pallet Cloud</b></div><div class="sg"><span><small>ORDER FORM</small><b>25 seats, $30,000 a year</b></span>'
-    + sw(("Sign", None, 2, "play"), (CK + "Signed", 2, None, "play ok fx-pop")) + "</div></div>"
-    f'<div class="feed" style="border:0"><div class="ev"{A(2)}>{face("rina", 22)}<span>Rina Sato signed<small>Thu, 11:20</small></span></div>'
-    f'<div class="ev"{A(3)}>{face("marcus", 22)}<span>Marcus Lee signed<small>Thu, 16:48</small></span></div>'
-    '<div class="won" style="margin-top:0"><span class="sub">Stage</span><span class="wt">'
-    + sw(("Contract sent", None, 4, "tag t-yellow"), ("Won", 4, None, "tag t-green fx-pop"))
-    + f'<span class="burst"{A(4)}>' + "".join(f'<i style="--bx:{x}px;--by:{y}px"></i>' for x, y in [(-22, -12), (20, -14), (-16, 12), (24, 10), (2, -20), (-4, 18)]) + "</span></span>"
-    + f'<span class="tag t-gray fx-pop"{A(5)}>{logo("slack", 12)}Team alerted</span><span class="grow"></span><span class="sub mono">$30,000</span></div></div>',
-    "b-gray", [300, 900, 900, 800, 700], f'<span style="display:flex;align-items:center;gap:8px">{SIGN}<b>Signing, 2 signers</b></span>')
+    '<div class="csign"><div class="sk">'
+    '<div class="sktop"><b>Lumen Labs</b><span>Order form, 25 seats</span></div>'
+    '<div class="skb"><h5>Sign</h5>'
+    '<div class="skf"><small>Full name</small><span>Rina Sato</span></div>'
+    '<div class="skf"><small>Email this link was sent to</small><span>rina@palletcloud.com</span></div>'
+    '<div class="skc"><span class="box">' + sw(("", None, 1, ""), (ic(I_CHECK, 9, 3), 1, None, "fx-pop")) + '</span><span>I agree to sign this document electronically.</span></div>'
+    '<div class="sktab"><span>Type</span><span class="on">Draw</span></div>'
+    f'<div class="skpad">{SIGWAVE}<s class="skcover"{A(None, 2)}></s></div>'
+    '<div class="skbtns">' + sw(("Sign", None, 3, "play"), (CK + "Signed", 3, None, "play ok fx-pop")) + '<span class="play2">Send back changes</span></div></div></div>'
+    '<div class="feed csig"><div class="ch">Signers<span class="grow"></span><span class="tag t-gray">In order</span></div>'
+    f'<div class="ev">{face("rina", 22)}<span class="grow">Rina Sato<small>Signer 1</small></span>' + sw(("Opened", None, 3, "tag t-purple"), ("Signed", 3, None, "tag t-green fx-pop")) + "</div>"
+    f'<div class="ev">{face("marcus", 22)}<span class="grow">Marcus Lee<small>Signer 2</small></span>' + sw(("Waiting", None, 4, "tag t-gray"), ("Link sent", 4, None, "tag t-blue fx-pop")) + "</div></div></div>",
+    "b-gray", [300, 700, 1500, 800], f'<span style="display:flex;align-items:center;gap:8px">{ic(I_SIGN, 16)}<b>Signing</b></span>')
 
-# Dates: the terms are read from the contract, and a renewal opportunity is made 90 days before the end date.
-CT_DATES = scene(
-    '<div class="facts f4" style="margin:14px">'
-    + "".join(f'<div><small>{k}</small>{sw((NIL, None, i + 1, ""), (v, i + 1, None, "fx-r"))}</div>' for i, (k, v) in enumerate([("Start", "Nov 1, 2026"), ("End", "Oct 31, 2027"), ("Notice", "60 days"), ("Renews", "On its own")]))
-    + '</div><div class="tl" style="margin:0 14px 14px">'
-    f'<div class="fx-l"{A(5)}><span class="tag t-blue">Opportunity</span>Pallet Cloud renewal, $30,000<span class="when">Aug 2, 2027</span></div>'
-    f'<div class="fx-l"{A(6)}><span class="tag t-yellow">Reminder</span>Last day to give notice<span class="when">Sep 1, 2027</span></div></div>',
-    "b-gray", [300, 500, 500, 500, 500, 800, 700], "<b>Key dates</b><span class=\"grow\"></span><span class=\"sub\">Read from the signed order form</span>")
+# Certificate: the signed pages stay as they were, then a certificate page and the audit trail; each signer gets a copy.
+CERT = [("Document SHA-256", "9f2c41d07a8e…e0b7"), ("Signer 1", "Rina Sato, rina@palletcloud.com"), ("Signed", "Oct 23, 2026, 11:20 UTC"), ("IP address", "203.0.113.24"), ("Browser", "Chrome on macOS")]
+TRAIL = [("Oct 22, 09:14", "Link sent to Rina Sato"), ("Oct 23, 11:18", "Opened by Rina Sato"), ("Oct 23, 11:20", "Signed by Rina Sato")]
+CT_CERT = scene(
+    '<div class="ccert"><div class="pages">' + "".join(f'<span class="pgx fx-pop"{A(1, d=k * 90)}><s></s><s></s><s></s><s></s><small>Page {k + 1}</small></span>' for k in range(3))
+    + f'<span class="pgx cert fx-drop"{A(2)}><b>Certificate</b><s></s><s></s><small>Page 4</small></span></div>'
+    f'<div class="card"{A(3)}><div class="ch">Signature certificate</div>' + "".join(f'<div class="fact fx-l"{A(3, d=k * 80)}><span class="sub ck">{a}</span><span class="grow cv">{b}</span></div>' for k, (a, b) in enumerate(CERT)) + "</div>"
+    f'<div class="card"{A(4)}><div class="ch">Audit trail</div>' + "".join(f'<div class="fact fx-l"{A(4, d=k * 120)}><span class="sub ck">{a}</span><span class="grow cv">{b}</span></div>' for k, (a, b) in enumerate(TRAIL)) + "</div>"
+    f'<div class="qt"{A(5)}><span class="sub">Signed copy</span><span class="grow"></span><span class="tag t-green">Emailed to 2 signers</span></div></div>',
+    "b-stone", [300, 700, 900, 900, 700], "<b>Pallet Cloud order form, signed</b>")
 
-# Ask: a question across every contract, and each answer links to the clause it came from.
+# Read by Otto: each fact comes with its quote and page, and waits for a person to confirm it.
+FACTS = [("End date", "Oct 31, 2027", "The initial term ends on October 31, 2027.", 2),
+         ("Auto-renews", "Yes", "renews automatically for successive 12-month terms", 4),
+         ("Notice period in days", "60", "at least sixty (60) days before the end of the then-current term", 4),
+         ("Payment terms", "Net 45", "Invoices are due forty-five (45) days after receipt.", 3)]
+CT_READ = scene(
+    "".join(f'<div class="fact cfact fx-l"{A(2, d=k * 100)}><span class="grow"><small class="sub">{l}</small><b>{v}</b><q>{q}</q></span><span class="cite">p. {p}</span>'
+            + sw((f'<span class="btns"><span class="no">×</span><span class="ok">{CK}</span></span>', None, 3 + k, ""), ("Confirmed", 3 + k, None, "tag t-green fx-pop")) + "</div>" for k, (l, v, q, p) in enumerate(FACTS))
+    + f'<div class="qt" style="margin:12px"{A(7)}><span class="sub">Renewal notice date</span><span class="grow"></span><b>Sep 1, 2027</b></div>',
+    "b-gray", [300, 1300, 800, 600, 600, 600, 700],
+    f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Read by Otto</b></span><span class="grow"></span><span class="sub">'
+    + sw((LDR + "Reading 6 pages", 1, 2, "fx-fade"), *((f"{4 - k} to confirm", 2 + k, 3 + k, "fx-fade") for k in range(4)), ("All confirmed", 6, None, "fx-fade")) + "</span>")
+
+# Renewals: a contract near its notice date turns Expiring, and the owner hears 90, 60 and 30 days before it.
+REN = [("Northwind Health", "NW", "#efe3ff", "Master agreement", "Nov 30, 2026", "30 days", 0),
+       ("Atlas Cargo", "AC", "#fee2e2", "Order form, 10 seats", "Dec 31, 2026", "60 days", 0),
+       ("Orbit Mills", "OM", "#e0f2fe", "Master agreement", "Jan 29, 2027", "90 days", 1)]
+CT_RENEW = scene(
+    '<div class="scroll-x"><table class="tb ren"><thead><tr><th>Contract</th><th>Status</th><th class="hide-s">Renewal notice</th><th>Alert</th></tr></thead><tbody>'
+    + "".join(f'<tr class="fx-l"{A(1, d=k * 100)}><td><span class="who"><span class="av" style="background:{bg}">{i}</span><span>{n}<small class="sub cn">{c}</small></span></span></td><td>'
+              + (sw(("Active", None, 2, "tag t-green"), ("Expiring", 2, None, "tag t-yellow fx-pop")) if flip else '<span class="tag t-yellow">Expiring</span>')
+              + f'</td><td class="hide-s sub">{dt}</td><td><span class="tag t-gray fx-pop"{A(3, d=k * 120)}>{al}</span></td></tr>' for k, (n, i, bg, c, dt, al, flip) in enumerate(REN))
+    + f'</tbody></table></div><div class="alert fx-r"{A(4)}>{ic(I_MAIL, 16)}<span><b>Orbit Mills master agreement: renewal notice by Jan 29, 2027</b><small>Emailed to Sam Okoye, 90 days before</small></span></div>',
+    "b-stone", [300, 900, 800, 900], "<b>Renewals coming up</b>")
+
+# Ask Otto: a question across contracts, answered from the facts the team confirmed, each linked to its contract.
 CT_ASK = scene(
-    f'<div class="thread2" style="padding:16px"><div class="ask fx-r"{A(1)}>Which contracts renew in the next 90 days?</div>'
-    f'<div class="ans"><span class="fx-pop"{A(2)}>{OWL}</span><div class="body">{sw((LDR + "Reading 214 contracts", 2, 3, "fx-fade"), ("Three contracts, $171,000 in total.", 3, None, "fx-fade"))}<ul>'
-    f'<li{A(4)}><span>Northwind Health renews on March 1 at $84,000.<span class="cite fx-pop"{A(4, d=250)}>Section 9.1</span></span></li>'
-    f'<li{A(5)}><span>Atlas Cargo can leave with 30 days notice.<span class="cite fx-pop"{A(5, d=250)}>Section 4.2</span></span></li></ul></div></div></div>',
-    "b-stone", [300, 600, 1400, 600, 600], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Ask Omniscient</b></span>')
-
-def mag(kind, title, sub, at, extra=""):  # a file card: its page lines draw in, then its name and what it is
-    return f'<span class="magnet"{A(at)}><span class="pdf"><s></s><s></s><s></s>{kind}</span><span class="grow"><b>{title}</b><small>{sub}</small></span>{extra}</span>'
-
-
-# Import: old contracts come in as PDFs, each is read, and its terms land on the company.
-OLD = [("Northwind Health MSA.pdf", "Master agreement, renews Mar 1"), ("Atlas Cargo DPA.pdf", "Data processing terms"), ("Harbor and Pine order form.pdf", "60 seats, ends Dec 31")]
-CT_IMPORT = scene(
-    '<div class="mags">'
-    + "".join(mag("PDF", n, sw(("Reading " + DOTS, i + 1, i + 2, "fx-fade"), (x, i + 2, None, "fx-fade")), i + 1, f'<span class="tag t-green fx-pop"{A(i + 2, d=200)}>Added</span>') for i, (n, x) in enumerate(OLD))
-    + "</div>",
-    "b-gray", [300, 800, 800, 800], '<b>Import contracts</b><span class="grow"></span><span class="ui-btn">Upload</span>')
+    f'<div class="thread2" style="padding:16px"><div class="ask fx-r"{A(1)}>Which contracts need a renewal notice before February?</div>'
+    f'<div class="ans"><span class="fx-pop"{A(2)}>{OWL}</span><div class="body">{sw((LDR + "Reading contracts", 2, 3, "fx-fade"), ("Three contracts, $312,000 a year in total.", 3, None, "fx-fade"))}<ul>'
+    f'<li{A(4)}><span>Northwind Health, notice by Nov 30, $84,000.<span class="cite fx-pop"{A(4, d=250)}>Master agreement</span></span></li>'
+    f'<li{A(4, d=150)}><span>Atlas Cargo, notice by Dec 31, $18,000.<span class="cite fx-pop"{A(4, d=400)}>Order form</span></span></li>'
+    f'<li{A(5)}><span>Orbit Mills, notice by Jan 29, $210,000.<span class="cite fx-pop"{A(5, d=250)}>Master agreement</span></span></li></ul></div></div></div>',
+    "b-gray", [300, 600, 1400, 600, 600], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Ask Otto</b></span>')
 
 CT = [
-    ("Draft the contract from the deal", "Pick a won proposal. Omniscient writes the contract from the deal, the proposal and your own template, part by part, with the right signers.", CT_DRAFT),
-    ("Redlines with every version kept", "Buyers suggest changes on the page. Accept or skip each one, and every version is saved with who changed what.", CT_REDLINE),
-    ("Approval rules for discounts and terms", "Set rules for discounts and changed terms. A contract that breaks one waits for the right person to approve it before it goes out.", CT_APPROVE),
-    ("Sign on the page", "Each signer gets their own link and signs in order. When the last person signs, the deal moves to Won and the team gets an alert.", CT_SIGN),
-    ("Key dates and renewals", "Start, end, notice period and renewal terms are read from each signed contract. A renewal opportunity is made 90 days before the end date.", CT_DATES),
-    ("Ask about any contract", "Ask a question across all your contracts in plain English. Each answer links to the clause it came from.", CT_ASK),
-    ("Bring in the contracts you already have", "Upload your signed PDFs. Omniscient reads the terms and dates and adds each contract to the right company.", CT_IMPORT),
+    ("Upload the contract you already use", "Upload a PDF or Word file and link it to its opportunity and company. Each new upload becomes the next version, and nothing is written over.", CT_VERSIONS),
+    ("Compare any two versions", "Pick two versions and read them side by side, with what was taken out and what was put in marked, down to the word.", CT_COMPARE),
+    ("Approval from your team", "Ask teammates to approve a version, in the app and by email. They approve or decline with a comment, and a new version asks the same people again.", CT_APPROVAL),
+    ("E-signature on a page in your brand", "Send the approved version to up to ten signers, in order or all at once. Each private link opens the contract in your brand, where the signer types or draws a signature, or sends back a changed file instead.", CT_SIGN),
+    ("A signed PDF with a certificate", "When everyone has signed, the original pages stay as they were and a certificate page follows: who signed, when, from which IP address and browser, and the file's SHA-256, then the audit trail. Each signer gets a copy by email.", CT_CERT),
+    ("Otto reads the signed contract", "Otto, the AI in Omniscient, reads the signed contract for its dates, renewal terms, notice period, value and key obligations. Each suggestion shows its quote and page, and nothing is saved until a person confirms it.", CT_READ),
+    ("Renewal alerts before the notice date", "Contracts move to Active, Expiring and Expired on their own dates. The owner gets a notice and an email 90, 60 and 30 days before the renewal notice date, and Renewals coming up lists what is due next.", CT_RENEW),
+    ("Ask Otto about your contracts", "Ask which contracts renew next quarter or what was signed this month. Otto answers from the facts your team confirmed, and each answer links to the contract.", CT_ASK),
+]
+
+# ---- Automation shots (in the app: src/components/automation, src/lib/automation, docs/workflows.md) ----
+def wcard(icon, title, kind, at=None, d=None, extra="", cls=""):  # one step on the canvas
+    return f'<div class="wfc{cls} fx-drop"{A(at, d=d)}><span class="wi">{ic(icon)}</span><span class="wt"><small>{kind}</small><b>{title}</b>{extra}</span></div>'
+
+
+def wline(at=None, d=None):
+    return f'<span class="wfl fx-y"{A(at, d=d)}></span>'
+
+
+def wtags(*tags):
+    return '<span class="wtags">' + "".join(tags) + "</span>"
+
+
+def yesno(yes, no, at=None, d=None):  # a Branch's two paths
+    return f'<div class="wyn fx-fade"{A(at, d=d)}><div><span class="wlb">Yes</span>{yes}</div><div><span class="wlb">No</span>{no}</div></div>'
+
+
+Q = "&quot;"
+AU_NEXT = "Next steps for {{company|your team}}"
+AU_NEXT_HTML = 'Next steps for <span class="tok">{{company|your team}}</span>'
+OK_TAG = '<span class="tag t-green">Approved</span>'
+FLOW_YES = wcard(I_BELL, "Notify the owner", "Notify owner", cls=" sm", extra=wtags(f'<span class="tag t-gray">{logo("slack", 11)}Slack</span>'))
+FLOW_NO = wcard(I_MAIL, "Reply in the same thread", "Send email", cls=" sm", extra=wtags(OK_TAG))
+
+# Hero: the Workflows page, folders on the left and one live workflow on its canvas.
+FOLDERS = [("Follow-ups", [("After the demo", 1, 1), ("Proposal viewed", 1, 0), ("No reply in 5 days", 0, 0)]), ("Renewals", [("Contract renewal due", 1, 0), ("Contract signed", 1, 0)])]
+AU_HERO = (
+    '<div class="band b-gray p-shot" data-anim><div class="app wfapp"><aside class="side wfold">'
+    f'<div class="wfh"><b>Workflows</b><span class="grow"></span><span class="ib">{ic(I_PLUS)}</span></div>'
+    + "".join(f'<div class="wff">{ic(I_FOLDER)}{f}</div>' + "".join(f'<div class="wfr{" on" if on else ""}"><span class="grow">{n}</span>{"<i></i>" if live else ""}</div>' for n, live, on in rows) for f, rows in FOLDERS)
+    + '</aside><div class="main"><div class="ph"><b>After the demo</b><span class="tag t-green">Live</span><span class="grow"></span><span class="seg2"><span class="on">Build</span><span>Runs</span></span></div>'
+    '<div class="wf-cv">'
+    + wcard(I_BOLT, "Meeting held", "Starts when", cls=" wtrig", extra=wtags('<span class="sub">14 in it now</span>')) + wline()
+    + wcard(I_CLOCK, "Wait 2 days", "Wait") + wline()
+    + wcard(I_MAIL, AU_NEXT_HTML, "Send email", cls=" on", extra=wtags(OK_TAG, '<span class="sub">31 sent, 9 replied</span>')) + wline()
+    + wcard(I_BRANCH, "Replied in the last 3 days", "Branch") + wline() + yesno(FLOW_YES, FLOW_NO)
+    + "</div></div></div></div>")
+
+# Build: a trigger and a wait, then the + opens the step picker, an email goes in, and a Branch adds its two paths.
+PICK = [(I_MAIL, "Send email", 1), (I_CLOCK, "Wait", 0), (I_BRANCH, "Branch", 0), (I_PEN, "Update field", 0), (I_BELL, "Notify owner", 0), (I_CODE, "Webhook", 0), (I_STOP, "Stop", 0)]
+AU_BUILD = scene(
+    '<div class="wf-cv">'
+    + wcard(I_BOLT, "Meeting held", "Starts when", 1, cls=" wtrig") + wline(2) + wcard(I_CLOCK, "Wait 2 days", "Wait", 2, d=120) + wline(3)
+    + '<div class="wslot">' + sw((f'<span class="wplus">{ic(I_PLUS)}</span>', 3, 4, "fx-pop"), (wcard(I_MAIL, AU_NEXT_HTML, "Send email"), 4, None, ""))
+    + f'<div class="wpick fx-r"{A(3, 4, 150)}>' + "".join(f'<span class="{"on" if on else ""}">{ic(i)}{n}</span>' for i, n, on in PICK) + "</div></div>"
+    + wline(5) + wcard(I_BRANCH, "Replied in the last 3 days", "Branch", 5, d=120) + wline(5, 250) + yesno(FLOW_YES, FLOW_NO, 5, 350) + "</div>",
+    "b-stone", [300, 600, 700, 1300, 800], '<b>After the demo</b><span class="tag t-gray">Draft</span>')
+
+# Triggers: a different event is picked each time, and the step under it changes with it.
+TRIG = [("Records", ["Field changed", "Opportunity stage changed"]), ("Meetings", ["Meeting held", "Meeting no-show"]), ("Email", ["Email replied"]),
+        ("Deal Room", ["Proposal viewed", "Contract signed", "Contract renewal due"]), ("Time and people", ["On a schedule", "Added in bulk"])]
+PICKED = {"Meeting held": (2, 3), "Proposal viewed": (3, 4), "Contract signed": (4, None)}
+AU_TRIG = scene(
+    '<div class="wtrg"><div class="wtl">'
+    + "".join(f'<div class="wtg"><small>{g}</small>' + "".join(f'<span class="wtc fx-pop"{A(1, d=(gi * 2 + k) * 50)}>{t}' + (f'<s class="ring fx-pop"{A(*PICKED[t])}></s>' if t in PICKED else "") + "</span>" for k, t in enumerate(items)) + "</div>" for gi, (g, items) in enumerate(TRIG))
+    + '</div><div class="wf-cv">'
+    + f'<div class="wfc wtrig fx-drop"{A(1)}><span class="wi">{ic(I_BOLT)}</span><span class="wt"><small>Starts when</small><b>' + sw(("Meeting held", None, 3, ""), ("Proposal viewed", 3, 4, "fx-fade"), ("Contract signed", 4, None, "fx-fade")) + "</b></span></div>"
+    + wline(2) + '<div class="wslot">'
+    + sw((wcard(I_MAIL, 'Thanks for today, <span class="tok">{{first_name|there}}</span>', "Send email"), 2, 3, ""), (wcard(I_BELL, "Notify the owner", "Notify owner", extra=wtags(f'<span class="tag t-gray">{logo("slack", 11)}Slack</span>')), 3, 4, ""),
+         (wcard(I_PEN, "Company stage to Customer", "Update field"), 4, None, ""))
+    + "</div></div></div>",
+    "b-gray", [300, 900, 1400, 1400], "<b>Starts when</b>")
+
+
+def mailwords(text, at, d=0):  # like words(), with merge fields marked
+    out = []
+    for i, w in enumerate(re.findall(r"\{\{[^}]+\}\}\S*|\S+", text)):
+        m = re.match(r"^(\{\{[^}]+\}\})(.*)$", w)
+        out.append(f'<span style="--i:{i}"><span class="tok">{m.group(1)}</span>{m.group(2)}</span>' if m else f'<span style="--i:{i}">{w}</span>')
+    return f'<span class="wd fx-fade"{A(at, d=d)}>{" ".join(out)}</span>'
+
+
+# Approve, then Publish: Otto drafts the email when asked, someone approves it, and Publish puts the workflow live.
+BODY_AU = "Hi {{first_name|there}}, thanks for the time today. Here are the next steps we agreed on, and [the pricing for your team]."
+AU_APPROVE = scene(
+    f'<div class="wfi"><div class="wih"><span class="wi">{ic(I_MAIL)}</span><b>Send email</b><span class="grow"></span>' + sw(("Needs approval", None, 3, "tag t-yellow"), ("Approved", 3, None, "tag t-green fx-pop")) + "</div>"
+    f'<div class="wotto"><span class="wob">{OWL}Ask Otto to draft it</span><div class="fld">{words("Thank them and share the next steps", 1)}</div></div>'
+    f'<span class="wlab">Subject</span><div class="fld">{mailwords(AU_NEXT, 2)}</div>'
+    f'<span class="wlab">Email</span><div class="fld area">{mailwords(BODY_AU, 2, 150)}</div>'
+    f'<div class="wapp"><span class="tag t-gray fx-pop"{A(2, d=600)}>By Otto</span><span class="grow"></span>' + sw(("Approve", None, 3, "ui-btn"), (CK + "Approved", 3, None, "ui-btn pri done fx-pop")) + "</div></div>"
+    f'<div class="alert fx-r"{A(5)}>{ic(I_CHECK, 16)}<span><b>Version 1 is live</b><small>Published by Sam Okoye</small></span></div>',
+    "b-stone", [300, 900, 1700, 900, 900],
+    "<b>After the demo</b>" + sw(("Draft", None, 5, "tag t-gray"), ("Live", 5, None, "tag t-green fx-pop")) + '<span class="grow"></span>' + sw(("Publish", None, 4, "ui-btn"), ("Publish", 4, None, "ui-btn pri fx-pop")))
+
+# Own mailbox: the record owner's mailbox sends it, with the unsubscribe line at the end.
+BOXES = [(logo("gmail", 14), "Gmail"), (logo("outlook", 14), "Microsoft 365"), (ic(I_MAIL), "IMAP and SMTP")]
+AU_MAIL = scene(
+    '<div class="wbox">' + "".join(f'<span class="wbx fx-pop"{A(1, d=k * 90)}>{lg}{n}' + (f'<s class="ring fx-pop"{A(2)}></s>' if k == 0 else "") + "</span>" for k, (lg, n) in enumerate(BOXES)) + "</div>"
+    '<div class="mail">'
+    f'<div class="f"><span>From</span><span class="fx-fade"{A(2)}>sam@lumenlabs.com</span></div>'
+    f'<div class="f"><span>To</span><span class="to"><span class="tag t-gray fx-pop"{A(3)}>Rina Sato</span></span></div>'
+    f'<div class="f"><span>Subject</span>{words("Next steps for Pallet Cloud", 3)}</div>'
+    f'<div class="bodytx">{words("Hi Rina, thanks for the time today. Here are the next steps we agreed on, and the pricing for 25 seats.", 3, d=200)}'
+    f'<span class="unsub fx-fade"{A(4)}>--<br>Unsubscribe: app.tryomniscient.com/api/automation/unsubscribe?t=…</span></div>'
+    f'<div class="sendrow">{logo("gmail", 16, "Gmail")}<span class="sub">From the opportunity owner\'s mailbox</span><span class="grow"></span>' + sw(("Queued", None, 5, "tag t-gray"), (CK + "Sent 9:42", 5, None, "tag t-green fx-pop")) + "</div></div>",
+    "b-gray", [300, 700, 700, 1600, 900])
+
+# Pacing: inside working hours, sends spaced by a random 2 to 6 minutes, and a new mailbox warms up day by day.
+TICKS = [4, 9, 13, 19, 22, 28, 33, 37, 43, 47, 52, 58]
+WARM = [20, 30, 40, 50, 60, 70, 80]
+AU_PACE = scene(
+    '<div class="wpace">'
+    '<div class="wdays">' + "".join(f'<span class="{"on " if k < 5 else ""}fx-pop"{A(1, d=k * 50)}>{d}</span>' for k, d in enumerate(["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])) + '<span class="sub">09:00 to 17:00</span></div>'
+    '<div class="wday"><span class="sub mono">09:00</span><span class="wtrack">' + "".join(f'<i class="fx-pop"{A(2, d=k * 110, s=f"left:{x}%")}></i>' for k, x in enumerate(TICKS))
+    + f'<b class="wgap fx-fade"{A(3, s="left:40%")}>4 min</b></span><span class="sub mono">17:00</span></div>'
+    '<div class="wwarm"><span class="sub">Warm-up for a new mailbox</span><span class="wbars">' + "".join(f'<span><i class="fx-y{" now" if k == 2 else ""}"{A(4, d=k * 90, s=f"height:{v}%")}></i><small>Day {k + 1}</small></span>' for k, v in enumerate(WARM)) + "</span></div>"
+    f'<div class="qt"{A(5)}><span class="sub">Sent today from sam@lumenlabs.com</span><span class="grow"></span><b>37 of 40</b></div></div>',
+    "b-stone", [300, 700, 1500, 800, 900], f'<span style="display:flex;align-items:center;gap:8px">{logo("gmail", 16)}<b>Sending</b></span>')
+
+# A reply stops the run: Rina answers, her run stops, and the email's replies go up.
+RUNS = [("rina", "Rina Sato", "Wait 2 days"), ("marcus", "Marcus Lee", "Next steps for Pallet Cloud"), ("amara", "Dana Ortiz", "Reply in the same thread")]
+RUN_TAG = ['', '<span class="tag t-blue">Running</span>', '<span class="tag t-green">Finished</span>']
+AU_REPLY = scene(
+    f'<div class="wstat"><span class="wi">{ic(I_MAIL)}</span><span class="grow"><b>Next steps for Pallet Cloud</b><small>12 sent, ' + sw(("3", None, 3, ""), ("4", 3, None, "fx-fade")) + ' replied</small></span></div>'
+    '<div class="scroll-x"><table class="tb wruns"><thead><tr><th>Person</th><th>Status</th><th class="hide-s">Step</th></tr></thead><tbody>'
+    + "".join(f'<tr class="fx-l"{A(1, d=k * 100)}><td><span class="who">{face(f, 22)}{n}</span></td><td>'
+              + (sw(("Waiting", None, 3, "tag t-purple"), ("Stopped", 3, None, "tag t-gray fx-pop")) + f'<span class="sub wrs fx-fade"{A(3, d=150)}>Replied</span>' if k == 0 else RUN_TAG[k])
+              + f'</td><td class="hide-s sub">{st}</td></tr>' for k, (f, n, st) in enumerate(RUNS))
+    + f'</tbody></table></div><div class="wrep fx-l"{A(2)}>{face("rina", 22)}<span><b>Rina Sato</b><small>Thursday works. Can we add Marcus?</small></span>{ic(I_REPLY)}</div>',
+    "b-gray", [300, 900, 900],
+    '<b>After the demo</b><span class="grow"></span><span class="seg2"><span>Build</span><span class="on">Runs</span></span>')
+
+# Deal Room events: a proposal view, a signed contract and a renewal notice each start their own workflow.
+EVENTS = [(I_EYE, "Marcus viewed the proposal", wcard(I_BELL, "Notify the owner", "Proposal viewed", extra=wtags(f'<span class="tag t-gray">{logo("slack", 11)}Slack</span>'))),
+          (I_SIGN, "Order form signed", wcard(I_MAIL, "Welcome to Lumen Labs", "Contract signed", extra=wtags(OK_TAG))),
+          (I_CAL, "Renewal notice in 90 days", wcard(I_CLOCK, "Wait until 1 day before the next meeting", "Contract renewal due"))]
+AU_DEAL = scene(
+    '<div class="wev">' + "".join(f'<span class="wevc fx-l"{A(2 * k + 1)}>{ic(i)}{t}</span><span class="wevl fx-x"{A(2 * k + 2)}></span><span class="wevw fx-r"{A(2 * k + 2, d=150)}>{c}</span>' for k, (i, t, c) in enumerate(EVENTS)) + "</div>",
+    "b-stone", [300, 600, 700, 600, 700, 600], "<b>From Deal Room</b>")
+
+AU = [
+    ("Workflows on a canvas", "Start from a trigger and add steps: send an email, wait, branch, update a field, notify the owner, call a webhook or stop. Keep your workflows in folders.", AU_BUILD),
+    ("Start from what happens in a deal", "A workflow can start when a record or an opportunity's stage changes, a meeting is held or missed, an email gets a reply, a proposal is viewed or a contract is signed. It can also run on a schedule, or for people you add in bulk.", AU_TRIG),
+    ("Every email approved before Publish", "Write each email with merge fields, or ask Otto, the AI in Omniscient, to draft it. Every email starts unapproved, changing its words asks for approval again, and Publish waits until each one is approved.", AU_APPROVE),
+    ("Sent from the owner's own mailbox", "Emails go from the record owner's Gmail, Microsoft 365 or IMAP mailbox, as a new email or a reply in the same thread. Each one ends with a one-click unsubscribe link.", AU_MAIL),
+    ("A steady pace from each mailbox", "Each mailbox sends only in its owner's working hours, with a random gap of 2 to 6 minutes between emails and a daily cap. A newly connected mailbox starts at 20 emails a day and adds 10 a day.", AU_PACE),
+    ("A reply stops the run", "When someone replies, their runs stop in every workflow. A bounce stops the run and an unsubscribe stops every run, and workflows skip that address from then on.", AU_REPLY),
+    ("Follow up on proposals and contracts", "Deal Room starts workflows too: a proposal viewed, a contract sent or signed, a renewal notice coming up. Wait until a set time before the next meeting, branch on whether they opened Deal Room, or notify the owner in Slack.", AU_DEAL),
 ]
 
 PAGES = [
@@ -375,6 +565,23 @@ PAGES = [
         ],
     },
     {
+        "slug": "automation", "name": "Automation", "band": "b-gray",
+        "title": "Automation: follow-ups from your own mailbox | Omniscient",
+        "desc": "Workflows that follow up after meetings, proposal views and contract events. Each email is approved first, sent from your own mailbox and stopped by a reply.",
+        "h1": "Follow-ups that run on their own.", "h1b": "From your own mailbox.",
+        "lede": "Build a workflow once. Omniscient sends each email your team approved from the owner's own mailbox, at a steady pace, and stops when someone replies.",
+        "hero": AU_HERO, "feats": AU,
+        "list": ["Workflows on a canvas", "Folders for workflows", "Record and stage triggers", "Meeting and email triggers", "Proposal and contract triggers", "Schedules and Add to workflow", "Email, wait, branch and update steps", "Approval before Publish", "Replies and unsubscribes stop runs", "Working hours, caps and warm-up"],
+        "faq": [
+            ("Does anything send before we approve it?", "No. Every email in a workflow starts unapproved, and Publish waits until someone on your team approves each one. Changing an approved email's words asks for approval again."),
+            ("Which mailbox sends the emails?", "The record owner's own mailbox: the opportunity's owner, or else the workflow's owner. Gmail, Microsoft 365 and any mailbox connected over IMAP and SMTP can send."),
+            ("What stops a run?", "A reply from the person stops their runs in every workflow. A bounce stops the run, and an unsubscribe stops every run for that address. Workflows skip a bounced or unsubscribed address from then on, and you can stop a run or take a person out by hand."),
+            ("How fast does it send?", "Only in the owner's working hours and days, with a random 2 to 6 minute gap between emails. Each mailbox has a daily cap, 100 by default and 50 for a free Gmail address, and a newly connected mailbox starts at 20 a day and adds 10 a day."),
+            ("Can Otto write the emails?", "When you ask. Otto drafts or rewrites an email step and it's marked as his. It still needs a person's approval before the workflow can go live."),
+            ("Can someone go through a workflow twice?", "You choose: once, or again after a gap once their last run has ended. A person is never in the same workflow twice at once."),
+        ],
+    },
+    {
         "slug": "deal-room", "name": "Deal Room", "band": "b-gray",
         "title": "Deal Room: Netflix-style proposals for every deal | Omniscient",
         "desc": "Build a proposal for each deal from your content, in your brand, with rows for each stakeholder. Send it from your inbox and see who watched what.",
@@ -387,23 +594,24 @@ PAGES = [
             ("Where does the content come from?", "From your Library: your website, case studies, decks and videos. Omniscient only uses facts from the deal, your calls and your Library."),
             ("What does a proposal cost?", "A proposal uses 40 proposal credits and an edit uses 2. Every paid seat adds credits each month. A proposal that fails to build is refunded."),
             ("Can I edit the proposal?", "Yes. Change any text, section or style in the builder before you send it."),
-            ("How do buyers approve?", "On the proposal page. Omniscient drafts the contract from the approved proposal, and your team gets an alert."),
+            ("How do buyers approve?", "On the proposal page, and your team gets an alert by email or Slack. Then upload your contract in Contract Management and send it for signature."),
         ],
     },
     {
         "slug": "contract-management", "name": "Contract Management", "band": "b-stone",
-        "title": "Contract Management: draft, sign and renew contracts | Omniscient",
-        "desc": "Draft each contract from the deal and your template, review redlines, get approvals, sign on the page and never miss a renewal date.",
-        "h1": "Contracts drafted, signed and renewed.", "h1b": "Right next to the deal.",
-        "lede": "Omniscient drafts each contract from the deal and your template, tracks every change, gets it signed on the page and reminds you before it renews.",
+        "title": "Contract Management: upload, sign and renew contracts | Omniscient",
+        "desc": "Upload contracts as PDF or Word, compare versions, get your team's approval, collect e-signatures on a page in your brand and get alerts before renewals.",
+        "h1": "Contracts signed, tracked and renewed.", "h1b": "Right next to the deal.",
+        "lede": "Upload the contract you already use. Omniscient keeps every version, gets it approved and signed, and reminds you before it renews.",
         "hero": CT_HERO, "feats": CT,
-        "list": ["Contracts drafted from the deal", "Your own templates", "Redlines and versions", "Approval rules", "Signing on the page", "A link for each signer", "Key dates read for you", "Renewal opportunities", "Ask across contracts", "Import of signed PDFs"],
+        "list": ["PDF and Word upload", "Every version kept", "Side-by-side compare", "Approval from teammates", "Signing in order or all at once", "A signing page in your brand", "Certificate and audit trail", "Dates and terms read by Otto", "Alerts at 90, 60 and 30 days", "Ask Otto about contracts"],
         "faq": [
-            ("Do I need a separate e-signature tool?", "No. Buyers sign on the contract page. Each signer gets their own link, and you see who has signed."),
-            ("Can I use my own contract templates?", "Yes. Add your templates to the Library. Omniscient fills them from the deal and the approved proposal, and you can edit any part before you send it."),
-            ("What happens when the buyer asks for changes?", "They suggest changes on the page. You accept or skip each one, and every version is saved with who changed what."),
-            ("How do renewals work?", "Omniscient reads the end date, notice period and renewal terms from the signed contract and makes a renewal opportunity 90 days before the end date."),
-            ("Can I bring in contracts I already signed?", "Yes. Upload the PDFs. Omniscient reads the terms and dates and adds each one to the right company."),
+            ("Which files can I upload?", "PDF or Word (.docx) files up to 25 MB. Each upload becomes a new version of the contract, and earlier versions stay as they were."),
+            ("Does Omniscient write or draft contracts?", "No. Omniscient has no contract templates and never writes contract text. Your contracts are the files you upload. Otto only reads them to suggest dates and terms, each with its quote, for a person to confirm."),
+            ("How does signing work?", "Send the approved version to up to ten signers, in order or all at once. Each signer opens a private link, confirms their name and email, agrees to sign electronically and types or draws a signature. When everyone has signed, you get a signed PDF with a certificate page and an audit trail."),
+            ("What if the other side wants changes?", "They can send back a changed file from the signing page instead of signing. It becomes a new version and goes back to review, and you can compare it with the version you sent."),
+            ("What does Otto read?", "Parties, effective date, term, end date, auto-renewal, notice period, renewal notice date, value, payment terms, termination rights and key obligations, each with a quote and a page from the file. A suggestion whose quote isn't in the file is dropped, and nothing is saved until a person confirms it."),
+            ("Can I bring in contracts I already signed?", "Yes. Upload them as already signed. Otto reads them the same way, and renewal alerts start once their dates are confirmed."),
         ],
     },
 ]

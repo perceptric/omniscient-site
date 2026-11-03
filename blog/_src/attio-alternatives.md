@@ -22,7 +22,7 @@ Prices come from each vendor's own pricing page, read on November 3, 2026. We ha
 
 Our short answer, by the reason you're leaving:
 
-- Pick Omniscient if your deals close on a proposal and a contract, and you want both built from a CRM record that fills itself in.
+- Pick Omniscient if your deals close on a proposal and a contract, and you want both on a CRM record that fills itself in.
 - Pick HubSpot if you want a free CRM now and marketing tools on the same platform later.
 - Pick folk if you're a founder or an agency and your deals start in your own network.
 - Pick Pipedrive if your team plans its week around pipeline stages.
@@ -38,7 +38,7 @@ Our short answer, by the reason you're leaving:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
 folk | folk.app | A light AI CRM with a LinkedIn extension and email sequences | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders and agencies selling through their network
 Pipedrive | pipedrive.com | A sales pipeline CRM with an AI sales assistant | check | Small teams that work by pipeline stage
@@ -112,15 +112,15 @@ The hardest call we made was deciding when the AI may write to a record without 
 
 We made suggestions wait on purpose, because one wrong amount in a forecast costs more than an empty field. Fields filled with proof start on Pro, at $49 per seat a month billed yearly.
 
-Once a deal reaches the proposal stage, the [Deal Room](/product/deal-room/) builds a proposal page for it from the deal, your calls and your Library of case studies, decks and videos. You see who on the buying team viewed which part, and the buyer approves on the page, which moves the deal to Won. A full proposal uses 40 of the proposal credits each paid seat adds every month.
+Once a deal reaches the proposal stage, the [Deal Room](/product/deal-room/) builds a proposal page for it from the deal, your calls and your Library of case studies, decks and videos. You see who on the buying team viewed which part, and when the buyer approves on the page, your team gets an alert. A full proposal uses 40 of the proposal credits each paid seat adds every month.
 
-Contract Management comes with the seat and picks up from the approved proposal:
+Contract Management comes with the seat and picks up once the buyer says yes:
 
-- It drafts the contract from the deal, the proposal and your own template, and keeps every redline as a version.
-- Approval rules send a discount or a changed term to the right person, and each signer signs on the page from their own link.
-- It reads the end date, notice period and auto-renew from each contract, including the PDFs you import, and makes a renewal opportunity 90 days before the end date.
+- You upload the contract as a PDF or Word file, and every new upload, including changes a signer sends back, is kept as a version you can compare.
+- Teammates approve each version, and each signer signs on a page in your brand from their own link.
+- Otto reads the end date, notice period and auto-renewal from each signed contract, including ones you signed before, with a quote for each. Once a person confirms them, the owner gets alerts 90, 60 and 30 days before the notice date.
 
-Admittedly, Omniscient is narrower than Attio in a few places. We have no mobile app and no email sequences, so if your team sells mostly by email, Attio Pro or folk Premium will suit you better. Teammates who only view or log data are free, paid seats start at [$19 per seat a month billed yearly](/#pricing), and the trial lasts 14 days with no credit card. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest.
+Admittedly, Omniscient is narrower than Attio in a few places. We have no mobile app, and our email sequences run as Automation workflows from each rep's own mailbox at a steady pace, so a team that sends cold email in volume will do better with a dedicated outreach tool. Teammates who only view or log data are free, paid seats start at [$19 per seat a month billed yearly](/#pricing), and the trial lasts 14 days with no credit card. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest.
 
 ### 2. HubSpot
 
@@ -306,7 +306,7 @@ Run Omniscient next to Attio for 14 days, with proposals, contracts and a CRM th
 
 ```faq
 Q: What is the best Attio alternative?
-A: That depends on why you're leaving Attio. Omniscient fits small teams that close on proposals and contracts and want both built from the CRM record. HubSpot fits teams that want a free CRM with room for marketing, and Twenty fits teams that want a flexible data model in open source.
+A: That depends on why you're leaving Attio. Omniscient fits small teams that close on proposals and contracts and want both on the CRM record. HubSpot fits teams that want a free CRM with room for marketing, and Twenty fits teams that want a flexible data model in open source.
 Q: Is there a cheaper alternative to Attio?
 A: Yes, several cost less than Attio's Plus plan, which is $35 per user a month billed yearly. Twenty starts at $9 per user, monday CRM at $12 per seat with a 3 seat minimum, Omniscient at $19 per seat, Copper at $23 per seat and folk at $24 per member, all billed yearly, and HubSpot and Clarify have free plans.
 Q: Is there a free alternative to Attio?
@@ -314,7 +314,7 @@ A: HubSpot's free CRM covers up to 2 users and 1,000 contacts, and Clarify's fre
 Q: Which Attio alternatives are built around AI agents?
 A: Day AI runs agents on a shared memory of your team's email, meetings and Slack, and prices each agent instead of each seat. Lightfield updates its records from every interaction and runs outbound sequences from Pro, and Clarify's agent, Rep, drafts campaigns and enrolls leads. Omniscient's Otto fills in fields with the quote behind each value and drafts your follow-up emails.
 Q: Does Attio handle proposals and contracts?
-A: Attio's pricing page lists no proposal builder or e-signature, so teams add other tools for those steps. Omniscient builds proposals in its Deal Room, and Contract Management drafts contracts, collects signatures on the page and tracks each end date.
+A: Attio's pricing page lists no proposal builder or e-signature, so teams add other tools for those steps. Omniscient builds proposals in its Deal Room, and Contract Management keeps the contracts you upload, collects signatures on the page and tracks each end date.
 Q: Can I move my data from Attio to Omniscient?
 A: Yes, our importer reads companies, people, deals with their stages, and notes from Attio, or we migrate them for you. Custom objects stay behind, so you recreate them in Omniscient's data model.
 ```

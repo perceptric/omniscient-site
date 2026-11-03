@@ -18,6 +18,8 @@
 .hero { text-align: center; padding-top: 72px; padding-bottom: 40px; }
 .kicker { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-2); margin-bottom: 22px; }
 .kicker i { width: 7px; height: 7px; border-radius: 999px; background: var(--signal); display: inline-block; }
+a.kicker { transition: color var(--fast) var(--ease-out); }
+a.kicker:hover { color: var(--ink); }
 h1 { font: 500 clamp(40px, 6.6vw, 72px)/1 "Inter", sans-serif; letter-spacing: -.042em; margin: 0 auto; max-width: 960px; text-wrap: balance; }
 h1 span, h2 span, h3 span { color: inherit; }
 h1 span { display: block; }

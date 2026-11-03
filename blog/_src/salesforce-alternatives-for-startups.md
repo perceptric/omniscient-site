@@ -24,7 +24,7 @@ Here's where we'd look first, by what you want instead:
 
 | What you want instead | Where we'd look first |
 |---|---|
-| A CRM that fills itself in, with proposals and contracts built from each deal | Omniscient |
+| A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | Omniscient |
 | Marketing and sales in one place, with a startup discount | HubSpot |
 | Custom objects like Salesforce's, with less setup | Attio |
 | A simple pipeline for your first sales hire | Pipedrive |
@@ -40,7 +40,7 @@ Here's where we'd look first, by what you want instead:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams selling through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams selling through email, meetings and proposals
 HubSpot | hubspot.com | A customer platform with a free CRM and paid sales tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
 Attio | attio.com | A CRM you shape around your own objects and fields | [Free for up to 3 seats](https://attio.com/pricing) | Teams that liked Salesforce's custom objects
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | A first sales hire who works by stage
@@ -99,9 +99,9 @@ Otto fills a field only when it's empty, he's at least 85% sure and he can show 
 
 Salesforce starts quoting on Pro Suite at $100. In Omniscient, the [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library, shows who viewed each part, and lets the buyer approve on the page. A full proposal uses 40 of the proposal credits each paid seat adds every month.
 
-[Contract Management](/product/contract-management/) comes with the seat. It drafts the contract from the approved proposal and your template, keeps every redline, sends a discount or a changed term to an approver and collects e-signatures with a link for each signer. It also reads each contract's end date and notice period, and opens a renewal opportunity 90 days before the end date.
+[Contract Management](/product/contract-management/) comes with the seat. You upload each contract, and it keeps every version, asks the teammates you pick to approve it and collects e-signatures with a link for each signer. Otto also reads each signed contract's end date and notice period for you to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date.
 
-Admittedly, Omniscient covers less ground than Salesforce in places. We don't send marketing emails or email sequences, there's no dialer, and our importer leaves custom objects and custom fields behind. Everything else is on the [CRM page](/product/crm/).
+Admittedly, Omniscient covers less ground than Salesforce in places. We don't send marketing emails, there's no dialer, and our importer leaves custom objects and custom fields behind. Email sequences run as Automation workflows from your own mailbox. Everything else is on the [CRM page](/product/crm/).
 
 ### 2. HubSpot
 

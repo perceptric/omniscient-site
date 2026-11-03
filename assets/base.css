@@ -225,8 +225,8 @@ summary::-webkit-details-marker { display: none; }
 .nav__panel::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
 .nav__group.is-open .nav__panel { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
 .nav__panel--resources { width: min(520px, calc(100vw - 32px)); }
-.nav__panel--products { width: min(760px, calc(100vw - 32px)); }
-.menu.menu--products { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.nav__panel--products { width: min(1080px, calc(100vw - 32px)); }
+.menu.menu--products { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .menu.menu--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .menu__card { display: flex; flex-direction: column; gap: 6px; padding: 16px; transition: background-color var(--fast) var(--ease-out); }
 .menu__card + .menu__card { border-left: 1px solid var(--line); }

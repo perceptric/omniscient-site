@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1188" width="560" height="1188" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Price per seat a month, billed yearly: the lowest paid plan and the first plan with email sequences</title>
-<desc id="d">Price per seat a month on yearly billing. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, no email sequences. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Streak: Pro $49, with mail merge and automatic follow ups. Twenty: Pro $9, with workflows on every plan. Nimble: one plan at $24.90, with email sequences included. Dex: Premium $12, mail merge on Professional at $20. Close: Solo $9 for one user, workflows on Growth at $99. Not shown: HubSpot, Pipedrive, Breakcold and Clarify.</desc>
+<desc id="d">Price per seat a month on yearly billing. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, with email sequences as Automation workflows. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Streak: Pro $49, with mail merge and automatic follow ups. Twenty: Pro $9, with workflows on every plan. Nimble: one plan at $24.90, with email sequences included. Dex: Premium $12, mail merge on Professional at $20. Close: Solo $9 for one user, workflows on Growth at $99. Not shown: HubSpot, Pipedrive, Breakcold and Clarify.</desc>
 <rect width="560" height="1188" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Per seat a month, billed yearly</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">Seat price <tspan fill="#171717">and sequences</tspan></text>
@@ -13,7 +13,8 @@
 <text x="24" y="233" font-size="20" font-weight="500" fill="#171717">Omniscient</text>
 <rect x="170.5" y="214.5" width="41.8" height="23" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
 <text x="222.3" y="233" font-size="18" fill="#171717">$19 Starter</text>
-<text x="170" y="267" font-size="18" fill="#737373">No email sequences</text>
+<rect x="170.5" y="248.5" width="41.8" height="23" fill="#333333" stroke="#ebebeb" rx="6"/>
+<text x="222.3" y="267" font-size="18" font-weight="600" fill="#171717">$19 Starter, as Automation</text>
 <line x1="24" y1="288" x2="536" y2="288" stroke="#ebebeb"/>
 <text x="24" y="321" font-size="20" font-weight="500" fill="#171717">Attio</text>
 <rect x="170.5" y="302.5" width="77.0" height="23" fill="#e5e5e5" stroke="#ebebeb" rx="6"/>
