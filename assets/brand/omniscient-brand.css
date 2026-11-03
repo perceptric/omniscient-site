@@ -1,12 +1,12 @@
 /* ═══════════════════════════════════════════════════════════════════════
    OMNISCIENT BRAND SYSTEM: CSS
-   Version 2, "The Witness"
+   Version 3, "The Witness" in the calm style shared with Claritia
    ─────────────────────────────────────────────────────────────────────
    HOW TO USE
    Wrap any page section, embed, email block or slide in <div class="om">.
    Everything is scoped to .om so it never leaks into a host page.
    Add data-theme="dark" on .om (or any parent) for the dark theme.
-   Fonts: Inter (text and headings), Geist Mono (numbers and labels).
+   Fonts: Inter for every word; Geist Mono only for code, keys and ids.
    Built the way arrowsterr-brand.css is built: tokens, base, type, logo,
    buttons, tags, motifs, frames, sections, data, motion.
 
@@ -21,15 +21,16 @@
    BRAND RULES
    1. Logo: always the SVG. The O is the ring around everything, the point
       is the one thing that matters now.
-   2. Black and white carry the page. Emerald is the signal: the Point, a
-      live line, a won number, the current corner. About 5% of a view.
-   3. Headings are two tones: the point in ink, the rest in gray.
+   2. Calm: a warm off-white page, white cards lifted by soft ring shadows.
+      Green is the one accent: the Point, a live line, a won number, focus.
+      About 5% of a view. The primary button is dark gray.
+   3. Headings are one tone, in ink.
    4. One lead line under a title at most.
    5. One bold thing per view.
-   6. Shape: round buttons, 6px inputs, 10px cards, 16px frames. Hairline
-      borders. Shadows only on frames and things that float. No gradients.
+   6. Shape: round buttons, 8px inputs, 12px cards, 20px frames. Soft
+      rings in place of dark lines. No gradients.
    7. Proof first: every claim sits next to a quote, a date or a number.
-      Numbers are Geist Mono with tabular figures.
+      Numbers use tabular figures.
    8. Agent work is credited to Otto, never "AI".
    9. Drawings are thin lines: isometric plates, dotted sides, one Point.
    10. Copy: 9th grade words, short sentences, verbs first. No em dashes,
@@ -43,33 +44,34 @@
    ─────────────────────────────────────────────────────────────────────── */
 .om {
   /* Colour */
-  --ink: #0A0A0A;
-  --ink-2: #404040;
+  --ink: #0F0F0F;
+  --ink-2: #333333;
   --muted: #737373;
   --faint: #A3A3A3;
   --light: #C4C4C4;
   --panel: #FFFFFF;
-  --shell: #F7F7F5;
-  --hover: #F2F2F0;
-  --pressed: #EAEAE7;
-  --line: #E7E7E4;
-  --line-light: #F0F0EE;
+  --shell: #FAFAF5;
+  --hover: #F2F2EE;
+  --pressed: #EBEBE4;
+  --line: #EBEBEB;
+  --line-light: #F2F2F2;
   --line-strong: #D4D4D0;
-  --solid: #0A0A0A;
+  --solid: #333333;
   --on-solid: #FFFFFF;
 
   --signal: #0C8C5E;        /* emerald: the Point, live lines, fills */
-  --signal-text: #0A7A52;   /* emerald for text on light grounds, 5.3:1 */
-  --signal-soft: #E8F5EF;   /* tint behind emerald tags */
-  --signal-line: #B8E2CF;   /* a faint emerald rule */
+  --signal-text: #086444;   /* green for text on light grounds */
+  --signal-soft: #E3F4EC;   /* tint behind green tags */
+  --signal-line: #C9EADB;   /* a faint green rule */
   --mint: #18E299;          /* emerald on black grounds only */
 
-  --warn: #B7791F;
-  --error: #C2412D;
+  --warn: #9A3412;
+  --error: #DC2626;
 
   /* Shadow */
-  --shadow-frame: 0 1px 2px rgb(10 10 10 / 0.04), 0 24px 48px -24px rgb(10 10 10 / 0.18);
-  --shadow-pop: 0 8px 24px -8px rgb(10 10 10 / 0.18);
+  --shadow-frame: 0 0 0 1px rgb(0 0 0 / 0.04), 0 6px 6px -3px rgb(0 0 0 / 0.04), 0 12px 12px -6px rgb(0 0 0 / 0.03), 0 24px 48px -16px rgb(0 0 0 / 0.18);
+  --shadow-pop: 0 12px 32px -6px rgb(0 0 0 / 0.12), 0 0 0 1px rgb(111 107 107 / 0.1), 0 1px 3px rgb(63 70 75 / 0.1);
+  --shadow-card: 0 1px 1px -.5px rgb(0 0 0 / 0.04), 0 0 0 1px rgb(0 0 0 / 0.06);
 
   /* Type */
   --sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -80,15 +82,15 @@
   --s12: 48px; --s16: 64px; --s24: 96px; --s28: 112px;
 
   /* Radius */
-  --r-input: 6px;
-  --r-card: 10px;
-  --r-frame: 16px;
+  --r-input: 8px;
+  --r-card: 12px;
+  --r-frame: 20px;
   --r-round: 999px;
 
   /* Motion: three speeds, two curves */
-  --fast: 120ms;
-  --normal: 200ms;
-  --slow: 320ms;
+  --fast: 150ms;
+  --normal: 280ms;
+  --slow: 560ms;
   --ease-out: cubic-bezier(.22, 1, .36, 1);
   --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
 }
@@ -142,18 +144,17 @@
 .om-h1      { font-size: clamp(26px, 3vw, 34px); line-height: 1.15; letter-spacing: -0.03em; }
 .om-h2      { font-size: 22px; line-height: 1.25; letter-spacing: -0.025em; }
 .om-h3      { font-size: 17px; line-height: 1.35; letter-spacing: -0.015em; }
-.om-two     { color: var(--faint); }
+.om-two     { color: inherit; }
 .om-lead    { font-size: 18px; line-height: 28px; color: var(--muted); max-width: 34em; margin: 0; text-wrap: pretty; }
 .om-text    { color: var(--muted); margin: 0; max-width: 38em; }
 
-/* Mono label: uppercase, wide, gray, with an optional number on the right */
+/* Label: Inter, sentence case, gray, with an optional number on the right */
 .om-label {
-  font-family: var(--mono);
-  font-size: 12px;
-  line-height: 16px;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0;
   color: var(--muted);
 }
 .om-label--signal { color: var(--signal-text); }
@@ -261,7 +262,7 @@
 .om-score i.on { background: var(--signal); }
 
 /* The open row */
-.om-row-open { background: var(--solid); color: var(--on-solid); }
+.om-row-open { background: #F2FAF6; }
 
 /* ───────────────────────────────────────────────────────────────────────
    7. FRAMES
@@ -287,7 +288,7 @@
   font-size: 13px; color: var(--muted);
 }
 .om-fade { -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent); mask-image: linear-gradient(to bottom, #000 70%, transparent); }
-.om-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); }
+.om-card { background: var(--panel); border: 0; border-radius: var(--r-card); box-shadow: var(--shadow-card); }
 
 /* ───────────────────────────────────────────────────────────────────────
    8. SECTIONS
