@@ -26,7 +26,7 @@ Here's our short answer:
 Name | Domain | What it is | Starting price | Best for
 Attio | attio.com | A flexible CRM with email sync, sequences on Pro and AI on credits | [Free for up to 3 seats, Plus from $35 per user a month billed yearly](https://attio.com/pricing) | Teams that want to design their own data model
 HubSpot | hubspot.com | A customer platform with marketing, sales and service hubs on one CRM | [Free for up to 2 users, Sales Hub Starter from $7 per seat a month billed yearly for new customers](https://www.hubspot.com/pricing/sales) | Teams whose leads come from marketing
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
 ```
 
 ## Attio vs HubSpot at a glance
@@ -190,20 +190,20 @@ Our [plans](/#pricing) compare like this:
 - Starter costs $19 per seat a month billed yearly, and Pro costs $49 with the pipeline board, the forecast and fields filled with the quote that backs them.
 - Teammates who only view or log data are free, and the CRM's AI is part of the seat price.
 - The Deal Room builds a proposal page for each deal, shows who viewed which part, and lets the buyer approve on the page. A full proposal uses 40 of the proposal credits each paid seat adds every month.
-- Contract Management comes with the seat. It drafts the contract from the approved proposal and your template, keeps every redline, collects e-signatures and makes a renewal opportunity 90 days before the end date.
+- Contract Management comes with the seat. You upload the contract, and it keeps every version, collects e-signatures and alerts the owner 90, 60 and 30 days before the renewal notice date.
 - Our importer brings companies, contacts, deals with their stages, and notes over from HubSpot or Attio.
 
-![An Omniscient proposal for Pallet Cloud, approved by Rina Sato, with the deal moved to Won. The views list shows Rina watched the overview and read the rollout plan, Marcus Lee viewed the pricing for 25 seats twice, and Amara Kofi read the security guide. A Draft contract button sits beside the approval](proposal.shot.html)
+![An Omniscient proposal for Pallet Cloud, approved by Rina Sato. The views list shows Rina watched the overview and read the rollout plan, Marcus Lee viewed the pricing for 25 seats twice, and Amara Kofi read the security guide. Beside the approval, the team was alerted by Slack and email](proposal.shot.html)
 
 Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/crm/), the [Deal Room page](/product/deal-room/) and the [Contract Management page](/product/contract-management/) show each part.
 
-Omniscient won't suit every team, since we don't send marketing email or email sequences and don't have a mobile app or a dialer yet. If campaigns drive your pipeline, HubSpot fits better, and if you sell by email to warm leads, Attio's Pro plan does.
+Omniscient won't suit every team, since we don't send marketing email and don't have a mobile app or a dialer yet. Email sequences run as Automation workflows from your own mailbox, with each email approved before Publish. If campaigns drive your pipeline, HubSpot fits better, and if you sell by email to warm leads, Attio's Pro plan does.
 
 ## Attio vs HubSpot: which one to choose
 
 Start with how your team usually sells:
 
-![Where we'd start looking, by how your team sells. Forms, ads and email campaigns point to HubSpot, for marketing and sales on one record. Email to people you know points to Attio, for objects you design and sequences on Pro. Meetings, proposals and contracts point to Omniscient, for proposals and contracts built from the deal.](decision.svg)
+![Where we'd start looking, by how your team sells. Forms, ads and email campaigns point to HubSpot, for marketing and sales on one record. Email to people you know points to Attio, for objects you design and sequences on Pro. Meetings, proposals and contracts point to Omniscient, for proposals built from the deal and contracts signed in the same app.](decision.svg)
 
 Choose HubSpot if:
 
@@ -217,7 +217,7 @@ Choose Attio if:
 
 Choose Omniscient if:
 
-- Most of your deals close on a proposal and a contract, and you want both built from the deal.
+- Most of your deals close on a proposal and a contract, and you want both on the deal.
 - You want each contract's end date and notice period tracked for you.
 
 If none of the three fits, our roundups of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) and [Attio alternatives](/blog/attio-alternatives/) compare more options.

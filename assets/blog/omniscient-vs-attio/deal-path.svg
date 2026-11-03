@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 736" width="720" height="736" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">From proposal to signed contract with Attio and with Omniscient</title>
-<desc id="d">Two paths side by side. Attio and other tools: you write the proposal in a doc or deck tool, draft the contract from a template in another tool, send it for signature through an e-signature app, and update the deal in Attio by hand or with a workflow. Omniscient: the Deal Room builds the proposal from the deal, the buyer approves it on the proposal page, the contract is drafted from the approved proposal, and each signer signs from their own link while the key dates fill in the record.</desc>
+<desc id="d">Two paths side by side. Attio and other tools: you write the proposal in a doc or deck tool, pass contract versions around by email, send it for signature through an e-signature app, and update the deal in Attio by hand or with a workflow. Omniscient: the Deal Room builds the proposal from the deal, the buyer approves it on the proposal page, you upload the contract and your team approves it, and each signer signs from their own link while Otto reads the key dates for a person to confirm.</desc>
 <defs><marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#333333"/></marker></defs>
 <rect width="720" height="736" fill="#ffffff"/>
 <text x="32" y="48" font-size="19" fill="#737373">Proposals</text>
@@ -14,8 +14,8 @@
 <text x="50" y="224">doc or deck tool</text>
 <line x1="187" x2="187" y1="252" y2="278" stroke="#8a8a85" marker-end="url(#a)"/>
 <rect x="32" y="284" width="310" height="92" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
-<text x="50" y="322">Draft the contract from a</text>
-<text x="50" y="348">template in another tool</text>
+<text x="50" y="322">Pass contract versions</text>
+<text x="50" y="348">around by email</text>
 <line x1="187" x2="187" y1="376" y2="402" stroke="#8a8a85" marker-end="url(#a)"/>
 <rect x="32" y="408" width="310" height="92" fill="#f5f5f5" stroke="#ebebeb" rx="10"/>
 <text x="50" y="446">Send it for signature</text>
@@ -33,12 +33,12 @@
 <text x="396" y="348">on the proposal page</text>
 <line x1="533" x2="533" y1="376" y2="402" stroke="#8a8a85" marker-end="url(#a)"/>
 <rect x="378" y="408" width="310" height="92" fill="#ffffff" stroke="#ebebeb" rx="10"/>
-<text x="396" y="446">The contract is drafted</text>
-<text x="396" y="472">from the approved proposal</text>
+<text x="396" y="446">You upload the contract,</text>
+<text x="396" y="472">and your team approves it</text>
 <line x1="533" x2="533" y1="500" y2="526" stroke="#8a8a85" marker-end="url(#a)"/>
 <rect x="378" y="532" width="310" height="92" fill="#ffffff" stroke="#0c8c5e" stroke-width="2" rx="10"/>
 <text x="396" y="570">Each signer signs from a link,</text>
-<text x="396" y="596">and key dates fill the record</text>
+<text x="396" y="596">and Otto reads the key dates</text>
 </g>
 <text x="32" y="672" font-size="17" fill="#737373">The Attio path depends on which tools you connect</text>
 <text x="32" y="696" font-size="17" fill="#737373">and what their integrations sync.</text>

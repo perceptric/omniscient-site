@@ -4,7 +4,7 @@ Each post marks a price or claim "check" when it couldn't be confirmed on the ve
 
 ## Omniscient (applies to every post)
 
-- Contract Management: the app has no contracts screen yet. Posts describe drafting from the deal, redlines, approvals, signing on the page, key dates and renewals as the site does. Confirm each before publishing.
+- Contract Management: contracts come only from files people upload (PDF or Word). Omniscient never drafts or writes contracts and has no contract templates. Posts describe uploads and versions, teammate approval, signing on the page, Otto reading signed contracts for a person to confirm, and renewal alerts at 90, 60 and 30 days, as the app does (098).
 - Posts quote the Starter price, $19 per seat a month billed yearly, from the home page pricing section.
 - The free trial: posts say 14 days, no card, from the home page.
 

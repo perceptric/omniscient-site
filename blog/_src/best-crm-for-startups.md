@@ -29,7 +29,7 @@ If you only have a minute, here's where we'd start:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | B2B startups selling through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | B2B startups selling through email, meetings and proposals
 HubSpot | hubspot.com | A customer platform with marketing, sales and service on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
 Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their data model
 Pipedrive | pipedrive.com | A pipeline CRM with AI meeting briefs on every plan | [See pricing](https://www.pipedrive.com/en/pricing) | A first sales hire who works by stage
@@ -80,7 +80,7 @@ Thankfully, you can run the same test on any CRM during its trial. Connect one r
 
 ### 1. Omniscient
 
-[Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B teams where the founder still sells. It fills in contacts and companies from your email and calendar and writes meeting notes from your call transcripts. The Deal Room builds a proposal for each deal, and Contract Management turns the approved proposal into a contract your buyer signs on the page.
+[Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B teams where the founder still sells. It fills in contacts and companies from your email and calendar and writes meeting notes from your call transcripts. The Deal Room builds a proposal for each deal, and Contract Management gets the contract you upload signed on the page.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=best-crm-for-startups
@@ -94,7 +94,7 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 - **Follow up drafts and a daily digest:** Otto drafts your follow up emails, and a digest each weekday morning lists the meetings, replies and deals that need you.
 - **Sharing rules per inbox:** Each person decides whether teammates see full emails, only who and when, or nothing, and the database enforces it.
 - **Deal Room proposals:** A proposal page for each deal, built from the deal, your calls and your Library, that shows who viewed each part and lets the buyer approve.
-- **Contract Management:** Contracts drafted from the approved proposal and your template, with every redline kept, e-signature on the page and a renewal opportunity 90 days before the end date.
+- **Contract Management:** The contracts you upload, with every version kept, e-signature on the page and alerts 90, 60 and 30 days before the renewal notice date.
 - **Importer for your old CRM:** Companies, contacts, deals and notes come across from HubSpot, Salesforce, Pipedrive or Attio.
 
 #### Pros
@@ -105,7 +105,7 @@ Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=
 
 #### Cons
 
-- **No dialer or email sequences:** Admittedly, Omniscient doesn't call or send cold email, and it doesn't find new leads, so a team that books meetings that way needs another tool.
+- **No dialer or lead search:** Admittedly, Omniscient doesn't call, and it doesn't find new leads, so a team that books meetings that way needs another tool. Email sequences run as Automation workflows from your own mailbox, at a pace meant for follow ups rather than cold email in volume.
 - **Pipeline board starts on Pro:** Starter covers records, notes and drafts, while the board and forecast come with Pro.
 - **Newer product:** Omniscient is younger than most CRMs here and has a shorter track record with larger sales teams.
 

@@ -24,7 +24,7 @@ If you only have a minute, match your reason for leaving HubSpot to the tool we'
 
 | Your reason for leaving HubSpot | Where we'd look first |
 |---|---|
-| You close on proposals and contracts and want both built from the CRM record | Omniscient |
+| You close on proposals and contracts and want both on the CRM record | Omniscient |
 | You want a clear pipeline more than marketing tools | Pipedrive |
 | You've run out of free users | Zoho CRM or EngageBay |
 | You want to design your own objects and fields | Attio |
@@ -39,7 +39,7 @@ If you only have a minute, match your reason for leaving HubSpot to the tool we'
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts built from each deal | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through meetings and proposals
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | Teams that plan their week by pipeline stage
 Zoho CRM | zoho.com | A sales CRM with a free edition and AI agents from Zia | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Teams that want a free plan and help moving off HubSpot
 Attio | attio.com | A flexible CRM that connects to your inbox and calendar | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -84,16 +84,15 @@ For a team leaving HubSpot, our [plans](/#pricing) line up like this:
 
 Fields set to auto follow a rule we chose on purpose. Otto fills an empty value only when he's at least 85% sure and has a quote to show, and he never changes a value someone on your team typed. Values he's less sure of wait in Suggestions for a teammate to accept, because one wrong amount in a forecast costs more than an empty field.
 
-Past the pipeline, the [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library of case studies, decks and videos. You see who on the buying team viewed which part, and the buyer approves on the page, which moves the deal to Won. A full proposal uses 40 of the proposal credits each paid seat adds every month.
+Past the pipeline, the [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library of case studies, decks and videos. You see who on the buying team viewed which part, and when the buyer approves on the page, your team gets an alert. A full proposal uses 40 of the proposal credits each paid seat adds every month.
 
-Contract Management comes with the seat and picks up from the approved proposal:
+Contract Management comes with the seat and picks up once the buyer says yes:
 
-- It drafts the contract from the deal, the proposal and your own template.
-- It keeps every redline as a version, and approval rules send a discount or a changed term to the right person.
-- Each signer signs on the page from their own link.
-- It reads the end date, notice period and auto-renew from each contract, including PDFs you import, and opens a renewal opportunity 90 days before the end date.
+- You upload the contract as a PDF or Word file, and every new upload, including changes a signer sends back, is kept as a version you can compare.
+- Teammates approve each version, and each signer signs on a page in your brand from their own link.
+- Otto reads the end date, notice period and auto-renewal from each signed contract, including ones you signed before, with a quote for each. Once a person confirms them, the owner gets alerts 90, 60 and 30 days before the notice date.
 
-Admittedly, Omniscient does less than HubSpot in a few places. We don't send marketing emails or email sequences, so Otto's drafts go out only when you send them yourself. There's no dialer either, so a team that sells by phone will be better served by Close.
+Admittedly, Omniscient does less than HubSpot in a few places. We don't send marketing emails, and email sequences run as Automation workflows from your own mailbox, with each email approved before Publish. There's no dialer either, so a team that sells by phone will be better served by Close.
 
 The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest, and moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
 
@@ -253,7 +252,7 @@ Beyond the seat price, check these before you book a demo:
 | CRM | Free plan | Free trial | Email sequences start on |
 |---|---|---|---|
 | HubSpot | 2 users, 1,000 contacts | Not on the pricing page | Professional |
-| Omniscient | Free seats for teammates who view or log data | 14 days of Pro, no card | None, single emails you send yourself |
+| Omniscient | Free seats for teammates who view or log data | 14 days of Pro, no card | Starter, $19 a seat, as Automation workflows |
 | Pipedrive | check | 14 days, no card | check |
 | Zoho CRM | 3 users | Length not stated | check |
 | Attio | Up to 3 seats | 14 days of Pro, no card | Pro |
@@ -298,7 +297,7 @@ We'd run the new CRM next to HubSpot for a couple of weeks and switch in this or
 If you'd rather not run it yourself, we migrate your companies, contacts, deals and notes from HubSpot for you. Our [Omniscient vs HubSpot](/blog/omniscient-vs-hubspot/) comparison goes deeper on the two, and our guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers a few more options.
 
 ```cta
-Import your HubSpot data and run Omniscient next to it for 14 days, with proposals and contracts built from each deal.
+Import your HubSpot data and run Omniscient next to it for 14 days, with proposals built from each deal and contracts signed in the same app.
 ```
 
 ```faq
@@ -313,5 +312,5 @@ A: Yes. Omniscient's importer brings over companies, contacts, deal pipelines, d
 Q: What is the simplest HubSpot alternative for a small business?
 A: Less Annoying CRM has one plan at $15 per user a month, with unlimited contacts, email and calendar logging and free phone support. Its trial lasts 30 days and needs no credit card.
 Q: Does HubSpot build proposals and contracts?
-A: HubSpot's Sales Hub pricing page doesn't list proposals, e-signature or contracts, and it sells CPQ, billing and payments as Revenue Hub, a separate product. Omniscient builds a proposal for each deal in its Deal Room, and Contract Management drafts the contract and collects signatures on the page.
+A: HubSpot's Sales Hub pricing page doesn't list proposals, e-signature or contracts, and it sells CPQ, billing and payments as Revenue Hub, a separate product. Omniscient builds a proposal for each deal in its Deal Room, and Contract Management keeps the contracts you upload and collects signatures on the page.
 ```

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="720" height="720" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
-<title id="t">Key dates Omniscient reads from one contract</title>
-<desc id="d">An example contract. Read from its terms: the end date is January 15, 2028, the notice period is 60 days and it renews on its own. On a timeline: the contract starts on January 15, 2027 after both signers sign on the page; on October 17, 2027, 90 days before the end date, Omniscient makes a renewal opportunity; on November 16, 2027 the 60 day notice period starts; on January 15, 2028 the contract ends and renews for 12 months unless notice was given.</desc>
+<title id="t">Key dates Otto reads from one contract</title>
+<desc id="d">An example contract. Read by Otto from its terms and confirmed by a person: the end date is January 15, 2028, the notice period is 60 days and it renews on its own. On a timeline: the contract starts on January 15, 2027 after both signers sign on the page; on August 18, 2027, 90 days before the notice date, the owner gets the first renewal alert, then more at 60 and 30 days; November 16, 2027 is the last day to give notice, 60 days before the end; on January 15, 2028 the contract ends and renews for 12 months unless notice was given.</desc>
 <rect width="720" height="720" fill="#ffffff"/>
 <text x="32" y="48" font-size="19" fill="#737373">Contracts</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Key dates from one contract</text>
@@ -18,18 +18,18 @@
 <rect x="204" y="290" width="16" height="16" fill="#333333" rx="4"/>
 <text x="240" y="304" font-size="18" font-weight="500" fill="#171717">Contract starts</text>
 <text x="240" y="330" font-size="16" fill="#404040">Both signers sign on the page</text>
-<text x="188" y="396" text-anchor="end" font-size="16" fill="#737373">Oct 17, 2027</text>
+<text x="188" y="396" text-anchor="end" font-size="16" fill="#737373">Aug 18, 2027</text>
 <rect x="204" y="382" width="16" height="16" fill="#0c8c5e" rx="4"/>
-<text x="240" y="396" font-size="18" font-weight="500" fill="#171717">Renewal opportunity made</text>
-<text x="240" y="422" font-size="16" fill="#404040">90 days before the end date</text>
+<text x="240" y="396" font-size="18" font-weight="500" fill="#171717">First renewal alert</text>
+<text x="240" y="422" font-size="16" fill="#404040">90 days before the notice date, then 60 and 30</text>
 <text x="188" y="488" text-anchor="end" font-size="16" fill="#737373">Nov 16, 2027</text>
 <rect x="204" y="474" width="16" height="16" fill="#333333" rx="4"/>
-<text x="240" y="488" font-size="18" font-weight="500" fill="#171717">Notice period starts</text>
-<text x="240" y="514" font-size="16" fill="#404040">60 days, read from the terms</text>
+<text x="240" y="488" font-size="18" font-weight="500" fill="#171717">Last day to give notice</text>
+<text x="240" y="514" font-size="16" fill="#404040">60 days before the end, read from the terms</text>
 <text x="188" y="580" text-anchor="end" font-size="16" fill="#737373">Jan 15, 2028</text>
 <rect x="204" y="566" width="16" height="16" fill="#333333" rx="4"/>
 <text x="240" y="580" font-size="18" font-weight="500" fill="#171717">Contract ends</text>
 <text x="240" y="606" font-size="16" fill="#404040">Renews for 12 months unless notice was given</text>
-<text x="32" y="664" font-size="17" fill="#737373">An example contract. Omniscient reads these dates from</text>
-<text x="32" y="688" font-size="17" fill="#737373">each contract you sign or import.</text>
+<text x="32" y="664" font-size="17" fill="#737373">An example contract. Otto reads these dates from each</text>
+<text x="32" y="688" font-size="17" fill="#737373">signed contract, and a person confirms them.</text>
 </svg>
