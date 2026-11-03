@@ -28,6 +28,13 @@ If you're short on time, here's where we'd start:
 - Pick lemlist if email books most of your meetings and LinkedIn is a second touch in the same sequence.
 - Look at Omniscient if you want to approve LinkedIn messages before they go, inside a CRM that fills itself in from your email and calendar.
 
+```tools
+Name | Domain | What it is | Starting price | Best for
+Waalaxy | waalaxy.com | LinkedIn outreach from the cloud, with cold email on its Business plan | [€19 per user a month on the yearly tab](https://www.waalaxy.com/pricing) | Founders and small teams who book meetings on LinkedIn
+lemlist | lemlist.com | Outbound sequences across email, LinkedIn, calls, SMS and WhatsApp | [$55 a month billed yearly for email, $87 per user with LinkedIn](https://www.lemlist.com/pricing) | Teams whose meetings come mostly from email
+Omniscient | tryomniscient.com | A CRM with LinkedIn outreach you approve before it sends | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want outreach and CRM in one place
+```
+
 ## Waalaxy vs lemlist at a glance
 
 Here are the points that usually decide it:
@@ -73,6 +80,8 @@ In a [help article](https://intercom.help/waalaxy/en/articles/15587366-waalaxy-i
 
 Interestingly, reviews written before July 2026 may still describe Waalaxy as a Chrome extension, so check the date on anything you read.
 
+![Waalaxy homepage](tool:waalaxy.com)
+
 Waalaxy's other LinkedIn features, from its own pages:
 
 - 99+ outreach sequences you can use as they are, with automated follow ups and unlimited campaigns.
@@ -80,6 +89,8 @@ Waalaxy's other LinkedIn features, from its own pages:
 - Up to 50,000 prospects per account on Advanced and Business, and CSV imports and exports on every plan.
 
 lemlist links LinkedIn through its Chrome extension instead. Its [extension guide](https://help.lemlist.com/en/articles/4452748-how-to-use-the-lemlist-linkedin-chrome-extension) says the extension "relies on your browser cookies to recognize your current LinkedIn session," so logging out or clearing cookies can break the link until you reconnect.
+
+![lemlist homepage](tool:lemlist.com)
 
 lemlist's LinkedIn side, from its pricing page and help center:
 
@@ -164,6 +175,8 @@ If neither one feels right, our lists of [Waalaxy alternatives](/blog/waalaxy-al
 
 Omniscient is a CRM and LinkedIn outreach software that drafts each lead's messages and sends them only after your team approves. Replies land in an Inbox next to the person's CRM record, and the [CRM](/product/crm/) fills itself in from your email and calendar.
 
+![Omniscient homepage](tool:tryomniscient.com)
+
 Here's how [LinkedIn outreach](/product/linkedin-outbound/) works in Omniscient:
 
 1. Scout finds people from a sentence and shows why each one fits, such as a company hiring SDRs or someone new in their role.
@@ -178,8 +191,6 @@ Admittedly, Omniscient sends on LinkedIn only, with no email, call or SMS steps.
 ```cta
 Approve your LinkedIn messages before they go and keep every reply on the CRM record.
 ```
-
-## Questions about Waalaxy vs lemlist
 
 ```faq
 Q: Is Waalaxy cheaper than lemlist?

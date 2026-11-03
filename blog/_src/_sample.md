@@ -78,8 +78,6 @@ working hours: 09:00 to 17:30
 Try Omniscient free for 14 days.
 ```
 
-## Questions
-
 ```faq
 Q: Does the sample post ever publish?
 A: No. Its name starts with an underscore, so the builder adds noindex and leaves it out of the index and the sitemap.

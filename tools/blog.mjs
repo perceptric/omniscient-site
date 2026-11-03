@@ -7,6 +7,7 @@
 // Sources live in blog/_src/<slug>.md. A file whose name starts with "_" is a draft: it builds when named, with noindex,
 // and never shows in the index, related posts or the sitemap. A broken post is skipped with a message, never a crash.
 // Each post gets assets/blog/<slug>/cover.svg, and og.png (1200x630) when Playwright is installed.
+// Tool screenshots and logos come from tools/shot-tools.mjs (assets/blog/tools/<domain>.webp, assets/blog/logos/<domain>.png).
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { join, basename, dirname, posix } from "node:path";
 import { createRequire } from "node:module";
@@ -204,6 +205,7 @@ function link(l, ctx) {
 }
 
 function inlineImage(l, ctx) {
+  if (/^tool:/i.test(l.url.trim())) { ctx.warn(`![${l.text}](${l.url.trim()}) must sit on its own line to show the screenshot`); return esc(l.text); }
   const src = assetUrl(l.url, ctx);
   if (!src) return esc(l.text);
   return `<img class="bl-inline-img" src="${esc(src)}" alt="${esc(l.text)}"${sizeAttrs(src)} loading="lazy" decoding="async">`;
@@ -251,8 +253,43 @@ function sizeAttrs(src) {
   return s ? ` width="${s.w}" height="${s.h}"` : "";
 }
 
+// Width and height of a WebP file (lossy VP8, lossless VP8L or extended VP8X).
+function webpSize(file) {
+  try {
+    const b = readFileSync(file);
+    if (b.toString("ascii", 0, 4) !== "RIFF" || b.toString("ascii", 8, 12) !== "WEBP") return null;
+    const kind = b.toString("ascii", 12, 16);
+    if (kind === "VP8X") return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+    if (kind === "VP8 ") return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+    if (kind === "VP8L") { const n = b.readUInt32LE(21); return { w: 1 + (n & 0x3fff), h: 1 + ((n >> 14) & 0x3fff) }; }
+  } catch { /* no size */ }
+  return null;
+}
+
+// A tool's homepage (assets/blog/tools/<domain>.webp from tools/shot-tools.mjs) in a browser frame, in the gray band.
+// Returns "" when there's no screenshot.
+function toolFigure(domain, name, alt, ctx) {
+  if (!domain) return "";
+  const file = join(root, "assets", "blog", "tools", `${domain}.webp`);
+  if (!existsSync(file)) return "";
+  const s = webpSize(file) || { w: 1200, h: 750 };
+  const month = statSync(file).mtime.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+  const src = `/assets/blog/tools/${domain}.webp`;
+  const bar = `<div class="bl-browser__bar" aria-hidden="true"><span class="bl-browser__dots"><i></i><i></i><i></i></span><span class="bl-browser__url">${esc(domain)}</span></div>`;
+  return `<figure class="bl-fig bl-site"><div class="bl-band"><div class="bl-browser">${bar}<img src="${esc(src)}" alt="${esc(alt || `${name} homepage`)}" width="${s.w}" height="${s.h}" loading="lazy" decoding="async"></div></div><figcaption><a href="https://${esc(domain)}/" rel="nofollow noopener">${esc(name)} homepage, ${month}</a></figcaption></figure>`;
+}
+
 function figure({ text: alt, url, title }, ctx) {
   if (/\.shot\.html$/i.test(url.trim())) return shot(url.trim(), alt, title, ctx);
+  const tool = url.trim().match(/^tool:(.*)$/i);
+  if (tool) {
+    const domain = cleanDomain(tool[1]);
+    const known = [...ctx.tools.values()].find((t) => t.domain === domain);
+    const name = known ? plain(inline(known.name, ctx)) : alt.replace(/\s+homepage$/i, "").trim() || domain;
+    const html = toolFigure(domain, name, alt.trim(), ctx);
+    if (!html) ctx.warn(`no screenshot for ${domain}: run node tools/shot-tools.mjs ${domain}`);
+    return html;
+  }
   const src = assetUrl(url, ctx);
   if (!src) return "";
   if (!alt.trim()) ctx.warn(`image ${src} has no alt text`);
@@ -295,6 +332,8 @@ const startsBlock = (lines, i) => FENCE.test(lines[i]) || HEADING.test(lines[i])
 function blocks(lines, ctx, tight = false) {
   const out = [];
   let i = 0;
+  let lastH2 = null; // the text of a ## heading when it's the block just before
+
   while (i < lines.length) {
     const line = lines[i];
     if (blank(line)) { i++; continue; }
@@ -316,12 +355,19 @@ function blocks(lines, ctx, tight = false) {
         body.push(lines[i]);
       }
       if (!closed) ctx.warn(`a ${mark}${fence[2]} block never closes; it runs to the end of the post`);
+      if (fence[2].toLowerCase() === "faq" && lastH2 !== null) ctx.warn(`the ## "${lastH2}" heading sits right before the faq block, which prints its own "FAQs" heading; delete it`);
+      lastH2 = null;
       out.push(special(fence[2].toLowerCase(), body, ctx));
       continue;
     }
 
     const h = line.match(HEADING);
-    if (h) { out.push(heading(h[1].length, h[2], ctx)); i++; continue; }
+    if (h) {
+      const html = heading(h[1].length, h[2], ctx);
+      lastH2 = /^<h2\b/.test(html) ? plain(html) : null;
+      out.push(html); i++; continue;
+    }
+    lastH2 = null;
 
     if (HR.test(line)) { out.push("<hr>"); i++; continue; }
 
@@ -365,7 +411,27 @@ function heading(level, raw, ctx) {
   for (let n = 2; ctx.ids.has(id); n++) id = `${slugify(text)}-${n}`;
   ctx.ids.add(id);
   if (level === 2) ctx.toc.push({ id, html: html.replace(/<a\b[^>]*>|<\/a>/g, "") });
+  if (level === 3) {
+    const tool = toolHeading(raw, text, id, ctx);
+    if (tool) return tool;
+  }
   return `<h${level} id="${id}">${html}</h${level}>`;
+}
+
+// "### 3. Name" or "### 3. Name: subtitle", when Name is in the post's tools block: the number in a square tag, the
+// logo and the name, then the tool's homepage screenshot right under it.
+function toolHeading(raw, text, id, ctx) {
+  const m = text.match(/^(\d{1,2})\.\s+(.+?)(?::\s+.*)?$/);
+  if (!m) return "";
+  const tool = ctx.tools.get(toolKey(m[2]));
+  if (!tool) return "";
+  const name = plain(inline(tool.name, ctx));
+  const logo = logoFor(tool.name, tool.domain);
+  const rest = inline(raw.replace(/^\s*\d{1,2}\\?\.\s+/, ""), ctx);
+  const img = logo ? `<span class="bl-toolh__logo"><img src="${esc(logo)}" alt="" width="20" height="20" loading="lazy" decoding="async"></span>` : "";
+  const fig = toolFigure(tool.domain, name, "", ctx);
+  if (!fig && tool.domain) ctx.warn(`no screenshot for ${name} (${tool.domain}): run node tools/shot-tools.mjs ${tool.domain}`);
+  return `<h3 id="${id}" class="bl-toolh"><span class="bl-toolh__n">${m[1].padStart(2, "0")}</span>${img}<span class="bl-toolh__name">${rest}</span></h3>${fig ? `\n${fig}` : ""}`;
 }
 
 function list(lines, start, ctx) {
@@ -463,8 +529,10 @@ const LOGOS = (() => {
   try { return readdirSync(join(root, "assets", "logos")); } catch { return []; }
 })();
 
+// Omniscient's own icon, then the logo tools/shot-tools.mjs saved, then assets/logos/, then the site's favicon.
 function logoFor(name, domain) {
   if (/omniscient/i.test(name) || domain === "tryomniscient.com") return "/assets/brand/icon.svg";
+  if (domain && existsSync(join(root, "assets", "blog", "logos", `${domain}.png`))) return `/assets/blog/logos/${domain}.png`;
   const keys = [name.toLowerCase().replace(/[^a-z0-9]/g, ""), (domain || "").split(".")[0]];
   for (const k of keys) {
     const file = LOGOS.find((f) => f.replace(/\.\w+$/, "") === k);
@@ -473,19 +541,47 @@ function logoFor(name, domain) {
   return domain ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64` : null;
 }
 
-function tools(body, ctx) {
+const cleanDomain = (raw) => (raw || "").trim().replace(/^https?:\/\//i, "").replace(/^www\./i, "").replace(/[/?#].*$/, "").toLowerCase();
+const toolKey = (name) => name.replace(/[*_`[\]]/g, "").trim().toLowerCase();
+
+// The rows of a ```tools block. warn gets each line it can't read.
+function toolRows(body, warn) {
   const rows = [];
   body.forEach((line, n) => {
     if (!line.trim() || TABLE_SEP.test(line)) return;
     const c = cells(line);
     const [name, domainRaw = ""] = c;
-    const domain = domainRaw.replace(/^https?:\/\//i, "").replace(/^www\./i, "").replace(/[/?#].*$/, "").toLowerCase();
+    const domain = cleanDomain(domainRaw);
     const looksDomain = /^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(domain);
     if (rows.length === 0 && !looksDomain && /^(name|tool)s?$/i.test(name)) return; // header line
-    if (c.length < 3 || !name) { ctx.warn(`tools line ${n + 1} needs "Name | domain.com | what it is | price | best for": ${line.trim()}`); return; }
-    if (!looksDomain) ctx.warn(`tools: "${name}" has no domain (${domainRaw || "empty"}), so no logo`);
+    if (c.length < 3 || !name) { warn(`tools line ${n + 1} needs "Name | domain.com | what it is | price | best for": ${line.trim()}`); return; }
+    if (!looksDomain) warn(`tools: "${name}" has no domain (${domainRaw || "empty"}), so no logo`);
     rows.push({ name, domain: looksDomain ? domain : "", what: c[2] || "", price: c[3] || "", best: c[4] || "" });
   });
+  return rows;
+}
+
+// Every tool in a post's ```tools blocks, by lowercase name, read before the post renders so a numbered heading
+// above the table still finds its tool.
+function toolsIn(lines) {
+  const map = new Map();
+  for (let i = 0; i < lines.length; i++) {
+    const f = lines[i].match(FENCE);
+    if (!f) continue;
+    const body = [];
+    for (i++; i < lines.length; i++) {
+      const t = lines[i].trim();
+      if (t.startsWith(f[1]) && t.replace(/[`~]/g, "") === "" && t[0] === f[1][0]) break;
+      body.push(lines[i]);
+    }
+    if (f[2].toLowerCase() !== "tools") continue;
+    for (const r of toolRows(body, () => {})) if (!map.has(toolKey(r.name))) map.set(toolKey(r.name), r);
+  }
+  return map;
+}
+
+function tools(body, ctx) {
+  const rows = toolRows(body, ctx.warn);
   if (!rows.length) { ctx.warn("a ```tools block has no tools"); return ""; }
   const tr = rows.map((r) => {
     const logo = logoFor(r.name, r.domain);
@@ -529,13 +625,14 @@ function faq(body, ctx) {
     return ok;
   });
   if (!good.length) return "";
+  const title = heading(2, "FAQs", ctx);
   const html = good.map((it, n) => {
     const q = inline(it.q.join(" ").trim(), ctx);
     const a = blocks(it.a, ctx);
     ctx.faq.push({ q: plain(q), a: plain(a) });
     return `<details${n === 0 ? " open" : ""}><summary>${q}</summary><div class="bl-faq__a">${a}</div></details>`;
   }).join("\n");
-  return `<div class="bl-faq">\n${html}\n</div>`;
+  return `${title}\n<div class="bl-faq">\n${html}\n</div>`;
 }
 
 function steps(body, ctx) {
@@ -701,7 +798,7 @@ function render(post, known) {
   const warnings = [];
   const ctx = {
     slug: post.slug, toc: [], faq: [], ids: new Set(), h1s: [], links: [], checks: [], visuals: 0, usesShot: false,
-    warn: (m) => warnings.push(m),
+    warn: (m) => warnings.push(m), tools: toolsIn(post.body.split("\n")),
   };
   const html = blocks(post.body.split("\n"), ctx);
   const words = plain(html).split(/\s+/).filter(Boolean).length;

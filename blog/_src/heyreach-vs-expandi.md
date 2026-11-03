@@ -31,7 +31,7 @@ Omniscient | tryomniscient.com | LinkedIn outreach you approve, inside a CRM tha
 
 ## HeyReach vs Expandi at a glance
 
-Here's what each vendor lists on its own site today:
+This table uses only what each vendor lists on its own site today:
 
 | Feature | HeyReach | Expandi |
 |---|---|---|
@@ -48,7 +48,11 @@ Here's what each vendor lists on its own site today:
 
 ## What HeyReach does well
 
-HeyReach is a LinkedIn automation software that runs outreach from many LinkedIn accounts at once and rotates sending between them. Its homepage headline promises "Unlimited senders, one fixed cost," and the plans on its [pricing page](https://www.heyreach.io/pricing) follow that line:
+HeyReach is a LinkedIn automation software that runs outreach from many LinkedIn accounts at once and rotates sending between them. Its homepage headline promises "Unlimited senders, one fixed cost," and the plans on its [pricing page](https://www.heyreach.io/pricing) follow that line.
+
+![HeyReach homepage](tool:heyreach.io)
+
+Four parts of it stood out to us:
 
 - Growth gives every sender unlimited campaigns, the API, webhooks and an MCP server.
 - Agency costs $999 a month for 25 senders and adds one white label brand and a dedicated Slack channel.
@@ -59,7 +63,11 @@ HeyReach charges the same way for every LinkedIn account, whether it belongs to 
 
 ## What Expandi does well
 
-Expandi is a LinkedIn automation software that runs outreach sequences from the cloud, with a dedicated IP address in your country for each account. Its [pricing page](https://expandi.io/pricing/) lists one Business plan per seat, and these are the parts we'd look at first:
+Expandi is a LinkedIn automation software that runs outreach sequences from the cloud, with a dedicated IP address in your country for each account. Its [pricing page](https://expandi.io/pricing/) lists one Business plan per seat.
+
+![Expandi homepage](tool:expandi.io)
+
+These are the parts we'd look at first:
 
 - Business includes unlimited campaigns and templates, a blacklist, duplicate checks and Profile Auto Warm-up.
 - Builder campaigns mix invitations, LinkedIn messages, InMail and email, with conditions that branch on whether people accept, reply or engage.
@@ -81,7 +89,7 @@ Both tools bill per LinkedIn account and let teammates who don't send join free,
 
 Agency and Unlimited teams can ask HeyReach for a 30 day trial. Once Expandi's 7 day trial ends, it charges for the billing period you picked unless you cancel first.
 
-Expandi's [help center](https://help.expandi.io/en/articles/10261458-manage-subscriptions-seats-for-your-linkedin-accounts-workspace) adds one billing detail to remember: disconnecting a LinkedIn account "doesn't cancel the seat," so remove the seat from your subscription as well. Our guide to [HeyReach alternatives](/blog/heyreach-alternatives/) lists eight more tools with current prices if neither suits you.
+Expandi's [help center](https://help.expandi.io/en/articles/10261458-manage-subscriptions-seats-for-your-linkedin-accounts-workspace) adds one billing detail to remember: disconnecting a LinkedIn account "doesn't cancel the seat," so remove the seat from your subscription as well. Our guide to [HeyReach alternatives](/blog/heyreach-alternatives/) lists 11 more tools with current prices if neither suits you.
 
 ## Account safety in HeyReach and Expandi
 
@@ -144,7 +152,7 @@ Luckily, the two trials line up well enough to test both tools side by side befo
 
 ## Inbox, CRM and integrations
 
-Here's where a lead's reply lands and how it reaches your CRM:
+A lead's reply lands in a different place in each tool, and reaches your CRM by a different route:
 
 | Where replies go | HeyReach | Expandi |
 |---|---|---|
@@ -157,6 +165,8 @@ Expandi's [integrations page](https://expandi.io/integrations/) adds a sentiment
 ## Where Omniscient fits
 
 Omniscient is a CRM and LinkedIn outreach software that drafts a message for each lead and sends only what your team approves. Every reply lands in one Inbox next to the person's CRM record, and the record fills itself in from your email and calendar.
+
+![Omniscient homepage](tool:tryomniscient.com)
 
 We built it for small B2B teams that would rather skip the sync between an outreach tool and a CRM, and day to day it works like this:
 
@@ -176,13 +186,11 @@ Paid seats start at [$19 per seat a month, billed yearly](/#pricing), and the fr
 - Choose Expandi if you want image or video personalization, or campaigns that start from profile views.
 - Choose Omniscient if you want to approve messages before they send and keep every reply on a CRM record without a sync.
 
-Frankly, we'd let your email setup decide between the first two. If email already lives in another tool, HeyReach adds LinkedIn beside it, and if it doesn't, Expandi covers both channels in one place. Our guide to [Expandi alternatives](/blog/expandi-alternatives/) covers eight more options if neither fits.
+Frankly, we'd let your email setup decide between the first two. If email already lives in another tool, HeyReach adds LinkedIn beside it, and if it doesn't, Expandi covers both channels in one place. Our guide to [Expandi alternatives](/blog/expandi-alternatives/) covers 11 more options if neither fits.
 
 ```cta
 Approve your LinkedIn messages before they send, and keep each reply on a CRM record that fills itself in. Try Omniscient free for 14 days with no credit card.
 ```
-
-## Questions about HeyReach vs Expandi
 
 ```faq
 Q: Is HeyReach cheaper than Expandi?

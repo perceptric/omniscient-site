@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 776" width="720" height="776" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 985" width="720" height="985" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Pick a CRM with LinkedIn integration by where your reps write to buyers</title>
-<desc id="d">In Sales Navigator with Advanced Plus seats: HubSpot, Salesforce or Dynamics 365. In Sales Navigator with a low CRM budget: Zoho CRM. In LinkedIn, when you want outreach you approve: Omniscient. In LinkedIn, writing every message yourself: Breakcold. In Gmail and LinkedIn in one sequence: NetHunt CRM. In LinkedIn, when you only save profiles: folk.</desc>
+<desc id="d">In Sales Navigator with Advanced Plus seats: HubSpot, Salesforce or Dynamics 365. In Sales Navigator with a low CRM budget: Zoho CRM. In LinkedIn, when you want outreach you approve: Omniscient. In LinkedIn, writing every message yourself: Breakcold. In Gmail and LinkedIn in one sequence: NetHunt CRM. In LinkedIn alone, with a Kanban board: Kanbox. In a pipeline CRM you already run: Pipedrive or Attio with a marketplace app. In LinkedIn, when you only save profiles: folk, Salesflare or Nimble.</desc>
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#0a0a0a"/></marker></defs>
-<rect width="720" height="776" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="775" fill="none" stroke="#0a0a0a"/>
+<rect width="720" height="985" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="984" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Pick by habit]</text>
 <text x="32" y="88" font-size="31" font-weight="600" fill="#0a0a0a">Where your reps <tspan fill="#a3a3a3">write to buyers</tspan></text>
 <rect x="32.5" y="124.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
@@ -23,8 +23,8 @@
 <text x="50" y="372" font-size="22" fill="#0a0a0a">In LinkedIn, and you want</text>
 <text x="50" y="400" font-size="22" fill="#0a0a0a">outreach you approve</text>
 <rect x="432.5" y="332.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
-<rect x="450.5" y="370.5" width="15" height="15" fill="#10b981" stroke="#0a0a0a"/>
-<text x="476" y="385" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<rect x="450.5" y="378.5" width="15" height="15" fill="#10b981" stroke="#0a0a0a"/>
+<text x="476" y="393" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
 <line x1="393" y1="378.5" x2="430" y2="378.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
 <rect x="32.5" y="436.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="50" y="476" font-size="22" fill="#0a0a0a">In LinkedIn, writing every</text>
@@ -39,9 +39,23 @@
 <text x="450" y="593" font-size="21" font-weight="600" fill="#0a0a0a">NetHunt CRM</text>
 <line x1="393" y1="586.5" x2="430" y2="586.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
 <rect x="32.5" y="644.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="50" y="684" font-size="22" fill="#0a0a0a">In LinkedIn, and you only</text>
-<text x="50" y="712" font-size="22" fill="#0a0a0a">save profiles</text>
+<text x="50" y="684" font-size="22" fill="#0a0a0a">In LinkedIn alone, with</text>
+<text x="50" y="712" font-size="22" fill="#0a0a0a">a Kanban board</text>
 <rect x="432.5" y="644.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="450" y="697" font-size="21" font-weight="600" fill="#0a0a0a">folk</text>
+<text x="450" y="697" font-size="21" font-weight="600" fill="#0a0a0a">Kanbox</text>
 <line x1="393" y1="690.5" x2="430" y2="690.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="748.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="788" font-size="22" fill="#0a0a0a">In a pipeline CRM you</text>
+<text x="50" y="816" font-size="22" fill="#0a0a0a">already run</text>
+<rect x="432.5" y="748.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="787" font-size="21" font-weight="600" fill="#0a0a0a">Pipedrive or Attio</text>
+<text x="450" y="815" font-size="21" font-weight="600" fill="#0a0a0a">with an app</text>
+<line x1="393" y1="794.5" x2="430" y2="794.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="852.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="892" font-size="22" fill="#0a0a0a">In LinkedIn, and you only</text>
+<text x="50" y="920" font-size="22" fill="#0a0a0a">save profiles</text>
+<rect x="432.5" y="852.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="891" font-size="21" font-weight="600" fill="#0a0a0a">folk, Salesflare</text>
+<text x="450" y="919" font-size="21" font-weight="600" fill="#0a0a0a">or Nimble</text>
+<line x1="393" y1="898.5" x2="430" y2="898.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
 </svg>

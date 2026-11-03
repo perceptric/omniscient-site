@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" width="720" height="640" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 902" width="720" height="902" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Which CRM for LinkedIn prospecting to try first</title>
-<desc id="d">If you want LinkedIn outreach you approve inside the CRM, start with Omniscient. If you already pay for Sales Navigator Advanced Plus, start with HubSpot or Salesforce. If you want a free plan for up to 3 users, start with Zoho CRM. If you want your CRM in a browser extension while you work in LinkedIn, start with folk or Salesflare. If you send every LinkedIn message by hand, start with Breakcold. Every CRM here has a free plan or a free trial.</desc>
-<rect width="720" height="640" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="639" fill="none" stroke="#0a0a0a"/>
+<desc id="d">If you want LinkedIn outreach you approve inside the CRM, start with Omniscient. If you already pay for Sales Navigator Advanced Plus, start with HubSpot, Salesforce or Microsoft Dynamics 365 Sales. If you want a free plan for up to 3 users, start with Zoho CRM. If you like a pipeline CRM and will add a LinkedIn app from its marketplace, start with Pipedrive or Attio. If you want your CRM in a browser extension while you work in LinkedIn, start with folk, Salesflare or Nimble. If you sell from Gmail with email and LinkedIn in one sequence, start with NetHunt CRM. If you send every LinkedIn message by hand, start with Breakcold. If you need only a LinkedIn inbox and a Kanban board, start with Kanbox. Most CRMs here have a free plan or a free trial.</desc>
+<rect width="720" height="902" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="901" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Pick a CRM]</text>
 <text x="32" y="86" font-size="30" font-weight="600" fill="#0a0a0a">Match it to <tspan fill="#a3a3a3">how you prospect</tspan></text>
 <text x="32" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[If your team]</text>
@@ -22,8 +22,8 @@
 <line x1="393" x2="415" y1="268" y2="268" stroke="#0a0a0a"/>
 <polygon points="415,263 424,268 415,273" fill="#0a0a0a"/>
 <rect x="425.5" y="230.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="442" y="262" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot or</text>
-<text x="442" y="289" font-size="21" font-weight="600" fill="#0a0a0a">Salesforce</text>
+<text x="442" y="262" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot, Salesforce</text>
+<text x="442" y="289" font-size="21" font-weight="600" fill="#0a0a0a">or Dynamics 365</text>
 
 <rect x="32.5" y="318.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="48" y="350" font-size="21" fill="#0a0a0a">Wants a free plan for</text>
@@ -34,21 +34,45 @@
 <text x="442" y="364" font-size="21" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
 
 <rect x="32.5" y="406.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="438" font-size="21" fill="#0a0a0a">Works in LinkedIn with</text>
-<text x="48" y="465" font-size="21" fill="#0a0a0a">a browser extension</text>
+<text x="48" y="438" font-size="21" fill="#0a0a0a">Likes a pipeline CRM and</text>
+<text x="48" y="465" font-size="21" fill="#0a0a0a">will add a LinkedIn app</text>
 <line x1="393" x2="415" y1="444" y2="444" stroke="#0a0a0a"/>
 <polygon points="415,439 424,444 415,449" fill="#0a0a0a"/>
 <rect x="425.5" y="406.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="442" y="438" font-size="21" font-weight="600" fill="#0a0a0a">folk or</text>
-<text x="442" y="465" font-size="21" font-weight="600" fill="#0a0a0a">Salesflare</text>
+<text x="442" y="452" font-size="21" font-weight="600" fill="#0a0a0a">Pipedrive or Attio</text>
 
 <rect x="32.5" y="494.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="48" y="526" font-size="21" fill="#0a0a0a">Sends every LinkedIn</text>
-<text x="48" y="553" font-size="21" fill="#0a0a0a">message by hand</text>
+<text x="48" y="526" font-size="21" fill="#0a0a0a">Works in LinkedIn with</text>
+<text x="48" y="553" font-size="21" fill="#0a0a0a">a browser extension</text>
 <line x1="393" x2="415" y1="532" y2="532" stroke="#0a0a0a"/>
 <polygon points="415,527 424,532 415,537" fill="#0a0a0a"/>
 <rect x="425.5" y="494.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
-<text x="442" y="540" font-size="21" font-weight="600" fill="#0a0a0a">Breakcold</text>
+<text x="442" y="526" font-size="21" font-weight="600" fill="#0a0a0a">folk, Salesflare</text>
+<text x="442" y="553" font-size="21" font-weight="600" fill="#0a0a0a">or Nimble</text>
 
-<text x="32" y="614" font-size="19" fill="#737373">Every CRM here has a free plan or a free trial.</text>
+<rect x="32.5" y="582.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="614" font-size="21" fill="#0a0a0a">Sells from Gmail, with email</text>
+<text x="48" y="641" font-size="21" fill="#0a0a0a">and LinkedIn in one sequence</text>
+<line x1="393" x2="415" y1="620" y2="620" stroke="#0a0a0a"/>
+<polygon points="415,615 424,620 415,625" fill="#0a0a0a"/>
+<rect x="425.5" y="582.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="628" font-size="21" font-weight="600" fill="#0a0a0a">NetHunt CRM</text>
+
+<rect x="32.5" y="670.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="702" font-size="21" fill="#0a0a0a">Sends every LinkedIn</text>
+<text x="48" y="729" font-size="21" fill="#0a0a0a">message by hand</text>
+<line x1="393" x2="415" y1="708" y2="708" stroke="#0a0a0a"/>
+<polygon points="415,703 424,708 415,713" fill="#0a0a0a"/>
+<rect x="425.5" y="670.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="716" font-size="21" font-weight="600" fill="#0a0a0a">Breakcold</text>
+
+<rect x="32.5" y="758.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="790" font-size="21" fill="#0a0a0a">Needs only a LinkedIn inbox</text>
+<text x="48" y="817" font-size="21" fill="#0a0a0a">and a Kanban board</text>
+<line x1="393" x2="415" y1="796" y2="796" stroke="#0a0a0a"/>
+<polygon points="415,791 424,796 415,801" fill="#0a0a0a"/>
+<rect x="425.5" y="758.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="804" font-size="21" font-weight="600" fill="#0a0a0a">Kanbox</text>
+
+<text x="32" y="876" font-size="19" fill="#737373">Most CRMs here have a free plan or a free trial.</text>
 </svg>

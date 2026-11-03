@@ -14,7 +14,7 @@ summary: "Attio and Omniscient side by side on how records stay current, LinkedI
 
 If you're weighing Omniscient vs Attio, you probably want a CRM that stays current without extra typing, and you want to know which one can run your LinkedIn outreach. Both read your email and calendar, and they part ways on what happens after that.
 
-We build Omniscient, so read this knowing which side we sit on. We read Attio's pricing page and help center on November 2, 2026, plus the LinkedIn apps in its directory. We haven't run Attio with a live sales team, so everything we say about it comes from what Attio publishes.
+We build Omniscient, so read this knowing which side we sit on. We read Attio's pricing page and help center again on November 3, 2026, plus three LinkedIn apps from its directory and their makers' sites. We haven't run Attio with a live sales team, so what we say about it comes from what Attio and the app makers publish.
 
 Our short answer depends mostly on where your first conversation with a buyer happens:
 
@@ -32,6 +32,8 @@ Attio | attio.com | A flexible CRM with email sequences, call recording and AI o
 
 Attio is a flexible CRM that builds records from your email and calendar and lets you shape the data model around how your business works.
 
+![Attio homepage](tool:attio.com)
+
 These stood out to us on Attio's [pricing page](https://attio.com/pricing):
 
 - Email and calendar sync comes with every plan, Free included.
@@ -45,11 +47,12 @@ Honestly, Attio is where we'd point a team whose process doesn't fit a standard 
 
 Omniscient is a CRM and LinkedIn outreach tool that finds leads and sends only the LinkedIn messages your team has approved. The CRM side fills itself in from your email, calendar and call transcripts, and on Pro it shows the quote behind every value it writes.
 
+![Omniscient homepage](tool:tryomniscient.com)
+
 One app covers the path from a first LinkedIn note to a signed deal:
 
 - Connect Gmail or Outlook and your calendar, and each email and meeting lands on the right person, company and deal.
-- Leads from forms, LinkedIn campaigns, events and imports are matched by email, LinkedIn address and company domain, so each person has one record.
-- Call notes come from the transcripts Google Meet, Zoom and Teams already create, so a bot joins only if you add call recording.
+- Leads from forms, campaigns, events and imports merge into one record per person, matched by email and LinkedIn address, with companies matched by domain.
 - Scout finds leads from a plain sentence like "founders at fintech startups in New York" and scores each one out of 100 for fit and timing, using signals like hiring, a new role or a post on your topic.
 - Otto, our agent, drafts each LinkedIn note from the person's profile and recent activity, and your team approves the text before anything goes out.
 
@@ -88,11 +91,26 @@ LinkedIn is the widest gap, because Attio doesn't send LinkedIn invitations or m
 
 Attio's own [help center](https://attio.com/help/reference/automations/sequences/create-a-sequence) suggests sequences for warm leads and existing customers, and it names "cold or high volume sales outreach" as a case where you shouldn't use them.
 
-So Attio teams that prospect on LinkedIn add another tool, and Attio's app directory lists a few:
+So Attio teams that prospect on LinkedIn add another tool, and Attio's app directory lists these three:
 
-- [lemlist](https://attio.com/apps/lemlist), a sales engagement tool that runs multichannel campaigns and lets you add Attio people to them.
-- A [HeyReach app](https://attio.com/apps/hey-reach) built by Neon Deer, which pushes Attio people into HeyReach campaigns and logs campaign events on their timeline.
-- [SuperLinkIn](https://attio.com/apps/super-link-in), which saves your direct conversations to the person's record as a note.
+```tools
+Name | Domain | What it is | Starting price | Best for
+lemlist | lemlist.com | A sales engagement tool with email and LinkedIn steps in one campaign | [Multichannel from $87 per user a month, billed yearly](https://www.lemlist.com/pricing) | Email and LinkedIn in one sequence
+HeyReach | heyreach.io | A LinkedIn outreach tool priced per sending account | [Growth from $79 per sender a month, or $64 billed yearly](https://www.heyreach.io/pricing) | Teams running several senders
+SuperLinkIn | superlinkin.com | A Chrome extension that saves LinkedIn chats to Attio | [From $10 a month, or $5 billed yearly, after 7 free days](https://superlinkin.com/pricing) | Reps who message by hand
+```
+
+lemlist is a sales engagement tool that runs email and LinkedIn steps in one campaign. Attio built the [lemlist app](https://attio.com/apps/lemlist) itself, and it adds Attio people to lemlist campaigns, though its page doesn't say whether replies come back into Attio.
+
+![lemlist homepage](tool:lemlist.com)
+
+HeyReach is a LinkedIn outreach tool that sends from many accounts at once and charges per sender. Its [Attio app](https://attio.com/apps/hey-reach), built by Neon Deer Data Labs, pushes people into campaigns and keeps each reply thread as a note on the person.
+
+![HeyReach homepage](tool:heyreach.io)
+
+SuperLinkIn is a Chrome extension that gives your LinkedIn messages a faster inbox, with labels, snoozing and keyboard shortcuts. Its [Attio app](https://attio.com/apps/super-link-in) saves one to one chats as a note on the person, and CRM connections start on its Plus plan.
+
+![SuperLinkIn homepage](tool:superlinkin.com)
 
 Whichever one you pick, two things follow:
 
@@ -124,7 +142,7 @@ Two more rules came out of building the engine:
 
 Pacing lowers the risk, and it can't remove it. LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) says tools that "automate activity on LinkedIn's website" break its User Agreement and can get an account restricted or shut down.
 
-Our guides to [automating LinkedIn outreach without getting restricted](/blog/automate-linkedin-outreach-without-getting-restricted/) and [LinkedIn connection request limits](/blog/linkedin-connection-request-limit/) go deeper on the risk and the numbers.
+Our guides to [automating LinkedIn outreach without getting restricted](/blog/automate-linkedin-outreach-without-getting-restricted/) and [LinkedIn connection request limits](/blog/linkedin-connection-request-limit/) go deeper.
 
 When someone replies, Otto drafts an answer you can edit, and the [LinkedIn Outbound page](/product/linkedin-outbound/) shows that flow screen by screen.
 
@@ -149,20 +167,20 @@ Attio prices its AI with credits, and its pricing FAQ says workspace credits pay
 
 - Seat credits for Ask Attio come to 100, 500, 1,000 or 2,500 per user a month, from Free to Enterprise.
 - Workspace credits come to 250, 1,500 or 10,000 a month on Free, Plus and Pro, and Enterprise is custom.
-- Extra workspace credits start on Plus at 5,000 a month for $70 billed yearly, or $85 billed monthly.
+- Extra workspace credits come in packs, starting at 5,000 a month for $70 billed yearly, or $85 billed monthly.
 
 Omniscient puts the CRM's AI in the seat price. Ask Omniscient answers questions about any account in plain English and links each answer to the records it used.
 
 The one place we use credits is the [Deal Room](/product/deal-room/), where each paid seat adds monthly proposal credits and a full proposal uses 40.
 
-Interestingly, the two models suit different teams. Credits show you exactly what AI costs as usage grows, while AI in the seat makes the seat price the number you plan around.
+Interestingly, each model suits a different team. Credits show what AI costs as usage grows, and AI in the seat leaves one number to plan around.
 
 ## Omniscient vs Attio pricing
 
 Both charge per seat and give a lower price for yearly billing:
 
 ```callout
-Prices from attio.com/pricing and our own pricing section, read on November 2, 2026.
+Prices from attio.com/pricing and our own pricing section, read on November 3, 2026.
 ```
 
 | | Attio | Omniscient |
@@ -177,11 +195,10 @@ Prices from attio.com/pricing and our own pricing section, read on November 2, 2
 
 ![Attio and Omniscient prices per seat a month, billed yearly: Attio Free $0 for up to 3 seats, Plus $35, Pro $79 and Enterprise custom; Omniscient Free $0 for teammates who only view or log data, Starter $19, Pro $49 and Business $99](pricing.svg)
 
-A few things move the bill more than the headline price:
+Two things move the bill more than the headline price:
 
 - On Attio, sequences, Call Intelligence and custom objects start on Pro, so price Attio at Pro if you need any of them.
-- On Attio, heavy use of AI and workflows can mean buying extra workspace credits.
-- On Omniscient, the forecast and fields filled with proof start on Pro, and a recording bot costs $25 per seat on top.
+- On Omniscient, the forecast and fields filled with proof start on Pro.
 
 ## Moving from Attio to Omniscient
 
@@ -219,11 +236,9 @@ If you plan to keep Attio for email, our roundup of the [best LinkedIn automatio
 Try Omniscient free for 14 days, next to the CRM you use today.
 ```
 
-## Questions about Omniscient vs Attio
-
 ```faq
 Q: Does Attio have LinkedIn automation?
-A: Attio doesn't send on LinkedIn. Its sequences send email only, so teams that prospect on LinkedIn add an app from Attio's directory, such as lemlist or HeyReach.
+A: Attio doesn't send on LinkedIn. Its sequences send email only, so teams that prospect on LinkedIn add an app from Attio's directory, such as lemlist, HeyReach or SuperLinkIn.
 Q: Is Omniscient cheaper than Attio?
 A: Paid seats start at $19 a month on Omniscient and $35 on Attio, billed yearly. Compare the plan you'd really use: Attio's sequences and call recording start on Pro at $79, and Omniscient's forecast starts on Pro at $49.
 Q: Can I move my data from Attio to Omniscient?

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 882" width="720" height="882" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Four kinds of CRM with LinkedIn integration</title>
-<desc id="d">A LinkedIn profile inside the record, which puts a Sales Navigator card on records and needs Sales Navigator Advanced Plus: Zoho CRM, Dynamics 365, HubSpot and Salesforce. Sales Navigator CRM Sync, which syncs records and activity and needs Advanced Plus: HubSpot, Salesforce, Dynamics 365 and Oracle Sales. A browser extension that saves LinkedIn profiles and works with any LinkedIn account: folk, and apps for Pipedrive and Attio. A connected LinkedIn account, where conversations reach records and any LinkedIn account works: Omniscient, Breakcold and NetHunt CRM.</desc>
+<desc id="d">A LinkedIn profile inside the record, which puts a Sales Navigator card on records and needs Sales Navigator Advanced Plus: Zoho CRM, Dynamics 365, HubSpot and Salesforce. Sales Navigator CRM Sync, which syncs records and activity and needs Advanced Plus: HubSpot, Salesforce, Dynamics 365 and Oracle Sales. A browser extension that saves LinkedIn profiles and works with any LinkedIn account: folk, Salesflare, Nimble, and apps for Pipedrive and Attio. A connected LinkedIn account, where conversations reach records and any LinkedIn account works: Omniscient, Breakcold, NetHunt CRM and Kanbox.</desc>
 <rect width="720" height="882" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="881" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Four kinds]</text>
@@ -36,22 +36,28 @@
 <text x="50" y="512" font-size="23" font-weight="600" fill="#0a0a0a">Browser extension</text>
 <text x="50" y="544" font-size="20" fill="#737373">Saves LinkedIn profiles</text>
 <text x="50" y="600" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Any LinkedIn account]</text>
-<rect x="402.5" y="498.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="514.0" font-size="22" fill="#0a0a0a">folk</text>
-<rect x="402.5" y="538.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="554.0" font-size="22" fill="#0a0a0a">Apps for Pipedrive</text>
-<rect x="402.5" y="578.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="594.0" font-size="22" fill="#0a0a0a">Apps for Attio</text>
+<rect x="402.5" y="482.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="428" y="496" font-size="20" fill="#0a0a0a">folk</text>
+<rect x="402.5" y="510.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="428" y="524" font-size="20" fill="#0a0a0a">Salesflare</text>
+<rect x="402.5" y="538.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="428" y="552" font-size="20" fill="#0a0a0a">Nimble</text>
+<rect x="402.5" y="566.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="428" y="580" font-size="20" fill="#0a0a0a">Apps for Pipedrive</text>
+<rect x="402.5" y="594.5" width="14" height="14" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="428" y="608" font-size="20" fill="#0a0a0a">Apps for Attio</text>
 <rect x="32.5" y="640.5" width="350" height="158" fill="#f5f5f5" stroke="#0a0a0a"/>
 <rect x="382.5" y="640.5" width="305" height="158" fill="#ffffff" stroke="#0a0a0a"/>
 <text x="50" y="684" font-size="23" font-weight="600" fill="#0a0a0a">Connected account</text>
 <text x="50" y="716" font-size="20" fill="#737373">Conversations reach records</text>
 <text x="50" y="772" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a">[Any LinkedIn account]</text>
-<rect x="402.5" y="670.5" width="15" height="15" fill="#10b981" stroke="#0a0a0a"/>
-<text x="430" y="686.0" font-size="22" fill="#0a0a0a">Omniscient</text>
-<rect x="402.5" y="710.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="726.0" font-size="22" fill="#0a0a0a">Breakcold</text>
-<rect x="402.5" y="750.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
-<text x="430" y="766.0" font-size="22" fill="#0a0a0a">NetHunt CRM</text>
+<rect x="402.5" y="659.5" width="15" height="15" fill="#10b981" stroke="#0a0a0a"/>
+<text x="430" y="675.0" font-size="22" fill="#0a0a0a">Omniscient</text>
+<rect x="402.5" y="693.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="709.0" font-size="22" fill="#0a0a0a">Breakcold</text>
+<rect x="402.5" y="727.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="743.0" font-size="22" fill="#0a0a0a">NetHunt CRM</text>
+<rect x="402.5" y="761.5" width="15" height="15" fill="#d4d4d4" stroke="#0a0a0a"/>
+<text x="430" y="777.0" font-size="22" fill="#0a0a0a">Kanbox</text>
 <text x="32" y="852" font-size="18" fill="#737373">From LinkedIn's help center and vendor pages, November 2026</text>
 </svg>

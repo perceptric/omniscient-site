@@ -98,10 +98,10 @@ code and `---`. These fenced blocks render in the brand:
 
 | Block | Write | Renders |
 |---|---|---|
-| ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. A price of `check` shows "See site". | A framed comparison table. Each tool gets its logo from `assets/logos/`, else its site's favicon. |
+| ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. A price of `check` shows "See site". | A framed comparison table. Each tool gets its logo from `assets/blog/logos/`, else `assets/logos/`, else its site's favicon. |
 | ` ```callout ` | One or two sentences. | A framed note. |
 | ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
-| ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. | Questions that open and close, plus FAQPage JSON-LD. |
+| ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. No heading above it. | A "FAQs" heading (in the contents list), questions that open and close, plus FAQPage JSON-LD. |
 | ` ```steps ` | `1. Title: text` lines. | A framed, numbered step list. |
 
 Pictures sit in the gray grain band:
@@ -109,6 +109,22 @@ Pictures sit in the gray grain band:
 - `![alt](chart.svg "caption")` shows an image. A bare file name looks in `assets/blog/<slug>/`. The caption is
   optional.
 - `![alt](name.shot.html)` inlines that HTML snippet, styled by `assets/home.css`, and plays it once in view.
+- `![Name homepage](tool:domain.com)` shows that tool's homepage screenshot in a browser frame.
+
+### Tools: numbered headings, screenshots and logos
+
+A numbered `###` heading whose name is in the post's `tools` block (`### 3. HeyReach` or `### 3. HeyReach: for
+agencies`) shows the number in a square tag, the tool's logo and the name, with its homepage screenshot right under
+it. Capture screenshots and logos first:
+
+```
+node tools/shot-tools.mjs heyreach.io expandi.io [--force] [--wait 8000]
+```
+
+It opens each homepage at 1440x900 through Playwright, accepts or hides cookie, chat and popup layers, and saves
+`assets/blog/tools/<domain>.webp` (1200px wide) and `assets/blog/logos/<domain>.png`. It keeps files that exist
+unless `--force`, and prints ok or the reason it failed for each domain. A bot wall or blank page fails: try once
+with `--wait 8000`, else leave that tool without a screenshot.
 
 Every image needs alt text, and every SVG a `<title>`.
 
