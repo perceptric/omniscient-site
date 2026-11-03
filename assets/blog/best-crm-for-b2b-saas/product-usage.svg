@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 724" width="720" height="724" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">How product usage reaches the account record in your CRM</title>
+<desc id="d">How product usage gets from your app to the account record in a CRM, in five steps. 01 Your product sends logins, seats used and features as events. 02 Your warehouse, such as BigQuery or Snowflake, adds them up per account. 03 A sync tool such as Polytomic or Hightouch, or your own calls to the CRM&#x27;s API, moves the numbers across. 04 The account record gets fields like plan, seats, active users and health. 05 Your team sees views and alerts, such as a renewal coming up, usage falling or room to grow.</desc>
+<rect width="720" height="724" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="723" fill="none" stroke="#0a0a0a"/>
+<rect x="32" y="35" width="11" height="11" fill="#10b981" stroke="#0a0a0a"/>
+<text x="52" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Product data]</text>
+<text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">From your app <tspan fill="#a3a3a3">to the account record</tspan></text>
+<rect x="32.5" y="120.5" width="655" height="86" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32.5" y="120.5" width="64" height="86" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="64.5" y="170" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a" text-anchor="middle">01</text>
+<text x="116" y="156" font-size="21" font-weight="600" fill="#0a0a0a">Your product</text>
+<text x="116" y="186" font-size="18" fill="#525252">Logins, seats used and features, sent as events</text>
+<line x1="360" x2="360" y1="210" y2="224" stroke="#0a0a0a" stroke-width="1.5"/>
+<path d="M354 222 L360 230 L366 222" fill="none" stroke="#0a0a0a" stroke-width="1.5"/>
+<rect x="32.5" y="232.5" width="655" height="86" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32.5" y="232.5" width="64" height="86" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="64.5" y="282" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a" text-anchor="middle">02</text>
+<text x="116" y="268" font-size="21" font-weight="600" fill="#0a0a0a">Your warehouse</text>
+<text x="116" y="298" font-size="18" fill="#525252">BigQuery or Snowflake adds them up per account</text>
+<line x1="360" x2="360" y1="322" y2="336" stroke="#0a0a0a" stroke-width="1.5"/>
+<path d="M354 334 L360 342 L366 334" fill="none" stroke="#0a0a0a" stroke-width="1.5"/>
+<rect x="32.5" y="344.5" width="655" height="86" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32.5" y="344.5" width="64" height="86" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="64.5" y="394" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a" text-anchor="middle">03</text>
+<text x="116" y="380" font-size="21" font-weight="600" fill="#0a0a0a">A sync</text>
+<text x="116" y="410" font-size="18" fill="#525252">Polytomic, Hightouch or your own calls to the CRM&#x27;s API</text>
+<line x1="360" x2="360" y1="434" y2="448" stroke="#0a0a0a" stroke-width="1.5"/>
+<path d="M354 446 L360 454 L366 446" fill="none" stroke="#0a0a0a" stroke-width="1.5"/>
+<rect x="32.5" y="456.5" width="655" height="86" fill="#ecfdf5" stroke="#0a0a0a"/>
+<rect x="32.5" y="456.5" width="64" height="86" fill="#10b981" stroke="#0a0a0a"/>
+<text x="64.5" y="506" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a" text-anchor="middle">04</text>
+<text x="116" y="492" font-size="21" font-weight="600" fill="#0a0a0a">The account record</text>
+<text x="116" y="522" font-size="18" fill="#525252">Fields like plan, seats, active users and health</text>
+<line x1="360" x2="360" y1="546" y2="560" stroke="#0a0a0a" stroke-width="1.5"/>
+<path d="M354 558 L360 566 L366 558" fill="none" stroke="#0a0a0a" stroke-width="1.5"/>
+<rect x="32.5" y="568.5" width="655" height="86" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="32.5" y="568.5" width="64" height="86" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="64.5" y="618" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#0a0a0a" text-anchor="middle">05</text>
+<text x="116" y="604" font-size="21" font-weight="600" fill="#0a0a0a">Your team</text>
+<text x="116" y="634" font-size="18" fill="#525252">Views and alerts: renewal soon, usage falling, room to grow</text>
+<text x="32" y="694" font-size="18" fill="#737373">The same path Attio describes on its own blog, October 2026.</text>
+</svg>

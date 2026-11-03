@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" width="720" height="640" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Which CRM for LinkedIn prospecting to try first</title>
+<desc id="d">If you want LinkedIn outreach you approve inside the CRM, start with Omniscient. If you already pay for Sales Navigator Advanced Plus, start with HubSpot or Salesforce. If you want a free plan for up to 3 users, start with Zoho CRM. If you save profiles by hand while you browse LinkedIn, start with folk or Salesflare. If you write every LinkedIn message yourself, start with Breakcold. Every CRM here has a free plan or a free trial.</desc>
+<rect width="720" height="640" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="639" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="17" fill="#737373">[Pick a CRM]</text>
+<text x="32" y="86" font-size="30" font-weight="600" fill="#0a0a0a">Match it to <tspan fill="#a3a3a3">how you prospect</tspan></text>
+<text x="32" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[If your team]</text>
+<text x="426" y="128" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Start with]</text>
+
+<rect x="32.5" y="142.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="174" font-size="21" fill="#0a0a0a">Wants LinkedIn outreach it</text>
+<text x="48" y="201" font-size="21" fill="#0a0a0a">approves inside the CRM</text>
+<line x1="393" x2="415" y1="180" y2="180" stroke="#0a0a0a"/>
+<polygon points="415,175 424,180 415,185" fill="#0a0a0a"/>
+<rect x="425.5" y="142.5" width="262" height="76" fill="#10b981" stroke="#0a0a0a"/>
+<text x="442" y="188" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
+
+<rect x="32.5" y="230.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="262" font-size="21" fill="#0a0a0a">Already pays for Sales</text>
+<text x="48" y="289" font-size="21" fill="#0a0a0a">Navigator Advanced Plus</text>
+<line x1="393" x2="415" y1="268" y2="268" stroke="#0a0a0a"/>
+<polygon points="415,263 424,268 415,273" fill="#0a0a0a"/>
+<rect x="425.5" y="230.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="262" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot or</text>
+<text x="442" y="289" font-size="21" font-weight="600" fill="#0a0a0a">Salesforce</text>
+
+<rect x="32.5" y="318.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="350" font-size="21" fill="#0a0a0a">Wants a free plan for</text>
+<text x="48" y="377" font-size="21" fill="#0a0a0a">up to 3 users</text>
+<line x1="393" x2="415" y1="356" y2="356" stroke="#0a0a0a"/>
+<polygon points="415,351 424,356 415,361" fill="#0a0a0a"/>
+<rect x="425.5" y="318.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="364" font-size="21" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
+
+<rect x="32.5" y="406.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="438" font-size="21" fill="#0a0a0a">Saves profiles by hand</text>
+<text x="48" y="465" font-size="21" fill="#0a0a0a">while browsing LinkedIn</text>
+<line x1="393" x2="415" y1="444" y2="444" stroke="#0a0a0a"/>
+<polygon points="415,439 424,444 415,449" fill="#0a0a0a"/>
+<rect x="425.5" y="406.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="438" font-size="21" font-weight="600" fill="#0a0a0a">folk or</text>
+<text x="442" y="465" font-size="21" font-weight="600" fill="#0a0a0a">Salesflare</text>
+
+<rect x="32.5" y="494.5" width="360" height="76" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="48" y="526" font-size="21" fill="#0a0a0a">Writes every LinkedIn</text>
+<text x="48" y="553" font-size="21" fill="#0a0a0a">message by hand</text>
+<line x1="393" x2="415" y1="532" y2="532" stroke="#0a0a0a"/>
+<polygon points="415,527 424,532 415,537" fill="#0a0a0a"/>
+<rect x="425.5" y="494.5" width="262" height="76" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="442" y="540" font-size="21" font-weight="600" fill="#0a0a0a">Breakcold</text>
+
+<text x="32" y="614" font-size="19" fill="#737373">Every CRM here has a free plan or a free trial.</text>
+</svg>

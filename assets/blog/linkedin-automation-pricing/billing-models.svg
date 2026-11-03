@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1042" width="720" height="1042" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What makes a LinkedIn automation bill grow</title>
-<desc id="d">Four ways LinkedIn automation tools bill you. Per LinkedIn account, the bill grows with every account you connect: HeyReach Growth, La Growth Machine and Linked Helper. Per seat or user, it grows with every teammate who sends: Omniscient, Waalaxy, Dripify, lemlist, Expandi, Skylead and Dux-Soup. A flat team plan steps up when you outgrow the block: HeyReach Agency, HeyReach Unlimited and Skylead Agency. Quotas and credits grow when invitations or data run out: Waalaxy invitations and credits at lemlist, Dripify, La Growth Machine and Linked Helper.</desc>
+<desc id="d">Four ways LinkedIn automation tools bill you. Per LinkedIn account, the bill grows with every LinkedIn account you connect: HeyReach Growth, La Growth Machine and Linked Helper. Per seat or user, it grows with every seat you add: Omniscient, Waalaxy, Dripify, lemlist, Expandi, Skylead and Dux-Soup. A flat team plan steps up when you outgrow the block: HeyReach Agency, HeyReach Unlimited and Skylead Agency. Quotas and credits grow when invitations or data run out: Waalaxy invitations and credits at HeyReach, lemlist, Dripify, La Growth Machine and Linked Helper.</desc>
 <rect width="720" height="1042" fill="#ffffff"/>
 <rect x="0.5" y="0.5" width="719" height="1041" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Pricing models]</text>
@@ -8,7 +8,7 @@
 <rect x="32" y="116" width="656" height="172" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="52" y="146" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Per LinkedIn account]</text>
-<text x="52" y="202" font-size="21" font-weight="600" fill="#0a0a0a">Grows with every account you connect</text>
+<text x="52" y="202" font-size="21" font-weight="600" fill="#0a0a0a">Grows with every LinkedIn account you connect</text>
 <rect x="52" y="230" width="174" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
 <text x="66" y="254" font-size="17" font-weight="500" fill="#0a0a0a">HeyReach Growth</text>
 <rect x="236.390625" y="230" width="185" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
@@ -18,7 +18,7 @@
 <rect x="32" y="308" width="656" height="218" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="32" y="308" width="656" height="46" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="52" y="338" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#404040">[Per seat or user]</text>
-<text x="52" y="394" font-size="21" font-weight="600" fill="#0a0a0a">Grows with every teammate who sends</text>
+<text x="52" y="394" font-size="21" font-weight="600" fill="#0a0a0a">Grows with every seat you add</text>
 <rect x="52" y="422" width="142" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
 <rect x="66" y="434" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
 <text x="88" y="446" font-size="17" font-weight="500" fill="#0a0a0a">Omniscient</text>
@@ -50,14 +50,16 @@
 <text x="52" y="824" font-size="21" font-weight="600" fill="#0a0a0a">Grows when invitations or data run out</text>
 <rect x="52" y="852" width="185" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
 <text x="66" y="876" font-size="17" font-weight="500" fill="#0a0a0a">Waalaxy invitations</text>
-<rect x="246.703125" y="852" width="141" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
-<text x="261" y="876" font-size="17" font-weight="500" fill="#0a0a0a">lemlist credits</text>
-<rect x="397.71875" y="852" width="143" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
-<text x="412" y="876" font-size="17" font-weight="500" fill="#0a0a0a">Dripify credits</text>
-<rect x="52" y="898" width="245" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
-<text x="66" y="922" font-size="17" font-weight="500" fill="#0a0a0a">La Growth Machine credits</text>
-<rect x="307.265625" y="898" width="200" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
-<text x="321" y="922" font-size="17" font-weight="500" fill="#0a0a0a">Linked Helper credits</text>
-<text x="32" y="990" font-size="17" fill="#737373">Omniscient doesn&#x27;t charge teammates who only view or log data.</text>
+<rect x="246.703125" y="852" width="171" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
+<text x="261" y="876" font-size="17" font-weight="500" fill="#0a0a0a">HeyReach credits</text>
+<rect x="427.65625" y="852" width="141" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
+<text x="442" y="876" font-size="17" font-weight="500" fill="#0a0a0a">lemlist credits</text>
+<rect x="52" y="898" width="143" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
+<text x="66" y="922" font-size="17" font-weight="500" fill="#0a0a0a">Dripify credits</text>
+<rect x="204.53125" y="898" width="245" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
+<text x="219" y="922" font-size="17" font-weight="500" fill="#0a0a0a">La Growth Machine credits</text>
+<rect x="459.796875" y="898" width="200" height="36" fill="#f5f5f5" stroke="#d4d4d4"/>
+<text x="474" y="922" font-size="17" font-weight="500" fill="#0a0a0a">Linked Helper credits</text>
+<text x="32" y="990" font-size="17" fill="#737373">Omniscient Pro and Business: free seats for teammates who only view data.</text>
 <text x="32" y="1016" font-size="17" fill="#737373">Read on each vendor&#x27;s pricing page, November 2, 2026.</text>
 </svg>

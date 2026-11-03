@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 874" width="720" height="874" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" width="720" height="900" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Extra costs to budget for next to a LinkedIn automation plan</title>
-<desc id="d">Costs that can sit next to a LinkedIn automation plan. Sales Navigator Core costs US$119.99 a month or US$1,079.88 a year, and Advanced costs US$159.99 a month or US$1,799.88 a year. HeyReach sends email through Instantly or Smartlead, which bill you on their own. Email finder credits: lemlist $16 a month billed yearly for 2,000, Dripify 1,000 credits for $29. Waalaxy&#x27;s LinkedIn Inbox costs €20 a month. HeyReach Agency and Unlimited need your own proxies. Expandi&#x27;s image and GIF personalization costs extra. A separate CRM, when your outreach tool doesn&#x27;t keep the record. Omniscient keeps the CRM in the same seat.</desc>
-<rect width="720" height="874" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="719" height="873" fill="none" stroke="#0a0a0a"/>
+<desc id="d">Costs that can sit next to a LinkedIn automation plan. Sales Navigator Core costs US$119.99 a month or US$1,079.88 a year, and Advanced costs US$159.99 a month or US$1,799.88 a year. HeyReach sends email through Instantly or Smartlead, which bill you on their own. Email finder credits: lemlist $16 a month billed yearly for 2,000, Dripify 1,000 credits for $29. Waalaxy&#x27;s LinkedIn Inbox costs €20 a month as an extra. HeyReach Agency and Unlimited ask for your own proxies, and with Linked Helper you buy proxies and any server yourself. Expandi&#x27;s image and GIF personalization costs extra. A separate CRM, when your outreach tool doesn&#x27;t keep the record. Omniscient keeps the CRM in the same seat.</desc>
+<rect width="720" height="900" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="899" fill="none" stroke="#0a0a0a"/>
 <text x="32" y="48" font-family="Geist Mono, ui-monospace, monospace" font-size="19" fill="#737373">[Beyond the plan]</text>
 <text x="32" y="88" font-size="30" font-weight="600" fill="#0a0a0a">The rest of the bill<tspan fill="#a3a3a3"> to plan for</tspan></text>
 <text x="32" y="150" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[LinkedIn]</text>
@@ -25,21 +25,22 @@
 <line x1="32" x2="688" y1="456" y2="456" stroke="#e5e5e5"/>
 <text x="32" y="490" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Inbox]</text>
 <text x="196" y="490" font-size="19" font-weight="600" fill="#0a0a0a">Waalaxy LinkedIn Inbox</text>
-<text x="196" y="516" font-size="17" fill="#404040">€20 a month on any plan</text>
+<text x="196" y="516" font-size="17" fill="#404040">€20 a month, as an extra</text>
 <line x1="32" x2="688" y1="528" y2="528" stroke="#e5e5e5"/>
 <text x="32" y="562" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Proxies]</text>
-<text x="196" y="562" font-size="19" font-weight="600" fill="#0a0a0a">HeyReach Agency and Unlimited</text>
-<text x="196" y="588" font-size="17" fill="#404040">Bring your own proxies</text>
-<line x1="32" x2="688" y1="600" y2="600" stroke="#e5e5e5"/>
-<text x="32" y="634" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Images]</text>
-<text x="196" y="634" font-size="19" font-weight="600" fill="#0a0a0a">Expandi image and GIF personalization</text>
-<text x="196" y="660" font-size="17" fill="#404040">Extra, with no price on the page</text>
-<line x1="32" x2="688" y1="672" y2="672" stroke="#e5e5e5"/>
-<text x="32" y="706" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[CRM]</text>
-<text x="196" y="706" font-size="19" font-weight="600" fill="#0a0a0a">A separate CRM</text>
-<text x="196" y="732" font-size="17" fill="#404040">When your outreach tool doesn&#x27;t keep the record</text>
-<rect x="32" y="758" width="656" height="58" fill="#f5f5f5" stroke="#0a0a0a"/>
-<rect x="52" y="781" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
-<text x="74" y="793" font-size="18" font-weight="500" fill="#0a0a0a">Omniscient keeps the CRM in the same seat.</text>
-<text x="32" y="850" font-size="16" fill="#737373">Prices from LinkedIn&#x27;s and each vendor&#x27;s pricing page, November 2, 2026.</text>
+<text x="196" y="562" font-size="19" font-weight="600" fill="#0a0a0a">Your own proxies</text>
+<text x="196" y="588" font-size="17" fill="#404040">HeyReach Agency and Unlimited ask for them</text>
+<text x="196" y="614" font-size="17" fill="#404040">Linked Helper: proxies and a server are yours to buy</text>
+<line x1="32" x2="688" y1="626" y2="626" stroke="#e5e5e5"/>
+<text x="32" y="660" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[Images]</text>
+<text x="196" y="660" font-size="19" font-weight="600" fill="#0a0a0a">Expandi image and GIF personalization</text>
+<text x="196" y="686" font-size="17" fill="#404040">Extra, with no price on the page</text>
+<line x1="32" x2="688" y1="698" y2="698" stroke="#e5e5e5"/>
+<text x="32" y="732" font-family="Geist Mono, ui-monospace, monospace" font-size="16" fill="#737373">[CRM]</text>
+<text x="196" y="732" font-size="19" font-weight="600" fill="#0a0a0a">A separate CRM</text>
+<text x="196" y="758" font-size="17" fill="#404040">When your outreach tool doesn&#x27;t keep the record</text>
+<rect x="32" y="784" width="656" height="58" fill="#f5f5f5" stroke="#0a0a0a"/>
+<rect x="52" y="807" width="12" height="12" fill="#10b981" stroke="#0a0a0a"/>
+<text x="74" y="819" font-size="18" font-weight="500" fill="#0a0a0a">Omniscient keeps the CRM in the same seat.</text>
+<text x="32" y="876" font-size="16" fill="#737373">Prices from LinkedIn&#x27;s and each vendor&#x27;s pricing page, November 2, 2026.</text>
 </svg>

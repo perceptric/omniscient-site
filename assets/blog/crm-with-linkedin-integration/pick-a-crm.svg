@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 776" width="720" height="776" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Pick a CRM with LinkedIn integration by where your reps write to buyers</title>
+<desc id="d">In Sales Navigator with Advanced Plus seats: HubSpot, Salesforce or Dynamics 365. In Sales Navigator with a low CRM budget: Zoho CRM. In LinkedIn, when you want outreach you approve: Omniscient. In LinkedIn, writing every message yourself: Breakcold. In Gmail and LinkedIn in one sequence: NetHunt CRM. In LinkedIn, when you only save profiles: folk.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#0a0a0a"/></marker></defs>
+<rect width="720" height="776" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="719" height="775" fill="none" stroke="#0a0a0a"/>
+<text x="32" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Pick by habit]</text>
+<text x="32" y="88" font-size="31" font-weight="600" fill="#0a0a0a">Where your reps <tspan fill="#a3a3a3">write to buyers</tspan></text>
+<rect x="32.5" y="124.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="164" font-size="22" fill="#0a0a0a">In Sales Navigator, with</text>
+<text x="50" y="192" font-size="22" fill="#0a0a0a">Advanced Plus seats</text>
+<rect x="432.5" y="124.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="163" font-size="21" font-weight="600" fill="#0a0a0a">HubSpot, Salesforce</text>
+<text x="450" y="191" font-size="21" font-weight="600" fill="#0a0a0a">or Dynamics 365</text>
+<line x1="393" y1="170.5" x2="430" y2="170.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="228.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="268" font-size="22" fill="#0a0a0a">In Sales Navigator, with</text>
+<text x="50" y="296" font-size="22" fill="#0a0a0a">a low CRM budget</text>
+<rect x="432.5" y="228.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="281" font-size="21" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
+<line x1="393" y1="274.5" x2="430" y2="274.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="332.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="372" font-size="22" fill="#0a0a0a">In LinkedIn, and you want</text>
+<text x="50" y="400" font-size="22" fill="#0a0a0a">outreach you approve</text>
+<rect x="432.5" y="332.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="450.5" y="370.5" width="15" height="15" fill="#10b981" stroke="#0a0a0a"/>
+<text x="476" y="385" font-size="21" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<line x1="393" y1="378.5" x2="430" y2="378.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="436.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="476" font-size="22" fill="#0a0a0a">In LinkedIn, writing every</text>
+<text x="50" y="504" font-size="22" fill="#0a0a0a">message yourself</text>
+<rect x="432.5" y="436.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="489" font-size="21" font-weight="600" fill="#0a0a0a">Breakcold</text>
+<line x1="393" y1="482.5" x2="430" y2="482.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="540.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="580" font-size="22" fill="#0a0a0a">In Gmail and LinkedIn,</text>
+<text x="50" y="608" font-size="22" fill="#0a0a0a">in one sequence</text>
+<rect x="432.5" y="540.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="593" font-size="21" font-weight="600" fill="#0a0a0a">NetHunt CRM</text>
+<line x1="393" y1="586.5" x2="430" y2="586.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+<rect x="32.5" y="644.5" width="360" height="92" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="50" y="684" font-size="22" fill="#0a0a0a">In LinkedIn, and you only</text>
+<text x="50" y="712" font-size="22" fill="#0a0a0a">save profiles</text>
+<rect x="432.5" y="644.5" width="255" height="92" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="450" y="697" font-size="21" font-weight="600" fill="#0a0a0a">folk</text>
+<line x1="393" y1="690.5" x2="430" y2="690.5" stroke="#0a0a0a" marker-end="url(#ar)"/>
+</svg>
