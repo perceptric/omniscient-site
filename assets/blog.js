@@ -26,7 +26,8 @@
   var ticking = false;
   function update() {
     ticking = false;
-    var line = 120;
+    // Just below where a contents jump lands a heading (base.css scroll-padding-top: header + 16px).
+    var line = (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 80) + 24;
     var i = -1;
     for (var k = 0; k < heads.length; k++) {
       if (heads[k] && heads[k].getBoundingClientRect().top <= line) i = k;

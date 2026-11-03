@@ -249,6 +249,12 @@ summary::-webkit-details-marker { display: none; }
 .site-actions__signin:hover { color: var(--ink); }
 .site-actions__demo { display: none; }
 .site-actions .btn { height: 34px; }
+/* The smallest phones (320px): the logo, Start free and the menu button share the row without spilling over. */
+@media (max-width: 360px) {
+  .site-actions { gap: 4px; }
+  .site-actions__start { padding-inline: 10px; }
+  .site-actions__start .nudge { display: none; }
+}
 
 /* Phone menu */
 .menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: var(--r-sm); color: var(--ink); }

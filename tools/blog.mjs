@@ -257,7 +257,10 @@ function figure({ text: alt, url, title }, ctx) {
   if (!src) return "";
   if (!alt.trim()) ctx.warn(`image ${src} has no alt text`);
   const caption = title ? `<figcaption>${inline(title, ctx)}</figcaption>` : "";
-  return `<figure class="bl-fig"><div class="bl-band"><img src="${esc(src)}" alt="${esc(alt)}"${sizeAttrs(src)} loading="lazy" decoding="async"></div>${caption}</figure>`;
+  // A wide chart would shrink its text below reading size on a phone, so its band scrolls sideways there instead.
+  const s = imageSize(src);
+  const wide = /\.svg$/i.test(src) && s && s.w >= 640 ? " bl-band--wide" : "";
+  return `<figure class="bl-fig"><div class="bl-band${wide}"${wide ? ' tabindex="0" role="region" aria-label="Chart"' : ""}><img src="${esc(src)}" alt="${esc(alt)}"${sizeAttrs(src)} loading="lazy" decoding="async"></div>${caption}</figure>`;
 }
 
 // Inlines an HTML snippet (<name>.shot.html) inside the gray grain band the product pages use. Shots use home.css.
@@ -430,7 +433,8 @@ function table(lines, start, ctx) {
   const cols = head.length;
   rows.forEach((r, n) => { if (r.length !== cols) ctx.warn(`table "${plain(inline(head[0], ctx))}": row ${n + 1} has ${r.length} cells, the header has ${cols}`); });
   const td = (tag, c, k) => `<${tag}${align[k] ? ` style="text-align:${align[k]}"` : ""}>${inline(c || "", ctx)}</${tag}>`;
-  const minW = cols >= 3 ? ` style="min-width:${Math.min(cols * 130, 700)}px"` : "";
+  // Three columns fit a phone; four or more scroll inside the frame.
+  const minW = cols >= 4 ? ` style="min-width:${Math.min(cols * 130, 700)}px"` : "";
   const html = `<div class="bl-table" role="region" aria-label="Table" tabindex="0"><table${minW}>
 <thead><tr>${head.map((c, k) => td("th", c, k)).join("")}</tr></thead>
 <tbody>
