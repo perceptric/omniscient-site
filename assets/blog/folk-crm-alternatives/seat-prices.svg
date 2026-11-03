@@ -1,53 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 924" width="560" height="924" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1214" width="560" height="1214" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Price per seat a month, billed yearly: the lowest paid plan and the first plan with email sequences</title>
-<desc id="d">Price per seat a month on yearly billing, from each vendor&#x27;s pricing page on November 3, 2026. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, no email sequences. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Nimble: one plan at $24.90, sequences not listed on the plan. Dex: Premium $12, no sequences listed. Not shown: HubSpot, whose Starter plan shows two prices without labeling the billing, and Pipedrive, whose pricing page we couldn&#x27;t read.</desc>
-<rect width="560" height="924" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="923" fill="none" stroke="#0a0a0a"/>
+<desc id="d">Price per seat a month on yearly billing, from each vendor&#x27;s pricing page on November 3, 2026. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, no email sequences. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Streak: Pro $49, with mail merge and automatic follow ups. Twenty: Pro $9, no sequences listed. Nimble: one plan at $24.90, sequences not listed on the plan. Dex: Premium $12, no sequences listed. Close: Solo $9 for one user, workflows on Growth at $99. Not shown: HubSpot, whose page shows two prices without labeling the billing; Breakcold and Clarify, which price a plan instead of a seat; and Pipedrive, whose pricing page we couldn&#x27;t read.</desc>
+<rect width="560" height="1214" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="1213" fill="none" stroke="#0a0a0a"/>
 <text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Per seat a month, billed yearly]</text>
 <text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">Seat price <tspan fill="#a3a3a3">and sequences</tspan></text>
 <text x="24" y="145" font-size="20" font-weight="600" fill="#0a0a0a">folk</text>
 <rect x="170.5" y="126.5" width="52.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="232.8" y="145" font-size="18" fill="#0a0a0a">$24 Standard</text>
+<text x="233.3" y="145" font-size="18" fill="#0a0a0a">$24 Standard</text>
 <rect x="170.5" y="160.5" width="105.6" height="23" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="285.6" y="179" font-size="18" font-weight="600" fill="#0a0a0a">$48 Premium</text>
+<text x="286.1" y="179" font-size="18" font-weight="600" fill="#0a0a0a">$48 Premium</text>
 <line x1="24" y1="200" x2="536" y2="200" stroke="#e5e5e5"/>
 <text x="24" y="233" font-size="20" font-weight="600" fill="#0a0a0a">Omniscient</text>
 <rect x="170.5" y="214.5" width="41.8" height="23" fill="#10b981" stroke="#0a0a0a"/>
-<text x="221.8" y="233" font-size="18" fill="#0a0a0a">$19 Starter</text>
+<text x="222.3" y="233" font-size="18" fill="#0a0a0a">$19 Starter</text>
 <text x="170" y="267" font-size="18" fill="#737373">No email sequences</text>
 <line x1="24" y1="288" x2="536" y2="288" stroke="#e5e5e5"/>
 <text x="24" y="321" font-size="20" font-weight="600" fill="#0a0a0a">Attio</text>
 <rect x="170.5" y="302.5" width="77.0" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="257.0" y="321" font-size="18" fill="#0a0a0a">$35 Plus</text>
+<text x="257.5" y="321" font-size="18" fill="#0a0a0a">$35 Plus</text>
 <rect x="170.5" y="336.5" width="173.8" height="23" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="353.8" y="355" font-size="18" font-weight="600" fill="#0a0a0a">$79 Pro</text>
+<text x="354.3" y="355" font-size="18" font-weight="600" fill="#0a0a0a">$79 Pro</text>
 <line x1="24" y1="376" x2="536" y2="376" stroke="#e5e5e5"/>
 <text x="24" y="409" font-size="20" font-weight="600" fill="#0a0a0a">Salesflare</text>
 <rect x="170.5" y="390.5" width="63.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="243.8" y="409" font-size="18" fill="#0a0a0a">$29 Growth</text>
+<text x="244.3" y="409" font-size="18" fill="#0a0a0a">$29 Growth</text>
 <rect x="170.5" y="424.5" width="107.8" height="23" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="287.8" y="443" font-size="18" font-weight="600" fill="#0a0a0a">$49 Pro</text>
+<text x="288.3" y="443" font-size="18" font-weight="600" fill="#0a0a0a">$49 Pro</text>
 <line x1="24" y1="464" x2="536" y2="464" stroke="#e5e5e5"/>
 <text x="24" y="497" font-size="20" font-weight="600" fill="#0a0a0a">Copper</text>
 <rect x="170.5" y="478.5" width="50.6" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="230.6" y="497" font-size="18" fill="#0a0a0a">$23 Basic</text>
+<text x="231.1" y="497" font-size="18" fill="#0a0a0a">$23 Basic</text>
 <rect x="170.5" y="512.5" width="217.8" height="23" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="397.8" y="531" font-size="18" font-weight="600" fill="#0a0a0a">$99 Business</text>
+<text x="398.3" y="531" font-size="18" font-weight="600" fill="#0a0a0a">$99 Business</text>
 <line x1="24" y1="552" x2="536" y2="552" stroke="#e5e5e5"/>
-<text x="24" y="585" font-size="20" font-weight="600" fill="#0a0a0a">Nimble</text>
-<rect x="170.5" y="566.5" width="54.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="234.8" y="585" font-size="18" fill="#0a0a0a">$24.90 one plan</text>
-<text x="170" y="619" font-size="18" fill="#737373">Not listed on its plan</text>
+<text x="24" y="585" font-size="20" font-weight="600" fill="#0a0a0a">Streak</text>
+<rect x="170.5" y="566.5" width="107.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="288.3" y="585" font-size="18" fill="#0a0a0a">$49 Pro</text>
+<text x="170" y="619" font-size="18" fill="#737373">Mail merge with follow ups</text>
 <line x1="24" y1="640" x2="536" y2="640" stroke="#e5e5e5"/>
-<text x="24" y="673" font-size="20" font-weight="600" fill="#0a0a0a">Dex</text>
-<rect x="170.5" y="654.5" width="26.4" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="206.4" y="673" font-size="18" fill="#0a0a0a">$12 Premium</text>
+<text x="24" y="673" font-size="20" font-weight="600" fill="#0a0a0a">Twenty</text>
+<rect x="170.5" y="654.5" width="19.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="200.3" y="673" font-size="18" fill="#0a0a0a">$9 Pro</text>
 <text x="170" y="707" font-size="18" fill="#737373">No sequences listed</text>
 <line x1="24" y1="728" x2="536" y2="728" stroke="#e5e5e5"/>
-<rect x="24.5" y="754.5" width="20" height="20" fill="#e5e5e5" stroke="#0a0a0a"/>
-<text x="56" y="771" font-size="18" fill="#0a0a0a">Lowest paid plan</text>
-<rect x="24.5" y="788.5" width="20" height="20" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="56" y="805" font-size="18" fill="#0a0a0a">First plan with email sequences</text>
-<text x="24" y="848" font-size="18" fill="#737373">Not shown: HubSpot (two Starter prices with no</text>
-<text x="24" y="874" font-size="18" fill="#737373">billing label) and Pipedrive (check its page).</text>
+<text x="24" y="761" font-size="20" font-weight="600" fill="#0a0a0a">Nimble</text>
+<rect x="170.5" y="742.5" width="54.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="235.3" y="761" font-size="18" fill="#0a0a0a">$24.90 one plan</text>
+<text x="170" y="795" font-size="18" fill="#737373">Not listed on its plan</text>
+<line x1="24" y1="816" x2="536" y2="816" stroke="#e5e5e5"/>
+<text x="24" y="849" font-size="20" font-weight="600" fill="#0a0a0a">Dex</text>
+<rect x="170.5" y="830.5" width="26.4" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="206.9" y="849" font-size="18" fill="#0a0a0a">$12 Premium</text>
+<text x="170" y="883" font-size="18" fill="#737373">No sequences listed</text>
+<line x1="24" y1="904" x2="536" y2="904" stroke="#e5e5e5"/>
+<text x="24" y="937" font-size="20" font-weight="600" fill="#0a0a0a">Close</text>
+<rect x="170.5" y="918.5" width="19.8" height="23" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="200.3" y="937" font-size="18" fill="#0a0a0a">$9 Solo, one user</text>
+<rect x="170.5" y="952.5" width="217.8" height="23" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="398.3" y="971" font-size="18" font-weight="600" fill="#0a0a0a">$99 Growth</text>
+<line x1="24" y1="992" x2="536" y2="992" stroke="#e5e5e5"/>
+<rect x="24.5" y="1018.5" width="20" height="20" fill="#e5e5e5" stroke="#0a0a0a"/>
+<text x="56" y="1035" font-size="18" fill="#0a0a0a">Lowest paid plan</text>
+<rect x="24.5" y="1052.5" width="20" height="20" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="56" y="1069" font-size="18" fill="#0a0a0a">First plan with email sequences</text>
+<text x="24" y="1112" font-size="18" fill="#737373">Not shown: HubSpot (no billing label),</text>
+<text x="24" y="1138" font-size="18" fill="#737373">Breakcold and Clarify (priced per plan) and</text>
+<text x="24" y="1164" font-size="18" fill="#737373">Pipedrive (check its page).</text>
 </svg>

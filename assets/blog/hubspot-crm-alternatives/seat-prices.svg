@@ -1,52 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 762" width="560" height="762" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1000" width="560" height="1000" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">First paid seat for a team on each alternative, billed yearly</title>
-<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan for a team, from each vendor&#x27;s pricing page on November 3, 2026: Freshsales Growth $9, EngageBay Basic $13.79, Zoho CRM Standard $14, Omniscient Starter $19, folk Standard $24, Attio Plus $35 and Close Essentials $35. For comparison, HubSpot Sales Hub Professional, the plan with sequences, starts at $90 a seat a month on a yearly commitment, plus a $1,500 onboarding fee. Not shown: Pipedrive, whose pricing page didn&#x27;t load for us, and Close Solo, which is $9 for one user only.</desc>
-<rect width="560" height="762" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="761" fill="none" stroke="#0a0a0a"/>
+<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan for a team, from each vendor&#x27;s pricing page on November 3, 2026: Freshsales Growth $9, monday CRM Basic $12 with a 3 seat minimum, EngageBay Basic $13.79, Zoho CRM Standard $14, Omniscient Starter $19, Copper Basic $23, folk Standard $24, Salesflare Growth $29, Attio Plus $35 and Close Essentials $35. For comparison, HubSpot Sales Hub Professional, the plan with sequences, starts at $90 a seat a month on a yearly commitment, plus a $1,500 onboarding fee. Not shown: Pipedrive, whose pricing page didn&#x27;t load for us; Nutshell, which lists monthly prices from $13; Less Annoying CRM, with one plan at $15 a month; and Close Solo, which is $9 for one user only.</desc>
+<rect width="560" height="1000" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="999" fill="none" stroke="#0a0a0a"/>
 <text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Per seat a month, billed yearly]</text>
 <text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">First paid seat <tspan fill="#a3a3a3">next to HubSpot Pro</tspan></text>
-<line x1="200.0" y1="116" x2="200.0" y2="580" stroke="#e5e5e5"/>
-<text x="200.0" y="602" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$0</text>
-<line x1="286.7" y1="116" x2="286.7" y2="580" stroke="#e5e5e5"/>
-<text x="286.7" y="602" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$30</text>
-<line x1="373.3" y1="116" x2="373.3" y2="580" stroke="#e5e5e5"/>
-<text x="373.3" y="602" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$60</text>
-<line x1="460.0" y1="116" x2="460.0" y2="580" stroke="#e5e5e5"/>
-<text x="460.0" y="602" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$90</text>
+<line x1="200.0" y1="116" x2="200.0" y2="754" stroke="#e5e5e5"/>
+<text x="200.0" y="776" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$0</text>
+<line x1="286.7" y1="116" x2="286.7" y2="754" stroke="#e5e5e5"/>
+<text x="286.7" y="776" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$30</text>
+<line x1="373.3" y1="116" x2="373.3" y2="754" stroke="#e5e5e5"/>
+<text x="373.3" y="776" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$60</text>
+<line x1="460.0" y1="116" x2="460.0" y2="754" stroke="#e5e5e5"/>
+<text x="460.0" y="776" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="15" fill="#737373">$90</text>
 <text x="24" y="142" font-size="20" font-weight="600" fill="#0a0a0a">Freshsales</text>
 <text x="24" y="166" font-size="17" fill="#737373">Growth</text>
 <rect x="200" y="132" width="26.0" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
 <text x="236.0" y="152" font-size="19" font-weight="600" fill="#0a0a0a">$9</text>
-<text x="24" y="200" font-size="20" font-weight="600" fill="#0a0a0a">EngageBay</text>
-<text x="24" y="224" font-size="17" fill="#737373">Basic</text>
-<rect x="200" y="190" width="39.8" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="249.8" y="210" font-size="19" font-weight="600" fill="#0a0a0a">$13.79</text>
-<text x="24" y="258" font-size="20" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
-<text x="24" y="282" font-size="17" fill="#737373">Standard</text>
-<rect x="200" y="248" width="40.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="250.4" y="268" font-size="19" font-weight="600" fill="#0a0a0a">$14</text>
-<text x="24" y="316" font-size="20" font-weight="600" fill="#0a0a0a">Omniscient</text>
-<text x="24" y="340" font-size="17" fill="#737373">Starter</text>
-<rect x="200" y="306" width="54.9" height="26" fill="#10b981" stroke="#0a0a0a"/>
-<text x="264.9" y="326" font-size="19" font-weight="600" fill="#0a0a0a">$19</text>
-<text x="24" y="374" font-size="20" font-weight="600" fill="#0a0a0a">folk</text>
-<text x="24" y="398" font-size="17" fill="#737373">Standard</text>
-<rect x="200" y="364" width="69.3" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="279.3" y="384" font-size="19" font-weight="600" fill="#0a0a0a">$24</text>
-<text x="24" y="432" font-size="20" font-weight="600" fill="#0a0a0a">Attio</text>
-<text x="24" y="456" font-size="17" fill="#737373">Plus</text>
-<rect x="200" y="422" width="101.1" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="311.1" y="442" font-size="19" font-weight="600" fill="#0a0a0a">$35</text>
-<text x="24" y="490" font-size="20" font-weight="600" fill="#0a0a0a">Close</text>
-<text x="24" y="514" font-size="17" fill="#737373">Essentials</text>
-<rect x="200" y="480" width="101.1" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
-<text x="311.1" y="500" font-size="19" font-weight="600" fill="#0a0a0a">$35</text>
-<text x="24" y="548" font-size="20" font-weight="600" fill="#0a0a0a">HubSpot</text>
-<text x="24" y="572" font-size="17" fill="#737373">Professional</text>
-<rect x="200" y="538" width="260.0" height="26" fill="#ffffff" stroke="#0a0a0a"/>
-<text x="470.0" y="558" font-size="19" font-weight="600" fill="#0a0a0a">$90</text>
-<text x="24" y="648" font-size="17" fill="#0a0a0a">HubSpot Professional is the plan with sequences,</text>
-<text x="24" y="673" font-size="17" fill="#0a0a0a">and it adds a $1,500 onboarding fee.</text>
-<text x="24" y="710" font-size="17" fill="#737373">Not shown: Pipedrive, whose pricing page didn&#x27;t</text>
-<text x="24" y="735" font-size="17" fill="#737373">load for us, and Close Solo, $9 for one user only.</text>
+<text x="24" y="200" font-size="20" font-weight="600" fill="#0a0a0a">monday CRM</text>
+<text x="24" y="224" font-size="17" fill="#737373">Basic, 3 seat min</text>
+<rect x="200" y="190" width="34.7" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="244.7" y="210" font-size="19" font-weight="600" fill="#0a0a0a">$12</text>
+<text x="24" y="258" font-size="20" font-weight="600" fill="#0a0a0a">EngageBay</text>
+<text x="24" y="282" font-size="17" fill="#737373">Basic</text>
+<rect x="200" y="248" width="39.8" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="249.8" y="268" font-size="19" font-weight="600" fill="#0a0a0a">$13.79</text>
+<text x="24" y="316" font-size="20" font-weight="600" fill="#0a0a0a">Zoho CRM</text>
+<text x="24" y="340" font-size="17" fill="#737373">Standard</text>
+<rect x="200" y="306" width="40.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="250.4" y="326" font-size="19" font-weight="600" fill="#0a0a0a">$14</text>
+<text x="24" y="374" font-size="20" font-weight="600" fill="#0a0a0a">Omniscient</text>
+<text x="24" y="398" font-size="17" fill="#737373">Starter</text>
+<rect x="200" y="364" width="54.9" height="26" fill="#10b981" stroke="#0a0a0a"/>
+<text x="264.9" y="384" font-size="19" font-weight="600" fill="#0a0a0a">$19</text>
+<text x="24" y="432" font-size="20" font-weight="600" fill="#0a0a0a">Copper</text>
+<text x="24" y="456" font-size="17" fill="#737373">Basic</text>
+<rect x="200" y="422" width="66.4" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="276.4" y="442" font-size="19" font-weight="600" fill="#0a0a0a">$23</text>
+<text x="24" y="490" font-size="20" font-weight="600" fill="#0a0a0a">folk</text>
+<text x="24" y="514" font-size="17" fill="#737373">Standard</text>
+<rect x="200" y="480" width="69.3" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="279.3" y="500" font-size="19" font-weight="600" fill="#0a0a0a">$24</text>
+<text x="24" y="548" font-size="20" font-weight="600" fill="#0a0a0a">Salesflare</text>
+<text x="24" y="572" font-size="17" fill="#737373">Growth</text>
+<rect x="200" y="538" width="83.8" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="293.8" y="558" font-size="19" font-weight="600" fill="#0a0a0a">$29</text>
+<text x="24" y="606" font-size="20" font-weight="600" fill="#0a0a0a">Attio</text>
+<text x="24" y="630" font-size="17" fill="#737373">Plus</text>
+<rect x="200" y="596" width="101.1" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="311.1" y="616" font-size="19" font-weight="600" fill="#0a0a0a">$35</text>
+<text x="24" y="664" font-size="20" font-weight="600" fill="#0a0a0a">Close</text>
+<text x="24" y="688" font-size="17" fill="#737373">Essentials</text>
+<rect x="200" y="654" width="101.1" height="26" fill="#0a0a0a" stroke="#0a0a0a"/>
+<text x="311.1" y="674" font-size="19" font-weight="600" fill="#0a0a0a">$35</text>
+<text x="24" y="722" font-size="20" font-weight="600" fill="#0a0a0a">HubSpot</text>
+<text x="24" y="746" font-size="17" fill="#737373">Professional</text>
+<rect x="200" y="712" width="260.0" height="26" fill="#ffffff" stroke="#0a0a0a"/>
+<text x="470.0" y="732" font-size="19" font-weight="600" fill="#0a0a0a">$90</text>
+<text x="24" y="828" font-size="17" fill="#0a0a0a">HubSpot Professional is the plan with sequences,</text>
+<text x="24" y="853" font-size="17" fill="#0a0a0a">and it adds a $1,500 onboarding fee.</text>
+<text x="24" y="890" font-size="17" fill="#737373">Not shown: Pipedrive, whose pricing page didn&#x27;t</text>
+<text x="24" y="915" font-size="17" fill="#737373">load for us, Nutshell (from $13 a month), Less</text>
+<text x="24" y="940" font-size="17" fill="#737373">Annoying CRM ($15 a month, one plan) and Close</text>
+<text x="24" y="965" font-size="17" fill="#737373">Solo, $9 for one user only.</text>
 </svg>

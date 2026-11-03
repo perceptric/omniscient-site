@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 866" width="560" height="866" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1276" width="560" height="1276" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Your reason to leave folk, and the CRM that fits</title>
-<desc id="d">Eight reasons teams leave folk and the alternative that fits each one: LinkedIn outreach that sends for you points to Omniscient; a data model you design yourself points to Attio; a free CRM with room for marketing points to HubSpot; email workflows and a LinkedIn sidebar point to Salesflare; a pipeline you plan your week around points to Pipedrive; an agency that works in Gmail points to Copper; one plan with 25,000 contacts points to Nimble; your own network, with no pipeline, points to Dex. If you save LinkedIn profiles by hand and email from Premium, folk may still fit best.</desc>
-<rect width="560" height="866" fill="#ffffff"/>
-<rect x="0.5" y="0.5" width="559" height="865" fill="none" stroke="#0a0a0a"/>
+<desc id="d">13 reasons teams leave folk and the alternative that fits each one: LinkedIn outreach that sends for you points to Omniscient; a data model you design yourself points to Attio; a free CRM with room for marketing points to HubSpot; email workflows and a LinkedIn sidebar point to Salesflare; LinkedIn and WhatsApp chats in one inbox point to Breakcold; a pipeline you plan your week around points to Pipedrive; an agency that works in Gmail points to Copper; pipelines inside your Gmail inbox points to Streak; open source you can host yourself points to Twenty; one team price, unlimited seats points to Clarify; a team that sells by phone points to Close; one plan with 25,000 contacts points to Nimble; your own network, with no pipeline points to Dex. If you save LinkedIn profiles by hand and email from Premium, folk may still fit best.</desc>
+<rect width="560" height="1276" fill="#ffffff"/>
+<rect x="0.5" y="0.5" width="559" height="1275" fill="none" stroke="#0a0a0a"/>
 <text x="24" y="46" font-family="Geist Mono, ui-monospace, monospace" font-size="18" fill="#737373">[Reasons to switch]</text>
 <text x="24" y="84" font-size="26" font-weight="600" fill="#0a0a0a">Your reason <tspan fill="#a3a3a3">and the CRM that fits</tspan></text>
 <rect x="24" y="112" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
@@ -28,24 +28,49 @@
 <rect x="24" y="424" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="24" y="424" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="46" y="471" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">5</text>
-<text x="84" y="456" font-size="20" fill="#737373">A pipeline you plan your week around</text>
-<text x="84" y="485" font-size="22" font-weight="600" fill="#0a0a0a">Pipedrive</text>
+<text x="84" y="456" font-size="20" fill="#737373">LinkedIn and WhatsApp chats in one inbox</text>
+<text x="84" y="485" font-size="22" font-weight="600" fill="#0a0a0a">Breakcold</text>
 <rect x="24" y="502" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="24" y="502" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="46" y="549" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">6</text>
-<text x="84" y="534" font-size="20" fill="#737373">An agency that works in Gmail</text>
-<text x="84" y="563" font-size="22" font-weight="600" fill="#0a0a0a">Copper</text>
+<text x="84" y="534" font-size="20" fill="#737373">A pipeline you plan your week around</text>
+<text x="84" y="563" font-size="22" font-weight="600" fill="#0a0a0a">Pipedrive</text>
 <rect x="24" y="580" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="24" y="580" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="46" y="627" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">7</text>
-<text x="84" y="612" font-size="20" fill="#737373">One plan with 25,000 contacts</text>
-<text x="84" y="641" font-size="22" font-weight="600" fill="#0a0a0a">Nimble</text>
+<text x="84" y="612" font-size="20" fill="#737373">An agency that works in Gmail</text>
+<text x="84" y="641" font-size="22" font-weight="600" fill="#0a0a0a">Copper</text>
 <rect x="24" y="658" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
 <rect x="24" y="658" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
 <text x="46" y="705" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">8</text>
-<text x="84" y="690" font-size="20" fill="#737373">Your own network, with no pipeline</text>
-<text x="84" y="719" font-size="22" font-weight="600" fill="#0a0a0a">Dex</text>
-<rect x="24" y="766" width="20" height="20" fill="#10b981" stroke="#0a0a0a"/>
-<text x="56" y="783" font-size="20" fill="#0a0a0a">If you save LinkedIn profiles by hand and</text>
-<text x="56" y="811" font-size="20" fill="#0a0a0a">email from Premium, folk may still fit best.</text>
+<text x="84" y="690" font-size="20" fill="#737373">Pipelines inside your Gmail inbox</text>
+<text x="84" y="719" font-size="22" font-weight="600" fill="#0a0a0a">Streak</text>
+<rect x="24" y="736" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="736" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="46" y="783" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">9</text>
+<text x="84" y="768" font-size="20" fill="#737373">Open source you can host yourself</text>
+<text x="84" y="797" font-size="22" font-weight="600" fill="#0a0a0a">Twenty</text>
+<rect x="24" y="814" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="814" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="46" y="861" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">10</text>
+<text x="84" y="846" font-size="20" fill="#737373">One team price, unlimited seats</text>
+<text x="84" y="875" font-size="22" font-weight="600" fill="#0a0a0a">Clarify</text>
+<rect x="24" y="892" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="892" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="46" y="939" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">11</text>
+<text x="84" y="924" font-size="20" fill="#737373">A team that sells by phone</text>
+<text x="84" y="953" font-size="22" font-weight="600" fill="#0a0a0a">Close</text>
+<rect x="24" y="970" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="970" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="46" y="1017" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">12</text>
+<text x="84" y="1002" font-size="20" fill="#737373">One plan with 25,000 contacts</text>
+<text x="84" y="1031" font-size="22" font-weight="600" fill="#0a0a0a">Nimble</text>
+<rect x="24" y="1048" width="512" height="78" fill="#ffffff" stroke="#0a0a0a"/>
+<rect x="24" y="1048" width="44" height="78" fill="#f5f5f5" stroke="#0a0a0a"/>
+<text x="46" y="1095" text-anchor="middle" font-family="Geist Mono, ui-monospace, monospace" font-size="22" fill="#0a0a0a">13</text>
+<text x="84" y="1080" font-size="20" fill="#737373">Your own network, with no pipeline</text>
+<text x="84" y="1109" font-size="22" font-weight="600" fill="#0a0a0a">Dex</text>
+<rect x="24" y="1174" width="20" height="20" fill="#10b981" stroke="#0a0a0a"/>
+<text x="56" y="1191" font-size="20" fill="#0a0a0a">If you save LinkedIn profiles by hand and</text>
+<text x="56" y="1219" font-size="20" fill="#0a0a0a">email from Premium, folk may still fit best.</text>
 </svg>

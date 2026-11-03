@@ -14,7 +14,7 @@ summary: "The warmup, limits, sending hours and warning signs we built into our 
 
 If you want to automate LinkedIn outreach without getting banned, start with LinkedIn's User Agreement, which prohibits bots that add contacts or send messages. No tool can promise that your account will never be restricted.
 
-What you can control is how closely your sending looks like a busy person at work, and how the people you invite respond. We worked through both while building the LinkedIn sending engine inside Omniscient. Here are the rules we put into it and why, so you can copy them in any tool.
+What you can control is how closely your sending resembles a busy person at work, and how the people you invite respond. We worked through both while building the LinkedIn sending engine inside Omniscient. Here are the rules we put into it and why, so you can copy them in any tool.
 
 ```callout
 The pacing numbers below are our engine's own settings, and the rules come from LinkedIn's help pages. LinkedIn doesn't publish its limits, so every limit you read, ours included, is an estimate.
@@ -27,7 +27,7 @@ Section 8.2 of the [LinkedIn User Agreement](https://www.linkedin.com/legal/user
 - One bans software, scripts, robots and "browser plugins and add-ons" used to scrape or copy the site.
 - Another bans "bots or other unauthorized automated methods" used to "add or download contacts, send or redirect messages".
 
-LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) adds that tools which "scrape, modify the appearance of, or automate activity on LinkedIn's website" can get an account restricted or shut down. The other pages we link below describe restrictions, which pause your invitations or the whole account for a few hours up to a month.
+LinkedIn's [prohibited software page](https://www.linkedin.com/help/linkedin/answer/a1341387) adds that tools which "scrape, modify the appearance of, or automate activity on LinkedIn's website" can get an account restricted or shut down. The other pages we link below describe restrictions, which pause your invitations or the whole account for anything from a few hours to a month.
 
 Honestly, that means every automation tool carries some risk, ours included. The job is to keep that risk low and spot trouble early enough to back off in time.
 
@@ -97,7 +97,7 @@ People send invitations between meetings and take a break for lunch. Our engine 
 
 You can also switch off single hours on a week grid, such as the hour of your Monday team meeting.
 
-Run one tool per LinkedIn account for the same reason as the one-at-a-time rule. Two tools each keep their own pace, so together they can send twice what either one allows.
+Run one tool per LinkedIn account for the same reason each account does one thing at a time. Two tools each keep their own pace, so together they can send twice what either one allows.
 
 ### 4. View the profile before you invite
 
@@ -166,6 +166,16 @@ We built Omniscient as a cloud tool, so a sender keeps its hours while your lapt
 
 If you run outreach for many clients, a tool built for agencies may suit you better. HeyReach is a LinkedIn automation tool that connects many LinkedIn accounts and rotates sending between them. On monthly billing, its [Growth plan](https://www.heyreach.io/pricing) costs $79 per sender a month, and its Agency plan costs $999 a month for 25 senders.
 
+![HeyReach homepage](tool:heyreach.io)
+
+The two cloud tools in this guide, side by side:
+
+```tools
+Name | Domain | What it is | Starting price | Best for
+Omniscient | tryomniscient.com | LinkedIn outreach you approve, inside a CRM that fills itself in | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want careful pacing and a CRM in one place
+HeyReach | heyreach.io | Cloud LinkedIn outreach that rotates sending across many accounts, with one inbox | [$79 per sender a month](https://www.heyreach.io/pricing) | Agencies running outreach for many clients
+```
+
 We compare more options in [LinkedIn automation tools for agencies](/blog/linkedin-automation-tools-for-agencies/) and [the safest LinkedIn automation tools](/blog/safest-linkedin-automation-tools/). If you can't accept any risk, send by hand: Omniscient's manual mode turns a sender's queue into a list you work through yourself.
 
 ## What to do if LinkedIn restricts your account
@@ -180,7 +190,11 @@ Luckily, LinkedIn says most invitation restrictions lift on their own within a w
 
 ## How Omniscient lowers the risk to your LinkedIn account
 
-Omniscient is a CRM and LinkedIn outreach tool that sends the LinkedIn messages you approve and keeps every reply on the person's record. Most of the pacing in this guide lives on one screen, Settings, then LinkedIn senders.
+Omniscient is a CRM and LinkedIn outreach tool that sends the LinkedIn messages you approve and keeps every reply on the person's record.
+
+![Omniscient homepage](tool:tryomniscient.com)
+
+Most of the pacing in this guide lives on one screen, Settings, then LinkedIn senders.
 
 ![Omniscient's LinkedIn senders settings: a sender warming up on day 4, today's counts against each daily limit, the working day with a lunch break, and the pace set to Normal](/assets/blog/automate-linkedin-outreach-without-getting-restricted/senders.shot.html)
 

@@ -1,23 +1,23 @@
 ---
-title: "Best Salesforce Alternatives for Startups"
+title: "13 Best Salesforce Alternatives for Startups in 2026"
 slug: salesforce-alternatives-for-startups
 target_keyword: "salesforce alternatives for startups"
-meta_description: "Eight Salesforce alternatives for startups, with prices from each vendor's own site, where Salesforce's editions step up and what moves over when you switch."
+meta_description: "The 13 best Salesforce alternatives for startups in 2026, with prices from each vendor's own site and what moves over from Salesforce when you switch."
 type: alternatives
 topic: crm
 updated: 2026-11-03
-read_minutes: 12
-summary: "Eight Salesforce alternatives for startups, with today's prices from each vendor, where Salesforce's editions step up and what our importer brings over."
+read_minutes: 19
+summary: "13 Salesforce alternatives for startups, with today's prices from each vendor, where Salesforce's editions step up and what our importer brings over."
 ---
 
-# Best Salesforce Alternatives for Startups
+# 13 Best Salesforce Alternatives for Startups in 2026
 
 Salesforce's Free Suite covers two users, so a pair of founders can run their first deals on it at no cost. The search for Salesforce alternatives for startups often starts a little later, when a third person joins or the team wants a forecast.
 
-We build Omniscient, a CRM with LinkedIn outreach for small B2B teams, and we wrote our own Salesforce importer. Reading Salesforce data through its API showed us where a startup's sales history sits, and below are the eight alternatives we'd shortlist.
+We build Omniscient, a CRM with LinkedIn outreach for small B2B teams, and we wrote our own Salesforce importer. Reading Salesforce data through its API showed us where a startup's sales history sits, and below are the 13 alternatives we'd shortlist for a startup.
 
 ```callout
-Every price below comes from the vendor's own site, read on November 3, 2026, and links back to it. We haven't put a sales team through all eight, so our views rest on published plans and on building a CRM ourselves.
+We read every price on the vendor's own site on November 3, 2026, except Pipedrive's, whose pricing page didn't load for us. We haven't put a sales team through all 13, so our views rest on published plans and on building a CRM ourselves.
 ```
 
 Here's where we'd look first, by what you want instead:
@@ -31,6 +31,11 @@ Here's where we'd look first, by what you want instead:
 | A low seat price and help moving off Salesforce | Zoho CRM |
 | A CRM for deals that start in your own network | folk |
 | Calling and texting built into the CRM | Close |
+| Contacts captured from your inbox, plus email campaigns | Salesflare |
+| Sales sequences at a low seat price | Freshsales |
+| Sales on the same boards as your projects | monday CRM |
+| A CRM that lives inside Gmail | Copper |
+| Sales and email marketing for a small business | Nutshell |
 | An open source CRM you can host yourself | Twenty |
 
 ```tools
@@ -42,6 +47,11 @@ Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on ev
 Zoho CRM | zoho.com | A sales CRM with a free edition and AI agents from Zia | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Startups that want a low seat price and migration help
 folk | folk.app | An AI CRM with a LinkedIn extension and email campaigns | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who sell through their network
 Close | close.com | A CRM with calling, email and SMS built in | [From $9 a month for one user](https://www.close.com/pricing) | Teams that sell by phone
+Salesflare | salesflare.com | A B2B CRM that fills itself in from email, calendar and the web | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small B2B teams that want capture and email campaigns
+Freshsales | freshsales.io | A sales CRM from Freshworks with Freddy AI | [$9 per user a month, billed yearly](https://www.freshworks.com/crm/pricing/) | Startups that want sequences at a lower seat price
+monday CRM | monday.com | A CRM built on monday.com boards, with AI agents | [$12 per seat a month, billed yearly, from 3 seats](https://monday.com/crm/pricing) | Teams that already run their work on monday.com
+Copper | copper.com | A CRM that works inside Gmail and Google Calendar | [$23 per seat a month, billed yearly](https://www.copper.com/pricing) | Service startups that run on Google Workspace
+Nutshell | nutshell.com | A sales CRM with AI call notes and a marketing add on | [$13 per user a month](https://www.nutshell.com/pricing) | Small businesses that want sales and email marketing together
 Twenty | twenty.com | An open source CRM you host yourself or run in its cloud | [$9 per user a month, billed yearly](https://twenty.com/pricing) | Technical teams that want to own their CRM
 ```
 
@@ -72,28 +82,24 @@ A startup whose Salesforce setup already works has less to gain from a move. We'
 - A Launchpad discount covers the next year or two at a price you're happy with.
 - Your team uses custom objects and automations you built in Salesforce every day.
 
-## The 8 best Salesforce alternatives for startups
+## The 13 best Salesforce alternatives for startups
 
 ### 1. Omniscient
 
 Omniscient is an AI CRM that fills in its records from the email, calendar and call transcripts you connect, with LinkedIn outreach in the same app. Otto, our AI agent, writes your meeting notes and proposes field values, each with the quote that backs it.
 
-For a startup coming from Salesforce, the big change is who does the typing. Each email and meeting lands on the right company and person on its own, so records stay current in the weeks you're busiest with buyers.
+Coming from Salesforce, the big change is who does the typing. Each email and meeting lands on the right company and person, so records stay current in your busiest weeks.
 
-Our [plans](/#pricing) line up like this:
-
-- Starter costs $19 per seat a month billed yearly, with record pages, meeting notes from transcripts, follow up email drafts, Ask Omniscient and a daily digest.
-- Pro costs $49 and adds the pipeline board and forecast, custom fields, fields filled with proof, meeting prep briefs and Slack alerts.
-- Business costs $99 and adds a manager view with call coaching, MEDDICC and BANT from calls, and dashboards from a sentence.
+- [Starter](/#pricing) costs $19 per seat a month billed yearly, with record pages, meeting notes from transcripts and follow up email drafts.
+- Pro costs $49 and adds the pipeline board and forecast, custom fields and fields filled with proof.
+- Business costs $99 and adds a manager view with call coaching, plus MEDDICC and BANT from calls.
 - Teammates who only view or log data are free, monthly billing costs 20% more, and the 14 day trial needs no card.
 
-We chose one rule for fields on purpose, because a wrong amount in a forecast costs more than an empty one. For a field set to fill itself, Otto writes a value only when the field is empty, he's at least 85% sure and he can show the quote. Everything else waits as a suggestion to accept or skip, and he never changes a value someone on your team typed.
+Otto fills a field only when it's empty, he's at least 85% sure and he can show the quote. He never changes a value your team typed, because a wrong amount in a forecast costs more than an empty one.
 
-On the [LinkedIn side](/product/linkedin-outbound/), Scout finds people who match a buyer you describe in a sentence, and Otto drafts each message for a teammate to approve. LinkedIn's [invitation limit page](https://www.linkedin.com/help/linkedin/answer/a550555) doesn't publish an exact number, so a new sender starts low, at 5 invitations a day, and adds 2 a day. Actions go out inside working hours, with random gaps of 3 to 12 minutes at the default pace.
+On the [LinkedIn side](/product/linkedin-outbound/), Scout finds people who match a buyer you describe in a sentence, and Otto drafts each message for a teammate to approve. LinkedIn [doesn't publish an exact invitation limit](https://www.linkedin.com/help/linkedin/answer/a550555), so a new sender starts at 5 a day and adds 2 a day.
 
-Admittedly, Omniscient covers less ground than Salesforce in a few places. We don't send marketing emails or email sequences, and there's no dialer.
-
-Our importer also leaves custom objects and custom fields in Salesforce, so a team that built a lot there has more to rebuild. Everything else Omniscient does is on the [CRM page](/product/crm/).
+Admittedly, Omniscient covers less ground than Salesforce in places. We don't send marketing emails or email sequences, there's no dialer, and our importer leaves custom objects and custom fields behind. Everything else is on the [CRM page](/product/crm/).
 
 ### 2. HubSpot
 
@@ -165,7 +171,73 @@ Close is a sales CRM that lets teams call, text and email their leads from one p
 
 Happily, a founder who sells by phone can start on Solo and move to Essentials once the first rep joins. If your reps spend most of the day on calls, Close is the one we'd send you to, since Omniscient has no dialer.
 
-### 8. Twenty
+### 8. Salesflare
+
+Salesflare is a B2B CRM that fills in contacts and companies from your emails, calendar and email signatures. Its homepage headline is "The CRM that keeps itself up to date," and the same page says it fills the CRM "semi-automatically."
+
+- [Growth costs $29 per user a month billed yearly, or $39 monthly](https://salesflare.com/pricing), with automatic data capture, personalized email campaigns and a LinkedIn sidebar.
+- Pro costs $49 yearly, or $64 monthly, and adds email workflows of several steps, user permissions, custom dashboards and 100 lead credits.
+- Enterprise costs $99 yearly, or $124 monthly, needs at least 5 users and includes data migration and training.
+- The trial runs 30 days with no credit card.
+
+Salesflare's pitch sits closest to ours. When we built inbox capture, we had to skip noreply addresses, newsletter tools and the bots that meeting notetakers send as guests, so the CRM doesn't fill up with contacts you'll never sell to. Run Salesflare on your busiest inbox during the trial and look at who it adds.
+
+It suits a small B2B team that wants automatic capture plus email campaigns, which Omniscient doesn't send. Our guide to [CRMs with automatic data entry](/blog/crm-with-automatic-data-entry/) compares more of them.
+
+### 9. Freshsales
+
+Freshsales is a sales CRM from Freshworks that helps teams capture and qualify their leads. On its [sales page](https://www.freshworks.com/crm/sales/), Freddy AI scores each lead's intent and makes deal recommendations.
+
+- [Growth costs $9 per user a month, billed annually](https://www.freshworks.com/crm/pricing/), with a kanban pipeline, email, phone and chat, custom fields and basic workflows.
+- Pro costs $39 and adds sales sequences, contact scoring, deal insights and territory management.
+- Enterprise costs $59 and adds forecasting insights, custom modules, a sandbox and audit logs.
+- The Freddy AI Agent chatbot is an add on at $49 per 100 sessions, and the trial lasts 21 days with no credit card.
+
+Freshsales keeps much of Salesforce's shape at a lower seat price. Sequences arrive on Pro, and forecasting insights wait for Enterprise at $59, where Salesforce asks $100 a seat for Pro Suite.
+
+The pricing page lists only annual prices, so ask about monthly billing before you commit. Freshsales suits a startup that wants calling and sequences in one CRM without Salesforce's setup work.
+
+### 10. monday CRM
+
+monday CRM is a CRM built on monday.com's boards that puts your sales pipeline next to the rest of your team's work. Its page says "every call, email, and meeting auto-populates to the right CRM data fields," and names agents for lead sourcing, calling, pipeline monitoring and meeting prep.
+
+- [Basic costs $12 per seat a month billed yearly, or $18 monthly](https://monday.com/crm/pricing), for up to 1,000 active contacts and deals.
+- Standard costs $17 yearly, or $25 monthly, raises the limit to 10,000, and its AI version adds a lead sourcer, an outreach caller and an AI notetaker.
+- Pro costs $28 yearly, or $41 monthly, allows 100,000 contacts and deals, and adds email sequences and mass email.
+- Every plan starts at 3 seats, there's no free plan, and the trial lasts 14 days.
+
+Frankly, the 3 seat minimum is the first thing a two founder team will notice, since you pay for a third seat you don't use yet. Basic also allows 5 columns per board, so a team that tracks more than a handful of deal fields will likely need Standard, which allows 15.
+
+monday CRM makes the most sense when your startup already plans its work on monday.com and wants sales on the same boards.
+
+### 11. Copper
+
+Copper is a CRM for Google Workspace that runs inside Gmail and Google Calendar and logs your emails and meetings as you work. Its homepage describes it as a CRM for "relationship-focused service businesses."
+
+- [Basic costs $23 per seat a month billed yearly, or $29 monthly](https://www.copper.com/pricing), with pipelines, task automation and up to 2,500 contacts.
+- Professional costs $59 yearly, or $69 monthly, and adds workflow automation, bulk email, reporting and up to 15,000 contacts.
+- Business costs $99 yearly, or $134 monthly, and adds email series, custom reports and unlimited contacts.
+- You can start free with no credit card, though the page doesn't say how long the trial lasts.
+
+For a startup leaving Salesforce, Copper's draw is that you update deals without leaving Gmail. Email series only arrive on Business at $99 a seat, though. Its homepage and pricing page name only Google tools, so a team on Microsoft 365 should ask Copper what works before it buys.
+
+Copper deserves a trial if you sell services and your day already happens in Gmail.
+
+### 12. Nutshell
+
+Nutshell is a sales CRM that helps small businesses run their pipeline, with email marketing sold as an add on. Its homepage says it "automatically transcribes, summarizes, and logs every call and meeting."
+
+- [Foundation costs $13 per user a month](https://www.nutshell.com/pricing), with unlimited contacts, email and calendar sync and up to 100 open leads, and the page says yearly billing saves $6 a month.
+- Growth costs $25 and adds activity reports, sales quotas and rules for assigning leads.
+- Pro costs $42 and adds 5 pipelines, sales automation, advanced reporting and AI recaps for each lead.
+- The Marketing add on costs $49 a month, and Engagement, with two way SMS and WhatsApp, costs $16 per user.
+- The 14 day trial needs no credit card.
+
+Refreshingly, Nutshell offers free support and data migration during the trial, which helps when your history sits in Salesforce. The 100 open lead cap on Foundation will pinch a startup doing steady outbound, and no plan lists forecasting, so ask about it before you move.
+
+Nutshell fits a small business that wants its pipeline and email marketing from one vendor.
+
+### 13. Twenty
 
 Twenty is an open source CRM that you can host on your own servers or run on its managed cloud. Its homepage calls it "the #1 Open Source CRM on GitHub," and every cloud workspace comes with an MCP server for AI tools.
 
@@ -178,7 +250,7 @@ We'd pick Twenty for a startup with engineers who want to own the CRM's code and
 
 ## Salesforce alternatives compared
 
-![Price per seat a month on yearly billing, on each alternative's first paid plan, from each vendor's pricing page on November 3, 2026: Twenty Pro $9, Zoho CRM Standard $14, Omniscient Starter $19, folk Standard $24 and Attio Plus $35. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite, the first edition with forecasting, at $100. Not shown: HubSpot and Close, whose pricing pages don't label which price is yearly, and Pipedrive, whose pricing page didn't load for us.](/assets/blog/salesforce-alternatives-for-startups/seat-prices.svg)
+![Price per seat a month on yearly billing, on each alternative's first paid plan, from each vendor's pricing page on November 3, 2026: Freshsales Growth $9, Twenty Pro $9, monday CRM Basic $12 from 3 seats, Zoho CRM Standard $14, Omniscient Starter $19, Copper Basic $23, folk Standard $24, Salesflare Growth $29 and Attio Plus $35. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite, the first edition with forecasting, at $100. Not shown: HubSpot, Close and Nutshell, whose pricing pages don't state a yearly price per seat, and Pipedrive, whose pricing page didn't load for us.](/assets/blog/salesforce-alternatives-for-startups/seat-prices.svg)
 
 First paid plans include different features, so check these next to the reviews above:
 
@@ -192,6 +264,11 @@ First paid plans include different features, so check these next to the reviews 
 | Zoho CRM | 3 users | Length not stated | Standard, $14 yearly or $20 monthly |
 | folk | None listed | 2 weeks, no card | Standard, $24 yearly or $30 monthly |
 | Close | None listed | 14 days, no card | Solo, $9 or $19 for one user |
+| Salesflare | None listed | 30 days, no card | Growth, $29 yearly or $39 monthly |
+| Freshsales | check | 21 days, no card | Growth, $9 yearly |
+| monday CRM | None | 14 days, no card | Basic, $12 yearly or $18 monthly, from 3 seats |
+| Copper | None listed | Length not stated, no card | Basic, $23 yearly or $29 monthly |
+| Nutshell | None listed | 14 days, no card | Foundation, $13 a user |
 | Twenty | Free to host yourself | 30 days, no card | Pro, $9 yearly |
 
 ## How to move from Salesforce to another CRM
@@ -229,7 +306,9 @@ Connect Salesforce, bring your accounts and opportunities over, and run Omniscie
 
 ```faq
 Q: What is the best Salesforce alternative for a startup?
-A: Omniscient is our pick for B2B startups that sell through email, meetings and LinkedIn and want the CRM to fill itself in. If you need custom objects like Salesforce's, look at Attio first, and if your team sells by phone, Close is the stronger fit. HubSpot suits teams that run marketing and sales together.
+A: Omniscient is our pick for B2B startups that sell through email, meetings and LinkedIn and want the CRM to fill itself in. If you need custom objects like Salesforce's, look at Attio first, and if your team sells by phone, Close is the stronger fit. HubSpot suits teams that run marketing and sales together, and Salesflare suits teams that want email campaigns with automatic capture.
+Q: Which Salesforce alternative is cheapest for a startup?
+A: HubSpot, Attio and Zoho CRM all have free plans, for 2, 3 and 3 users. On paid plans billed yearly, Freshsales Growth and Twenty Pro start at $9 per user a month, and Omniscient Starter costs $19 per seat with free seats for teammates who only view or log data.
 Q: Is Salesforce free for startups?
 A: Salesforce's Free Suite covers up to 2 users, as long as someone logs in at least once every 60 days. From three users you move to Starter Suite at $25 per user a month, and venture backed startups can ask Salesforce about Launchpad discounts.
 Q: Can I move my data from Salesforce to another CRM?
