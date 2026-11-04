@@ -206,6 +206,13 @@
 .sempty { display: flex; align-items: center; justify-content: center; gap: 5px; font-weight: 500; color: var(--green); }
 .sempty svg { width: 10px; height: 10px; }
 
+/* Contracts kept private: the contract limited to Legal, its link kept only as a hash, a code by email, the certificate */
+.sx-ct .sacc .mr svg { width: 10px; height: 10px; flex: none; }
+.sx-ct .stok { font-size: 8px; }
+.scode { display: flex; gap: 3px; }
+.mini .scode b { width: 12px; height: 16px; display: grid; place-items: center; border-radius: 4px; background: #fff; box-shadow: var(--sh-chip); font-size: 9px; }
+.sx-ct .mn svg { width: 10px; height: 10px; color: var(--green); }
+
 /* The same scenes on the product pages' "rest of the platform" cards */
 .p-other .menu__tile.mini { height: 140px; margin-bottom: 6px; border-radius: 12px; }
 .om-product .p-other .mini b { font-family: var(--font); font-size: inherit; line-height: inherit; letter-spacing: 0; }

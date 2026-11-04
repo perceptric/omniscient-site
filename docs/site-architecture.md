@@ -40,7 +40,7 @@ Three sections that run end to end, in the order a deal moves: CRM keeps the who
 
 | Name | Line | In the app |
 |---|---|---|
-| **Contract Management** | Contracts signed, tracked and renewed | Contracts: uploads, versions, approval, signing, key dates (no drafting, no contract templates) |
+| **Contract Management** | Every contract, from redlines to renewal | Contracts: uploads and bulk import, signature fields found, redlines and comments, approval and approval rules, signing with reminders and email codes, bulk send, library search and private contracts, key dates (no drafting, no contract templates) |
 
 ### Ecosystem
 

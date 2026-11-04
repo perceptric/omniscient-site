@@ -361,6 +361,16 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
   .sec2 .grid4 > div:nth-child(3) { border-left: 0; }
   .sec2 .grid4 > div:nth-child(n+3) { border-top: 1px solid var(--frame); }
 }
+/* The fifth item, contracts, runs the full width under the others, its scene beside its words. On a phone it stacks
+   like the rest. */
+.sec2 .grid4 > div.sec-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 280px minmax(0, 1fr); align-content: center; column-gap: 32px; border-left: 0; border-top: 1px solid var(--frame); }
+.sec2 .grid4 > .sec-wide > .sec-tile { grid-row: 1 / 4; align-self: center; margin-bottom: 0; }
+.sec2 .grid4 > .sec-wide > p { max-width: 620px; }
+.om-home .sec2 .grid4 > div.sec-wide { min-height: 0; row-gap: 10px; column-gap: 40px; }
+@media (max-width: 900px) {
+  .sec2 .grid4 > div.sec-wide { display: flex; }
+  .sec2 .grid4 > .sec-wide > .sec-tile { margin-bottom: 4px; }
+}
 
 /* Pricing */
 .pricing { padding-top: 120px; padding-bottom: 40px; }
