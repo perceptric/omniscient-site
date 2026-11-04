@@ -60,8 +60,9 @@
    Child parts that move with their parent default to the last frame, so a scene reads well before it plays. */
 .om-product .p-shot.sc { cursor: default; -webkit-tap-highlight-color: transparent; }
 .om-product .p-shot .app .ph b { white-space: normal; overflow: visible; }
-/* A header's changing count sits at the right edge, whichever line is showing. */
+/* A header's changing count sits at the right edge, whichever line is showing, and so does a changing button after the spacer. */
 .p-shot .ph > .sub > .swap { justify-items: end; text-align: right; }
+.p-shot .ph > .grow ~ .swap, .p-shot .bulk > .grow ~ .swap { justify-items: end; }
 .sc .grow { flex: 1; min-width: 0; }
 .sc .pbar { display: block; height: 4px; margin-top: 6px; border-radius: 2px; background: var(--fill-2); overflow: hidden; }
 .sc .pbar i { display: block; height: 100%; border-radius: 2px; background: var(--solid); }
@@ -221,22 +222,10 @@
 
 /* ---------- Contract Management scenes ---------- */
 .p-shot .cseg { align-self: flex-start; margin: 12px 16px 2px; }
-/* Versions: each upload is the next one */
-.vlist { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
-.vrow { display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 12px; background: #fff; box-shadow: var(--sh-chip); }
-.vrow b { display: block; font-weight: 600; overflow-wrap: anywhere; }
-.vrow small { display: block; color: var(--ink-2); font-size: 11px; }
-.vfile { width: 30px; height: 36px; padding-bottom: 4px; border-radius: 6px; background: #fff; box-shadow: inset 0 0 0 1px var(--frame); display: grid; place-items: end center; font: 500 8px var(--font); color: var(--ink-2); flex: none; }
 .sc .bulk { flex-wrap: wrap; }
-/* Compare: what was taken out and put in, marked */
-.cmph { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+/* Switches, and words marked as taken out or put in */
 .tog { position: relative; width: 26px; height: 15px; border-radius: 999px; background: var(--solid); flex: none; }
 .tog::after { content: ""; position: absolute; right: 2px; top: 2px; width: 11px; height: 11px; border-radius: 999px; background: #fff; }
-.vcmp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.vcmp > div { padding: 12px 14px 16px; min-width: 0; }
-.vcmp > div + div { border-left: 1px solid var(--line); }
-.vcmp small { display: block; color: var(--ink-2); font-size: 11px; }
-.vcmp p { margin: 8px 0 0; line-height: 1.6; }
 .mk { position: relative; z-index: 0; white-space: nowrap; }
 .mk > i { position: absolute; inset: -1px -3px; border-radius: 4px; z-index: -1; }
 .mk.del > i { background: var(--red-soft); }
@@ -268,18 +257,13 @@
 .sk .swap { justify-items: start; }
 .csig { border-left: 1px solid var(--frame); align-self: stretch; }
 .csig .ev { align-items: center; }
-/* Certificate: the signed pages, then the certificate page */
-.ccert { padding: 14px; display: grid; gap: 10px; }
-.pages { display: flex; gap: 8px; }
+/* Pages, and the certificate page after the signed ones */
 .pgx { flex: 1; min-width: 0; max-width: 92px; aspect-ratio: 3 / 4; padding: 10px 8px; border-radius: 6px; background: #fff; box-shadow: var(--sh-chip); display: flex; flex-direction: column; gap: 5px; }
 .pgx s { display: block; height: 3px; border-radius: 2px; background: var(--line-2); }
 .pgx s:nth-of-type(2n) { width: 70%; }
 .pgx small { margin-top: auto; color: var(--ink-2); font-size: 9.5px; }
 .pgx.cert { box-shadow: 0 0 0 1.5px var(--signal); }
 .pgx.cert b { font-size: 9.5px; line-height: 1.2; }
-.ccert .fact { padding: 6px 10px; font-size: 11.5px; }
-.ccert .ck { width: 116px; flex: none; }
-.ccert .cv { overflow-wrap: anywhere; }
 /* Read by Otto: each fact with its quote, waiting for a person */
 .cfact { align-items: center; flex-wrap: wrap; padding: 10px 14px; }
 .cfact b { display: block; font-weight: 600; }
@@ -288,21 +272,8 @@
 .cfact .ok, .cfact .no { width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; flex: none; }
 .cfact .ok { background: var(--solid); color: #fff; }
 .cfact .no { box-shadow: inset 0 0 0 1px var(--frame); }
-/* Renewals coming up */
-.sc .tb.ren td { height: 48px; }
-.sc .tb .cn { display: block; font-weight: 400; font-size: 11px; }
+/* Alerts */
 .sc .alert > svg { flex: none; color: var(--ink-2); }
-/* Import: files dropped, each matched to its company */
-.cimp { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
-.cdrop { position: relative; display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; box-shadow: inset 0 0 0 1px var(--line-2); background: var(--fill); }
-.cdrop > svg { flex: none; color: var(--ink-2); }
-.cdrop b { display: block; font-weight: 600; }
-.cdrop small { display: block; color: var(--ink-2); font-size: 11px; }
-/* The .zip is dragged over the drop zone, then opens into its files, so it takes no room of its own. */
-.czip { position: absolute; right: 12px; top: 50%; margin-top: -17px; display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px 4px 4px; border-radius: 10px; background: #fff; box-shadow: var(--shadow-pop); font-weight: 500; white-space: nowrap; }
-.czip .vfile { width: 22px; height: 26px; padding-bottom: 3px; font-size: 7px; }
-.cmatch { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px; }
-.vrow .tag { flex: none; }
 /* Fields: the page with the spots found, and the signers */
 .cfld { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); align-items: start; }
 .cpage { margin: 14px; padding: 14px 14px 16px; border-radius: 8px; background: #fff; box-shadow: var(--sh-chip); display: flex; flex-direction: column; gap: 6px; }
@@ -345,24 +316,16 @@
 .ccm p { flex-basis: 100%; margin: 0; overflow-wrap: anywhere; }
 .ccm.rp { margin-left: 20px; }
 .men { color: var(--blue-11); font-weight: 600; }
-/* Send a version: the count of what changed */
-.csum { flex-direction: column; align-items: flex-start; gap: 2px; margin: 0 14px 12px; }
-.csum b { font-weight: 600; }
-.sc .bulk .to .tag img { width: 14px; height: 14px; }
 /* Approval rule from Automation */
 .crule { display: flex; align-items: center; gap: 10px; margin: 14px 14px 10px; padding: 9px 11px; border-radius: 12px; background: var(--fill); }
 .crule .wi { background: var(--solid); color: #fff; }
 .crule small { display: block; color: var(--ink-2); font-size: 10.5px; }
 .crule b { font-weight: 600; overflow-wrap: anywhere; }
-/* Sending: the settings, then what happens */
-.csend { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: start; }
-.csets { padding: 4px 0; }
+/* Settings rows (sending in three steps) */
 .cs { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; min-height: 42px; padding: 6px 14px; border-bottom: 1px solid var(--line); }
 .cs:last-child { border-bottom: 0; }
 .cs > span:first-child { flex: 1; min-width: 0; }
 .cs .seg2 span { padding: 2px 8px; font-size: 11px; }
-.cev { display: flex; align-items: flex-start; gap: 8px; padding: 9px 12px; border-bottom: 1px solid var(--line); }
-.cev small { display: block; color: var(--ink-3); font-size: 11px; }
 /* Bulk send */
 .cbk { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
 .cbf { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; margin-bottom: 2px; }
@@ -387,6 +350,156 @@
 .csnip > b { margin-right: 6px; color: var(--ink); font-weight: 600; }
 .csnip mark { padding: 0 2px; border-radius: 3px; background: var(--yellow-3); color: var(--ink); }
 .sc.s2 .clr.miss, .sc:not(.is-armed) .clr.miss { opacity: .45; }
+/* The list (106): tabs, filter chips and one status per contract */
+.ctabs { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 12px; padding: 8px 16px 0; border-bottom: 1px solid var(--line); color: var(--ink-2); font-size: 11.5px; }
+.ctabs > span { position: relative; padding: 4px 0 8px; white-space: nowrap; }
+.ctabs .tu { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; border-radius: 2px; background: var(--ink); }
+.ctabs .tplus { display: grid; place-items: center; width: 22px; height: 22px; margin-bottom: 4px; padding: 0; border-radius: 6px; box-shadow: var(--sh-chip); }
+.cchips { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 16px; }
+.cchip { display: inline-flex; align-items: center; gap: 4px; height: 24px; padding: 0 8px 0 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--frame); color: var(--ink-2); font-size: 11.5px; white-space: nowrap; }
+.cchip svg { color: var(--ink-3); }
+.ctb td.nm { white-space: normal; }
+.ctb .who svg { flex: none; color: var(--ink-3); }
+.ctb .own { font-weight: 500; }
+.ctb .own img { width: 18px; height: 18px; }
+/* The numbers over the list; each one filters it */
+.cstats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 14px 16px 10px; }
+.cst { position: relative; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 4px; padding: 8px 10px; border-radius: 10px; background: #fff; box-shadow: var(--sh-chip); }
+.cst small { color: var(--ink-2); font-size: 10.5px; line-height: 1.3; }
+.cst b { font: 600 17px/1.1 "Inter Tight", sans-serif; letter-spacing: -.01em; }
+.cring { position: absolute; inset: -3px; border: 2px solid var(--signal); border-radius: 13px; pointer-events: none; }
+.clist { display: grid; justify-items: stretch; }
+.crw { display: grid; grid-template-columns: minmax(0, 1fr) 136px 92px; align-items: center; gap: 4px 10px; padding: 8px 16px; border-top: 1px solid var(--line); }
+.crw b { display: block; font-weight: 600; overflow-wrap: anywhere; }
+.crw small { display: block; color: var(--ink-2); font-size: 11px; }
+.crw .tag { justify-self: start; }
+.crw .cd { text-align: right; }
+.crw.ch2 { padding-top: 6px; padding-bottom: 6px; color: var(--ink-2); font: 500 10.5px var(--font); }
+/* Import from PandaDoc: documents by status, ticked, then in Contracts */
+.pdi { padding: 12px 14px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.pdflt { display: flex; flex-wrap: wrap; gap: 2px; padding: 2px; border-radius: 8px; background: var(--fill); }
+.pdflt span { padding: 3px 9px; border-radius: 6px; color: var(--ink-2); font-size: 11.5px; white-space: nowrap; }
+.pdflt .on { background: #fff; color: var(--ink); box-shadow: var(--sh-chip); }
+.pdl { align-self: stretch; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1px var(--frame); }
+.pdr { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; min-height: 40px; padding: 7px 12px; border-bottom: 1px solid var(--line); }
+.pdr:last-child { border-bottom: 0; }
+.pdr > .swap { flex: none; }
+.pdn { flex: 1 1 140px; min-width: 0; display: flex; align-items: center; gap: 8px; }
+.pdn svg { flex: none; color: var(--ink-3); }
+.pdn b { font-weight: 500; overflow-wrap: anywhere; }
+.pdm { margin-left: auto; display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.pdm small { color: var(--ink-3); font-size: 11px; white-space: nowrap; }
+.ckb { width: 14px; height: 14px; border-radius: 4px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--line-2); display: grid; place-items: center; flex: none; }
+.ckb.on { background: var(--solid); color: #fff; box-shadow: none; }
+.ckin { width: 14px; height: 14px; display: grid; place-items: center; color: var(--ink-3); }
+.pdland { display: flex; flex-direction: column; gap: 8px; margin: 12px; padding: 10px 12px; border-radius: 12px; background: #fff; box-shadow: var(--shadow-pop); }
+.pdland .clh img { flex: none; }
+.pdchips { display: flex; flex-wrap: wrap; gap: 6px; }
+.pdchips .tag svg { width: 10px; height: 10px; flex: none; }
+.pdchips .tag img { width: 14px; height: 14px; }
+/* Editing a draft like a document: the toolbar, the page and the "+" menu */
+.edtb { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; padding: 6px 10px; border-bottom: 1px solid var(--frame); }
+.eb { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-width: 24px; height: 24px; padding: 0 4px; border-radius: 6px; color: var(--ink-2); font-size: 11.5px; white-space: nowrap; }
+.eb.sel { padding: 0 6px 0 8px; box-shadow: inset 0 0 0 1px var(--frame); color: var(--ink); }
+.eb b, .eb i, .eb u, .eca { color: var(--ink); font-size: 12.5px; }
+.eb b { font-weight: 700; }
+.eca { font-weight: 600; line-height: 1.1; box-shadow: inset 0 -2px 0 var(--red); }
+.esep { width: 1px; height: 16px; margin: 0 4px; background: var(--line-2); flex: none; }
+.edoc { padding: 14px 16px 18px; background: var(--fill); }
+.edpage { max-width: 460px; margin: 0 auto; padding: 18px 20px 20px 40px; border-radius: 4px; background: #fff; box-shadow: var(--sh-chip); display: flex; flex-direction: column; gap: 8px; font-size: 11.5px; line-height: 1.6; }
+.edpage p { margin: 0; }
+.edpage p b { font-weight: 600; }
+.edslot { position: relative; }
+.edplus { position: absolute; left: -30px; top: 0; width: 22px; height: 22px; border-radius: 6px; background: #fff; box-shadow: var(--sh-chip); display: grid; place-items: center; color: var(--ink-2); }
+.edmenu { position: absolute; z-index: 3; left: -30px; top: 28px; width: 160px; padding: 4px; border-radius: 12px; background: #fff; box-shadow: var(--shadow-pop); display: flex; flex-direction: column; }
+.edmenu > span { position: relative; z-index: 0; display: flex; align-items: center; gap: 8px; min-height: 26px; padding: 0 8px; font-size: 11.5px; white-space: nowrap; }
+.edmenu svg { flex: none; color: var(--ink-2); }
+.edhl { position: absolute; inset: 0; z-index: -1; border-radius: 6px; background: var(--fill); }
+.edins { display: grid; justify-items: stretch; }
+.edcar { width: 1.5px; height: 16px; margin-top: 3px; background: var(--ink); }
+.edsig { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.edsig > div { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.edsig b { margin-bottom: 8px; font-weight: 600; }
+.stg { padding: 0 3px; border-radius: 3px; background: var(--blue-3); color: var(--blue-11); font-family: var(--mono); font-size: 10px; overflow-wrap: anywhere; }
+/* Sending in three steps: the step control, the steps and each step's panel */
+.stepc { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--frame); font-weight: 500; white-space: nowrap; }
+.stepc svg { color: var(--ink-2); }
+.stepc .swap { justify-items: start; }
+.cstp { display: flex; flex-wrap: wrap; gap: 4px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+.cs3 { position: relative; z-index: 0; display: inline-flex; align-items: center; gap: 7px; padding: 4px 10px 4px 5px; border-radius: 999px; font-weight: 500; white-space: nowrap; }
+.cs3on { position: absolute; inset: 0; z-index: -1; border-radius: 999px; background: var(--fill); }
+.cs3 .cn { width: 18px; height: 18px; border-radius: 999px; display: grid; place-items: center; background: var(--fill-2); color: var(--ink-2); font-size: 10.5px; font-weight: 600; }
+.cs3 .cn.ok { background: var(--solid); color: #fff; }
+.cpans { display: grid; justify-items: stretch; align-items: start; }
+.cpn { min-width: 0; display: flex; flex-direction: column; padding: 4px 0 14px; }
+.crp { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; padding: 9px 14px; border-bottom: 1px solid var(--line); }
+.crp > .sub { width: 10px; font-size: 11px; }
+.crp b { display: block; font-weight: 600; }
+.crp small { display: block; color: var(--ink-2); font-size: 11px; overflow-wrap: anywhere; }
+.cdot.c0 { background: var(--ink-3); }
+.cpick { display: inline-flex; align-items: center; gap: 4px; height: 24px; padding: 0 8px; border-radius: 8px; box-shadow: inset 0 0 0 1px var(--frame); font-size: 11.5px; font-weight: 500; }
+.tog.off { background: var(--fill-2); }
+.tog.off::after { right: auto; left: 2px; }
+.crcard { display: flex; align-items: center; gap: 10px; margin: 8px 14px 10px; padding: 8px 10px; border-radius: 10px; background: #fff; box-shadow: var(--sh-chip); }
+.crcard b { display: block; font-weight: 600; }
+.crcard small { display: block; color: var(--ink-2); font-size: 11px; }
+.crcard > svg { flex: none; color: var(--ink-2); }
+.cmark { width: 24px; height: 24px; border-radius: 999px; display: grid; place-items: center; flex: none; background: var(--blue-3); color: var(--blue-11); font-size: 11px; font-style: normal; font-weight: 600; }
+.cfg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; padding: 0 14px; }
+.cfi { position: relative; min-width: 0; display: flex; align-items: center; gap: 7px; min-height: 30px; padding: 4px 9px; border-radius: 8px; background: #fff; box-shadow: var(--sh-chip); font-size: 11.5px; font-weight: 500; }
+.cfi svg { flex: none; color: var(--ink-2); }
+.cfi .cring { border-radius: 11px; }
+.csug { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 14px 0; }
+.csto { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 14px; border-bottom: 1px solid var(--line); }
+.csto .tag img { width: 14px; height: 14px; }
+.csub { display: flex; flex-direction: column; gap: 4px; padding: 10px 14px 0; }
+.csub small { color: var(--ink-2); font-size: 10.5px; }
+/* Roles: the approver's link, then the signed copy CC gets, beside the recipients */
+.crole { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; }
+.crl { display: grid; justify-items: stretch; align-items: center; }
+.apl { margin: 0; color: #e5e5e5; font-size: 12px; line-height: 1.5; }
+.aplines { display: flex; flex-direction: column; gap: 5px; padding: 4px 0; }
+.aplines s { display: block; height: 3px; border-radius: 2px; background: #2a2f37; }
+.aplines s:nth-child(2n) { width: 80%; }
+.ccml { display: flex; flex-direction: column; gap: 10px; margin: 14px; padding: 12px; border-radius: 12px; background: #fff; box-shadow: var(--shadow-pop); }
+.ccml .mr { flex-wrap: wrap; gap: 8px; }
+.ccml .grow b { display: block; font-weight: 600; }
+.ccml .grow small { display: block; color: var(--ink-2); font-size: 11px; }
+.ccml .att b { font-weight: 500; overflow-wrap: anywhere; }
+/* The status panel: one status, one sentence, the recipients and the dates */
+.cstat { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); align-items: stretch; }
+.cdocs { padding: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-content: start; background: var(--fill); }
+.cdocs .pgx { max-width: none; }
+.cpanel { min-width: 0; padding: 12px 14px 14px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; border-left: 1px solid var(--frame); }
+.cpanel > .swap { justify-items: start; }
+.cline { font-weight: 600; overflow-wrap: anywhere; }
+.cacts { display: flex; gap: 4px; }
+.cacts .ib { position: relative; background: #fff; box-shadow: var(--sh-chip); }
+.ctip { position: absolute; left: 0; top: calc(100% + 6px); z-index: 2; padding: 3px 8px; border-radius: 6px; background: var(--solid); color: #fff; font-size: 11px; font-style: normal; white-space: nowrap; }
+.clab { margin-top: 4px; color: var(--ink-2); font-size: 10.5px; font-weight: 500; }
+.csrow { align-self: stretch; display: flex; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid var(--line); }
+.csrow b { display: block; font-weight: 600; }
+.csrow .grow small { display: block; color: var(--ink-2); font-size: 11px; overflow-wrap: anywhere; }
+.csst { display: flex; flex-direction: column; align-items: flex-end; text-align: right; font-size: 11.5px; }
+.csst small { color: var(--ink-2); font-size: 11px; }
+.csst .swap { justify-items: end; }
+.csst .ok { color: var(--green-11); font-weight: 600; }
+.cdet { align-self: stretch; display: flex; flex-direction: column; padding-top: 4px; border-top: 1px solid var(--line); }
+.cdet > span { display: flex; flex-wrap: wrap; gap: 2px 10px; padding: 3px 0; font-size: 11.5px; }
+.cdet small { width: 96px; flex: none; color: var(--ink-2); font-size: 11px; }
+/* Read by Otto: the alerts the renewal notice date sets */
+.calrt > svg { flex: none; color: var(--ink-2); }
+@media (max-width: 900px) {
+  .crole, .cstat { grid-template-columns: minmax(0, 1fr); }
+  .cdocs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .cdocs .pgx { padding: 8px 6px; }
+  .cpanel { border-left: 0; border-top: 1px solid var(--frame); }
+  .cfg { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .crw { grid-template-columns: minmax(0, 1fr) auto; }
+  .crw .cd { display: none; }
+}
 
 /* ---------- Automation scenes ---------- */
 /* The canvas: cards joined by lines, on a dotted ground */
@@ -494,13 +607,11 @@
 .wevw .wfc { max-width: none; }
 
 @media (max-width: 900px) {
-  .vcmp, .csign, .wtrg, .wev, .cfld, .cred, .csend { grid-template-columns: minmax(0, 1fr); }
-  .vcmp > div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .csign, .wtrg, .wev, .cfld, .cred { grid-template-columns: minmax(0, 1fr); }
   .ccms { border-left: 0; border-top: 1px solid var(--frame); }
   .csig { border-left: 0; border-top: 1px solid var(--frame); }
   .wtl { border-right: 0; border-bottom: 1px solid var(--frame); }
   .wpick { left: auto; right: 0; top: 34px; }
   .wevl { display: none; }
   .wevw { margin-bottom: 6px; }
-  .ccert .ck { width: 96px; }
 }

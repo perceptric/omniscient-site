@@ -15,7 +15,7 @@ def face(n, s=28):
 
 
 def logo(n, s=16, alt=""):
-    ext = "jpg" if n == "outlook" else "png" if n in ("pipedrive", "attio", "teams") else "svg"
+    ext = "jpg" if n == "outlook" else "png" if n in ("pipedrive", "attio", "teams", "pandadoc") else "svg"
     return f'<img class="lg" src="{L}{n}.{ext}" alt="{alt}" width="{s}" height="{s}">'
 
 
@@ -279,50 +279,118 @@ I_PLUS = '<path d="M12 5v14M5 12h14"/>'
 I_CHECK = '<path d="m5 12 5 5 9-10"/>'
 
 # ---- Contract Management shots (in the app: src/lib/contracts, src/components/contracts, docs/deal-room.md) ----
-# Contracts come only from files people upload. Otto never writes contract text: he reads an uploaded or signed file
-# and suggests facts, each with its quote, for a person to confirm. Finding signature fields only reads where words
-# sit, and what changed between versions is counted from the files, with no AI.
+# Contracts come only from files people upload or import (PandaDoc, 106). Otto never writes contract text: he reads an
+# uploaded or signed file and suggests facts, each with its quote, for a person to confirm. People may edit a draft
+# (108); Otto has no part in it. Finding signature fields only reads where words sit, and what changed between versions
+# is counted from the files, with no AI. Statuses are the app's one status (contractStatus in src/lib/contracts/flow.ts).
 I_LOCK = '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>'
 I_SEARCH = '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>'
 I_SEND = '<path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/>'
+I_FILE = '<path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/>'
+I_CHEV = '<path d="m6 9 6 6 6-6"/>'
+I_UNDO = '<path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/>'
+I_REDO = '<path d="m15 14 5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h3"/>'
+I_HL = '<path d="m9 11-6 6v3h9l3-3"/><path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"/>'
+I_ALIGN = '<path d="M3 6h18M3 12h12M3 18h16"/>'
+I_BUL = '<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01" stroke-width="3"/>'
+I_NUM = '<path d="M10 6h11M10 12h11M10 18h11"/><path d="M4 4h1.5v4"/><path d="M3.5 14.5c.3-.9 2.5-.9 2.5.4 0 1-2.5 1.6-2.5 3.1H6"/>'
+I_LINK = '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>'
+I_TYPE = '<path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/>'
+I_IMG = '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>'
+I_TABLE = '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M12 3v18"/>'
+I_BREAK = '<path d="M3 12h18"/><path d="m8 8 4-4 4 4"/><path d="m16 16-4 4-4-4"/>'
+I_CLIP = '<path d="m21.4 11-8.5 8.5a5.5 5.5 0 0 1-7.8-7.8l8.5-8.5a3.7 3.7 0 0 1 5.2 5.2l-8.5 8.5a1.8 1.8 0 0 1-2.6-2.6L15.6 6.4"/>'
+I_RADIO = '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/>'
+I_CBOX = '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="m8 12 3 3 5-6"/>'
+I_DROP = '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m9 11 3 3 3-3"/>'
+I_STAMP = '<path d="M5 22h14"/><path d="M19.3 13.7a2.5 2.5 0 0 0-1.8-.7h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1.5c0-.7-.3-1.3-.7-1.8z"/><path d="M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13"/>'
+I_DOWN = '<path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 20h16"/>'
+I_ARCH = '<rect x="2" y="3" width="20" height="5" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8M10 12h4"/>'
 
 
 def av(ini, bg, s=16):  # a company's or person's initials, where there is no portrait
     return f'<span class="av" style="background:{bg};width:{s}px;height:{s}px;font-size:{max(7, round(s * .36))}px">{ini}</span>'
 
 
-CTS = [("Pallet Cloud", "PC", "#fde68a", "Order form, 25 seats", "t-blue", "Sent", "$30,000", "None"),
-       ("Northwind Health", "NW", "#efe3ff", "Master agreement", "t-yellow", "Expiring", "$84,000", "Nov 30, 2026"),
-       ("Harbor &amp; Pine", "HP", "#dbeafe", "Order form, 60 seats", "t-yellow", "In review", "$126,500", "None"),
-       ("Verda Robotics", "VR", "#d1fae5", "Order form, 40 seats", "t-purple", "Approved", "$61,000", "None"),
-       ("Orbit Mills", "OM", "#e0f2fe", "Master agreement", "t-green", "Active", "$210,000", "Jan 29, 2027")]
+# The list like PandaDoc's (106): tabs, filter chips and one status per contract. Tabs and chips are the app's own
+# (TABS in src/lib/contracts/listView.ts, FilterChips in src/components/contracts/ListParts.tsx).
+LTABS = ["All", "Created by me", "Recent", "Archived", "Upcoming renewals", "Expiring soon"]
+CHIPS = ["Date", "Status", "Owner", "Recipients", "Tags"]
+
+
+def ctabs(on, to=None, at=None):  # the tabs over the list; the underline moves from `on` to `to` at step `at`
+    def mark(x):
+        if x == on:
+            return f'<i class="tu"{A(None, at)}></i>' if to else '<i class="tu"></i>'
+        return f'<i class="tu fx-x"{A(at)}></i>' if x == to else ""
+    return '<div class="ctabs">' + "".join(f"<span>{x}{mark(x)}</span>" for x in LTABS) + f'<span class="tplus">{ic(I_PLUS, 12)}</span></div>'
+
+
+CCHIPS = '<div class="cchips">' + "".join(f'<span class="cchip">{x}{ic(I_CHEV, 11)}</span>' for x in CHIPS) + "</div>"
+
+CTS = [("Pallet Cloud order form", "Rina Sato, Marcus Lee", "t-teal", "Viewed", "sam", "Sam Okoye", "Oct 24"),
+       ("Harbor &amp; Pine master agreement", "Omar Haddad", "t-purple", "Waiting for approval", "theo", "Theo Walsh", "Oct 23"),
+       ("Northwind Health master agreement", "Diego Ruiz", "t-yellow", "Renewal soon", "sam", "Sam Okoye", "Oct 20"),
+       ("Verda Robotics order form", "Kim Park", "t-gray", "Draft", "leo", "Leo Park", "Oct 19"),
+       ("Orbit Mills NDA", "Lena Fischer", "t-green", "Signed", "theo", "Theo Walsh", "Oct 12")]
 CT_HERO = shot(
-    '<div class="seg cseg"><span class="on">All</span><span>Renewals coming up</span><span>For you</span></div>'
-    '<div class="scroll-x"><table class="tb"><thead><tr><th>Company</th><th>Contract</th><th>Status</th><th class="hide-s">Value</th><th class="hide-s">Renewal notice</th></tr></thead><tbody class="rows">'
-    + "".join(f'<tr{" class=open" if k == 0 else ""}><td><span class="who"><span class="av" style="background:{bg}">{i}</span>{n}</span></td><td class="sub">{c}</td><td><span class="tag {t}">{st}</span></td><td class="hide-s">{v}</td><td class="hide-s sub">{r}</td></tr>'
-              for k, (n, i, bg, c, t, st, v, r) in enumerate(CTS))
+    ctabs("All") + CCHIPS
+    + '<div class="scroll-x"><table class="tb ctb"><thead><tr><th>Name</th><th class="hide-s">Recipients</th><th>Status</th><th class="hide-s">Owner</th><th class="hide-s">Modified</th></tr></thead><tbody class="rows">'
+    + "".join(f'<tr{" class=open" if k == 0 else ""}><td class="nm"><span class="who">{ic(I_FILE, 14)}{n}</span></td><td class="hide-s sub">{r}</td><td><span class="tag {t}">{st}</span></td>'
+              f'<td class="hide-s"><span class="who own">{face(f, 18)}{o}</span></td><td class="hide-s sub">{m}</td></tr>'
+              for k, (n, r, t, st, f, o, m) in enumerate(CTS))
     + "</tbody></table></div>",
     "b-gray",
-    f'<b>Contracts <span>214</span></b><span class="grow"></span><span class="ui-btn pri">{ic(I_UP)}Upload contract</span>',
+    f'<b>Contracts <span>214</span></b><span class="grow"></span><span class="ui-btn pri">{ic(I_PLUS)}New contract</span>',
 )
 
-# Import: a .zip of old contracts is dropped, each file comes in as Signed, is matched to its company (or waits as a
-# suggested match), and Otto reads them.
-IMP = [("Northwind MSA 2024.pdf", "PDF", "Northwind Health", "NW", "#efe3ff", 1),
-       ("Northwind SOW 2.docx", "DOCX", "Northwind Health", "NW", "#efe3ff", 1),
-       ("Atlas Cargo order form.pdf", "PDF", "Atlas Cargo", "AC", "#fee2e2", 1),
-       ("Orbit Mills NDA, scanned.pdf", "PDF", "Orbit Mills", "OM", "#e0f2fe", 0)]
-CT_IMPORT = scene(
-    '<div class="cimp">'
-    f'<div class="cdrop">{ic(I_UP, 16)}<span class="grow"><b>Drop files here</b><small>PDF, Word (.docx) or .zip, up to 25 MB a file</small></span>'
-    f'<span class="czip fx-drop"{A(1, 2)}><span class="vfile">ZIP</span>Old contracts.zip</span></div>'
-    + "".join(f'<div class="vrow fx-drop"{A(2, d=k * 110)}><span class="vfile">{t}</span><span class="grow"><b>{f}</b><small>'
-              + sw((LDR + "Uploading", None, 3, ""), ((f'<span class="cmatch">{av(i, bg)}{c}</span>' if sure else f'<span class="cmatch"><span class="tag t-yellow">Suggested match</span>{c}</span>'), 3, None, "fx-fade"))
-              + '</small></span><span class="tag t-green">Signed</span></div>' for k, (f, t, c, i, bg, sure) in enumerate(IMP))
-    + f'</div><div class="bulk"><span class="fx-pop"{A(4)} style="display:flex">{OWL}</span><span class="sub">'
-    + sw((LDR + "Otto is reading 4 contracts", 4, 5, "fx-fade"), ("Facts ready to confirm", 5, None, "fx-fade")) + "</span></div>",
-    "b-gray", [300, 800, 900, 900, 1500],
-    '<b>Import contracts</b><span class="grow"></span><span class="sub">Already signed</span><span class="tog"></span>')
+# From PandaDoc (106): documents listed with PandaDoc's own status, ticked and imported, one job a document; each one is
+# then "In Contracts", and a completed one lands as Signed with its signed PDF, owner, folder and tags.
+PD_DOCS = [("Pallet Cloud order form", "Completed", "t-green", "Oct 26"), ("Northwind MSA renewal", "Viewed", "t-teal", "Oct 24"),
+           ("Harbor &amp; Pine SOW 3", "Sent", "t-blue", "Oct 21"), ("Verda Robotics NDA", "Draft", "t-gray", "Oct 18")]
+PD_FILTERS = ["All", "Draft", "Sent", "Viewed", "Completed", "Expired", "Declined"]
+
+
+def ckb(on, done):  # a checkbox ticked at step `on`, then the check of a document already in Contracts at step `done`
+    return sw(('<span class="ckb"></span>', None, on, ""), (f'<span class="ckb on">{ic(I_CHECK, 9, 3)}</span>', on, done, "fx-pop"),
+              (f'<span class="ckin">{ic(I_CHECK, 13, 2.4)}</span>', done, None, "fx-fade"))
+
+
+CT_PANDA = scene(
+    '<div class="pdi"><div class="pdflt">' + "".join(f'<span{" class=on" if k == 0 else ""}>{x}</span>' for k, x in enumerate(PD_FILTERS)) + '</div><div class="pdl">'
+    + "".join(f'<div class="pdr fx-l"{A(1, d=k * 90)}>' + ckb(2, 4) + f'<span class="pdn">{ic(I_FILE, 14)}<b>{n}</b></span><span class="pdm">'
+              f'<small class="ckt fx-fade"{A(4, d=k * 110)}>In Contracts</small><span class="tag {t}">{st}</span><small>{d}</small></span></div>'
+              for k, (n, st, t, d) in enumerate(PD_DOCS))
+    + "</div></div>"
+    '<div class="bulk"><span class="ui-btn">Back</span><span class="grow"></span>'
+    + sw(("Import", None, 2, "ui-btn"), ("Import 4", 2, 3, "ui-btn pri fx-pop"), (LDR + "Importing 4", 3, 4, "sub fx-fade"), (CK + "4 imported", 4, None, "tag t-green fx-pop")) + "</div>"
+    f'<div class="pdland fx-r"{A(5)}><span class="clh">{logo("pandadoc", 14)}<b>Pallet Cloud order form</b><span class="tag t-green">Signed</span></span>'
+    f'<span class="pdchips"><span class="tag t-gray">{face("sam", 14)}Sam Okoye</span><span class="tag t-gray">{ic(I_FOLDER)}Customers</span>'
+    f'<span class="tag t-gray">Renewal 2027</span><span class="tag t-gray">{ic(I_FILE)}Signed PDF</span><span class="tag t-gray">Signed Oct 26, 2026</span></span></div>',
+    "b-gray", [300, 900, 1000, 1500, 900],
+    f'<span style="display:flex;align-items:center;gap:8px">{logo("pandadoc", 16)}<b>Import from PandaDoc</b></span>')
+
+# The numbers over the list (contract_stats, ListParts.tsx): each one filters the list. Renewals in the next 90 days is
+# picked, the tab moves to Upcoming renewals and the list shows what is due.
+STATS = [("Drafts", "12"), ("Waiting for signature", "7"), ("Signed this month", "9"), ("Value signed this quarter", "$412,500"),
+         ("Renewals in the next 90 days", "3"), ("Average days to sign", "3.4")]
+LALL = [("Pallet Cloud order form", "Rina Sato, Marcus Lee", "t-teal", "Viewed", "Oct 24"), ("Harbor &amp; Pine master agreement", "Omar Haddad", "t-purple", "Waiting for approval", "Oct 23"),
+        ("Verda Robotics order form", "Kim Park", "t-gray", "Draft", "Oct 22")]
+LREN = [("Northwind Health master agreement", "Diego Ruiz", "t-yellow", "Renewal soon", "Nov 30"), ("Atlas Cargo order form", "Jon Reyes", "t-yellow", "Renewal soon", "Dec 31"),
+        ("Orbit Mills master agreement", "Lena Fischer", "t-green", "Active", "Jan 29")]
+
+
+def lrows(rows, col):
+    return (f'<div class="crw ch2"><span class="grow">Name</span><span>Status</span><span class="cd">{col}</span></div>'
+            + "".join(f'<div class="crw"><span class="grow"><b>{n}</b><small>{r}</small></span><span class="tag {t}">{st}</span><span class="cd sub">{d}</span></div>' for n, r, t, st, d in rows))
+
+
+CT_LIST = scene(
+    '<div class="cstats">' + "".join(f'<span class="cst fx-drop"{A(1, d=k * 70)}><small>{l}</small><b>{v}</b>' + (f'<i class="cring fx-pop"{A(3)}></i>' if k == 4 else "") + "</span>" for k, (l, v) in enumerate(STATS)) + "</div>"
+    + ctabs("All", "Upcoming renewals", 3) + CCHIPS
+    + f'<div class="swap clist"><div class="fx-fade"{A(2, 3)}>{lrows(LALL, "Modified")}</div><div class="fx-fade"{A(3)}>{lrows(LREN, "Renewal notice")}</div></div>',
+    "b-stone", [300, 800, 1500],
+    f'<b>Contracts <span>214</span></b><span class="grow"></span><span class="ui-btn pri">{ic(I_PLUS)}New contract</span>')
 
 
 def cff(c, label, d=0):  # a signature field Omniscient found: dashed while suggested, solid once added
@@ -339,15 +407,49 @@ CT_FIELDS = scene(
     '<div class="cblk"><small>Lumen Labs</small>'
     f'<span class="cln"><i>By:</i><u>{cff("c2", "Signature", 200)}</u></span>'
     f'<span class="cln"><i>Date:</i><u>{cff("c2", "Date signed", 300)}</u></span></div></div></div>'
-    '<div class="feed csig"><div class="ch">Signers</div>'
+    '<div class="feed csig"><div class="ch">Recipients</div>'
     + "".join(f'<div class="csr"><i class="cdot {c}"></i><span class="grow">'
               + sw((f"<b>{ph}</b><small>No email yet</small>", None, 4, ""), (f"<b>{n}</b><small>{e}</small>", 4, None, "fx-fade"))
               + f'<span class="tag t-gray fx-pop"{A(4, d=150)}>{src}</span></span></div>' for c, ph, n, e, src in SIGNERS)
     + '</div></div><div class="bulk"><span class="sub">From 2 tags and a signature block</span><span class="grow"></span>'
     + sw(("Add all", None, 3, "ui-btn"), (CK + "Added", 3, None, "ui-btn pri fx-pop")) + "</div>",
-    "b-stone", [300, 1000, 1200, 900],
-    '<b>Prepare</b><span class="grow"></span><span class="sub">'
+    "b-gray", [300, 1000, 1200, 900],
+    '<b>Fields</b><span class="grow"></span><span class="sub">'
     + sw((LDR + "Finding fields", 1, 2, "fx-fade"), ("4 field suggestions", 2, 3, "fx-fade"), ("4 fields", 3, None, "fx-fade")) + "</span>")
+
+
+# Editing a draft (108, DocEditor.tsx): a Word file in the editor with its toolbar; the "+" beside the cursor's block
+# opens Insert (Text, Image, Table, Page break, Signature block), the signature block goes in with its signing tags
+# marked, the draft saves on its own, and Save as new version makes version 2 while the upload stays version 1.
+def eb(inner, cls=""):  # one toolbar button
+    return f'<span class="eb{" " + cls if cls else ""}">{inner}</span>'
+
+
+ESEP = '<i class="esep"></i>'
+EDTB = ('<div class="edtb">' + eb(ic(I_UNDO)) + eb(ic(I_REDO)) + ESEP + eb("Normal text" + ic(I_CHEV, 10), "sel") + eb("11" + ic(I_CHEV, 10), "sel") + ESEP
+        + eb("<b>B</b>") + eb("<i>I</i>") + eb("<u>U</u>") + eb('<span class="eca">A</span>') + eb(ic(I_HL)) + ESEP
+        + eb(ic(I_ALIGN)) + eb(ic(I_BUL)) + eb(ic(I_NUM)) + eb(ic(I_LINK)) + ESEP + eb(ic(I_PLUS) + "Insert", "sel") + "</div>")
+INSERTS = [(I_TYPE, "Text"), (I_IMG, "Image"), (I_TABLE, "Table"), (I_BREAK, "Page break"), (I_SIGN, "Signature block")]
+
+
+def stg(t):  # a signing tag, marked in the text
+    return f'<code class="stg">{{{{{t}}}}}</code>'
+
+
+SIGBLK = ('<div class="edsig">' + "".join(f'<div><b>{h}</b><span>By: {stg("sig:" + n)}</span><span>Name: {stg("name:" + n)}</span>'
+                                          f'<span>Title: {stg("title:" + n)}</span><span>Date: {stg("date:" + n)}</span></div>' for h, n in [("Lumen Labs", "1"), ("Pallet Cloud", "2")]) + "</div>")
+CT_EDIT = scene(
+    EDTB + '<div class="edoc"><div class="edpage">'
+    '<p><b>7. Payment.</b> Invoices are due forty-five (45) days after receipt.</p>'
+    '<p><b>8. Term.</b> This order form runs for twelve (12) months from December 1, 2026.</p>'
+    f'<div class="edslot"><span class="edplus">{ic(I_PLUS, 12)}</span>'
+    f'<span class="edmenu fx-drop"{A(1, 3)}>' + "".join(f"<span>" + (f'<i class="edhl fx-fade"{A(2)}></i>' if l == "Signature block" else "") + f"{ic(i, 12)}{l}</span>" for i, l in INSERTS) + "</span>"
+    f'<div class="swap edins"><span class="edcar"{A(None, 3)}></span><div class="fx-drop"{A(3)}>{SIGBLK}</div></div></div></div></div>'
+    f'<div class="bulk"><span class="to"><span class="tag t-gray">Version 1</span><span class="tag t-purple fx-pop"{A(5)}>Version 2, edited</span></span><span class="grow"></span>'
+    + sw(("Save as new version", None, 5, "ui-btn pri"), (CK + "Saved as a new version", 5, None, "tag t-green fx-pop")) + "</div>",
+    "b-stone", [400, 800, 800, 900, 1100],
+    '<b>Order form, 25 seats</b><span class="tag t-gray">Draft</span><span class="grow"></span><span class="sub">'
+    + sw(("Saved", None, 3, ""), (LDR + "Saving", 3, 4, "fx-fade"), ("Saved", 4, None, "fx-fade")) + "</span>")
 
 
 def mk(word, kind, at, d=None):  # a word the compare marks as taken out or put in
@@ -369,20 +471,6 @@ CT_REDLINE = scene(
     "b-gray", [300, 800, 900, 800, 900],
     '<b>Version 3</b><span class="tag t-gray">Client redlines</span>')
 
-# Send a version: two versions side by side, then the count of what changed since the client's version, and each
-# person gets their own review link.
-CT_COMPARE = scene(
-    '<div class="cmph"><span class="tag t-gray">Version 1</span><span class="sub">and</span><span class="tag t-gray">Version 2</span><span class="grow"></span><span class="sub">Only changes</span><span class="tog"></span></div>'
-    '<div class="vcmp">'
-    f'<div class="fx-fade"{A(1)}><small>Version 1, sent to the client</small><p>Invoices are due {mk("thirty (30)", "del", 2)} days after receipt.</p>'
-    f'<p>This order form runs for {mk("twenty-four (24)", "del", 2, 150)} months from November 1, 2026.</p></div>'
-    f'<div class="fx-fade"{A(1, d=120)}><small>Version 2, new upload</small><p>Invoices are due {mk("forty-five (45)", "ins", 3)} days after receipt.</p>'
-    f'<p>This order form runs for {mk("twelve (12)", "ins", 3, 150)} months from November 1, 2026.</p></div></div>'
-    f'<div class="qt csum fx-drop"{A(4)}><span class="sub">Changes since version 1</span><b>2 sections changed: 7. Payment and 8. Term.</b></div>'
-    f'<div class="bulk"><span class="to"><span class="tag t-gray">{face("rina", 14)}Rina Sato</span><span class="tag t-gray">{face("marcus", 14)}Marcus Lee</span></span><span class="grow"></span>'
-    + sw(("Send for review", None, 5, "ui-btn"), (CK + "Sent, 2 review links", 5, None, "ui-btn pri fx-pop")) + "</div>",
-    "b-stone", [300, 600, 900, 900, 900, 800], "<b>Compare versions</b>")
-
 # Approval: a rule in Automation adds Finance, teammates approve in order, the next is asked when the one before
 # approves, and a reminder goes out to whoever waits.
 CT_APPROVAL = scene(
@@ -392,9 +480,9 @@ CT_APPROVAL = scene(
     + sw(("Waiting", None, 2, "tag t-yellow"), ("Approved", 2, None, "tag t-green fx-pop")) + "</div>"
     f'<div class="fx-l"{A(1, d=200)}>{face("leo", 22)}<span class="grow"><b>Leo Park</b> <span class="sub">Finance</span><small class="cmt fx-fade"{A(3)}>Reminder sent after 2 days</small><small class="cmt fx-fade"{A(4, d=200)}>Approved.</small></span>'
     + sw(("Up next", None, 2, "tag t-gray"), ("Waiting", 2, 4, "tag t-yellow fx-pop"), ("Approved", 4, None, "tag t-green fx-pop")) + "</div>"
-    '</div><div class="bulk"><span class="sub">Order form, version 3</span><span class="grow"></span>' + sw(("Send for signature", None, 5, "ui-btn"), (ic(I_SIGN) + "Send for signature", 5, None, "ui-btn pri fx-pop")) + "</div>",
+    '</div><div class="bulk"><span class="sub">Order form, version 3</span><span class="grow"></span>' + sw(("Send", None, 5, "ui-btn"), (ic(I_SEND) + "Send", 5, None, "ui-btn pri fx-pop")) + "</div>",
     "b-stone", [300, 900, 900, 900, 700],
-    "<b>Approval</b>" + sw(("In review", None, 5, "tag t-yellow"), ("Approved", 5, None, "tag t-purple fx-pop")) + '<span class="grow"></span><span class="tag t-gray">In order</span>')
+    "<b>Approval</b>" + sw(("Waiting for approval", None, 5, "tag t-purple"), ("Approved", 5, None, "tag t-green fx-pop")) + '<span class="grow"></span><span class="tag t-gray">In order</span>')
 
 # Signing: the private link opens the contract in the seller's brand; Rina agrees, draws her signature and signs, and
 # Marcus, next in order, gets his link.
@@ -414,22 +502,62 @@ CT_SIGN = scene(
     f'<div class="ev">{face("marcus", 22)}<span class="grow">Marcus Lee<small>Signer 2</small></span>' + sw(("Waiting", None, 4, "tag t-gray"), ("Link sent", 4, None, "tag t-blue fx-pop")) + "</div></div></div>",
     "b-gray", [300, 700, 1500, 800], f'<span style="display:flex;align-items:center;gap:8px">{ic(I_SIGN, 16)}<b>Signing</b></span>')
 
-# Sending: the settings beside the fields, then what they do as the request goes: the code, a reminder, and your side
-# signing last.
-SETS = [("Your side signs last", '<span class="tog"></span>'), ("Reminders", '<span class="tag t-gray">Day 2</span><span class="tag t-gray">Day 5</span>'),
-        ("Expires", '<span class="tag t-gray">30 days</span>'), ("Code before signing", '<span class="seg2"><span>None</span><span class="on">By email</span></span>'),
-        ("CC", '<span class="tag t-gray">Dana Ortiz</span>')]
-SEV = [("t-blue", "Sent", "Link sent to Rina Sato", "Oct 22, expires Nov 21"), ("t-gray", "Code", "Rina confirmed the code from her email", "Oct 22"),
-       ("t-gray", "Reminder", "Reminder sent to Marcus Lee", "Oct 25, day 2"), ("t-green", "Signed", "Rina Sato and Marcus Lee signed", "Oct 26"),
-       ("t-blue", "Your side", "Link sent to Sam Okoye, last", "Oct 26")]
-CT_SENDSET = scene(
-    '<div class="csend"><div class="csets">' + "".join(f'<div class="cs"><span>{l}</span>{c}</div>' for l, c in SETS) + "</div>"
-    '<div class="feed csig"><div class="ch">Activity</div>'
-    + "".join(f'<div class="cev fx-l"{A(k + 1)}><span class="tag {t}">{tg}</span><span class="grow">{x}<small>{w}</small></span></div>' for k, (t, tg, x, w) in enumerate(SEV))
-    + "</div></div>",
-    "b-gray", [300, 800, 900, 900, 900, 900], f'<span style="display:flex;align-items:center;gap:8px">{ic(I_SEND, 16)}<b>Sending</b></span>')
+# Sending in three steps (107, Send.tsx, Signers.tsx, FieldEditor.tsx): the header's step control ("Step 2 of 3") and
+# main button (Next, Review and send, Send document); Recipients with roles, then Fields for the picked recipient (Show
+# all adds File upload, Radio buttons, Checkbox, Dropdown and Stamp), then Delivery and settings.
+STEPS3 = [("Recipients", 1, 2), ("Fields", 2, 4), ("Delivery and settings", 4, 5)]  # (name, step it opens at, step it's done at)
+RCP = [("c1", "Rina Sato", "rina@palletcloud.com", "Signer"), ("c2", "Marcus Lee", "marcus@palletcloud.com", "Signer"), ("c0", "Dana Ortiz", "dana@palletcloud.com", "CC")]
+FIRST4 = [(I_SIGN, "Signature"), (I_PEN, "Initials"), (I_TYPE, "Text field"), (I_CAL, "Date")]
+MORE5 = [(I_CLIP, "File upload"), (I_RADIO, "Radio buttons"), (I_CBOX, "Checkbox"), (I_DROP, "Dropdown"), (I_STAMP, "Stamp")]
+SENDTO = [("rina", "Rina Sato", "Signer"), ("marcus", "Marcus Lee", "Signer"), ("amara", "Dana Ortiz", "CC")]
+CT_STEPS = scene(
+    '<div class="cstp">' + "".join(f'<span class="cs3"><i class="cs3on fx-fade"{A(o, dn)}></i>' + sw((str(k + 1), None, dn, "cn"), (ic(I_CHECK, 9, 3), dn, None, "cn ok fx-pop")) + f"{n}</span>"
+                                   for k, (n, o, dn) in enumerate(STEPS3)) + "</div>"
+    '<div class="swap cpans">'
+    # Step 1: Recipients
+    f'<div class="cpn fx-fade"{A(1, 2)}>' + "".join(f'<div class="crp"><span class="sub">{k + 1}</span><i class="cdot {c}"></i><span class="grow"><b>{n}</b><small>{e}</small></span><span class="cpick">{r}{ic(I_CHEV, 10)}</span></div>' for k, (c, n, e, r) in enumerate(RCP))
+    + '<div class="cs"><span>Sign in order</span><span class="tog"></span></div><div class="cs"><span>Your side signs last</span><span class="tog off"></span></div></div>'
+    # Step 2: Fields
+    f'<div class="cpn fx-fade"{A(2, 4)}><div class="crcard"><i class="cmark">R</i><span class="grow"><b>Rina Sato</b><small>Signer</small></span>{ic(I_CHEV, 11)}</div>'
+    '<div class="cfg">' + "".join(f'<span class="cfi">{ic(i, 12)}{l}</span>' for i, l in FIRST4)
+    + "".join(f'<span class="cfi fx-pop"{A(3, d=k * 80)}>{ic(i, 12)}{l}' + (f'<i class="cring fx-pop"{A(3, d=750)}></i>' if l == "Stamp" else "") + "</span>" for k, (i, l) in enumerate(MORE5)) + "</div>"
+    '<div class="csug"><span class="sub">' + sw(("Show all", None, 3, ""), ("Show less", 3, None, "fx-fade")) + '</span><span class="grow"></span><span class="sub">2 field suggestions</span><span class="ui-btn">Review</span></div></div>'
+    # Step 3: Delivery and settings
+    f'<div class="cpn fx-fade"{A(4)}><div class="csto">' + "".join(f'<span class="tag t-gray">{face(f, 14)}{n}, {r}</span>' for f, n, r in SENDTO) + "</div>"
+    '<div class="cs"><span>Reminders</span><span class="tag t-gray">Day 2</span><span class="tag t-gray">Day 5</span></div>'
+    '<div class="cs"><span>Expires</span><span class="tag t-gray">30 days</span></div>'
+    '<div class="cs"><span>Code before signing</span><span class="seg2"><span>None</span><span class="on">By email</span></span></div>'
+    f'<div class="csub"><small>Subject</small><span class="fld">Sam Okoye sent you Order form, 25 seats</span></div>'
+    f'<div class="csug"><span class="grow"></span><span class="ui-btn">{ic(I_LINK)}Send by link</span></div></div>'
+    "</div>",
+    "b-gray", [300, 1300, 1000, 1700, 1300],
+    '<span class="stepc">' + sw(("Step 1 of 3", None, 2, ""), ("Step 2 of 3", 2, 4, "fx-fade"), ("Step 3 of 3", 4, None, "fx-fade")) + ic(I_CHEV, 11) + '</span><span class="grow"></span>'
+    + sw(("Next", None, 2, "ui-btn pri"), ("Review and send", 2, 4, "ui-btn pri fx-pop"), (ic(I_SEND) + "Send document", 4, 5, "ui-btn pri fx-pop"), (CK + "Sent", 5, None, "tag t-green fx-pop")))
 
-# Bulk send: one approved NDA to four people, each a copy of its own, sent one after another.
+# Roles (107, roles.ts): the approver's link has Decline and Approve; once he approves, the signer's and the viewer's
+# links go out; the signer signs, the viewer opens it, and CC gets the signed copy by email. The line under it is the
+# status panel's sentence (statusLine in flow.ts).
+ROLES = [("marcus", "Marcus Lee", "Approver", [("Link sent", None, 2, "t-blue"), ("Approved", 2, None, "t-green")]),
+         ("rina", "Rina Sato", "Signer", [("Waiting", None, 3, "t-gray"), ("Link sent", 3, 4, "t-blue"), ("Signed", 4, None, "t-green")]),
+         ("jordan", "Jordan Price", "Viewer", [("Waiting", None, 3, "t-gray"), ("Link sent", 3, 4, "t-blue"), ("Opened", 4, None, "t-purple")]),
+         ("amara", "Dana Ortiz", "CC", [])]
+CT_ROLES = scene(
+    '<div class="crole"><div class="swap crl">'
+    f'<div class="sk fx-fade"{A(None, 4)}><div class="sktop"><b>Lumen Labs</b><span>Order form, 25 seats</span></div>'
+    '<div class="skb"><p class="apl">Sam Okoye sent you Order form, 25 seats to approve.</p><span class="aplines"><s></s><s></s><s></s><s></s></span>'
+    '<div class="skbtns"><span class="play2">Decline</span>' + sw(("Approve", None, 2, "play"), (CK + "Approved", 2, None, "play ok fx-pop")) + "</div></div></div>"
+    f'<div class="ccml fx-r"{A(4)}><span class="mr">{face("amara", 22)}<span class="grow"><b>Dana Ortiz</b><small>CC</small></span></span>'
+    '<span class="att"><span class="pdf">PDF</span><b>Order form, 25 seats, signed.pdf</b></span></div></div>'
+    '<div class="feed csig"><div class="ch">Recipients</div>'
+    + "".join(f'<div class="ev">{face(f, 22)}<span class="grow">{n}<small>{r}</small></span>'
+              + (sw(*[(x, a, o, f"tag {t}" + (" fx-pop" if a else "")) for x, a, o, t in st]) if st else "") + "</div>" for f, n, r, st in ROLES)
+    + "</div></div>"
+    '<div class="bulk"><span class="sub">' + sw(("Waiting for Marcus Lee", None, 3, ""), ("Waiting for Rina Sato", 3, 4, "fx-fade"), ("Signed by everyone on October 26, 2026", 4, None, "fx-fade")) + "</span></div>",
+    "b-stone", [300, 1100, 900, 1300],
+    '<b>Order form, 25 seats</b><span class="grow"></span>' + sw(("Sent", None, 4, "tag t-blue"), ("Signed", 4, None, "tag t-green fx-pop")))
+
+
+# Bulk send: one NDA to four people, each a copy of its own, sent one after another.
 BULK = [("KP", "#d1fae5", "Kim Park", "kim@verdarobotics.com"), ("OH", "#dbeafe", "Omar Haddad", "omar@harborpine.com"),
         ("LF", "#e0f2fe", "Lena Fischer", "lena@orbitmills.com"), ("JR", "#fee2e2", "Jon Reyes", "jon@atlascargo.com")]
 CT_BULK = scene(
@@ -442,18 +570,28 @@ CT_BULK = scene(
     "b-stone", [300, 900, 550, 550, 550, 700],
     '<b>Bulk send</b><span class="sub">Mutual NDA, version 2</span>')
 
-# Certificate: the signed pages stay as they were, then a certificate page and the audit trail; each signer gets a copy.
-CERT = [("Document SHA-256", "9f2c41d07a8e…e0b7"), ("Signer 1", "Rina Sato, rina@palletcloud.com"), ("Signed", "Oct 23, 2026, 11:20 UTC"), ("IP address", "203.0.113.24"), ("Browser", "Chrome on macOS")]
-TRAIL = [("Oct 22, 09:14", "Link sent to Rina Sato"), ("Oct 23, 11:18", "Opened by Rina Sato"), ("Oct 23, 11:20", "Signed by Rina Sato")]
-CT_CERT = scene(
-    '<div class="ccert"><div class="pages">' + "".join(f'<span class="pgx fx-pop"{A(1, d=k * 90)}><s></s><s></s><s></s><s></s><small>Page {k + 1}</small></span>' for k in range(3))
-    + f'<span class="pgx cert fx-drop"{A(2)}><b>Certificate</b><s></s><s></s><small>Page 4</small></span></div>'
-    f'<div class="card"{A(3)}><div class="ch">Signature certificate</div>' + "".join(f'<div class="fact fx-l"{A(3, d=k * 80)}><span class="sub ck">{a}</span><span class="grow cv">{b}</span></div>' for k, (a, b) in enumerate(CERT)) + "</div>"
-    f'<div class="card"{A(4)}><div class="ch">Audit trail</div>' + "".join(f'<div class="fact fx-l"{A(4, d=k * 120)}><span class="sub ck">{a}</span><span class="grow cv">{b}</span></div>' for k, (a, b) in enumerate(TRAIL)) + "</div>"
-    f'<div class="qt"{A(5)}><span class="sub">Signed copy</span><span class="grow"></span><span class="tag t-green">Emailed to 2 signers</span></div></div>',
-    "b-stone", [300, 700, 900, 900, 700], "<b>Pallet Cloud order form, signed</b>")
+# The status panel (106, StatusPanel.tsx): the one status and its sentence, the actions (Edit document and Send again
+# only while it's out), each recipient with their role and state, then Owner, Created, Sent, Folder and Expiration date.
+# Marcus signs, the contract turns Signed, and the signed PDF gets its certificate page.
+SROWS = [("rina", "Rina Sato", "rina@palletcloud.com", "Signer", '<span class="ok">Signed</span>'),
+         ("marcus", "Marcus Lee", "marcus@palletcloud.com", "Signer", sw(("Opened", None, 2, ""), ('<span class="ok">Signed</span>', 2, None, "fx-pop"))),
+         ("amara", "Dana Ortiz", "dana@palletcloud.com", "CC", "")]
+SDET = [("Owner", "Sam Okoye"), ("Created", "Oct 20, 2026"), ("Sent", "Oct 22, 2026"), ("Folder", "Customers"), ("Expiration date", "Nov 21, 2026")]
+CT_STATUS = scene(
+    '<div class="cstat"><div class="cdocs">' + "".join(f'<span class="pgx"><s></s><s></s><s></s><s></s><small>Page {k + 1}</small></span>' for k in range(3))
+    + f'<span class="pgx cert fx-drop"{A(3)}><b>Certificate</b><s></s><s></s><small>Page 4</small></span></div>'
+    '<div class="cpanel"><span class="cstag">' + sw(("Viewed", None, 2, "tag t-teal"), ("Signed", 2, None, "tag t-green fx-pop")) + "</span>"
+    '<b class="cline">' + sw(("Waiting for Marcus Lee", None, 2, ""), ("Signed by everyone on October 26, 2026", 2, None, "fx-fade")) + "</b>"
+    + sw((f'<span class="cacts"><span class="ib">{ic(I_PEN)}<i class="ctip fx-fade"{A(1, 2)}>Edit document</i></span><span class="ib">{ic(I_SEND)}</span><span class="ib">{ic(I_DOWN)}</span><span class="ib">{ic(I_ARCH)}</span></span>', None, 2, ""),
+         (f'<span class="cacts"><span class="ib">{ic(I_DOWN)}</span><span class="ib">{ic(I_ARCH)}</span></span>', 2, None, "fx-fade"))
+    + '<small class="clab">Recipients</small>'
+    + "".join(f'<span class="csrow">{face(f, 22)}<span class="grow"><b>{n}</b><small>{e}</small></span><span class="csst"><small>{r}</small>{st}</span></span>' for f, n, e, r, st in SROWS)
+    + '<span class="cdet">' + "".join(f"<span><small>{l}</small>{v}</span>" for l, v in SDET) + "</span></div></div>",
+    "b-gray", [300, 1600, 900], "<b>Pallet Cloud order form</b>")
 
-# Read by Otto: each fact comes with its quote and page, and waits for a person to confirm it.
+
+# Read by Otto: each fact comes with its quote and page, and waits for a person to confirm it. The renewal notice date
+# then sets the owner's alerts, 90, 60 and 30 days before it.
 FACTS = [("End date", "Oct 31, 2027", "The initial term ends on October 31, 2027.", 2),
          ("Auto-renews", "Yes", "renews automatically for successive 12-month terms", 4),
          ("Notice period in days", "60", "at least sixty (60) days before the end of the then-current term", 4),
@@ -461,22 +599,12 @@ FACTS = [("End date", "Oct 31, 2027", "The initial term ends on October 31, 2027
 CT_READ = scene(
     "".join(f'<div class="fact cfact fx-l"{A(2, d=k * 100)}><span class="grow"><small class="sub">{l}</small><b>{v}</b><q>{q}</q></span><span class="cite">p. {p}</span>'
             + sw((f'<span class="btns"><span class="no">×</span><span class="ok">{CK}</span></span>', None, 3 + k, ""), ("Confirmed", 3 + k, None, "tag t-green fx-pop")) + "</div>" for k, (l, v, q, p) in enumerate(FACTS))
-    + f'<div class="qt" style="margin:12px"{A(7)}><span class="sub">Renewal notice date</span><span class="grow"></span><b>Sep 1, 2027</b></div>',
-    "b-gray", [300, 1300, 800, 600, 600, 600, 700],
+    + f'<div class="qt" style="margin:12px 12px 8px"{A(7)}><span class="sub">Renewal notice date</span><span class="grow"></span><b>Sep 1, 2027</b></div>'
+    + f'<div class="qt calrt" style="margin:0 12px 12px"{A(8)}>{ic(I_BELL)}<span class="sub">Alerts</span><span class="grow"></span>'
+    + "".join(f'<span class="tag t-gray fx-pop"{A(8, d=150 + k * 110)}>{x}</span>' for k, x in enumerate(["Jun 3", "Jul 3", "Aug 2"])) + "</div>",
+    "b-stone", [300, 1300, 800, 600, 600, 600, 700, 800],
     f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Read by Otto</b></span><span class="grow"></span><span class="sub">'
     + sw((LDR + "Reading 6 pages", 1, 2, "fx-fade"), *((f"{4 - k} to confirm", 2 + k, 3 + k, "fx-fade") for k in range(4)), ("All confirmed", 6, None, "fx-fade")) + "</span>")
-
-# Renewals: a contract near its notice date turns Expiring, and the owner hears 90, 60 and 30 days before it.
-REN = [("Northwind Health", "NW", "#efe3ff", "Master agreement", "Nov 30, 2026", "30 days", 0),
-       ("Atlas Cargo", "AC", "#fee2e2", "Order form, 10 seats", "Dec 31, 2026", "60 days", 0),
-       ("Orbit Mills", "OM", "#e0f2fe", "Master agreement", "Jan 29, 2027", "90 days", 1)]
-CT_RENEW = scene(
-    '<div class="scroll-x"><table class="tb ren"><thead><tr><th>Contract</th><th>Status</th><th class="hide-s">Renewal notice</th><th>Alert</th></tr></thead><tbody>'
-    + "".join(f'<tr class="fx-l"{A(1, d=k * 100)}><td><span class="who"><span class="av" style="background:{bg}">{i}</span><span>{n}<small class="sub cn">{c}</small></span></span></td><td>'
-              + (sw(("Active", None, 2, "tag t-green"), ("Expiring", 2, None, "tag t-yellow fx-pop")) if flip else '<span class="tag t-yellow">Expiring</span>')
-              + f'</td><td class="hide-s sub">{dt}</td><td><span class="tag t-gray fx-pop"{A(3, d=k * 120)}>{al}</span></td></tr>' for k, (n, i, bg, c, dt, al, flip) in enumerate(REN))
-    + f'</tbody></table></div><div class="alert fx-r"{A(4)}>{ic(I_MAIL, 16)}<span><b>Orbit Mills master agreement: renewal notice by Jan 29, 2027</b><small>Emailed to Sam Okoye, 90 days before</small></span></div>',
-    "b-stone", [300, 900, 800, 900], "<b>Renewals coming up</b>")
 
 # Library: the search finds the words inside each contract and shows the page with them marked; the SOW sits under
 # its MSA, and the contracts without the words fade.
@@ -491,21 +619,22 @@ CT_LIBRARY = scene(
     + "".join(f'<div class="clr {cls}"><span class="clh"><span class="tag t-purple">{ty}</span><b>{n}</b>{lk}</span>'
               + (f'<span class="csnip fx-fade"{A(2, d=k * 150)}><b>{pg}</b>{snip}</span>' if pg else "") + "</div>" for k, (ty, n, lk, pg, snip, cls) in enumerate(LIBR))
     + "</div>",
-    "b-stone", [300, 1100, 900],
+    "b-gray", [300, 1100, 900],
     '<b>Contracts</b><span class="grow"></span><span class="sub">' + sw(("4 contracts", None, 2, ""), ("2 contracts match", 2, None, "fx-fade")) + "</span>")
 
 CT = [
-    ("Upload one contract or hundreds", "Upload a PDF or Word file, or drop in many at once, even as a .zip. Old contracts come in as signed, and Otto reads each one. A clear match links each file to its company and opportunity. Anything less waits for you as a suggested match.", CT_IMPORT),
+    ("Bring your PandaDoc documents", "Connect PandaDoc and pick documents by status. Each one comes in with its status, dates, recipients, owner, folder and tags, and completed ones bring their signed PDF. You can also drop in PDF or Word files, or a .zip, and give each file its status, signed date and expiration date. A clear match links each contract to its company and opportunity.", CT_PANDA),
+    ("Every contract at a glance", "Use the tabs for All, Created by me, Recent, Upcoming renewals and Expiring soon, or save a view of your own. Filter by date, status, owner, recipients or tags. The numbers on top show drafts, contracts waiting for signature, signed this month, value signed this quarter, renewals in the next 90 days and average days to sign. Click one to filter the list, and archive what you're done with.", CT_LIST),
     ("Signature fields found for you", "Omniscient finds where each person signs. It reads the tags other tools put in contracts (DocuSign-style \\s1\\, Dropbox Sign, Adobe Sign or {{sig:1}}) or the signature blocks. Word files keep their tables and columns, and scans are read too. Signers are filled in from the opportunity and from you.", CT_FIELDS),
-    ("Redlines and comments on every version", "Each upload is the next version, with a short name and a note. Word's tracked changes show in place, with who made each one and when. Comment on a few words or a spot on a page, and @mention a teammate. The client can comment on their own link too.", CT_REDLINE),
-    ("Send a version with what changed", "Compare any two versions side by side, down to the word. When you send a version to the client, they see which sections were added, taken out or changed since the one they had. Omniscient counts this from the files, and no AI writes it. Each person gets a review link to comment or send back changes.", CT_COMPARE),
-    ("Approval in order or all at once", "Ask teammates to approve all at once or one after another, with a reminder after a few days. A new version asks the same people again. Add rules in Automation, so a contract over $25,000 asks Finance and one on the client's paper asks Legal.", CT_APPROVAL),
-    ("E-signature on a page in your brand", "Send the approved version to up to ten signers, in order or all at once. Each private link opens the contract in your brand. Fields include initials on every page, choices, dropdowns, an attachment like a W-9 and the date in the signer's format. A signer can decline with a reason or, when you allow it, hand it to a colleague.", CT_SIGN),
-    ("Reminders, expiry and a code by email", "Signers get reminders on day 2 and day 5, and links expire after 30 days unless you extend them. Ask for a one-time code by email before the signer sees the contract. Add people on CC and let your side sign last. You can void a request and send it again.", CT_SENDSET),
-    ("Send one contract to many people", "Send the same approved contract, like an NDA, to many people at once. Each person gets a copy of their own, as a new contract with the same file, fields and settings. Progress shows as it goes, and anything that doesn't send waits for Retry.", CT_BULK),
-    ("A signed PDF with a certificate", "When everyone has signed, the original pages stay as they were and a certificate page follows: who signed, when, from which IP address and browser, and the file's SHA-256, then the audit trail. Each signer gets a copy by email.", CT_CERT),
-    ("Otto reads the signed contract", "Otto, the AI in Omniscient, reads the signed contract for its dates, renewal terms, notice period, value and key obligations. Each suggestion shows its quote and page, and nothing is saved until a person confirms it. Then ask Otto what renews next quarter, and he answers from the facts your team confirmed.", CT_READ),
-    ("Renewal alerts before the notice date", "Contracts move to Active, Expiring and Expired on their own dates. The owner gets a notice and an email 90, 60 and 30 days before the renewal notice date, and Renewals coming up lists what is due next.", CT_RENEW),
+    ("Edit it like a doc", "Change a draft right on its page. A Word file opens in an editor with a familiar toolbar, and the + next to your cursor adds text, an image, a table, a page break or a signature block. On a PDF, add text boxes, images and white covers. You can also turn, move or delete pages and add pages from another PDF. Save your edits as a new version, and the upload stays version 1. Only people edit, and Otto never writes contract text.", CT_EDIT),
+    ("Redlines and comments on every version", "Each upload is the next version. Word's tracked changes show in place, with who made each one and when. Comment on a few words or a spot on a page and @mention a teammate. The client can comment on their own review link too. Compare any two versions side by side, down to the word. When you send a new version for review, the client sees which sections changed since theirs.", CT_REDLINE),
+    ("Approval in order or all at once", "When your team needs to sign off, ask teammates to approve all at once or one after another, with a reminder after a few days. A new version asks the same people again. Add rules in Automation, so a contract over $25,000 asks Finance and one on the client's paper asks Legal.", CT_APPROVAL),
+    ("Send in three steps", "Step one is Recipients: add each person and give them a role. Step two is Fields: drag a signature, initials, text, a date, a file upload, radio buttons, a checkbox, a dropdown or a stamp onto the page, then review the suggested fields. Step three is Delivery and settings: the subject, your message, signing order, reminders, expiry and a code by email. Send it by email, or send by link and share each link yourself.", CT_STEPS),
+    ("Approvers, CC and viewers", "Every recipient has a role. Signers fill in their fields and sign. An approver, like the client's finance lead, approves first or declines with a reason, and the signers get their links once every approver has approved. CC gets the signed copy and never a link. A viewer gets a link that only shows the document. A new version keeps the same approvers, CC and viewers.", CT_ROLES),
+    ("E-signature on a page in your brand", "Send to up to ten signers, in order or all at once. Each private link opens the contract in your brand. Fields include initials on every page, choices, dropdowns, an attachment like a W-9, a stamp like a company seal and the date in the signer's format. A signer can decline with a reason or, when you allow it, hand it to a colleague.", CT_SIGN),
+    ("Send one contract to many people", "Send the same contract, like an NDA, to many people at once. Each person gets a copy of their own, as a new contract with the same file, fields and settings. Progress shows as it goes, and anything that doesn't send waits for Retry.", CT_BULK),
+    ("See where each contract stands", "Open a sent or signed contract to see its status in one line, like \"Waiting for Marcus Lee\". Each recipient shows their role and whether they opened or signed it, with the owner and the dates. While it's still out, Edit document voids the open links and makes a new draft with the same signers and fields. When everyone has signed, the signed PDF gets a certificate page with who signed, when and from which IP address, and the file's SHA-256, then the audit trail.", CT_STATUS),
+    ("Otto reads the signed contract", "Otto, the AI in Omniscient, reads the signed contract for its dates, renewal terms, notice period, value and key obligations. Each suggestion shows its quote and page, and nothing is saved until a person confirms it. Contracts then move to Active, Renewal soon and Term ended on their own dates. The owner gets a notice and an email 90, 60 and 30 days before the renewal notice date.", CT_READ),
     ("Search inside every contract", "Search the words inside every contract and see the page where they appear, marked. Give each contract a type, with SOWs and amendments under their MSA, and add folders, tags, custom fields and saved views. Make a contract private or share it with a group like Legal. Owners and admins see every contract.", CT_LIBRARY),
 ]
 
@@ -705,16 +834,19 @@ PAGES = [
     {
         "slug": "contract-management", "name": "Contract Management", "band": "b-stone",
         "title": "Contract Management: e-signature and a contract library | Omniscient",
-        "desc": "Upload or import contracts, find signature fields, track redlines, get approval and collect e-signatures in your brand, with alerts before each renewal.",
+        "desc": "Import your PandaDoc documents or upload contracts, edit drafts, send in three steps to signers, approvers and viewers, and get alerts before each renewal.",
         "h1": "Every contract, from redlines to renewal.", "h1b": "Right next to the deal.",
-        "lede": "Upload the contracts you already use. Omniscient finds where each person signs, tracks the client's changes, gets your team's approval and reminds you before a contract renews.",
+        "lede": "Bring your PandaDoc documents or upload the contracts you already use. Edit a draft like a doc and send it in three steps. Omniscient shows who signed and reminds you before a contract renews.",
         "hero": CT_HERO, "feats": CT,
-        "list": ["PDF, Word and .zip upload", "Matched to company and opportunity", "Signature fields found for you", "Tracked changes and comments", "Review links for the client", "Side-by-side compare", "Approval in order or all at once", "Approval rules in Automation", "A signing page in your brand", "Reminders, expiry and email codes", "Bulk send", "Certificate and audit trail", "Dates and terms read by Otto", "Alerts at 90, 60 and 30 days", "Search, folders and private contracts"],
+        "list": ["Import from PandaDoc", "PDF, Word and .zip upload", "Matched to company and opportunity", "Tabs, filters, stats and archive", "Signature fields found for you", "Edit Word files and PDFs", "Tracked changes and comments", "Review links and compare", "Approval in order or all at once", "Approval rules in Automation", "Send in three steps, by email or link", "Signer, Approver, CC and Viewer", "Stamp and file upload fields", "Reminders, expiry and email codes", "A signing page in your brand", "Bulk send", "Status, certificate and audit trail", "Dates and terms read by Otto", "Alerts at 90, 60 and 30 days", "Search, folders and private contracts"],
         "faq": [
-            ("Which files can I upload?", "PDF or Word (.docx) files up to 25 MB each. Upload one, or drop in many at once, even as a .zip. Each upload to a contract becomes a new version, and earlier versions stay as they were. Contracts you signed before come in as signed, and Otto reads each one."),
-            ("Does Omniscient write or draft contracts?", "No. Omniscient has no contract templates and never writes, drafts or suggests contract text. Your contracts are the files you upload. Omniscient reads them only to find where people sign, and Otto reads them to suggest dates and terms, each with its quote, for a person to confirm."),
+            ("Can I bring my PandaDoc documents?", "Yes. Connect PandaDoc in Import, filter your documents by status and pick the ones you want, or take every document with a status, up to 500 at a time. Each one comes in with its status, dates, recipients, owner, folder, tags and value. Completed documents bring their signed PDF, and Otto reads them for their dates and terms. A document that's already in Omniscient is skipped, and imported history never starts a workflow or sends an email."),
+            ("Which files can I upload?", "PDF or Word (.docx) files up to 25 MB each. Upload one, or drop in many at once, even as a .zip, and give each file its status, Draft or Signed, with its signed date and expiration date. Each upload to a contract becomes a new version, and earlier versions stay as they were. Otto reads the signed ones."),
+            ("Does Omniscient write or draft contracts?", "No. Omniscient has no contract templates and never writes, drafts or suggests contract text. Your contracts are the files you upload or import, and only people on your team edit them. Omniscient reads them to find where people sign, and Otto reads them to suggest dates and terms, each with its quote, for a person to confirm."),
+            ("Can I edit the contract in Omniscient?", "Yes, before it goes out. A Word file opens in an editor with a toolbar for text styles, fonts, colors, lists and links, and the + adds text, an image, a table, a page break or a signature block. A PDF keeps its pages, and you add text boxes, images and white covers or turn, move, delete and add pages. The words under a white cover stay in the PDF. When you're done, save your edits as a new version. Your upload stays version 1. A contract that's already out goes back to a draft with Edit document. Otto never writes or suggests contract text."),
             ("How does Omniscient find where people sign?", "It reads the tags other tools put in contracts: DocuSign-style tags like \\s1\\, Dropbox Sign and Adobe Sign tags, and {{sig:1}}. Without tags, it reads the signature blocks, such as \"By:\", \"Name:\" and \"Date:\" lines, in one column or several. Scanned PDFs are read too. Signers are filled in from the opportunity's people and you, and you review each field before you send."),
-            ("How does signing work?", "Send the approved version to up to ten signers, in order or all at once. Each signer opens a private link, confirms their name and email, agrees to sign electronically and types or draws a signature. Reminders go out on day 2 and day 5, and links expire after 30 days unless you change that. When everyone has signed, you get a signed PDF with a certificate page and an audit trail."),
+            ("How does signing work?", "Send in three steps: recipients, fields, then delivery and settings. Send to up to ten people, in order or all at once. Each signer opens a private link, confirms their name and email, agrees to sign electronically and types or draws a signature. Reminders go out on day 2 and day 5, and links expire after 30 days unless you change that. When everyone has signed, you get a signed PDF with a certificate page and an audit trail."),
+            ("What are Approver, CC and Viewer?", "They're recipient roles, picked in the first step of sending. A Signer fills in their fields and signs. An Approver is someone outside your team, like the client's finance lead, who approves the document before anyone signs or declines with a reason. The signers get their links once every approver has approved. CC gets the signed copy and never a link. A Viewer gets a link that only shows the document. Only signers have fields."),
             ("What if the other side wants changes?", "They can comment on their link or send back a changed file. A Word file's tracked changes show with who made each one and when. The new file becomes the next version and goes back to review. When you send a version back, they see which sections were added, taken out or changed."),
             ("Who can see a contract?", "Everyone in the workspace, unless you change it. A contract can be private to its owner and the people you add, or shared with a group like Legal or Finance. Workspace owners and admins see every contract. Signing and review links are stored only as hashes, and you can ask signers for a one-time code by email first."),
             ("What does Otto read?", "Parties, effective date, term, end date, auto-renewal, notice period, renewal notice date, value, payment terms, termination rights and key obligations, each with a quote and a page from the file. A suggestion whose quote isn't in the file is dropped, and nothing is saved until a person confirms it."),
