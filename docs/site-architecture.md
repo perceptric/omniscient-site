@@ -40,7 +40,7 @@ Three sections that run end to end, in the order a deal moves: CRM keeps the who
 
 | Name | Line | In the app |
 |---|---|---|
-| **Contract Management** | Every contract, from redlines to renewal | Contracts: uploads and bulk import, signature fields found, redlines and comments, approval and approval rules, signing with reminders and email codes, bulk send, library search and private contracts, key dates (no drafting, no contract templates) |
+| **Contract Management** | Every contract, from redlines to renewal | Contracts: import from PandaDoc with status, uploads and bulk import, a list with tabs, filters and stats, signature fields found, editing a draft (Word and PDF, people only), redlines and comments, approval and approval rules, sending in three steps with Signer, Approver, CC and Viewer roles, signing with reminders and email codes, bulk send, the status panel, library search and private contracts, key dates (no drafting by Otto, no contract templates) |
 
 ### Ecosystem
 
