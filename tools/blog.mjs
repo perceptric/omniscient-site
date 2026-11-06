@@ -707,7 +707,7 @@ function rating(body, ctx, attached) {
   return `<div class="bl-rating">${svg} <span class="bl-rating__score">${m[1].replace(",", ".")}/5</span> <span class="bl-rating__src">on ${name}</span></div>`;
 }
 
-// ```try: one line, "Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog". A primary button in the
+// ```try: one line, "Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog". A primary button in the
 // flow of the text, under a tool's intro. Links off tryomniscient.com get rel="nofollow noopener".
 function tryButton(body, ctx) {
   const lines = body.map((l) => l.trim()).filter(Boolean);
