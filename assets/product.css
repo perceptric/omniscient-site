@@ -26,7 +26,7 @@
 .om-product .p-included li::before { content: ""; width: 8px; height: 8px; margin-top: 7px; background: var(--ink); flex: none; }
 
 .om-product .p-others { padding-top: 120px; }
-.om-product .p-others__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--frame); }
+.om-product .p-others__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--frame); }
 .om-product .p-other { display: flex; flex-direction: column; gap: 8px; padding: 20px; transition: background-color var(--fast) var(--ease-out); }
 .om-product .p-other + .p-other { border-left: 1px solid var(--frame); }
 .om-product .p-other:hover { background: var(--fill); }

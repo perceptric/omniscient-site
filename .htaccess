@@ -1,4 +1,4 @@
-# Hostinger settings, kept for reference only: since Nov 2026 the site runs on Fly with the same rules in Caddyfile.
+# Hostinger settings. Caddyfile has the same rules for Fly; keep the two in step.
 # Hostinger (LiteSpeed/Apache) settings for the static Omniscient site
 ErrorDocument 404 /404.html
 DirectoryIndex index.html
@@ -25,6 +25,8 @@ RewriteRule ^apple-(touch-)?icon(-precomposed)?\.png$ /assets/brand/apple-icon.p
 
 # Removed pages: Outbound LinkedIn became Contract Management, and the LinkedIn posts went back to the blog index
 RewriteRule ^product/linkedin-outbound/?$ /product/contract-management/ [R=301,L]
+# Deal Room was removed with Experiences and the Library (Nov 2026)
+RewriteRule ^product/deal-room/?$ /product/contract-management/ [R=301,L]
 RewriteRule ^blog/(automate-linkedin-outreach-without-getting-restricted|best-linkedin-automation-tools|dripify-alternatives|expandi-alternatives|heyreach-alternatives|heyreach-vs-expandi|lemlist-alternatives|linked-helper-alternatives|linkedin-automation-pricing|linkedin-automation-tools-for-agencies|linkedin-connection-request-limit|linkedin-outreach-tools-with-crm|safest-linkedin-automation-tools|waalaxy-alternatives|waalaxy-vs-lemlist|best-crm-for-linkedin|crm-with-linkedin-integration)/?$ /blog/ [R=301,L]
 
 # Like the app's src/proxy.ts: any other page path goes to the same path on the app
