@@ -1,0 +1,13 @@
+# Files the site never serves stay out of the image (Caddyfile refuses them too).
+.git
+.github
+.htaccess
+.dockerignore
+docs
+tools
+partials
+blog/_src
+**/*.shot.html
+README.md
+Dockerfile
+fly.toml

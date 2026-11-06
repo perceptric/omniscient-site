@@ -46,9 +46,9 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 - **Site plan:** `docs/site-architecture.md` (menus, sitemap, page template, build order). Hidden from visitors.
 
 Preview locally: `python3 -m http.server 8000`, then open http://localhost:8000.
-The `.htaccess` rules only run on Hostinger.
+The server rules (`Caddyfile`) only run on Fly; to try them, `docker build -t site . && docker run -p 8080:8080 site`.
 
-Push to `main` and Hostinger deploys it.
+Push to `main` and GitHub Actions deploys it to Fly (`.github/workflows/fly-deploy.yml`).
 
 ## Blog
 
@@ -227,9 +227,9 @@ Every image needs alt text, and every SVG a `<title>`.
   the layout after changing the builder or `assets/blog.css`, then delete `blog/_sample/` and the `cover.svg` and
   `og.png` it writes. To check `rating`, `try` and a tool's `####` sections, add a numbered tool with them to a
   copy named `_something.md`, build it the same way and delete the copy and its output after.
-- **Not served:** `.htaccess` answers 403 for any path with a part that starts with `_` (so `blog/_src/`) and for
-  `*.shot.html`, since Hostinger deploys the whole repo.
-- **Removing a post:** delete its `.md`, `blog/<slug>/` and `assets/blog/<slug>/`, add its path to the "Removed pages" redirect in `.htaccess` (else the server sends it to the app), then run `--all`.
+- **Not served:** `Caddyfile` answers 403 for any path with a part that starts with `_` (so `blog/_src/`) and for
+  `*.shot.html`; `.dockerignore` keeps sources, docs and tools out of the image.
+- **Removing a post:** delete its `.md`, `blog/<slug>/` and `assets/blog/<slug>/`, add its path to the "Removed pages" redirect in `Caddyfile` (else the server sends it to the app), then run `--all`.
 
 ## Where the words come from
 
@@ -250,36 +250,30 @@ Like the app's `src/proxy.ts`, any path with no page here goes to the same path 
 `https://app.tryomniscient.com/today`, and the query string comes along. Real files and folders are served here.
 A missing file (a path that ends in `.png`, `.js` and so on) gets `404.html`.
 
-## Hostinger setup
+## Hosting on Fly
 
-1. **Add the site.** In hPanel, go to Websites → Add website, and add `tryomniscient.com` as an empty site.
-   Do not install WordPress. If WordPress is already there, remove it first, so `public_html` is empty.
-2. **Connect Git.** In hPanel, open the site, then Advanced → Git. Add this repo, branch `main`, and leave the
-   install path empty, so it deploys to the domain's `public_html`. The folder must be empty the first time.
-   For a private repo, copy the SSH key hPanel shows into the repo's deploy keys on GitHub. Turn on auto-deploy and
-   add the webhook URL hPanel gives you to the repo's webhooks, so every push to `main` goes live.
-3. **Turn on SSL.** In hPanel → Security → SSL, make sure the certificate covers `tryomniscient.com` and `www`.
-4. **Check it.**
-   - `curl -I https://tryomniscient.com/` shows `200`.
-   - `/privacy` and `/terms` answer `301` to `/privacy/` and `/terms/`, which show `200`.
-   - `curl -I https://www.tryomniscient.com/` and `curl -I http://tryomniscient.com/` answer `301` to `https://tryomniscient.com/`.
-   - `curl -I https://tryomniscient.com/today` answers `301` to `https://app.tryomniscient.com/today`.
-   - `curl -I https://tryomniscient.com/missing.png` shows `404`.
+The site runs on Fly.io as the app `omniscient-site`: Caddy serving this repo with the rules in `Caddyfile` (the same
+as the old Hostinger `.htaccess`, kept for reference). The first time and the move from Hostinger are in the app repo's
+`docs/hosting.md`. Every push to `main` deploys it, once the repo has the Actions secret `FLY_API_TOKEN`.
 
-If LiteSpeed Cache is on for the site, purge it after a deploy.
+Check it after a deploy:
+- `curl -I https://tryomniscient.com/` shows `200`.
+- `/privacy` and `/terms` answer `308` to `/privacy/` and `/terms/`, which show `200`.
+- `curl -I https://www.tryomniscient.com/` answers `301` to `https://tryomniscient.com/`; `http://` goes to `https://`.
+- `curl -I https://tryomniscient.com/today` answers `301` to `https://app.tryomniscient.com/today`.
+- `curl -I https://tryomniscient.com/missing.png` shows `404`.
 
 ## DNS
 
-- `tryomniscient.com` and `www.tryomniscient.com` point to Hostinger. Use the A record (and the `www` CNAME) that
-  hPanel shows for the site. `.htaccess` sends `www` to the bare domain.
-- `app.tryomniscient.com` is a CNAME to `omniscient-web.fly.dev` (the app on Fly.io). Run
-  `fly certs add app.tryomniscient.com --app omniscient-web` and add any record it asks for. Do not point it at Hostinger.
+- DNS is in Cloudflare. `tryomniscient.com` and `www` are CNAMEs to `omniscient-site.fly.dev`; `app.tryomniscient.com`
+  is a CNAME to `omniscient-app.fly.dev` (the app). Both proxied, SSL/TLS on Full (strict), with the `_acme-challenge`
+  records `fly certs add` asks for. Caddy sends `www` to the bare domain.
 - Keep every email record as it is: MX, SPF (TXT), DMARC, and the Resend records (the `resend._domainkey` DKIM record
   and the `send` subdomain's MX and TXT records). The app sends digests from `digest@tryomniscient.com` through Resend.
 - Google's OAuth consent screen links to `https://tryomniscient.com`, `/privacy` and `/terms`. Those keep working.
 
 ## Running cost
 
-$0 extra a month at every stage (Beta 50 reps, Growth 500 reps). The site runs on the Hostinger plan we already pay
-for. It has no server code, no database and no paid service. The blog adds nothing: it builds on your machine (Node
+About $1.94 a month at every stage (Beta 50 reps, Growth 500 reps): one 256 MB Fly machine (check), in place of the
+Hostinger plan (about $3 to $12, check). It has no server code, no database and no paid service. The blog adds nothing: it builds on your machine (Node
 and Playwright are free) and ships as static files.
