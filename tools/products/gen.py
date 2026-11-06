@@ -1,4 +1,5 @@
-# Writes the four product pages: product/crm, product/automation, product/deal-room and product/contract-management.
+# Writes the three product pages: product/crm, product/automation and product/contract-management. (Deal Room was
+# removed in Nov 2026 with Experiences and the Library; /product/deal-room/ redirects to Contract Management.)
 # Each page: hero with the email field and the main product shot, feature rows with a shot each, what's included,
 # questions, the other three products and a closing band. Shots reuse the home page's product-shot styles (home.css);
 # each feature's shot is a scene that plays what the feature does (assets/scenes.js, styles in product.css).
@@ -181,116 +182,6 @@ I_FOLDER = '<path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5
 I_PLUS = '<path d="M12 5v14M5 12h14"/>'
 I_CHECK = '<path d="m5 12 5 5 9-10"/>'
 I_FLAG = '<path d="M4 22V4"/><path d="M4 4h12l-2 4 2 4H4"/>'
-
-# ---- Deal Room shots (in the app: docs/deal-room.md, src/components/experience) ----
-# Since 084 there are no templates or ready-made parts: the rep says what to build, Otto reads the opportunity, its
-# calls, the buyer's homepage and the Library, asks only what's missing, and writes every page from scratch in the
-# seller's own brand, copied from their website. Unknown facts are [bracketed placeholders], never made up. Pages are
-# real elements, edited in a Webflow-style builder with Otto docked beside it, and shared as one tracked link.
-def hold(t):  # an unknown Otto leaves for the rep, highlighted
-    return f'<span class="hold">[{t}]</span>'
-
-
-DTABS = ["Overview", "Strategy", "Plan and timeline", "Investment", "Results", "Next steps"]
-TIERS = [("Starter", "$18,000", "a year", "Lead routing for one region", False), ("Growth", "$30,000", "a year", "Routing, scoring and onboarding", True), ("Scale", hold("price"), "", "Every region and a named lead", False)]
-
-
-def dtop(on="Overview"):  # the seller's own site: their logo, the proposal's pages and their button
-    return ('<div class="dtop"><span class="dlogo"><i></i>Lumen Labs</span><span class="dtabs">' + "".join(f'<span{" class=on" if t == on else ""}>{t}</span>' for t in DTABS)
-            + '</span><span class="dbtn">Book the kickoff</span></div>')
-
-
-DR_HERO = ('<div class="band b-gray p-shot" data-anim><div class="dsite">' + dtop()
-           + '<div class="dhero"><small>Proposal for Pallet Cloud</small><h4>One lead pipeline before the new region opens</h4>'
-           f'<p>Inbound, outbound and event leads in one place by January 15, for a sales team of 25. Rollout starts the week of {hold("start date")}.</p>'
-           '<span class="dbtn">See the plan</span><span class="dbtn2">Talk to Sam</span></div>'
-           '<div class="dsec"><small>Investment</small><div class="dtiers">'
-           + "".join(f'<div class="dtier{" rec" if r else ""}">' + ('<span class="drec">Recommended</span>' if r else "") + f'<b>{n}</b><span class="dpr">{pr}<small>{per}</small></span><span class="dsub">{d}</span></div>' for n, pr, per, d, r in TIERS)
-           + "</div></div></div></div>")
-
-PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>'
-LIB = [("WEBSITE", "lumenlabs.com, 64 pages", ["Services", "Pricing"], "doc", 1), ("CASE STUDY", "How Northwind unified 4 lead sources", ["Logistics", "Results"], "doc", 1), ("VIDEO 3:40", "Inbound and outbound in one timeline", ["Demo"], "vid", 0)]
-# Library: the website comes in first, then files and videos; each is read in full and tagged.
-DR_LIB = scene(
-    '<div class="lib lib3">' + "".join(
-        f'<div class="item"{A(i + 1)}><div class="thumb {kind}">' + (f'<span class="pl">{PLAY}</span>' if kind == "vid" else "<s></s><s></s><s></s>") + f'<span>{k}</span></div><div class="ib">'
-        + (f'<span class="tag t-green fx-pop"{A(5, d=i * 140)}>Read</span>' if m else "") + f"<b>{n}</b>"
-        + '<div class="tags">' + "".join(f'<span class="fx-pop"{A(4, d=i * 120 + j * 80)}>{t}</span>' for j, t in enumerate(tg)) + "</div></div></div>"
-        for i, (k, n, tg, kind, m) in enumerate(LIB)) + "</div>",
-    "b-stone", [300, 300, 300, 700, 800], '<b>Library <span>148</span></b><span class="grow"></span><span class="ui-btn">Add</span>')
-
-# Build: one box, "What should Otto build?"; then the opportunity, what he read with where each fact came from, and
-# the pages he plans.
-READ = [("Opportunity", "Pallet Cloud, 25 seats, close Jan 15"), ("Calls", "Discovery call, Oct 21"), ("Their site", "palletcloud.com"), ("Library", "Services, 2 case studies"), ("Your prices", "Per seat, $49 a month")]
-DR_ASK = scene(
-    f'<div class="drq"><span class="grow">{words("Proposal for Pallet Cloud: lead routing and onboarding, 12 months", 1)}</span>' + sw(("Build", None, 2, "ui-btn"), ("Build", 2, None, "ui-btn pri fx-pop")) + "</div>"
-    f'<div class="msgs" style="padding-top:0"><div class="bub fx-l"{A(3)}><div class="m" style="display:flex;align-items:center;gap:6px">{OWL}Otto</div>Here is what I read for Pallet Cloud.</div></div>'
-    '<div class="tl" style="margin:0 14px 10px">' + "".join(f'<div class="fx-l"{A(4, d=k * 90)}><span class="sub" style="width:84px">{k_}</span><b>{v}</b></div>' for k, (k_, v) in enumerate(READ)) + "</div>"
-    f'<div class="bulk"><span class="sub">6 pages planned</span><span class="grow"></span><span class="ui-btn pri fx-pop"{A(5)}>Next</span></div>',
-    "b-gray", [300, 1600, 600, 700, 1400], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>What should Otto build?</b></span>')
-
-NIL = '<u class="nil"></u>'
-# Questions: only for what's missing; how you price is asked once and kept for every proposal.
-DR_QS = scene(
-    f'<div class="pq"><div class="card"{A(1)}><div class="ch">{OWL}How do you price this?</div><div class="cb opts">'
-    + sw(("Per seat", 2, 3, "ui-btn"), (CK + "Per seat", 3, None, "ui-btn pri fx-pop"))
-    + "".join(f'<span class="ui-btn fx-pop"{A(2, d=90 * (i + 1))}>{x}</span>' for i, x in enumerate(["Fixed fee", "Quote after a call"]))
-    + f'</div></div><div class="card"{A(4)}><div class="ch">{OWL}Who will read it?</div><div class="cb opts">'
-    + "".join(f'<span class="ui-btn fx-pop"{A(4, d=90 * i)}>{x}</span>' for i, x in enumerate(["Rina, CEO", "Marcus, Finance"]))
-    + '</div></div><div class="facts">'
-    + "".join(f'<div><small>{k}</small>{sw((NIL, None, 5, ""), (v, 5, None, "fx-r"))}</div>' for k, v in [("Pricing", "Per seat"), ("Price", "$49 a month"), ("Kept for", "Every proposal")])
-    + "</div></div>",
-    "b-stone", [300, 600, 900, 700, 900], "<b>2 questions</b>")
-
-# Writing: page by page, each checked; unknowns become placeholders listed for the rep.
-PAGES_W = [("Overview", "6 facts"), ("Strategy", "4 facts"), ("Plan and timeline", "5 facts"), ("Investment", "Your price list"), ("Results", "2 case studies"), ("Next steps", "1 check")]
-DR_WRITE = scene(
-    '<div class="tl" style="margin:14px">'
-    + "".join(f'<div{A(1, d=k * 60)}>' + sw(*([("Queued", None, 1 + k, "tag t-gray")] if k else []), ("Writing", 1 + k, 2 + k, "tag t-yellow"), ("Done", 2 + k, None, "tag t-green fx-pop")) + f'{n}<span class="when fx-fade"{A(2 + k)}>{x}</span></div>' for k, (n, x) in enumerate(PAGES_W))
-    + f'</div><div class="qt" style="margin:0 14px 14px"{A(7)}>{ic(I_FLAG)}<span class="sub">To fill in</span><span class="grow"></span>{hold("start date")}{hold("Scale price")}</div>',
-    "b-gray", [300, 700, 700, 700, 700, 700, 700, 700], f'<span style="display:flex;align-items:center;gap:8px">{OWL}<b>Writing 6 pages</b></span>')
-
-# Brand: the seller's site is read like a designer opens the page source; colors, fonts and buttons become the skin.
-SW = ["#1f2a5c", "#2f4bd8", "#e8ecff", "#f6f5f1", "#0f1115"]
-DR_BRAND = scene(
-    '<div class="dbr">'
-    f'<div class="tl" style="margin:0">' + "".join(f'<div class="fx-l"{A(1, d=k * 120)}>{ic(I_CHECK)}{t}<span class="when">{w}</span></div>' for k, (t, w) in enumerate([("Home page", "lumenlabs.com"), ("3 more pages", "Services, Pricing, About"), ("10 stylesheets", "Fonts and colors")])) + "</div>"
-    '<div class="dsw">' + "".join(f'<i class="fx-pop"{A(2, d=k * 80, s=f"background:{c}")}></i>' for k, c in enumerate(SW)) + "</div>"
-    f'<div class="dfont fx-fade"{A(3)}><span class="dfa">Aa</span><span><b>Fraunces</b><small>Headings</small></span><span class="dfa sans">Aa</span><span><b>Inter</b><small>Text</small></span></div>'
-    f'<div class="dprev fx-drop"{A(4)}><span class="dbtn">Book the kickoff</span><span class="dbtn2">See the plan</span></div>'
-    "</div>",
-    "b-stone", [300, 900, 800, 800], '<b>Brand kit</b><span class="grow"></span><span class="sub">' + sw((LDR + "Reading your site", 1, 4, "fx-fade"), ("Site look ready", 4, None, "fx-fade")) + "</span>")
-
-# Builder: the Navigator, the page with the picked heading, Style for desktop, tablet and phone, and Otto docked.
-NAV = [("Section", 0, ""), ("Container", 1, ""), ("Heading", 2, "on"), ("Paragraph", 2, ""), ("Grid", 2, ""), ("Card", 3, ""), ("Card", 3, "")]
-DR_BUILDER = scene(
-    '<div class="bld"><div class="bnav"><small>Navigator</small>' + "".join(f'<span class="{c}" style="padding-left:{6 + l * 10}px">{n}</span>' for n, l, c in NAV) + "</div>"
-    '<div class="bcan"><div class="dsite mini"><div class="dhero"><small>Proposal for Pallet Cloud</small>'
-    + f'<h4 class="pick">' + sw(("One lead pipeline before the new region opens", None, 3, ""), ("One pipeline by January 15", 3, None, "fx-fade")) + "</h4>"
-    '<p>Inbound, outbound and event leads in one place.</p><span class="dbtn">See the plan</span></div></div>'
-    f'<div class="botto fx-r"{A(2)}>{OWL}<span class="grow">{words("Make the headline shorter", 2)}</span>' + sw(("", None, 3, ""), (CK, 3, None, "fx-pop")) + "</div></div>"
-    '<div class="bsty"><small>Style</small><span class="bdev"><span class="on">Desktop</span><span>Tablet</span><span>Phone</span></span>'
-    '<span class="brow"><i>Font</i>Fraunces</span><span class="brow"><i>Size</i>' + sw(("40", None, 1, ""), ("44", 1, None, "fx-fade")) + '</span><span class="brow"><i>Class</i>s-h1</span></div></div>',
-    "b-gray", [300, 900, 1400, 900], '<b>Pallet Cloud proposal</b><span class="grow"></span><span class="ui-btn pri">Share</span>')
-
-# Buyers: one tracked link; what the company does on it, then the approval, with the alert.
-EV = [("rina", "Rina opened the proposal", "Mon, 9:31"), ("marcus", "Marcus read Investment for 6 minutes", "Mon, 14:10"), ("marcus", "Marcus approved Growth, $30,000 a year", "Thu, 16:48")]
-DR_WATCH = scene(
-    f'<div class="facts" style="margin:14px 14px 0">' + "".join(f'<div><small>{k}</small>{sw((NIL, None, 1, ""), (v, 1, None, "fx-r"))}</div>' for k, v in [("People", "3"), ("Minutes", "24"), ("Pages", "6 of 6")]) + "</div>"
-    '<div class="feed" style="border:0">'
-    + "".join(f'<div class="ev fx-l"{A(i + 2)}>{face(f, 22)}<span class="grow">{t}<small>{w}</small></span></div>' for i, (f, t, w) in enumerate(EV))
-    + f'</div><div class="alert fx-r"{A(5)}>{logo("slack", 16, "Slack")}<span><b>Marcus approved the proposal</b><small>Pallet Cloud, $30,000 a year</small></span></div>',
-    "b-gray", [300, 900, 900, 900, 900], '<b>Pallet Cloud</b><span class="grow"></span><span class="live">Live</span>')
-
-DR = [
-    ("Your Library is what Otto knows", "Import your website first, then case studies, decks, PDFs and videos. Otto reads each one in full for your services, process, team, prices and results, and tags it.", DR_LIB),
-    ("Say what to build", "Experiences opens on one box: What should Otto build? Pick the opportunity, and Otto shows what he read from it, your calls, the buyer's website and your Library, with where each fact came from.", DR_ASK),
-    ("Otto asks only what's missing", "When something isn't in the deal or your Library, like the term, who will read it or how you price, Otto asks on a short card. How you price is asked once and kept for every proposal.", DR_QS),
-    ("Written page by page, nothing made up", "Otto writes each page from scratch: the plan, timeline, team, pricing tiers, results from your case studies and the next step. Anything he doesn't know is left as a highlighted [placeholder] for you to fill, never a guess.", DR_WRITE),
-    ("In your brand, copied from your site", "Otto reads your website the way a designer opens the page source and copies your fonts, colors and buttons. A brand guide in your Library wins over the scan, and each site keeps its look after you redesign.", DR_BRAND),
-    ("Edit it like Webflow", "Every page is real elements: sections, grids, headings, tables, buttons and forms. Pick one, style it for desktop, tablet and phone, or ask Otto, docked beside you, to change it. Build a proposal or a small website with its own pages and menu.", DR_BUILDER),
-    ("Share one link and see who read it", "Share a tracked link, or put it on your own domain. See the people, minutes and pages for each company. Approvals, form sign-ups and messages reach you by email or Slack, and the contract goes out from Contracts.", DR_WATCH),
-]
 
 # ---- Contract Management shots (in the app: src/lib/contracts, src/components/contracts, docs/deal-room.md) ----
 # Contracts come only from files people upload or import (PandaDoc, 106). Otto never writes contract text: he reads an
@@ -607,7 +498,7 @@ FLOW_YES = wcard(I_BELL, "Notify the owner", "Notify owner", cls=" sm", extra=wt
 FLOW_NO = wcard(I_MAIL, "Reply in the same thread", "Send email", cls=" sm", extra=wtags(OK_TAG))
 
 # Hero: the Workflows page, folders on the left and one live workflow on its canvas.
-FOLDERS = [("Follow-ups", [("After the demo", 1, 1), ("Proposal viewed", 1, 0), ("No reply in 5 days", 0, 0)]), ("Contracts", [("Contract renewal due", 1, 0), ("Contract signed", 1, 0), ("Over $25,000 to Finance", 1, 0)])]
+FOLDERS = [("Follow-ups", [("After the demo", 1, 1), ("Meeting no-show", 1, 0), ("No reply in 5 days", 0, 0)]), ("Contracts", [("Contract renewal due", 1, 0), ("Contract signed", 1, 0), ("Over $25,000 to Finance", 1, 0)])]
 AU_HERO = (
     '<div class="band b-gray p-shot" data-anim><div class="app wfapp"><aside class="side wfold">'
     f'<div class="wfh"><b>Workflows</b><span class="grow"></span><span class="ib">{ic(I_PLUS)}</span></div>'
@@ -632,13 +523,13 @@ AU_BUILD = scene(
 
 # Triggers: a different event is picked each time, and the step under it changes with it.
 TRIG = [("Records", ["Field changed", "Opportunity stage changed"]), ("Meetings", ["Meeting held", "Meeting no-show"]), ("Email", ["Email replied"]),
-        ("Deal Room", ["Proposal viewed", "Contract signed", "Contract renewal due", "Contract version uploaded", "Contract sent back with changes"]), ("Time and people", ["On a schedule", "Added in bulk"])]
-PICKED = {"Meeting held": (2, 3), "Proposal viewed": (3, 4), "Contract signed": (4, 5), "Contract sent back with changes": (5, None)}
+        ("Contracts", ["Contract sent", "Contract signed", "Contract renewal due", "Contract version uploaded", "Contract sent back with changes"]), ("Time and people", ["On a schedule", "Added in bulk"])]
+PICKED = {"Meeting held": (2, 3), "Contract sent": (3, 4), "Contract signed": (4, 5), "Contract sent back with changes": (5, None)}
 AU_TRIG = scene(
     '<div class="wtrg"><div class="wtl">'
     + "".join(f'<div class="wtg"><small>{g}</small>' + "".join(f'<span class="wtc fx-pop"{A(1, d=(gi * 2 + k) * 50)}>{t}' + (f'<s class="ring fx-pop"{A(*PICKED[t])}></s>' if t in PICKED else "") + "</span>" for k, t in enumerate(items)) + "</div>" for gi, (g, items) in enumerate(TRIG))
     + '</div><div class="wf-cv">'
-    + f'<div class="wfc wtrig fx-drop"{A(1)}><span class="wi">{ic(I_BOLT)}</span><span class="wt"><small>Starts when</small><b>' + sw(("Meeting held", None, 3, ""), ("Proposal viewed", 3, 4, "fx-fade"), ("Contract signed", 4, 5, "fx-fade"), ("Contract sent back with changes", 5, None, "fx-fade")) + "</b></span></div>"
+    + f'<div class="wfc wtrig fx-drop"{A(1)}><span class="wi">{ic(I_BOLT)}</span><span class="wt"><small>Starts when</small><b>' + sw(("Meeting held", None, 3, ""), ("Contract sent", 3, 4, "fx-fade"), ("Contract signed", 4, 5, "fx-fade"), ("Contract sent back with changes", 5, None, "fx-fade")) + "</b></span></div>"
     + wline(2) + '<div class="wslot">'
     + sw((wcard(I_MAIL, 'Thanks for today, <span class="tok">{{first_name|there}}</span>', "Send email"), 2, 3, ""), (wcard(I_BELL, "Notify the owner", "Notify owner", extra=wtags(f'<span class="tag t-gray">{logo("slack", 11)}Slack</span>')), 3, 4, ""),
          (wcard(I_PEN, "Company stage to Customer", "Update field"), 4, 5, ""), (wcard(I_CHECK, "Ask Legal to approve", "Ask for approval", extra=wtags('<span class="tag t-gray">In order</span>')), 5, None, ""))
@@ -704,23 +595,23 @@ AU_REPLY = scene(
     "b-gray", [300, 900, 900],
     '<b>After the demo</b><span class="grow"></span><span class="seg2"><span>Build</span><span class="on">Runs</span></span>')
 
-# Deal Room events: a proposal view, a signed contract, a renewal notice and changes sent back each start their own workflow.
-EVENTS = [(I_EYE, "Marcus viewed the proposal", wcard(I_BELL, "Notify the owner", "Proposal viewed", extra=wtags(f'<span class="tag t-gray">{logo("slack", 11)}Slack</span>'))),
+# Contract events: a sent order form, a signed one, a renewal notice and changes sent back each start their own workflow.
+EVENTS = [(I_SEND, "Order form sent to Marcus", wcard(I_BELL, "Notify the owner", "Contract sent", extra=wtags(f'<span class="tag t-gray">{logo("slack", 11)}Slack</span>'))),
           (I_SIGN, "Order form signed", wcard(I_MAIL, "Welcome to Lumen Labs", "Contract signed", extra=wtags(OK_TAG))),
           (I_CAL, "Renewal notice in 90 days", wcard(I_CLOCK, "Wait until 1 day before the next meeting", "Contract renewal due")),
           (I_REPLY, "Client sent back changes", wcard(I_CHECK, "Ask Legal to approve", "Contract sent back with changes", extra=wtags('<span class="tag t-gray">Reminder after 2 days</span>')))]
 AU_DEAL = scene(
     '<div class="wev">' + "".join(f'<span class="wevc fx-l"{A(2 * k + 1)}>{ic(i)}{t}</span><span class="wevl fx-x"{A(2 * k + 2)}></span><span class="wevw fx-r"{A(2 * k + 2, d=150)}>{c}</span>' for k, (i, t, c) in enumerate(EVENTS)) + "</div>",
-    "b-stone", [300, 600, 700, 600, 700, 600, 700, 600], "<b>From Deal Room</b>")
+    "b-stone", [300, 600, 700, 600, 700, 600, 700, 600], "<b>From Contracts</b>")
 
 AU = [
     ("Workflows on a canvas", "Start from a trigger and add steps: send an email, wait, branch, update a field, notify the owner, ask for approval, call a webhook or stop. Keep your workflows in folders.", AU_BUILD),
-    ("Start from what happens in a deal", "A workflow can start when a record or an opportunity's stage changes, a meeting is held or missed, an email gets a reply or a proposal is viewed. Contracts start them too: when one is sent or signed, a new version is uploaded, the client sends back changes or a renewal is due. It can also run on a schedule, or for people you add in bulk.", AU_TRIG),
+    ("Start from what happens in a deal", "A workflow can start when a record or an opportunity's stage changes, a meeting is held or missed, or an email gets a reply. Contracts start them too: when one is sent or signed, a new version is uploaded, the client sends back changes or a renewal is due. It can also run on a schedule, or for people you add in bulk.", AU_TRIG),
     ("Every email approved before Publish", "Write each email with merge fields, or ask Otto, the AI in Omniscient, to draft it. Every email starts unapproved, changing its words asks for approval again, and Publish waits until each one is approved.", AU_APPROVE),
     ("Sent from the owner's own mailbox", "Emails go from the record owner's Gmail, Microsoft 365 or IMAP mailbox, as a new email or a reply in the same thread. Each one ends with a one-click unsubscribe link.", AU_MAIL),
     ("A steady pace from each mailbox", "Each mailbox sends only in its owner's working hours, with a random gap of 2 to 6 minutes between emails and a daily cap. A newly connected mailbox starts at 20 emails a day and adds 10 a day.", AU_PACE),
     ("A reply stops the run", "When someone replies, their runs stop in every workflow. A bounce stops the run and an unsubscribe stops every run, and workflows skip that address from then on.", AU_REPLY),
-    ("Proposals, contracts and approval rules", "Deal Room starts workflows too: a proposal viewed, a contract sent or signed, a new version, changes sent back or a renewal notice coming up. The Ask for approval step sends a contract to the right teammates, in order or all at once. Only if can test its value or whether it's on the client's paper.", AU_DEAL),
+    ("Contracts and approval rules", "Contracts start workflows too: a contract sent or signed, a new version, changes sent back or a renewal notice coming up. The Ask for approval step sends a contract to the right teammates, in order or all at once. Only if can test its value or whether it's on the client's paper.", AU_DEAL),
 ]
 
 PAGES = [
@@ -744,11 +635,11 @@ PAGES = [
     {
         "slug": "automation", "name": "Automation", "band": "b-gray",
         "title": "Automation: follow-ups from your own mailbox | Omniscient",
-        "desc": "Workflows that follow up after meetings, proposal views and contract events. Each email is approved first, sent from your own mailbox and stopped by a reply.",
+        "desc": "Workflows that follow up after meetings, replies and contract events. Each email is approved first, sent from your own mailbox and stopped by a reply.",
         "h1": "Follow-ups that run on their own.", "h1b": "From your own mailbox.",
         "lede": "Build a workflow once. Omniscient sends each email your team approved from the owner's own mailbox, at a steady pace, and stops when someone replies.",
         "hero": AU_HERO, "feats": AU,
-        "list": ["Workflows on a canvas, in folders", "Record and stage triggers", "Meeting and email triggers", "Proposal and contract triggers", "Schedules and Add to workflow", "Email, wait, branch and update steps", "Ask for approval on contracts", "Approval before Publish", "Replies and unsubscribes stop runs", "Working hours, caps and warm-up"],
+        "list": ["Workflows on a canvas, in folders", "Record and stage triggers", "Meeting and email triggers", "Contract triggers", "Schedules and Add to workflow", "Email, wait, branch and update steps", "Ask for approval on contracts", "Approval before Publish", "Replies and unsubscribes stop runs", "Working hours, caps and warm-up"],
         "faq": [
             ("Does anything send before we approve it?", "No. Every email in a workflow starts unapproved, and Publish waits until someone on your team approves each one. Changing an approved email's words asks for approval again."),
             ("Which mailbox sends the emails?", "The record owner's own mailbox: the opportunity's owner, or else the workflow's owner. Gmail, Microsoft 365 and any mailbox connected over IMAP and SMTP can send."),
@@ -757,23 +648,6 @@ PAGES = [
             ("Can Otto write the emails?", "When you ask. Otto drafts or rewrites an email step and it's marked as his. It still needs a person's approval before the workflow can go live."),
             ("Can someone go through a workflow twice?", "You choose: once, or again after a gap once their last run has ended. A person is never in the same workflow twice at once."),
             ("Can a workflow ask for approval on a contract?", "Yes. Start from Contract version uploaded or Contract sent back with changes, and add the Ask for approval step. Pick the approvers, in order or all at once, and a reminder after a set number of days. Only if and Branch can test the contract's value, status, end date, version number, whether it's on the client's paper and whether changes were sent back. A contract over $25,000 can ask Finance, for example."),
-        ],
-    },
-    {
-        "slug": "deal-room", "name": "Deal Room", "band": "b-gray",
-        "title": "Deal Room: proposals and deal sites written for each deal | Omniscient",
-        "desc": "Tell Otto what to build. He writes a proposal or a small website for the deal from the opportunity, your calls and your Library, in your own brand. Edit it like Webflow, share one link and see who read it.",
-        "h1": "Proposals written for each deal.", "h1b": "In your brand, from your own content.",
-        "lede": "Tell Otto what to build. He reads the deal, your calls and your Library, asks only what's missing and writes every page in your website's look. Edit it like Webflow and share one link.",
-        "hero": DR_HERO, "feats": DR,
-        "list": ["A Library of your website and files", "One box: What should Otto build?", "Questions only for what's missing", "Pages written from scratch", "Placeholders, never made-up facts", "Your brand, copied from your site", "A Webflow-style builder", "Otto docked in the builder", "Proposals and small websites", "Folders", "Tracked links and your own domain", "People, minutes and pages per company", "Approval on the page", "Form sign-ups and messages", "Email and Slack alerts"],
-        "faq": [
-            ("What can Otto build?", "A proposal or a small website for one deal, with its own pages, header, phone menu and footer. You say what you need in one line, like \"Proposal for Acme: SEO and LinkedIn, 12 months\", and Otto plans the pages before he writes them."),
-            ("Where do the facts come from?", "Facts about the buyer come from the opportunity, its company, your calls and the buyer's website. Your services, team, prices and results come only from your Library or your answers. Anything Otto doesn't know is left as a highlighted [placeholder] and listed for you to fill. He never invents prices, customers or results."),
-            ("Are there templates?", "No. There are no templates or ready-made sections. Otto writes every page for the deal in front of him, and you can also start from an empty page in your brand."),
-            ("How does it match our brand?", "Otto reads your website's home page, a few more pages and its stylesheets, and copies your fonts, colors, buttons and spacing. A brand guide in your Library wins over the scan. Each site keeps its look even after you redesign your website."),
-            ("Can I edit what Otto wrote?", "Yes. Every page is made of real elements you can pick, move, type into and style for desktop, tablet and phone. Ask Otto, docked in the builder, to change the element you picked or the whole page."),
-            ("How do buyers respond?", "They can approve the proposal, fill in a form or send you a message on the page, and it reaches you by email or Slack. Then send the contract from Contracts, with the signers filled in from the opportunity."),
         ],
     },
     {

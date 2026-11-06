@@ -2,7 +2,7 @@
 
 Static site for Omniscient. Plain HTML: no WordPress, no build step.
 
-The app itself lives at app.tryomniscient.com. This repo is only the marketing site: the home page, four product pages (Omniscient CRM, Automation, Deal Room, Contract Management), Privacy and Terms. More pages follow `docs/site-architecture.md`.
+The app itself lives at app.tryomniscient.com. This repo is only the marketing site: the home page, three product pages (Omniscient CRM, Automation, Contract Management), Privacy and Terms. More pages follow `docs/site-architecture.md`.
 
 ## How it's laid out
 
