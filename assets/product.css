@@ -531,6 +531,8 @@
 .wfh { display: flex; align-items: center; gap: 6px; height: 46px; padding: 0 10px 0 14px; border-bottom: 1px solid var(--frame); }
 .wfh b { font-weight: 600; }
 .ib { width: 24px; height: 24px; border-radius: 7px; display: grid; place-items: center; color: var(--ink-2); }
+/* A Library card's body shares the name; it keeps its own column layout (home.css). */
+.item > .ib { width: auto; height: auto; border-radius: 0; display: flex; place-items: normal; color: inherit; }
 .wff { display: flex; align-items: center; gap: 8px; padding: 12px 14px 4px; color: var(--ink-2); font-size: 11.5px; }
 .wff svg { flex: none; }
 .wfr { display: flex; align-items: center; gap: 8px; min-height: 28px; margin: 0 8px; padding: 4px 8px 4px 28px; border-radius: 8px; font-weight: 500; }
@@ -614,4 +616,80 @@
   .wpick { left: auto; right: 0; top: 34px; }
   .wevl { display: none; }
   .wevw { margin-bottom: 6px; }
+}
+
+/* Deal Room as it is now (docs/deal-room.md in the app): a proposal wearing the seller's own brand (Lumen Labs here,
+   an indigo and a serif, to show it isn't Omniscient's look), the build box, the brand read and the builder. */
+.hold { display: inline-block; padding: 0 4px; border-radius: 4px; background: #fff6d6; color: #7a5600; box-shadow: inset 0 0 0 1px #f2d98a; font-weight: 500; white-space: normal; }
+.dsite { --db: #2f4bd8; --dd: #1f2a5c; background: #fff; color: #1b1d24; border-radius: 12px; box-shadow: var(--sh-chip); overflow: hidden; font-size: 12.5px; }
+.dsite .dtop { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; padding: 12px 18px; border-bottom: 1px solid #eceef5; }
+.dsite .dlogo { display: inline-flex; align-items: center; gap: 8px; font: 600 14px/1 Georgia, "Times New Roman", serif; color: var(--dd); }
+.dsite .dlogo i { width: 16px; height: 16px; border-radius: 4px; background: var(--db); }
+.dsite .dtabs { display: flex; flex-wrap: wrap; gap: 4px 14px; color: #6b7080; flex: 1 1 260px; min-width: 0; }
+.dsite .dtabs .on { color: var(--dd); font-weight: 600; box-shadow: inset 0 -2px 0 var(--db); padding-bottom: 2px; }
+.dsite .dbtn, .dbr .dbtn { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 6px; background: #2f4bd8; color: #fff; font-weight: 600; }
+.dsite .dbtn2, .dbr .dbtn2 { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 6px; margin-left: 6px; box-shadow: inset 0 0 0 1px #c9cfe8; color: #1f2a5c; font-weight: 600; }
+.dsite .dhero { padding: 26px 22px 22px; background: #f6f5f1; }
+.dsite .dhero small { color: #2f4bd8; font-weight: 600; }
+.dsite .dhero h4 { margin: 6px 0 8px; max-width: 30ch; font: 600 26px/1.1 Georgia, "Times New Roman", serif; color: #1f2a5c; letter-spacing: -.01em; }
+.dsite .dhero p { margin: 0 0 14px; max-width: 56ch; color: #4a4f5c; line-height: 1.55; }
+.dsite .dsec { padding: 18px 22px 22px; }
+.dsite .dsec > small { color: #2f4bd8; font-weight: 600; }
+.dsite .dtiers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+.dsite .dtier { position: relative; display: flex; flex-direction: column; gap: 4px; padding: 14px 12px 12px; border-radius: 8px; box-shadow: inset 0 0 0 1px #e1e4ef; min-width: 0; }
+.dsite .dtier.rec { box-shadow: inset 0 0 0 2px #2f4bd8; }
+.dsite .drec { position: absolute; top: -9px; left: 12px; padding: 1px 6px; border-radius: 4px; background: #2f4bd8; color: #fff; font-size: 10.5px; font-weight: 600; }
+.dsite .dtier b { color: #1f2a5c; }
+.dsite .dpr { font: 600 18px/1.2 Georgia, "Times New Roman", serif; color: #1f2a5c; }
+.dsite .dpr small { margin-left: 4px; font: 400 11px var(--font); color: #6b7080; }
+.dsite .dsub { color: #6b7080; font-size: 11.5px; }
+.dsite.mini { box-shadow: none; border-radius: 8px; }
+.dsite.mini .dhero { padding: 18px 16px; }
+.dsite.mini .dhero h4 { font-size: 20px; }
+.drq { display: flex; align-items: center; gap: 10px; margin: 14px; padding: 12px 12px 12px 14px; border-radius: 12px; background: #fff; box-shadow: var(--sh-chip); min-height: 52px; }
+.dbr { display: flex; flex-direction: column; gap: 12px; padding: 14px; }
+.dsw { display: flex; gap: 8px; }
+.dsw i { width: 34px; height: 34px; border-radius: 8px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+.dfont { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+.dfont .dfa { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 8px; background: #fff; box-shadow: var(--sh-chip); font: 600 18px Georgia, serif; color: #1f2a5c; }
+.dfont .dfa.sans { font: 600 17px var(--font); }
+.dfont b { display: block; font-weight: 600; } .dfont small { color: var(--muted); font-size: 11px; }
+.dprev { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px; border-radius: 10px; background: #f6f5f1; }
+.bld { display: grid; grid-template-columns: 112px minmax(0, 1fr) 118px; min-height: 260px; }
+.bld small { display: block; padding: 10px 10px 6px; color: var(--muted); font-size: 11px; font-weight: 500; }
+.bnav { border-right: 1px solid var(--line); font-size: 11.5px; }
+.bnav span { display: block; padding: 3px 8px; color: var(--ink-2); }
+.bnav .on { background: #e8eeff; color: #1e4f9a; font-weight: 600; }
+.bcan { display: flex; flex-direction: column; gap: 10px; padding: 12px; background: var(--tint); min-width: 0; }
+.bcan .pick { outline: 2px solid #3d7bf2; outline-offset: 3px; border-radius: 2px; }
+.botto { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 10px; background: #fff; box-shadow: var(--sh-chip); }
+.bsty { border-left: 1px solid var(--line); font-size: 11.5px; }
+.bdev { display: flex; flex-wrap: wrap; gap: 2px; margin: 0 8px 8px; padding: 2px; border-radius: 8px; background: var(--hover); }
+.bdev span { flex: 1 1 auto; padding: 3px 4px; border-radius: 6px; text-align: center; color: var(--muted); font-size: 10.5px; }
+.bdev .on { background: #fff; color: var(--ink); box-shadow: var(--sh-chip); }
+.brow { display: flex; align-items: center; gap: 6px; padding: 6px 10px; border-top: 1px solid var(--line); }
+.brow i { width: 34px; font-style: normal; color: var(--muted); }
+
+/* Contracts as they are now: four numbers, the stage path, recipients first, the send review and the deal. */
+.cstats.c4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cs3.cur { background: var(--solid); color: #fff; }
+.cs3.cur .cn { background: #fff; color: var(--ink); }
+.crp .grip { width: 6px; height: 14px; flex: none; background: radial-gradient(circle, var(--faint) 1.2px, transparent 1.4px) 0 0 / 6px 4.6px; }
+.cadd { display: flex; flex-direction: column; gap: 6px; margin: 8px 14px; padding: 8px; border-radius: 10px; background: #fff; box-shadow: var(--sh-chip); }
+.cadd .fld { padding: 5px 8px; border-radius: 6px; box-shadow: inset 0 0 0 1px var(--frame); }
+.csug2 span { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; padding: 4px 6px; border-radius: 6px; background: var(--hover); font-weight: 500; }
+.csug2 small { color: var(--muted); font-weight: 400; }
+.cok { width: 16px; height: 16px; flex: none; display: grid; place-items: center; border-radius: 4px; background: var(--signal-soft); color: var(--signal-text); }
+.cdeal { display: flex; flex-direction: column; gap: 10px; padding: 14px; }
+.cstg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; }
+.cstgi { position: relative; padding: 6px 8px; border-radius: 6px; background: var(--hover); color: var(--muted); font-size: 11.5px; font-weight: 500; text-align: center; }
+.cstgon { position: absolute; inset: 0; display: grid; place-items: center; border-radius: 6px; background: var(--solid); color: #fff; font-style: normal; }
+.cctr { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border-radius: 10px; background: #fff; box-shadow: var(--sh-chip); }
+.cctr small { color: var(--muted); font-size: 11px; }
+.cctr i { display: block; font-style: normal; color: var(--muted); font-size: 11.5px; }
+
+@media (max-width: 600px) {
+  .dsite .dtiers, .cstats.c4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bld { grid-template-columns: minmax(0, 1fr); }
+  .bnav, .bsty { display: none; }
 }
