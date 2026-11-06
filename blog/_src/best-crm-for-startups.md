@@ -83,7 +83,7 @@ Thankfully, you can run the same test on any CRM during its trial. Connect one r
 [Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B teams where the founder still sells. It fills in contacts and companies from your email and calendar and writes meeting notes from your call transcripts. The Deal Room builds a proposal for each deal, and Contract Management gets the contract you upload signed on the page.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=best-crm-for-startups&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-startups&start=crm
 ```
 
 #### Key features
