@@ -1,3 +1,4 @@
+# Hostinger settings, kept for reference only: since Nov 2026 the site runs on Fly with the same rules in Caddyfile.
 # Hostinger (LiteSpeed/Apache) settings for the static Omniscient site
 ErrorDocument 404 /404.html
 DirectoryIndex index.html

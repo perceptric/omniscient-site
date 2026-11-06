@@ -1,0 +1,62 @@
+# The marketing site on Fly.io (Nov 2026), in place of Hostinger's .htaccess: the same rules, served by Caddy behind
+# Fly's proxy (which handles HTTPS). Built by Dockerfile, deployed by .github/workflows/fly-deploy.yml.
+{
+	auto_https off
+	admin off
+}
+
+:8080 {
+	root * /srv
+	encode zstd gzip
+
+	# One host: www goes to the bare domain.
+	@www host www.tryomniscient.com
+	redir @www https://tryomniscient.com{uri} 301
+
+	# Never served: dot files (but .well-known), sources and drafts (blog/_src, anything starting with "_"), shot
+	# snippets, docs, tools and the README.
+	@hidden {
+		path_regexp hidden (^|/)\.|(^|/)_|\.shot\.html$|^/(README\.md|docs/|tools/|partials/|Caddyfile|Dockerfile|fly\.toml)
+		not path /.well-known/*
+	}
+	respond @hidden 403
+
+	# Icon names that browsers and phones ask for on their own.
+	redir /favicon.ico /assets/brand/favicon.ico 301
+	redir /icon.svg /assets/brand/icon.svg 301
+	@apple path_regexp ^/apple-(touch-)?icon(-precomposed)?\.png$
+	redir @apple /assets/brand/apple-icon.png 301
+
+	# Removed pages.
+	@linkedin path_regexp ^/product/linkedin-outbound/?$
+	redir @linkedin /product/contract-management/ 301
+	@oldposts path_regexp ^/blog/(automate-linkedin-outreach-without-getting-restricted|best-linkedin-automation-tools|dripify-alternatives|expandi-alternatives|heyreach-alternatives|heyreach-vs-expandi|lemlist-alternatives|linked-helper-alternatives|linkedin-automation-pricing|linkedin-automation-tools-for-agencies|linkedin-connection-request-limit|linkedin-outreach-tools-with-crm|safest-linkedin-automation-tools|waalaxy-alternatives|waalaxy-vs-lemlist|best-crm-for-linkedin|crm-with-linkedin-integration)/?$
+	redir @oldposts /blog/ 301
+
+	# Like the app's src/proxy.ts: a page path with no file or folder here goes to the same path on the app
+	# (/today goes to https://app.tryomniscient.com/today, with its query). A missing file gets 404.html.
+	@toapp {
+		not path /
+		not file {path} {path}/
+		not path_regexp \.[a-zA-Z0-9]+$
+	}
+	redir @toapp https://app.tryomniscient.com{uri} 301
+
+	# How long browsers keep things: pictures a year, styles and scripts a week, pages ten minutes.
+	@img path *.png *.jpg *.jpeg *.webp *.svg *.ico *.gif *.avif *.woff2
+	header @img Cache-Control "public, max-age=31536000"
+	@code path *.css *.js
+	header @code Cache-Control "public, max-age=604800"
+	@page not path *.png *.jpg *.jpeg *.webp *.svg *.ico *.gif *.avif *.woff2 *.css *.js
+	header @page Cache-Control "public, max-age=600"
+
+	file_server
+	handle_errors {
+		@missing expression {err.status_code} == 404
+		rewrite @missing /404.html
+		header >Cache-Control "public, max-age=60"
+		file_server {
+			status 404
+		}
+	}
+}
