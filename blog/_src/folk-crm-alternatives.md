@@ -107,7 +107,7 @@ What sent you looking past folk?
 [Omniscient](https://tryomniscient.com/) is a CRM built for small B2B teams that want their records to fill themselves in, with a Deal Room for proposals and Contract Management in the same app. Where folk stops at the pipeline, Omniscient builds the proposal from the deal and gets the contract you upload signed on the page.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=folk-crm-alternatives
+Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=folk-crm-alternatives&start=crm
 ```
 
 #### Key features
