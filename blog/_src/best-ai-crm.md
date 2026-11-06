@@ -89,7 +89,7 @@ The same idea gives you a quick test for any AI CRM in a trial. Click a value th
 [Omniscient](https://tryomniscient.com/) is an AI CRM built for small B2B sales teams that want their records to fill themselves in and their proposals and contracts on the same deal. It works from your email and the transcripts of your calls, and Otto, our AI agent, proposes each value with the quote it came from. Nothing a person typed ever gets overwritten.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=best-ai-crm
+Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=best-ai-crm&start=crm
 ```
 
 #### Key features

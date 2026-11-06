@@ -111,7 +111,7 @@ code and `---`. These fenced blocks render in the brand:
 |---|---|---|
 | ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. | A framed comparison table. Each tool gets its logo from `assets/blog/logos/`, else `assets/logos/`, else its site's favicon. |
 | ` ```rating ` | One line: `4.8 \| G2 \| https://www.g2.com/products/<tool>/reviews`. Only a rating read on that site. | Right under a numbered tool heading, above its screenshot: five stars filled to the score, "4.8/5" and the source's name, linked in a new tab with `rel="nofollow noopener"`. No JSON-LD, since Google doesn't allow review markup for ratings gathered from other sites. |
-| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/?utm_source=blog&utm_medium=<slug>`. | A dark gray primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
+| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/?utm_source=blog&utm_medium=<slug>&start=crm`. `start=crm` makes a new workspace start with the CRM (`start=content` or `both` for the others). | A dark gray primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
 | ` ```callout ` | One or two sentences. | A note on a white card with a green dot. |
 | ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
 | ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. No heading above it. | A "FAQs" heading (in the contents list), questions that open and close, plus FAQPage JSON-LD. |

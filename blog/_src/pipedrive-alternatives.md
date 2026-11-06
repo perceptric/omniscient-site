@@ -82,7 +82,7 @@ To bring LinkedIn into Pipedrive, you add a Marketplace app such as [LinkMatch](
 [Omniscient](https://tryomniscient.com/) is a CRM built for small B2B teams that want their records to fill themselves in, with a Deal Room for proposals and Contract Management in the same app. It reads your email, calendar and call transcripts, and Otto, our AI agent, drafts your follow up emails and suggests deal updates you accept or skip.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=pipedrive-alternatives
+Try Omniscient free | https://app.tryomniscient.com/?utm_source=blog&utm_medium=pipedrive-alternatives&start=crm
 ```
 
 #### Key features
