@@ -395,10 +395,11 @@ h6.by { font-size: 12.5px; }
 .hero { padding-top: 88px; }
 .hero-h { max-width: 980px; }
 .rot-line { display: block; }
-.rot { display: inline-grid; justify-items: end; vertical-align: bottom; }
-.rot__w { grid-area: 1 / 1; opacity: 0; transform: translateY(0.35em); filter: blur(2px); transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out), filter 500ms var(--ease-out); background: linear-gradient(var(--signal), var(--signal)) 0 92% / 100% 0.06em no-repeat; }
-.rot__w.is-on { opacity: 1; transform: none; filter: none; }
-.rot__w.is-out { opacity: 0; transform: translateY(-0.35em); }
+.rot { position: relative; display: inline-block; vertical-align: bottom; white-space: nowrap; transition: width 500ms var(--ease-out); }
+.rot__sizer { visibility: hidden; }
+.rot__w { position: absolute; left: 50%; top: 0; opacity: 0; transform: translate(-50%, 0.35em); filter: blur(2px); transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out), filter 500ms var(--ease-out); background: linear-gradient(var(--signal), var(--signal)) 0 92% / 100% 0.06em no-repeat; }
+.rot__w.is-on { opacity: 1; transform: translate(-50%, 0); filter: none; }
+.rot__w.is-out { opacity: 0; transform: translate(-50%, -0.35em); }
 .strip--hero { padding-top: 56px; }
 
 /* The city */
@@ -477,7 +478,7 @@ h6.by { font-size: 12.5px; }
   .omni__lines { display: none; }
   .omni__in, .omni__out { display: flex; flex-wrap: wrap; justify-content: center; }
 }
-@media (prefers-reduced-motion: reduce) { .iso .live { animation: none; } .rot__w { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .iso .live { animation: none; } .rot__w, .rot { transition: none; } }
 
 .omni__lines path { fill: none; stroke: #c9eadb; stroke-width: 1.5; }
 .omni__lines circle { fill: #0c8c5e; }
@@ -511,8 +512,9 @@ h6.by { font-size: 12.5px; }
 .hit img { width: 30px; height: 30px; border-radius: var(--r-pill); object-fit: cover; }
 .hit b { font-weight: 500; }
 .hit i { font-style: normal; font-size: 11.5px; font-weight: 600; padding: 1px 6px; border-radius: 6px; background: var(--green-soft); color: var(--green); }
-.typer.is-run .hit { opacity: 0; transform: translateY(6px) scale(.9); }
-.typer.is-run .hit.is-in { opacity: 1; transform: none; }
+.typer.is-run .hit { opacity: .3; filter: grayscale(1) blur(1px); transform: scale(.96); }
+.typer.is-run .hit.is-in { opacity: 1; filter: none; transform: none; }
+.hit { transition: transform var(--normal) var(--ease-spring), opacity var(--normal) var(--ease-out), filter var(--normal) var(--ease-out); }
 
 /* Logo marquee */
 .marquee { width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
