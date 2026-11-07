@@ -97,11 +97,14 @@
   wire(); window.addEventListener("resize", wire); if (document.fonts) document.fonts.ready.then(wire);
 
   // Rotating word in the headline
-  var ws = document.querySelectorAll(".rot__w"), i = 0;
+  // The box takes the width of the word on screen, so the line stays centered as the word changes.
+  var ws = document.querySelectorAll(".rot__w"), i = 0, rot = document.querySelector(".rot");
+  function fitWord() { if (rot && ws[i]) rot.style.width = ws[i].offsetWidth + "px"; }
+  fitWord(); addEventListener("resize", fitWord); if (document.fonts) document.fonts.ready.then(fitWord);
   if (ws.length && !still) setInterval(function () {
     var cur = ws[i]; cur.classList.remove("is-on"); cur.classList.add("is-out");
     setTimeout(function () { cur.classList.remove("is-out"); }, 520);
-    i = (i + 1) % ws.length; ws[i].classList.add("is-on");
+    i = (i + 1) % ws.length; ws[i].classList.add("is-on"); fitWord();
   }, 2200);
 })();
 
