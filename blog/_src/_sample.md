@@ -45,7 +45,7 @@ Numbered lists use mono numbers:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts | [$19 per seat a month](/#pricing) | Small B2B sales teams
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals and contracts | [$19 per seat a month](/pricing/) | Small B2B sales teams
 HubSpot | hubspot.com | A CRM with marketing and service hubs | check | Teams already on HubSpot
 Pipedrive | pipedrive.com | A pipeline-first CRM for small sales teams | check | Visual pipeline management
 Attio | attio.com | A flexible CRM you shape around your own objects | check | Teams that design their own data model

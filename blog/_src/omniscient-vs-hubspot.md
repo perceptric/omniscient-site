@@ -24,13 +24,13 @@ How you find buyers and how your deals close settle most of the choice:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/pricing/) | Small B2B teams that sell through meetings and proposals
 HubSpot | hubspot.com | A CRM platform with sales, marketing and service hubs | [Free CRM for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales tools on one database
 ```
 
 ## Omniscient vs HubSpot features compared
 
-HubSpot's column comes from its [Sales Hub pricing page](https://www.hubspot.com/pricing/sales), product pages and knowledge base, and ours from our [pricing](/#pricing) and the app itself.
+HubSpot's column comes from its [Sales Hub pricing page](https://www.hubspot.com/pricing/sales), product pages and knowledge base, and ours from our [pricing](/pricing/) and the app itself.
 
 | | HubSpot Sales Hub | Omniscient |
 |---|---|---|

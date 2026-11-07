@@ -38,7 +38,7 @@ Our short answer, by the reason you're leaving:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
 folk | folk.app | A light AI CRM with a LinkedIn extension and email sequences | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders and agencies selling through their network
 Pipedrive | pipedrive.com | A sales pipeline CRM with an AI sales assistant | check | Small teams that work by pipeline stage
@@ -120,7 +120,7 @@ Contract Management comes with the seat and picks up once the buyer says yes:
 - Teammates approve each version, and each signer signs on a page in your brand from their own link.
 - Otto reads the end date, notice period and auto-renewal from each signed contract, including ones you signed before, with a quote for each. Once a person confirms them, the owner gets alerts 90, 60 and 30 days before the notice date.
 
-Admittedly, Omniscient is narrower than Attio in a few places. We have no mobile app, and our email sequences run as Automation workflows from each rep's own mailbox at a steady pace, so a team that sends cold email in volume will do better with a dedicated outreach tool. Teammates who only view or log data are free, paid seats start at [$19 per seat a month billed yearly](/#pricing), and the trial lasts 14 days with no credit card. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest.
+Admittedly, Omniscient is narrower than Attio in a few places. We have no mobile app, and our email sequences run as Automation workflows from each rep's own mailbox at a steady pace, so a team that sends cold email in volume will do better with a dedicated outreach tool. Teammates who only view or log data are free, paid seats start at [$19 per seat a month billed yearly](/pricing/), and the trial lasts 14 days with no credit card. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest.
 
 ### 2. HubSpot
 

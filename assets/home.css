@@ -646,3 +646,6 @@ h3 { font: 600 clamp(24px, 2.8vw, 34px)/1.08 "Inter Tight", sans-serif; letter-s
 .plans, .show-stage { border-radius: 16px; overflow: hidden; }
 .ptoast { border-radius: 12px; box-shadow: 0 12px 32px -6px rgba(0,0,0,.12), 0 0 0 1px rgba(111,107,107,.1), 0 1px 3px rgba(63,70,75,.1); }
 .shead li::before, .ans li::before, .plan li::before, .ev .d { border-radius: 999px; }
+
+/* Pricing and Security as their own pages (moved off the home page in home v4). */
+.page-solo { padding-top: 24px; }

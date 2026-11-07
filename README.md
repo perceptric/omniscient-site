@@ -14,7 +14,10 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `partials/head.html` | Icons, fonts and the shared CSS. |
 | `partials/header.html`, `partials/footer.html` | The site header and footer. |
 | `assets/base.css` | Brand tokens, reset, type, tags, buttons, the header with the Product and Resources menus, the phone menu, footer, reading pages. |
-| `assets/home.css`, `assets/home.js` | The home page (`docs/home-v3.md`): hero, three full-screen sections (conversations, proposals, contracts) each with one big product screen, tools it replaces, security, pricing and questions. |
+| `assets/home4.css`, `assets/home4.js` | The home page (`docs/home-v4.md`): the agentic hero with a live Scout search, the four-tools scene, the four parts (Prospect, Unify, Close, Sign and renew) and the Omniscience band. |
+| `assets/home.css`, `assets/home.js` | The old home page's styles, still used by `pricing/`, `security/` and the product pages' shots. |
+| `pricing/index.html`, `security/index.html` | Pricing with the questions, and how we handle data. Moved off the home page in home v4. |
+| `assets/img/founders/` | Founder photos for the home page's lead list, from Wikimedia Commons (credited under the list). |
 | `product/crm/`, `product/automation/`, `product/deal-room/`, `product/contract-management/` | The four product pages, written by `tools/products/gen.py` (edit the copy there, then run it and `node tools/layout.mjs`). Styles in `assets/product.css`, shots reuse `assets/home.css`. Each feature's shot is a scene that plays what the feature does (see `assets/scenes.js`); `assets/product.js` plays the hero shots once. |
 | `assets/img/people/` | Portraits used in the product shots, from Unsplash (free to use, credited in the footer). |
 | `assets/site.js` | Opens and closes the menus, the phone menu, the header line on scroll and scroll reveals. |

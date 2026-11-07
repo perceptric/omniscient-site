@@ -35,7 +35,7 @@ If you only have a minute, match your reason for leaving to the tool we'd open f
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
 HubSpot | hubspot.com | A customer platform with marketing, sales and service tools on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
 Zoho CRM | zoho.com | A sales CRM with a free edition and Zia AI agents | [Free for up to 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Small teams that want to start free
 Close | close.com | A sales CRM with calling, SMS and email built in | [$9 a month for one user, billed yearly](https://www.close.com/pricing) | Teams that sell by phone

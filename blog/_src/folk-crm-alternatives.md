@@ -34,7 +34,7 @@ The short answer, by the reason you're leaving:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
 Attio | attio.com | A CRM with records built from your inbox and a data model you shape | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want their own objects
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
 Salesflare | salesflare.com | A B2B CRM that fills itself in, with a LinkedIn sidebar | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small teams that follow up by email

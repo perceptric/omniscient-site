@@ -22,7 +22,7 @@ We read each vendor's own site on November 3, 2026, and every price we could rea
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in from email, calendar and call transcripts, and reads signed contracts | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that want to see where each value came from
+Omniscient | tryomniscient.com | A CRM that fills itself in from email, calendar and call transcripts, and reads signed contracts | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that want to see where each value came from
 HubSpot | hubspot.com | A CRM platform that logs email from connected inboxes | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that run marketing and sales together
 Salesforce | salesforce.com | A CRM whose Starter Suite syncs emails, events and contacts | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | Teams with an admin and a custom sales process
 Attio | attio.com | A flexible CRM with email sync and enrichment on every plan | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -134,7 +134,7 @@ Otto writes the notes and facts from the transcript, and the transcript itself i
 Omniscient is an AI CRM that fills itself in from your email and meetings, with a Deal Room for proposals and Contract Management in the same app. Each fact it pulls from a conversation keeps its quote, and every value it writes is marked as Otto's.
 
 - Email and calendar capture works on every seat, and on a Pro workspace, teammates who only view or log data get free seats.
-- Meeting notes, follow up drafts and Ask Omniscient start on Starter, at [$19 per seat a month billed yearly](/#pricing), and Pro at $49 adds fields filled with proof.
+- Meeting notes, follow up drafts and Ask Omniscient start on Starter, at [$19 per seat a month billed yearly](/pricing/), and Pro at $49 adds fields filled with proof.
 - Website forms and webhooks from tools like Typeform add leads, along with where each visitor came from, such as Organic search.
 - In [Contract Management](/product/contract-management/), Otto reads the end date, notice period and auto-renewal from each signed contract, including ones you signed before, each with a quote for a person to confirm. The owner then gets alerts 90, 60 and 30 days before the notice date.
 - The [Deal Room](/product/deal-room/) builds each proposal from the deal and your calls, so the facts on the record don't get typed a second time.

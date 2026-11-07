@@ -26,7 +26,7 @@ Here's our short answer:
 Name | Domain | What it is | Starting price | Best for
 Attio | attio.com | A flexible CRM with email sync, sequences on Pro and AI on credits | [Free for up to 3 seats, Plus from $35 per user a month billed yearly](https://attio.com/pricing) | Teams that want to design their own data model
 HubSpot | hubspot.com | A customer platform with marketing, sales and service hubs on one CRM | [Free for up to 2 users, Sales Hub Starter from $7 per seat a month billed yearly for new customers](https://www.hubspot.com/pricing/sales) | Teams whose leads come from marketing
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
 ```
 
 ## Attio vs HubSpot at a glance
@@ -185,7 +185,7 @@ Omniscient is a CRM that fills itself in from your email, calendar and call tran
 
 ![Omniscient homepage](tool:tryomniscient.com)
 
-Our [plans](/#pricing) compare like this:
+Our [plans](/pricing/) compare like this:
 
 - Starter costs $19 per seat a month billed yearly, and Pro costs $49 with the pipeline board, the forecast and fields filled with the quote that backs them.
 - Teammates who only view or log data are free, and the CRM's AI is part of the seat price.

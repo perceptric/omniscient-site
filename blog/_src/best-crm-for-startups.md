@@ -29,7 +29,7 @@ If you only have a minute, here's where we'd start:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | B2B startups selling through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | B2B startups selling through email, meetings and proposals
 HubSpot | hubspot.com | A customer platform with marketing, sales and service on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
 Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their data model
 Pipedrive | pipedrive.com | A pipeline CRM with AI meeting briefs on every plan | [See pricing](https://www.pipedrive.com/en/pricing) | A first sales hire who works by stage

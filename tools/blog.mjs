@@ -551,7 +551,7 @@ ${rows.map((r) => `<tr>${Array.from({ length: cols }, (_, k) => td("td", r[k], k
 }
 
 // A vendor's pricing page: https://<domain>/pricing (Omniscient's is the pricing section on the home page).
-const pricingUrl = (domain) => (domain === "tryomniscient.com" ? "/#pricing" : `https://${domain}/pricing`);
+const pricingUrl = (domain) => (domain === "tryomniscient.com" ? "/pricing/" : `https://${domain}/pricing`);
 
 // The domain for a table row: its first cell names a tool in the tools block, or links to the tool's site.
 function rowDomain(first, ctx) {

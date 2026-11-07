@@ -28,7 +28,7 @@ If you're short on time, here's where we'd start:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
 HubSpot | hubspot.com | A customer platform with marketing, sales and service tools on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that run marketing and sales together
 Salesforce | salesforce.com | A CRM with editions up to large enterprise and Agentforce agents | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | Larger teams with an admin
 Microsoft Dynamics 365 Sales | dynamics.microsoft.com | Microsoft's sales CRM with Copilot and prebuilt sales agents | [$65 per user a month, paid yearly](https://www.microsoft.com/en-us/dynamics-365/products/sales/pricing) | Companies that run on Microsoft

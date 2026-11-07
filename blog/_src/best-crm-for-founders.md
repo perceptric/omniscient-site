@@ -35,7 +35,7 @@ Our quick picks, by the way you sell:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Founders selling B2B through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Founders selling B2B through email, meetings and proposals
 folk | folk.app | An AI CRM for small teams, with a LinkedIn extension | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who sell through their network
 Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Founders who track investors and partners too
 HubSpot | hubspot.com | A CRM platform with a free plan that doesn't expire | [Free for up to 2 users](https://www.hubspot.com/products/crm) | Cofounders who want a free start
@@ -88,7 +88,7 @@ Thankfully, you can test all of this on a free plan or a trial before you commit
 
 Omniscient is an AI CRM that builds its records from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes your meeting notes and drafts your follow ups.
 
-- Paid seats start at [$19 per seat a month, billed yearly](/#pricing), with AI included, and monthly billing costs 20% more.
+- Paid seats start at [$19 per seat a month, billed yearly](/pricing/), with AI included, and monthly billing costs 20% more.
 - Starter covers meeting notes from the transcripts Google Meet, Zoom or Teams already make, follow up drafts, Ask Omniscient and the daily digest.
 - Pro, at $49 billed yearly, adds the pipeline board and forecast, fields filled with proof, meeting prep briefs and free seats for teammates who only view or log data.
 - The 14 day Pro trial needs no card, and we move your records over from HubSpot, Salesforce, Pipedrive or Attio for you.

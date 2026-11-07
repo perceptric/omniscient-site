@@ -40,7 +40,7 @@ Here's where we'd look first, by what you want instead:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams selling through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams selling through email, meetings and proposals
 HubSpot | hubspot.com | A customer platform with a free CRM and paid sales tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
 Attio | attio.com | A CRM you shape around your own objects and fields | [Free for up to 3 seats](https://attio.com/pricing) | Teams that liked Salesforce's custom objects
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | A first sales hire who works by stage
@@ -90,7 +90,7 @@ Omniscient is an AI CRM that fills in its records from the email, calendar and c
 
 Coming from Salesforce, the big change is who does the typing. Each email and meeting lands on the right company and person, so records stay current in your busiest weeks.
 
-- [Starter](/#pricing) costs $19 per seat a month billed yearly, with record pages, meeting notes from transcripts and follow up email drafts.
+- [Starter](/pricing/) costs $19 per seat a month billed yearly, with record pages, meeting notes from transcripts and follow up email drafts.
 - Pro costs $49 and adds the pipeline board and forecast, custom fields and fields filled with proof.
 - Business costs $99 and adds a manager view with call coaching, plus MEDDICC and BANT from calls.
 - Teammates who only view or log data are free, monthly billing costs 20% more, and the 14 day trial needs no card.

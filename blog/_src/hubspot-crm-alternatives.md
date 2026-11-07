@@ -39,7 +39,7 @@ If you only have a minute, match your reason for leaving HubSpot to the tool we'
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | Small B2B teams that sell through meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that sell through meetings and proposals
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | Teams that plan their week by pipeline stage
 Zoho CRM | zoho.com | A sales CRM with a free edition and AI agents from Zia | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Teams that want a free plan and help moving off HubSpot
 Attio | attio.com | A flexible CRM that connects to your inbox and calendar | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -74,7 +74,7 @@ Honestly, if two founders only need a contact list and a deal pipeline, the free
 
 Omniscient is a CRM software that builds its records from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes your meeting notes and proposes field values with the quote that backs each one.
 
-For a team leaving HubSpot, our [plans](/#pricing) line up like this:
+For a team leaving HubSpot, our [plans](/pricing/) line up like this:
 
 - Starter costs $19 per seat a month billed yearly, with record pages, meeting notes from transcripts, follow up email drafts, Ask Omniscient and a daily digest.
 - Pro costs $49 and adds the pipeline board and forecast, custom fields, fields filled with proof, meeting prep briefs and Slack alerts.
