@@ -24,7 +24,7 @@ Our short answer depends mostly on how your deals close:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/#pricing) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
 Attio | attio.com | A flexible CRM with email sequences, call recording and AI on credits | [Paid from $35 per user a month, billed yearly](https://attio.com/pricing) | Teams that live in email and want their own data model
 ```
 

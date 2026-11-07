@@ -38,7 +38,7 @@ The short version, by how your team sells:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/#pricing) | SaaS teams selling through email, meetings and proposals
+Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [$19 per seat a month, billed yearly](/pricing/) | SaaS teams selling through email, meetings and proposals
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams where inbound marketing feeds sales
 Attio | attio.com | A flexible CRM with AI agents and custom objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want product data in a data model they design
 Salesforce | salesforce.com | A CRM platform from a free suite to enterprise editions | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | SaaS companies selling to enterprises, with an admin
@@ -135,7 +135,7 @@ Omniscient is an AI CRM that builds its records from your email, calendar and ca
 - The [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library, with a row for each person in the buying group. You see who viewed what, and the buyer approves on the page.
 - [Contract Management](/product/contract-management/) keeps every version of the contracts you upload and collects e-signatures. Otto reads the end date, notice period and auto-renewal from each signed contract for a person to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date.
 - Meeting notes come from the transcripts Google Meet, Zoom or Teams already make. If you'd rather have a recording bot join, it costs $25 per seat.
-- Seats start at [$19 a month, billed yearly](/#pricing), with AI and Contract Management included, and monthly billing costs 20% more.
+- Seats start at [$19 a month, billed yearly](/pricing/), with AI and Contract Management included, and monthly billing costs 20% more.
 - Pro, at $49, adds the pipeline board and forecast, custom fields, fields filled with proof and meeting prep briefs.
 - On Pro and Business, teammates who only view or log data are free, which suits customer success and finance.
 - We move your companies, contacts, deals and notes over from HubSpot, Salesforce, Pipedrive or Attio.
