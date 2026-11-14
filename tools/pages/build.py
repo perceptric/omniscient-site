@@ -81,7 +81,7 @@ def footer_html():
       {col('Otto', g('Otto'))}
       {col('Ecosystem', g('Ecosystem'))}
       {col('Teams', g('Teams'))}
-      {col('Company', [('Pricing', '/#pricing'), ('Blog', '/blog/'), ('Security', '/security/'), ('Privacy', '/privacy/'), ('Terms', '/terms/'), ('Contact', 'mailto:hello@tryomniscient.com')])}
+      {col('Company', [('Pricing', '/#pricing'), ('Blog', '/blog/'), ('Security', '/security/'), ('Privacy', '/privacy/'), ('Terms', '/terms/'), ('Cookie settings', '#cookies'), ('Contact', 'mailto:hello@tryomniscient.com')])}
     </div>
     <div class="fbot"><span>© 2026 Omniscient <a href="https://unsplash.com/" rel="noopener" style="margin-left:14px">Photos: Unsplash</a></span><span>The all-seeing CRM</span></div>
   </div>
@@ -303,7 +303,7 @@ def page(s, P):
 {related(P["rel"], nb+2)}
 {finale_html(s, P.get("fin"), P.get("fin_p"))}</main>
 '''
-    out = '<!doctype html>\n<html lang="en-US">\n' + head_html(s, P['title'], P['desc'], url(slug)) + '<body class="sub">\n' + defs_html(s) + '\n' + nav_html() + '\n' + body + footer_html() + '\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n'
+    out = '<!doctype html>\n<html lang="en-US">\n' + head_html(s, P['title'], P['desc'], url(slug)) + '<body class="sub">\n' + defs_html(s) + '\n' + nav_html() + '\n' + body + footer_html() + '\n<script src="/assets/consent.js" defer></script>\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n'
     d = os.path.join(ROOT, slug); os.makedirs(d, exist_ok=True)
     open(os.path.join(d, 'index.html'), 'w').write(out)
     return slug
@@ -311,6 +311,8 @@ def page(s, P):
 FOOT_CSS = '\n/* footer: six columns */\n.fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}\n@media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}\n'
 
 def patch_home(s):
+    if '/assets/consent.js' not in s and '</body>' in s:
+        k = s.rindex('</body>'); s = s[:k] + '<script src="/assets/consent.js" defer></script>\n' + s[k:]
     s = s.replace(FOOT_CSS, '')
     i = s.index('<style>\n'); j = s.index('</style>', i)
     s = s[:j] + FOOT_CSS + s[j:]
@@ -377,7 +379,9 @@ def build_chrome(s):
     if 'chrome.css' not in h:
         h = h.replace('<link rel="stylesheet" href="/assets/base.css">', '<link rel="stylesheet" href="/assets/base.css">\n<link rel="stylesheet" href="/assets/chrome.css">')
         h = h.replace('<script src="/assets/site.js" defer></script>', '<script src="/assets/site.js" defer></script>\n<script src="/assets/chrome.js" defer></script>')
-        open(os.path.join(ROOT, 'partials', 'head.html'), 'w').write(h)
+    if 'consent.js' not in h:
+        h = h.replace('<script src="/assets/chrome.js" defer></script>', '<script src="/assets/chrome.js" defer></script>\n<script src="/assets/consent.js" defer></script>')
+    open(os.path.join(ROOT, 'partials', 'head.html'), 'w').write(h)
 
 if __name__ == '__main__':
     import importlib
