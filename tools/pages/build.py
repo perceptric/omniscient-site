@@ -291,7 +291,7 @@ def page(s, P):
       <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
       <button class="btn btn-black lg" type="submit">Get started {ic("ChevronRight","i14")}</button>
     </form>
-    <p class="pnote">{P.get("note","Free plan available. Most teams are set up the same afternoon.")}</p>
+    <p class="pnote">{P.get("note","Try Pro free for 14 days. No card needed.")}</p>
   </div>
   <div class="widebox pshot rv">{P["hero"]}</div>
 </section>

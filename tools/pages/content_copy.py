@@ -269,7 +269,7 @@ COPY = {
   faq=[('Is Omniscient a fit before we hire salespeople?', 'Yes. Founders run sales in Omniscient themselves, then add their first reps to the same workspace.'),
        ('How long does setup take?', 'Most founders are set up the same afternoon. Connect Gmail and your calendar, import your list, and Otto takes it from there.'),
        ('Will it send emails for me?', 'No. Otto writes drafts. You send them from your own inbox, so every email sounds like you.'),
-       ('What does it cost?', 'There is a free plan, and paid plans are priced per person. See pricing on the home page.')]),
+       ('What does it cost?', 'Paid plans start at $19 per seat a month, billed yearly, and you can try Pro free for 14 days with no card. Teammates who only view or log data can use free seats.')]),
 
 'for/sales': dict(
   h1='More selling, less typing',

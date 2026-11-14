@@ -5,7 +5,7 @@ target_keyword: "attio vs hubspot"
 meta_description: "Attio vs HubSpot compared on data model, sequences, calls, LinkedIn, AI credits and price, with November 2026 plans from both sites and who should pick which."
 type: versus
 topic: crm
-updated: 2026-11-03
+updated: 2026-11-14
 read_minutes: 10
 summary: "Attio and HubSpot side by side on data model, sequences, LinkedIn, AI credits and price, with November 2026 plans from both pricing pages."
 ---
@@ -14,19 +14,19 @@ summary: "Attio and HubSpot side by side on data model, sequences, LinkedIn, AI 
 
 If you're weighing Attio vs HubSpot, you're choosing between a CRM you shape yourself and a platform that already has a hub for each team. Both start free, and both put email sequences on their second paid plan.
 
-We build Omniscient, a CRM with proposals and contracts built in, and we wrote the importers that bring data over from both tools. We read both pricing pages on November 3, 2026, plus the sites of the LinkedIn tools each one leans on. We haven't run either tool with a live sales team, so the features here come from what each vendor publishes.
+We build Omniscient, an agentic CRM for B2B teams, and we wrote the importers that bring data over from both tools. We read both pricing pages on November 3, 2026, plus the sites of the LinkedIn tools each one leans on. We haven't run either tool with a live sales team, so the features here come from what each vendor publishes.
 
 Here's our short answer:
 
 - Pick HubSpot if marketing brings in most of your leads and you want forms, ads, email campaigns and the sales pipeline on one shared record.
 - Pick Attio if your process doesn't fit a standard pipeline and you want to design your own objects, or if you sell mostly by email to people you know.
-- Look at Omniscient if your deals close on a proposal and a contract, since neither Attio's nor HubSpot's Sales Hub pricing page lists a proposal builder or e-signature.
+- Look at Omniscient if you want to ask about any deal and get an answer from every email, call and note, with the quote behind each fact.
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
 Attio | attio.com | A flexible CRM with email sync, sequences on Pro and AI on credits | [Free for up to 3 seats, Plus from $35 per user a month billed yearly](https://attio.com/pricing) | Teams that want to design their own data model
 HubSpot | hubspot.com | A customer platform with marketing, sales and service hubs on one CRM | [Free for up to 2 users, Sales Hub Starter from $7 per seat a month billed yearly for new customers](https://www.hubspot.com/pricing/sales) | Teams whose leads come from marketing
-Omniscient | tryomniscient.com | A CRM that fills itself in, with proposals built from each deal and contracts signed in the same app | [Paid from $19 per seat a month, billed yearly](/pricing/) | Small B2B teams that close on proposals and contracts
+Omniscient | tryomniscient.com | An agentic CRM that joins every email, call, meeting and note into one context layer Otto can answer from | [Paid from $19 per seat a month, billed yearly](/pricing/) | Small B2B teams that sell through email and meetings
 ```
 
 ## Attio vs HubSpot at a glance
@@ -181,29 +181,33 @@ Going the other way, HubSpot's [CRM page](https://www.hubspot.com/products/crm) 
 
 ## Where Omniscient fits
 
-Omniscient is a CRM that fills itself in from your email, calendar and call transcripts, with a Deal Room for proposals and Contract Management in the same app. Otto, our AI agent, writes meeting notes and suggests deal updates with the quote behind each one, and you accept or skip them.
+Omniscient is an agentic CRM for B2B teams. Like Attio and HubSpot, it syncs your leads, email, meetings and call notes. What sets it apart is [Omniscience](/product/omniscience/), the brain underneath: it joins every email, call, meeting, note and record into one context layer that AI agents can query. Ask Otto, the agent built into Omniscient, about any account or deal, and he answers with the quote and date behind each fact.
 
 ![Omniscient homepage](tool:tryomniscient.com)
 
 Our [plans](/pricing/) compare like this:
 
-- Starter costs $19 per seat a month billed yearly, and Pro costs $49 with the pipeline board, the forecast and fields filled with the quote that backs them.
-- Teammates who only view or log data are free, and the CRM's AI is part of the seat price.
-- The Deal Room builds a proposal page for each deal, shows who viewed which part, and lets the buyer approve on the page. A full proposal uses 40 of the proposal credits each paid seat adds every month.
-- Contract Management comes with the seat. You upload the contract, and it keeps every version, collects e-signatures and alerts the owner 90, 60 and 30 days before the renewal notice date.
+- Starter costs $19 per seat a month billed yearly, Pro costs $49 and Business costs $99, with a 14 day free trial of Pro and no credit card.
+- Teammates who only view or log data take a free seat on Pro and Business, and the CRM's AI is part of every paid seat.
+- Otto answers through [skills](/product/skills/), fixed steps for jobs like researching an account, prepping a meeting or reviewing the pipeline, so the same question gets the same kind of answer every time. Your team can write its own in plain words.
+- Call notes, action items and transcripts come from Zoom, Google Meet and Teams, and Otto suggests stage, amount and next step changes with the quote behind each. Nothing changes until you accept.
 - Our importer brings companies, contacts, deals with their stages, and notes over from HubSpot or Attio.
 
-![An Omniscient proposal for Pallet Cloud, approved by Rina Sato. The views list shows Rina watched the overview and read the rollout plan, Marcus Lee viewed the pricing for 25 seats twice, and Amara Kofi read the security guide. Beside the approval, the team was alerted by Slack and email](proposal.shot.html)
+Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [Ask Otto page](/product/ask-otto/) shows how a question gets answered.
 
-Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/omniscience/), the [Deal Room page](/product/deal-room/) and the [Contract Management page](/product/ask-otto/) show each part.
-
-Omniscient won't suit every team, since we don't send marketing email and don't have a mobile app or a dialer yet. Email sequences run as Automation workflows from your own mailbox, with each email approved before Publish. If campaigns drive your pipeline, HubSpot fits better, and if you sell by email to warm leads, Attio's Pro plan does.
+Omniscient won't suit every team, since we don't send bulk marketing email and don't have a dialer. Workflows send follow-ups from your team's own templates. If campaigns drive your pipeline, HubSpot fits better, and if you sell by email to warm leads, Attio's Pro plan does.
 
 ## Attio vs HubSpot: which one to choose
 
 Start with how your team usually sells:
 
-![Where we'd start looking, by how your team sells. Forms, ads and email campaigns point to HubSpot, for marketing and sales on one record. Email to people you know points to Attio, for objects you design and sequences on Pro. Meetings, proposals and contracts point to Omniscient, for proposals built from the deal and contracts signed in the same app.](decision.svg)
+```tree
+# Where to start looking, by how your team sells
+How does your team usually sell?
+  Forms, ads and email campaigns: HubSpot (hubspot.com) | Marketing and sales on one record
+  Email to people you know: Attio (attio.com) | Objects you design, sequences on Pro
+  Emails, meetings and calls with each account: Omniscient (tryomniscient.com) | Answers from every email, call and note
+```
 
 Choose HubSpot if:
 
@@ -217,8 +221,8 @@ Choose Attio if:
 
 Choose Omniscient if:
 
-- Most of your deals close on a proposal and a contract, and you want both on the deal.
-- You want each contract's end date and notice period tracked for you.
+- Your deals move forward in emails, meetings and calls, and you want each one on the right record without typing.
+- You want to ask about any account and get an answer with the quote and date behind it, the same kind of answer every time.
 
 If none of the three fits, our roundups of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) and [Attio alternatives](/blog/attio-alternatives/) compare more options.
 
