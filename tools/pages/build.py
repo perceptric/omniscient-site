@@ -308,7 +308,12 @@ def page(s, P):
     open(os.path.join(d, 'index.html'), 'w').write(out)
     return slug
 
+FOOT_CSS = '\n/* footer: six columns */\n.fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}\n@media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}\n'
+
 def patch_home(s):
+    s = s.replace(FOOT_CSS, '')
+    i = s.index('<style>\n'); j = s.index('</style>', i)
+    s = s[:j] + FOOT_CSS + s[j:]
     s = re.sub(r'<header class="nav">.*?</header>', lambda m: nav_html(), s, count=1, flags=re.S)
     s = re.sub(r'<footer id="contact">.*?</footer>', lambda m: footer_html(), s, count=1, flags=re.S)
     s = s.replace('<form class="hero-form" action="#start" novalidate>', f'<form class="hero-form" action="{SIGNUP}" novalidate>')
@@ -318,12 +323,69 @@ def patch_home(s):
     s = s.replace('href="#start">Choose Starter', f'href="{SIGNUP}">Choose Starter').replace('href="#demo">Talk to sales', f'href="{DEMO}">Talk to sales')
     return s
 
+# ---------- the header and footer for the older pages (blog, pricing, security, privacy, terms, 404) ----------
+# partials/header.html and footer.html get the home page's nav and footer, inside <div class="oc">.
+# assets/chrome.css holds only the nav, menu, footer and button rules, scoped to .oc so they never touch base.css.
+KEEP = re.compile(r'^(\.nav\b|\.brand\b|\.links\b|\.nav-cta\b|\.btn\b|\.btn-black|\.btn-text|\.mm|footer\b|\.fgrid\b|\.fbot\b|\.wrap\b)')
+
+def scope_rules(css):
+    out = []; i = 0; n = len(css)
+    def block_end(j):
+        d = 0
+        while j < n:
+            if css[j] == '{': d += 1
+            elif css[j] == '}':
+                d -= 1
+                if d == 0: return j
+            j += 1
+        return n
+    while i < n:
+        b = css.find('{', i)
+        if b < 0: break
+        sel = re.sub(r'/\*.*?\*/', '', css[i:b], flags=re.S).strip()
+        e = block_end(b)
+        body = css[b+1:e]
+        if sel.startswith('@media'):
+            inner = scope_rules(body)
+            if inner: out.append(sel + '{' + inner + '}')
+        elif sel and not sel.startswith('@'):
+            parts = [p.strip() for p in sel.split(',')]
+            keep = [p for p in parts if KEEP.match(p)]
+            if keep: out.append(','.join('.oc ' + p for p in keep) + '{' + body + '}')
+        i = e + 1
+    return '\n'.join(out)
+
+def build_chrome(s):
+    css = cut(s, '<style>\n', '</style>')[len('<style>\n'):]
+    root = re.search(r':root\{(.*?)\n\}', css, flags=re.S).group(1)
+    chrome = ('/* Home page nav, menus and footer for the older pages. Written by tools/pages/build.py. */\n'
+              '.oc{display:contents;' + root.strip() + '}\n'
+              '.oc .nav,.oc footer{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}\n'
+              '.oc .nav a:not(.btn),.oc footer a{color:inherit;text-decoration:none}.oc .nav a.btn{text-decoration:none}\n'
+              '.oc .nav button{font:inherit}\n'
+              '.oc .nav *,.oc footer *{box-sizing:border-box}\n'
+              '.oc footer{background:#fff}\n'
+              + scope_rules(css) + '\n')
+    open(os.path.join(ROOT, 'assets', 'chrome.css'), 'w').write(chrome)
+    js = s[s.index('<script>\n(() => {'):]
+    open(os.path.join(ROOT, 'assets', 'chrome.js'), 'w').write('/* Home page menus for the older pages. Written by tools/pages/build.py. */\n' + cut(js, '/* nav: mega menus', '/* hero email field'))
+    mark = re.search(r'<symbol id="mark".*?</symbol>', s, flags=re.S).group(0)
+    defs = f'<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>{mark}</defs></svg>'
+    open(os.path.join(ROOT, 'partials', 'header.html'), 'w').write(f'<div class="oc">\n{defs}\n{nav_html()}\n</div>\n')
+    open(os.path.join(ROOT, 'partials', 'footer.html'), 'w').write(f'<div class="oc">\n{footer_html()}\n</div>\n')
+    h = open(os.path.join(ROOT, 'partials', 'head.html')).read()
+    if 'chrome.css' not in h:
+        h = h.replace('<link rel="stylesheet" href="/assets/base.css">', '<link rel="stylesheet" href="/assets/base.css">\n<link rel="stylesheet" href="/assets/chrome.css">')
+        h = h.replace('<script src="/assets/site.js" defer></script>', '<script src="/assets/site.js" defer></script>\n<script src="/assets/chrome.js" defer></script>')
+        open(os.path.join(ROOT, 'partials', 'head.html'), 'w').write(h)
+
 if __name__ == '__main__':
     import importlib
     s = home()
     s2 = patch_home(s)
     if s2 != s: open(os.path.join(ROOT, 'index.html'), 'w').write(s2); s = s2
     build_assets(s)
+    build_chrome(s)
     batches = sys.argv[1:] or ['context', 'otto', 'ecosystem', 'teams']
     for b in batches:
         mod = importlib.import_module('content_' + b)

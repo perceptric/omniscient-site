@@ -18,10 +18,11 @@ const LOGOS = JSON.parse(readFileSync(new URL("./cover-logos.json", import.meta.
 const W = 1200;
 const H = 630;
 const C = {
-  page: "#fafaf5", surface: "#ffffff", s2: "#f5f5f5", rail: "#ebebe4", line: "#ebebeb",
-  ink: "#0f0f0f", text: "#171717", meta: "#737373", faint: "#a3a3a3", bar: "#e4e4e0", bar2: "#efefeb",
-  green: "#0c8c5e", greenStrong: "#0a7a52", greenInk: "#086444", g50: "#f2faf6", g100: "#e3f4ec", g200: "#c9eadb", g300: "#94d4b7",
-  mint: "#18e299", dark: "#242421", dark2: "#2e2e2b", dark3: "#3d3d38", amber: "#ea7a1a", red: "#dc2626", linkedin: "#0a66c2",
+  page: "#fafafa", surface: "#ffffff", s2: "#f5f5f5", rail: "#ebebea", line: "#ebebeb",
+  ink: "#0a0a0a", text: "#171717", meta: "#737373", faint: "#a3a3a3", bar: "#e4e4e2", bar2: "#efefed",
+  // The brand accent is black: what was green is now ink, and its tints are plain grays.
+  green: "#0a0a0a", greenStrong: "#0a0a0a", greenInk: "#0a0a0a", g50: "#f6f6f5", g100: "#ededeb", g200: "#dcdcd9", g300: "#b9b9b5",
+  mint: "#ffffff", dark: "#0a0a0a", dark2: "#1c1c1c", dark3: "#2e2e2e", amber: "#ea7a1a", red: "#dc2626", linkedin: "#0a66c2",
 };
 
 // Names a title or slug can carry, to the tool's domain.
@@ -92,18 +93,19 @@ function kit(id) {
 
   const bar = (x, y, w, h, fill = C.bar, r) => `<rect ${attr({ x: f1(x), y: f1(y), width: f1(w), height: f1(h), rx: f1(r ?? Math.min(w, h) / 2), fill })}/>`;
 
-  // The Omniscient mark on its dark tile: a white ring and the mint point.
+  // The Omniscient mark on its black tile: the white Checker, the same squares as the site's logo.
+  const CHECKER = `<rect x="8" y="22" width="6" height="6" rx="0.8"/><rect x="8" y="36" width="6" height="6" rx="0.8"/><rect x="15" y="15" width="6" height="6" rx="0.8"/><rect x="15" y="29" width="6" height="6" rx="0.8"/><rect x="15" y="43" width="6" height="6" rx="0.8"/><rect x="22" y="8" width="6" height="6" rx="0.8"/><rect x="22" y="22" width="6" height="6" rx="0.8"/><rect x="22" y="36" width="6" height="6" rx="0.8"/><rect x="22" y="50" width="6" height="6" rx="0.8"/><rect x="29" y="15" width="6" height="6" rx="0.8"/><rect x="29" y="43" width="6" height="6" rx="0.8"/><rect x="36" y="8" width="6" height="6" rx="0.8"/><rect x="36" y="22" width="6" height="6" rx="0.8"/><rect x="36" y="36" width="6" height="6" rx="0.8"/><rect x="36" y="50" width="6" height="6" rx="0.8"/><rect x="43" y="15" width="6" height="6" rx="0.8"/><rect x="43" y="29" width="6" height="6" rx="0.8"/><rect x="43" y="43" width="6" height="6" rx="0.8"/><rect x="50" y="22" width="6" height="6" rx="0.8"/><rect x="50" y="36" width="6" height="6" rx="0.8"/><rect x="29" y="29" width="6" height="6" rx="0.8"/>`;
   const omni = (cx, cy, s, o = {}) => {
     const r = s * 0.24;
     let out = "";
     if (o.glow) {
-      out += `<circle cx="${f1(cx)}" cy="${f1(cy)}" r="${f1(s * 0.95)}" fill="${C.green}" opacity=".16" filter="url(#${id}-b)"/>`;
-      out += `<circle cx="${f1(cx)}" cy="${f1(cy)}" r="${f1(s * 0.74)}" fill="none" stroke="${C.green}" stroke-opacity=".35" stroke-width="1.5"/>`;
+      out += `<circle cx="${f1(cx)}" cy="${f1(cy)}" r="${f1(s * 0.95)}" fill="${C.ink}" opacity=".08" filter="url(#${id}-b)"/>`;
+      out += `<circle cx="${f1(cx)}" cy="${f1(cy)}" r="${f1(s * 0.74)}" fill="none" stroke="${C.ink}" stroke-opacity=".14" stroke-width="1.5"/>`;
     }
     out += `<rect ${attr({ x: f1(cx - s / 2), y: f1(cy - s / 2), width: f1(s), height: f1(s), rx: f1(r), fill: C.dark, filter: o.big ? L : S })}/>`;
-    out += `<rect ${attr({ x: f1(cx - s / 2 + 0.5), y: f1(cy - s / 2 + 0.5), width: f1(s - 1), height: f1(s - 1), rx: f1(r - 0.5), fill: "none", stroke: "#fff", "stroke-opacity": 0.08 })}/>`;
-    out += `<circle cx="${f1(cx)}" cy="${f1(cy)}" r="${f1(s * 0.27)}" fill="none" stroke="#fff" stroke-width="${f1(s * 0.05)}"/>`;
-    out += `<circle cx="${f1(cx)}" cy="${f1(cy)}" r="${f1(s * 0.075)}" fill="${C.mint}"/>`;
+    out += `<rect ${attr({ x: f1(cx - s / 2 + 0.5), y: f1(cy - s / 2 + 0.5), width: f1(s - 1), height: f1(s - 1), rx: f1(r - 0.5), fill: "none", stroke: "#fff", "stroke-opacity": 0.1 })}/>`;
+    const m = s * 0.64, k = m / 64;
+    out += `<g fill="#fff" transform="translate(${f1(cx - m / 2)} ${f1(cy - m / 2)}) scale(${(Math.round(k * 1000) / 1000).toString()})">${CHECKER}</g>`;
     return out;
   };
 
