@@ -738,6 +738,33 @@ html.js .hero .horizon{animation-delay:.34s}
 .hero-form .btn{flex:none}
 .hero-form.bad{box-shadow:0 0 0 1px #c2410c,0 0 0 4px rgba(194,65,12,.1)}
 @media (max-width:480px){.hero-form{padding-left:16px}.hero-form .btn{padding:0 16px}}
+
+/* nav: mega menus */
+.nav .wrap{position:relative}
+.links{align-items:center;gap:4px!important}
+.links>a,.mm-t{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:999px;border:0;background:none;font:inherit;font-size:14px;color:var(--dim);cursor:pointer;transition:background .15s,color .15s}
+.links>a:hover,.mm-t:hover,.mm-t[aria-expanded="true"]{color:var(--ink);background:#f2f2f0}
+.mm-c{width:12px;height:12px;transition:transform .25s cubic-bezier(.22,1,.36,1)}
+.mm-t[aria-expanded="true"] .mm-c{transform:rotate(180deg)}
+.mm{position:absolute;left:24px;right:24px;top:58px;z-index:60;opacity:0;visibility:hidden;transform:translateY(-6px);filter:blur(2px);transition:opacity .22s cubic-bezier(.22,1,.36,1),transform .22s cubic-bezier(.22,1,.36,1),filter .22s,visibility 0s .22s}
+.mm.on{opacity:1;visibility:visible;transform:none;filter:none;transition-delay:0s}
+.mm-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,.85fr);gap:8px;padding:10px;border-radius:16px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 24px 60px -18px rgba(0,0,0,.25),0 2px 6px rgba(0,0,0,.04)}
+.mm-sm{left:auto;right:auto;width:620px}
+.mm-sm .mm-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mm-col{padding:14px 8px 10px;min-width:0}
+.mm-h{margin:0 0 8px;padding:0 10px;font-size:13px;color:var(--muted)}
+.mm-i{display:block;padding:9px 10px;border-radius:10px;transition:background .15s}
+.mm-i:hover{background:#f4f4f2}
+.mm-i b{display:block;font-weight:500;font-size:14px;color:var(--ink);letter-spacing:-.005em}
+.mm-i span{display:block;margin-top:3px;font-size:13px;line-height:1.4;color:var(--dim)}
+.mm-side{padding:24px 10px 14px;border-radius:12px;background:#f7f7f5;min-width:0}
+.mm-side .mm-h{margin-top:0}
+.mm-side .mm-h~.mm-h{margin-top:18px}
+.mm-side a{display:block;padding:7px 10px;border-radius:8px;font-size:14px;color:var(--ink);transition:background .15s}
+.mm-side a:hover{background:#ececea}
+@media (max-width:1100px){.mm-in{grid-template-columns:repeat(2,minmax(0,1fr))}.mm-side{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.mm{display:none}}
+@media (prefers-reduced-motion:reduce){.mm,.mm-c{transition:none}}
 </style>
 
 </head>
@@ -807,17 +834,19 @@ html.js .hero .horizon{animation-delay:.34s}
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Omniscient home"><svg><use href="#mark"/></svg>omniscient</a>
+    <a class="brand" href="/" aria-label="Omniscient home"><svg><use href="#mark"/></svg>omniscient</a>
     <nav class="links" aria-label="Main">
-      <a href="#product">Product</a>
-      <a href="#omniscience">Omniscience</a>
-      <a href="#integrations">Integrations</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
+      <button class="mm-t" type="button" aria-expanded="false" aria-controls="mm-product">Product<svg class="mm-c" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="mm-t" type="button" aria-expanded="false" aria-controls="mm-res">Resources<svg class="mm-c" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <a href="/integrations/">Integrations</a>
+      <a href="/#teams">Customers</a>
+      <a href="/#pricing">Pricing</a>
     </nav>
+    <div class="mm" id="mm-product" role="menu"><div class="mm-in"><div class="mm-col"><p class="mm-h">Context</p><a class="mm-i" href="/product/omniscience/"><b>Omniscience</b><span>The context layer for every deal</span></a><a class="mm-i" href="/product/data-model/"><b>Data model</b><span>Shape records your way</span></a><a class="mm-i" href="/product/clean-data/"><b>Clean data</b><span>Duplicates merged, blanks filled</span></a><a class="mm-i" href="/product/meetings/"><b>Meetings</b><span>Notes and next steps from every call</span></a><a class="mm-i" href="/product/email-sync/"><b>Email sync</b><span>Every thread on the right record</span></a></div><div class="mm-col"><p class="mm-h">Otto</p><a class="mm-i" href="/product/ask-otto/"><b>Ask Otto</b><span>Ask your CRM anything</span></a><a class="mm-i" href="/product/find-leads/"><b>Find leads</b><span>Lead lists, just by asking</span></a><a class="mm-i" href="/product/skills/"><b>Skills</b><span>Teach Otto how your team works</span></a><a class="mm-i" href="/product/knowledge/"><b>Knowledge</b><span>Your pricing, playbook and tone</span></a><a class="mm-i" href="/product/workflows/"><b>Workflows</b><span>Run any sales motion on its own</span></a></div><div class="mm-col"><p class="mm-h">Ecosystem</p><a class="mm-i" href="/integrations/"><b>Apps</b><span>One-click connections</span></a><a class="mm-i" href="/product/chrome-extension/"><b>Chrome extension</b><span>Save a profile in one click</span></a><a class="mm-i" href="/product/mcp/"><b>MCP</b><span>Use Omniscient in Claude and ChatGPT</span></a><a class="mm-i" href="/developers/"><b>Developers</b><span>API keys and webhooks</span></a></div><div class="mm-side"><p class="mm-h">Omniscient for</p><a href="/for/founders/">Founders</a><a href="/for/sales/">Sales</a><a href="/for/marketing/">Marketing</a><a href="/for/customer-success/">Customer success</a><a href="/for/agencies/">Agencies</a><p class="mm-h">Get started</p><a href="https://app.tryomniscient.com/signup">Start free</a><a href="mailto:hello@tryomniscient.com?subject=Omniscient%20demo">Book a demo</a><a href="/#pricing">Pricing</a></div></div></div>
+    <div class="mm mm-sm" id="mm-res" role="menu"><div class="mm-in"><div class="mm-col"><p class="mm-h">Learn</p><a class="mm-i" href="/blog/"><b>Blog</b><span>Guides for modern GTM teams</span></a><a class="mm-i" href="/blog/omniscient-vs-attio/"><b>Compare</b><span>Omniscient vs Attio, HubSpot and more</span></a><a class="mm-i" href="/#faq"><b>FAQ</b><span>Quick answers</span></a></div><div class="mm-col"><p class="mm-h">Company</p><a class="mm-i" href="/security/"><b>Security</b><span>How we keep your data safe</span></a><a class="mm-i" href="/privacy/"><b>Privacy</b><span>What we collect and why</span></a><a class="mm-i" href="/terms/"><b>Terms</b><span>The fine print</span></a></div></div></div>
     <div class="nav-cta">
-      <a class="btn btn-text" href="#login">Log in</a>
-      <a class="btn btn-black" href="#start">Start free</a>
+      <a class="btn btn-text" href="https://app.tryomniscient.com/signin">Log in</a>
+      <a class="btn btn-black" href="https://app.tryomniscient.com/signup">Start free</a>
     </div>
   </div>
 </header>
@@ -828,7 +857,7 @@ html.js .hero .horizon{animation-delay:.34s}
   <div class="beams" aria-hidden="true"></div>
   <div class="wrap">
     <h1><span class="sr">The Agentic CRM for modern brands, agencies and SaaS</span><span aria-hidden="true"><span class="l">The Agentic CRM for</span> <span class="l"><span class="swap" data-words="Modern|Ambitious|Future-proof|Forward-thinking"></span> <span class="swap" data-words="Brands|Agencies|SaaS" data-lag="1"></span></span></span></h1>
-    <form class="hero-form" action="#start" novalidate>
+    <form class="hero-form" action="https://app.tryomniscient.com/signup" novalidate>
       <label class="sr" for="hero-email">Work email</label>
       <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
       <button class="btn btn-black lg" type="submit">Get started <svg class="i14"><use href="#i-ChevronRight"/></svg></button>
@@ -1139,7 +1168,7 @@ html.js .hero .horizon{animation-delay:.34s}
         <p class="pd">For teammates who only need email and meetings captured.</p>
         <div class="price"><b>$0</b><span>per seat / month</span></div>
         <div class="note">Needs one Pro or Business seat</div>
-        <a class="btn btn-line" href="#start">Start free</a>
+        <a class="btn btn-line" href="https://app.tryomniscient.com/signup">Start free</a>
         <ul>
           <li><svg class="i14"><use href="#i-Check"/></svg>Gmail and Calendar capture</li>
           <li><svg class="i14"><use href="#i-Check"/></svg>Search, view and share records</li>
@@ -1152,7 +1181,7 @@ html.js .hero .horizon{animation-delay:.34s}
         <p class="pd">For reps who want notes and drafts done for them.</p>
         <div class="price"><b data-y="19" data-m="23">$19</b><span>per seat / month</span></div>
         <div class="note" data-y="Billed yearly" data-m="Billed monthly">Billed yearly</div>
-        <a class="btn btn-line" href="#start">Choose Starter</a>
+        <a class="btn btn-line" href="https://app.tryomniscient.com/signup">Choose Starter</a>
         <ul>
           <li><svg class="i14"><use href="#i-Check"/></svg>Everything in Free</li>
           <li><svg class="i14"><use href="#i-Check"/></svg>Meeting notes from Meet and Zoom</li>
@@ -1166,7 +1195,7 @@ html.js .hero .horizon{animation-delay:.34s}
         <p class="pd">For teams that run their whole pipeline in Omniscient.</p>
         <div class="price"><b data-y="49" data-m="59">$49</b><span>per seat / month</span></div>
         <div class="note" data-y="Billed yearly" data-m="Billed monthly">Billed yearly</div>
-        <a class="btn btn-white" href="#start">Start free trial</a>
+        <a class="btn btn-white" href="https://app.tryomniscient.com/signup">Start free trial</a>
         <ul>
           <li><svg class="i14"><use href="#i-Check"/></svg>Everything in Starter</li>
           <li><svg class="i14"><use href="#i-Check"/></svg>Pipeline board and forecast</li>
@@ -1181,7 +1210,7 @@ html.js .hero .horizon{animation-delay:.34s}
         <p class="pd">For sales leaders who coach and forecast.</p>
         <div class="price"><b data-y="99" data-m="119">$99</b><span>per seat / month</span></div>
         <div class="note" data-y="Billed yearly" data-m="Billed monthly">Billed yearly</div>
-        <a class="btn btn-line" href="#demo">Talk to sales</a>
+        <a class="btn btn-line" href="mailto:hello@tryomniscient.com?subject=Omniscient%20demo">Talk to sales</a>
         <ul>
           <li><svg class="i14"><use href="#i-Check"/></svg>Everything in Pro</li>
           <li><svg class="i14"><use href="#i-Check"/></svg>Deal review and call coaching</li>
@@ -1225,8 +1254,8 @@ html.js .hero .horizon{animation-delay:.34s}
     <h2 class="fin-h"><span>See your whole</span> <span>market from</span> <span>one place.</span></h2>
     <p class="fin-p">Set up in an afternoon. Bring your inbox, calendar and old CRM along.</p>
     <div class="ctas fin-c">
-      <a class="btn btn-white lg" href="#start">Start free <svg class="i14"><use href="#i-ChevronRight"/></svg></a>
-      <a class="btn fin-ghost lg" href="#demo">Book a demo</a>
+      <a class="btn btn-white lg" href="https://app.tryomniscient.com/signup">Start free <svg class="i14"><use href="#i-ChevronRight"/></svg></a>
+      <a class="btn fin-ghost lg" href="mailto:hello@tryomniscient.com?subject=Omniscient%20demo">Book a demo</a>
     </div>
   </div>
 </section>
@@ -1235,11 +1264,12 @@ html.js .hero .horizon{animation-delay:.34s}
 <footer id="contact">
   <div class="wrap">
     <div class="fgrid">
-      <div><a class="brand" href="#top"><svg><use href="#mark"/></svg>omniscient</a></div>
-      <div><h5>Product</h5><a href="#prospect">Prospect</a><a href="#unify">Unify</a><a href="#close">Close</a><a href="#ai">Otto</a><a href="#automations">Workflows</a></div>
-      <div><h5>Company</h5><a href="#about">About</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div>
-      <div><h5>Resources</h5><a href="#docs">Docs</a><a href="#changelog">Changelog</a><a href="#faq">FAQ</a><a href="#pricing">Pricing</a></div>
-      <div><h5>Legal</h5><a href="#privacy">Privacy</a><a href="#terms">Terms</a></div>
+      <div><a class="brand" href="/"><svg><use href="#mark"/></svg>omniscient</a></div>
+      <div><h5>Context</h5><a href="/product/omniscience/">Omniscience</a><a href="/product/data-model/">Data model</a><a href="/product/clean-data/">Clean data</a><a href="/product/meetings/">Meetings</a><a href="/product/email-sync/">Email sync</a></div>
+      <div><h5>Otto</h5><a href="/product/ask-otto/">Ask Otto</a><a href="/product/find-leads/">Find leads</a><a href="/product/skills/">Skills</a><a href="/product/knowledge/">Knowledge</a><a href="/product/workflows/">Workflows</a></div>
+      <div><h5>Ecosystem</h5><a href="/integrations/">Apps</a><a href="/product/chrome-extension/">Chrome extension</a><a href="/product/mcp/">MCP</a><a href="/developers/">Developers</a></div>
+      <div><h5>Teams</h5><a href="/for/founders/">Founders</a><a href="/for/sales/">Sales</a><a href="/for/marketing/">Marketing</a><a href="/for/customer-success/">Customer success</a><a href="/for/agencies/">Agencies</a></div>
+      <div><h5>Company</h5><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a><a href="/security/">Security</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:hello@tryomniscient.com">Contact</a></div>
     </div>
     <div class="fbot"><span>© 2026 Omniscient <a href="https://unsplash.com/" rel="noopener" style="margin-left:14px">Photos: Unsplash</a></span><span>The all-seeing CRM</span></div>
   </div>
@@ -1699,6 +1729,23 @@ function drawFig(f, T){
   if('IntersectionObserver' in window) new IntersectionObserver(es=>es.forEach(e=>{vis=e.isIntersecting;})).observe(hero);
   if(!reduce){ const loop=t=>{ if(vis) draw(t); requestAnimationFrame(loop); }; requestAnimationFrame(loop); }
 })();
+/* nav: mega menus open on hover or click, close on leave, Escape or a link */
+(function(){
+  const nav=document.querySelector('.nav'); if(!nav) return;
+  const ts=[...nav.querySelectorAll('.mm-t')]; let shut;
+  const close=()=>{ ts.forEach(t=>{ t.setAttribute('aria-expanded','false'); document.getElementById(t.getAttribute('aria-controls')).classList.remove('on'); }); };
+  const open=t=>{ clearTimeout(shut); ts.forEach(x=>{ const on=x===t; x.setAttribute('aria-expanded',on); document.getElementById(x.getAttribute('aria-controls')).classList.toggle('on',on); }); };
+  ts.forEach(t=>{ const m=document.getElementById(t.getAttribute('aria-controls'));
+    if(m.classList.contains('mm-sm')){ const place=()=>{ const w=nav.querySelector('.wrap').getBoundingClientRect(), r=t.getBoundingClientRect(), end=nav.querySelector('.nav-cta').getBoundingClientRect().right-w.left; m.style.left=Math.max(24,Math.min(r.left+r.width/2-w.left-m.offsetWidth/2,end-m.offsetWidth))+'px'; }; t.addEventListener('mouseenter',place); t.addEventListener('focus',place); }
+    t.addEventListener('mouseenter',()=>{ if(matchMedia('(hover:hover)').matches) open(t); });
+    t.addEventListener('click',()=>{ t.getAttribute('aria-expanded')==='true'?close():open(t); });
+    m.addEventListener('mouseenter',()=>clearTimeout(shut));
+    m.querySelectorAll('a').forEach(a=>a.addEventListener('click',close)); });
+  nav.addEventListener('mouseleave',()=>{ shut=setTimeout(close,180); });
+  nav.querySelectorAll('.links>a').forEach(a=>a.addEventListener('mouseenter',close));
+  addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+  document.addEventListener('click',e=>{ if(!nav.contains(e.target)) close(); });
+})();
 /* hero email field: check the address, then go to sign up */
 (function(){
   const f=document.querySelector('.hero-form'); if(!f) return; const i=f.querySelector('input');
@@ -1706,7 +1753,7 @@ function drawFig(f, T){
   f.addEventListener('submit',e=>{ e.preventDefault(); const v=i.value.trim();
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){ f.classList.add('bad'); i.focus(); return; }
     try{ sessionStorage.setItem('omni_email',v); }catch(_){}
-    location.hash='start'; });
+    location.href=f.action+'?email='+encodeURIComponent(v); });
 })();
 /* hero: grid pulses, tilt on scroll, live Otto cards */
 (function(){

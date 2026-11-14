@@ -115,7 +115,7 @@ Contract Management picks up from there:
 
 We read the dates from every contract because a missed notice date can lock a customer into a year they didn't want, or let a good account lapse. Either one costs more than an early reminder.
 
-You can also ask questions across all your contracts, such as which ones renew next quarter, and upload the contracts you already signed so Otto reads their terms for you to confirm. The [Contract Management page](/product/contract-management/) shows the flow screen by screen.
+You can also ask questions across all your contracts, such as which ones renew next quarter, and upload the contracts you already signed so Otto reads their terms for you to confirm. The [Contract Management page](/product/ask-otto/) shows the flow screen by screen.
 
 ## Email sending: where Attio is ahead
 
@@ -182,7 +182,7 @@ Thankfully, you don't have to switch in one go. Omniscient runs beside your curr
 4. Add your contracts: Upload the contracts you signed before, so Otto reads their end dates and renewal terms for you to confirm.
 ```
 
-The [CRM page](/product/crm/) walks through how we run a migration, and our roundup of the [best AI CRMs](/blog/best-ai-crm/) covers other CRMs worth a look if neither tool fits.
+The [CRM page](/product/omniscience/) walks through how we run a migration, and our roundup of the [best AI CRMs](/blog/best-ai-crm/) covers other CRMs worth a look if neither tool fits.
 
 ## Which one should you choose
 

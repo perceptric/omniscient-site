@@ -24,9 +24,13 @@ RewriteRule ^icon\.svg$ /assets/brand/icon.svg [R=301,L]
 RewriteRule ^apple-(touch-)?icon(-precomposed)?\.png$ /assets/brand/apple-icon.png [R=301,L]
 
 # Removed pages: Outbound LinkedIn became Contract Management, and the LinkedIn posts went back to the blog index
-RewriteRule ^product/linkedin-outbound/?$ /product/contract-management/ [R=301,L]
+RewriteRule ^product/linkedin-outbound/?$ /product/ask-otto/ [R=301,L]
 # Deal Room was removed with Experiences and the Library (Nov 2026)
-RewriteRule ^product/deal-room/?$ /product/contract-management/ [R=301,L]
+RewriteRule ^product/deal-room/?$ /product/ask-otto/ [R=301,L]
+# The first product pages became the product, Otto, ecosystem and team pages (Nov 2026)
+RewriteRule ^product/crm/?$ /product/omniscience/ [R=301,L]
+RewriteRule ^product/automation/?$ /product/workflows/ [R=301,L]
+RewriteRule ^product/contract-management/?$ /product/ask-otto/ [R=301,L]
 RewriteRule ^blog/(automate-linkedin-outreach-without-getting-restricted|best-linkedin-automation-tools|dripify-alternatives|expandi-alternatives|heyreach-alternatives|heyreach-vs-expandi|lemlist-alternatives|linked-helper-alternatives|linkedin-automation-pricing|linkedin-automation-tools-for-agencies|linkedin-connection-request-limit|linkedin-outreach-tools-with-crm|safest-linkedin-automation-tools|waalaxy-alternatives|waalaxy-vs-lemlist|best-crm-for-linkedin|crm-with-linkedin-integration)/?$ /blog/ [R=301,L]
 
 # Like the app's src/proxy.ts: any other page path goes to the same path on the app

@@ -12,7 +12,7 @@ summary: "Every Markdown block the builder renders, in one draft that never publ
 
 # Sample Post: Every Block the Blog Builder Knows
 
-This draft exists to test the builder. Files whose names start with an underscore build when you name them, carry `noindex` and never reach the index, related posts or the sitemap. Text can be **bold**, *italic*, `code` or a [link to the CRM page](/product/crm/).
+This draft exists to test the builder. Files whose names start with an underscore build when you name them, carry `noindex` and never reach the index, related posts or the sitemap. Text can be **bold**, *italic*, `code` or a [link to the CRM page](/product/omniscience/).
 
 ```callout
 A callout is a short framed note, one or two sentences long.
@@ -22,7 +22,7 @@ A callout is a short framed note, one or two sentences long.
 
 Bulleted lists use square bullets:
 
-- One item with a [link](/product/contract-management/)
+- One item with a [link](/product/ask-otto/)
 - A second item that runs long enough to wrap onto a second line on a phone, so the indent can be checked
   - A nested item
 - A third item

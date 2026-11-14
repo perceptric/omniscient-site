@@ -64,7 +64,7 @@ Honestly, the second and third questions matter most to us. A CRM that fills in 
 
 ## What we learned building a CRM that fills itself in
 
-[Omniscient's CRM](/product/crm/) reads the emails and meetings it's allowed to see, and Otto, our AI agent, proposes values for the fields you've chosen. The tricky part was deciding when a proposal should become a real value on the record.
+[Omniscient's CRM](/product/omniscience/) reads the emails and meetings it's allowed to see, and Otto, our AI agent, proposes values for the fields you've chosen. The tricky part was deciding when a proposal should become a real value on the record.
 
 Every field you add carries its own rule, and the rules work like this:
 
@@ -129,7 +129,7 @@ You can try Omniscient free for 14 days with no credit card. Paid seats, billed 
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
 
-Call recording with a bot is an add on at $25 per seat. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month, with 40 for a full proposal. The [Contract Management page](/product/contract-management/) walks through a contract from upload to signature.
+Call recording with a bot is an add on at $25 per seat. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month, with 40 for a full proposal. The [Contract Management page](/product/ask-otto/) walks through a contract from upload to signature.
 
 ### 2. HubSpot
 

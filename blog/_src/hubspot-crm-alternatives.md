@@ -94,7 +94,7 @@ Contract Management comes with the seat and picks up once the buyer says yes:
 
 Admittedly, Omniscient does less than HubSpot in a few places. We don't send marketing emails, and email sequences run as Automation workflows from your own mailbox, with each email approved before Publish. There's no dialer either, so a team that sells by phone will be better served by Close.
 
-The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest, and moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
+The [CRM page](/product/omniscience/) and the [Contract Management page](/product/ask-otto/) show the rest, and moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
 
 ### 2. Pipedrive
 

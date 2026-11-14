@@ -144,7 +144,7 @@ You can try Omniscient free for 14 days with no credit card. Prices are billed y
 - **Pro:** $49 per seat a month, with fields filled with proof and the pipeline forecast.
 - **Business:** $99 per seat a month.
 
-Each paid seat adds Deal Room proposal credits every month, and a full proposal uses 40. The [Contract Management page](/product/contract-management/) walks through a contract from upload to signature, and the [CRM page](/product/crm/) shows the records side.
+Each paid seat adds Deal Room proposal credits every month, and a full proposal uses 40. The [Contract Management page](/product/ask-otto/) walks through a contract from upload to signature, and the [CRM page](/product/omniscience/) shows the records side.
 
 ### 2. Attio
 

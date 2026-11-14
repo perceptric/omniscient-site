@@ -109,7 +109,7 @@ Contract Management takes over once the buyer approves:
 
 ![An example of a contract in Omniscient for Pallet Cloud, sent for signature. Its versions list shows the first upload, the changes Rina sent back to the payment terms, and version 3 approved by Theo. Rina Sato has signed and Marcus Lee has opened it. The key dates Otto read and Sam confirmed are an end date of January 15, 2028, a 60 day notice period, auto-renewal on and a renewal notice date of November 16, 2027](/assets/blog/omniscient-vs-hubspot/contract.shot.html)
 
-You can also ask questions across all your contracts, such as which ones renew next quarter, and upload the contracts you signed before Omniscient so Otto reads their terms for you to confirm. The [Contract Management page](/product/contract-management/) shows the rest of the flow.
+You can also ask questions across all your contracts, such as which ones renew next quarter, and upload the contracts you signed before Omniscient so Otto reads their terms for you to confirm. The [Contract Management page](/product/ask-otto/) shows the rest of the flow.
 
 ## Email and calling: where HubSpot is ahead
 
@@ -192,7 +192,7 @@ Plan around a few details before you run it:
 - Owners are matched to teammates by email, so invite your team with the addresses they use in HubSpot.
 - Custom properties, workflows and sequences stay in HubSpot, and running the import again updates what's there without making doubles.
 
-Our roundup of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) walks through a full switch, and the [CRM page](/product/crm/) shows how records fill in afterwards.
+Our roundup of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) walks through a full switch, and the [CRM page](/product/omniscience/) shows how records fill in afterwards.
 
 ## Which one should you choose
 

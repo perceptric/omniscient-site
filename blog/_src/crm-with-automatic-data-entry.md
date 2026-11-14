@@ -73,7 +73,7 @@ These are the questions we'd put to any vendor that promises a CRM that fills it
 
 ## What we learned building automatic data entry
 
-[Omniscient's CRM](/product/crm/) fills itself in from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms and your signed contracts, and much of our work went into rules for what to leave out.
+[Omniscient's CRM](/product/omniscience/) fills itself in from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms and your signed contracts, and much of our work went into rules for what to leave out.
 
 ### Not every email should become a contact
 
@@ -136,7 +136,7 @@ Omniscient is an AI CRM that fills itself in from your email and meetings, with 
 - Email and calendar capture works on every seat, and on a Pro workspace, teammates who only view or log data get free seats.
 - Meeting notes, follow up drafts and Ask Omniscient start on Starter, at [$19 per seat a month billed yearly](/pricing/), and Pro at $49 adds fields filled with proof.
 - Website forms and webhooks from tools like Typeform add leads, along with where each visitor came from, such as Organic search.
-- In [Contract Management](/product/contract-management/), Otto reads the end date, notice period and auto-renewal from each signed contract, including ones you signed before, each with a quote for a person to confirm. The owner then gets alerts 90, 60 and 30 days before the notice date.
+- In [Contract Management](/product/ask-otto/), Otto reads the end date, notice period and auto-renewal from each signed contract, including ones you signed before, each with a quote for a person to confirm. The owner then gets alerts 90, 60 and 30 days before the notice date.
 - The [Deal Room](/product/deal-room/) builds each proposal from the deal and your calls, so the facts on the record don't get typed a second time.
 - We move your data over from HubSpot, Salesforce, Pipedrive or Attio for you.
 

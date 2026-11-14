@@ -58,7 +58,7 @@ Honestly, we'd weigh the first one above the rest. A founder with a full calenda
 
 ## What we learned building a CRM for small teams
 
-[Omniscient's CRM](/product/crm/) builds its records from the email and calendar you connect. The sync skips bulk mail and automated senders, but at first it added anyone else who emailed you, so a cold pitch became a contact as easily as a buyer did.
+[Omniscient's CRM](/product/omniscience/) builds its records from the email and calendar you connect. The sync skips bulk mail and automated senders, but at first it added anyone else who emailed you, so a cold pitch became a contact as easily as a buyer did.
 
 The welcome flow now suggests settings that keep the CRM to people you sell to:
 
@@ -118,7 +118,7 @@ You can try Omniscient free for 14 days with no credit card. Prices are per seat
 - **Pro:** $49 per seat, per month.
 - **Business:** $99 per seat, per month.
 
-Monthly billing costs 20% more, and call recording is a $25 per seat add on. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) show the rest.
+Monthly billing costs 20% more, and call recording is a $25 per seat add on. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month. The [CRM page](/product/omniscience/) and the [Contract Management page](/product/ask-otto/) show the rest.
 
 ### 2. HubSpot
 

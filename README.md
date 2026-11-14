@@ -2,7 +2,7 @@
 
 Static site for Omniscient. Plain HTML: no WordPress, no build step.
 
-The app itself lives at app.tryomniscient.com. This repo is only the marketing site: the home page, three product pages (Omniscient CRM, Automation, Contract Management), Privacy and Terms. More pages follow `docs/site-architecture.md`.
+The app itself lives at app.tryomniscient.com. This repo is only the marketing site: the home page, the product, integration, developer and team pages, Pricing, Security, the blog, Privacy and Terms. More pages follow `docs/site-architecture.md`.
 
 ## How it's laid out
 
@@ -18,7 +18,7 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `assets/home.css`, `assets/home.js` | The old home page's styles, still used by `pricing/`, `security/` and the product pages' shots. |
 | `pricing/index.html`, `security/index.html` | Pricing with the questions, and how we handle data. Moved off the home page in home v4. |
 | `assets/img/founders/` | Founder photos for the home page's lead list, from Wikimedia Commons (credited under the list). |
-| `product/crm/`, `product/automation/`, `product/deal-room/`, `product/contract-management/` | The four product pages, written by `tools/products/gen.py` (edit the copy there, then run it and `node tools/layout.mjs`). Styles in `assets/product.css`, shots reuse `assets/home.css`. Each feature's shot is a scene that plays what the feature does (see `assets/scenes.js`); `assets/product.js` plays the hero shots once. |
+| `product/<page>/`, `integrations/`, `developers/`, `for/<team>/` | The product pages (Omniscience, Data model, Clean data, Meetings, Email sync, Ask Otto, Find leads, Skills, Knowledge, Workflows, Chrome extension, MCP), Integrations, Developers and the five team pages. Written by `tools/pages/build.py` from the copy in `tools/pages/content_*.py`: run `python3 tools/pages/build.py`, then `node tools/layout.mjs`. They share `assets/omni.css` and `assets/omni.js`, which the build cuts from `index.html`, so they always match the home page. The old `/product/crm/`, `/product/automation/` and `/product/contract-management/` redirect to Omniscience, Workflows and Ask Otto. |
 | `assets/img/people/` | Portraits used in the product shots, from Unsplash (free to use, credited in the footer). |
 | `assets/site.js` | Opens and closes the menus, the phone menu, the header line on scroll and scroll reveals. |
 | `assets/scenes.js`, `assets/scenes.css` | Scenes: small product screens in HTML and CSS that play step by step. A part with `data-at="n"` comes in at step n and one with `data-off="n"` leaves; `data-t` lists the wait before each step. The Product and Resources menus' scenes (written in `partials/header.html`; the product ones are shown again on the product pages' other-product cards) play while the menu is open and loop on the hovered card; product page scenes and the home page's four security scenes play once in view and again on hover or tap. Transform and opacity only; reduced motion shows the last frame. |

@@ -120,7 +120,7 @@ You can try Omniscient free for 14 days with no credit card. Per seat a month, b
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
 
-Call recording with a bot is an add on at $25 per seat. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month. The [CRM page](/product/crm/) and the [Contract Management page](/product/contract-management/) cover the rest.
+Call recording with a bot is an add on at $25 per seat. Contract Management comes with the seat, and each paid seat adds Deal Room proposal credits every month. The [CRM page](/product/omniscience/) and the [Contract Management page](/product/ask-otto/) cover the rest.
 
 ### 2. HubSpot
 

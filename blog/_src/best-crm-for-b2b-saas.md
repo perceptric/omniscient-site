@@ -81,7 +81,7 @@ Who starts most of your deals?
 
 ## What we learned building a CRM for SaaS sales
 
-[Omniscient's CRM](/product/crm/) builds its records from the email and calendar you connect, and Otto, our AI agent, fills in fields from what people say. Three parts matter most to SaaS teams, and each one came with a tradeoff.
+[Omniscient's CRM](/product/omniscience/) builds its records from the email and calendar you connect, and Otto, our AI agent, fills in fields from what people say. Three parts matter most to SaaS teams, and each one came with a tradeoff.
 
 ### Every demo request gets an owner
 
@@ -133,7 +133,7 @@ Omniscient is an AI CRM that builds its records from your email, calendar and ca
 
 - Website forms and webhooks open an opportunity for each new lead and route it to an owner, as shown above.
 - The [Deal Room](/product/deal-room/) builds a proposal page for each deal from the deal, your calls and your Library, with a row for each person in the buying group. You see who viewed what, and the buyer approves on the page.
-- [Contract Management](/product/contract-management/) keeps every version of the contracts you upload and collects e-signatures. Otto reads the end date, notice period and auto-renewal from each signed contract for a person to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date.
+- [Contract Management](/product/ask-otto/) keeps every version of the contracts you upload and collects e-signatures. Otto reads the end date, notice period and auto-renewal from each signed contract for a person to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date.
 - Meeting notes come from the transcripts Google Meet, Zoom or Teams already make. If you'd rather have a recording bot join, it costs $25 per seat.
 - Seats start at [$19 a month, billed yearly](/pricing/), with AI and Contract Management included, and monthly billing costs 20% more.
 - Pro, at $49, adds the pipeline board and forecast, custom fields, fields filled with proof and meeting prep briefs.

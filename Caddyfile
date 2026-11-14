@@ -29,9 +29,15 @@
 
 	# Removed pages.
 	@linkedin path_regexp ^/product/linkedin-outbound/?$
-	redir @linkedin /product/contract-management/ 301
+	redir @linkedin /product/ask-otto/ 301
 	@dealroom path_regexp ^/product/deal-room/?$
-	redir @dealroom /product/contract-management/ 301
+	redir @dealroom /product/ask-otto/ 301
+	@oldcrm path_regexp ^/product/crm/?$
+	redir @oldcrm /product/omniscience/ 301
+	@oldauto path_regexp ^/product/automation/?$
+	redir @oldauto /product/workflows/ 301
+	@oldcontract path_regexp ^/product/contract-management/?$
+	redir @oldcontract /product/ask-otto/ 301
 	@oldposts path_regexp ^/blog/(automate-linkedin-outreach-without-getting-restricted|best-linkedin-automation-tools|dripify-alternatives|expandi-alternatives|heyreach-alternatives|heyreach-vs-expandi|lemlist-alternatives|linked-helper-alternatives|linkedin-automation-pricing|linkedin-automation-tools-for-agencies|linkedin-connection-request-limit|linkedin-outreach-tools-with-crm|safest-linkedin-automation-tools|waalaxy-alternatives|waalaxy-vs-lemlist|best-crm-for-linkedin|crm-with-linkedin-integration)/?$
 	redir @oldposts /blog/ 301
 

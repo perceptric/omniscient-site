@@ -195,7 +195,7 @@ Our [plans](/pricing/) compare like this:
 
 ![An Omniscient proposal for Pallet Cloud, approved by Rina Sato. The views list shows Rina watched the overview and read the rollout plan, Marcus Lee viewed the pricing for 25 seats twice, and Amara Kofi read the security guide. Beside the approval, the team was alerted by Slack and email](proposal.shot.html)
 
-Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/crm/), the [Deal Room page](/product/deal-room/) and the [Contract Management page](/product/contract-management/) show each part.
+Luckily, you don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [CRM page](/product/omniscience/), the [Deal Room page](/product/deal-room/) and the [Contract Management page](/product/ask-otto/) show each part.
 
 Omniscient won't suit every team, since we don't send marketing email and don't have a mobile app or a dialer yet. Email sequences run as Automation workflows from your own mailbox, with each email approved before Publish. If campaigns drive your pipeline, HubSpot fits better, and if you sell by email to warm leads, Attio's Pro plan does.
 

@@ -64,7 +64,7 @@ Honestly, we'd weigh the first two needs above the rest. They decide whether the
 
 ## What we learned about sharing a founder's inbox
 
-[Omniscient's CRM](/product/crm/) builds its records from the email and calendar each person connects. For a founder, that one inbox mixes buyers with board members, candidates and lawyers.
+[Omniscient's CRM](/product/omniscience/) builds its records from the email and calendar each person connects. For a founder, that one inbox mixes buyers with board members, candidates and lawyers.
 
 So every connected inbox in Omniscient has its own rule for what teammates see, and only the person who connected it can change it. The database enforces the rule, so answers from Ask Omniscient follow it too.
 
@@ -99,7 +99,7 @@ Each weekday morning, the digest lists your meetings and the emails to answer. I
 
 When a buyer asks for a proposal, the [Deal Room](/product/deal-room/) builds one from the deal, your calls and your Library, in your brand. You see who on their side viewed which part, and they approve on the page, so you don't spend an evening on a deck between investor meetings.
 
-[Contract Management](/product/contract-management/) comes with the seat. You upload each contract, and it keeps every version and collects e-signatures with a link for each signer. Otto also reads each signed contract's end date and notice period for you to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date, which helps when no one else at the company is watching renewals yet.
+[Contract Management](/product/ask-otto/) comes with the seat. You upload each contract, and it keeps every version and collects e-signatures with a link for each signer. Otto also reads each signed contract's end date and notice period for you to confirm, and the owner gets alerts 90, 60 and 30 days before the notice date, which helps when no one else at the company is watching renewals yet.
 
 Admittedly, Omniscient has no phone dialer, so Close suits a founder who sells by phone. Email sequences run as Automation workflows from your own mailbox, and a reply stops them. The pipeline board also starts on Pro, so a founder who only wants a free board may prefer HubSpot's free CRM.
 
