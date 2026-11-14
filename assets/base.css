@@ -356,3 +356,7 @@ summary::-webkit-details-marker { display: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Natural wrapping: headings in even lines, paragraphs without a lone last word. */
+h1, h2, h3, h4, h5, summary, .bl-hero__title, .bl-card h3 { text-wrap: balance; }
+p, li, dd, blockquote, figcaption, td, .bl-card p { text-wrap: pretty; }
