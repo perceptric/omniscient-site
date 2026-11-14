@@ -919,9 +919,9 @@ p,li,dd,blockquote,figcaption,.lede,.mm-i span,.rel span,.pts span,.acc span,.ub
     <div class="mono-row dark"><span>Overview</span><span>0.1</span></div>
     <p class="big sp"><span>A new species of CRM &amp; GTM platform.</span> Purpose-built for modern teams with AI workflows at its core, Omniscient sets a new standard for engaging with customers.</p>
     <div class="figs">
-      <figure><div class="fig-l">01 / 03</div><canvas data-fig="1" aria-label="Scattered records spiral inward and merge into one stack"></canvas><figcaption><b>Single source of truth</b><span>Unify all customer records in one place.</span></figcaption></figure>
-      <figure><div class="fig-l">02 / 03</div><canvas data-fig="2" aria-label="A call signal passes through record sheets and fills in their fields"></canvas><figcaption><b>CRM intelligence</b><span>Autonomously update records based on call &amp; email intelligence.</span></figcaption></figure>
-      <figure><div class="fig-l">03 / 03</div><canvas data-fig="3" aria-label="A central core sends tasks to a ring of agent blocks"></canvas><figcaption><b>Agentic GTM</b><span>Orchestrate a team of built-in agents for prospecting &amp; proposal building.</span></figcaption></figure>
+      <figure><div class="fig-l">01 / 03</div><canvas data-fig="1" aria-label="Scattered records spiral inward and merge into one stack"></canvas><figcaption><b>Single source of truth</b><span>Every customer conversation and record, in one place.</span></figcaption></figure>
+      <figure><div class="fig-l">02 / 03</div><canvas data-fig="2" aria-label="A call signal passes through record sheets and fills in their fields"></canvas><figcaption><b>CRM intelligence</b><span>Records update themselves from your calls and emails, with the quote behind each change.</span></figcaption></figure>
+      <figure><div class="fig-l">03 / 03</div><canvas data-fig="3" aria-label="A central core sends tasks to a ring of agent blocks"></canvas><figcaption><b>Agentic GTM</b><span>Built-in agents find leads, prep meetings and draft follow-ups, guided by your team's skills.</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -1588,16 +1588,17 @@ if('IntersectionObserver' in window) SKIES.forEach(k=>new IntersectionObserver(e
 
 /* isometric figures */
 const FILL = '#000';
-const P = (x,y,z) => [(x - z)*0.866, (x + z)*0.5 - y];
+const P = (x,y,z) => [(z - x)*0.866, (x + z)*0.5 - y];
 function poly(g, pts, alpha, fill){
   g.beginPath(); pts.forEach((p,i) => { const q = P(p[0],p[1],p[2]); i ? g.lineTo(q[0],q[1]) : g.moveTo(q[0],q[1]); }); g.closePath();
   if (fill){ g.fillStyle = fill === true ? FILL : fill; g.fill(); }
   if (alpha > 0){ g.strokeStyle = `rgba(255,255,255,${alpha})`; g.stroke(); }
 }
+const SHADE = ['#070707', '#0c0c0c', '#161616'];
 function box(g,x,y,z,w,h,d,a){
-  poly(g, [[x+w,y,z],[x+w,y+h,z],[x+w,y+h,z+d],[x+w,y,z+d]], a, true);
-  poly(g, [[x,y,z+d],[x+w,y,z+d],[x+w,y+h,z+d],[x,y+h,z+d]], a, true);
-  poly(g, [[x,y+h,z],[x+w,y+h,z],[x+w,y+h,z+d],[x,y+h,z+d]], a, true);
+  poly(g, [[x+w,y,z],[x+w,y+h,z],[x+w,y+h,z+d],[x+w,y,z+d]], a, SHADE[0]);
+  poly(g, [[x,y,z+d],[x+w,y,z+d],[x+w,y+h,z+d],[x,y+h,z+d]], a, SHADE[1]);
+  poly(g, [[x,y+h,z],[x+w,y+h,z],[x+w,y+h,z+d],[x,y+h,z+d]], a, SHADE[2]);
 }
 function ring(g, cx, y, cz, r, a, dash){
   g.beginPath(); for (let i=0;i<=96;i++){ const t = i/96*6.283; const q = P(cx + r*Math.cos(t), y, cz + r*Math.sin(t)); i ? g.lineTo(q[0],q[1]) : g.moveTo(q[0],q[1]); }
@@ -1628,7 +1629,7 @@ const FIGS = {
       }});
       objs.sort((a,b)=>a.d-b.d).forEach(o=>o.f());
   }},
-  2: { view:{w:5.9,h:5.3,cx:-0.15,cy:-1.15}, draw(g,T,px){
+  2: { view:{w:5.9,h:5.3,cx:0.15,cy:-1.15}, draw(g,T,px){
       const n = 6, xs = i => -1.9 + i*0.72, th = 0.05, H = 2.1, D = 1.5;
       const pc = -2.9 + ((T*0.42) % 1)*6.2;
       const yw = x => { const amp = 0.34*(1 - (x+2.9)/5.6*0.75); return 1.05 + amp*Math.sin(x*5.2 - T*3.2); };
