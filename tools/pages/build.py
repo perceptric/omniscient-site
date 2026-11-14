@@ -142,12 +142,27 @@ PAGE_CSS = r'''
 .code{margin:0;padding:22px 24px;border-radius:14px;background:#0a0a0a;color:#e6e6e3;font:400 13px/1.7 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;box-shadow:0 30px 70px -24px rgba(0,0,0,.45)}
 .code .k{color:#8b8b88}.code .s{color:#ffffff}.code .c{color:#6b6b6b}
 .tbl td .src-o{margin-left:6px}
+.pnote{margin:14px 0 0;font-size:13px;color:var(--muted)}
+.cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.cmp>div{min-width:0;padding:30px 32px 18px;border-radius:20px}
+.cmp-old{background:#fbfbfa;box-shadow:inset 0 0 0 1px #ececea}
+.cmp-new{background:#0a0a0a;color:#f4f4f2;background-image:radial-gradient(ellipse 80% 60% at 80% 0%,rgba(255,255,255,.1),transparent 70%);box-shadow:0 30px 70px -30px rgba(0,0,0,.55)}
+.cmp-h{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:14px;color:var(--muted)}
+.cmp-new .cmp-h{color:#a8a8a5}
+.cmp-h svg{width:16px;height:16px;color:#fff}
+.cmp ul{list-style:none;margin:0;padding:0}
+.cmp li{display:flex;align-items:flex-start;gap:12px;padding:15px 0;border-top:1px solid #ececea;font-size:16px;line-height:1.45;letter-spacing:-.01em;color:#6b6b6b}
+.cmp-new li{border-top-color:rgba(255,255,255,.1);color:#f4f4f2}
+.cmp li>svg{flex:none;width:16px;height:16px;margin-top:3px;color:#b5b5b2}
+.cmp li i{flex:none;width:22px;height:22px;border-radius:50%;background:#f4f4f2;color:#0a0a0a;display:grid;place-items:center;margin-top:0}
+.cmp li i svg{width:12px;height:12px}
 .rv{opacity:0;transform:translateY(14px);filter:blur(2px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1),filter .8s}
 .rv.in{opacity:1;transform:none;filter:none}
 @media (max-width:900px){
   .prow{grid-template-columns:minmax(0,1fr);gap:32px;padding:48px 0}
   .prow.flip .pcopy{order:0}
-  .pts,.rel{grid-template-columns:1fr}
+  .pts,.rel,.cmp{grid-template-columns:1fr}
+  .cmp>div{padding:24px 22px 12px}
   .pts>div{border-left:0;padding-left:0;border-top:1px solid rgba(255,255,255,.1)}
   .pts>div:first-child{border-top:0}
   .lgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -213,18 +228,41 @@ def finale_html(s, h=None, sub=None):
     if sub: f = re.sub(r'<p class="fin-p">.*?</p>', f'<p class="fin-p">{sub}</p>', f)
     return f
 
-def related(slugs):
+def related(slugs, n=5):
     cards = ''
     for sl in slugs:
         s, n, d, i, g = BY[sl]
         cards += f'<a href="{url(s)}" class="rv"><i>{ic(i)}</i><b>{n}</b><span>{d}</span><em>Learn more{ic("ChevronRight")}</em></a>'
-    return f'<section class="sec"><div class="wrap"><div class="mono-row"><span>Explore</span><span>5.0</span></div><div class="sec-head solo"><h2>Keep exploring</h2></div><div class="rel">{cards}</div></div></section>'
+    return f'<section class="sec"><div class="wrap"><div class="mono-row"><span>Explore</span><span>{n}.0</span></div><div class="sec-head solo"><h2>Keep exploring</h2></div><div class="rel">{cards}</div></div></section>'
 
 def faq_html(items, n='4.0'):
     det = ''.join(f'<details{" open" if k==0 else ""}><summary>{q}<span class="pm">{ic("Plus","i14")}</span></summary><p>{a}</p></details>' for k, (q, a) in enumerate(items))
     return f'<section class="sec" id="faq"><div class="wrap faq"><div class="side"><div class="mono-row" style="margin-bottom:28px"><span>Questions</span><span>{n}</span></div><h2>Questions, answered</h2><p>Still curious? <a href="{DEMO}" style="text-decoration:underline">Book a demo</a> and we\'ll walk you through it.</p></div><div>{det}</div></div></section>'
 
+def merge(P):
+    try:
+        from content_copy import COPY
+    except ImportError:
+        return P
+    c = COPY.get(P['slug'])
+    if not c: return P
+    P = dict(P); rows = c.get('rows')
+    for k, v in c.items():
+        if k not in ('rows', 'band'): P[k] = v
+    if rows: P['rows'] = [dict(P['rows'][i], **r) for i, r in enumerate(rows)]
+    if c.get('band'): P['band'] = dict(P['band'], **c['band'])
+    return P
+
+def swap_html(sw, n):
+    old = ''.join(f'<li>{ic("X")}<span>{x}</span></li>' for x in sw['old'])
+    new = ''.join(f'<li><i>{ic("Check")}</i><span>{x}</span></li>' for x in sw['new'])
+    return (f'<section class="sec pswap"><div class="wrap"><div class="mono-row"><span>Why it matters</span><span>{n}.0</span></div>'
+            f'<div class="sec-head"><div><h2>{sw["h"]}</h2></div><div><p>{sw["p"]}</p></div></div>'
+            f'<div class="cmp"><div class="cmp-old rv"><p class="cmp-h">Without Omniscient</p><ul>{old}</ul></div>'
+            f'<div class="cmp-new rv"><p class="cmp-h"><svg><use href="#mark"/></svg>With Omniscient</p><ul>{new}</ul></div></div></div></section>')
+
 def page(s, P):
+    P = merge(P)
     slug = P['slug']; _, name, line, icon, group = BY[slug]
     crumbs = {'Context': ('Product', '/#product'), 'Otto': ('Product', '/#product'), 'Ecosystem': ('Product', '/#product'), 'Teams': ('Teams', '/#teams')}[group]
     rows = ''
@@ -235,6 +273,11 @@ def page(s, P):
     band = P['band']
     pts = ''.join(f'<div><i>{ic(i)}</i><b>{b}</b><span>{t}</span></div>' for i, b, t in band['pts'])
     extra = P.get('extra', '')
+    n = 1; swap = ''
+    if P.get('swap'): swap = swap_html(P['swap'], n); n += 1
+    nr = n; n += 1
+    if extra: extra = extra.replace('<span>2.0</span>', f'<span>{n}.0</span>', 1); n += 1
+    nb = n
     body = f'''<main id="top">
 <section class="phero">
   <canvas id="hsky" aria-hidden="true"></canvas>
@@ -248,14 +291,16 @@ def page(s, P):
       <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
       <button class="btn btn-black lg" type="submit">Get started {ic("ChevronRight","i14")}</button>
     </form>
+    <p class="pnote">{P.get("note","Free plan available. Most teams are set up the same afternoon.")}</p>
   </div>
   <div class="widebox pshot rv">{P["hero"]}</div>
 </section>
-<section class="sec prows"><div class="wrap"><div class="mono-row"><span>{P.get("rows_label","How it works")}</span><span>1.0</span></div>{rows}</div></section>
+{swap}
+<section class="sec prows"><div class="wrap"><div class="mono-row"><span>{P.get("rows_label","How it works")}</span><span>{nr}.0</span></div>{rows}</div></section>
 {extra}
-<section class="cosmos pband"><canvas class="sky" aria-hidden="true"></canvas><div class="wrap"><div class="mono-row dark"><span>{band["k"]}</span><span>3.0</span></div><h2 class="big">{band["h"]}</h2><div class="pts">{pts}</div></div></section>
-{faq_html(P["faq"])}
-{related(P["rel"])}
+<section class="cosmos pband"><canvas class="sky" aria-hidden="true"></canvas><div class="wrap"><div class="mono-row dark"><span>{band["k"]}</span><span>{nb}.0</span></div><h2 class="big">{band["h"]}</h2><div class="pts">{pts}</div></div></section>
+{faq_html(P["faq"], f'{nb+1}.0')}
+{related(P["rel"], nb+2)}
 {finale_html(s, P.get("fin"), P.get("fin_p"))}</main>
 '''
     out = '<!doctype html>\n<html lang="en-US">\n' + head_html(s, P['title'], P['desc'], url(slug)) + '<body class="sub">\n' + defs_html(s) + '\n' + nav_html() + '\n' + body + footer_html() + '\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n'
