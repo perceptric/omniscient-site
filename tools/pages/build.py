@@ -180,7 +180,7 @@ def build_assets(s):
       cut(js, '/* star tile for dark stages */', '/* ---------- clickable hero demo ---------- */'),
       cut(js, '/* fit scaler */', '/* billing toggle */'),
       cut(js, '/* starfield in every black band */', '/* hero constellation'),
-      cut(js, '/* hero starlight', '/* nav: mega menus').replace("querySelectorAll('.wrap h1,.hero-form,.hlive')", "querySelectorAll('.wrap h1,.hero-form,.hlive,.plede,.pchip,.pcrumb')"),
+      cut(js, '/* hero starlight', '/* nav: mega menus').replace("querySelectorAll('.wrap h1,.hero-form,.hlive,.hlede,.hpill,.hchecks')", "querySelectorAll('.wrap h1,.hero-form,.hlive,.hlede,.hpill,.hchecks,.plede,.pchip,.pcrumb')"),
       cut(js, '/* nav: mega menus', '/* hero email field'),
       cut(js, '/* finale: reveal and its own starfield */', '/* loop */'),
     ]

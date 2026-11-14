@@ -98,7 +98,7 @@ if('IntersectionObserver' in window) SKIES.forEach(k=>new IntersectionObserver(e
   const c=document.getElementById('hsky'); if(!c) return; const g=c.getContext('2d'), hero=c.parentElement;
   let W=0,H=0,d=1,dust=[],glints=[],glow=null,vis=true,tx=0,ty=0,px=0,py=0,shoot=null,next=3500;
   const rnd=Math.random;
-  const boxes=()=>{ const hr=hero.getBoundingClientRect(); return [...hero.querySelectorAll('.wrap h1,.hero-form,.hlive,.plede,.pchip,.pcrumb')].map(e=>{ const r=e.getBoundingClientRect(); return {x0:r.left-hr.left-28,y0:r.top-hr.top-20,x1:r.right-hr.left+28,y1:r.bottom-hr.top+20}; }); };
+  const boxes=()=>{ const hr=hero.getBoundingClientRect(); return [...hero.querySelectorAll('.wrap h1,.hero-form,.hlive,.hlede,.hpill,.hchecks,.plede,.pchip,.pcrumb')].map(e=>{ const r=e.getBoundingClientRect(); return {x0:r.left-hr.left-28,y0:r.top-hr.top-20,x1:r.right-hr.left+28,y1:r.bottom-hr.top+20}; }); };
   const inBox=(B,x,y)=>B.some(b=>x>b.x0&&x<b.x1&&y>b.y0&&y<b.y1);
   const init=()=>{
     d=Math.min(2,devicePixelRatio||1); W=hero.clientWidth; H=Math.min(hero.clientHeight,1100); c.style.height=H+'px'; c.width=W*d; c.height=H*d;

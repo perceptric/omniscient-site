@@ -663,9 +663,11 @@ p,li,figcaption span{text-wrap:pretty}
 .hlive .live{width:6px;height:6px;border-radius:50%;background:#0a0a0a;margin-left:8px;animation:pulse 1.6s ease-in-out infinite}
 @media (max-width:1100px){.hlive.l{left:0}.hlive.r{right:0}}
 @media (max-width:760px){.hlive{display:none}}
-html.js .hero h1 .l,html.js .hero .hero-form,html.js .hero .horizon{animation:rise-in .9s cubic-bezier(.22,1,.36,1) both}
+html.js .hero h1 .l,html.js .hero .hero-form,html.js .hero .horizon,html.js .hero .hpill,html.js .hero .hlede,html.js .hero .hchecks{animation:rise-in .9s cubic-bezier(.22,1,.36,1) both}
 html.js .hero h1 .l:nth-child(2){animation-delay:.08s}
-html.js .hero .hero-form{animation-delay:.2s}
+html.js .hero .hero-form{animation-delay:.26s}
+html.js .hero .hlede{animation-delay:.18s}
+html.js .hero .hchecks{animation-delay:.32s}
 html.js .hero .horizon{animation-delay:.34s}
 @keyframes rise-in{from{opacity:0;transform:translateY(18px);filter:blur(8px)}}
 @media (prefers-reduced-motion:reduce){.beams{display:none}.horizon .fit{transform:none!important}}
@@ -766,6 +768,21 @@ html.js .hero .horizon{animation-delay:.34s}
 @media (max-width:900px){.mm{display:none}}
 @media (prefers-reduced-motion:reduce){.mm,.mm-c{transition:none}}
 
+/* hero, centered: pill, two-line headline, description, email field, notes */
+.hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero h1{margin:26px auto 0;font-size:clamp(40px,6.1vw,86px);line-height:1.02;max-width:none}
+.hero h1 .l{display:block}
+.hpill{display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:4px 12px 4px 4px;border-radius:999px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04),0 8px 20px -12px rgba(0,0,0,.18);font-size:13.5px;color:var(--ink);transition:box-shadow .2s,transform .2s cubic-bezier(.22,1,.36,1)}
+.hpill:hover{transform:translateY(-1px);box-shadow:0 0 0 1px rgba(0,0,0,.14),0 1px 2px rgba(0,0,0,.05),0 12px 26px -12px rgba(0,0,0,.24)}
+.hpill .hp-new{display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:999px;background:#0a0a0a;color:#fff;font-size:12px;font-weight:500}
+.hpill svg{color:var(--muted)}
+.hlede{margin:24px auto 0;max-width:44ch;font-size:clamp(17px,1.55vw,20px);line-height:1.45;letter-spacing:-.012em;color:var(--dim);text-wrap:balance}
+.hero .hero-form{margin:32px auto 0}
+.hchecks{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;margin:16px 0 0;padding:0;font-size:13px;color:var(--muted)}
+.hchecks li{display:inline-flex;align-items:center;gap:6px}
+.hchecks svg{color:var(--ink)}
+@media (max-width:600px){.hpill{font-size:12.5px}.hero h1{font-size:clamp(34px,10vw,48px)}}
+
 /* footer: six columns */
 .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
 @media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
@@ -860,12 +877,15 @@ html.js .hero .horizon{animation-delay:.34s}
   <canvas id="hsky" aria-hidden="true"></canvas>
   <div class="beams" aria-hidden="true"></div>
   <div class="wrap">
-    <h1><span class="sr">The Agentic CRM for modern brands, agencies and SaaS</span><span aria-hidden="true"><span class="l">The Agentic CRM for</span> <span class="l"><span class="swap" data-words="Modern|Ambitious|Future-proof|Forward-thinking"></span> <span class="swap" data-words="Brands|Agencies|SaaS" data-lag="1"></span></span></span></h1>
+    <a class="hpill" href="/product/omniscience/"><span class="hp-new">New</span>Meet Omniscience, the brain behind your CRM<svg class="i14"><use href="#i-ChevronRight"/></svg></a>
+    <h1><span class="sr">This is the Agentic CRM for modern brands, agencies and SaaS</span><span aria-hidden="true"><span class="l">This is The Agentic CRM</span> <span class="l">For <span class="swap" data-words="Modern|Ambitious|Future-proof|Forward-thinking"></span> <span class="swap" data-words="Brands|Agencies|SaaS" data-lag="1"></span></span></span></h1>
+    <p class="hlede">Find leads, follow up and close deals just by asking. Omniscient remembers every customer conversation and does the busy work for your team.</p>
     <form class="hero-form" action="https://app.tryomniscient.com/signup" novalidate>
       <label class="sr" for="hero-email">Work email</label>
       <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
       <button class="btn btn-black lg" type="submit">Get started <svg class="i14"><use href="#i-ChevronRight"/></svg></button>
     </form>
+    <ul class="hchecks"><li><svg class="i14"><use href="#i-Check"/></svg>Try Pro free for 14 days</li><li><svg class="i14"><use href="#i-Check"/></svg>No card needed</li></ul>
 
     
 
@@ -1687,7 +1707,7 @@ function drawFig(f, T){
   const c=document.getElementById('hsky'); if(!c) return; const g=c.getContext('2d'), hero=c.parentElement;
   let W=0,H=0,d=1,dust=[],glints=[],glow=null,vis=true,tx=0,ty=0,px=0,py=0,shoot=null,next=3500;
   const rnd=Math.random;
-  const boxes=()=>{ const hr=hero.getBoundingClientRect(); return [...hero.querySelectorAll('.wrap h1,.hero-form,.hlive')].map(e=>{ const r=e.getBoundingClientRect(); return {x0:r.left-hr.left-28,y0:r.top-hr.top-20,x1:r.right-hr.left+28,y1:r.bottom-hr.top+20}; }); };
+  const boxes=()=>{ const hr=hero.getBoundingClientRect(); return [...hero.querySelectorAll('.wrap h1,.hero-form,.hlive,.hlede,.hpill,.hchecks')].map(e=>{ const r=e.getBoundingClientRect(); return {x0:r.left-hr.left-28,y0:r.top-hr.top-20,x1:r.right-hr.left+28,y1:r.bottom-hr.top+20}; }); };
   const inBox=(B,x,y)=>B.some(b=>x>b.x0&&x<b.x1&&y>b.y0&&y<b.y1);
   const init=()=>{
     d=Math.min(2,devicePixelRatio||1); W=hero.clientWidth; H=Math.min(hero.clientHeight,1100); c.style.height=H+'px'; c.width=W*d; c.height=H*d;
@@ -1821,5 +1841,7 @@ if (!reduce){ const loop = t => { if (skyVis) frame(t); requestAnimationFrame(lo
 
 
 <script src="/assets/consent.js?v=6803e013" defer></script>
+
+
 </body>
 </html>
