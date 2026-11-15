@@ -23,6 +23,7 @@ Never shrink Omniscient to one feature ("answers with quotes", "a CRM that fills
 
 ### Lines to reuse
 
+- Headline: "The Agentic CRM for Modern Brands" (on the homepage the last two words swap: Modern, Ambitious, Future-proof or Forward-thinking, then Brands, Agencies or SaaS).
 - Pick line: "Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads to closing deals, with Otto doing the busy work."
 - ```tools row: `Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion`
 - "What you want next" table cell: "One CRM for the whole sales motion, from the first lead to the closed deal".
