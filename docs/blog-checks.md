@@ -154,3 +154,20 @@ Each post marks a price or claim "check" when it couldn't be confirmed on the ve
 - Omniscient migration: the site says 'we migrate ... for you' but gives no price, so the post lists the onboarding fee as 'No fee listed'.
 - Omniscient call recording add-on: the site says '$25 per seat' without saying whether that is per month. The post repeats the site's wording.
 - LinkedIn Sales Navigator Advanced Plus price: not stated in the post. The post only calls it a separate subscription.
+
+## Nov 15, 2026 voice pass (all posts, blog-voice skill)
+
+Research narration, dates and unconfirmed details were taken out of the posts and their charts. What was dropped or assumed, to confirm or restore as plain facts:
+
+- All posts: "read on November 3", "we haven't run every CRM", and "Pipedrive's pricing page didn't load / blocked our reader" are gone. Each post keeps one line: "Prices are from each vendor's site in November 2026." Chart footnotes now say "Plans as of November 2026."
+- Table wording assumed everywhere: "Trial instead" where no free plan was confirmed, "Free plan instead" where no trial was confirmed, "Talk to sales" or "Demo instead" where a vendor sells through sales (Affinity, Salesforce call notes in crm-with-automatic-data-entry).
+- Tool names: the build now links each tool's first mention in its section to the domain in the ```tools block. Deeper links that sat on names moved onto facts (Dynamics 365, Zoho CRM, monday CRM, Freshsales). monday CRM's name now links to monday.com rather than monday.com/crm.
+- best-ai-crm: Pipedrive's $14 / $39 / $79 were kept although its price is unconfirmed elsewhere. Salesforce "30 day trial, no card" here conflicts with "trial length not stated" in the b2b-saas post.
+- best-crm-for-b2b-saas: dropped Day AI "no free trial", Zoho trial length, monday CRM AI plan prices and its two different yearly discounts, Salesflare product usage and renewal tracking.
+- best-crm-for-founders: dropped Day AI and Clarify "no free trial", Salesflare "no call recording".
+- crm-with-automatic-data-entry: dropped Salesflare and Copper "no call recording / AI meeting notes", folk "no notetaker", Clarify "no approval step", Day AI and Affinity "no free trial". New cells to confirm: HubSpot call notes "Notetaker on Sales Hub Starter" (from the startups post), Copper "Meetings logged as you work", folk "Follow up and recap assistants".
+- hubspot-crm-alternatives: dropped Nutshell forecasting, Salesflare AI features, Copper trial length and onboarding fee, Less Annoying CRM AI/sequences, HubSpot trial, Pipedrive free plan and sequences tier, Zoho trial length and sequences tier. folk and Freshsales free plans now read "Trial instead".
+- salesforce-alternatives-for-startups: dropped the Launchpad discount size, Copper trial length, Freshsales "annual prices only" (conflicts with the Pipedrive post's monthly prices $11 / $47 / $71) and Nutshell forecasting.
+- attio-vs-hubspot: dropped the "Fees you pay once", "Emails a month" and "Calling" rows where one side was unknown (HubSpot's fees, Attio's email caps and HubSpot's calling minutes stay in the text). HubSpot per-seat AI credits now read "Shared pool instead".
+- omniscient-vs-attio / omniscient-vs-hubspot: still say "no mobile app"; omniscient-vs-hubspot says Ask Otto has "a daily limit on questions for each person". Neither is on the approved positioning list.
+- Copper's trial is "14 days" in the Pipedrive post and unstated in the others.

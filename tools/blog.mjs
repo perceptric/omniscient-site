@@ -277,7 +277,7 @@ function toolFigure(domain, name, alt, ctx) {
   const month = statSync(file).mtime.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
   const src = `/assets/blog/tools/${domain}.webp`;
   const bar = `<div class="bl-browser__bar" aria-hidden="true"><span class="bl-browser__dots"><i></i><i></i><i></i></span><span class="bl-browser__url">${esc(domain)}</span></div>`;
-  return `<figure class="bl-fig bl-site"><div class="bl-band"><div class="bl-browser">${bar}<img src="${esc(src)}" alt="${esc(alt || `${name} homepage`)}" width="${s.w}" height="${s.h}" loading="lazy" decoding="async"></div></div><figcaption><a href="https://${esc(domain)}/" rel="nofollow noopener">${esc(name)} homepage, ${month}</a></figcaption></figure>`;
+  return `<figure class="bl-fig bl-site"><div class="bl-band"><div class="bl-browser">${bar}<img src="${esc(src)}" alt="${esc(alt || `${name} homepage`)}" width="${s.w}" height="${s.h}" loading="lazy" decoding="async"></div></div><figcaption>${esc(name)} homepage, ${month}</figcaption></figure>`;
 }
 
 function figure({ text: alt, url, title }, ctx) {
@@ -980,6 +980,47 @@ function meta(file) {
   };
 }
 
+// In each numbered tool section, the tool's first mention in its first paragraph links to the tool's site, so readers
+// find the link in the sentence that introduces it. Skipped when that paragraph already links the name.
+function linkToolNames(lines, tools) {
+  const out = lines.slice();
+  let pending = null, fence = false;
+  for (let i = 0; i < out.length; i++) {
+    const l = out[i];
+    if (/^```/.test(l)) { fence = !fence; continue; }
+    if (fence) continue;
+    const h = l.match(/^###\s+\d{1,2}\\?\.\s+(.+?)(?::\s+.*)?\s*$/);
+    if (h) { const t = tools.get(toolKey(h[1])); pending = t && t.domain ? t : null; continue; }
+    if (/^#{1,3}\s/.test(l)) { pending = null; continue; }
+    const shotLine = l.trim().match(/^!\[[^\]]*\]\(tool:([^)\s]+)\)/i);
+    if (shotLine) {
+      // A homepage screenshot outside a numbered section: link the tool's name in the paragraph that introduces it,
+      // the nearest one above (within the section), else the next one below.
+      const d = cleanDomain(shotLine[1]);
+      const t = [...tools.values()].find((x) => x.domain === d);
+      if (t) {
+        const isPara = (x) => x.trim() && !/^(!\[|[-*>|#`]|\d+\.\s|<)/.test(x.trim());
+        let j = i - 1;
+        while (j >= 0 && !/^#{1,3}\s/.test(out[j]) && !(isPara(out[j]) && out[j].includes(t.name))) j--;
+        if (j < 0 || /^#{1,3}\s/.test(out[j])) { j = i + 1; while (j < out.length && !isPara(out[j])) j++; }
+        if (j < out.length && isPara(out[j]) && !out[j].includes(`[${t.name}](`)) {
+          const esc = t.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          out[j] = out[j].replace(new RegExp(`(^|[^\\[\\w])(${esc})(?![\\w\\]])`), (m, pre, n) => `${pre}[${n}](https://${t.domain}/)`);
+        }
+      }
+      continue;
+    }
+    if (!pending || !l.trim() || /^(!\[|[-*>|]|\d+\.\s|<)/.test(l.trim())) continue;
+    const name = pending.name, href = /^https?:/.test(pending.domain) ? pending.domain : `https://${pending.domain}/`;
+    pending = null;
+    if (l.includes(`[${name}](`)) continue;
+    const esc = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(^|[^\\[\\w])(${esc})(?![\\w\\]])`);
+    out[i] = l.replace(re, (m, pre, n) => `${pre}[${n}](${href})`);
+  }
+  return out;
+}
+
 function render(post, known) {
   const warnings = [];
   const ctx = {
@@ -987,7 +1028,7 @@ function render(post, known) {
     review: null, listDepth: 0, ratings: 0, trees: 0, pendingFig: undefined, toolIds: new Map(),
     warn: (m) => warnings.push(m), tools: toolsIn(post.body.split("\n")),
   };
-  const html = treeLinks(blocks(post.body.split("\n"), ctx), ctx);
+  const html = treeLinks(blocks(linkToolNames(post.body.split("\n"), ctx.tools), ctx), ctx);
   // Trees are pictures: their words don't count toward the post's length.
   const words = plain(html.replace(/<figure class="bl-fig bl-treefig"[\s\S]*?<\/figure>/g, " ")).split(/\s+/).filter(Boolean).length;
 

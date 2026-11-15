@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 660" width="560" height="660" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Salesforce Sales Cloud editions, price per user a month</title>
-<desc id="d">Price per user a month for each Salesforce Sales Cloud edition, from Salesforce&#x27;s pricing page on November 3, 2026. Free Suite: $0, for up to 2 users. Starter Suite: $25, billed monthly or yearly. Pro Suite: $100, billed yearly, and the first edition with sales quoting and forecasting. Core: $195, Advanced: $395 and Max: $550, each billed yearly. Agentforce for Sales is an add on from $125 per user a month, and the page says AI can be added to Core and above.</desc>
+<desc id="d">Price per user a month for each Salesforce Sales Cloud edition, as of November 2026. Free Suite: $0, for up to 2 users. Starter Suite: $25, billed monthly or yearly. Pro Suite: $100, billed yearly, and the first edition with sales quoting and forecasting. Core: $195, Advanced: $395 and Max: $550, each billed yearly. Agentforce for Sales is an add on from $125 per user a month, and AI can be added to Core and above.</desc>
 <rect width="560" height="660" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Salesforce Sales Cloud</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">Price per user a month <tspan fill="#171717">by edition</tspan></text>
@@ -37,5 +37,5 @@
 <text x="52" y="532" font-size="17" fill="#171717">Quoting and forecasting start on Pro Suite</text>
 <text x="24" y="569" font-size="17" fill="#171717">Agentforce for Sales is an add on, from $125 a user</text>
 <text x="24" y="594" font-size="17" fill="#171717">a month. AI can be added to Core and above.</text>
-<text x="24" y="631" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Salesforce pricing page, November 3, 2026</text>
+<text x="24" y="631" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Editions as of November 2026</text>
 </svg>

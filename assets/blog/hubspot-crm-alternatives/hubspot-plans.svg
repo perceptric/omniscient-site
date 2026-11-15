@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 696" width="560" height="696" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What each HubSpot Sales Hub plan adds</title>
-<desc id="d">HubSpot Sales Hub plans and what each adds, from HubSpot&#x27;s pricing page on November 3, 2026. Free: $0, up to 2 users and 1,000 contacts, with HubSpot branding on emails. Starter: $20 a seat a month listed, from $7 for new customers, with 500 HubSpot Credits a month. Professional: from $90 a seat a month, with sequences, forecasting and 3,000 credits, plus a $1,500 onboarding fee paid once. Enterprise: from $150 a seat a month, with 5,000 credits, plus a $3,500 onboarding fee paid once.</desc>
+<desc id="d">HubSpot Sales Hub plans and what each adds, as of November 2026. Free: $0, up to 2 users and 1,000 contacts, with HubSpot branding on emails. Starter: $20 a seat a month listed, from $7 for new customers, with 500 HubSpot Credits a month. Professional: from $90 a seat a month, with sequences, forecasting and 3,000 credits, plus a $1,500 onboarding fee paid once. Enterprise: from $150 a seat a month, with 5,000 credits, plus a $3,500 onboarding fee paid once.</desc>
 <rect width="560" height="696" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">HubSpot Sales Hub</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">Each plan <tspan fill="#171717">and what it adds</tspan></text>
@@ -34,5 +34,5 @@
 <text x="40" y="592" font-size="19" fill="#737373">5,000 HubSpot Credits a month</text>
 <rect x="40" y="606" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
 <text x="62" y="620" font-size="19" fill="#171717">Plus $3,500 onboarding, paid once</text>
-<text x="24" y="672" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Per seat a month, hubspot.com/pricing/sales, Nov 3, 2026</text>
+<text x="24" y="672" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Per seat a month, plans as of November 2026</text>
 </svg>

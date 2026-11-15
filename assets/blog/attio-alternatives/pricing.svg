@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1154" width="560" height="1154" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What a seat costs on each plan, billed yearly</title>
-<desc id="d">Price per seat a month on yearly billing, for each plan, from each vendor&#x27;s pricing page in November 2026. Omniscient: Starter $19, Pro $49, Business $99. Twenty: Pro $9, Organization $39. monday CRM: Basic $12, Standard $17, Pro $28, from 3 seats. Copper: Basic $23, Professional $59, Business $99. folk: Standard $24, Premium $48, Enterprise from $80. Salesflare: Growth $29, Pro $49, Enterprise $99. Attio: Plus $35, Pro $79, Enterprise custom. Not shown: HubSpot and Close, whose pricing pages don&#x27;t label which price is yearly; Pipedrive, whose pricing page we couldn&#x27;t read; Clarify, which costs $50 a month for the whole team on Starter; Affinity, which costs $2,000 per user a year on Essential; Day AI, which prices each agent from $24 a month; and Lightfield, which costs $89 per user a month billed monthly on Starter.</desc>
+<desc id="d">Price per seat a month on yearly billing, for each plan, from each vendor in November 2026. Omniscient: Starter $19, Pro $49, Business $99. Twenty: Pro $9, Organization $39. monday CRM: Basic $12, Standard $17, Pro $28, from 3 seats. Copper: Basic $23, Professional $59, Business $99. folk: Standard $24, Premium $48, Enterprise from $80. Salesflare: Growth $29, Pro $49, Enterprise $99. Attio: Plus $35, Pro $79, Enterprise custom. Not shown: HubSpot, Close and Pipedrive, which are priced differently; Clarify, which costs $50 a month for the whole team on Starter; Affinity, which costs $2,000 per user a year on Essential; Day AI, which prices each agent from $24 a month; and Lightfield, which costs $89 per user a month billed monthly on Starter.</desc>
 <rect width="560" height="1154" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Per seat a month, billed yearly</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">What a seat costs <tspan fill="#171717">on each plan</tspan></text>
@@ -126,8 +126,8 @@
 <text x="349.0" y="994" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">$75</text>
 <text x="452.0" y="994" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">$100</text>
 <text x="24" y="1034" font-size="18" fill="#737373">monday CRM plans start at 3 seats. Not shown:</text>
-<text x="24" y="1058" font-size="18" fill="#737373">HubSpot and Close (billing not labeled), Pipedrive</text>
-<text x="24" y="1082" font-size="18" fill="#737373">(check), Clarify ($50 a month for the whole team),</text>
+<text x="24" y="1058" font-size="18" fill="#737373">HubSpot, Close and Pipedrive (priced differently),</text>
+<text x="24" y="1082" font-size="18" fill="#737373">Clarify ($50 a month for the whole team),</text>
 <text x="24" y="1106" font-size="18" fill="#737373">Affinity ($2,000 per user a year), Day AI (from $24</text>
 <text x="24" y="1130" font-size="18" fill="#737373">per agent) and Lightfield ($89, billed monthly).</text>
 </svg>

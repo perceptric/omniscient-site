@@ -27,6 +27,7 @@ Pipedrive is a sales CRM built around your pipeline, made for small teams that p
 ~~~
 
 - First sentence: "X is a [kind of] CRM that [does what] for [whom]." No quote marks around taglines.
+- Start that first paragraph with the tool's name as plain text. The build links that first mention to the tool's site (from the ```tools block), and the screenshot caption stays plain text. Never add your own link on the name.
 - 3 to 5 bullets of facts, each one sentence. Prices as "$24 per member a month, billed yearly".
 - Close with the reader it fits. If you add a comparison with Omniscient, keep it factual and short.
 - Voice: blog-voice. No crawl phrases ("its homepage says"), no filler openers ("Interestingly").

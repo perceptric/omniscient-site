@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 700" width="560" height="700" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What each Pipedrive plan adds</title>
-<desc id="d">Pipedrive's four plans and what each one adds, from Pipedrive's help center, updated September 2026. Lite: 2,500 leads and deals per user, with LeadBooster at extra cost. Growth: sequences and the forecast view, 5,000 leads and deals per user, up to 50 reports. Premium: LeadBooster and the team inbox included, up to 25 sequences, 15,000 leads and deals for the whole company. Ultimate: up to 500 custom fields and 500 reports per user. LinkedIn isn't part of any plan; Marketplace apps such as LinkMatch add it. Prices are on Pipedrive's pricing page.</desc>
+<desc id="d">Pipedrive's four plans and what each one adds, from Pipedrive's help center, updated September 2026. Lite: 2,500 leads and deals per user, with LeadBooster at extra cost. Growth: sequences and the forecast view, 5,000 leads and deals per user, up to 50 reports. Premium: LeadBooster and the team inbox included, up to 25 sequences, 15,000 leads and deals for the whole company. Ultimate: up to 500 custom fields and 500 reports per user. LinkedIn isn't part of any plan; Marketplace apps such as LinkMatch add it. Prices are on Pipedrive's site.</desc>
 <rect width="560" height="700" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Pipedrive help center, Sept 2026</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">What each plan adds <tspan fill="#171717">on Pipedrive</tspan></text>
@@ -38,5 +38,5 @@
 <rect x="24" y="582" width="20" height="20" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
 <text x="56" y="599" font-size="19" fill="#171717">LinkedIn isn't part of any plan. Marketplace</text>
 <text x="56" y="627" font-size="19" fill="#171717">apps such as LinkMatch add it.</text>
-<text x="56" y="668" font-size="17" fill="#737373">Prices: see pipedrive.com/en/pricing</text>
+<text x="56" y="668" font-size="17" fill="#737373">Prices: see pipedrive.com</text>
 </svg>

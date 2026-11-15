@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 836" width="560" height="836" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Where each feature starts in Attio and HubSpot Sales Hub</title>
-<desc id="d">Which plan each feature starts on. Workflows: Attio Free, HubSpot Sales Hub Starter; AI credits included: Attio Free, HubSpot Sales Hub Starter; Email without vendor branding: Attio Plus, HubSpot Sales Hub Starter; Email sequences: Attio Pro, HubSpot Sales Hub Professional; Meeting recording: Attio Pro (Call Intelligence), HubSpot Sales Hub Starter (Notetaker); LinkedIn steps: Attio through apps, HubSpot Sales Hub Professional; Custom objects: Attio Pro, HubSpot Sales Hub Enterprise. HubSpot&#x27;s LinkedIn steps are task reminders and need a Sales Navigator subscription. From attio.com/pricing, hubspot.com/pricing/sales and hubspot.com/products/crm, November 3, 2026.</desc>
+<desc id="d">Which plan each feature starts on. Workflows: Attio Free, HubSpot Sales Hub Starter; AI credits included: Attio Free, HubSpot Sales Hub Starter; Email without vendor branding: Attio Plus, HubSpot Sales Hub Starter; Email sequences: Attio Pro, HubSpot Sales Hub Professional; Meeting recording: Attio Pro (Call Intelligence), HubSpot Sales Hub Starter (Notetaker); LinkedIn steps: Attio through apps, HubSpot Sales Hub Professional; Custom objects: Attio Pro, HubSpot Sales Hub Enterprise. HubSpot&#x27;s LinkedIn steps are task reminders and need a Sales Navigator subscription. Plans as of November 2026.</desc>
 <rect width="560" height="836" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Plans</text>
 <text x="24" y="82" font-size="26" font-weight="500" fill="#171717">Where each feature starts</text>
@@ -61,6 +61,6 @@
 <text x="44" y="692" font-size="17" fill="#737373">On the free plan</text>
 <text x="24" y="726" font-size="17" fill="#737373">* Task reminders that open Sales Navigator,</text>
 <text x="24" y="750" font-size="17" fill="#737373">which needs its own subscription.</text>
-<text x="24" y="784" font-size="17" fill="#737373">From attio.com/pricing, hubspot.com/pricing/sales</text>
-<text x="24" y="808" font-size="17" fill="#737373">and hubspot.com/products/crm, November 3, 2026.</text>
+<text x="24" y="784" font-size="17" fill="#737373">Plans as of November 2026.</text>
+<text x="24" y="808" font-size="17" fill="#737373"></text>
 </svg>

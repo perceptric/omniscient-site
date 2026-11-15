@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 974" width="560" height="974" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">Attio and HubSpot Sales Hub prices per seat a month</title>
-<desc id="d">Per seat a month on yearly billing. Attio: Free $0 for up to 3 seats; Plus $35, or $44 billed monthly, up to 10 seats; Pro $79, or $99 billed monthly, with sequences and Call Intelligence; Enterprise custom, billed yearly. HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts; Starter from $7, or $10 billed monthly, as new customer prices, listed at $20; Professional from $90, or $100 billed monthly, with a yearly commitment either way and a $1,500 onboarding fee paid once; Enterprise from $150 with a $3,500 onboarding fee paid once. From attio.com/pricing and hubspot.com/pricing/sales, November 3, 2026.</desc>
+<desc id="d">Per seat a month on yearly billing. Attio: Free $0 for up to 3 seats; Plus $35, or $44 billed monthly, up to 10 seats; Pro $79, or $99 billed monthly, with sequences and Call Intelligence; Enterprise custom, billed yearly. HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts; Starter from $7, or $10 billed monthly, as new customer prices, listed at $20; Professional from $90, or $100 billed monthly, with a yearly commitment either way and a $1,500 onboarding fee paid once; Enterprise from $150 with a $3,500 onboarding fee paid once. Plans as of November 2026.</desc>
 <rect width="560" height="974" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Pricing</text>
 <text x="24" y="82" font-size="26" font-weight="500" fill="#171717">Per seat a month <tspan fill="#171717">billed yearly</tspan></text>
@@ -43,6 +43,6 @@
 <text x="40" y="844" font-size="20" font-weight="500" fill="#171717">Enterprise</text>
 <text x="520" y="844" text-anchor="end" font-size="21" font-weight="500" fill="#171717">From $150</text>
 <text x="40" y="870" font-size="18" fill="#737373">$3,500 onboarding once</text>
-<text x="24" y="922" font-size="17" fill="#737373">From attio.com/pricing and hubspot.com/pricing/sales,</text>
-<text x="24" y="946" font-size="17" fill="#737373">November 3, 2026.</text>
+<text x="24" y="922" font-size="17" fill="#737373">Plans as of November 2026.</text>
+<text x="24" y="946" font-size="17" fill="#737373"></text>
 </svg>

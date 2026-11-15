@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 980" width="560" height="980" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">First paid seat on each Salesforce alternative, billed yearly</title>
-<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan, from each vendor&#x27;s pricing page on November 3, 2026: Freshsales Growth $9, Twenty Pro $9, monday CRM Basic $12 from 3 seats, Zoho CRM Standard $14, Omniscient Starter $19, Copper Basic $23, folk Standard $24, Salesflare Growth $29 and Attio Plus $35. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite, the first edition with forecasting, at $100. Plans include different features. Not shown: HubSpot, Close and Nutshell, whose pricing pages don&#x27;t state a yearly price per seat, and Pipedrive, whose pricing page didn&#x27;t load for us.</desc>
+<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan, as of November 2026: Freshsales Growth $9, Twenty Pro $9, monday CRM Basic $12 from 3 seats, Zoho CRM Standard $14, Omniscient Starter $19, Copper Basic $23, folk Standard $24, Salesflare Growth $29 and Attio Plus $35. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite, the first edition with forecasting, at $100. Plans include different features. Not shown: HubSpot, Close and Nutshell, which price per seat in other ways, and Pipedrive, whose plans are on its site.</desc>
 <rect width="560" height="980" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Per seat a month, billed yearly</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">First paid seat <tspan fill="#171717">next to Salesforce</tspan></text>
@@ -60,8 +60,8 @@
 <text x="470.0" y="732" font-size="19" font-weight="600" fill="#171717">$100</text>
 <rect x="24" y="805" width="16" height="16" fill="#ffffff" stroke="#333333" rx="3"/>
 <text x="52" y="820" font-size="17" fill="#171717">Salesforce, for comparison</text>
-<text x="24" y="857" font-size="17" fill="#737373">Not shown: HubSpot, Close and Nutshell, whose</text>
-<text x="24" y="882" font-size="17" fill="#737373">pricing pages don&#x27;t state a yearly price per seat,</text>
-<text x="24" y="907" font-size="17" fill="#737373">and Pipedrive, whose pricing page didn&#x27;t load</text>
-<text x="24" y="932" font-size="17" fill="#737373">for us.</text>
+<text x="24" y="857" font-size="17" fill="#737373">Not shown: HubSpot, Close and Nutshell, which</text>
+<text x="24" y="882" font-size="17" fill="#737373">price per seat in other ways, and Pipedrive</text>
+<text x="24" y="907" font-size="17" fill="#737373">(see its site).</text>
+<text x="24" y="932" font-size="17" fill="#737373"></text>
 </svg>

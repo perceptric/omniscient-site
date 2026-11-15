@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 958" width="720" height="958" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">First paid plan per seat a month for 11 B2B SaaS CRMs</title>
-<desc id="d">The first paid plan for a team, per seat a month, from each vendor&#x27;s pricing page in November 2026. Freshsales Growth $9, billed yearly. Twenty Pro $9, billed yearly. monday CRM Basic $12, billed yearly, for 3 seats or more. Zoho CRM Standard $14, billed yearly. Omniscient Starter $19, billed yearly. HubSpot Sales Hub Starter $20, list price. Day AI Turbo $24, per agent, billed yearly. Salesforce Starter Suite $25, monthly or yearly. Salesflare Growth $29, billed yearly. Attio Plus $35, billed yearly. Close Essentials $35, billed yearly. HubSpot also shows a $7 price for new customers, Close Solo costs $9 for one user, and Clarify is priced by AI work with unlimited seats, free and then $50 a month. Pipedrive is left out because its pricing page blocked our reader.</desc>
+<desc id="d">The first paid plan for a team, per seat a month, as of November 2026. Freshsales Growth $9, billed yearly. Twenty Pro $9, billed yearly. monday CRM Basic $12, billed yearly, for 3 seats or more. Zoho CRM Standard $14, billed yearly. Omniscient Starter $19, billed yearly. HubSpot Sales Hub Starter $20, list price. Day AI Turbo $24, per agent, billed yearly. Salesforce Starter Suite $25, monthly or yearly. Salesflare Growth $29, billed yearly. Attio Plus $35, billed yearly. Close Essentials $35, billed yearly. HubSpot also shows a $7 price for new customers, Close Solo costs $9 for one user, and Clarify is priced by AI work with unlimited seats, free and then $50 a month. Pipedrive&#x27;s plans are on its site.</desc>
 <rect width="720" height="958" fill="#ffffff"/>
 <rect x="32" y="35" width="11" height="11" fill="#0c8c5e" stroke="#333333" rx="3"/>
 <text x="52" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Pricing</text>
@@ -60,8 +60,8 @@
 <rect x="330.5" y="786.5" width="301" height="26" fill="#333333" stroke="#ebebeb" rx="6"/>
 <text x="643" y="806" font-size="19" font-weight="600" fill="#171717">$35</text>
 <line x1="32" x2="688" y1="832" y2="832" stroke="#8a8a85"/>
-<text x="32" y="866" font-size="16" fill="#737373">From each pricing page, November 2026. HubSpot also shows $7 for new</text>
+<text x="32" y="866" font-size="16" fill="#737373">Plans as of November 2026. HubSpot also shows $7 for new</text>
 <text x="32" y="888" font-size="16" fill="#737373">customers, Close Solo is $9 for one user, and Clarify charges for AI work,</text>
-<text x="32" y="910" font-size="16" fill="#737373">free and then $50 a month, with unlimited seats. Pipedrive is left out</text>
-<text x="32" y="932" font-size="16" fill="#737373">because its pricing page blocked our reader.</text>
+<text x="32" y="910" font-size="16" fill="#737373">free and then $50 a month, with unlimited seats. See Pipedrive&#x27;s</text>
+<text x="32" y="932" font-size="16" fill="#737373">plans on its site.</text>
 </svg>

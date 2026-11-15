@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 900" width="560" height="900" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">HubSpot Sales Hub and Omniscient starting prices per seat a month</title>
-<desc id="d">HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts; Starter from $7 per seat a month, with $20 also listed and discounts for new customers only; Professional from $90 per seat a month on a yearly commitment, or $100 paying monthly, plus a $1,500 onboarding fee paid once; Enterprise from $150 per seat a month, plus a $3,500 onboarding fee paid once. Omniscient, per seat a month billed yearly: Free $0 for teammates who only view or log data; Starter $19, and monthly billing costs 20% more; Pro $49 with the pipeline board and forecast; Business $99 with the manager view and call coaching. From hubspot.com/pricing/sales and tryomniscient.com, November 3, 2026.</desc>
+<desc id="d">HubSpot Sales Hub: Free $0 for up to 2 users and 1,000 contacts; Starter from $7 per seat a month, with $20 also listed and discounts for new customers only; Professional from $90 per seat a month on a yearly commitment, or $100 paying monthly, plus a $1,500 onboarding fee paid once; Enterprise from $150 per seat a month, plus a $3,500 onboarding fee paid once. Omniscient, per seat a month billed yearly: Free $0 for teammates who only view or log data; Starter $19, and monthly billing costs 20% more; Pro $49 with the pipeline board and forecast; Business $99 with the manager view and call coaching. Plans as of November 2026.</desc>
 <rect width="560" height="900" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Pricing</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">Per seat a month <tspan fill="#171717">starting prices</tspan></text>
@@ -41,6 +41,6 @@
 <text x="40" y="771" font-size="20" font-weight="500" fill="#171717">Business</text>
 <text x="520" y="771" text-anchor="end" font-size="21" font-weight="500" fill="#171717">$99</text>
 <text x="40" y="797" font-size="17" fill="#737373">Adds the manager view and call coaching</text>
-<text x="24" y="854" font-size="16" fill="#737373">From hubspot.com/pricing/sales and tryomniscient.com,</text>
-<text x="24" y="876" font-size="16" fill="#737373">read on November 3, 2026.</text>
+<text x="24" y="854" font-size="16" fill="#737373">Plans as of November 2026.</text>
+<text x="24" y="876" font-size="16" fill="#737373"></text>
 </svg>

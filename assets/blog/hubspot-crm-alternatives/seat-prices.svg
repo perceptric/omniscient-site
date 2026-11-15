@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1000" width="560" height="1000" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">First paid seat for a team on each alternative, billed yearly</title>
-<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan for a team, from each vendor&#x27;s pricing page on November 3, 2026: Freshsales Growth $9, monday CRM Basic $12 with a 3 seat minimum, EngageBay Basic $13.79, Zoho CRM Standard $14, Omniscient Starter $19, Copper Basic $23, folk Standard $24, Salesflare Growth $29, Attio Plus $35 and Close Essentials $35. For comparison, HubSpot Sales Hub Professional, the plan with sequences, starts at $90 a seat a month on a yearly commitment, plus a $1,500 onboarding fee. Not shown: Pipedrive, whose pricing page didn&#x27;t load for us; Nutshell, which lists monthly prices from $13; Less Annoying CRM, with one plan at $15 a month; and Close Solo, which is $9 for one user only.</desc>
+<desc id="d">Price per seat a month on yearly billing, on each alternative&#x27;s first paid plan for a team, as of November 2026: Freshsales Growth $9, monday CRM Basic $12 with a 3 seat minimum, EngageBay Basic $13.79, Zoho CRM Standard $14, Omniscient Starter $19, Copper Basic $23, folk Standard $24, Salesflare Growth $29, Attio Plus $35 and Close Essentials $35. For comparison, HubSpot Sales Hub Professional, the plan with sequences, starts at $90 a seat a month on a yearly commitment, plus a $1,500 onboarding fee. Not shown: Pipedrive, whose plans are on its site; Nutshell, which lists monthly prices from $13; Less Annoying CRM, with one plan at $15 a month; and Close Solo, which is $9 for one user only.</desc>
 <rect width="560" height="1000" fill="#ffffff"/>
 <text x="24" y="46" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">Per seat a month, billed yearly</text>
 <text x="24" y="84" font-size="26" font-weight="500" fill="#171717">First paid seat <tspan fill="#171717">next to HubSpot Pro</tspan></text>
@@ -58,8 +58,8 @@
 <text x="470.0" y="732" font-size="19" font-weight="600" fill="#171717">$90</text>
 <text x="24" y="828" font-size="17" fill="#171717">HubSpot Professional is the plan with sequences,</text>
 <text x="24" y="853" font-size="17" fill="#171717">and it adds a $1,500 onboarding fee.</text>
-<text x="24" y="890" font-size="17" fill="#737373">Not shown: Pipedrive, whose pricing page didn&#x27;t</text>
-<text x="24" y="915" font-size="17" fill="#737373">load for us, Nutshell (from $13 a month), Less</text>
+<text x="24" y="890" font-size="17" fill="#737373">Not shown: Pipedrive (see its site),</text>
+<text x="24" y="915" font-size="17" fill="#737373">Nutshell (from $13 a month), Less</text>
 <text x="24" y="940" font-size="17" fill="#737373">Annoying CRM ($15 a month, one plan) and Close</text>
 <text x="24" y="965" font-size="17" fill="#737373">Solo, $9 for one user only.</text>
 </svg>
