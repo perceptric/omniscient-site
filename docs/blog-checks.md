@@ -4,7 +4,7 @@ Each post marks a price or claim "check" when it couldn't be confirmed on the ve
 
 ## Omniscient (applies to every post)
 
-- Contract Management: contracts come only from files people upload (PDF or Word). Omniscient never drafts or writes contracts and has no contract templates. Posts describe uploads and versions, teammate approval, signing on the page, Otto reading signed contracts for a person to confirm, and renewal alerts at 90, 60 and 30 days, as the app does (098).
+- Positioning: posts describe Omniscient as an agentic CRM built on Omniscience, the context layer agents query, with Otto answering through skills (see .claude/skills/omniscient-positioning). Deal Room, proposals and Contract Management are gone from every post.
 - Posts quote the Starter price, $19 per seat a month billed yearly, from the home page pricing section.
 - The free trial: posts say 14 days, no card, from the home page.
 
@@ -73,6 +73,8 @@ Each post marks a price or claim "check" when it couldn't be confirmed on the ve
 - Omniscient free seats: the app code (plans.ts NEEDS.freeSeats = pro) and docs/pricing.md say free seats need a Pro workspace. The site's pricing section doesn't say this. The post now says 'on a Pro workspace', and index.html may need the same line.
 
 ## attio-alternatives (2954 words, 3 visuals)
+
+- Nov 15 voice pass (blog-voice skill): research dates and unconfirmed details moved out of the post. Assumed wording to confirm: Affinity sells through a demo ('Demo instead', 'Talk to sales'); tools with no listed free plan show 'Trial instead'.
 
 - Pipedrive: pipedrive.com/en/pricing still returns 403 to our reader. Every plan price stays 'check' in the tools table, and so does its free plan in the comparison table. Search snippets show $14, $39, $59 and $79 per seat billed annually, but we couldn't confirm these on the page itself.
 - HubSpot: Sales Hub Starter shows 'starts at' $7 per seat for new customers next to $20, and neither has a billing label. The pricing page's Sequences row doesn't say which plan each value belongs to. HubSpot's own Sales Hub pricing guide (blog.hubspot.com, updated 09/09/26) lists sequences for Starter as 'None', so the post now says sequences start on Professional and cites that guide.
