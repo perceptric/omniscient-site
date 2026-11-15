@@ -339,3 +339,48 @@ COPY = {
        ('Does Otto write proposals or contracts?', 'No. Otto preps meetings, writes recaps and drafts emails. He never writes contract text.'),
        ('Can Otto work in our Slack?', 'Yes. Add Omniscient to your Slack to ask Otto questions and get alerts. Client conversations come in through email and call notes.')]),
 }
+
+# The tools that matter on each page, shown as a "Works with" row under the hero.
+ALL = ['Gmail', 'Outlook', 'Google Calendar', 'Zoom', 'Google Meet', 'Teams', 'Slack', 'HubSpot']
+WORKS = {
+  'product/omniscience': ALL,
+  'product/data-model': ['HubSpot', 'Salesforce', 'Attio', 'Pipedrive'],
+  'product/clean-data': ['HubSpot', 'Salesforce', 'Attio', 'Pipedrive', 'LinkedIn'],
+  'product/meetings': ['Zoom', 'Google Meet', 'Teams', 'Google Calendar'],
+  'product/email-sync': ['Gmail', 'Outlook', 'Google Calendar'],
+  'product/ask-otto': ['Slack', 'Gmail', 'Outlook', 'Zoom', 'Google Meet'],
+  'product/find-leads': ['LinkedIn', 'HubSpot', 'Salesforce', 'Gmail'],
+  'product/skills': ['Slack', 'Gmail', 'Google Meet', 'Zoom'],
+  'product/knowledge': ['Gmail', 'Outlook', 'Slack'],
+  'product/workflows': ['Slack', 'Gmail', 'Outlook', 'HubSpot'],
+  'product/chrome-extension': ['LinkedIn', 'Gmail', 'Outlook'],
+  'for/founders': ALL, 'for/sales': ALL, 'for/marketing': ['HubSpot', 'Salesforce', 'Slack', 'Gmail', 'LinkedIn'],
+  'for/customer-success': ALL, 'for/agencies': ALL,
+}
+
+# Each page's closing call to action: the headline in short chunks (they rise in one by one), then one line.
+FIN = {
+  'product/omniscience': (['Never lose', 'what a customer', 'said again.'], 'Connect your inbox and calendar, and the memory starts filling itself in today.'),
+  'product/data-model': (['Make the CRM', 'fit the way', 'you sell.'], 'Add your own fields and record types in minutes. Otto keeps them filled.'),
+  'product/clean-data': (['Trust every', 'record in', 'your CRM.'], 'Bring your messy lists along. Omniscient cleans them on the way in.'),
+  'product/meetings': (['Leave every call', 'with the CRM', 'up to date.'], 'Connect Zoom, Google Meet or Teams, and your next call writes its own notes.'),
+  'product/email-sync': (['Every email,', 'on the right', 'customer.'], 'Connect Gmail or Outlook in one click and see your inbox sorted by customer.'),
+  'product/ask-otto': (['Ask your CRM', 'anything.', 'Get the answer.'], 'Otto is ready the moment your inbox and calendar are connected.'),
+  'product/find-leads': (['Your next', 'customers,', 'one sentence away.'], 'Describe your ideal buyer and get a lead list with work emails.'),
+  'product/skills': (['Teach Otto', 'once. Your team', 'uses it daily.'], 'Start with ready skills, then write your own in plain words.'),
+  'product/knowledge': (['The right answer,', 'in your', 'team\'s voice.'], 'Add your pricing and playbook, and every answer follows them.'),
+  'product/workflows': (['Your best', 'process, running', 'every day.'], 'Turn your follow-ups and handoffs into workflows in minutes.'),
+  'integrations': (['All your tools,', 'one click', 'each.'], 'Connect your inbox, calendar and old CRM the same afternoon.'),
+  'product/chrome-extension': (['From profile', 'to CRM in', 'one click.'], 'Add the extension and save the next person you look at.'),
+  'product/mcp': (['Your CRM, inside', 'the assistant', 'you already use.'], 'Add one address to Claude, ChatGPT or Cursor and sign in.'),
+  'developers': (['Build on the', 'memory behind', 'every deal.'], 'Make a key in Settings and send your first request in minutes.'),
+  'for/founders': (['Sell like you', 'have a sales', 'team.'], 'Set up in an afternoon, then let Otto take the busy work.'),
+  'for/sales': (['More selling.', 'Less typing.', 'Every day.'], 'Give your reps their time back from the first call.'),
+  'for/marketing': (['Spend where', 'the revenue', 'really is.'], 'See which leads become deals, and hand off every one warm.'),
+  'for/customer-success': (['Keep every', 'customer you', 'worked to win.'], 'See every account, every renewal and every warning sign in one place.'),
+  'for/agencies': (['Win the pitch.', 'Keep the', 'client.'], 'Run every pitch and every client from one place.'),
+}
+for _slug, (_h, _p) in FIN.items():
+    COPY.setdefault(_slug, {}).update(fin=_h, fin_p=_p)
+for _slug, _l in WORKS.items():
+    COPY.setdefault(_slug, {}).update(works=_l)

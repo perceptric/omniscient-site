@@ -4,7 +4,7 @@
 import os, re, sys, html
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, os.path.dirname(__file__))
-from ui import ic
+from ui import ic, blogo, LOGOS
 
 SIGNUP = 'https://app.tryomniscient.com/signup'
 SIGNIN = 'https://app.tryomniscient.com/signin'
@@ -97,7 +97,7 @@ def cut(s, a, b):
 PAGE_CSS = r'''
 /* ===== product and team pages (tools/pages/build.py) ===== */
 .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
-.phero{position:relative;isolation:isolate;padding-block:84px 0}
+.phero{position:relative;isolation:isolate;overflow:hidden;padding-block:84px 0}
 .pcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
 .pcrumb a:hover{color:var(--ink)}
 .pcrumb svg{width:12px;height:12px}
@@ -156,6 +156,27 @@ PAGE_CSS = r'''
 .cmp li>svg{flex:none;width:16px;height:16px;margin-top:3px;color:#b5b5b2}
 .cmp li i{flex:none;width:22px;height:22px;border-radius:50%;background:#f4f4f2;color:#0a0a0a;display:grid;place-items:center;margin-top:0}
 .cmp li i svg{width:12px;height:12px}
+.phero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.phero .hpill{margin-top:4px}
+.hpill .hp-ic{display:inline-grid;place-items:center;color:var(--ink)}
+.hpill .hp-ic svg{width:14px;height:14px}
+.phero h1{margin:26px auto 0;max-width:17ch;font-size:clamp(42px,6.4vw,88px)}
+.phero .plede{margin:24px auto 0;max-width:46ch;text-wrap:balance}
+.phero .hero-form{margin:32px auto 0}
+.phero .horizon.phz{margin-top:56px;padding-top:84px!important}
+.phz>.fit{position:relative;z-index:2}
+.phz .acc{z-index:6}
+.phz .acc-tr{top:40px}
+.phz .acc-bl,.phz .acc-br{bottom:auto;top:40px}
+.pshot{position:relative}
+.pshot::after{content:"";position:absolute;left:0;right:0;bottom:0;height:180px;z-index:7;pointer-events:none;background:linear-gradient(rgba(255,255,255,0),#fff 92%)}
+@media (max-width:900px){.phero .horizon.phz{margin-top:40px;padding-top:56px!important}.pshot::after{height:90px}}
+.pshot{margin-top:0}
+.plogos{display:flex;flex-direction:column;align-items:center;gap:16px;padding-top:56px}
+.plogos p{margin:0;font-size:13px;color:var(--muted)}
+.plogos>div{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.plogo{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 9px;border-radius:999px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.04);font-size:14px;color:var(--ink)}
+.plogo img{box-shadow:none!important;padding:0!important}
 .rv{opacity:0;transform:translateY(14px);filter:blur(2px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1),filter .8s}
 .rv.in{opacity:1;transform:none;filter:none}
 @media (max-width:900px){
@@ -273,6 +294,12 @@ def page(s, P):
     band = P['band']
     pts = ''.join(f'<div><i>{ic(i)}</i><b>{b}</b><span>{t}</span></div>' for i, b, t in band['pts'])
     extra = P.get('extra', '')
+    hero = P['hero']
+    if hero.startswith('<div class="vis">'):
+        hero = '<div class="horizon phz"><div class="planet" aria-hidden="true"></div>' + hero[len('<div class="vis">'):]
+    works = ''
+    if P.get('works'):
+        works = '<div class="wrap plogos rv"><p>Works with</p><div>' + ''.join(f'<span class="plogo">{blogo(n, 22, 6)}{n}</span>' for n in P['works'] if n in LOGOS) + '</div></div>'
     n = 1; swap = ''
     if P.get('swap'): swap = swap_html(P['swap'], n); n += 1
     nr = n; n += 1
@@ -282,8 +309,7 @@ def page(s, P):
 <section class="phero">
   <canvas id="hsky" aria-hidden="true"></canvas>
   <div class="wrap">
-    <div class="pcrumb"><a href="{crumbs[1]}">{crumbs[0]}</a>{ic("ChevronRight")}<span>{group if group != "Teams" else "Omniscient for"}</span></div>
-    <span class="pchip"><i>{ic(icon)}</i>{name}</span>
+    <a class="hpill" href="{crumbs[1]}"><span class="hp-new">{group if group != "Teams" else "For teams"}</span><span class="hp-ic">{ic(icon)}</span>{name}</a>
     <h1>{P["h1"]}</h1>
     <p class="plede">{P["lede"]}</p>
     <form class="hero-form" action="{SIGNUP}" novalidate>
@@ -291,9 +317,10 @@ def page(s, P):
       <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
       <button class="btn btn-black lg" type="submit">Get started {ic("ChevronRight","i14")}</button>
     </form>
-    <p class="pnote">{P.get("note","Try Pro free for 14 days. No card needed.")}</p>
+    <ul class="hchecks"><li>{ic("Check","i14")}Try Pro free for 14 days</li><li>{ic("Check","i14")}No card needed</li></ul>
   </div>
-  <div class="widebox pshot rv">{P["hero"]}</div>
+  <div class="widebox pshot rv">{hero}</div>
+  {works}
 </section>
 {swap}
 <section class="sec prows"><div class="wrap"><div class="mono-row"><span>{P.get("rows_label","How it works")}</span><span>{nr}.0</span></div>{rows}</div></section>
