@@ -182,7 +182,9 @@ document.querySelectorAll('.hero-form').forEach(f=>{ const i=f.querySelector('in
   f.addEventListener('submit',e=>{ e.preventDefault(); const v=i.value.trim();
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){ f.classList.add('bad'); i.focus(); return; }
     location.href=f.action+'?email='+encodeURIComponent(v); }); });
-/* reveal on scroll */
+/* reveal on scroll: each revealed block fills in its lines one after another */
+const STAGGER='.um,.om,.lrow,.urow,.mrow,.tli,.flow>*,.oc,.src,.slash a,.card-b>div,.toast,.plogo,.pts>div,.cmp li,.cmp li span,.cmp li i';
+document.querySelectorAll('.rv').forEach(r=>{ let k=0; r.querySelectorAll(STAGGER).forEach(el=>{ if(el.matches('.cmp li span,.cmp li i')){ el.style.transitionDelay=(180+[...el.closest('ul').children].indexOf(el.closest('li'))*160)+'ms'; return; } el.style.transitionDelay=Math.min(1400,120+k++*90)+'ms'; }); });
 (function(){ const els=[...document.querySelectorAll('.rv')]; if(!('IntersectionObserver' in window)||reduce){ els.forEach(e=>e.classList.add('in')); return; }
   const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }),{rootMargin:'0px 0px -8% 0px'}); els.forEach(e=>io.observe(e)); })();
 faces();

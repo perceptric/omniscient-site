@@ -137,3 +137,20 @@ dict(slug='for/agencies',
        ('Can we connect our clients\' Slack?', 'Add Omniscient to your own Slack to ask Otto and get alerts. Client conversations come in through email and call notes.')],
   rel=['product/meetings', 'product/data-model', 'product/ask-otto']),
 ]
+
+# A real person asks each team page's questions: their photo and role sit on every message they send.
+PERSONA = {
+  'for/founders': ('DM', 'Diego, Founder'),
+  'for/sales': ('JR', 'Jonah, Account Executive'),
+  'for/marketing': ('IB', 'Inès, Marketing Lead'),
+  'for/customer-success': ('EB', 'Elle, Customer Success'),
+  'for/agencies': ('LM', 'Luc, Agency Founder'),
+}
+def _personalize(html, face, label):
+    html = html.replace('<div class="um"><div class="stack">', f'<div class="um"><div class="stack"><span class="um-by">{label}</span>')
+    return html.replace('<span class="av s28">JR</span></div>', f'<span class="av s28">{face}</span></div>')
+for _P in PAGES:
+    _f, _l = PERSONA[_P['slug']]
+    _P['hero'] = _personalize(_P['hero'], _f, _l)
+    for _r in _P['rows']:
+        _r['v'] = _personalize(_r['v'], _f, _l)

@@ -78,5 +78,15 @@
 @media (prefers-reduced-motion:reduce){.oc .mm,.oc .mm-c{transition:none}}
 .oc .mm-i b{text-wrap:balance}
 .oc .mm-i span{text-wrap:pretty}
+.oc .nav .wrap{display:grid!important;grid-template-columns:1fr auto 1fr;gap:20px}
+.oc .nav .brand{justify-self:start}
+.oc .nav .links{margin-left:0!important;justify-self:center}
+.oc .nav .nav-cta{justify-self:end;border-left:0!important;padding-left:0!important}
+.oc .links>a,.oc .mm-t{font-weight:500!important;color:#262626!important;font-size:14.5px!important;letter-spacing:-.005em}
+.oc .links>a:hover,.oc .mm-t:hover,.oc .mm-t[aria-expanded="true"]{color:#0a0a0a!important}
+.oc .nav-cta .btn-text{font-weight:500;color:#262626}
+.oc .nav-cta .btn-black{font-weight:500}
+@media (max-width:900px){.oc .nav .wrap{display:flex!important}
+.oc .nav .nav-cta{margin-left:auto}}
 .oc .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
 @media (max-width:900px){.oc .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}

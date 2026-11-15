@@ -177,6 +177,22 @@ PAGE_CSS = r'''
 .plogos>div{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .plogo{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 9px;border-radius:999px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.04);font-size:14px;color:var(--ink)}
 .plogo img{box-shadow:none!important;padding:0!important}
+.um-by{display:block;align-self:flex-end;margin-bottom:4px;font-size:12px;font-weight:500;color:var(--t3,#737373)}
+/* motion: screens fill in one line at a time, cards drift, old ways get struck through */
+.rv .um,.rv .om,.rv .lrow,.rv .urow,.rv .mrow,.rv .tli,.rv .flow>*,.rv .oc,.rv .src,.rv .slash a,.rv .card-b>div,.rv .toast,.rv .plogo,.rv .pts>div,.rv .cmp li{opacity:0;transform:translateY(8px);transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1)}
+.rv.in .um,.rv.in .om,.rv.in .lrow,.rv.in .urow,.rv.in .mrow,.rv.in .tli,.rv.in .flow>*,.rv.in .oc,.rv.in .src,.rv.in .slash a,.rv.in .card-b>div,.rv.in .toast,.rv.in .plogo,.rv.in .pts>div,.rv.in .cmp li{opacity:1;transform:none}
+.acc{animation:acc-in .7s cubic-bezier(.22,1,.36,1) both,acc-float 6s ease-in-out 1.2s infinite}
+@keyframes acc-float{50%{transform:translateY(-6px)}}
+.cmp-old li span{background:linear-gradient(currentColor,currentColor) 0 58%/0 1px no-repeat;transition:background-size .7s cubic-bezier(.65,0,.35,1)}
+.cmp-old.in li span{background-size:100% 1px}
+.cmp-new li i{transform:scale(.4);opacity:0;transition:transform .45s cubic-bezier(.34,1.56,.64,1),opacity .3s}
+.cmp-new.in li i{transform:none;opacity:1}
+.plogo{transition:transform .25s cubic-bezier(.22,1,.36,1),box-shadow .25s,opacity .55s}
+.plogo:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(0,0,0,.1),0 10px 24px -12px rgba(0,0,0,.3)}
+.ubub{position:relative}
+.rv.in .om .body>p:first-child::after{content:"";display:inline-block;width:2px;height:1em;margin-left:3px;vertical-align:-2px;background:currentColor;animation:caret 1s steps(1) 4 both}
+@keyframes caret{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.rv .um,.rv .om,.rv .lrow,.rv .urow,.rv .mrow,.rv .tli,.rv .flow>*,.rv .oc,.rv .src,.rv .slash a,.rv .card-b>div,.rv .toast,.rv .plogo,.rv .pts>div,.rv .cmp li{opacity:1;transform:none;transition:none}.acc{animation:none}.cmp-old li span{background-size:100% 1px;transition:none}.cmp-new li i{transform:none;opacity:1}}
 .rv{opacity:0;transform:translateY(14px);filter:blur(2px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1),filter .8s}
 .rv.in{opacity:1;transform:none;filter:none}
 @media (max-width:900px){
@@ -214,7 +230,9 @@ document.querySelectorAll('.hero-form').forEach(f=>{ const i=f.querySelector('in
   f.addEventListener('submit',e=>{ e.preventDefault(); const v=i.value.trim();
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){ f.classList.add('bad'); i.focus(); return; }
     location.href=f.action+'?email='+encodeURIComponent(v); }); });
-/* reveal on scroll */
+/* reveal on scroll: each revealed block fills in its lines one after another */
+const STAGGER='.um,.om,.lrow,.urow,.mrow,.tli,.flow>*,.oc,.src,.slash a,.card-b>div,.toast,.plogo,.pts>div,.cmp li,.cmp li span,.cmp li i';
+document.querySelectorAll('.rv').forEach(r=>{ let k=0; r.querySelectorAll(STAGGER).forEach(el=>{ if(el.matches('.cmp li span,.cmp li i')){ el.style.transitionDelay=(180+[...el.closest('ul').children].indexOf(el.closest('li'))*160)+'ms'; return; } el.style.transitionDelay=Math.min(1400,120+k++*90)+'ms'; }); });
 (function(){ const els=[...document.querySelectorAll('.rv')]; if(!('IntersectionObserver' in window)||reduce){ els.forEach(e=>e.classList.add('in')); return; }
   const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }),{rootMargin:'0px 0px -8% 0px'}); els.forEach(e=>io.observe(e)); })();
 faces();
@@ -325,7 +343,7 @@ def page(s, P):
 {swap}
 <section class="sec prows"><div class="wrap"><div class="mono-row"><span>{P.get("rows_label","How it works")}</span><span>{nr}.0</span></div>{rows}</div></section>
 {extra}
-<section class="cosmos pband"><canvas class="sky" aria-hidden="true"></canvas><div class="wrap"><div class="mono-row dark"><span>{band["k"]}</span><span>{nb}.0</span></div><h2 class="big">{band["h"]}</h2><div class="pts">{pts}</div></div></section>
+<section class="cosmos pband"><canvas class="sky" aria-hidden="true"></canvas><div class="wrap"><div class="mono-row dark"><span>{band["k"]}</span><span>{nb}.0</span></div><h2 class="big">{band["h"]}</h2><div class="pts rv">{pts}</div></div></section>
 {faq_html(P["faq"], f'{nb+1}.0')}
 {related(P["rel"], nb+2)}
 {finale_html(s, P.get("fin"), P.get("fin_p"))}</main>

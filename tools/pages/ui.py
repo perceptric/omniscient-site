@@ -30,9 +30,10 @@ def card(icon, title, body, right='', foot='', style=''):
 def pb(t, icon='Check'): return f'<span class="pb sm">{ic(icon,"i14")}{t}</span>'
 def ib(icon): return f'<span class="ib">{ic(icon)}</span>'
 
-def um(text, skill=None, who='JR'):
+def um(text, skill=None, who='JR', by=None):
     s = f'<span class="skchip">{ic("Box","i12")}{skill}</span>' if skill else ''
-    return f'<div class="um"><div class="stack">{s}<div class="ubub">{text}</div></div>{av(who)}</div>'
+    b = f'<span class="um-by">{by}</span>' if by else ''
+    return f'<div class="um"><div class="stack">{b}{s}<div class="ubub">{text}</div></div>{av(who)}</div>'
 
 def om(*parts):
     return f'<div class="om"><svg><use href="#otto"/></svg><div class="body">{"".join(parts)}</div></div>'
@@ -120,6 +121,11 @@ def logos():
     s = open(_os.path.join(_os.path.dirname(__file__), '..', '..', 'index.html')).read()
     return {n: (src, kind) for src, n, kind in _re.findall(r'<div class="intg"><img src="([^"]+)"[^>]*><div><b>([^<]+)</b><span>([^<]+)</span>', s)}
 LOGOS = logos()
+# AI assistants that connect over MCP, from assets/blog/logos.
+LOGOS.update({'Claude': ('/assets/blog/logos/claude.ai.png', 'AI assistant'), 'ChatGPT': ('/assets/blog/logos/chatgpt.com.png', 'AI assistant'), 'Cursor': ('/assets/blog/logos/cursor.com.png', 'AI code editor')})
+def lg(name, size=18):
+    return f'<img class="lg" src="{LOGOS[name][0]}" alt="{name}" title="{name}" width="{size}" height="{size}" style="width:{size}px;height:{size}px;border-radius:5px;object-fit:contain;flex:none">'
+
 def blogo(name, size=28, r=8):
     return f'<img src="{LOGOS[name][0]}" alt="{name}" title="{name}" width="{size}" height="{size}" style="width:{size}px;height:{size}px;border-radius:{r}px;object-fit:contain;background:#fff;box-shadow:var(--sh-chip);padding:{max(3,size//7)}px;flex:none">'
 def intg_grid(names=None):

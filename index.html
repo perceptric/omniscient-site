@@ -793,6 +793,17 @@ p,li,dd,blockquote,figcaption,.lede,.mm-i span,.rel span,.pts span,.acc span,.ub
 .hlede{max-width:54ch}
 @media (min-width:760px){.hlede{max-width:none}.hlede span{display:block}}
 
+/* nav: links centered between the logo and the buttons, heavier type */
+.nav .wrap{display:grid!important;grid-template-columns:1fr auto 1fr;gap:20px}
+.nav .brand{justify-self:start}
+.nav .links{margin-left:0!important;justify-self:center}
+.nav .nav-cta{justify-self:end;border-left:0!important;padding-left:0!important}
+.links>a,.mm-t{font-weight:500!important;color:#262626!important;font-size:14.5px!important;letter-spacing:-.005em}
+.links>a:hover,.mm-t:hover,.mm-t[aria-expanded="true"]{color:#0a0a0a!important}
+.nav-cta .btn-text{font-weight:500;color:#262626}
+.nav-cta .btn-black{font-weight:500}
+@media (max-width:900px){.nav .wrap{display:flex!important}.nav .nav-cta{margin-left:auto}}
+
 /* footer: six columns */
 .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
 @media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
