@@ -16,7 +16,8 @@ The app itself lives at app.tryomniscient.com. This repo is only the marketing s
 | `assets/base.css` | Brand tokens, reset, type, tags, buttons, the header with the Product and Resources menus, the phone menu, footer, reading pages. |
 | `assets/home4.css`, `assets/home4.js` | The home page (`docs/home-v4.md`): the agentic hero with a live Scout search, the four-tools scene, the four parts (Prospect, Unify, Close, Sign and renew) and the Omniscience band. |
 | `assets/home.css`, `assets/home.js` | The old home page's styles, still used by `pricing/`, `security/` and the product pages' shots. |
-| `pricing/index.html`, `security/index.html` | Pricing with the questions, and how we handle data. Moved off the home page in home v4. |
+| `pricing/index.html` | Pricing in the new style, written by `tools/pages/build.py` (plans from the home page, the comparison in `CMP`, questions in `PRICING_FAQ`). |
+| `security/index.html` | How we handle data. |
 | `assets/img/founders/` | Founder photos for the home page's lead list, from Wikimedia Commons (credited under the list). |
 | `product/<page>/`, `integrations/`, `developers/`, `for/<team>/` | The product pages (Omniscience, Data model, Clean data, Meetings, Email sync, Ask Otto, Find leads, Skills, Knowledge, Workflows, Chrome extension, MCP), Integrations, Developers and the five team pages. Written by `tools/pages/build.py` from the copy in `tools/pages/content_*.py`: run `python3 tools/pages/build.py`, then `node tools/layout.mjs`. They share `assets/omni.css` and `assets/omni.js`, which the build cuts from `index.html`, so they always match the home page. The old `/product/crm/`, `/product/automation/` and `/product/contract-management/` redirect to Omniscience, Workflows and Ask Otto. |
 | `assets/img/people/` | Portraits used in the product shots, from Unsplash (free to use, credited in the footer). |

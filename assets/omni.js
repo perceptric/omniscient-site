@@ -188,6 +188,12 @@ const STAGGER='.um,.om,.lrow,.urow,.mrow,.tli,.flow>*,.oc,.src,.slash a,.card-b>
 document.querySelectorAll('.rv').forEach(r=>{ let k=0; r.querySelectorAll(STAGGER).forEach(el=>{ if(el.matches('.cmp li span,.cmp li i')){ el.style.transitionDelay=(180+[...el.closest('ul').children].indexOf(el.closest('li'))*160)+'ms'; return; } el.style.transitionDelay=Math.min(1400,120+k++*90)+'ms'; }); });
 (function(){ const els=[...document.querySelectorAll('.rv')]; if(!('IntersectionObserver' in window)||reduce){ els.forEach(e=>e.classList.add('in')); return; }
   const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }),{rootMargin:'0px 0px -8% 0px'}); els.forEach(e=>io.observe(e)); })();
+/* billing switch on the Pricing page */
+(function(){ const by=document.getElementById('b-year'), bm=document.getElementById('b-month'); if(!by||!bm) return;
+  const set=y=>{ by.setAttribute('aria-pressed',y); bm.setAttribute('aria-pressed',!y);
+    document.querySelectorAll('.price b[data-y]').forEach(b=>b.textContent='$'+(y?b.dataset.y:b.dataset.m));
+    document.querySelectorAll('.note[data-y]').forEach(n=>n.textContent=y?n.dataset.y:n.dataset.m); };
+  by.addEventListener('click',()=>set(true)); bm.addEventListener('click',()=>set(false)); })();
 faces();
 function resizeAll(){ layoutFits(); initStars(); drawStars(performance.now()); }
 resizeAll();

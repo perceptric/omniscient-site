@@ -193,6 +193,21 @@ PAGE_CSS = r'''
 .rv.in .om .body>p:first-child::after{content:"";display:inline-block;width:2px;height:1em;margin-left:3px;vertical-align:-2px;background:currentColor;animation:caret 1s steps(1) 4 both}
 @keyframes caret{50%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.rv .um,.rv .om,.rv .lrow,.rv .urow,.rv .mrow,.rv .tli,.rv .flow>*,.rv .oc,.rv .src,.rv .slash a,.rv .card-b>div,.rv .toast,.rv .plogo,.rv .pts>div,.rv .cmp li{opacity:1;transform:none;transition:none}.acc{animation:none}.cmp-old li span{background-size:100% 1px;transition:none}.cmp-new li i{transform:none;opacity:1}}
+.phero:has(+ #pricing){padding-bottom:0}
+.cmpt{overflow-x:auto;border-radius:16px;box-shadow:0 0 0 1px rgba(0,0,0,.07);background:#fff}
+.cmpt table{width:100%;min-width:680px;border-collapse:collapse;font-size:14px}
+.cmpt th,.cmpt td{padding:13px 18px;border-top:1px solid #f0f0ee;text-align:center;vertical-align:middle}
+.cmpt thead th{border-top:0;font-weight:600;font-size:15px;padding:18px;position:sticky;top:0;background:#fff}
+.cmpt thead th small{display:block;margin-top:4px;font-weight:400;font-size:13px;color:var(--muted)}
+.cmpt thead th.pop{background:#0a0a0a;color:#fff;border-radius:12px 12px 0 0}
+.cmpt thead th.pop small{color:#a8a8a5}
+.cmpt tbody th{text-align:left;font-weight:400;color:#3b3b3b;min-width:260px}
+.cmpt tr.grp th{text-align:left;font-weight:600;font-size:13px;color:var(--ink);background:#fafaf9;padding-top:16px}
+.cmpt td:nth-child(4){background:#fafaf9}
+.cmpt .tick{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#0a0a0a;color:#fff}
+.cmpt .tick svg{width:12px;height:12px}
+.cmpt .no{color:#c4c4c4}
+.cmpt td b{font-weight:500}
 .rv{opacity:0;transform:translateY(14px);filter:blur(2px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1),filter .8s}
 .rv.in{opacity:1;transform:none;filter:none}
 @media (max-width:900px){
@@ -235,6 +250,12 @@ const STAGGER='.um,.om,.lrow,.urow,.mrow,.tli,.flow>*,.oc,.src,.slash a,.card-b>
 document.querySelectorAll('.rv').forEach(r=>{ let k=0; r.querySelectorAll(STAGGER).forEach(el=>{ if(el.matches('.cmp li span,.cmp li i')){ el.style.transitionDelay=(180+[...el.closest('ul').children].indexOf(el.closest('li'))*160)+'ms'; return; } el.style.transitionDelay=Math.min(1400,120+k++*90)+'ms'; }); });
 (function(){ const els=[...document.querySelectorAll('.rv')]; if(!('IntersectionObserver' in window)||reduce){ els.forEach(e=>e.classList.add('in')); return; }
   const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }),{rootMargin:'0px 0px -8% 0px'}); els.forEach(e=>io.observe(e)); })();
+/* billing switch on the Pricing page */
+(function(){ const by=document.getElementById('b-year'), bm=document.getElementById('b-month'); if(!by||!bm) return;
+  const set=y=>{ by.setAttribute('aria-pressed',y); bm.setAttribute('aria-pressed',!y);
+    document.querySelectorAll('.price b[data-y]').forEach(b=>b.textContent='$'+(y?b.dataset.y:b.dataset.m));
+    document.querySelectorAll('.note[data-y]').forEach(n=>n.textContent=y?n.dataset.y:n.dataset.m); };
+  by.addEventListener('click',()=>set(true)); bm.addEventListener('click',()=>set(false)); })();
 faces();
 function resizeAll(){ layoutFits(); initStars(); drawStars(performance.now()); }
 resizeAll();
@@ -428,6 +449,81 @@ def build_chrome(s):
         h = h.replace('<script src="/assets/chrome.js" defer></script>', '<script src="/assets/chrome.js" defer></script>\n<script src="/assets/consent.js" defer></script>')
     open(os.path.join(ROOT, 'partials', 'head.html'), 'w').write(h)
 
+# ---------- the Pricing page, in the same style ----------
+CMP = [
+  ('Capture and records', [
+    ('Gmail, Outlook and calendar capture', 1, 1, 1, 1),
+    ('Search, view and share records', 1, 1, 1, 1),
+    ('People, companies and the activity timeline', 1, 1, 1, 1),
+    ('Record pages, tables and notes', 0, 1, 1, 1),
+    ('Custom fields and saved views', 0, 0, 1, 1)]),
+  ('Otto and AI', [
+    ('Ask Otto, fast answers', 0, 'No limit', 'No limit', 'No limit'),
+    ('Smart answers per seat a month', 0, 0, '150', '300'),
+    ('"Think harder" answers per seat a month', 0, 0, '20', '50'),
+    ('Follow-up email drafts', 0, 1, 1, 1),
+    ('Otto fills fields with proof, plus a Suggestions inbox', 0, 0, 1, 1),
+    ('AI columns', 0, 0, 1, 1),
+    ('Automated skills', 0, '2', '5', '15'),
+    ('Workspace-wide AI instructions', 0, 0, 0, 1)]),
+  ('Meetings', [
+    ('Meeting notes from Meet and Zoom transcripts', 0, 1, 1, 1),
+    ('Meeting prep briefs', 0, 0, 1, 1),
+    ('MEDDICC and BANT filled in from calls', 0, 0, 0, 1)]),
+  ('Pipeline and reporting', [
+    ('Daily digest', 0, 1, 1, 1),
+    ('Pipeline board and forecast', 0, 0, 1, 1),
+    ('Slack alerts and digest', 0, 0, 1, 1),
+    ('Deal review, rep scorecards and call coaching', 0, 0, 0, 1),
+    ('Dashboards from a sentence', 0, 0, 0, 1)]),
+  ('Team and admin', [
+    ('Add Free teammates who view or log data', 0, 0, 1, 1),
+    ('Admin controls', 0, 0, 0, 1)]),
+]
+
+PRICING_FAQ = [
+  ('Do I have to leave my current CRM?', 'No. Connect your inbox and calendar and run Omniscient next to it. When you are ready, we move your companies, people, deals and notes over from HubSpot, Salesforce, Pipedrive or Attio for you.'),
+  ('Who gets a Free seat?', 'Teammates who only view records or log their own email and meetings. Free seats come with a workspace that has at least one Pro or Business seat.'),
+  ('Is the AI really included?', 'Yes. Every paid seat includes Otto. Fast answers have no limit, and Pro and Business add a monthly pool of smart and "Think harder" answers shared across the workspace. When a pool runs out, fast answers keep working until the next month.'),
+  ('Does a bot join my calls?', 'Only if you want one. Omniscient reads the transcripts Google Meet, Zoom and Teams already create. The call recording add-on sends a notetaker when you would rather Omniscient record the call.'),
+  ('Can Omniscient send follow-up emails for me?', 'Otto writes drafts that you send from your own inbox. Workflows can also send follow-ups from your team\'s own templates, from each owner\'s mailbox, and a reply stops the run.'),
+  ('What if Otto gets something wrong?', 'Every value Otto suggests shows the quote it came from, and it waits for you to accept or skip it. Values a person typed are never changed, and you can undo any change.'),
+  ('Do you offer discounts for bigger teams?', 'Yes. Teams of 21 to 50 seats get 10% off, and 51 to 100 seats get 20% off. For more than 100 seats, talk to us.'),
+]
+
+def pricing_page(s):
+    cell = lambda v: (f'<td><span class="tick">{ic("Check","i14")}</span></td>' if v == 1 else '<td><span class="no">–</span></td>' if v == 0 else f'<td><b>{v}</b></td>')
+    rows = ''
+    for g, items in CMP:
+        rows += f'<tr class="grp"><th colspan="5">{g}</th></tr>' + ''.join(f'<tr><th>{n}</th>{cell(a)}{cell(b)}{cell(c)}{cell(d)}</tr>' for n, a, b, c, d in items)
+    table = (f'<div class="cmpt rv"><table><thead><tr><th></th><th>Free<small>$0</small></th><th>Starter<small>$19</small></th><th class="pop">Pro<small>$49</small></th><th>Business<small>$99</small></th></tr></thead><tbody>{rows}</tbody></table></div>')
+    plans = cut(s, '<section class="sec" id="pricing">', '<section class="sec" id="faq">')
+    plans = plans.replace('<div class="mono-row"><span>Pricing</span><span>6.0</span></div>', '<div class="mono-row"><span>Plans</span><span>1.0</span></div>')
+    plans = re.sub(r'<div class="sec-head">.*?</div>\s*</div>', '<div class="sec-head"><div><h2>Pick the plan that fits your team</h2></div><div><p>Teammates who only view or log data are free on Pro and Business.</p></div></div>', plans, count=1, flags=re.S)
+    plans = plans.replace('<div class="plans">', '<div class="plans rv">', 1)
+    body = f'''<main id="top">
+<section class="phero">
+  <canvas id="hsky" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="hpill"><span class="hp-new">Pricing</span><span class="hp-ic">{ic("Dollar")}</span>Per seat, AI included</span>
+    <h1>Pay per seat. Otto is included.</h1>
+    <p class="plede">Every paid seat comes with Otto and the AI behind him, so a busy month never adds a usage bill. Start with a 14-day free trial of Pro.</p>
+    <form class="hero-form" action="{SIGNUP}" novalidate>
+      <label class="sr" for="hero-email">Work email</label>
+      <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Work email" required>
+      <button class="btn btn-black lg" type="submit">Start free trial {ic("ChevronRight","i14")}</button>
+    </form>
+    <ul class="hchecks"><li>{ic("Check","i14")}Try Pro free for 14 days</li><li>{ic("Check","i14")}No card needed</li></ul>
+  </div>
+</section>
+{plans}
+<section class="sec"><div class="wrap"><div class="mono-row"><span>Compare</span><span>2.0</span></div><div class="sec-head"><div><h2>Everything in each plan</h2></div><div><p>Prices are per seat a month, billed yearly. Monthly billing costs 20% more.</p></div></div>{table}</div></section>
+{faq_html(PRICING_FAQ, '3.0')}
+{finale_html(s, ['Start free.', 'Pick a plan', 'when it clicks.'], 'Try Pro free for 14 days. No card needed.')}</main>
+'''
+    out = '<!doctype html>\n<html lang="en-US">\n' + head_html(s, 'Pricing: Omniscient', 'Omniscient pricing per seat, with Otto and the AI included. Free seats for viewers, Starter $19, Pro $49, Business $99, billed yearly. Try Pro free for 14 days.', '/pricing/') + '<body class="sub">\n' + defs_html(s) + '\n' + nav_html() + '\n' + body + footer_html() + '\n<script src="/assets/consent.js" defer></script>\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n'
+    open(os.path.join(ROOT, 'pricing', 'index.html'), 'w').write(out)
+
 if __name__ == '__main__':
     import importlib
     s = home()
@@ -435,6 +531,7 @@ if __name__ == '__main__':
     if s2 != s: open(os.path.join(ROOT, 'index.html'), 'w').write(s2); s = s2
     build_assets(s)
     build_chrome(s)
+    pricing_page(s)
     batches = sys.argv[1:] or ['context', 'otto', 'ecosystem', 'teams']
     for b in batches:
         mod = importlib.import_module('content_' + b)
