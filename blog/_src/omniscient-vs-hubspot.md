@@ -12,19 +12,19 @@ summary: "HubSpot Sales Hub and Omniscient side by side on records, AI answers w
 
 # Omniscient vs HubSpot: Features, Pricing and Setup Compared
 
-If you're comparing Omniscient vs HubSpot, you probably sell to other businesses and want a CRM you can ask questions of. You might be on HubSpot's free CRM today or close to paying for Sales Hub. The two tools differ most on email sending, how the CRM answers questions, how AI is billed and setup.
+If you're comparing Omniscient vs HubSpot, you probably sell to other businesses and want one CRM that does more of the sales work, from the first lead to the closed deal. You might be on HubSpot's free CRM today or close to paying for Sales Hub. The two tools differ most on email sending, how the CRM answers questions, how AI is billed and setup.
 
 Omniscient is our product, so weigh what follows with that in mind. We also wrote Omniscient's HubSpot importer, so we've worked with HubSpot's records up close.
 
 How you find buyers and what you need from the CRM's AI settle most of the choice:
 
 - Pick HubSpot if you want marketing email, landing pages and sales on one database, or your reps book meetings through cold email in volume and calls.
-- Pick Omniscient if you want to ask about any account and get a clear answer, with the quote and date behind each fact, from records that fill in from your inbox and meetings.
+- Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads to closing deals, with Otto doing the busy work and the CRM's AI in the seat price.
 - Run both for the 14 days of our free trial if you're unsure, since Omniscient reads your HubSpot data without changing anything in it.
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that joins every email, call, meeting and note into one context layer that Otto and other agents can query | [Paid from $19 per seat a month, billed yearly](/pricing/) | B2B teams that sell through meetings and want sourced answers from their own records
+Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [Paid from $19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
 HubSpot | hubspot.com | A CRM platform with sales, marketing and service hubs | [Free CRM for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales tools on one database
 ```
 
@@ -40,8 +40,8 @@ Here is how [HubSpot Sales Hub](https://www.hubspot.com/pricing/sales) and [Omni
 | Answers about your accounts | Breeze Assistant on the free CRM, and a data agent for custom questions | Ask Otto, from every email, call and note, with the quote and date behind each fact |
 | Quotes and billing | CPQ and billing in Revenue Hub, sold as a separate product | None |
 | Call notes | Transcripts of recorded calls, from Professional | Notes, action items and transcripts from Meet, Zoom and Teams, from Starter |
-| Lead finding | Prospecting agent, at 100 HubSpot Credits a lead | Otto builds lead lists with work emails, saved on your click |
-| Forecast | From Professional | From Pro |
+| Lead finding | Prospecting agent, at 100 HubSpot Credits a lead | Otto builds lead lists with work emails, finds people at a company and lookalike companies, saved on your click |
+| Forecast | From Professional | Pipeline board and forecast from Pro |
 | Calling | 500 minutes on Starter, 3,000 on Professional | No dialer |
 | Marketing email | Yes, in Marketing Hub | No |
 | How AI is paid for | HubSpot Credits, with a monthly amount on each paid plan | In the seat price |
@@ -63,16 +63,18 @@ If your team runs newsletters and landing pages next to sales, HubSpot keeps all
 
 ## Where Omniscient shines
 
-Omniscient is an agentic CRM for B2B teams. Like other AI CRMs, it syncs leads, email, meetings and call notes. What sets it apart is Omniscience, the brain underneath: one context layer of every email, call, meeting, note and record that agents can query.
+Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, with the CRM's AI in the seat price. Otto, its built-in agent, does the busy work at every step. All of it runs on Omniscience, a shared memory of every customer conversation, and Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
 
 ![Omniscient homepage](tool:tryomniscient.com)
 
-Here's what that looks like day to day:
+Here's what that looks like from the first lead to the closed deal:
 
-- Every seat, free ones included, captures email and meetings from Gmail or Outlook onto the right person, company and deal.
-- Meeting notes and action items come from Google Meet, Zoom and Teams transcripts.
-- Ask Otto, our agent, about any account in plain words, in the app, in Slack or by voice. He answers with the quote and date behind each fact.
-- Otto works through skills, fixed steps for jobs like finding leads or prepping a meeting, so answers stay accurate and consistent.
+- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company or finds companies like your best customers. Website forms bring inbound leads straight in.
+- **Capture everything:** Every seat, free ones included, captures email and meetings from Gmail or Outlook onto the right person, company and deal.
+- **Engage and meet:** Replies waiting on you rise to the top, and Otto drafts follow-ups you send from your own inbox. Each meeting gets a prep brief before it, and notes, action items and suggested deal updates from Google Meet, Zoom and Teams after it.
+- **Manage the pipeline:** A pipeline board and forecast, custom objects and fields, and fields Otto fills with proof for you to accept.
+- **Run the business:** Ask Otto anything in the app, in Slack or by voice, and get an answer with the quote and date behind each fact. Manager mode adds deal reviews, rep scorecards and call coaching.
+- **Automate and extend:** Workflows run follow-ups and Slack alerts, and Claude, ChatGPT or Cursor read the same memory through MCP.
 
 HubSpot covers ground we don't. Omniscient sends no marketing email and has no dialer or mobile app, and we're a newer product, with a shorter public track record than HubSpot's.
 
@@ -92,7 +94,7 @@ We picked these rules because a wrong amount in a forecast does more harm than a
 
 ## Asking questions in HubSpot and Omniscient
 
-HubSpot has Breeze Assistant, the data agent and agents that run on HubSpot Credits. Omniscient puts one agent, Otto, on top of [Omniscience](/product/omniscience/), which holds every email, call, meeting and note on the account. Ask what a buyer said about pricing and each fact in the answer shows its quote and date, so you can check it before it reaches a forecast.
+HubSpot has Breeze Assistant, the data agent and agents that run on HubSpot Credits. Omniscient has one agent, Otto, who works at every step of the sales motion on top of [Omniscience](/product/omniscience/), the shared memory of every email, call, meeting and note on the account. Ask what a buyer said about pricing and each fact in the answer shows its quote and date, so you can check it before it reaches a forecast.
 
 Otto answers through [skills](/product/skills/), each a set of fixed steps for one job, written in the Agent Skills format. You pick one with / in Ask, or Otto picks one from its description. These come ready:
 
@@ -191,11 +193,11 @@ Plan around a few details before you run it:
 - Owners are matched to teammates by email, so invite your team with the addresses they use in HubSpot.
 - Custom properties, workflows and sequences stay in HubSpot, and running the import again updates what's there without making doubles.
 
-Our roundup of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) walks through a full switch, and the [Omniscience page](/product/omniscience/) shows how records fill in afterwards.
+Our roundup of [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) walks through a full switch, and the [Omniscience page](/product/omniscience/) shows the shared memory your records feed once they arrive.
 
 ## Which one should you choose
 
-If you're still torn, ask how much of your pipeline comes from marketing email and what you need from the CRM's AI.
+If you're still torn, ask how much of your pipeline comes from marketing email and how much of the sales motion you want one CRM and its agent to run.
 
 Choose HubSpot if:
 
@@ -206,9 +208,9 @@ Choose HubSpot if:
 
 Choose Omniscient if:
 
-- You want to ask about any account and get an answer with the quote and date behind each fact.
-- You want the team's AI work, from lead lists to pipeline reviews, to follow the same skills every time.
-- You want records that fill in from calls and email and stay clean, with every change easy to undo.
+- You want one CRM for the whole sales motion, from finding leads to closing deals, with Otto doing the busy work at each step.
+- Your deals move through emails and meetings, and you want prep briefs, call recaps, follow-up drafts and pipeline reviews in the same place as your records.
+- You want every step to draw on one shared memory and follow the same skills, so answers stay accurate and consistent.
 - You want AI in the seat price, with one number to plan around.
 
 ```cta
@@ -219,7 +221,7 @@ Import your HubSpot data and run Omniscient next to it, free for 14 days.
 Q: Is Omniscient cheaper than HubSpot?
 A: Omniscient's paid seats start at $19 a month billed yearly, and HubSpot Starter costs $7 a seat for new customers and $20 at list price. For a forecast, Omniscient Pro is $49 a seat billed yearly, and HubSpot Professional starts at $90 a seat plus a $1,500 onboarding fee paid once.
 Q: How is Ask Otto different from HubSpot's AI?
-A: HubSpot's agents run on HubSpot Credits. Ask Otto comes with each paid seat, draws on every email, call, meeting and note in Omniscience, and shows the quote and date behind each fact. Skills keep his answers in the same shape every time.
+A: HubSpot's agents run on HubSpot Credits. Otto comes with each paid seat and works at every step, from lead lists to meeting recaps and pipeline reviews, on every email, call, meeting and note in Omniscience. His answers show the quote and date behind each fact, and skills keep them in the same shape every time.
 Q: Can I use Omniscient and HubSpot together?
 A: Yes, while you compare them, since Omniscient reads your HubSpot data and never writes back to it. Plan to pick one as your main CRM when the trial ends.
 Q: Can I move my data from HubSpot to Omniscient?

@@ -22,7 +22,7 @@ Prices are from each vendor's site in November 2026. Where we compare a tool wit
 
 The short version, by how your team sells:
 
-- Pick Omniscient if deals start in your inbox and meetings, and you want to ask your CRM anything about an account and get the source behind each answer.
+- Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads and routing demo requests to closing deals, with Otto doing the busy work.
 - Pick HubSpot if marketing runs inbound and sales works from the same records.
 - Pick Attio if you want product usage and custom objects in your CRM.
 - Pick Salesforce if you sell to large companies and have an admin.
@@ -38,7 +38,7 @@ The short version, by how your team sells:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM whose context layer joins every email, call, meeting and note for Otto and other agents to query | [$19 per seat a month, billed yearly](/pricing/) | SaaS teams whose deals run through email and meetings
+Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
 HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams where inbound marketing feeds sales
 Attio | attio.com | A flexible CRM with AI agents and custom objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want product data in a data model they design
 Salesforce | salesforce.com | A CRM platform from a free suite to enterprise editions | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | SaaS companies selling to enterprises, with an admin
@@ -81,7 +81,7 @@ Who starts most of your deals?
 
 ## What we learned building a CRM for SaaS sales
 
-Omniscient's CRM builds its records from the email and calendar you connect, all joined in [Omniscience](/product/omniscience/), its context layer. Otto, our agent, fills in fields from what people say. Three parts matter most to SaaS teams, and each one came with a tradeoff.
+Omniscient's CRM builds its records from the email and calendar you connect, all joined in [Omniscience](/product/omniscience/), its shared memory. Otto, our agent, fills in fields from what people say. Three parts matter most to SaaS teams, and each one came with a tradeoff.
 
 ### Every demo request gets an owner
 
@@ -129,9 +129,9 @@ You don't need a warehouse on day one. A nightly script that sends each account'
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM for B2B teams, and it fits SaaS sales well. It syncs your demo requests, email, meetings and call notes like other AI CRMs do. What sets it apart is Omniscience, the brain underneath: it joins every email, call, meeting, note and record into one context layer that AI agents can query. Ask it anything about an account or your pipeline and you get a straight answer, with the source behind it.
+Omniscient is an agentic CRM that runs a SaaS team's whole sales motion, from finding the next customer and routing demo requests to closing the deal and keeping the account. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
 
-Otto, the agent built into Omniscient, answers through skills. A skill is a fixed set of steps for one job, like reviewing the pipeline or prepping a meeting, so the same question gets the same kind of answer every time, built from your own records.
+All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-b2b-saas&start=crm
@@ -139,29 +139,27 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 #### Key features
 
-- **Omniscience context layer:** Every email, meeting, call and note lands on the right company, person and deal, so your team and your agents read from one shared memory.
-- **Ask anything:** Ask about any account, deal or person in plain words. Otto answers in a line or two and shows the quote and date each fact came from.
-- **Skills for accurate answers:** Ready skills cover finding leads, researching an account, prepping a meeting, wrapping up a call and reviewing the pipeline. Your team can write its own in plain words.
-- **Demo requests with an owner:** Website forms and webhooks open an opportunity for each new lead and route it to an owner, as shown above.
-- **Call intelligence:** Notes, action items and transcripts come from Zoom, Google Meet and Teams, and Otto suggests stage, amount and next step changes with the quote behind each.
-- **Lead finding by asking:** Describe your ideal buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers.
-- **Clean data on its own:** Duplicates merge with their full history, missing emails and company details fill in, and job changes show up. You can undo any of it.
-- **Open to other agents:** An MCP server lets Claude, ChatGPT or Cursor query the same context layer, and a REST API with webhooks covers everything else, including the product data you send in.
+- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
+- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
+- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
+- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
+- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
+- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
+- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
 
 #### Pros
 
-- **One place for every fact:** Because everything sits in one context layer, an answer about a customer draws on every email, call and note on the account.
-- **Answers you can check:** Each answer and each suggested update shows the sentence it came from, so a wrong number gets caught before it reaches a forecast.
+- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
+- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
 - **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
 - **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
-- **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat, which suits customer success and finance.
+- **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
 
 #### Cons
 
-- **No phone dialer:** Omniscient doesn't make calls, so teams that book demos by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, but HubSpot fits better when bulk marketing email is your main channel.
-- **Product usage through the API:** Usage data comes in through the API, so product led teams will get more from Attio or HubSpot today.
-- **The best parts start on Pro:** Free viewer seats, custom fields, prep briefs and the pipeline forecast come with the $49 Pro seat.
+- **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
+- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
+- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
 - **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
 
 #### Price and plans
@@ -173,7 +171,7 @@ You can try Pro free for 14 days with no credit card. Paid seats, billed yearly 
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
 
-We move your companies, contacts, deals and notes over from HubSpot, Salesforce, Pipedrive or Attio. The [Omniscience page](/product/omniscience/) shows how the context layer works, and the [Skills page](/product/skills/) shows how answers stay consistent.
+The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
 
 ### 2. HubSpot
 
@@ -359,12 +357,12 @@ A two week trial is enough if you spend it on one real deal. This is the order w
 You can try every CRM here before you pay, so run these checks first. For smaller teams, our guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers startup discounts. Our list of the [best AI CRMs](/blog/best-ai-crm/) goes deeper on AI that fills in records.
 
 ```cta
-Connect your inbox, add your demo form and watch Omniscient build your pipeline from the conversations you already have.
+Add your demo form, connect your inbox and let Otto do the busy work from the first lead to the closed deal.
 ```
 
 ```faq
 Q: What is the best CRM for B2B SaaS in 2026?
-A: For SaaS teams whose deals start in email and meetings, we'd start with Omniscient, since Otto answers any question about an account from every email, call, meeting and note on it. HubSpot fits teams where marketing runs inbound, Attio fits teams that want product data in the CRM, Salesforce fits enterprise sales with an admin, and Twenty fits teams whose engineers want to own the CRM.
+A: For SaaS teams that want one CRM for the whole sales motion, from finding leads and routing demo requests to closing deals and keeping accounts, we'd start with Omniscient, with Otto doing the busy work at every step. HubSpot fits teams where marketing runs inbound, Attio fits teams that want product data in the CRM, Salesforce fits enterprise sales with an admin, and Twenty fits teams whose engineers want to own the CRM.
 Q: Does a B2B SaaS company need a special CRM?
 A: Any solid CRM can work, as long as it handles several contacts per deal, renewal dates and what each account pays, product usage on the account and the channel behind each demo request.
 Q: Which CRM tracks MRR and ARR?

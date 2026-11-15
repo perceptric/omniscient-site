@@ -5,11 +5,11 @@
 <text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">By stage</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Your CRM at each stage <tspan fill="#171717">of a startup</tspan></text>
 
-<rect x="32.5" y="124.5" width="199" height="99" fill="#0c8c5e" stroke="#ebebeb"/>
+<rect x="32.5" y="124.5" width="199" height="99" fill="#0a0a0a" stroke="#ebebeb"/>
 <rect x="231.5" y="124.5" width="456" height="99" fill="#ffffff" stroke="#ebebeb"/>
-<text x="48" y="152" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">01</text>
-<text x="48" y="180" font-size="21" font-weight="500" fill="#171717">Founder</text>
-<text x="48" y="206" font-size="21" font-weight="500" fill="#171717">selling alone</text>
+<text x="48" y="152" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#ffffff">01</text>
+<text x="48" y="180" font-size="21" font-weight="500" fill="#ffffff">Founder</text>
+<text x="48" y="206" font-size="21" font-weight="500" fill="#ffffff">selling alone</text>
 <text x="248" y="164" font-size="21" font-weight="500" fill="#171717">Capture without typing</text>
 <text x="248" y="196" font-size="19" fill="#737373">Omniscient, folk, Streak, HubSpot free CRM</text>
 

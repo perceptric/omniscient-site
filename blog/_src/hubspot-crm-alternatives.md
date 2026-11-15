@@ -24,7 +24,7 @@ Our short answer, by what you need:
 
 | What you want next | Where we'd look first |
 |---|---|
-| Answers about every account, with the quote behind each fact | Omniscient |
+| One CRM for the whole sales motion, from the first lead to the closed deal | Omniscient |
 | A clear pipeline you plan your week around | Pipedrive |
 | Room for more users on a free plan | Zoho CRM or EngageBay |
 | Your own objects and fields | Attio |
@@ -39,7 +39,7 @@ Our short answer, by what you need:
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM with one context layer for every email, call and note, and an agent that answers through skills | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that want answers they can check
+Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that want one CRM for the whole sales motion
 Pipedrive | pipedrive.com | A sales pipeline CRM with meeting intelligence on every plan | check | Teams that plan their week by pipeline stage
 Zoho CRM | zoho.com | A sales CRM with a free edition and AI agents from Zia | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Teams that want a free plan and help moving off HubSpot
 Attio | attio.com | A flexible CRM that connects to your inbox and calendar | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -83,9 +83,9 @@ These matter most to a small team adding its first sellers, or one that wants se
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM for small B2B teams. It syncs your leads, email, meetings and call notes like other AI CRMs do. What sets it apart is Omniscience, the brain underneath: it joins every email, call, meeting, note and record into one context layer that AI agents can query. Ask anything about a customer or your pipeline and you get a straight answer, with the source behind it, without building a report first.
+Omniscient is an agentic CRM that runs a small B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, in one app at one seat price. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
 
-Otto, the agent built into Omniscient, answers through skills. A skill is a fixed set of steps for one job, like reviewing the pipeline or prepping a meeting, so the same question gets the same kind of answer every time, built from your own records.
+All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=hubspot-crm-alternatives&start=crm
@@ -93,18 +93,18 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 #### Key features
 
-- **Omniscience context layer:** Every email, meeting, call and note lands on the right company, person and deal, so your team and your agents read from one shared memory.
-- **Ask anything:** Ask about any account, deal or person in plain words. Otto answers in a line or two and shows the quote and date each fact came from.
-- **Skills for accurate answers:** Ready skills cover finding leads, researching an account, prepping a meeting, wrapping up a call and reviewing the pipeline. Your team can write its own in plain words.
-- **Call intelligence:** Notes, action items and transcripts come from Zoom, Google Meet and Teams, and Otto suggests stage, amount and next step changes with the quote behind each.
-- **Lead finding by asking:** Describe your ideal buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers.
-- **Clean data on its own:** Duplicates merge with their full history, missing emails and company details fill in, and job changes show up. You can undo any of it.
-- **Open to other agents:** An MCP server lets Claude, ChatGPT or Cursor query the same context layer, and a REST API with webhooks covers everything else.
+- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
+- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
+- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
+- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
+- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
+- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
+- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
 
 #### Pros
 
-- **One place for every fact:** Because everything sits in one context layer, an answer about a customer draws on every email, call and note on the account.
-- **Answers you can check:** Each answer and each suggested update shows the sentence it came from, so a wrong number gets caught before it reaches a forecast.
+- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
+- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
 - **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
 - **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
 - **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
@@ -112,8 +112,8 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 #### Cons
 
 - **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, but HubSpot fits better when bulk marketing email is your main channel.
-- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat.
+- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
+- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
 - **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
 
 #### Price and plans
@@ -125,7 +125,9 @@ You can try Pro free for 14 days with no credit card. Paid seats, billed yearly 
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
 
-The [Omniscience page](/product/omniscience/) shows how the context layer works, and the [Skills page](/product/skills/) shows how answers stay consistent. Moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
+Moving your HubSpot data is covered [further down](#how-to-move-from-hubspot-to-another-crm).
+
+The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
 
 ### 2. Pipedrive
 
@@ -328,12 +330,12 @@ We'd run the new CRM next to HubSpot for a couple of weeks and switch in this or
 If you'd rather not run it yourself, we migrate your companies, contacts, deals and notes from HubSpot for you. Our [Omniscient vs HubSpot](/blog/omniscient-vs-hubspot/) comparison goes deeper on the two, and our guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers a few more options.
 
 ```cta
-Import your HubSpot data, run Omniscient next to it for 14 days and ask Otto anything about your accounts.
+Import your HubSpot data, run Omniscient next to it for 14 days and let Otto do the busy work, from lead lists to meeting prep and deal updates.
 ```
 
 ```faq
 Q: What is the best HubSpot CRM alternative for a small team?
-A: Omniscient is our pick for small B2B teams that want one context layer for every email, call and note, with answers they can check. Pipedrive fits teams that want a clear pipeline, EngageBay and Nutshell fit teams that still want marketing and sales in one app, Close fits teams that sell by phone, and Less Annoying CRM fits teams that want something simpler.
+A: Omniscient is our pick for small B2B teams that want one agentic CRM for the whole sales motion, from finding leads to closing deals, with Otto doing the busy work. Pipedrive fits teams that want a clear pipeline, EngageBay and Nutshell fit teams that still want marketing and sales in one app, Close fits teams that sell by phone, and Less Annoying CRM fits teams that want something simpler.
 Q: Is there a free alternative to HubSpot CRM?
 A: Yes. Zoho CRM's Free edition covers 3 users, and EngageBay's free plan covers up to 15 users with 250 contacts. Attio's Free plan also covers up to 3 seats.
 Q: Which HubSpot alternatives have email sequences for less than Sales Hub Professional?

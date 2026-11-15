@@ -27,12 +27,12 @@
 <text x="48" y="422" font-size="19" fill="#171717">Quotes behind facts</text>
 
 <g stroke="#8a8a85">
-  <rect x="322.5" y="214.5" width="19" height="19" fill="#0c8c5e" rx="5"/>
-  <rect x="465.5" y="214.5" width="19" height="19" fill="#0c8c5e" rx="5"/>
-  <rect x="322.5" y="278.5" width="19" height="19" fill="#0c8c5e" rx="5"/>
-  <rect x="322.5" y="342.5" width="19" height="19" fill="#0c8c5e" rx="5"/>
-  <rect x="465.5" y="342.5" width="19" height="19" fill="#0c8c5e" rx="5"/>
-  <rect x="322.5" y="406.5" width="19" height="19" fill="#0c8c5e" rx="5"/>
+  <rect x="322.5" y="214.5" width="19" height="19" fill="#0a0a0a" rx="5"/>
+  <rect x="465.5" y="214.5" width="19" height="19" fill="#0a0a0a" rx="5"/>
+  <rect x="322.5" y="278.5" width="19" height="19" fill="#0a0a0a" rx="5"/>
+  <rect x="322.5" y="342.5" width="19" height="19" fill="#0a0a0a" rx="5"/>
+  <rect x="465.5" y="342.5" width="19" height="19" fill="#0a0a0a" rx="5"/>
+  <rect x="322.5" y="406.5" width="19" height="19" fill="#0a0a0a" rx="5"/>
 </g>
 <g fill="none" stroke="#8a8a85" stroke-width="2">
   <path d="M327 224.5l4 4 7-8"/>

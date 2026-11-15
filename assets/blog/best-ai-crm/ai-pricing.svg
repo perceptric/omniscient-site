@@ -4,10 +4,10 @@
 <rect width="720" height="640" fill="#ffffff"/>
 <text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">AI pricing</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Five ways to pay for AI <tspan fill="#171717">in a CRM</tspan></text>
-<rect x="32.5" y="124.5" width="199" height="83" fill="#0c8c5e" stroke="#ebebeb"/>
+<rect x="32.5" y="124.5" width="199" height="83" fill="#0a0a0a" stroke="#ebebeb"/>
 <rect x="232.5" y="124.5" width="455" height="83" fill="#ffffff" stroke="#ebebeb"/>
-<text x="48" y="160" font-size="21" font-weight="500" fill="#171717">Included</text>
-<text x="48" y="186" font-size="21" font-weight="500" fill="#171717">in the seat</text>
+<text x="48" y="160" font-size="21" font-weight="500" fill="#ffffff">Included</text>
+<text x="48" y="186" font-size="21" font-weight="500" fill="#ffffff">in the seat</text>
 <text x="248" y="160" font-size="21" font-weight="500" fill="#171717">Omniscient</text>
 <text x="248" y="188" font-size="19" fill="#737373">Paid seats from $19 a month, billed yearly</text>
 <rect x="32.5" y="220.5" width="199" height="83" fill="#f5f5f5" stroke="#ebebeb"/>

@@ -44,7 +44,7 @@
 <text x="250" y="628" font-size="17" fill="#737373">Linked to the same records</text>
 
 <line x1="24" y1="656" x2="536" y2="656" stroke="#ebebeb"/>
-<rect x="24" y="676" width="20" height="20" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<rect x="24" y="676" width="20" height="20" fill="#0a0a0a" stroke="#ebebeb" rx="6"/>
 <text x="56" y="693" font-size="18" fill="#171717">People without an email are skipped.</text>
 <text x="56" y="721" font-size="18" fill="#171717">Activities, leads, products and custom</text>
 <text x="56" y="745" font-size="18" fill="#171717">fields stay behind, so export them first.</text>

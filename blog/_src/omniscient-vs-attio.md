@@ -12,19 +12,19 @@ summary: "Attio and Omniscient side by side on how records stay current, AI answ
 
 # Omniscient vs Attio: Records, AI Answers and Pricing Compared
 
-If you're weighing Omniscient vs Attio, you probably want a CRM that stays current without extra typing. Both read your email and calendar. They differ most in how you shape the CRM and what you can ask it.
+If you're weighing Omniscient vs Attio, you probably want a CRM that does more of the sales work for you. Both read your email and calendar. They differ most in how you shape the CRM and how much of the sales motion it runs for you.
 
 We build Omniscient, so read this knowing which side we sit on. We also built our own Attio importer, so we've worked with Attio's records and objects up close.
 
 Our short answer depends mostly on how your team works:
 
 - Pick Attio if your team works mostly in email and wants to shape the CRM around custom objects of its own.
-- Pick Omniscient if you want to ask the CRM anything about an account and get a clear answer, with the quote and date behind each fact.
+- Pick Omniscient if you want one agentic CRM that runs your whole sales motion from day one, from finding leads to closing deals, with Otto doing the busy work.
 - Run both for a few weeks if you're unsure, since Omniscient works beside your current CRM.
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that joins every email, call, meeting and note into one context layer that Otto and other agents can query | [Paid from $19 per seat a month, billed yearly](/pricing/) | B2B teams that want answers from their own records, with the source behind each one
+Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [Paid from $19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
 Attio | attio.com | A flexible CRM with email sequences, call recording and AI on credits | [Paid from $35 per user a month, billed yearly](https://attio.com/pricing) | Teams that live in email and want their own data model
 ```
 
@@ -45,17 +45,18 @@ Attio is where we'd point a team whose process doesn't fit a standard CRM, like 
 
 ## Where Omniscient shines
 
-Omniscient is an agentic CRM for B2B teams. Like other AI CRMs, it syncs leads, email, meetings and call notes. What sets it apart is Omniscience, the brain underneath: one context layer of every email, call, meeting, note and record that agents can query.
+Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account. Otto, the agent built in, does the busy work at every step, ready to run on day one. All of it runs on Omniscience, a shared memory of every customer conversation, and Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
 
 ![Omniscient homepage](tool:tryomniscient.com)
 
-Here's what that looks like day to day:
+Here's what that looks like from the first lead to the closed deal:
 
-- Connect Gmail or Outlook and your calendar, and each email, meeting and call lands on the right person, company and deal.
-- Ask Otto, the agent built in, about any account in plain words. He answers in a line or two and shows the quote and date behind each fact.
-- Otto answers through skills, fixed steps for one job, so the same question gets the same kind of answer every time.
-- Describe your ideal buyer and Otto builds a lead list with work emails. Nothing saves until you click.
-- Duplicates merge with their full history, and missing emails and company facts fill in. You can undo any of it.
+- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company or finds companies like your best customers. Leads save only when you click.
+- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right person, company and deal. Duplicates merge with their full history, and you can undo any of it.
+- **Engage and meet:** Replies waiting on you rise to the top, and Otto drafts follow-ups you send from your own inbox. Each meeting gets a prep brief before it, and notes, action items and suggested deal updates after it.
+- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
+- **Run the business:** Ask anything and get an answer with the quote and date behind each fact. Manager mode adds deal reviews, rep scorecards and call coaching.
+- **Automate and extend:** Workflows run follow-ups and Slack alerts, and Claude, ChatGPT or Cursor read the same memory through MCP.
 
 Attio covers a few things we don't. Omniscient has no bulk sends or mobile app, and it's a newer product with a shorter public track record.
 
@@ -67,11 +68,12 @@ Here is how the two compare. [Attio's plans](https://attio.com/pricing) and [hel
 |---|---|---|
 | Email and calendar sync | Every plan, 1 account per user on Free and Plus, 2 on Pro | Every seat, free ones included |
 | Sends email | Yes, with email sequences on Pro and Enterprise | Otto drafts and you send from your own inbox, and workflows send emails from your team's templates |
-| What the CRM reads for you | Communication intelligence, such as first and last interaction and connection strength | Omniscience, one context layer of every email, call, meeting and note on the right record |
+| What the CRM reads for you | Communication intelligence, such as first and last interaction and connection strength | Omniscience, one shared memory of every email, call, meeting and note on the right record |
 | Call notes | Call Intelligence records calls, from Pro | Notes, action items and transcripts from Meet, Zoom and Teams, with recording at $25 a seat |
 | AI on emails and calls | Email summaries and labels from Plus, call summaries on Pro | Meeting notes from Starter, and suggested stage, amount and next step with the quote behind each |
 | Custom objects | From Pro, with up to 12 objects in all | Yes, custom objects and fields in the data model |
-| Reports | Up to 3, 15 or 100 reports on Free, Plus and Pro | Forecast on Pro, dashboards from a sentence on Business |
+| Reports | Up to 3, 15 or 100 reports on Free, Plus and Pro | Pipeline board and forecast on Pro, dashboards from a sentence and manager mode on Business |
+| Workflows | Yes, running on workspace credits | Triggers like a stage change or booked meeting, then emails from your team's templates, waits, branches and Slack alerts |
 | AI answers | Ask Attio, on monthly credits | Ask Otto, in the seat price, with the quote and date behind each fact |
 | Agent access | API, webhooks, an MCP server and an App SDK on every plan | MCP server for Claude, ChatGPT and Cursor, and a REST API with webhooks |
 | Mobile apps | iOS and Android | None |
@@ -90,7 +92,7 @@ We made suggestions wait for you on purpose. One wrong amount that a manager tru
 
 ## Asking questions in Attio and Omniscient
 
-This is where the two differ most. Attio has Ask Attio, which runs on credits, and its records take the shape of the objects you build. Omniscient is built around the question itself.
+This is where the two differ most. Attio has Ask Attio, which runs on credits, and its records take the shape of the objects you build. In Omniscient, Ask Otto reads the same shared memory that every other step of the sales motion runs on.
 
 [Omniscience](/product/omniscience/) puts every email, call, meeting and note in one place that Otto can read. So when you ask what Pallet Cloud said about pricing, the answer draws on the whole account, and each fact shows its quote and the date it was said.
 
@@ -182,7 +184,7 @@ The [data model page](/product/data-model/) shows how custom objects and fields 
 
 ## Which one should you choose
 
-The choice mostly comes down to two questions: what you need to ask the CRM, and how far you need to bend it.
+The choice mostly comes down to two questions: how much of the sales motion you want the CRM to run for you, and how far you need to bend it.
 
 Choose Attio if:
 
@@ -192,9 +194,9 @@ Choose Attio if:
 
 Choose Omniscient if:
 
-- You want to ask about any account and get an answer with the quote and date behind each fact.
-- You want the team's AI work, from lead lists to pipeline reviews, to follow the same skills every time.
-- You want records that fill in from calls and email and stay clean without a weekly cleanup.
+- You want one CRM for the whole sales motion, from finding leads to closing deals.
+- You want Otto to do the busy work at each step, from lead lists and meeting prep to call recaps, follow-up drafts and pipeline reviews.
+- You want every step to draw on one shared memory and follow the same skills, so answers stay accurate and consistent.
 - You want the CRM's AI in the seat price, with one number to plan around.
 
 If you'd rather keep looking, our roundup of [Attio alternatives](/blog/attio-alternatives/) compares 13 more CRMs.
@@ -205,7 +207,7 @@ Try Omniscient free for 14 days, next to the CRM you use today.
 
 ```faq
 Q: How is Ask Otto different from Ask Attio?
-A: Ask Attio runs on monthly seat credits. Ask Otto comes with each paid seat, draws on every email, call, meeting and note in Omniscience, and shows the quote and date behind each fact so you can check it.
+A: Ask Attio runs on monthly seat credits. Ask Otto comes with each paid seat and draws on Omniscience, the same memory of every email, call, meeting and note that Otto uses at every step, from lead lists to the forecast. Each answer shows the quote and date behind each fact so you can check it.
 Q: Is Omniscient cheaper than Attio?
 A: Paid seats start at $19 a month on Omniscient and $35 on Attio, billed yearly. Compare the plan you'd really use: Attio's sequences and call recording start on Pro at $79, and Omniscient's forecast starts on Pro at $49.
 Q: Can I move my data from Attio to Omniscient?

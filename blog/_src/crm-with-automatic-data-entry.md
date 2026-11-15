@@ -22,7 +22,7 @@ Prices are from each vendor's site in November 2026. Where we compare a tool wit
 
 ```tools
 Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that fills itself in from email, calendar and calls, into one context layer Otto can answer from | [$19 per seat a month, billed yearly](/pricing/) | Small B2B teams that want to see where each value came from
+Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
 HubSpot | hubspot.com | A CRM platform that logs email from connected inboxes | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that run marketing and sales together
 Salesforce | salesforce.com | A CRM whose Starter Suite syncs emails, events and contacts | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | Teams with an admin and a custom sales process
 Attio | attio.com | A flexible CRM with email sync and enrichment on every plan | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
@@ -39,7 +39,7 @@ Affinity | affinity.co | A CRM for private capital firms that captures email and
 
 The short version, by what you want filled in for you:
 
-- Pick Omniscient if you want the quote behind each value, with call notes and answers drawn from one context layer.
+- Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads to closing deals, with Otto doing the data entry and the rest of the busy work.
 - Pick Salesflare if you want contacts filled in from your inbox and email signatures.
 - Pick Coffee if your team is staying on Salesforce or HubSpot.
 - Pick Clarify if you want call notes on a free plan with unlimited seats.
@@ -63,7 +63,7 @@ It comes in six kinds, and each CRM is strongest at some of them:
 
 Contact capture and activity logging are common now, and every CRM in this guide offers some form of them. The differences sit in the last four rows and in the rules each CRM follows when an email or call is unclear.
 
-These are the questions we'd put to any vendor that promises a CRM that fills itself in:
+These are the questions we'd put to any vendor that promises automatic data entry:
 
 - Who becomes a contact when you connect a busy inbox?
 - Which values does it write on its own, and which wait for you?
@@ -72,7 +72,7 @@ These are the questions we'd put to any vendor that promises a CRM that fills it
 
 ## What we learned building automatic data entry
 
-Omniscient fills itself in from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms. Everything lands in [Omniscience](/product/omniscience/), the context layer that puts each email, call, meeting and note on the right company, person and deal, and much of our work went into rules for what to leave out.
+Omniscient fills in its records from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms. Everything lands in [Omniscience](/product/omniscience/), the shared memory that puts each email, call, meeting and note on the right company, person and deal, and much of our work went into rules for what to leave out.
 
 ### Not every email should become a contact
 
@@ -136,9 +136,9 @@ Otto answers through skills, fixed steps for one job like prepping a meeting or 
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM for B2B teams. It fills itself in from your email, meetings and calls like other AI CRMs do, and each fact it pulls from a conversation keeps its quote. What sets it apart is Omniscience, the brain underneath: it joins every email, call, meeting, note and record into one context layer that AI agents can query. Ask it anything about a customer or your pipeline and you get a straight answer, with the source behind it.
+Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, and it keeps its own records so your team spends less time typing. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
 
-Otto, the agent built into Omniscient, answers through skills. A skill is a fixed set of steps for one job, like reviewing the pipeline or prepping a meeting, so the same question gets the same kind of answer every time, built from your own records.
+All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=crm-with-automatic-data-entry&start=crm
@@ -146,18 +146,18 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 #### Key features
 
-- **Omniscience context layer:** Every email, meeting, call and note lands on the right company, person and deal, so your team and your agents read from one shared memory.
-- **Call intelligence:** Notes, action items and transcripts come from Zoom, Google Meet and Teams, and Otto suggests stage, amount and next step changes with the quote behind each.
-- **Ask anything:** Ask about any account, deal or person in plain words. Otto answers in a line or two and shows the quote and date each fact came from.
-- **Skills for accurate answers:** Ready skills cover finding leads, researching an account, prepping a meeting, wrapping up a call and reviewing the pipeline. Your team can write its own in plain words.
-- **Lead finding by asking:** Describe your ideal buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers.
-- **Clean data on its own:** Duplicates merge with their full history, missing emails and company details fill in, and job changes show up. You can undo any of it.
-- **Open to other agents:** An MCP server lets Claude, ChatGPT or Cursor query the same context layer, and a REST API with webhooks covers everything else.
+- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
+- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
+- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
+- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
+- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
+- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
+- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
 
 #### Pros
 
-- **One place for every fact:** Because everything sits in one context layer, an answer about a customer draws on every email, call and note on the account.
-- **Answers you can check:** Each answer and each suggested update shows the sentence it came from, so a wrong number gets caught before it reaches a forecast.
+- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
+- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
 - **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
 - **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
 - **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
@@ -165,8 +165,8 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 #### Cons
 
 - **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, but HubSpot fits better when bulk marketing email is your main channel.
-- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat.
+- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
+- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
 - **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
 
 #### Price and plans
@@ -178,7 +178,7 @@ You can try Pro free for 14 days with no credit card. Paid seats, billed yearly 
 - **Pro:** $49 per seat a month.
 - **Business:** $99 per seat a month.
 
-The [Omniscience page](/product/omniscience/) shows how the context layer works, and the [Skills page](/product/skills/) shows how answers stay consistent.
+The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
 
 ### 2. HubSpot
 
@@ -355,14 +355,14 @@ Your own inbox will teach you more in a week than any demo, so these are the che
 11 of the 13 CRMs here have a free plan or a free trial, so you can run these checks before you pay. Day AI starts with one paid agent, and Affinity starts with a demo. For more picks, see our guides to the [best AI CRM](/blog/best-ai-crm/) and the [best CRM for founders](/blog/best-crm-for-founders/).
 
 ```cta
-Connect Gmail or Outlook and watch Omniscient fill in your contacts, meetings and deals, with the source behind every value.
+Run your whole sales motion in Omniscient, from the first lead to the closed deal, with Otto doing the data entry and the rest of the busy work.
 ```
 
 ```faq
 Q: What is a CRM with automatic data entry?
 A: It's a CRM that writes its own records from your email, calendar, calls and web forms, so contacts, meetings and deal details appear without anyone typing them.
 Q: Which CRM has the best automatic data entry?
-A: For small B2B teams that want to see where each value came from and ask about any deal, we'd start with Omniscient. Salesflare suits teams that want contacts filled in from email signatures, Pipedrive suits teams that want to approve call updates in one click, and Coffee suits teams staying on Salesforce or HubSpot.
+A: For B2B teams that want one CRM for the whole sales motion, with Otto filling in records and doing the rest of the busy work, we'd start with Omniscient. Salesflare suits teams that want contacts filled in from email signatures, Pipedrive suits teams that want to approve call updates in one click, and Coffee suits teams staying on Salesforce or HubSpot.
 Q: Can a CRM log emails automatically?
 A: Yes, every CRM in this guide syncs or logs email once you connect your inbox, though the rules differ. HubSpot, for example, logs email with your existing contacts by default.
 Q: Do I need a meeting bot for automatic call notes?

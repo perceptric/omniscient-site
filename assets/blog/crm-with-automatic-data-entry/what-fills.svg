@@ -5,8 +5,8 @@
 <text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">What Otto may write</text>
 <text x="32" y="88" font-size="27" font-weight="500" fill="#171717">Some values fill in, <tspan fill="#171717">the rest wait for you</tspan></text>
 <rect x="32.5" y="124.5" width="655" height="274" fill="#ffffff" stroke="#ebebeb"/>
-<rect x="32.5" y="124.5" width="655" height="44" fill="#0c8c5e" stroke="#ebebeb"/>
-<text x="48" y="153" font-size="20" font-weight="500" fill="#171717">Fills on its own</text>
+<rect x="32.5" y="124.5" width="655" height="44" fill="#0a0a0a" stroke="#ebebeb"/>
+<text x="48" y="153" font-size="20" font-weight="500" fill="#ffffff">Fills on its own</text>
 <rect x="50" y="188" width="7" height="7" fill="#333333" rx="2"/>
 <text x="70" y="197" font-size="19" fill="#171717">New people and companies, by your sync settings</text>
 <rect x="50" y="224" width="7" height="7" fill="#333333" rx="2"/>

@@ -26,7 +26,7 @@
 <text x="40" y="428" font-size="17" fill="#737373">Then sequences and the forecast are on</text>
 <rect x="24" y="478" width="512" height="344" fill="#ffffff" stroke="#ebebeb"/>
 <rect x="24" y="478" width="512" height="44" fill="#f5f5f5" stroke="#ebebeb"/>
-<rect x="40" y="493" width="14" height="14" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="40" y="493" width="14" height="14" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="62" y="506" font-size="17" fill="#404040">Omniscient Pro</text>
 <rect x="40" y="538" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
 <text x="54" y="558" text-anchor="middle" font-size="15" fill="#171717">1</text>

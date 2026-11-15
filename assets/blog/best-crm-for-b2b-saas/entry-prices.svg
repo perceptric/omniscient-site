@@ -2,7 +2,7 @@
 <title id="t">First paid plan per seat a month for 11 B2B SaaS CRMs</title>
 <desc id="d">The first paid plan for a team, per seat a month, as of November 2026. Freshsales Growth $9, billed yearly. Twenty Pro $9, billed yearly. monday CRM Basic $12, billed yearly, for 3 seats or more. Zoho CRM Standard $14, billed yearly. Omniscient Starter $19, billed yearly. HubSpot Sales Hub Starter $20, list price. Day AI Turbo $24, per agent, billed yearly. Salesforce Starter Suite $25, monthly or yearly. Salesflare Growth $29, billed yearly. Attio Plus $35, billed yearly. Close Essentials $35, billed yearly. HubSpot also shows a $7 price for new customers, Close Solo costs $9 for one user, and Clarify is priced by AI work with unlimited seats, free and then $50 a month. Pipedrive&#x27;s plans are on its site.</desc>
 <rect width="720" height="958" fill="#ffffff"/>
-<rect x="32" y="35" width="11" height="11" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="32" y="35" width="11" height="11" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="52" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Pricing</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">First paid plan <tspan fill="#171717">per seat a month</tspan></text>
 <text x="32" y="157" font-size="20" font-weight="500" fill="#171717">Freshsales</text>
@@ -27,7 +27,7 @@
 <line x1="32" x2="688" y1="384" y2="384" stroke="#ebebeb"/>
 <text x="32" y="413" font-size="20" font-weight="500" fill="#171717">Omniscient</text>
 <text x="32" y="435" font-size="16" fill="#737373">Starter, billed yearly</text>
-<rect x="330.5" y="402.5" width="163" height="26" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<rect x="330.5" y="402.5" width="163" height="26" fill="#0a0a0a" stroke="#ebebeb" rx="6"/>
 <text x="505" y="422" font-size="19" font-weight="600" fill="#171717">$19</text>
 <line x1="32" x2="688" y1="448" y2="448" stroke="#ebebeb"/>
 <text x="32" y="477" font-size="20" font-weight="500" fill="#171717">HubSpot</text>

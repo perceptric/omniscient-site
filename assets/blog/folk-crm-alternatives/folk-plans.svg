@@ -14,19 +14,19 @@
 <line x1="24" y1="184" x2="536" y2="184" stroke="#8a8a85"/>
 <text x="40" y="214" font-size="18" fill="#171717">Email sequences</text>
 <text x="371" y="214" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="199" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="473" y="199" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <line x1="24" y1="230" x2="536" y2="230" stroke="#ebebeb"/>
 <text x="40" y="260" font-size="18" fill="#171717">Custom objects and deals</text>
 <text x="371" y="260" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="245" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="473" y="245" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <line x1="24" y1="276" x2="536" y2="276" stroke="#ebebeb"/>
 <text x="40" y="306" font-size="18" fill="#171717">Dashboards</text>
 <text x="371" y="306" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="291" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="473" y="291" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <line x1="24" y1="322" x2="536" y2="322" stroke="#ebebeb"/>
 <text x="40" y="352" font-size="18" fill="#171717">API access</text>
 <text x="371" y="352" text-anchor="middle" font-size="18" fill="#a3a3a3">No</text>
-<rect x="473" y="337" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="473" y="337" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <line x1="24" y1="368" x2="536" y2="368" stroke="#ebebeb"/>
 <text x="40" y="398" font-size="18" fill="#171717">Find emails a month</text>
 <text x="371" y="398" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">500</text>
@@ -51,7 +51,7 @@
 <text x="40" y="628" font-size="18" fill="#171717">Interactions shared</text>
 <text x="371" y="628" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">Last 30</text>
 <text x="481" y="628" text-anchor="middle" font-size="18" font-weight="600" fill="#171717">Full</text>
-<rect x="24" y="674" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="24" y="674" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="52" y="689" font-size="18" fill="#171717">Included on the plan</text>
 <text x="24" y="724" font-size="18" fill="#737373">Monthly billing: $30 and $60. Every plan has</text>
 <text x="24" y="750" font-size="18" fill="#737373">unlimited members. From folk.app/pricing.</text>

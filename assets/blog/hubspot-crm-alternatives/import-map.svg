@@ -46,7 +46,7 @@
 <rect x="300" y="490" width="236" height="72" fill="#ffffff" stroke="#ebebeb" rx="10"/>
 <text x="314" y="521" font-size="20" font-weight="500" fill="#171717">Notes</text>
 <text x="314" y="546" font-size="16" fill="#737373">deal first, then account</text>
-<rect x="24" y="575" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="24" y="575" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="52" y="590" font-size="19" fill="#171717">Skipped: contacts with no email address</text>
 <text x="24" y="630" font-family="Inter, system-ui, sans-serif" font-size="15" fill="#737373">Read only access, so HubSpot stays as it is</text>
 </svg>

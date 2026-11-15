@@ -19,7 +19,7 @@
 <text x="222.3" y="210" font-size="19" font-weight="600" fill="#171717">$25</text>
 <text x="24" y="258" font-size="20" font-weight="500" fill="#171717">Pro Suite</text>
 <text x="24" y="282" font-size="17" fill="#737373">Billed yearly</text>
-<rect x="200" y="248" width="49.1" height="26" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<rect x="200" y="248" width="49.1" height="26" fill="#0a0a0a" stroke="#ebebeb" rx="6"/>
 <text x="259.1" y="268" font-size="19" font-weight="600" fill="#171717">$100</text>
 <text x="24" y="316" font-size="20" font-weight="500" fill="#171717">Core</text>
 <text x="24" y="340" font-size="17" fill="#737373">Billed yearly</text>
@@ -33,7 +33,7 @@
 <text x="24" y="456" font-size="17" fill="#737373">Billed yearly</text>
 <rect x="200" y="422" width="270.0" height="26" fill="#333333" stroke="#ebebeb" rx="6"/>
 <text x="480.0" y="442" font-size="19" font-weight="600" fill="#171717">$550</text>
-<rect x="24" y="517" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="24" y="517" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="52" y="532" font-size="17" fill="#171717">Quoting and forecasting start on Pro Suite</text>
 <text x="24" y="569" font-size="17" fill="#171717">Agentforce for Sales is an add on, from $125 a user</text>
 <text x="24" y="594" font-size="17" fill="#171717">a month. AI can be added to Core and above.</text>

@@ -1093,7 +1093,7 @@ ${extra}
 </head>`;
 }
 
-const DEFAULT_IMAGE = { url: `${SITE}/assets/brand/omniscient-app-icon-512.png` };
+const DEFAULT_IMAGE = { url: `${SITE}/assets/brand/og.png`, w: 1200, h: 630 };
 
 function shareImage(slug) {
   return existsSync(join(root, "assets", "blog", slug, "og.png")) ? { url: `${SITE}/assets/blog/${slug}/og.png`, w: 1200, h: 630 } : DEFAULT_IMAGE;

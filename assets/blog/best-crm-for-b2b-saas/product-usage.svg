@@ -2,7 +2,7 @@
 <title id="t">How product usage reaches the account record in your CRM</title>
 <desc id="d">How product usage gets from your app to the account record in a CRM, in five steps. 01 Your product sends logins, seats used and features as events. 02 Your warehouse, such as BigQuery or Snowflake, adds them up per account. 03 A sync tool such as Polytomic or Hightouch, or your own calls to the CRM&#x27;s API, moves the numbers across. 04 The account record gets fields like plan, seats, active users and health. 05 Your team sees views and alerts, such as a renewal coming up, usage falling or room to grow.</desc>
 <rect width="720" height="724" fill="#ffffff"/>
-<rect x="32" y="35" width="11" height="11" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="32" y="35" width="11" height="11" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="52" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Product data</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">From your app <tspan fill="#171717">to the account record</tspan></text>
 <rect x="32.5" y="120.5" width="655" height="86" fill="#ffffff" stroke="#ebebeb"/>
@@ -26,9 +26,9 @@
 <text x="116" y="410" font-size="18" fill="#525252">Polytomic, Hightouch or your own calls to the CRM&#x27;s API</text>
 <line x1="360" x2="360" y1="434" y2="448" stroke="#8a8a85" stroke-width="1.5"/>
 <path d="M354 446 L360 454 L366 446" fill="none" stroke="#8a8a85" stroke-width="1.5"/>
-<rect x="32.5" y="456.5" width="655" height="86" fill="#e3f4ec" stroke="#ebebeb"/>
-<rect x="32.5" y="456.5" width="64" height="86" fill="#0c8c5e" stroke="#ebebeb"/>
-<text x="64.5" y="506" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#171717" text-anchor="middle">04</text>
+<rect x="32.5" y="456.5" width="655" height="86" fill="#f2f2f0" stroke="#ebebeb"/>
+<rect x="32.5" y="456.5" width="64" height="86" fill="#0a0a0a" stroke="#ebebeb"/>
+<text x="64.5" y="506" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#ffffff" text-anchor="middle">04</text>
 <text x="116" y="492" font-size="21" font-weight="500" fill="#171717">The account record</text>
 <text x="116" y="522" font-size="18" fill="#525252">Fields like plan, seats, active users and health</text>
 <line x1="360" x2="360" y1="546" y2="560" stroke="#8a8a85" stroke-width="1.5"/>

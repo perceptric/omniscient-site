@@ -58,7 +58,7 @@
 <text x="24" y="720" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#737373">Stays in Salesforce</text>
 <text x="24" y="750" font-size="18" fill="#171717">Tasks, events, cases and files</text>
 <text x="24" y="776" font-size="18" fill="#171717">Enhanced notes, custom objects and fields</text>
-<rect x="24" y="801" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="24" y="801" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="52" y="816" font-size="18" fill="#171717">Skipped: contacts and leads with no email</text>
 <text x="24" y="860" font-family="Inter, system-ui, sans-serif" font-size="17" fill="#737373">Reads only. Its login is deleted at the end.</text>
 </svg>

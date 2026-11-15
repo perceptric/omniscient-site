@@ -5,11 +5,27 @@ description: What Omniscient is, what sets it apart and the facts you may state.
 
 # Omniscient positioning and facts
 
-## The one-paragraph story
+## The story: one agentic CRM for the whole sales motion
 
-Omniscient is an agentic CRM for B2B teams. Like other AI CRMs, it syncs leads, email, meetings and call intelligence. What makes it different is Omniscience, the brain underneath: it joins every email, call, meeting, note and record into one context layer that AI agents can query. Ask it anything and it answers, with the quote and date behind each fact. Otto, the agent built into Omniscient, answers through skills: fixed steps for a job, so answers are accurate and consistent, built from your own records.
+Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account. Otto, its built-in agent, does the busy work at every step. All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
 
-Short tagline options: "This is The Agentic CRM." "Ask your CRM anything." "Every customer conversation, remembered."
+Never shrink Omniscient to one feature ("answers with quotes", "a CRM that fills itself in"). Lead with the whole motion, then the memory and skills underneath.
+
+### End to end, in order
+
+1. **Find customers:** lead lists from a plain description, people at a company, lookalike companies, job changes, the Chrome extension, website forms and webhooks for inbound leads.
+2. **Capture everything:** Gmail, Outlook, calendar, Zoom, Google Meet and Teams notes (optional recording bot), duplicates merged, details filled in, inbox privacy settings, imports from HubSpot, Salesforce, Attio and Pipedrive.
+3. **Engage:** emails to answer at the top, Otto's follow-up drafts in your voice from Knowledge, the team's own templates, sent from your own inbox.
+4. **Meet:** prep briefs, notes, action items, transcripts, suggested stage, amount and next step updates with the customer's words, MEDDICC and BANT from calls.
+5. **Manage the pipeline:** accounts, contacts, opportunities, custom objects and fields, pipeline board and forecast, fields filled with proof and a Suggestions inbox, AI columns, saved views.
+6. **Run the business:** ask anything with sources, manager mode (deal reviews, rep scorecards, call coaching), dashboards and reports from a sentence, record scoring, daily digest and Slack alerts.
+7. **Automate and extend:** workflows, one-click apps, REST API, webhooks, MCP for Claude, ChatGPT and Cursor.
+
+### Lines to reuse
+
+- Pick line: "Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads to closing deals, with Otto doing the busy work."
+- ```tools row: `Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion`
+- "What you want next" table cell: "One CRM for the whole sales motion, from the first lead to the closed deal".
 
 ## Facts you may state
 

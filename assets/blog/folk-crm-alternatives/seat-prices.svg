@@ -11,7 +11,7 @@
 <text x="286.1" y="179" font-size="18" font-weight="600" fill="#171717">$48 Premium</text>
 <line x1="24" y1="200" x2="536" y2="200" stroke="#ebebeb"/>
 <text x="24" y="233" font-size="20" font-weight="500" fill="#171717">Omniscient</text>
-<rect x="170.5" y="214.5" width="41.8" height="23" fill="#0c8c5e" stroke="#ebebeb" rx="6"/>
+<rect x="170.5" y="214.5" width="41.8" height="23" fill="#0a0a0a" stroke="#ebebeb" rx="6"/>
 <text x="222.3" y="233" font-size="18" fill="#171717">$19 Starter</text>
 <rect x="170.5" y="248.5" width="41.8" height="23" fill="#333333" stroke="#ebebeb" rx="6"/>
 <text x="222.3" y="267" font-size="18" font-weight="600" fill="#171717">$19 Starter, as Automation</text>

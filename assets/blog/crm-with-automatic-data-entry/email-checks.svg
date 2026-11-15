@@ -58,9 +58,9 @@
 <line x1="72" x2="72" y1="688" y2="715" stroke="#8a8a85"/>
 <polygon points="67,715 72,724 77,715" fill="#333333"/>
 <text x="84" y="712" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#737373">No</text>
-<rect x="32.5" y="724.5" width="655" height="83" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
-<text x="48" y="759" font-size="21" font-weight="500" fill="#171717">Filed under the person, company and deal</text>
-<text x="48" y="788" font-size="19" fill="#171717">Otto reads the thread for facts, each with its quote</text>
+<rect x="32.5" y="724.5" width="655" height="83" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
+<text x="48" y="759" font-size="21" font-weight="500" fill="#ffffff">Filed under the person, company and deal</text>
+<text x="48" y="788" font-size="19" fill="#ffffff">Otto reads the thread for facts, each with its quote</text>
 <text x="32" y="856" font-size="19" fill="#737373">Personal addresses and first emails from new people follow</text>
 <text x="32" y="884" font-size="19" fill="#737373">your sync settings, shown here the way we suggest them.</text>
 <text x="32" y="912" font-size="19" fill="#737373">Emails with only your own team on them are skipped too.</text>

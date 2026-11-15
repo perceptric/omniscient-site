@@ -11,13 +11,13 @@
 <line x1="452.0" y1="154" x2="452.0" y2="234" stroke="#ebebeb"/>
 <text x="24" y="144" font-size="22" font-weight="500" fill="#171717">Omniscient</text>
 <line x1="118.3" y1="194" x2="447.9" y2="194" stroke="#8a8a85" stroke-width="2"/>
-<rect x="110.3" y="186" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="110.3" y="186" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="118.3" y="178" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">$19</text>
 <text x="118.3" y="226" text-anchor="middle" font-size="18" fill="#737373">Starter</text>
-<rect x="233.9" y="186" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="233.9" y="186" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="241.9" y="178" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">$49</text>
 <text x="241.9" y="226" text-anchor="middle" font-size="18" fill="#737373">Pro</text>
-<rect x="439.9" y="186" width="16" height="16" fill="#0c8c5e" stroke="#333333" rx="3"/>
+<rect x="439.9" y="186" width="16" height="16" fill="#0a0a0a" stroke="#333333" rx="3"/>
 <text x="447.9" y="178" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">$99</text>
 <text x="447.9" y="226" text-anchor="middle" font-size="18" fill="#737373">Business</text>
 <line x1="24" y1="240" x2="536" y2="240" stroke="#ebebeb"/>

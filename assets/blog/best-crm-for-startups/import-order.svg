@@ -4,11 +4,11 @@
 <rect width="720" height="520" fill="#ffffff"/>
 <text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Migration</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">The order an import runs in <tspan fill="#171717">and why</tspan></text>
-<rect x="32.5" y="124.5" width="199" height="127" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
-<text x="48" y="154" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#171717">01</text>
-<text x="48" y="184" font-size="20" font-weight="500" fill="#171717">Companies</text>
-<text x="48" y="210" font-size="18" fill="#171717">Matched by</text>
-<text x="48" y="234" font-size="18" fill="#171717">web domain</text>
+<rect x="32.5" y="124.5" width="199" height="127" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
+<text x="48" y="154" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#ffffff">01</text>
+<text x="48" y="184" font-size="20" font-weight="500" fill="#ffffff">Companies</text>
+<text x="48" y="210" font-size="18" fill="#ffffff">Matched by</text>
+<text x="48" y="234" font-size="18" fill="#ffffff">web domain</text>
 <path d="M236 188.0H254" stroke="#8a8a85" stroke-width="1.5" fill="none"/>
 <path d="M248 183.0L255 188.0L248 193.0" stroke="#8a8a85" stroke-width="1.5" fill="none"/>
 <rect x="260.5" y="124.5" width="199" height="127" fill="#ffffff" stroke="#ebebeb" rx="10"/>

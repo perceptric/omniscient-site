@@ -12,9 +12,9 @@
 <text x="32" y="303">Year 3</text>
 <text x="32" y="347">Year 4</text>
 </g>
-<rect x="128.5" y="192.5" width="450" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="236.5" width="250" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="280.5" width="125" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="192.5" width="450" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="236.5" width="250" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="280.5" width="125" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
 <rect x="128.5" y="324.5" width="2" height="31" fill="#333333" rx="1"/>
 <g font-size="19" font-weight="600" fill="#171717">
 <text x="592" y="215">90% off</text>
@@ -30,8 +30,8 @@
 <text x="32" y="549">Year 2</text>
 <text x="32" y="593">Year 3</text>
 </g>
-<rect x="128.5" y="482.5" width="400" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="526.5" width="150" height="31" fill="#0c8c5e" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="482.5" width="400" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
+<rect x="128.5" y="526.5" width="150" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
 <rect x="128.5" y="570.5" width="2" height="31" fill="#333333" rx="1"/>
 <g font-size="19" font-weight="600" fill="#171717">
 <text x="542" y="505">80% off</text>
