@@ -33,6 +33,7 @@ PAGES = [
   ('for/marketing', 'Marketing', 'Know which leads turn into revenue', 'Radar', 'Teams'),
   ('for/customer-success', 'Customer success', 'Every account, every renewal, in view', 'Users', 'Teams'),
   ('for/agencies', 'Agencies', 'Every client and every pitch in one place', 'Building', 'Teams'),
+  ('security', 'Security', 'How we keep your data safe', 'Ban', 'Trust'),
 ]
 BY = {p[0]: p for p in PAGES}
 url = lambda slug: f'/{slug}/'
@@ -48,7 +49,7 @@ def nav_html():
         return f'<div class="mm-col"><p class="mm-h">{title}</p>' + ''.join(f'<a class="mm-i" href="{h}"><b>{t}</b><span>{d}</span></a>' for t, d, h in items) + '</div>'
     res = ('<div class="mm mm-sm" id="mm-res" role="menu"><div class="mm-in">'
       + rcol('Learn', [('Blog', 'Guides for modern GTM teams', '/blog/'), ('Compare', 'Omniscient vs Attio, HubSpot and more', '/blog/omniscient-vs-attio/'), ('FAQ', 'Quick answers', '/#faq')])
-      + rcol('Company', [('Security', 'How we keep your data safe', '/security/'), ('Privacy', 'What we collect and why', '/privacy/'), ('Terms', 'The fine print', '/terms/')])
+      + rcol('Company', [('Security', 'How we keep your data safe', '/security/'), ('Pricing', 'Per seat, with Otto included', '/pricing/'), ('Contact', 'hello@tryomniscient.com', 'mailto:hello@tryomniscient.com')])
       + '</div></div>')
     chev = '<svg class="mm-c" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
     return f'''<header class="nav">
@@ -81,9 +82,9 @@ def footer_html():
       {col('Otto', g('Otto'))}
       {col('Ecosystem', g('Ecosystem'))}
       {col('Teams', g('Teams'))}
-      {col('Company', [('Pricing', '/#pricing'), ('Blog', '/blog/'), ('Security', '/security/'), ('Privacy', '/privacy/'), ('Terms', '/terms/'), ('Cookie settings', '#cookies'), ('Contact', 'mailto:hello@tryomniscient.com')])}
+      {col('Company', [('Pricing', '/pricing/'), ('Blog', '/blog/'), ('Security', '/security/'), ('Contact', 'mailto:hello@tryomniscient.com')])}
     </div>
-    <div class="fbot"><span>© 2026 Omniscient <a href="https://unsplash.com/" rel="noopener" style="margin-left:14px">Photos: Unsplash</a></span><span>The all-seeing CRM</span></div>
+    <div class="fbot"><span class="fleg">© 2026 Omniscient<a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="#cookies">Cookie settings</a><a href="https://unsplash.com/" rel="noopener">Photos: Unsplash</a></span><span>The all-seeing CRM</span></div>
   </div>
 </footer>'''
 
@@ -208,6 +209,9 @@ PAGE_CSS = r'''
 .cmpt .tick svg{width:12px;height:12px}
 .cmpt .no{color:#c4c4c4}
 .cmpt td b{font-weight:500}
+.fleg{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 18px}
+.fleg a{color:inherit}
+.fleg a:hover{color:var(--ink)}
 .rv{opacity:0;transform:translateY(14px);filter:blur(2px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1),filter .8s}
 .rv.in{opacity:1;transform:none;filter:none}
 @media (max-width:900px){
@@ -324,7 +328,7 @@ def swap_html(sw, n):
 def page(s, P):
     P = merge(P)
     slug = P['slug']; _, name, line, icon, group = BY[slug]
-    crumbs = {'Context': ('Product', '/#product'), 'Otto': ('Product', '/#product'), 'Ecosystem': ('Product', '/#product'), 'Teams': ('Teams', '/#teams')}[group]
+    crumbs = {'Context': ('Product', '/#product'), 'Otto': ('Product', '/#product'), 'Ecosystem': ('Product', '/#product'), 'Teams': ('Teams', '/#teams'), 'Trust': ('Security', '/security/')}[group]
     rows = ''
     for k, r in enumerate(P['rows']):
         pts = ''.join(f'<li>{ic("Check")}<span>{x}</span></li>' for x in r.get('pts', []))
@@ -348,7 +352,7 @@ def page(s, P):
 <section class="phero">
   <canvas id="hsky" aria-hidden="true"></canvas>
   <div class="wrap">
-    <a class="hpill" href="{crumbs[1]}"><span class="hp-new">{group if group != "Teams" else "For teams"}</span><span class="hp-ic">{ic(icon)}</span>{name}</a>
+    <a class="hpill" href="{crumbs[1]}"><span class="hp-new">{ {"Teams": "For teams", "Trust": "Trust"}.get(group, group) }</span><span class="hp-ic">{ic(icon)}</span>{name}</a>
     <h1>{P["h1"]}</h1>
     <p class="plede">{P["lede"]}</p>
     <form class="hero-form" action="{SIGNUP}" novalidate>
@@ -532,7 +536,7 @@ if __name__ == '__main__':
     build_assets(s)
     build_chrome(s)
     pricing_page(s)
-    batches = sys.argv[1:] or ['context', 'otto', 'ecosystem', 'teams']
+    batches = sys.argv[1:] or ['context', 'otto', 'ecosystem', 'teams', 'company']
     for b in batches:
         mod = importlib.import_module('content_' + b)
         for P in mod.PAGES: print('built', page(s, P))
