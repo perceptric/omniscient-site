@@ -367,7 +367,7 @@ def swap_html(sw, n):
 
 # The page body for night pages: the starfield layer and the scripts that draw the globe, monolith and panels
 SPACE = '<div class="space" aria-hidden="true"><div class="nebula"></div><canvas id="space"></canvas></div>'
-NIGHT_JS = '<script src="/assets/globe.js" defer></script>\n<script src="/assets/monolith.js" defer></script>\n<script src="/assets/species.js" defer></script>\n'
+NIGHT_JS = '<script src="/assets/globe.js" defer></script>\n<script src="/assets/species.js" defer></script>\n'
 
 def shell_html(s, title, desc, path, body):
     return ('<!doctype html>\n<html lang="en-US">\n' + head_html(s, title, desc, path) + '<body class="sub cosmic">\n' + SPACE + '\n' + defs_html(s) + '\n' + nav_html() + '\n'
@@ -376,7 +376,7 @@ def shell_html(s, title, desc, path, body):
 def problem_html(sw):
     # the problem, as on the home page: the monolith beside each old way and what replaces it
     items = ''.join(f'<div class="pr-it"><b>{o}</b><p>{ic("Check","i14")}{n}</p></div>' for o, n in zip(sw['old'], sw['new']))
-    return (f'<section class="problem"><div class="wrap pr-grid"><div class="pr-art"><canvas id="monolith" aria-label="A black monolith stands on rocky ground at dawn, drawn in dots"></canvas></div>'
+    return (f'<section class="problem"><div class="wrap pr-grid"><div class="pr-art"><img src="/assets/img/monolith-700.webp" srcset="/assets/img/monolith-700.webp 700w, /assets/img/monolith.webp 1254w" sizes="(max-width:900px) 92vw, 600px" width="1254" height="1254" loading="lazy" decoding="async" alt="A black monolith labeled legacy CRM towers over a person on rocky ground at dawn"></div>'
             f'<div class="pr-copy"><h2 class="pr-h">{sw["h"]}</h2><p class="pr-sub">{sw["p"]}</p><div class="pr-items">{items}</div></div></div></section>')
 
 def panels_html(band):
