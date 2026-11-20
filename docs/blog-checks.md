@@ -171,3 +171,11 @@ Research narration, dates and unconfirmed details were taken out of the posts an
 - attio-vs-hubspot: dropped the "Fees you pay once", "Emails a month" and "Calling" rows where one side was unknown (HubSpot's fees, Attio's email caps and HubSpot's calling minutes stay in the text). HubSpot per-seat AI credits now read "Shared pool instead".
 - omniscient-vs-attio / omniscient-vs-hubspot: still say "no mobile app"; omniscient-vs-hubspot says Ask Otto has "a daily limit on questions for each person". Neither is on the approved positioning list.
 - Copper's trial is "14 days" in the Pipedrive post and unstated in the others.
+
+## attio-review (2141 words, 4 visuals)
+
+- Attio moved to workspace pricing: each paid plan has a workspace price that includes the first user, plus a price per added user. The plans are now Free, Plus, Pro and Ultra (Enterprise is gone). The page prints two prices side by side with no labels. The post treats the lower one as yearly billing (Plus $40 and $35, Pro $100 and $79, objects past 12 at $400, monthly $50 and $44, $125 and $99), which matches "Save 20% with annual billing". Confirm the labels.
+- Ultra: "$1,000 a month, includes 5 users, annual billing", added users $189. No monthly price. Governance add-on is $30 per user a month billed yearly, with no monthly price given.
+- G2 returned 403, so the post has no rating block.
+- Startup program: the FAQ now says "incorporated less than 5 years ago". best-crm-for-startups says 10 years, so that post needs updating. omniscient-vs-attio, attio-alternatives and attio-vs-hubspot still show Attio's old per-user prices and Enterprise plan.
+- The SQL-in-workflows row on the pricing table reads oddly for Free, so the post leaves it out.

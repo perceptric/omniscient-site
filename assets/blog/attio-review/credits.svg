@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450" width="720" height="450" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Attio workspace credits a month by plan</title>
+<desc id="d">Attio workspace credits a month, shared by the team: Free 250, Plus 1,500, Pro 10,000, Ultra 20,000. Each user also gets Ask Attio credits a month: 100 on Free, 500 on Plus, 1,000 on Pro and 2,500 on Ultra. Extra workspace credits start at 5,000 for $70 a month billed yearly. From attio.com/pricing, November 2026.</desc>
+<rect width="720" height="450" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">AI credits</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Workspace credits a month</text>
+<text x="32" y="154" font-size="19" fill="#171717">Free</text>
+<rect x="240" y="134" width="5" height="28" rx="6" fill="#333333"/>
+<text x="257" y="155" font-size="19" font-weight="500" fill="#171717">250</text>
+<line x1="32" x2="688" y1="180" y2="180" stroke="#ebebeb"/>
+<text x="32" y="218" font-size="19" fill="#171717">Plus</text>
+<rect x="240" y="198" width="27" height="28" rx="6" fill="#333333"/>
+<text x="279" y="219" font-size="19" font-weight="500" fill="#171717">1,500</text>
+<line x1="32" x2="688" y1="244" y2="244" stroke="#ebebeb"/>
+<text x="32" y="282" font-size="19" fill="#171717">Pro</text>
+<rect x="240" y="262" width="180" height="28" rx="6" fill="#333333"/>
+<text x="432" y="283" font-size="19" font-weight="500" fill="#171717">10,000</text>
+<line x1="32" x2="688" y1="308" y2="308" stroke="#ebebeb"/>
+<text x="32" y="346" font-size="19" fill="#171717">Ultra</text>
+<rect x="240" y="326" width="360" height="28" rx="6" fill="#333333"/>
+<text x="612" y="347" font-size="19" font-weight="500" fill="#171717">20,000</text>
+<text x="32" y="422" font-size="18" fill="#737373">Plus 100 to 2,500 Ask Attio credits per user, by plan.</text>
+</svg>

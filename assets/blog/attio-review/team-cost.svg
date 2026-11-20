@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 578" width="720" height="578" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What a 5-person team pays a month, billed yearly</title>
+<desc id="d">A team of 5 users a month on yearly billing: Attio Plus $180, Attio Pro $416, Attio Ultra $1,000; Omniscient Starter $95, Omniscient Pro $245, Omniscient Business $495. From attio.com/pricing and tryomniscient.com, November 2026.</desc>
+<rect width="720" height="578" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Team of 5</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Monthly bill, billed yearly</text>
+<text x="32" y="154" font-size="19" fill="#171717">Attio Plus</text>
+<rect x="240" y="134" width="65" height="28" rx="6" fill="#333333"/>
+<text x="317" y="155" font-size="19" font-weight="500" fill="#171717">$180</text>
+<line x1="32" x2="688" y1="180" y2="180" stroke="#ebebeb"/>
+<text x="32" y="218" font-size="19" fill="#171717">Attio Pro</text>
+<rect x="240" y="198" width="150" height="28" rx="6" fill="#333333"/>
+<text x="402" y="219" font-size="19" font-weight="500" fill="#171717">$416</text>
+<line x1="32" x2="688" y1="244" y2="244" stroke="#ebebeb"/>
+<text x="32" y="282" font-size="19" fill="#171717">Attio Ultra</text>
+<rect x="240" y="262" width="360" height="28" rx="6" fill="#333333"/>
+<text x="612" y="283" font-size="19" font-weight="500" fill="#171717">$1,000</text>
+<line x1="32" x2="688" y1="308" y2="308" stroke="#ebebeb"/>
+<text x="32" y="346" font-size="19" fill="#171717">Omniscient Starter</text>
+<rect x="240" y="326" width="34" height="28" rx="6" fill="#0C8C5E"/>
+<text x="286" y="347" font-size="19" font-weight="500" fill="#171717">$95</text>
+<line x1="32" x2="688" y1="372" y2="372" stroke="#ebebeb"/>
+<text x="32" y="410" font-size="19" fill="#171717">Omniscient Pro</text>
+<rect x="240" y="390" width="88" height="28" rx="6" fill="#0C8C5E"/>
+<text x="340" y="411" font-size="19" font-weight="500" fill="#171717">$245</text>
+<line x1="32" x2="688" y1="436" y2="436" stroke="#ebebeb"/>
+<text x="32" y="474" font-size="19" fill="#171717">Omniscient Business</text>
+<rect x="240" y="454" width="178" height="28" rx="6" fill="#0C8C5E"/>
+<text x="430" y="475" font-size="19" font-weight="500" fill="#171717">$495</text>
+<text x="32" y="550" font-size="18" fill="#737373">From attio.com/pricing and tryomniscient.com, November 2026.</text>
+</svg>
