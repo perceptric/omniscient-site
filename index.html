@@ -1109,6 +1109,23 @@ body.cosmic .tm-stage{padding:12px}
 .pr-it p{margin:10px 0 0;color:#9a9a9e;font-size:16px;line-height:1.55;max-width:46ch}
 @media (max-width:900px){.pr-grid{grid-template-columns:1fr;gap:40px}.problem{padding-block:72px 24px}}
 body.cosmic .chip.c-wa{color:#5fd38a}
+
+/* round 33: faces without letters, real logos, numbered story parts */
+body.cosmic .av.ph{color:transparent}
+body.cosmic .chip.lg{background:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+body.cosmic .chip.lg img{display:block;width:15px;height:15px}
+body.cosmic .feat h2 .num,body.cosmic .pin h2 .num{color:#6f6f74;font-variant-numeric:tabular-nums;margin-right:.1em}
+
+/* round 33: the context section as a solar system: a sun in the middle, shaded planets carry the sources */
+body.cosmic .core{background:radial-gradient(circle at 50% 50%,#fffaf0 0,#fff1d2 28%,#ffd58a 58%,#f5a54a 82%,#e07a2a 100%);box-shadow:0 0 0 1px rgba(255,220,160,.5),0 0 40px rgba(255,214,140,.65),0 0 110px rgba(255,180,90,.4),0 0 260px rgba(255,150,60,.22);animation:sun-breathe 6s ease-in-out infinite}
+@keyframes sun-breathe{50%{box-shadow:0 0 0 1px rgba(255,220,160,.6),0 0 54px rgba(255,214,140,.8),0 0 150px rgba(255,180,90,.5),0 0 320px rgba(255,150,60,.28)}}
+body.cosmic .core .cm{color:#5a3208;opacity:.55;filter:none;width:76px;height:76px}
+body.cosmic .core .halo{border-color:rgba(255,210,150,.25)}
+body.cosmic .core .dash{border-color:rgba(255,210,150,.3)}
+body.cosmic .core .dash.d2{border-color:rgba(255,210,150,.14)}
+body.cosmic .ochip{height:26px;padding:0 10px 0 4px;gap:6px;font-size:12.5px;background:rgba(12,12,14,.78);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(255,255,255,.12)}
+body.cosmic .ochip i{width:18px;height:18px;box-shadow:none}
+body.cosmic .ochip i svg{width:11px;height:11px}
 /* a longer scroll for each part of the story */
 @media (min-width:901px){html.js body.cosmic .feat{min-height:115svh!important}html.js body.cosmic .stages{padding-bottom:30svh}}
 </style>
@@ -1250,9 +1267,9 @@ body.cosmic .chip.c-wa{color:#5fd38a}
   <div class="wrap">
     <h2 class="sec-title">Introducing a new species of CRM &amp; GTM platform</h2>
     <div class="figs">
-      <figure class="panel"><canvas data-fig="1" aria-label="Scattered records spiral inward and merge into one stack"></canvas><figcaption><b>Single source of truth</b><span>Every customer conversation and record, in one place.</span></figcaption></figure>
-      <figure class="panel"><canvas data-fig="2" aria-label="A call signal passes through record sheets and fills in their fields"></canvas><figcaption><b>CRM intelligence</b><span>Records update themselves from your calls and emails, with the quote behind each change.</span></figcaption></figure>
-      <figure class="panel"><canvas data-fig="3" aria-label="A central core sends tasks to a ring of agent blocks"></canvas><figcaption><b>Agentic GTM</b><span>Built-in agents find leads, prep meetings and draft follow-ups, guided by your team's skills.</span></figcaption></figure>
+      <figure class="panel"><canvas data-dfig="1" aria-label="Scattered records spiral inward and merge into one stack"></canvas><figcaption><b>Single source of truth</b><span>Every customer conversation and record, in one place.</span></figcaption></figure>
+      <figure class="panel"><canvas data-dfig="2" aria-label="A call signal passes through record sheets and fills in their fields"></canvas><figcaption><b>CRM intelligence</b><span>Records update themselves from your calls and emails, with the quote behind each change.</span></figcaption></figure>
+      <figure class="panel"><canvas data-dfig="3" aria-label="A central core sends tasks to a ring of agent blocks"></canvas><figcaption><b>Agentic GTM</b><span>Built-in agents find leads, prep meetings and draft follow-ups, guided by your team's skills.</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -1261,11 +1278,11 @@ body.cosmic .chip.c-wa{color:#5fd38a}
 <section class="story" id="product">
   <div class="wrap story-head"><h2 class="sec-title">Everything your team needs to manage customer relationships, end-to-end.</h2></div>
   <div class="wrap story-in">
-    <div class="pin" aria-hidden="true"><div class="rail"><button type="button" data-to="prospect" class="on">Find your next customers</button><button type="button" data-to="unify">Record every engagement with your prospect</button><button type="button" data-to="ai">A self-driving CRM</button><button type="button" data-to="automations">Easily build workflows to close deals</button></div><div class="copies"><div class="pin-copy on"><h2>Find your next customers</h2><p class="lede">Describe your ICP in natural language, and Omniscient searches across millions of people and companies in our database to return leads worth your time.</p></div><div class="pin-copy"><h2>Record every engagement with your prospect</h2><p class="lede">Manage all touchpoints with your leads across email, meetings and WhatsApp.</p></div><div class="pin-copy"><h2>A self-driving CRM</h2><p class="lede">After every call, Omniscient reads the transcript and proposes the necessary updates to the system. Less data entry and more strategic work done for you.</p></div><div class="pin-copy"><h2>Easily build workflows to close deals</h2><p class="lede">Turn your sales playbook into an automation that runs around the clock and closes deals for you on auto-pilot.</p></div></div></div>
+    <div class="pin" aria-hidden="true"><div class="rail"><button type="button" data-to="prospect" class="on">Find your next customers</button><button type="button" data-to="unify">Record every engagement with your prospect</button><button type="button" data-to="ai">A self-driving CRM</button><button type="button" data-to="automations">Easily build workflows to close deals</button></div><div class="copies"><div class="pin-copy on"><h2><span class="num">1.</span> Find your next customers</h2><p class="lede">Describe your ICP in natural language, and Omniscient searches across millions of people and companies in our database to return leads worth your time.</p></div><div class="pin-copy"><h2><span class="num">2.</span> Record every engagement with your prospect</h2><p class="lede">Manage all touchpoints with your leads across email, meetings and WhatsApp.</p></div><div class="pin-copy"><h2><span class="num">3.</span> A self-driving CRM</h2><p class="lede">After every call, Omniscient reads the transcript and proposes the necessary updates to the system. Less data entry and more strategic work done for you.</p></div><div class="pin-copy"><h2><span class="num">4.</span> Easily build workflows to close deals</h2><p class="lede">Turn your sales playbook into an automation that runs around the clock and closes deals for you on auto-pilot.</p></div></div></div>
     <div class="stages">
       <div class="screens" aria-hidden="true"></div>
       <article class="feat" id="prospect" data-i="0">
-        <div class="stage-copy"><h2>Find your next customers</h2><p class="lede">Describe your ICP in natural language, and Omniscient searches across millions of people and companies in our database to return leads worth your time.</p></div>
+        <div class="stage-copy"><h2><span class="num">1.</span> Find your next customers</h2><p class="lede">Describe your ICP in natural language, and Omniscient searches across millions of people and companies in our database to return leads worth your time.</p></div>
         <div class="vis"><div class="acc acc-bl"><span class="acc-ic"><svg class="i14"><use href="#i-Check"/></svg></span><div><b>Saved 3 people</b><span>Added to People, emails found</span></div></div><div class="fit" data-w="760"><div class="fit-inner" style="width:760px"><div class="vis-in">
           <div class="app win" style="width:680px">
             <div class="win-h"><span class="pi"><svg class="i"><use href="#i-Sparkles"/></svg></span><b>Ask Otto</b></div>
@@ -1293,13 +1310,13 @@ body.cosmic .chip.c-wa{color:#5fd38a}
         </div></div></div></div>
       </article>
       <article class="feat" id="unify" data-i="1">
-        <div class="stage-copy"><h2>Record every engagement with your prospect</h2><p class="lede">Manage all touchpoints with your leads across email, meetings and WhatsApp.</p></div>
-        <div class="vis"><div class="acc acc-tr"><span class="acc-ic"><svg class="i14"><use href="#i-Check"/></svg></span><div><b>Merged 2 duplicates</b><span>Lumen Skin Inc. into Lumen Skin</span></div><span class="acc-u">Undo</span></div><div class="fit" data-w="860"><div class="fit-inner" style="width:860px"><div class="vis-in row">
+        <div class="stage-copy"><h2><span class="num">2.</span> Record every engagement with your prospect</h2><p class="lede">Manage all touchpoints with your leads across email, meetings and WhatsApp.</p></div>
+        <div class="vis"><div class="fit" data-w="860"><div class="fit-inner" style="width:860px"><div class="vis-in row">
           <div class="srcs app">
-            <div class="src"><span class="chip"><svg class="i14"><use href="#i-Mail"/></svg></span>Email<small>214</small></div>
-            <div class="src"><span class="chip c-vio"><svg class="i14"><use href="#i-Calendar"/></svg></span>Meetings<small>18</small></div>
-            <div class="src"><span class="chip c-wa"><svg class="i14"><use href="#i-Chat"/></svg></span>WhatsApp<small>46</small></div>
-            <div class="src"><span class="chip"><svg class="i14"><use href="#i-Video"/></svg></span>Call notes<small>9</small></div>
+            <div class="src"><span class="chip lg"><img src="/assets/logos/gmail.svg" alt="" width="16" height="16"></span>Gmail<small>214</small></div>
+            <div class="src"><span class="chip lg"><img src="/assets/logos/meet.svg" alt="" width="16" height="16"></span>Google Meet<small>18</small></div>
+            <div class="src"><span class="chip lg"><img src="/assets/logos/whatsapp.svg" alt="" width="16" height="16"></span>WhatsApp<small>46</small></div>
+            <div class="src"><span class="chip lg"><img src="/assets/logos/zoom.svg" alt="" width="16" height="16"></span>Zoom<small>9</small></div>
           </div>
           <div class="app win" style="width:540px">
             <div class="win-h"><span class="cr">Companies</span><span class="sl">/</span><b>Lumen Skin</b></div>
@@ -1308,16 +1325,16 @@ body.cosmic .chip.c-wa{color:#5fd38a}
               <div><div style="font-size:20px;font-weight:500;letter-spacing:-.02em">Lumen Skin</div><div class="facts"><span><svg class="i13"><use href="#i-Globe"/></svg>lumenskin.com</span><span><svg class="i13"><use href="#i-MapPin"/></svg>Brooklyn, NY</span><span class="badge dark">Customer</span></div></div>
             </div>
             <div style="padding:8px 22px 14px">
-              <div class="tli"><span class="chip c-sky"><svg class="i14"><use href="#i-ArrowDownLeft"/></svg></span><div><div class="t1"><b>Amara</b> emailed you</div><div class="t2">Sending the PO today</div></div><span class="tm">2h ago</span></div>
-              <div class="tli"><span class="chip c-vio"><svg class="i14"><use href="#i-Calendar"/></svg></span><div><div class="t1">Meeting with <b>Amara, Ravi</b></div><div class="t2">Weekly sync</div></div><span class="tm">Yesterday</span></div>
-              <div class="tli"><span class="chip c-wa"><svg class="i14"><use href="#i-Chat"/></svg></span><div><div class="t1"><b>Ravi</b> on WhatsApp</div><div class="t2">Can we add two more stores?</div></div><span class="tm">Nov 10</span></div>
+              <div class="tli"><span class="chip lg"><img src="/assets/logos/gmail.svg" alt="" width="16" height="16"></span><div><div class="t1"><b>Amara</b> emailed you</div><div class="t2">Sending the PO today</div></div><span class="tm">2h ago</span></div>
+              <div class="tli"><span class="chip lg"><img src="/assets/logos/meet.svg" alt="" width="16" height="16"></span><div><div class="t1">Meeting with <b>Amara, Ravi</b></div><div class="t2">Weekly sync</div></div><span class="tm">Yesterday</span></div>
+              <div class="tli"><span class="chip lg"><img src="/assets/logos/whatsapp.svg" alt="" width="16" height="16"></span><div><div class="t1"><b>Ravi</b> on WhatsApp</div><div class="t2">Can we add two more stores?</div></div><span class="tm">Nov 10</span></div>
               <div class="tli"><span class="chip"><svg class="i14"><use href="#i-Pencil"/></svg></span><div><div class="t1"><b>Otto</b> set <b>Stage</b> to Negotiation</div></div><span class="tm">Nov 9</span></div>
             </div>
           </div>
         </div></div></div></div>
       </article>
       <article class="feat" id="ai" data-i="2">
-        <div class="stage-copy"><h2>A self-driving CRM</h2><p class="lede">After every call, Omniscient reads the transcript and proposes the necessary updates to the system. Less data entry and more strategic work done for you.</p></div>
+        <div class="stage-copy"><h2><span class="num">3.</span> A self-driving CRM</h2><p class="lede">After every call, Omniscient reads the transcript and proposes the necessary updates to the system. Less data entry and more strategic work done for you.</p></div>
         <div class="vis"><div class="acc acc-tr"><span class="acc-ic"><svg class="i14"><use href="#i-Check"/></svg></span><div><b>Record updated</b><span>Stage moved to Proposal</span></div></div><div class="fit" data-w="760"><div class="fit-inner" style="width:760px"><div class="vis-in">
           <div class="app win" style="width:620px">
             <div class="win-h"><span class="pi"><svg class="i"><use href="#i-Calendar"/></svg></span><b>Wholesale scoping call</b><div class="acts"><span class="badge">Past</span></div></div>
@@ -1331,7 +1348,7 @@ body.cosmic .chip.c-wa{color:#5fd38a}
         </div></div></div></div>
       </article>
       <article class="feat" id="automations" data-i="3">
-        <div class="stage-copy"><h2>Easily build workflows to close deals</h2><p class="lede">Turn your sales playbook into an automation that runs around the clock and closes deals for you on auto-pilot.</p></div>
+        <div class="stage-copy"><h2><span class="num">4.</span> Easily build workflows to close deals</h2><p class="lede">Turn your sales playbook into an automation that runs around the clock and closes deals for you on auto-pilot.</p></div>
         <div class="vis"><div class="acc acc-br acc-stat"><div><span>Runs this week</span><b>38</b></div><svg viewBox="0 0 120 36" class="spark"><path d="M0 30 L15 26 L30 28 L45 18 L60 21 L75 12 L90 15 L105 6 L120 8" fill="none" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="120" cy="8" r="3" fill="#0a0a0a"/></svg></div><div class="fit" data-w="760"><div class="fit-inner" style="width:760px"><div class="vis-in">
           <div class="app flow">
             <div class="trig"><div class="k"><svg class="i14"><use href="#i-Workflow"/></svg>Starts</div><b>When an opportunity moves to Proposal</b><small>12 in it now</small></div>
@@ -1780,6 +1797,32 @@ function sizeOrbit(){ od = Math.min(2, devicePixelRatio || 1); for (const k in o
 sizeOrbit();
 const chips = [...orbit.querySelectorAll('.ochip')].map(el => ({el, r:+el.dataset.r, k:+el.dataset.k, a:+el.dataset.a*Math.PI/180, w:0, h:0}));
 const onRing = (r, a) => [CX + r.rx*Math.cos(a), CY + r.ry*Math.sin(a)];
+// planets: each source rides one, shaded from the sun's side as it turns
+const PLANETS = [
+  {r:9, c:['#9a9893','#6d6b67']},                        // a rocky world
+  {r:11, c:['#e8d9b5','#b8a37a']},                       // pale and cloudy
+  {r:12, c:['#4f7fb8','#244a73'], land:'#6f8f5c'},       // blue with land
+  {r:10, c:['#c2653f','#7d3520']},                       // red and dusty
+  {r:19, c:['#d9b98c','#a07a52'], bands:['#e8d2ad','#b48a5f','#f0e2c6','#9c7350']}, // banded giant
+  {r:16, c:['#e6d4a3','#b39c6a'], bands:['#efe2bd','#c8b07c'], ring:1},             // ringed giant
+  {r:13, c:['#a9dfe6','#5f9eaa']},                       // pale cyan ice giant
+  {r:13, c:['#4a6fe0','#233c8f']}                        // deep blue ice giant
+];
+let bs = 3; const brnd = () => ((bs = (bs*16807) % 2147483647) / 2147483647);
+const BELT = Array.from({length:170}, () => ({a: brnd()*Math.PI*2, o:(brnd()-.5)*46, r:.5 + brnd()*1.1, al:.25 + brnd()*.55}));
+function drawPlanet(g, x, y, r, P, lx, ly, t){
+  if (P.ring){ g.save(); g.translate(x,y); g.rotate(-0.32); g.strokeStyle = 'rgba(230,214,170,.55)'; g.lineWidth = r*0.22; g.beginPath(); g.ellipse(0,0,r*2.05,r*0.62,0,Math.PI,Math.PI*2); g.stroke(); g.restore(); }
+  g.save(); g.beginPath(); g.arc(x,y,r,0,7); g.clip();
+  const base = g.createLinearGradient(x, y-r, x, y+r); base.addColorStop(0, P.c[0]); base.addColorStop(1, P.c[1]); g.fillStyle = base; g.fillRect(x-r, y-r, r*2, r*2);
+  if (P.bands){ P.bands.forEach((b, i) => { g.fillStyle = b; g.globalAlpha = .55; g.fillRect(x-r, y - r + (i*2+1)*r/(P.bands.length+.5) - r*0.12 + Math.sin(t*0.0004 + i)*0.6, r*2, r*0.26); }); g.globalAlpha = 1; }
+  if (P.land){ g.fillStyle = P.land; g.globalAlpha = .8; [[-.3,-.2,.42],[.35,.25,.3],[.05,.5,.22]].forEach(([u,v,s]) => { g.beginPath(); g.ellipse(x+u*r + ((t*0.002) % (r*2)) - r*.2, y+v*r, s*r, s*r*.7, .4, 0, 7); g.fill(); }); g.globalAlpha = 1; }
+  // light from the sun, then night on the far side
+  const hl = g.createRadialGradient(x+lx*r*.5, y+ly*r*.5, 0, x+lx*r*.5, y+ly*r*.5, r*1.1); hl.addColorStop(0,'rgba(255,248,230,.45)'); hl.addColorStop(1,'rgba(255,248,230,0)'); g.fillStyle = hl; g.fillRect(x-r, y-r, r*2, r*2);
+  const sh = g.createLinearGradient(x+lx*r*.15, y+ly*r*.15, x-lx*r, y-ly*r); sh.addColorStop(0,'rgba(0,0,0,0)'); sh.addColorStop(.55,'rgba(0,0,0,.82)'); sh.addColorStop(1,'rgba(0,0,0,.95)'); g.fillStyle = sh; g.fillRect(x-r, y-r, r*2, r*2);
+  g.restore();
+  g.strokeStyle = 'rgba(255,240,215,.35)'; g.lineWidth = 1; g.beginPath(); g.arc(x, y, r-.5, Math.atan2(ly,lx)-1.2, Math.atan2(ly,lx)+1.2); g.stroke();
+  if (P.ring){ g.save(); g.translate(x,y); g.rotate(-0.32); g.strokeStyle = 'rgba(230,214,170,.7)'; g.lineWidth = r*0.22; g.beginPath(); g.ellipse(0,0,r*2.05,r*0.62,0,0,Math.PI); g.stroke(); g.restore(); }
+}
 function drawRing(g, r, front, t){
   const N = 180;
   for (let i = 0; i < N; i++){
@@ -1805,7 +1848,7 @@ function drawOrbit(t){
   const B = og.back, F = og.front;
   [B,F].forEach(g => { g.setTransform(od,0,0,od,0,0); g.clearRect(0,0,OW,OH); g.lineWidth = 1; });
   // light behind the core: soft glow, horizon flare, slow rays
-  const glow = B.createRadialGradient(CX,CY,0,CX,CY,360); glow.addColorStop(0,'rgba(255,255,255,.16)'); glow.addColorStop(.35,'rgba(190,200,255,.05)'); glow.addColorStop(1,'rgba(0,0,0,0)');
+  const glow = B.createRadialGradient(CX,CY,0,CX,CY,360); glow.addColorStop(0,'rgba(255,226,170,.22)'); glow.addColorStop(.35,'rgba(255,190,120,.06)'); glow.addColorStop(1,'rgba(0,0,0,0)');
   B.fillStyle = glow; B.fillRect(0,0,OW,OH);
   const fl = B.createLinearGradient(0,0,OW,0); fl.addColorStop(0,'rgba(255,255,255,0)'); fl.addColorStop(.5,'rgba(255,255,255,.55)'); fl.addColorStop(1,'rgba(255,255,255,0)');
   B.fillStyle = fl; B.fillRect(0, CY-.5, OW, 1);
@@ -1821,19 +1864,19 @@ function drawOrbit(t){
   // rings: back halves behind the core, front halves over it
   RINGS.forEach(r => { drawRing(B, r, false, T); drawRing(F, r, true, T); });
   // comets: two per ring, opposite each other
-  RINGS.forEach((r, i) => {
-    const sp = [0.00042, -0.00031, 0.00024][i], len = [1.1, 0.9, 0.75][i];
-    for (let c = 0; c < 2; c++){
-      const a = T*sp + c*Math.PI + i*0.7, L = sp < 0 ? -len : len;
-      drawComet(B, r, a, false, L); drawComet(F, r, a, true, L);
-    }
+  // an asteroid belt on the middle ring, turning slowly
+  BELT.forEach(b => {
+    const a = b.a + T*0.000035, r = RINGS[1], x = CX + (r.rx + b.o)*Math.cos(a), y = CY + (r.ry + b.o*0.34)*Math.sin(a), s = Math.sin(a), g = s > 0 ? F : B;
+    g.fillStyle = `rgba(255,255,255,${(b.al*(0.35 + 0.65*(s+1)/2)).toFixed(3)})`; g.beginPath(); g.arc(x, y, b.r, 0, 7); g.fill();
   });
   // sources: 4 on the inner ring, 4 on the outer ring offset by 45 degrees, all turning together
   chips.forEach(c => {
     if (!c.w){ const sc = orbit.getBoundingClientRect().width/OW; orbit.classList.toggle('small', sc < .55); c.boost = sc < .55 ? Math.min(2.4, .62/sc) : 1; c.w = c.el.offsetWidth; c.h = c.el.offsetHeight; }
-    const a = c.a;
+    const a = c.a + T*(c.r ? 0.000045 : 0.00008);
     const [x,y] = onRing(RINGS[c.r], a), s = Math.sin(a), d = (s+1)/2;
-    c.el.style.transformOrigin = 'center'; c.el.style.transform = `translate(${(x - c.w/2).toFixed(1)}px,${(y - c.h/2).toFixed(1)}px) scale(${((0.9 + 0.1*d)*c.boost).toFixed(3)})`;
+    const P = PLANETS[c.r ? 4 + c.k : c.k], pr = P.r*1.45*(0.82 + 0.3*d), dx = CX - x, dy = CY - y, dl = Math.hypot(dx, dy) || 1;
+    drawPlanet(s > 0 ? F : B, x, y, pr, P, dx/dl, dy/dl, T);
+    c.el.style.transformOrigin = 'center top'; c.el.style.transform = `translate(${(x - c.w/2).toFixed(1)}px,${(y + pr + 7).toFixed(1)}px) scale(${((0.9 + 0.1*d)*c.boost).toFixed(3)})`;
     c.el.style.opacity = (0.72 + 0.28*d).toFixed(3);
     c.el.style.zIndex = s > 0 ? 9 : 3;
     // a spark flows from each source into the core
@@ -2121,7 +2164,7 @@ function drawFig(f, T){
   const tilt=()=>{ if(reduce||!fit) return; const r=fit.getBoundingClientRect(); const p=Math.max(0,Math.min(1,1-(r.top-90)/(innerHeight*.75)));  };
   addEventListener('scroll',tilt,{passive:true}); addEventListener('resize',tilt); tilt();
   const L=[['o','Otto logged a call','Claire Duval, 32 min'],['o','Otto found 6 leads','DTC founders moving into retail'],['o','Otto drafted a follow-up','To Theo Lindqvist'],['o','Otto filled 4 fields','From the Maison Verre call']];
-  const R=[['Check','Stage moved to Proposal','Q1 wholesale, Maison Verre'],['Mail','Claire replied','Pricing for 40 doors?'],['Check','Merged 2 duplicates','Lumen Skin'],['Calendar','Meeting booked','Sora Tea, Tue 10:00 AM']];
+  const R=[['Check','Stage moved to Proposal','Q1 wholesale, Maison Verre'],['Mail','Claire replied','Pricing for 40 doors?'],['Calendar','Meeting booked','Sora Tea, Tue 10:00 AM']];
   const cl=hero.querySelector('.hlive.l'), cr=hero.querySelector('.hlive.r');
   const fill=(el,it,owl)=>{ el.innerHTML=owl?`<span class="ic o"><svg><use href="#otto"/></svg></span><div><b>${it[1]}</b><span>${it[2]}</span></div><i class="live"></i>`:`<span class="ic"><svg class="i"><use href="#i-${it[0]}"/></svg></span><div><b>${it[1]}</b><span>${it[2]}</span></div>`; };
   let k=0;
@@ -2168,8 +2211,9 @@ if (!reduce){ const loop = t => { if (skyVis) frame(t); requestAnimationFrame(lo
 </script>
 
 
-<script src="/assets/globe.js?v=7f264d4a" defer></script>
-<script src="/assets/monolith.js?v=e4d4a8f4" defer></script>
+<script src="/assets/globe.js?v=fa603f6c" defer></script>
+<script src="/assets/monolith.js?v=ba0ff38d" defer></script>
+<script src="/assets/species.js?v=60f89ddc" defer></script>
 <script src="/assets/consent.js?v=6803e013" defer></script>
 
 

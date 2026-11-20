@@ -1,4 +1,6 @@
-/* The home page globe: a real Earth under the hero, drawn with one WebGL2 shader (no library).
+/* The home page globe: a dotted black and white Earth under the hero, drawn with one WebGL2 shader (no library).
+   Land is a grid of white dots read from a land and water map; the sea is a faint grid, the rim a white halo.
+   (Earlier version: a photo Earth.)
    Day side from NASA's Blue Marble, night side from NASA's Black Marble city lights, ocean shine from a water mask,
    clouds that drift on their own, and a blue atmosphere on the rim. The sun sits up and to the left, so the
    terminator crosses the cap and cities light up as they turn into the night. A 2D canvas on top draws arcs between
@@ -30,62 +32,51 @@
   uniform sampler2D uDay, uNight, uWater, uClouds;
   out vec4 o;
   const float PI = 3.14159265;
+  const float STEP = 0.0185; // radians between dot rows (about 1.06 degrees)
   vec3 toGlobe(vec3 n, float spin){
     float c = cos(uTilt), s = sin(uTilt);
     vec3 a = vec3(n.x, c*n.y - s*n.z, s*n.y + c*n.z);
     float cs = cos(spin), sn = sin(spin);
     return vec3(cs*a.x + sn*a.z, a.y, -sn*a.x + cs*a.z);
   }
-  vec4 tex(sampler2D t, vec2 uv){
-    // the seam at 180 degrees: pick whichever wrap of the longitude changes least between pixels
-    vec2 uv2 = vec2(fract(uv.x + .5) - .5, uv.y);
-    vec2 dx = dFdx(uv), dy = dFdy(uv), dx2 = dFdx(uv2), dy2 = dFdy(uv2);
-    if (abs(dx.x) + abs(dy.x) > abs(dx2.x) + abs(dy2.x)) { return textureGrad(t, uv2, dx2, dy2); }
-    return textureGrad(t, uv, dx, dy);
-  }
-  vec2 uvOf(vec3 q){ return vec2(atan(q.x, q.z) / (2.*PI) + .5, .5 - asin(clamp(q.y, -1., 1.)) / PI); }
+  vec2 uvOf(float lat, float lon){ return vec2(lon / (2.*PI) + .5, .5 - lat / PI); }
   void main(){
     vec2 px = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);
     vec2 d = (px - uC) / uR; d.y = -d.y;
-    float r2 = dot(d, d), r = sqrt(r2);
+    float r = length(d);
     vec3 sun = normalize(uSun);
-    vec3 col = vec3(0.); float a = 0.;
-    // atmosphere: a soft blue rim, brighter on the sunny side
     float sunSide = clamp(dot(normalize(d), normalize(sun.xy)) * .5 + .5, 0., 1.);
+    vec3 col = vec3(0.); float a = 0.;
     if (r >= 1.) {
+      // a thin white halo on the rim
       float h = (r - 1.) * uR;
-      float glow = (exp(-h / 7.) * .9 + exp(-h / 26.) * .42 + exp(-h / 70.) * .16) * (1. - smoothstep(70., 120., h));
-      glow *= .35 + .9 * sunSide;
-      col = vec3(.36, .55, 1.) * glow; a = clamp(glow, 0., 1.);
+      float glow = (exp(-h / 5.) * .7 + exp(-h / 24.) * .28 + exp(-h / 70.) * .1) * (1. - smoothstep(70., 120., h)) * (.45 + .7 * sunSide);
+      col = vec3(.86, .9, 1.) * glow; a = clamp(glow, 0., 1.);
     } else {
-      vec3 n = vec3(d, sqrt(1. - r2));
+      vec3 n = vec3(d, sqrt(1. - r*r));
       vec3 q = toGlobe(n, uSpin);
-      vec2 uv = uvOf(q);
-      float ndl = dot(n, sun);
-      float day = smoothstep(-.12, .28, ndl);
-      vec3 dayc = pow(tex(uDay, uv).rgb, vec3(1.08)) * 1.05;
-      vec3 lights = tex(uNight, uv).rgb;
-      float water = tex(uWater, uv).r;
-      vec3 qc = toGlobe(n, uSpin + uCloud);
-      float cl = tex(uClouds, uvOf(qc)).r;
-      // lit side
-      vec3 lit = dayc * (.15 + .95 * max(ndl, 0.));
-      lit = mix(lit, vec3(.9, .94, 1.) * (.12 + .95 * max(ndl, 0.)), cl * .85);
-      vec3 hv = normalize(sun + vec3(0., 0., 1.));
-      float spec = pow(max(dot(n, hv), 0.), 60.) * water * (1. - cl) * .9;
-      lit += vec3(1., .93, .8) * spec * day;
-      // night side: city lights, dimmed under clouds, and a faint blue ground
-      vec3 night = lights * vec3(1.35, 1.05, .7) * (1. - cl * .75) + dayc * .018 + vec3(.004, .007, .016);
-      col = mix(night, lit, day);
-      // terminator glow and the atmosphere seen through the edge
-      float fres = pow(1. - n.z, 3.);
-      col += vec3(1., .55, .3) * exp(-pow(ndl / .07, 2.)) * .08;
-      col += vec3(.3, .5, 1.) * fres * (.25 + .9 * max(ndl + .2, 0.));
-      col *= .92;
-      // antialias the limb into the rim glow
+      float lat = asin(clamp(q.y, -1., 1.)), lon = atan(q.x, q.z);
+      // the dot this pixel belongs to: rows of equal latitude, spaced evenly along each row
+      float row = floor(lat / STEP + .5), latc = row * STEP;
+      float ls = STEP / max(cos(latc), .08);
+      float lonc = (floor(lon / ls + .5)) * ls;
+      vec3 qc = vec3(cos(latc) * sin(lonc), sin(latc), cos(latc) * cos(lonc));
+      float ang = length(q - qc); // the chord: equal to the angle at this scale, and exact in float
+      float land = 1. - textureLod(uWater, uvOf(latc, lonc), 0.).r;
+      land = step(.5, land);
+      float aa = fwidth(ang) * 1.2;
+      float rad = STEP * mix(.18, .34, land);
+      float dotA = 1. - smoothstep(rad - aa, rad + aa, ang);
+      float light = .35 + .65 * smoothstep(-.35, .45, dot(n, sun));
+      float edge = smoothstep(0., .35, n.z);
+      float v = dotA * mix(.13, 1., land) * light * mix(.35, 1., edge);
+      // the sphere itself: near-black, a touch lighter toward the sun, with a white rim
+      vec3 base = vec3(.018, .02, .028) + vec3(.03) * max(dot(n, sun), 0.);
+      float fres = pow(1. - n.z, 4.);
+      col = base + vec3(.94, .96, 1.) * v + vec3(.75, .8, 1.) * fres * (.18 + .5 * sunSide);
       float inside = smoothstep(1., 1. - 1.5 / uR, r);
-      float glow = (.35 + .9 * sunSide) * 1.57;
-      col = mix(vec3(.36, .55, 1.) * glow, col, inside);
+      float glow = (.45 + .7 * sunSide) * 1.08;
+      col = mix(vec3(.86, .9, 1.) * glow, col, inside);
       a = mix(clamp(glow, 0., 1.), 1., inside);
     }
     o = vec4(col * uFade, a * uFade);
@@ -213,9 +204,9 @@
       const p = P(c);
       if (p[2] < 0.05 || p[1] > H) continue;
       const a = Math.min(1, p[2] * 3) * fade;
-      g.fillStyle = `rgba(190,215,255,${0.85 * a})`;
+      g.fillStyle = `rgba(255,255,255,${0.85 * a})`;
       g.beginPath(); g.arc(p[0], p[1], 1.6, 0, 6.283); g.fill();
-      g.fillStyle = `rgba(120,160,255,${0.18 * a})`;
+      g.fillStyle = `rgba(255,255,255,${0.18 * a})`;
       g.beginPath(); g.arc(p[0], p[1], 5, 0, 6.283); g.fill();
     }
     g.lineCap = "round";
@@ -229,15 +220,15 @@
         if (a[2] < 0 || b[2] < 0) continue;
         const k = (i / n - tail) / Math.max(0.001, head - tail);
         const al = Math.max(0, Math.min(1, k)) * Math.min(1, a[2] * 4) * fade * (ph > 1 ? 1 - (ph - 1) * 4 : 1);
-        g.strokeStyle = `rgba(170,200,255,${0.75 * al})`;
+        g.strokeStyle = `rgba(255,255,255,${0.75 * al})`;
         g.lineWidth = 1.2;
         g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.stroke();
       }
       const hp = pts[Math.min(n, Math.round(head * n))];
       if (hp[2] > 0 && ph <= 1) {
-        g.fillStyle = `rgba(230,240,255,${0.95 * fade})`;
+        g.fillStyle = `rgba(255,255,255,${0.95 * fade})`;
         g.beginPath(); g.arc(hp[0], hp[1], 1.8, 0, 6.283); g.fill();
-        g.fillStyle = `rgba(140,175,255,${0.25 * fade})`;
+        g.fillStyle = `rgba(255,255,255,${0.25 * fade})`;
         g.beginPath(); g.arc(hp[0], hp[1], 6, 0, 6.283); g.fill();
       }
     }
@@ -251,9 +242,10 @@
 
   const go = () => {
     const base = "/assets/img/globe/";
-    Promise.all([load(base + "day.webp", 0), load(base + "night.webp", 1), load(base + "water.webp", 2), load(base + "clouds.webp", 3)])
+    // only the land and water map is needed for the dotted earth
+    load(base + "water.webp", 2)
       .then(() => {
-        gl.uniform1i(U.uDay, 0); gl.uniform1i(U.uNight, 1); gl.uniform1i(U.uWater, 2); gl.uniform1i(U.uClouds, 3);
+        gl.uniform1i(U.uWater, 2);
         ready = true;
         box.classList.add("has-globe");
         if (reduce) { fade = 1; draw(performance.now()); return; }
