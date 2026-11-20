@@ -1,6 +1,6 @@
 /* The problem section's picture: a black monolith on rocky ground at dawn, after the opening of 2001: A Space
-   Odyssey (drawn from scratch, no film still). A dark cliff on the left, a bright sky low on the horizon with streaks
-   of cloud, broken rock in front, and the slab standing in it. The scene is painted small on a hidden canvas, then
+   Odyssey (drawn from scratch, no film still). A bright sky with dark streaks of cloud, a dark overhanging cliff on
+   the left, layered rock ledges with caves in front, an ape on the right rock, and the slab standing between them. The scene is painted small on a hidden canvas, then
    redrawn as a grid of white dots whose size follows the brightness. Dawn breaks once the section comes into view;
    after that the clouds drift and the dots shimmer. Pauses when out of view; reduced motion shows the full dawn. */
 (function () {
@@ -25,35 +25,32 @@
   };
   const fbm = (x, y) => vn(x, y) * 0.55 + vn(x * 2.1, y * 2.1) * 0.28 + vn(x * 4.3, y * 4.3) * 0.17;
 
-  // the boulders in front, fixed
-  const rocks = Array.from({ length: 9 }, (_, k) => ({ x: 0.04 + k * 0.12 + rnd() * 0.05, y: 0.68 + rnd() * 0.1, w: 0.07 + rnd() * 0.07, h: 0.035 + rnd() * 0.035 }));
-
   const img = s.createImageData(N, N);
+  const HZ = 0.6; // the horizon
+  // rock ledges: bands of lit stone with dark cracks between them
+  const ledge = (x, y) => {
+    const band = Math.sin((y * 34 + fbm(x * 3, y * 2) * 3.2) * 1.0);
+    const crack = Math.max(0, 1 - Math.abs(band) * 5);
+    return 0.62 + 0.25 * fbm(x * 7, y * 9) - 0.45 * crack;
+  };
   const scene = (dawn, t) => {
-    const D = img.data, drift = t * 0.012, hz = 0.6;
+    const D = img.data, drift = t * 0.01;
     for (let j = 0; j < N; j++) {
       const y = j / N;
       for (let i = 0; i < N; i++) {
         const x = i / N;
         let v;
-        if (y < hz) {
-          // sky: dark at the top, bright low on the horizon, brightest behind the right half
-          const low = Math.pow(y / hz, 2.2);
-          const sunGlow = Math.exp(-(Math.pow((x - 0.62) / 0.34, 2) + Math.pow((y - hz) / 0.16, 2)));
-          v = (0.02 + 0.6 * low) * (0.35 + 0.65 * dawn) + 0.5 * sunGlow * dawn;
-          // streaks of cloud, dark against the bright sky
-          const cl = fbm(x * 5 + drift, y * 16);
-          const band = Math.exp(-Math.pow((y - 0.18) / 0.12, 2)) + 0.8 * Math.exp(-Math.pow((y - 0.42) / 0.06, 2));
-          v *= 1 - Math.min(0.9, Math.max(0, cl - 0.48) * 3.2 * band);
+        if (y < HZ) {
+          // a bright sky, brightest just above the horizon, with dark streaks of cloud
+          const glow = Math.exp(-(Math.pow((x - 0.66) / 0.42, 2) + Math.pow((y - HZ) / 0.22, 2)));
+          v = (0.62 + 0.3 * (y / HZ) + 0.12 * glow) * (0.55 + 0.45 * dawn);
+          const cl = fbm(x * 4.2 + drift, y * 15);
+          const band = Math.exp(-Math.pow((y - 0.05) / 0.07, 2)) + Math.exp(-Math.pow((y - 0.17) / 0.05, 2)) * 0.9 + Math.exp(-Math.pow((y - 0.33) / 0.035, 2)) * 0.8 + Math.exp(-Math.pow((y - 0.48) / 0.03, 2)) * 0.7;
+          v *= 1 - Math.min(0.75, Math.max(0, cl - 0.5) * 3.4 * band);
         } else {
-          // rocky ground, lit from the low sun, darker toward us
-          const r = fbm(x * 9, y * 14);
-          v = (0.18 + 0.5 * r) * (1 - (y - hz) * 1.25) * (0.5 + 0.5 * dawn);
+          // the rocky ground: lit ledges, darker toward the bottom
+          v = ledge(x, y) * (1 - (y - HZ) * 0.5) * (0.6 + 0.4 * dawn);
         }
-        // the cliff on the left and the rock on the right edge
-        const cliff = 0.3 - 0.16 * Math.pow(y / 0.62, 1.6) + 0.05 * (fbm(y * 8, 3) - 0.5);
-        if (x < cliff && y < 0.66) v = Math.max(0, fbm(x * 10, y * 10) - 0.62) * 0.5;
-        if (x > 0.93 - 0.08 * fbm(y * 6, 7) && y < 0.5) v = 0;
         const k = (j * N + i) * 4;
         D[k] = D[k + 1] = D[k + 2] = Math.max(0, Math.min(255, v * 255));
         D[k + 3] = 255;
@@ -61,23 +58,30 @@
     }
     s.putImageData(img, 0, 0);
     const P = (v) => v * N;
-    // boulders in front, lit on top
-    for (const b of rocks) {
-      s.fillStyle = "rgba(0,0,0,.55)";
-      s.beginPath(); s.ellipse(P(b.x), P(b.y + b.h * 0.4), P(b.w), P(b.h), 0, 0, 6.283); s.fill();
-      s.fillStyle = `rgba(255,255,255,${0.18 + 0.2 * dawn})`;
-      s.beginPath(); s.ellipse(P(b.x), P(b.y), P(b.w * 0.8), P(b.h * 0.35), 0, Math.PI, 0); s.fill();
-    }
-    // the slab: dark front, a lighter side, a lit edge, standing in the rock
-    s.fillStyle = "#020202";
-    s.fillRect(P(0.34), P(0.09), P(0.105), P(0.81));
-    s.fillStyle = "rgba(40,40,40,1)";
-    s.beginPath(); s.moveTo(P(0.445), P(0.09)); s.lineTo(P(0.47), P(0.1)); s.lineTo(P(0.47), P(0.89)); s.lineTo(P(0.445), P(0.9)); s.fill();
-    s.fillStyle = `rgba(255,255,255,${0.12 + 0.3 * dawn})`;
-    s.fillRect(P(0.443), P(0.2), P(0.003), P(0.7));
-    // its shadow across the ground
-    s.fillStyle = "rgba(0,0,0,.6)";
-    s.beginPath(); s.moveTo(P(0.34), P(0.9)); s.lineTo(P(0.47), P(0.89)); s.lineTo(P(0.3), N); s.lineTo(P(0.12), N); s.fill();
+    const poly = (pts, fill) => { s.fillStyle = fill; s.beginPath(); pts.forEach(([a, b], k) => (k ? s.lineTo(P(a), P(b)) : s.moveTo(P(a), P(b)))); s.closePath(); s.fill(); };
+    // the overhanging cliff on the left, dark against the sky
+    poly([[0, 0], [0.34, 0], [0.33, 0.04], [0.29, 0.1], [0.24, 0.18], [0.255, 0.27], [0.3, 0.36], [0.33, 0.47], [0.33, 0.58], [0.0, 0.62]], "rgba(6,6,6,1)");
+    // dark rock on the right edge, and the ape on it
+    poly([[0.93, 0.02], [1, 0], [1, 0.52], [0.95, 0.46], [0.92, 0.3], [0.94, 0.15]], "rgba(8,8,8,1)");
+    // the ape: a hunched back, a head held low and forward, long arms down to the rock
+    s.fillStyle = "rgba(10,10,10,1)";
+    s.beginPath(); s.ellipse(P(0.895), P(0.49), P(0.055), P(0.06), -0.5, 0, 6.283); s.fill();
+    s.beginPath(); s.ellipse(P(0.862), P(0.448), P(0.026), P(0.03), 0.2, 0, 6.283); s.fill();
+    poly([[0.838, 0.47], [0.858, 0.47], [0.86, 0.565], [0.842, 0.565]], "rgba(10,10,10,1)");
+    poly([[0.905, 0.5], [0.935, 0.5], [0.945, 0.565], [0.92, 0.565]], "rgba(10,10,10,1)");
+    // a low ridge on the horizon
+    poly([[0.45, 0.6], [0.55, 0.585], [0.62, 0.59], [0.7, 0.575], [0.78, 0.585], [0.78, 0.62], [0.45, 0.62]], "rgba(30,30,30,1)");
+    // caves under the ledges
+    const cave = (cx, cy, rx, ry) => { const gr = s.createRadialGradient(P(cx), P(cy), 0, P(cx), P(cy), P(Math.max(rx, ry))); gr.addColorStop(0, "rgba(0,0,0,.85)"); gr.addColorStop(0.6, "rgba(0,0,0,.6)"); gr.addColorStop(1, "rgba(0,0,0,0)"); s.fillStyle = gr; s.beginPath(); s.ellipse(P(cx), P(cy), P(rx), P(ry), 0, 0, 6.283); s.fill(); };
+    cave(0.25, 0.83, 0.09, 0.03);
+    cave(0.75, 0.81, 0.15, 0.06);
+    cave(0.6, 0.72, 0.06, 0.018);
+    cave(0.07, 0.94, 0.07, 0.02);
+    // the slab: a dark front face, a sliver of lit side, standing on the ground
+    poly([[0.325, 0.085], [0.43, 0.085], [0.43, 0.905], [0.325, 0.9]], "#000");
+    poly([[0.43, 0.085], [0.445, 0.095], [0.445, 0.9], [0.43, 0.905]], "rgba(48,48,48,1)");
+    // its shadow on the ground
+    poly([[0.325, 0.9], [0.445, 0.9], [0.4, 1], [0.24, 1]], "rgba(0,0,0,.55)");
   };
 
   let W = 0, H = 0, d = 1, start = 0, vis = false, seen = false, last = 0;
@@ -94,7 +98,7 @@
     const px = s.getImageData(0, 0, N, N).data;
     g.setTransform(d, 0, 0, d, 0, 0);
     g.clearRect(0, 0, W, H);
-    const cell = Math.max(5, W / 82);
+    const cell = Math.max(4.5, W / 96);
     g.fillStyle = "#fff";
     for (let y = cell / 2, r = 0; y < H; y += cell, r++) {
       const sy = Math.min(N - 1, Math.floor((y / H) * N));
