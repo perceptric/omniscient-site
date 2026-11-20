@@ -61,7 +61,7 @@ These make copy sound machine-written. Never start a sentence with: Interestingl
 - Lead with what the reader gets, then how.
 - No "not X, but Y", "X, not Y", or lists of exactly three for rhythm. No em dashes, no exclamation marks, no word "quietly".
 - No hype ("revolutionary", "game-changing", "powerful", "seamless", "robust", "cutting-edge", "unlock", "supercharge", "leverage").
-- Neutral, professional words about people and deals. Never "owe", "chase", "going cold", "nobody".
+- Neutral, professional words about people and deals. Never "owe", "chase", "going cold", "nobody". Never "rival" or "rivals": name the product, or say "other CRMs".
 - Call Omniscient's agent Otto. Never "the AI" for Otto's work.
 
 ## 5. Talking about Omniscient
@@ -73,7 +73,7 @@ Confident and calm. Describe it the same way you describe everyone else: what it
 Before you finish, search the draft:
 
 ```
-grep -niE "homepage|pricing page (lists|shows|says)|read on|didn't load|we didn't see|not listed|give up|still fits|falls short|stops at|interestingly|thankfully|refreshingly|luckily|fortunately|conveniently|frankly|personally|honestly|admittedly|notably|quietly|—|!" <file>
+grep -niE "homepage|pricing page (lists|shows|says)|read on|didn't load|we didn't see|not listed|give up|still fits|falls short|stops at|interestingly|thankfully|refreshingly|luckily|fortunately|conveniently|frankly|personally|honestly|admittedly|notably|quietly|rivals\?|—|!" <file>
 ```
 
 Rewrite every hit unless it is a link label, a product name or a screenshot caption.

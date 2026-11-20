@@ -303,7 +303,7 @@ folk is an AI CRM that keeps a small team's contacts and deals in one place, wit
 
 Each plan states its AI allowance, so you can see how far a plan stretches before you buy.
 
-folk suits founders and agencies whose deals start from LinkedIn conversations and their own network. We cover its rivals in [folk CRM alternatives](/blog/folk-crm-alternatives/).
+folk suits founders and agencies whose deals start from LinkedIn conversations and their own network. We cover other options in [folk CRM alternatives](/blog/folk-crm-alternatives/).
 
 ### 13. Affinity
 

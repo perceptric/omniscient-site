@@ -100,7 +100,7 @@ Every page lives in its own folder (the URL is the folder path). All marketing p
 | `/templates/` | Template gallery: 20 Deal Room sites and the workflow playbooks | 2 |
 | `/templates/<slug>/` | One page per template, with a live preview and "Use template" | 3 |
 | `/compare/` | Compare hub | 2 |
-| `/compare/hubspot/`, `/salesforce/`, `/attio/`, `/pipedrive/`, `/day-ai/` | One page per rival | 2 |
+| `/compare/hubspot/`, `/salesforce/`, `/attio/`, `/pipedrive/`, `/day-ai/` | One page per competitor | 2 |
 | `/help/` | Help center home with search | 3 |
 | `/help/<topic>/<article>/` | Help articles | 3 |
 | `/guides/` | Guides | 3 |
@@ -126,7 +126,7 @@ Like Attio's feature pages, each one follows the same order, so a new page is mo
 7. **FAQ.** Four to six questions, with `FAQPage` structured data.
 8. **Closing band.** Title and Start free.
 
-Solution, compare and integration pages use the same parts in a different order. Compare pages add a table, Omniscient against the rival, with prices that link to the rival's own pricing page.
+Solution, compare and integration pages use the same parts in a different order. Compare pages add a table, Omniscient against the other CRM, with prices that link to its own pricing page.
 
 ## 6. Home page
 
@@ -195,7 +195,7 @@ Built so far: the header and both menus, the phone menu, the footer, the home pa
 | Phase | What ships |
 |---|---|
 | 1 | New header with both menus and the phone sheet, new footer, the feature template and mock parts, Home rework, `/product/`, Single Source of Truth, Call & Meeting Intelligence, Self-Driving CRM, Deal Room, Pricing, Security, Demo |
-| 2 | The other product pages, Apps, Switch, Developers, the three solution pages, Omniscient 101, the template gallery, Compare and five rival pages, Changelog |
+| 2 | The other product pages, Apps, Switch, Developers, the three solution pages, Omniscient 101, the template gallery, Compare and five compare pages, Changelog |
 | 3 | One page per tool and per template, API reference, the suite page, help center, guides, blog, About |
 | Later | Customers, once three stories are signed off |
 

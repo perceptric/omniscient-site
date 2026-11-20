@@ -23,11 +23,11 @@ From October 1, titles use the next year. Every post published from November 202
 - `{X} Pricing: Plans and Costs Explained (2027)` (default)
 - `What Is {X} Pricing in 2027?`
 
-### Omniscient vs a rival (`type: versus`)
+### Omniscient vs another CRM (`type: versus`)
 - `Omniscient vs {X}: Which CRM Is Best for You? (2027)` (default)
 - `Omniscient vs {X}: Which AI CRM Wins? (2027)` (for AI CRMs)
 
-### Rival vs rival (`type: versus`)
+### Two other CRMs head to head (`type: versus`)
 - `{A} vs {B}: Which CRM Is the Best? (2027)` (default)
 - `{A} vs {B}: Which CRM for Startups Wins?` (when the reader is a startup)
 
