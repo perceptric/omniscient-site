@@ -97,7 +97,7 @@ summary: "One sentence for the index card."
 | `title` | The page title, the index card and the cover. |
 | `slug` | The URL, `/blog/<slug>/`. Keep it the same as the file name. |
 | `topic` | `crm`. The tag on the card and the filter on the index. |
-| `type` | `best-of`, `alternatives`, `versus`, `pricing` or `how-to`. Sets the length the build checks for. |
+| `type` | `best-of`, `alternatives`, `versus`, `review`, `pricing` or `how-to`. Sets the length the build checks for. |
 | `updated` | YYYY-MM-DD. Shown on the post, orders the index and is the post's date in `sitemap.xml`. |
 | `meta_description` | 150 to 160 characters. The search snippet and the share text. |
 | `summary` | One sentence for the index card. |

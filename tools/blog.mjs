@@ -22,8 +22,8 @@ const SRC = join(root, "blog", "_src");
 const SITE = "https://tryomniscient.com";
 const APP = "https://app.tryomniscient.com/";
 const TOPICS = { crm: "CRM" };
-const TYPES = ["best-of", "alternatives", "versus", "pricing", "how-to"];
-const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
+const TYPES = ["best-of", "alternatives", "versus", "review", "pricing", "how-to"];
+const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], review: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
 const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly"];
 
 const rel = (p) => p.slice(root.length).replace(/^\/+/, "");
