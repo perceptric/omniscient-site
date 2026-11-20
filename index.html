@@ -1122,6 +1122,22 @@ body.cosmic .core .dash.d2{border-color:rgba(255,210,150,.14)}
 body.cosmic .ochip{height:26px;padding:0 10px 0 4px;gap:6px;font-size:12.5px;background:rgba(12,12,14,.78);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(255,255,255,.12)}
 body.cosmic .ochip i{width:18px;height:18px;box-shadow:none}
 body.cosmic .ochip i svg{width:11px;height:11px}
+
+/* round 34: natural line breaks everywhere. Text fills its box; headings and short blocks balance their lines,
+   long paragraphs avoid a lone last word. */
+body.cosmic .bt p{max-width:none;text-wrap:balance}
+body.cosmic .figs figcaption span,body.cosmic .figs figure.panel figcaption span{max-width:none;text-wrap:balance}
+body.cosmic .pr-it p,body.cosmic .rel span,body.cosmic .plan .pd,body.cosmic .fineprint,body.cosmic .pcopy li span,body.cosmic .hchecks li{text-wrap:balance}
+body.cosmic .lede,body.cosmic .pcopy .lede,body.cosmic .pr-sub,body.cosmic .plede,body.cosmic .omni-sub,body.cosmic .sec-head p,body.cosmic .fin-p,body.cosmic .tm-tl small{text-wrap:balance}
+body.cosmic .pcopy .lede{max-width:46ch!important}
+body.cosmic .pcopy h2,body.cosmic .feat h2,body.cosmic .pin h2{max-width:24ch!important}
+body.cosmic .pcopy h2{font-size:clamp(26px,2.6vw,38px);line-height:1.08;letter-spacing:-.035em}
+body.cosmic .sec-title{max-width:30ch}
+body.cosmic .sec-head.tw h2{max-width:24ch}
+body.cosmic .phero h1{max-width:20ch}
+body.cosmic .faq .side p{max-width:38ch;text-wrap:balance}
+body.cosmic .faq details p{text-wrap:pretty}
+body.cosmic .pr-h{max-width:22ch}
 /* a longer scroll for each part of the story */
 @media (min-width:901px){html.js body.cosmic .feat{min-height:115svh!important}html.js body.cosmic .stages{padding-bottom:30svh}}
 
