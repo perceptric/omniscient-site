@@ -964,7 +964,12 @@ body.cosmic .av{background-color:var(--p4);color:var(--t2)}
 /* company logos as the app draws them: a raised square, the site's favicon inside */
 body.cosmic .logo{width:20px;height:20px;border-radius:6px;background:var(--p0)!important;box-shadow:var(--rest)!important;display:grid;place-items:center;overflow:hidden}
 body.cosmic .logo i{display:grid;place-items:center;width:calc(100% - 6px);height:calc(100% - 6px);border-radius:3px}
-body.cosmic .logo i svg{width:78%;height:78%}
+.logo[data-b]{background:var(--p0,#fff)!important;box-shadow:0 1px 2px rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.07)!important;display:grid;place-items:center;overflow:hidden}
+.logo[data-b] i{display:block;width:calc(100% - 6px);height:calc(100% - 6px);border-radius:3px;overflow:hidden}
+.logo.s16[data-b] i{width:calc(100% - 4px);height:calc(100% - 4px);border-radius:2px}
+.logo.s40[data-b] i{width:32px;height:32px;border-radius:7px}
+.logo[data-b] i svg{display:block;width:100%;height:100%}
+body.cosmic .logo i svg{width:100%;height:100%;display:block}
 body.cosmic .logo.s16{width:16px;height:16px;border-radius:4px}
 body.cosmic .logo.s16 i{border-radius:2px;width:calc(100% - 4px);height:calc(100% - 4px)}
 body.cosmic .logo.s40{width:44px;height:44px;border-radius:10px}
@@ -1618,23 +1623,13 @@ const TONE={Customer:'green',Won:'green',Prospect:'blue',Discovery:'blue',Upcomi
 function tones(root){ (root || document).querySelectorAll('.badge').forEach(el => { const t = TONE[el.textContent.trim()] || 'gray'; el.classList.remove('dark','line'); el.classList.add('t-'+t); }); }
 
 /* brand marks for the sample companies, in place of initials */
-const BRAND={
-  LS:{c:['#fbe7d3','#f1c398'],fg:'#8f4f17',svg:'<circle cx="12" cy="14" r="4.4" fill="currentColor"/><path d="M12 4.6v2.1M5.4 7.6l1.5 1.5M18.6 7.6l-1.5 1.5M3.6 14h2.1M18.3 14h2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 19h15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity=".55"/>'},
-  MV:{c:['#28584b','#11332b'],fg:'#f4ecd6',svg:'<path d="M7.8 3.8h8.4c.2 4.6-1.5 7.4-4.2 7.4S7.6 8.4 7.8 3.8z" fill="currentColor"/><path d="M12 11.2v6.6M8.6 20h6.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8.3 6.6h7.4" stroke="#11332b" stroke-width="1.2" opacity=".5"/>'},
-  NB:{c:['#2b5384','#152d4d'],fg:'#ffffff',svg:'<path d="M3.5 14.5 8.2 8l3.1 4 2.4-3 6.8 5.5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 18.6c1.9-1.3 3.8-1.3 5.7 0s3.8 1.3 5.7 0 3.8-1.3 5.6 0" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" opacity=".7"/>'},
-  ST:{c:['#93b25c','#5d7b30'],fg:'#ffffff',svg:'<path d="M5 19.2C5 10.6 10.6 5 19.2 5c0 8.6-5.6 14.2-14.2 14.2z" fill="currentColor"/><path d="M6.8 17.4 15 9.2M10.2 14l-.2-3.6M12.8 11.4l3.4.2" stroke="#5d7b30" stroke-width="1.5" stroke-linecap="round" opacity=".75"/>'},
-  BS:{c:['#ffffff','#f1f1ef'],fg:'#0a0a0a',ring:1,svg:'<path d="M8 4v16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="13.2" cy="14.8" r="4.8" fill="none" stroke="currentColor" stroke-width="2.4"/>'},
-  CE:{c:['#2a2a2a','#050505'],fg:'#ffffff',svg:'<circle cx="7.4" cy="13" r="3.7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16.6" cy="13" r="3.7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11.1 12.3c.6-.6 1.2-.6 1.8 0M3.7 12.2 2.6 9.6M20.3 12.2l1.1-2.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>'},
-  OC:{c:['#f6c35c','#de8a1c'],fg:'#ffffff',svg:'<path d="M12 2.9c3.3 3.7 5.6 6.4 5.6 9.9a5.6 5.6 0 0 1-11.2 0c0-2.3 1.1-3.9 2.5-5.1.1 2 1 3.3 2.2 3.5-.3-3.1-.5-5.4.9-8.3z" fill="currentColor"/><path d="M12 13.6c1.3 1.4 2 2.5 2 3.6a2 2 0 0 1-4 0c0-1.1.7-2.2 2-3.6z" fill="#de8a1c" opacity=".55"/>'},
-  HG:{c:['#d2715a','#a1442e'],fg:'#ffffff',svg:'<rect x="4.6" y="10.4" width="14.8" height="9.2" rx="1.6" fill="currentColor"/><rect x="3.6" y="7.4" width="16.8" height="3.6" rx="1.1" fill="currentColor"/><path d="M12 7.4v12.2" stroke="#a1442e" stroke-width="1.7" opacity=".6"/><path d="M12 7.3C10.6 4.4 7.6 4.3 7.6 6s3 1.3 4.4 1.3zm0 0c1.4-2.9 4.4-3 4.4-1.3S13.4 7.3 12 7.3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>'},
-  WM:{c:['#7565b0','#45397a'],fg:'#ffffff',svg:'<circle cx="16.6" cy="7.4" r="2.4" fill="currentColor"/><path d="M2.8 18.4c3-4.6 6.2-4.6 9.1-1.4 2.6-3 6-3 9.3 1.4v1.8H2.8z" fill="currentColor"/>'},
-  GL:{c:['#f9d2e1','#eda3c1'],fg:'#86284f',svg:'<circle cx="12" cy="12" r="3.3" fill="currentColor"/><circle cx="12" cy="12" r="6.4" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".7"/><circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".35"/>'}
-};
+/* brand marks for the sample companies: full app icons on a 32 grid */
+const BRAND={"LS":{"svg":"<rect width='32' height='32' fill='#FF6B4A'/><circle cx='16' cy='16' r='9' fill='#FFFFFF'/><path d='M7 18.5h18' stroke='#FF6B4A' stroke-width='2'/><path d='M8.2 21.5h15.6' stroke='#FF6B4A' stroke-width='2'/>"},"MV":{"svg":"<rect width='32' height='32' fill='#F2EDE3'/><path d='M16 16H4a12 12 0 0 1 12 -12z' fill='#0E7C66'/><path d='M28 4V16a12 12 0 0 1 -12 -12z' fill='#0E7C66'/><circle cx='10.0' cy='22.0' r='6.0' fill='#1A1A1A'/><rect x='16' y='16' width='12' height='12' fill='#1A1A1A'/>"},"NB":{"svg":"<rect width='32' height='32' fill='#2F5BEA'/><path d='M16 6l3 10h-6z' fill='#FFFFFF'/><path d='M16 26l-3-10h6z' fill='#FFFFFF' opacity='.55'/><path d='M6 16l10-3v6z' fill='#FFFFFF' opacity='.8'/><path d='M26 16l-10 3v-6z' fill='#FFFFFF' opacity='.8'/>"},"ST":{"svg":"<rect width='32' height='32' fill='#4FA63A'/><path d='M8 24A16 16 0 0 1 24 8A16 16 0 0 1 8 24z' fill='#FFFFFF'/>"},"BS":{"svg":"<rect width='32' height='32' fill='#141414'/><text x='16' y='23.2' text-anchor='middle' font-family='Inter Tight,Inter,sans-serif' font-weight='800' font-size='21' letter-spacing='-1' fill='#FFFFFF'>b</text><circle cx='25.4' cy='23' r='1.7' fill='#FFFFFF' opacity='.55'/>"},"CE":{"svg":"<rect width='32' height='32' fill='#6D4AFF'/><path d='M22.4 9.6A9 9 0 1 0 22.4 22.4' fill='none' stroke='#FFFFFF' stroke-width='3.4' stroke-linecap='round'/><circle cx='22.6' cy='16' r='2.2' fill='#FFFFFF'/>"},"OC":{"svg":"<rect width='32' height='32' fill='#0C0C0E'/><rect x='.5' y='.5' width='31' height='31' rx='0' fill='none' stroke='#F5A524' stroke-opacity='.25'/><circle cx='16' cy='16' r='10' fill='none' stroke='#F5A524' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M16 10.5c2 2.3 3.4 4 3.4 6.2a3.4 3.4 0 0 1-6.8 0c0-1.4.7-2.5 1.6-3.3' fill='none' stroke='#F5A524' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>"},"HG":{"svg":"<rect width='32' height='32' fill='#E5484D'/><rect x='7' y='8' width='5' height='16' rx='2.5' fill='#FFFFFF'/><rect x='20' y='8' width='5' height='16' rx='2.5' fill='#FFFFFF'/><path d='M16 12l4 4-4 4-4-4z' fill='#FFFFFF' opacity='.7'/>"},"GL":{"svg":"<rect width='32' height='32' fill='#EC5BA0'/><ellipse cx='16' cy='16' rx='10' ry='4.5' fill='#FFFFFF' fill-opacity='.42'/><ellipse cx='16' cy='16' rx='4.5' ry='10' fill='#FFFFFF' fill-opacity='.42'/><circle cx='16' cy='16' r='2.4' fill='#FFFFFF'/>"},"WM":{"svg":"<rect width='32' height='32' fill='#0EA5B7'/><path d='M7 10L11 22' stroke='#FFFFFF' stroke-width='4' stroke-linecap='round' opacity='1'/><path d='M11 22L16 13' stroke='#FFFFFF' stroke-width='4' stroke-linecap='round' opacity='0.7'/><path d='M16 13L21 22' stroke='#FFFFFF' stroke-width='4' stroke-linecap='round' opacity='0.7'/><path d='M21 22L25 10' stroke='#FFFFFF' stroke-width='4' stroke-linecap='round' opacity='1'/>"}};
 function brands(root){
   (root||document).querySelectorAll('.logo').forEach(el=>{
     const k=el.textContent.trim(), b=BRAND[k]; if(!b||el.dataset.b) return;
     el.dataset.b=k; el.setAttribute('aria-label',k);
-    el.innerHTML=`<i style="background:${b.ring?b.c[0]:b.c[1]};color:${b.fg}"><svg viewBox="0 0 24 24">${b.svg}</svg></i>`;
+    el.innerHTML=`<i><svg viewBox="0 0 32 32">${b.svg}</svg></i>`;
   });
 }
 function faces(root){
