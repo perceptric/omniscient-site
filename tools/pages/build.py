@@ -226,6 +226,45 @@ PAGE_CSS = r'''
   .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;transition:none}}
+/* night pages: the home page's structure and look on every product, team and pricing page */
+body.cosmic .phero{padding-block:120px 0}
+body.cosmic .phero h1{color:#f6f6f3;text-shadow:0 0 60px rgba(160,175,255,.18)}
+body.cosmic .plede{color:#a8a8a6}
+body.cosmic .phero .horizon.phz{margin-top:64px;padding-top:clamp(200px,19vw,290px)!important}
+body.cosmic .pshot::after{background:linear-gradient(rgba(3,3,4,0),var(--bg) 92%)}
+body.cosmic .plogo{background:rgba(255,255,255,.04);color:#f2f2ee;box-shadow:var(--glass-sh)}
+body.cosmic .plogo img{background:#fff;border-radius:6px;padding:2px!important}
+body.cosmic .plogos p{color:#8a8a8e}
+body.cosmic .pr-sub{margin:20px 0 0;max-width:46ch;font-size:17px;line-height:1.55;color:#9a9a9e}
+body.cosmic .pr-items{margin-top:40px}
+body.cosmic .pr-it b{font-weight:400;color:#8f8f94;text-decoration:line-through;text-decoration-color:rgba(255,255,255,.25)}
+body.cosmic .pr-it p{display:flex;align-items:flex-start;gap:10px;margin-top:8px;color:#f2f2ee;font-size:16.5px}
+body.cosmic .pr-it p svg{flex:none;margin-top:4px;color:#5fc79a}
+body.cosmic .sec-title.duo{color:#7f7f84}
+body.cosmic .sec-title.duo span{color:#f4f4f1}
+body.cosmic .prows{padding-top:110px}
+body.cosmic .prow+.prow{border-top-color:rgba(255,255,255,.08)}
+body.cosmic .pcopy h2{color:#f4f4f1;max-width:20ch}
+body.cosmic .pcopy h2 .num{color:#6f6f74;font-variant-numeric:tabular-nums}
+body.cosmic .pcopy li{color:#c4c4c0}
+body.cosmic .pcopy li svg{color:#f4f4f1}
+body.cosmic .rel a{background:var(--glass);box-shadow:var(--glass-sh)}
+body.cosmic .rel a:hover{background:rgba(255,255,255,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 0 1px rgba(255,255,255,.18),0 20px 40px -20px rgba(0,0,0,.9)}
+body.cosmic .rel i{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .rel span{color:#9a9a9e}
+body.cosmic .rel em{color:#f4f4f1}
+body.cosmic .cmpt{background:rgba(255,255,255,.02);box-shadow:var(--glass-sh)}
+body.cosmic .cmpt th,body.cosmic .cmpt td{border-top-color:rgba(255,255,255,.07)}
+body.cosmic .cmpt thead th{background:#0b0b0d;color:#f2f2ee}
+body.cosmic .cmpt thead th.pop{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .cmpt thead th.pop small{color:#555}
+body.cosmic .cmpt tbody th{color:#c4c4c0}
+body.cosmic .cmpt tr.grp th{background:rgba(255,255,255,.03);color:#f2f2ee}
+body.cosmic .cmpt td:nth-child(4){background:rgba(255,255,255,.03)}
+body.cosmic .cmpt .tick{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .cmpt .no{color:#55555a}
+body.cosmic .code{background:#0b0b0d;box-shadow:0 0 0 1px rgba(255,255,255,.09),0 30px 70px -24px rgba(0,0,0,.9)}
+@media (max-width:900px){body.cosmic .phero{padding-block:72px 0}body.cosmic .phero .horizon.phz{padding-top:200px!important}}
 '''
 
 def build_assets(s):
@@ -239,6 +278,7 @@ def build_assets(s):
       cut(js, '/* hero starlight', '/* nav: mega menus').replace("querySelectorAll('.wrap h1,.hero-form,.hlive,.hlede,.hpill,.hchecks')", "querySelectorAll('.wrap h1,.hero-form,.hlive,.hlede,.hpill,.hchecks,.plede,.pchip,.pcrumb')"),
       cut(js, '/* nav: mega menus', '/* hero email field'),
       cut(js, '/* finale: reveal and its own starfield */', '/* loop */'),
+      cut(js, '/* the night sky behind the whole page', '/* sticky feature story */'),
     ]
     out = ("/* Shared runtime for the product and team pages, cut from index.html by tools/pages/build.py. */\n(() => {\n"
       "const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;\n"
@@ -297,11 +337,11 @@ def related(slugs, n=5):
     for sl in slugs:
         s, n, d, i, g = BY[sl]
         cards += f'<a href="{url(s)}" class="rv"><i>{ic(i)}</i><b>{n}</b><span>{d}</span><em>Learn more{ic("ChevronRight")}</em></a>'
-    return f'<section class="sec"><div class="wrap"><div class="mono-row"><span>Explore</span><span>{n}.0</span></div><div class="sec-head solo"><h2>Keep exploring</h2></div><div class="rel">{cards}</div></div></section>'
+    return f'<section class="sec"><div class="wrap"><h2 class="sec-title">Keep exploring</h2><div class="rel">{cards}</div></div></section>'
 
 def faq_html(items, n='4.0'):
     det = ''.join(f'<details{" open" if k==0 else ""}><summary>{q}<span class="pm">{ic("Plus","i14")}</span></summary><p>{a}</p></details>' for k, (q, a) in enumerate(items))
-    return f'<section class="sec" id="faq"><div class="wrap faq"><div class="side"><div class="mono-row" style="margin-bottom:28px"><span>Questions</span><span>{n}</span></div><h2>Questions, answered</h2><p>Still curious? <a href="{DEMO}" style="text-decoration:underline">Book a demo</a> and we\'ll walk you through it.</p></div><div>{det}</div></div></section>'
+    return f'<section class="sec" id="faq"><div class="wrap faq"><div class="side"><h2>Questions, answered</h2><p>Still curious? <a href="{DEMO}" style="text-decoration:underline">Book a demo</a> and we\'ll walk you through it.</p></div><div>{det}</div></div></section>'
 
 def merge(P):
     try:
@@ -325,29 +365,47 @@ def swap_html(sw, n):
             f'<div class="cmp"><div class="cmp-old rv"><p class="cmp-h">Without Omniscient</p><ul>{old}</ul></div>'
             f'<div class="cmp-new rv"><p class="cmp-h"><svg><use href="#mark"/></svg>With Omniscient</p><ul>{new}</ul></div></div></div></section>')
 
+# The page body for night pages: the starfield layer and the scripts that draw the globe, monolith and panels
+SPACE = '<div class="space" aria-hidden="true"><div class="nebula"></div><canvas id="space"></canvas></div>'
+NIGHT_JS = '<script src="/assets/globe.js" defer></script>\n<script src="/assets/monolith.js" defer></script>\n<script src="/assets/species.js" defer></script>\n'
+
+def shell_html(s, title, desc, path, body):
+    return ('<!doctype html>\n<html lang="en-US">\n' + head_html(s, title, desc, path) + '<body class="sub cosmic">\n' + SPACE + '\n' + defs_html(s) + '\n' + nav_html() + '\n'
+            + body + footer_html() + '\n' + NIGHT_JS + '<script src="/assets/consent.js" defer></script>\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n')
+
+def problem_html(sw):
+    # the problem, as on the home page: the monolith beside each old way and what replaces it
+    items = ''.join(f'<div class="pr-it"><b>{o}</b><p>{ic("Check","i14")}{n}</p></div>' for o, n in zip(sw['old'], sw['new']))
+    return (f'<section class="problem"><div class="wrap pr-grid"><div class="pr-art"><canvas id="monolith" aria-label="A black monolith stands on rocky ground at dawn, drawn in dots"></canvas></div>'
+            f'<div class="pr-copy"><h2 class="pr-h">{sw["h"]}</h2><p class="pr-sub">{sw["p"]}</p><div class="pr-items">{items}</div></div></div></section>')
+
+def panels_html(band):
+    # three panels in dots, as in "Introducing a new species" on the home page
+    figs = ''.join(f'<figure class="panel rv"><canvas data-dfig="{k+1}" aria-hidden="true"></canvas><figcaption><b>{b}</b><span>{t}</span></figcaption></figure>' for k, (i, b, t) in enumerate(band['pts'][:3]))
+    return f'<section class="cosmos species"><canvas class="sky" aria-hidden="true"></canvas><div class="wrap"><h2 class="sec-title duo">{band["h"]}</h2><div class="figs">{figs}</div></div></section>'
+
 def page(s, P):
     P = merge(P)
     slug = P['slug']; _, name, line, icon, group = BY[slug]
     crumbs = {'Context': ('Product', '/#product'), 'Otto': ('Product', '/#product'), 'Ecosystem': ('Product', '/#product'), 'Teams': ('Teams', '/#teams'), 'Trust': ('Security', '/security/')}[group]
+    # the numbered parts, as in the home page's story
     rows = ''
     for k, r in enumerate(P['rows']):
         pts = ''.join(f'<li>{ic("Check")}<span>{x}</span></li>' for x in r.get('pts', []))
-        rows += (f'<div class="prow{" flip" if k % 2 else ""}"><div class="pcopy rv"><span class="eyebrow"><b>{k+1:02d}</b> {r["k"]}</span><h2>{r["h"]}</h2><p class="lede">{r["p"]}</p>'
+        rows += (f'<div class="prow{" flip" if k % 2 else ""}"><div class="pcopy rv"><h2><span class="num">{k+1}.</span> {r["h"]}</h2><p class="lede">{r["p"]}</p>'
                  + (f'<ul>{pts}</ul>' if pts else '') + f'</div><div class="rv">{r["v"]}</div></div>')
-    band = P['band']
-    pts = ''.join(f'<div><i>{ic(i)}</i><b>{b}</b><span>{t}</span></div>' for i, b, t in band['pts'])
-    extra = P.get('extra', '')
+    extra = re.sub(r'<div class="mono-row[^"]*"[^>]*>.*?</div>', '', P.get('extra', ''))
     hero = P['hero']
     if hero.startswith('<div class="vis">'):
         hero = '<div class="horizon phz"><div class="planet" aria-hidden="true"></div>' + hero[len('<div class="vis">'):]
     works = ''
     if P.get('works'):
         works = '<div class="wrap plogos rv"><p>Works with</p><div>' + ''.join(f'<span class="plogo">{blogo(n, 22, 6)}{n}</span>' for n in P['works'] if n in LOGOS) + '</div></div>'
-    n = 1; swap = ''
-    if P.get('swap'): swap = swap_html(P['swap'], n); n += 1
-    nr = n; n += 1
-    if extra: extra = extra.replace('<span>2.0</span>', f'<span>{n}.0</span>', 1); n += 1
-    nb = n
+    problem = problem_html(P['swap']) if P.get('swap') else ''
+    HOW = {'Data model': 'How the data model works', 'Clean data': 'How clean data works', 'Meetings': 'How meetings work', 'Email sync': 'How email sync works',
+           'Find leads': 'How finding leads works', 'Skills': 'How skills work', 'Knowledge': 'How knowledge works', 'Workflows': 'How workflows work', 'Apps': 'How apps connect',
+           'Chrome extension': 'How the Chrome extension works', 'Developers': 'How the API works', 'Customer success': 'How customer success teams use Omniscient', 'Agencies': 'How agencies use Omniscient', 'Founders': 'How founders use Omniscient'}
+    title = P.get('rows_title') or HOW.get(name) or {'Teams': f'How {name.lower()} teams use Omniscient', 'Trust': 'How we protect your data'}.get(group, f'How {name} works')
     body = f'''<main id="top">
 <section class="phero">
   <canvas id="hsky" aria-hidden="true"></canvas>
@@ -365,15 +423,15 @@ def page(s, P):
   <div class="widebox pshot rv">{hero}</div>
   {works}
 </section>
-{swap}
-<section class="sec prows"><div class="wrap"><div class="mono-row"><span>{P.get("rows_label","How it works")}</span><span>{nr}.0</span></div>{rows}</div></section>
+{problem}
+{panels_html(P['band'])}
+<section class="sec prows"><div class="wrap"><h2 class="sec-title">{title}</h2>{rows}</div></section>
 {extra}
-<section class="cosmos pband"><canvas class="sky" aria-hidden="true"></canvas><div class="wrap"><div class="mono-row dark"><span>{band["k"]}</span><span>{nb}.0</span></div><h2 class="big">{band["h"]}</h2><div class="pts rv">{pts}</div></div></section>
-{faq_html(P["faq"], f'{nb+1}.0')}
-{related(P["rel"], nb+2)}
+{faq_html(P["faq"])}
+{related(P["rel"])}
 {finale_html(s, P.get("fin"), P.get("fin_p"))}</main>
 '''
-    out = '<!doctype html>\n<html lang="en-US">\n' + head_html(s, P['title'], P['desc'], url(slug)) + '<body class="sub">\n' + defs_html(s) + '\n' + nav_html() + '\n' + body + footer_html() + '\n<script src="/assets/consent.js" defer></script>\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n'
+    out = shell_html(s, P['title'], P['desc'], url(slug), body)
     d = os.path.join(ROOT, slug); os.makedirs(d, exist_ok=True)
     open(os.path.join(d, 'index.html'), 'w').write(out)
     return slug
@@ -521,11 +579,11 @@ def pricing_page(s):
   </div>
 </section>
 {plans}
-<section class="sec"><div class="wrap"><div class="mono-row"><span>Compare</span><span>2.0</span></div><div class="sec-head"><div><h2>Everything in each plan</h2></div><div><p>Prices are per seat a month, billed yearly. Monthly billing costs 20% more.</p></div></div>{table}</div></section>
-{faq_html(PRICING_FAQ, '3.0')}
+<section class="sec"><div class="wrap"><div class="sec-head"><div><h2>Everything in each plan</h2></div><div><p>Prices are per seat a month, billed yearly. Monthly billing costs 20% more.</p></div></div>{table}</div></section>
+{faq_html(PRICING_FAQ)}
 {finale_html(s, ['Start free.', 'Pick a plan', 'when it clicks.'], 'Try Pro free for 14 days. No card needed.')}</main>
 '''
-    out = '<!doctype html>\n<html lang="en-US">\n' + head_html(s, 'Pricing: Omniscient', 'Omniscient pricing per seat, with Otto and the AI included. Free seats for viewers, Starter $19, Pro $49, Business $99, billed yearly. Try Pro free for 14 days.', '/pricing/') + '<body class="sub">\n' + defs_html(s) + '\n' + nav_html() + '\n' + body + footer_html() + '\n<script src="/assets/consent.js" defer></script>\n<script src="/assets/omni.js" defer></script>\n</body>\n</html>\n'
+    out = shell_html(s, 'Pricing: Omniscient', 'Omniscient pricing per seat, with Otto and the AI included. Free seats for viewers, Starter $19, Pro $49, Business $99, billed yearly. Try Pro free for 14 days.', '/pricing/', body)
     open(os.path.join(ROOT, 'pricing', 'index.html'), 'w').write(out)
 
 if __name__ == '__main__':

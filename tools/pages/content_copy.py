@@ -10,7 +10,7 @@ COPY = {
   rows=[
     dict(k="Capture", h="It fills itself in", p="Connect your inbox, calendar and call recorder once. From then on, every email, meeting and call shows up on the right company and person, and you never log a thing.",
       pts=["Emails, calls, meetings and notes on one timeline", "Duplicates merge, and any merge can be undone", "Private emails stay private"]),
-    dict(k="Recall", h="Ask a question, get the quote", p="Want to know what Lumen Skin agreed to on pricing, or who signs off? Ask Otto. He answers in a line and shows the exact words and the day they were said."),
+    dict(k="Recall", h="Ask a question, get the quote", p="Want to know what Linear agreed to on pricing, or who signs off? Ask Otto. He answers in a line and shows the exact words and the day they were said."),
     dict(k="Trust", h="See where every number came from", p="Each field says who set it: you, a teammate, a sync, or Otto with the quote that backs it up. When the forecast meeting comes around, you know which numbers to trust.",
       pts=["Otto suggests, you approve", "Every change is kept in the history", "Undo anything"]),
   ],
@@ -42,7 +42,7 @@ COPY = {
   h1="A CRM that cleans itself",
   lede="Duplicates merge, missing emails and company details fill in, and job changes show up on their own. If you don't like a change, undo it in one click.",
   swap=dict(h="Clean data without a cleanup day", p="When the data gets messy, people stop opening the CRM. Omniscient tidies it up as new records come in.",
-    old=["Lumen Skin and Lumen Skin Inc. saved as two companies", "Contacts saved without an email address", "You hear a champion changed jobs months later", "Friday afternoon goes to fixing the list"],
+    old=["Linear and Linear Inc. saved as two companies", "Contacts saved without an email address", "You hear a champion changed jobs months later", "Friday afternoon goes to fixing the list"],
     new=["Duplicates merge with their full history", "Work emails and company details fill in", "Job changes show up the week they happen", "Any merge or fill undone in one click"]),
   rows=[
     dict(k="Merge", h="Duplicates merge on their own", p="When the same company or person shows up twice, Omniscient folds them into one and keeps every email, call and note. Changed your mind? Undo it."),
@@ -83,7 +83,7 @@ COPY = {
   rows=[
     dict(k="Connect", h="Set up in one click", p="Sign in with Google or Microsoft. Past and new emails sync, and each one finds its way to the right company and person.",
       pts=["Gmail and Outlook", "Past emails come along", "You choose what the team sees"]),
-    dict(k="Focus", h="See what needs a reply first", p="Monday morning, Claire and Theo are both waiting to hear back. Their emails sit at the top, and everything else stays on the record until you need it."),
+    dict(k="Focus", h="See what needs a reply first", p="Monday morning, Patrick and Ivan are both waiting to hear back. Their emails sit at the top, and everything else stays on the record until you need it."),
     dict(k="Reply", h="Replies drafted in your voice", p="Otto drafts a reply from everything on the record, in your tone. You read it, change what you like and send it from your own inbox."),
   ],
   band=dict(h="<span>Every thread on the right customer,</span> without lifting a finger."),
@@ -155,7 +155,7 @@ COPY = {
   rows=[
     dict(k="Teach", h="Add pages, files or links", p="Write a page, upload a file or paste a link. Price sheets, playbooks, product details and your writing style all work.",
       pts=["Pages you write and edit", "Files and links", "Organized in folders"]),
-    dict(k="Answer", h="Answers that use your real prices", p="A store wants to know what 4,000 units will cost. Ask Otto, and he answers from your pricing page and names the page he used."),
+    dict(k="Answer", h="Answers that use your real prices", p="A customer wants to know what 400 seats will cost. Ask Otto, and he answers from your pricing page and names the page he used."),
     dict(k="Draft", h="Emails in your team's voice", p="Otto writes follow-ups in the tone your team set, with the right prices and terms. You read them and send them yourself."),
   ],
   band=dict(h="<span>Your team's know-how,</span> in every answer Otto gives."),

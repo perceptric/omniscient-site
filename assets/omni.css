@@ -775,6 +775,327 @@ p,li,dd,blockquote,figcaption,.lede,.mm-i span,.rel span,.pts span,.acc span,.ub
 .nav-cta .btn-black{font-weight:500}
 @media (max-width:900px){.nav .wrap{display:flex!important}.nav .nav-cta{margin-left:auto}}
 
+/* ===== round 30: the home page at night. One sky behind every section; product shots in the app's own dark theme
+   (the tokens of data-theme="dark" in the app's globals.css). Scoped to body.cosmic so the product pages that share
+   this file stay light. ===== */
+body.cosmic{--bg:#030304;--ink:#f4f4f1;--dim:#a3a3a0;--muted:#76767a;--rule:rgba(255,255,255,.08);--field:rgba(255,255,255,.035);--night:transparent;
+  --sh-card:0 0 0 1px rgba(255,255,255,.08),0 24px 48px -24px rgba(0,0,0,.9);--sh-chip:0 0 0 1px rgba(255,255,255,.12);
+  --sh-outline:0 0 0 1px rgba(255,255,255,.18);--sh-primary:0 0 0 1px rgba(255,255,255,.9),0 10px 30px -10px rgba(255,255,255,.35);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.018));--glass-sh:inset 0 1px 0 rgba(255,255,255,.07),0 0 0 1px rgba(255,255,255,.08);
+  --otto:#4a4a45;--otto-beak:#8a8a84;color-scheme:dark;background:var(--bg);color:var(--ink)}
+body.cosmic::before{background:var(--bg)}
+body.cosmic :focus-visible{outline-color:#fff}
+.space{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;background:radial-gradient(120% 80% at 50% -10%,#0b0c14 0,#05050a 45%,#020203 100%)}
+.space canvas{position:absolute;inset:0;width:100%;height:100%}
+.nebula{position:absolute;left:-10%;right:-10%;top:-10%;height:140%;will-change:transform;
+  background:radial-gradient(38% 28% at 82% 18%,rgba(88,104,200,.16),transparent 70%),radial-gradient(30% 24% at 12% 46%,rgba(130,86,190,.11),transparent 70%),
+  radial-gradient(42% 30% at 70% 78%,rgba(40,110,160,.10),transparent 70%),radial-gradient(26% 20% at 30% 8%,rgba(255,255,255,.05),transparent 70%);filter:blur(10px)}
+body.cosmic main,body.cosmic footer{position:relative;z-index:1}
+body.cosmic .cosmos canvas.sky,body.cosmic .finale canvas.sky,body.cosmic .cosmos::before{display:none}
+body.cosmic .cosmos,body.cosmic .finale{background:transparent}
+
+/* nav */
+body.cosmic .nav{background:rgba(3,3,4,.55);border-bottom-color:rgba(255,255,255,.07)}
+body.cosmic .links>a,body.cosmic .mm-t{color:#d6d6d1!important}
+body.cosmic .links>a:hover,body.cosmic .mm-t:hover,body.cosmic .mm-t[aria-expanded="true"]{color:#fff!important;background:rgba(255,255,255,.07)}
+body.cosmic .nav-cta .btn-text{color:#d6d6d1}
+body.cosmic .btn-black{background:#f4f4f1;color:#0a0a0a;box-shadow:0 0 0 1px rgba(255,255,255,.9),0 8px 24px -10px rgba(255,255,255,.4)}
+body.cosmic .btn-black:hover{background:#fff}
+body.cosmic .btn-line{background:rgba(255,255,255,.03);color:var(--ink);box-shadow:var(--sh-outline)}
+body.cosmic .btn-line:hover{box-shadow:0 0 0 1px rgba(255,255,255,.34)}
+body.cosmic .mm-in{background:#0e0e10;box-shadow:0 0 0 1px rgba(255,255,255,.09),0 30px 70px -20px rgba(0,0,0,.9)}
+body.cosmic .mm-i:hover{background:rgba(255,255,255,.05)}
+body.cosmic .mm-side{background:rgba(255,255,255,.035)}
+body.cosmic .mm-side a:hover{background:rgba(255,255,255,.06)}
+
+/* hero */
+body.cosmic .hpill{background:rgba(255,255,255,.04);box-shadow:var(--glass-sh);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+body.cosmic .hpill:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 0 1px rgba(255,255,255,.18)}
+body.cosmic .hpill .hp-new{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .hero h1{color:#f6f6f3;text-shadow:0 0 60px rgba(160,175,255,.18)}
+body.cosmic .hchecks svg{color:#f4f4f1}
+body.cosmic .hero-form{background:rgba(255,255,255,.04);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 0 0 1px rgba(255,255,255,.12),0 20px 50px -20px rgba(0,0,0,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+body.cosmic .hero-form:focus-within{box-shadow:0 0 0 1px rgba(255,255,255,.6),0 0 0 4px rgba(255,255,255,.08)}
+body.cosmic .hero-form input::placeholder{color:#7d7d80}
+body.cosmic .hero::before{display:none}
+body.cosmic .planet{background:radial-gradient(circle at 50% 0%,#14151c 0,#08080c 22%,#030304 46%);box-shadow:0 0 0 1px rgba(200,210,255,.22),0 -1px 0 rgba(255,255,255,.35),0 -30px 90px -30px rgba(150,170,255,.55),0 -90px 220px -60px rgba(120,140,255,.28),inset 0 30px 80px -40px rgba(170,185,255,.22)}
+body.cosmic .planet::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(60% 6% at 50% 0%,rgba(220,228,255,.55),transparent 70%);mix-blend-mode:screen}
+body.cosmic .hlive{background:rgba(22,22,20,.88);color:#f2f2ee;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 24px 50px -18px rgba(0,0,0,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+body.cosmic .hlive span{color:#a3a39e}
+body.cosmic .hlive .ic{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .hlive .ic.o{background:#272725;box-shadow:0 0 0 1px rgba(255,255,255,.1)}
+body.cosmic .hlive .live{background:#5fc79a;box-shadow:0 0 8px #5fc79a}
+body.cosmic .hero-fade{background:linear-gradient(rgba(3,3,4,0),var(--bg))}
+
+/* type on the night sky */
+body.cosmic .mono-row{border-top-color:rgba(255,255,255,.1);color:#7f7f84}
+body.cosmic .big{color:#86868a}
+body.cosmic .tagline{color:#7f7f84}
+body.cosmic .tagline span,body.cosmic .big span{color:#f4f4f1}
+body.cosmic .lede,body.cosmic .sec-head p{color:#a8a8a6}
+body.cosmic .rail button b{color:#4a4a4e}
+body.cosmic .eyebrow b,body.cosmic .rail button.on b{color:#f4f4f1}
+body.cosmic .story,body.cosmic .teams,body.cosmic .sec{background:transparent}
+
+/* stages: a dark field with faint dots and starlight from above */
+body.cosmic .vis,body.cosmic .tm-stage{background:rgba(255,255,255,.018);background-image:radial-gradient(rgba(255,255,255,.075) 1px,transparent 1px);background-size:18px 18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07),inset 0 1px 0 rgba(255,255,255,.05)}
+body.cosmic .vis::before{background:radial-gradient(ellipse 60% 45% at 50% 0%,rgba(160,175,255,.09),transparent 70%),radial-gradient(ellipse 70% 40% at 50% 100%,rgba(0,0,0,.5),transparent 70%)}
+body.cosmic .bt{background:var(--glass);background-color:rgba(255,255,255,.012);box-shadow:var(--glass-sh)}
+body.cosmic .bt p{color:#9a9a98}
+body.cosmic .acc{background:rgba(31,31,29,.92);color:#f2f2ee;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 24px 50px -16px rgba(0,0,0,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+body.cosmic .acc span{color:#a3a39e}
+body.cosmic .acc-ic{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .acc-u{background:#2e2e2b;color:#f2f2ee!important}
+body.cosmic .spark path{stroke:#f4f4f1}body.cosmic .spark circle{fill:#f4f4f1}
+
+/* teams */
+body.cosmic .tm-tab{color:#6f6f73}
+body.cosmic .tm-tab.on,body.cosmic .tm-tab:hover{color:#f4f4f1}
+body.cosmic .tm-tl small{color:#6a6a6e}
+body.cosmic .tm-tab.on .tm-tl small{color:#a3a3a0}
+body.cosmic .tm-av{opacity:.45}
+
+/* pricing, faq, integrations, footer */
+body.cosmic .seg{background:rgba(255,255,255,.04);box-shadow:var(--glass-sh)}
+body.cosmic .seg button[aria-pressed="true"]{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .plan{background:var(--glass);box-shadow:var(--glass-sh)}
+body.cosmic .plan.pop{background:linear-gradient(180deg,rgba(170,185,255,.13),rgba(255,255,255,.03));box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 0 0 1px rgba(200,210,255,.3),0 30px 80px -30px rgba(130,150,255,.45)}
+body.cosmic .plan .pn em{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .plan li svg{color:#f4f4f1}
+body.cosmic .btn-white{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .addon{background:var(--glass);box-shadow:var(--glass-sh)}
+body.cosmic .addon .chip{background:#1f1f1d!important;color:#f2f2ee!important;box-shadow:0 0 0 1px rgba(255,255,255,.1)!important}
+body.cosmic .intg{background:var(--glass);box-shadow:var(--glass-sh)}
+body.cosmic .intg:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 0 1px rgba(255,255,255,.18),0 20px 40px -20px rgba(0,0,0,.9)}
+body.cosmic .faq summary .pm{box-shadow:0 0 0 1px rgba(255,255,255,.16)}
+body.cosmic footer{border-top-color:rgba(255,255,255,.08)}
+body.cosmic .ck{background:#161614;color:#f2f2ee;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 30px 70px -20px rgba(0,0,0,.9)}
+body.cosmic .ck p{color:#a3a39e}body.cosmic .ck p a{color:#f2f2ee}
+
+/* ===== product shots: the app in its dark theme ===== */
+body.cosmic .app{--p0:#1f1f1d;--p1:#1f1f1d;--p2:#1a1a18;--p3:#272725;--p4:#2e2e2b;--sh:#161614;--l1:#333330;--l2:#3a3a37;--l3:#484843;--t1:#f2f2ee;--t2:#d6d6d1;--t3:#b3b3ae;--t4:#87877f;--t5:#6b6b67;
+  --brand:#42423e;--ring:rgba(255,255,255,.08);--rest:0 1px 2px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.08);--pop:0 12px 32px -6px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1);
+  --prim:0 0 0 1px rgba(255,255,255,.14),0 1px 3px rgba(0,0,0,.5);--input:0 0 0 1px rgba(255,255,255,.14),0 1px 3px rgba(0,0,0,.5);
+  font-size:13px;color:var(--t1);color-scheme:dark}
+body.cosmic .win{background:var(--p0);box-shadow:0 0 0 1px rgba(255,255,255,.09),0 30px 80px -24px rgba(0,0,0,.95)}
+body.cosmic .vis .win{box-shadow:0 0 0 1px rgba(255,255,255,.09),0 2px 4px rgba(0,0,0,.4),0 34px 80px -26px rgba(0,0,0,.95)!important}
+body.cosmic .win-h{min-height:48px;padding:6px 12px 6px 16px}
+body.cosmic .win-h .sl{color:var(--l3)}
+body.cosmic .shell{background:var(--sh);box-shadow:0 0 0 1px rgba(255,255,255,.1),inset 0 1px 0 rgba(255,255,255,.04),0 50px 140px -40px rgba(0,0,0,1),0 0 120px -30px rgba(140,160,255,.22)}
+body.cosmic .page{background:var(--p0);box-shadow:var(--rest);border-radius:12px}
+/* sidebar */
+body.cosmic .sb{width:232px;padding-bottom:4px}
+body.cosmic .ws{min-height:48px;gap:8px;padding:4px 8px 4px 10px}
+body.cosmic .ws .wsl{width:20px;height:20px;border-radius:6px;display:grid;place-items:center;background:#f2f2ee;color:#0a0a0a;flex:none}
+body.cosmic .ws svg.m{width:14px;height:14px}
+body.cosmic .ws b{font:600 13px/1 var(--sans);letter-spacing:-.01em}
+body.cosmic .ws .i14{margin-left:0;color:var(--t3)}
+body.cosmic .ws .fold{margin-left:auto;width:28px;height:28px;border-radius:999px;display:grid;place-items:center}
+body.cosmic .ws .fold .i14{color:var(--t3)}
+body.cosmic .search{height:32px;margin:4px 8px 6px;padding:0 6px 0 8px;background:var(--p0);color:var(--t3);box-shadow:var(--input)}
+body.cosmic .search .i{width:16px;height:16px}
+body.cosmic .search .kbd{flex:none}
+body.cosmic .kbd{background:var(--p3);color:var(--t3);box-shadow:inset 0 0 0 1px var(--l1)}
+body.cosmic .sbn{flex:1}
+body.cosmic .div{margin:12px 8px 0;background:var(--l3)}
+body.cosmic .lbl{height:24px;margin-top:8px;padding:0 8px 0 10px;color:var(--t3)}
+body.cosmic .nl{gap:2px;padding:0 8px}
+body.cosmic .lk{gap:8px;min-height:32px;padding:4px 10px;color:var(--t2)}
+body.cosmic .lk .i{width:16px;height:16px;color:var(--t3)}
+body.cosmic .lk.on{background:var(--brand);color:#fff;box-shadow:var(--prim)}
+body.cosmic .lk.on .i{color:#fff}
+body.cosmic #heroapp .lk:not(.on):hover{background:rgba(255,255,255,.06);color:var(--t1)}
+body.cosmic .sbf{border-top:1px solid var(--l3);margin:8px 0 0;padding:8px 8px 0}
+body.cosmic .sbf .lk{margin:0}
+body.cosmic .me{display:flex;align-items:center;gap:8px;margin-top:8px;padding:10px 8px 4px;border-top:1px solid var(--l3)}
+body.cosmic .me b{display:block;font-size:13px;font-weight:600;line-height:1.3}
+body.cosmic .me small{display:block;font-size:11px;color:var(--t4);line-height:1.3}
+body.cosmic .me div{flex:1;min-width:0}
+body.cosmic .me .i14{color:var(--t3)}
+/* buttons and bits */
+body.cosmic .ib{width:28px;height:28px;color:var(--t3)}
+body.cosmic .ib .i{width:15px;height:15px}
+body.cosmic .pb{min-height:28px;padding:0 14px 0 12px;background:var(--brand);color:#fff;box-shadow:var(--prim);font-size:13px}
+body.cosmic .pb.sm{min-height:28px}
+body.cosmic .gb{color:var(--t1);box-shadow:var(--input)}
+body.cosmic .send{background:#f2f2ee;color:#171717}
+body.cosmic .badge{background:#2c2c29;color:#c4c4bf}
+body.cosmic .badge.t-green{background:#12301f;color:#5fc79a}
+body.cosmic .badge.t-blue{background:#13253f;color:#93c5fd}
+body.cosmic .badge.t-violet{background:#261d45;color:#c4b5fd}
+body.cosmic .badge.t-amber{background:#3a2410;color:#fdba74}
+body.cosmic .badge.t-red{background:#3d1a14;color:#ff9d80}
+body.cosmic .badge.t-yellow{background:#3a2c05;color:#ffd166}
+body.cosmic .badge.t-gray{background:#2c2c29;color:#c4c4bf}
+body.cosmic .av{background-color:var(--p4);color:var(--t2)}
+/* company logos as the app draws them: a raised square, the site's favicon inside */
+body.cosmic .logo{width:20px;height:20px;border-radius:6px;background:var(--p0)!important;box-shadow:var(--rest)!important;display:grid;place-items:center;overflow:hidden}
+body.cosmic .logo i{display:grid;place-items:center;width:calc(100% - 6px);height:calc(100% - 6px);border-radius:3px}
+.logo[data-b]{background:var(--p0,#fff)!important;box-shadow:0 1px 2px rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.07)!important;display:grid;place-items:center;overflow:hidden}
+.logo[data-b] i{display:block;width:calc(100% - 6px);height:calc(100% - 6px);border-radius:3px;overflow:hidden}
+.logo.s16[data-b] i{width:calc(100% - 4px);height:calc(100% - 4px);border-radius:2px}
+.logo.s40[data-b] i{width:32px;height:32px;border-radius:7px}
+.logo[data-b] i svg{display:block;width:100%;height:100%}
+body.cosmic .logo i svg{width:100%;height:100%;display:block}
+body.cosmic .logo.s16{width:16px;height:16px;border-radius:4px}
+body.cosmic .logo.s16 i{border-radius:2px;width:calc(100% - 4px);height:calc(100% - 4px)}
+body.cosmic .logo.s40{width:44px;height:44px;border-radius:10px}
+body.cosmic .logo.s40 i{width:32px;height:32px;border-radius:7px}
+body.cosmic .cchip{background:var(--p0);box-shadow:var(--rest)}
+body.cosmic .chip{background:var(--p0);box-shadow:var(--rest);color:var(--t2)}
+body.cosmic .chip.c-sky{color:#7cc3ff}body.cosmic .chip.c-vio{color:#c4b5fd}body.cosmic .chip.c-yel{color:#ffd166}body.cosmic .chip.c-sig{color:#f2f2ee}
+body.cosmic .datetile{background:var(--p0);box-shadow:var(--rest)}
+body.cosmic .datetile i{background:#f2f2ee;color:#171717}
+body.cosmic .byotto{color:var(--t1)}
+/* list page: filter bar, table, totals */
+body.cosmic .fbar{display:flex;align-items:center;gap:4px;min-height:44px;padding:6px 12px;border-bottom:1px solid var(--l1)}
+body.cosmic .fbar .sp{flex:1}
+body.cosmic .vchip{display:inline-flex;align-items:center;gap:6px;min-height:28px;padding:0 9px;border-radius:8px;background:var(--p0);box-shadow:var(--rest);color:var(--t1);font-weight:500}
+body.cosmic .vchip .i14{color:var(--t3)}body.cosmic .vchip .i12{color:var(--t4)}
+body.cosmic .fb{display:inline-flex;align-items:center;gap:6px;min-height:28px;padding:0 9px;border-radius:8px;color:var(--t3)}
+body.cosmic .fb .i14{color:var(--t4)}
+body.cosmic .tbl th{height:40px;padding:0 16px;font-size:12px;font-weight:400;color:var(--t4);border-bottom:1px solid var(--l1);border-right:0;background:var(--p0)}
+body.cosmic .tbl .thc{display:inline-flex;align-items:center;gap:6px}
+body.cosmic .tbl .thc .i13{color:var(--t5)}
+body.cosmic .tbl td{height:40px;padding:0 16px;font-size:13px;border-bottom:1px solid var(--l1);border-right:0;color:var(--t2)}
+body.cosmic .tbl td.mut{color:var(--t4)}
+body.cosmic .tbl td.lnk{color:var(--t2);text-decoration:underline;text-decoration-color:var(--l3);text-underline-offset:3px}
+body.cosmic .tbl td.num{font-variant-numeric:tabular-nums}
+body.cosmic .tbl .cb{width:44px;padding:0 0 0 16px}
+body.cosmic .tbl .cb i{display:grid;place-items:center;width:16px;height:16px;border-radius:5px;box-shadow:inset 0 0 0 1px var(--l3)}
+body.cosmic .tbl .cb i.on{background:#f2f2ee;color:#171717;box-shadow:none}
+body.cosmic .tbl tr.sel td{background:#22221f}
+body.cosmic .tbl .nm{gap:8px;color:var(--t1)}
+body.cosmic .tbl tfoot td{height:40px;border-bottom:0;background:var(--p2);font-size:12px}
+body.cosmic #heroapp tbody tr:hover td{background:#252523}
+body.cosmic #heroapp .mrow[data-go]:hover b,body.cosmic #heroapp .cr[data-go]:hover{color:#fff}
+body.cosmic #heroapp .oc:hover{box-shadow:0 0 0 1px #f2f2ee}
+body.cosmic .dock{background:var(--p0);color:var(--t4);box-shadow:var(--pop);padding:6px 6px 6px 12px;border-radius:999px;font-size:13px}
+body.cosmic .dock .send{width:28px;height:28px}
+body.cosmic #heroapp .dock:hover{box-shadow:0 0 0 1px rgba(255,255,255,.3),0 12px 32px -6px rgba(0,0,0,.6)}
+/* chat */
+body.cosmic .ubub{background:var(--p3);color:var(--t1)}
+body.cosmic .skchip{background:#f2f2ee;color:#171717}
+body.cosmic .card{background:var(--p0);box-shadow:var(--rest)}
+body.cosmic .card-h{background:var(--p2);border-bottom-color:var(--l1)}
+body.cosmic .composer{background:var(--p0);box-shadow:0 0 0 1px rgba(255,255,255,.22),0 12px 32px -6px rgba(0,0,0,.6)}
+/* record, pipeline, flows */
+body.cosmic .spath div i{background:var(--p4)}
+body.cosmic .spath div.pass i{background:#6b6b67}
+body.cosmic .spath div.cur i{background:#f2f2ee}
+body.cosmic .ibp{background:#f2f2ee;color:#171717}
+body.cosmic .ibg{color:var(--t2);box-shadow:var(--input)}
+body.cosmic .trig{background:var(--p0);box-shadow:0 0 0 1px rgba(255,255,255,.4),0 14px 34px -14px rgba(0,0,0,.9)}
+body.cosmic .step{background:var(--p0);box-shadow:var(--rest),0 14px 30px -16px rgba(0,0,0,.9)}
+body.cosmic .step .tile{background:var(--p3);color:var(--t2);box-shadow:inset 0 0 0 1px var(--l1)}
+body.cosmic .conn::before{background:var(--l3)}
+body.cosmic .flowdot{background:#f2f2ee;box-shadow:0 0 8px rgba(255,255,255,.7)}
+body.cosmic .toast{background:var(--p0);color:var(--t2);box-shadow:var(--pop)}
+body.cosmic .toast .u{background:var(--p3);color:var(--t1)}
+body.cosmic .src{background:var(--p0);box-shadow:var(--rest),0 8px 20px -10px rgba(0,0,0,.8)}
+body.cosmic .loader{color:#f2f2ee}
+body.cosmic .slash a.on{background:var(--brand);color:#fff;box-shadow:var(--prim)}
+body.cosmic .lanes{background:var(--p2)}
+body.cosmic .lane{background:var(--p0);box-shadow:var(--rest)}
+body.cosmic .lane-h{border-bottom-color:var(--l1)}
+body.cosmic .oc{background:var(--p0);box-shadow:var(--rest)}
+body.cosmic .oc.sel{box-shadow:0 0 0 1px #f2f2ee}
+body.cosmic .li .lines i{background:var(--p3)}
+body.cosmic .tm-win{background:var(--p0);box-shadow:0 0 0 1px rgba(255,255,255,.09),0 34px 80px -26px rgba(0,0,0,.95)}
+body.cosmic .tm-q{background:var(--p3);color:var(--t1)}
+body.cosmic .tm-comp{box-shadow:var(--input);color:var(--t4)}
+body.cosmic .tm-send{background:#f2f2ee;color:#171717}
+body.cosmic .tm-new{box-shadow:var(--input)}
+body.cosmic .tabs{display:flex;gap:2px;padding:0 16px;border-bottom:1px solid var(--l1)}
+body.cosmic .tabs span{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 10px;color:var(--t3);position:relative}
+body.cosmic .tabs span .i14{color:var(--t4)}
+body.cosmic .tabs span.on{color:var(--t1);font-weight:500}
+body.cosmic .tabs span.on::after{content:"";position:absolute;left:8px;right:8px;bottom:-1px;height:2px;border-radius:2px;background:#f2f2ee}
+
+/* headline phrase: one move for the whole phrase */
+.swap>span.in{animation:sw-in .85s cubic-bezier(.22,1,.36,1) .05s both}
+.swap>span.out{animation:sw-out .7s cubic-bezier(.55,0,.75,0) both}
+.swap{transition:width .8s cubic-bezier(.22,1,.36,1)}
+@keyframes sw-in{from{transform:translateY(55%);opacity:0;filter:blur(10px)}}
+@keyframes sw-out{to{transform:translateY(-55%);opacity:0;filter:blur(10px)}}
+@media (max-width:760px){
+  .hero h1 .l .swap{display:grid;align-items:center;width:auto!important;height:auto;min-height:2.08em;margin:0 auto;overflow:visible;-webkit-mask:none;mask:none}
+  .hero h1 .l .swap>span{position:relative;grid-area:1/1;white-space:normal;padding:0}
+}
+@media (max-width:900px){
+  .story-in{grid-template-columns:minmax(0,1fr)!important}
+  body.cosmic .tm-tab{box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+  body.cosmic .tm-tab.on{background:#f4f4f1;color:#0a0a0a}
+}
+
+
+/* round 31: a real globe under the hero, more room for the headline, a calm crossfade for its second line */
+body.cosmic .hero{padding-block:132px 0}
+body.cosmic .hero h1{margin-top:40px;font-size:clamp(40px,5.7vw,82px);line-height:1.04}
+body.cosmic .hlede{margin-top:30px}
+body.cosmic .hero .hero-form{margin-top:40px}
+body.cosmic .horizon{margin-top:72px;padding-top:clamp(220px,21vw,310px)!important}
+.hero h1 .swap{display:grid!important;justify-items:center;width:auto!important;height:auto!important;margin:0!important;overflow:visible!important;-webkit-mask:none!important;mask:none!important;transition:none!important}
+.hero h1 .swap>span{grid-area:1/1;position:relative!important;white-space:nowrap;padding:0!important;opacity:0;filter:blur(6px);transform:translateY(.06em);animation:none!important;transition:opacity .5s cubic-bezier(.4,0,.2,1),filter .5s cubic-bezier(.4,0,.2,1),transform .5s cubic-bezier(.4,0,.2,1)}
+.hero h1 .swap>span.on{transition-duration:.75s;transition-timing-function:cubic-bezier(.22,1,.36,1)}
+.hero h1 .swap>span.on{opacity:1;filter:none;transform:none}
+@media (max-width:760px){.hero h1 .swap>span{white-space:normal}}
+@media (prefers-reduced-motion:reduce){.hero h1 .swap>span{transition:none}}
+.globe{position:absolute;left:50%;width:100vw;transform:translateX(-50%);top:0;z-index:0;pointer-events:none}
+.globe canvas{position:absolute;left:0;top:0;width:100%;display:block}
+.horizon.has-globe .planet{opacity:0;transition:opacity 1.2s}
+@media (max-width:640px){body.cosmic .hero{padding-block:72px 0}body.cosmic .horizon{margin-top:48px;padding-top:200px!important}}
+
+/* round 32: no eyebrows, section titles, the problem with its monolith, three panels, tighter product frames */
+body.cosmic .sec-title{margin:0 0 56px;font-weight:500;font-size:clamp(30px,3.5vw,50px);line-height:1.08;letter-spacing:-.04em;max-width:24ch;text-wrap:balance;color:#f4f4f1}
+body.cosmic .story{padding-top:96px}
+body.cosmic .story-head{margin-bottom:8px}
+body.cosmic .teams .sec-title{margin-bottom:0}
+body.cosmic .species{padding-block:72px 110px}
+body.cosmic .species .figs{margin-top:0;border-top:0;gap:16px}
+body.cosmic .figs figure.panel{display:flex;flex-direction:column;padding:0!important;border:0!important;border-radius:16px;background:rgba(255,255,255,.018);box-shadow:inset 0 0 0 1px rgba(255,255,255,.09);overflow:hidden}
+body.cosmic .figs figure.panel figcaption{display:contents}
+body.cosmic .figs figure.panel figcaption b{order:0;margin:0;padding:20px 24px 18px;font-size:18px;letter-spacing:-.015em;border-bottom:1px dashed rgba(255,255,255,.12)}
+body.cosmic .figs figure.panel canvas{order:1;margin:10px 0}
+body.cosmic .figs figure.panel figcaption span{order:2;max-width:none;padding:18px 24px 22px;border-top:1px dashed rgba(255,255,255,.12);color:#a3a3a0}
+body.cosmic .sec-head.tw h2{max-width:20ch}
+body.cosmic .sec-head.tw p{margin:20px 0 0;max-width:54ch;font-size:clamp(17px,1.5vw,20px);color:#a3a3a0}
+body.cosmic .vis{padding:6px}
+body.cosmic .vis .vis-in{padding:6px}
+body.cosmic .tm-stage{padding:12px}
+.problem{position:relative;z-index:1;padding-block:110px 40px}
+.pr-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.pr-art{position:relative;aspect-ratio:1;border-radius:4px;overflow:hidden;background:#020203;
+  clip-path:polygon(0 0,100% 0,100% 36%,calc(100% - 26px) calc(36% + 26px),calc(100% - 26px) calc(64% - 26px),100% 64%,100% 100%,0 100%)}
+.pr-art canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.pr-h{margin:0;font-weight:500;font-size:clamp(30px,3.3vw,50px);line-height:1.1;letter-spacing:-.035em;color:#f4f4f1;text-wrap:balance}
+.pr-h .lt{font-weight:300;color:#8f8f94}
+.pr-items{margin-top:56px;max-width:560px}
+.pr-it{padding:24px 0 22px;border-top:1px dashed rgba(255,255,255,.16)}
+.pr-it b{display:block;font-weight:500;font-size:18px;letter-spacing:-.015em;color:#f4f4f1}
+.pr-it p{margin:10px 0 0;color:#9a9a9e;font-size:16px;line-height:1.55;max-width:46ch}
+@media (max-width:900px){.pr-grid{grid-template-columns:1fr;gap:40px}.problem{padding-block:72px 24px}}
+body.cosmic .chip.c-wa{color:#5fd38a}
+
+/* round 33: faces without letters, real logos, numbered story parts */
+body.cosmic .av.ph{color:transparent}
+body.cosmic .chip.lg{background:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
+body.cosmic .chip.lg img{display:block;width:15px;height:15px}
+body.cosmic .feat h2 .num,body.cosmic .pin h2 .num{color:#6f6f74;font-variant-numeric:tabular-nums;margin-right:.1em}
+
+/* round 33: the context section as a solar system: a sun in the middle, shaded planets carry the sources */
+body.cosmic .core{background:radial-gradient(circle at 50% 50%,#fffaf0 0,#fff1d2 28%,#ffd58a 58%,#f5a54a 82%,#e07a2a 100%);box-shadow:0 0 0 1px rgba(255,220,160,.5),0 0 40px rgba(255,214,140,.65),0 0 110px rgba(255,180,90,.4),0 0 260px rgba(255,150,60,.22);animation:sun-breathe 6s ease-in-out infinite}
+@keyframes sun-breathe{50%{box-shadow:0 0 0 1px rgba(255,220,160,.6),0 0 54px rgba(255,214,140,.8),0 0 150px rgba(255,180,90,.5),0 0 320px rgba(255,150,60,.28)}}
+body.cosmic .core .cm{color:#5a3208;opacity:.55;filter:none;width:76px;height:76px}
+body.cosmic .core .halo{border-color:rgba(255,210,150,.25)}
+body.cosmic .core .dash{border-color:rgba(255,210,150,.3)}
+body.cosmic .core .dash.d2{border-color:rgba(255,210,150,.14)}
+body.cosmic .ochip{height:26px;padding:0 10px 0 4px;gap:6px;font-size:12.5px;background:rgba(12,12,14,.78);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(255,255,255,.12)}
+body.cosmic .ochip i{width:18px;height:18px;box-shadow:none}
+body.cosmic .ochip i svg{width:11px;height:11px}
+/* a longer scroll for each part of the story */
+@media (min-width:901px){html.js body.cosmic .feat{min-height:115svh!important}html.js body.cosmic .stages{padding-bottom:30svh}}
+
 /* footer: six columns */
 .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
 @media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
@@ -909,3 +1230,42 @@ p,li,dd,blockquote,figcaption,.lede,.mm-i span,.rel span,.pts span,.acc span,.ub
   .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;transition:none}}
+/* night pages: the home page's structure and look on every product, team and pricing page */
+body.cosmic .phero{padding-block:120px 0}
+body.cosmic .phero h1{color:#f6f6f3;text-shadow:0 0 60px rgba(160,175,255,.18)}
+body.cosmic .plede{color:#a8a8a6}
+body.cosmic .phero .horizon.phz{margin-top:64px;padding-top:clamp(200px,19vw,290px)!important}
+body.cosmic .pshot::after{background:linear-gradient(rgba(3,3,4,0),var(--bg) 92%)}
+body.cosmic .plogo{background:rgba(255,255,255,.04);color:#f2f2ee;box-shadow:var(--glass-sh)}
+body.cosmic .plogo img{background:#fff;border-radius:6px;padding:2px!important}
+body.cosmic .plogos p{color:#8a8a8e}
+body.cosmic .pr-sub{margin:20px 0 0;max-width:46ch;font-size:17px;line-height:1.55;color:#9a9a9e}
+body.cosmic .pr-items{margin-top:40px}
+body.cosmic .pr-it b{font-weight:400;color:#8f8f94;text-decoration:line-through;text-decoration-color:rgba(255,255,255,.25)}
+body.cosmic .pr-it p{display:flex;align-items:flex-start;gap:10px;margin-top:8px;color:#f2f2ee;font-size:16.5px}
+body.cosmic .pr-it p svg{flex:none;margin-top:4px;color:#5fc79a}
+body.cosmic .sec-title.duo{color:#7f7f84}
+body.cosmic .sec-title.duo span{color:#f4f4f1}
+body.cosmic .prows{padding-top:110px}
+body.cosmic .prow+.prow{border-top-color:rgba(255,255,255,.08)}
+body.cosmic .pcopy h2{color:#f4f4f1;max-width:20ch}
+body.cosmic .pcopy h2 .num{color:#6f6f74;font-variant-numeric:tabular-nums}
+body.cosmic .pcopy li{color:#c4c4c0}
+body.cosmic .pcopy li svg{color:#f4f4f1}
+body.cosmic .rel a{background:var(--glass);box-shadow:var(--glass-sh)}
+body.cosmic .rel a:hover{background:rgba(255,255,255,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 0 1px rgba(255,255,255,.18),0 20px 40px -20px rgba(0,0,0,.9)}
+body.cosmic .rel i{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .rel span{color:#9a9a9e}
+body.cosmic .rel em{color:#f4f4f1}
+body.cosmic .cmpt{background:rgba(255,255,255,.02);box-shadow:var(--glass-sh)}
+body.cosmic .cmpt th,body.cosmic .cmpt td{border-top-color:rgba(255,255,255,.07)}
+body.cosmic .cmpt thead th{background:#0b0b0d;color:#f2f2ee}
+body.cosmic .cmpt thead th.pop{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .cmpt thead th.pop small{color:#555}
+body.cosmic .cmpt tbody th{color:#c4c4c0}
+body.cosmic .cmpt tr.grp th{background:rgba(255,255,255,.03);color:#f2f2ee}
+body.cosmic .cmpt td:nth-child(4){background:rgba(255,255,255,.03)}
+body.cosmic .cmpt .tick{background:#f4f4f1;color:#0a0a0a}
+body.cosmic .cmpt .no{color:#55555a}
+body.cosmic .code{background:#0b0b0d;box-shadow:0 0 0 1px rgba(255,255,255,.09),0 30px 70px -24px rgba(0,0,0,.9)}
+@media (max-width:900px){body.cosmic .phero{padding-block:72px 0}body.cosmic .phero .horizon.phz{padding-top:200px!important}}

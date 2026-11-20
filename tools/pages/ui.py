@@ -2,7 +2,9 @@
 def ic(n, c='i'): return f'<svg class="{c}"><use href="#i-{n}"/></svg>'
 def otto(s=16): return f'<svg width="{s}" height="{s}"><use href="#otto"/></svg>'
 def av(k, s='s28'): return f'<span class="av {s}">{k}</span>'
-def logo(k, c='', s=''): return f'<span class="logo {c} {s}">{k}</span>'
+# sample companies are real companies now; old keys map to their logos
+LOGO_KEY = {'LS':'LI','MV':'ST','NB':'NO','ST':'FI','BS':'VE','CE':'RA','OC':'AB','HG':'SH','GL':'AN','WM':'OA'}
+def logo(k, c='', s=''): return f'<span class="logo {s}">{LOGO_KEY.get(k, k)}</span>'
 def badge(t, cls=''): return f'<span class="badge {cls}">{t}</span>'
 def byotto(): return f'<span class="byotto">{otto(14)}Otto</span>'
 
@@ -41,7 +43,7 @@ def om(*parts):
 def p(t, style=''): return f'<p style="{style}">{t}</p>'
 
 def chat(*items, pad='26px 28px 20px'):
-    return f'<div style="padding:{pad};display:flex;flex-direction:column;gap:20px;background:#fff">{"".join(items)}</div>'
+    return f'<div style="padding:{pad};display:flex;flex-direction:column;gap:20px;background:var(--p0,#fff)">{"".join(items)}</div>'
 
 def composer(ph='Ask anything, or type / for skills'):
     return f'<div class="composer"><div class="ta">{ph}</div><div class="row">{ib("Plus")}{ib("Mic")}<span class="sp"></span><span class="send">{ic("ArrowUp")}</span></div></div>'
@@ -127,7 +129,7 @@ def lg(name, size=18):
     return f'<img class="lg" src="{LOGOS[name][0]}" alt="{name}" title="{name}" width="{size}" height="{size}" style="width:{size}px;height:{size}px;border-radius:5px;object-fit:contain;flex:none">'
 
 def blogo(name, size=28, r=8):
-    return f'<img src="{LOGOS[name][0]}" alt="{name}" title="{name}" width="{size}" height="{size}" style="width:{size}px;height:{size}px;border-radius:{r}px;object-fit:contain;background:#fff;box-shadow:var(--sh-chip);padding:{max(3,size//7)}px;flex:none">'
+    return f'<img src="{LOGOS[name][0]}" alt="{name}" title="{name}" width="{size}" height="{size}" style="width:{size}px;height:{size}px;border-radius:{r}px;object-fit:contain;background:var(--p0,#fff);box-shadow:var(--sh-chip);padding:{max(3,size//7)}px;flex:none">'
 def intg_grid(names=None):
     names = names or list(LOGOS)
     return '<div class="intgs">' + ''.join(f'<div class="intg rv">{blogo(n,40,10)}<div><b>{n}</b><span>{LOGOS[n][1]}</span></div></div>' for n in names) + '</div>'
