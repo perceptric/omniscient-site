@@ -21,7 +21,7 @@ Copy lives in `tools/pages/content_copy.py` (words) and `tools/pages/content_*.p
 
 ## Check it in a browser
 
-Serve the repo (`python3 -m http.server 8765`) and look at the page at 1440px and 390px wide. No sideways scroll, no console errors, text never cut off.
+Run `node tools/check-post.mjs <slug>`. It serves the repo, loads the post at 1440px and 390px wide, and fails on sideways scroll, console errors, failed requests, broken images or a missing H1. Then look at a screenshot or two for cut-off text.
 
 ## Publish
 
