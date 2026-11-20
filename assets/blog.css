@@ -355,4 +355,4 @@
 }
 
 /* natural line breaks: short blocks balance their lines */
-.bl-card__sum,.bl-card__title,.bl-steps p,.bl-steps li,.bl-toc__list li,.bl-cta__text,.bl-callout p{text-wrap:balance}
+.bl-card .bl-card__sum,.bl-card .bl-card__title,.bl-steps p,.bl-steps li,.bl-toc__list li,.bl-body .bl-cta__text,.bl-callout p{text-wrap:balance}
