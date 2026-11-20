@@ -14,10 +14,8 @@ summary: "13 Pipedrive alternatives sorted by what you need next, with features,
 
 Pipedrive is a sales CRM built around a clear pipeline board, and many small teams plan their week on it. Teams usually compare alternatives when they want more room on their plan, sequences on a lower tier, or one CRM that runs the whole sales motion, from finding leads to closing deals. This guide reviews the 13 best Pipedrive alternatives in 2026, sorted by what you need next, with the features, pros, cons and prices you need to pick one.
 
-We build Omniscient, an agentic CRM for B2B teams, and we wrote our own Pipedrive importer. Pulling organizations, people, pipelines, deals and notes through Pipedrive's API taught us how an account fits together and which parts take the most care to bring along.
-
 ```callout
-Prices are from each vendor's site in November 2026. Where we compare a tool with Omniscient, we draw on what we learned building our own CRM.
+Prices are from each vendor's site in November 2026.
 ```
 
 Our short answer, by what you need:
@@ -251,7 +249,7 @@ You can try Close free for 14 days with no credit card. Per user a month:
 - **Growth:** $99 billed yearly, or $109 monthly.
 - **Scale:** $139 billed yearly, or $149 monthly.
 
-Close is the CRM we'd hand a team that lives on the phone, and we say that as builders of a CRM with no dialer.
+Close is the CRM we'd hand a team that lives on the phone, since Omniscient has no dialer.
 
 ### 5. Freshsales
 
@@ -477,7 +475,7 @@ You can try Salesflare free for 30 days with no credit card. Per user a month:
 - **Pro:** $49 billed yearly, or $64 monthly.
 - **Enterprise:** $99 billed yearly, or $124 monthly, with a minimum of 5 users.
 
-Of every tool here, Salesflare's pitch sits closest to ours. When we built our own inbox sync, we learned to skip noreply senders and the bots that meeting notetakers send as guests, so open your contact list after the first week and see who got added.
+Of every tool here, Salesflare works most like Omniscient. A good inbox sync skips noreply senders and the bots that meeting notetakers send as guests, so open your contact list after the first week and see who got added.
 
 ### 11. Copper
 
@@ -627,7 +625,7 @@ We'd run both CRMs side by side for the length of a trial, about two weeks, in t
 
 ```steps
 1. Connect your inbox first: Add Gmail or Outlook and your calendar to the new CRM while Pipedrive keeps running.
-2. Add missing email addresses: Our importer skips people without one and matches everyone else by email, so give an address to each person you plan to keep.
+2. Add missing email addresses: Omniscient's importer skips people without one and matches everyone else by email, so give an address to each person you plan to keep.
 3. Export what won't come over: Save anything the new importer skips as spreadsheets. Ours leaves activities, products, Leads Inbox items and custom fields behind.
 4. Import, then open a few deals: Move organizations, people, deals and notes, and confirm a handful of deals kept their stage, amount and owner.
 5. Rebuild automations last: Recreate workflows and sequences once the data settles, so nothing fires on a half imported deal.
@@ -641,7 +639,7 @@ In Omniscient, each imported pipeline keeps its stages and their win probabiliti
 
 ![How Omniscient imports Pipedrive: organizations become companies, with the website taken from people's work emails; persons become people, matched by email with no duplicates; pipelines become pipelines and stages, keeping win odds and adding Won and Lost; deals become opportunities, and won and lost deals keep their status; notes stay linked to the same records. People without an email are skipped, and activities, leads, products and custom fields stay behind, so export them first.](/assets/blog/pipedrive-alternatives/import.svg)
 
-Once the import finishes, write each open deal's next activity into its Next step field. From then on, Otto suggests updates to your deals from meetings and emails. The hardest call we made was deciding when he may change a deal without asking you, and we settled on these rules:
+Once the import finishes, write each open deal's next activity into its Next step field. From then on, Otto suggests updates to your deals from meetings and emails. Otto follows these rules on when he may change a deal without asking you:
 
 - You set every field to off, suggest or auto.
 - A value with no quote behind it, or one Otto is less than 60% sure of, is dropped before you see it.
@@ -667,5 +665,5 @@ A: Less Annoying CRM has one plan with unlimited pipelines and free phone suppor
 Q: Does Pipedrive have LinkedIn automation?
 A: Pipedrive connects to LinkedIn through Marketplace apps such as LinkMatch, which imports LinkedIn profiles and syncs LinkedIn messages. folk and Salesflare also save LinkedIn profiles into the CRM from a browser extension or sidebar.
 Q: Can I move my data from Pipedrive to Omniscient?
-A: Yes. Our importer brings over organizations, people, pipelines, deals and notes, or we migrate them for you from an export. Save activities, leads and custom fields as spreadsheets first.
+A: Yes. Omniscient's importer brings over organizations, people, pipelines, deals and notes, or Omniscient's team migrates them for you from an export. Save activities, leads and custom fields as spreadsheets first.
 ```

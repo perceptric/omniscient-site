@@ -12,12 +12,12 @@ summary: "13 CRMs for B2B SaaS teams compared on demo requests, outbound, renewa
 
 # Best CRM for B2B SaaS in 2026: 13 Picks With Prices
 
-When we built website forms into Omniscient, we had to decide what to call a lead who arrives from ChatGPT or Perplexity. We gave those visits their own channel, AI referral, so you can count them apart from organic search.
+More and more SaaS leads arrive from ChatGPT or Perplexity. A good CRM gives those visits their own channel, like AI referral, so you can count them apart from organic search.
 
 Small calls like that one decide how much your CRM can tell you about where pipeline starts. Below are the 13 we'd shortlist as the best CRM for B2B SaaS teams in 2026, with today's prices and the sales motion each one suits.
 
 ```callout
-Prices are from each vendor's site in November 2026. Where we compare a tool with Omniscient, we draw on what we learned building our own CRM.
+Prices are from each vendor's site in November 2026.
 ```
 
 The short version, by how your team sells:
@@ -79,9 +79,9 @@ Who starts most of your deals?
   A customer you have: Pipedrive, Attio, Salesforce | Renewal dates, MRR and ARR
 ```
 
-## What we learned building a CRM for SaaS sales
+## What a SaaS team needs from its CRM
 
-Omniscient's CRM builds its records from the email and calendar you connect, all joined in [Omniscience](/product/omniscience/), its shared memory. Otto, our agent, fills in fields from what people say. Three parts matter most to SaaS teams, and each one came with a tradeoff.
+Omniscient's CRM builds its records from the email and calendar you connect, all joined in [Omniscience](/product/omniscience/), its shared memory. Otto, its agent, fills in fields from what people say. Three parts matter most to SaaS teams.
 
 ### Every demo request gets an owner
 
@@ -94,15 +94,15 @@ Omniscient's Capture settings let you add a form to your site with an embed code
 
 ![Omniscient's Capture settings: new opportunities are assigned by taking turns between two of three teammates, with the account owner first; a Book a demo form on your site with buttons to copy its link and embed code; and a Typeform webhook address](/assets/blog/best-crm-for-b2b-saas/capture.shot.html)
 
-Our embed code passes the page address, the referrer and any UTM tags along by itself. A webhook only knows what the sending tool includes.
+Omniscient's embed code passes the page address, the referrer and any UTM tags along by itself. A webhook only knows what the sending tool includes.
 
-We chose to label a lead Direct when nothing says where it came from, so add UTM fields to any Typeform or Webflow form you connect.
+Omniscient labels a lead Direct when nothing says where it came from, so add UTM fields to any Typeform or Webflow form you connect.
 
 ### Fields Otto fills from your calls and emails
 
 On Pro, you can add your own fields to companies, people and opportunities. You set each one to Off, Suggest or Fill when empty, then write one line on what Otto should look for.
 
-For a SaaS deal, we'd add these fields first:
+For a SaaS deal, add these fields first:
 
 - Champion, the person pushing for the purchase on their side.
 - Seats wanted, the number of users they expect to start with.
@@ -115,9 +115,9 @@ The tradeoff is that Otto writes what people said or wrote, so a seat count from
 
 ### Product data through the API
 
-Omniscient doesn't read product usage by itself today, so your engineers can send it through our API, which creates or updates an account by its web domain.
+Omniscient doesn't read product usage by itself today, so your engineers can send it through its API, which creates or updates an account by its web domain.
 
-We chose to have the API fill empty account fields and leave existing values alone, so a sync never overwrites what a rep typed. The cost is that a number that changes weekly, like active users, belongs on a custom object. There the API updates the record in place and logs each change.
+The API fills empty account fields and leaves existing values alone, so a sync never overwrites what a rep typed. The cost is that a number that changes weekly, like active users, belongs on a custom object. There the API updates the record in place and logs each change.
 
 Attio's [own blog](https://attio.com/blog/the-system-that-runs-our-gtm) describes the full path, with usage metrics built in BigQuery and synced into Attio through Polytomic. The same path works for any CRM with an API.
 

@@ -14,7 +14,7 @@ summary: "13 folk CRM alternatives sorted by what you need next, with the featur
 
 folk is an AI CRM for founders and small teams whose deals start in their own network. Teams usually compare alternatives when they want deals and email sequences on a different budget, since both start on the $48 Premium seat, or follow ups that reach past email.
 
-We build Omniscient, an agentic CRM that runs a B2B team's whole sales motion, and we've studied folk closely while building ours, so we say plainly where folk or another tool is the better pick. Here are the 13 alternatives we'd shortlist in 2026, sorted by what you need next, with the features, pros, cons and price of each.
+Here are the 13 best folk alternatives in 2026, sorted by what you need next, with the features, pros, cons and price of each.
 
 Our short answer, by what you need:
 
@@ -346,7 +346,7 @@ Pipedrive is a sales pipeline CRM built for small businesses that plan their wee
 
 You can try Pipedrive free for 14 days with full access and no credit card. It sells four plans per seat, Lite, Growth, Premium and Ultimate, and paying yearly costs less than paying monthly. [See Pipedrive's current prices](https://www.pipedrive.com/en/pricing).
 
-Nova's updates wait for your approval, the same choice we made for the values Otto suggests. Our [Pipedrive alternatives](/blog/pipedrive-alternatives/) post covers CRMs that write more of your records for you.
+Nova's updates wait for your approval, the same way Omniscient handles the values Otto suggests. The [Pipedrive alternatives](/blog/pipedrive-alternatives/) post covers CRMs that write more of your records for you.
 
 ### 7. Copper
 

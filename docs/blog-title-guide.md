@@ -81,7 +81,7 @@ From October 1, titles use the next year. Every post published from November 202
 List posts (alternatives, best-of) follow the blog-alternatives-post skill. Versus posts follow `blog/_src/omniscient-vs-attio.md`. For the rest:
 
 ### Review (1,800 to 2,500 words)
-1. Intro: what {X} is in one friendly sentence, who uses it, and who we are.
+1. Intro: what {X} is in one friendly sentence and who uses it. Never say who wrote the post (blog-voice section 6).
 2. Short answer: "Is {X} a good CRM?" in two or three sentences, by who it fits.
 3. `tools` block with {X} and Omniscient.
 4. `## What {X} is best at`, then `## {X} key features` (4 to 6 `###` features, facts only).

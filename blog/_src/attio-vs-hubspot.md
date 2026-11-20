@@ -14,7 +14,7 @@ summary: "Attio and HubSpot side by side on data model, sequences, LinkedIn, AI 
 
 If you're weighing Attio vs HubSpot, you're choosing between a CRM you shape yourself and a platform that already has a hub for each team. Both start free, and both put email sequences on their second paid plan.
 
-We build Omniscient, an agentic CRM that runs a B2B team's whole sales motion, and we wrote the importers that bring data over from both tools, so we've worked with their records up close. Prices are from each vendor's site in November 2026.
+Prices are from each vendor's site in November 2026.
 
 Here's our short answer:
 
@@ -91,11 +91,11 @@ Attio treats objects as something you design, starting from people, companies an
 
 HubSpot starts from fixed objects that most sales teams share, like contacts, companies and deals. That shape fits a standard sales process from the first day.
 
-We saw this difference up close when we wrote importers for both tools:
+The difference shows up clearly when you move data out of each tool:
 
 - HubSpot's deal stages come with a win probability for each stage, which a forecast can use right away.
-- Attio's deal stages arrive as a list of statuses with no win probability, so our importer reads the won stage from Attio's celebration setting and the lost one from its name.
-- HubSpot keeps leads and customers in one contact list sorted by lifecycle stage, so our importer brings contacts at a lead stage over as leads.
+- Attio's deal stages arrive as a list of statuses with no win probability, so an importer reads the won stage from Attio's celebration setting and the lost one from its name.
+- HubSpot keeps leads and customers in one contact list sorted by lifecycle stage, so an importer brings contacts at a lead stage over as leads.
 
 ## Email, sequences and calls in Attio and HubSpot
 
@@ -173,9 +173,9 @@ What moves the bill more than the headline price:
 
 Attio's [migration guide](https://attio.com/help/reference/imports-exports/migrate-data-from-another-crm) moves HubSpot data into any paid Attio plan through Import2, free for Attio users. It covers companies, people, deals, custom objects, notes, tasks and files.
 
-Going the other way, HubSpot's [free CRM](https://www.hubspot.com/products/crm) includes CRM import. Two lessons from building our own importers carry over to either move:
+Going the other way, HubSpot's [free CRM](https://www.hubspot.com/products/crm) includes CRM import. Two tips carry over to either move:
 
-- Our importer matches deal owners by email address, so we'd invite your team with the same emails before any import.
+- Most importers match deal owners by email address, so invite your team with the same emails before any import.
 - If your Attio workspace relies on custom objects, check your HubSpot plan first, since HubSpot puts them on Enterprise.
 
 ## Where Omniscient fits
@@ -191,7 +191,7 @@ Here is what you get on our [plans](/pricing/):
 - From the first lead to the forecast, Otto builds lead lists with work emails, preps and recaps your meetings and keeps the pipeline board and forecast current.
 - Otto answers through [skills](/product/skills/), fixed steps for jobs like researching an account, prepping a meeting or reviewing the pipeline, so the same question gets the same kind of answer every time. Your team can write its own in plain words.
 - Call notes, action items and transcripts come from Zoom, Google Meet and Teams, and Otto suggests stage, amount and next step changes with the quote behind each. Nothing changes until you accept.
-- Our importer brings companies, contacts, deals with their stages, and notes over from HubSpot or Attio.
+- Omniscient's importer brings companies, contacts, deals with their stages, and notes over from HubSpot or Attio.
 
 You don't have to switch to try it, because Omniscient runs beside the CRM you use today. The [Ask Otto page](/product/ask-otto/) shows how a question gets answered.
 

@@ -14,7 +14,7 @@ summary: "14 AI CRMs reviewed on what the AI fills in, the proof behind each val
 
 A good AI CRM gives your reps back the hour after every call and keeps the pipeline current all week. This guide reviews the 14 best AI CRMs in 2026, so you can see which ones fill themselves in and what each one costs before you move your pipeline.
 
-We built the CRM inside Omniscient, and the hardest call we made was deciding when Otto, our agent, may write to a record without asking you. We judge every CRM below on that same question.
+The biggest question for any AI CRM is when its AI may write to a record without asking you. Every CRM below is judged on that question.
 
 If you're short on time, here's where we'd start:
 
@@ -50,9 +50,9 @@ An AI CRM writes to its own records. It reads your email, meetings and call note
 
 The best ones give you back the hour after each call, because the fields fill in from the conversation itself.
 
-## How we chose these AI CRMs
+## How these AI CRMs were chosen
 
-We judged every CRM here on the questions we had to answer for our own product:
+Every CRM here was judged on these questions:
 
 - Where the AI gets its facts: your inbox, your calendar, call transcripts or the web.
 - Whether each value it writes shows the quote or email behind it.
@@ -60,11 +60,11 @@ We judged every CRM here on the questions we had to answer for our own product:
 - How the AI is priced: inside the seat, through credits, per agent or only on higher plans.
 - How much setup a small team needs before the AI does real work.
 
-The second and third questions matter most to us. A CRM that fills in a wrong amount with confidence costs you more than an empty field, because someone will forecast from that number.
+The second and third questions matter most. A CRM that fills in a wrong amount with confidence costs you more than an empty field, because someone will forecast from that number.
 
-## What we learned teaching Otto to fill in fields
+## How Omniscient fills in fields
 
-Omniscient's CRM reads the emails and meetings it's allowed to see into [Omniscience](/product/omniscience/), its shared memory. Otto, our agent, then proposes values for the fields you've chosen. The tricky part was deciding when a suggested value should become a real value on the record.
+Omniscient's CRM reads the emails and meetings it's allowed to see into [Omniscience](/product/omniscience/), its shared memory. Otto, its agent, then proposes values for the fields you've chosen. The tricky part was deciding when a suggested value should become a real value on the record.
 
 Every field you add carries its own rule, and the rules work like this:
 

@@ -13,8 +13,6 @@ summary: "What Attio CRM is best at, its key features, how its new workspace pri
 
 Attio is a flexible CRM that builds your records from email and calendar and lets you shape the data model around how your business works. Startups, investors and fast-moving B2B teams use it when a standard CRM feels too rigid.
 
-We build Omniscient, an agentic CRM, so read this knowing which side we sit on. We also built our own Attio importer, so we've worked with Attio's records and objects up close. This review covers what Attio does well, how its pricing works in 2027 and who it fits.
-
 ## Is Attio a good CRM?
 
 Yes. Attio is a great CRM for teams that like to design their own system, with custom objects, relationships and workflows that match how they sell. It fits startups and investors best, and its free plan covers a team of up to 3.
@@ -175,7 +173,7 @@ Otto works through [skills](/product/skills/), fixed playbooks for each job, lik
 
 After a call, Otto suggests stage, amount and next step changes, each with the customer's words behind it. Nothing changes until you accept. Paid seats include the CRM's AI, and [Omniscient's plans](/pricing/) start at $19 per seat a month on Starter, $49 on Pro and $99 on Business, billed yearly. A team of 5 on Pro pays $245 a month.
 
-Omniscient has no bulk marketing email, so HubSpot fits teams that need it. The best parts start on Pro. It is also a newer product with a shorter track record. Our [Omniscient vs Attio](/blog/omniscient-vs-attio/) comparison goes through the two feature by feature, and our importer brings your Attio companies, people, deals and notes over.
+Omniscient has no bulk marketing email, so HubSpot fits teams that need it. The best parts start on Pro. It is also a newer product with a shorter track record. The [Omniscient vs Attio](/blog/omniscient-vs-attio/) comparison goes through the two feature by feature, and Omniscient's importer brings your Attio companies, people, deals and notes over.
 
 ## Our verdict on Attio
 

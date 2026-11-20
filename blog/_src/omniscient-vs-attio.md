@@ -14,8 +14,6 @@ summary: "Attio and Omniscient side by side on how records stay current, AI answ
 
 If you're weighing Omniscient vs Attio, you probably want a CRM that does more of the sales work for you. Both read your email and calendar. They differ most in how you shape the CRM and how much of the sales motion it runs for you.
 
-We build Omniscient, so read this knowing which side we sit on. We also built our own Attio importer, so we've worked with Attio's records and objects up close.
-
 Our short answer depends mostly on how your team works:
 
 - Pick Attio if your team works mostly in email and wants to shape the CRM around custom objects of its own.
@@ -86,7 +84,7 @@ Omniscient saves each email, meeting and transcript to the right company, person
 
 ![Omniscient opportunity record for Pallet Cloud, where Otto filled the amount, close date and decision maker from a discovery call with the quote behind each one, and two more changes wait in Suggestions](/assets/blog/best-ai-crm/record.shot.html)
 
-We made suggestions wait for you on purpose. One wrong amount that a manager trusts in a forecast costs more than an empty field.
+Omniscient makes suggestions wait for you on purpose. One wrong amount that a manager trusts in a forecast costs more than an empty field.
 
 [Clean data](/product/clean-data/) works the same way. Duplicate people and companies merge with their full history, and missing work emails and company facts fill in. Each change can be undone, so a bad merge never sticks.
 
@@ -175,8 +173,8 @@ You don't have to switch in one go. Omniscient runs beside your current CRM, so 
 
 ```steps
 1. Connect your inbox: Add Gmail or Outlook and your calendar while Attio keeps running.
-2. Bring your records over: Our importer reads companies, people, deals with their stages, and notes from Attio, or our team migrates you from an export.
-3. Rebuild what's custom: Recreate Attio's custom objects in Omniscient's data model, or send them to us as a spreadsheet.
+2. Bring your records over: Omniscient's importer reads companies, people, deals with their stages, and notes from Attio, or Omniscient's team migrates you from an export.
+3. Rebuild what's custom: Recreate Attio's custom objects in Omniscient's data model, or send them to Omniscient's team as a spreadsheet.
 4. Add your Knowledge: Add your pricing, playbook and product facts, so Otto uses them in answers and drafts.
 ```
 
@@ -211,7 +209,7 @@ A: Ask Attio runs on monthly seat credits. Ask Otto comes with each paid seat an
 Q: Is Omniscient cheaper than Attio?
 A: Paid seats start at $19 a month on Omniscient and $35 on Attio, billed yearly. Compare the plan you'd really use: Attio's sequences and call recording start on Pro at $79, and Omniscient's forecast starts on Pro at $49.
 Q: Can I move my data from Attio to Omniscient?
-A: Yes. Our importer reads companies, people, deals with their stages, and notes from Attio, or our team migrates you from an export. You recreate custom objects in Omniscient, or send them to us as a spreadsheet.
+A: Yes. Omniscient's importer reads companies, people, deals with their stages, and notes from Attio, or Omniscient's team migrates you from an export. You recreate custom objects in Omniscient, or send them to Omniscient's team as a spreadsheet.
 Q: Can Omniscient find new leads?
 A: Yes. Describe your buyer and Otto builds a lead list with work emails. He can also find people at a company, companies like your best customers and contacts who changed jobs. Leads save to the CRM only when you click.
 ```

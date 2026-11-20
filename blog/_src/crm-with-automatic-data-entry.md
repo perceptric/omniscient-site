@@ -12,12 +12,12 @@ summary: "The 13 best CRMs with automatic data entry, compared on what each fill
 
 # 13 Best CRMs With Automatic Data Entry in 2026
 
-When we taught Omniscient to fill in a company's industry and size from its own website, we had to decide what happens when the site doesn't say. We chose to leave the field empty, because a guessed headcount looks exactly like a real one once it sits in your CRM.
+The best test for a CRM with automatic data entry is what it does when it isn't sure. A guessed headcount looks exactly like a real one once it sits in your CRM, so a good CRM leaves the field empty.
 
-That choice makes a useful test for any CRM with automatic data entry you're weighing. Below we compare 13 of them on what each one fills in for you and what it does when it isn't sure.
+Below are 13 CRMs with automatic data entry, compared on what each one fills in for you and what it does when it isn't sure.
 
 ```callout
-Prices are from each vendor's site in November 2026. Where we compare a tool with Omniscient, we draw on what we learned building our own CRM.
+Prices are from each vendor's site in November 2026.
 ```
 
 ```tools
@@ -70,34 +70,34 @@ These are the questions we'd put to any vendor that promises automatic data entr
 - Can you click a value and see the sentence it came from?
 - What happens to a field someone on your team typed?
 
-## What we learned building automatic data entry
+## How automatic data entry works in Omniscient
 
-Omniscient fills in its records from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms. Everything lands in [Omniscience](/product/omniscience/), the shared memory that puts each email, call, meeting and note on the right company, person and deal, and much of our work went into rules for what to leave out.
+Omniscient fills in its records from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms. Everything lands in [Omniscience](/product/omniscience/), the shared memory that puts each email, call, meeting and note on the right company, person and deal, and much of it comes down to rules for what to leave out.
 
 ### Not every email should become a contact
 
-Newsletters, receipts, alerts and no reply senders all carry names and company domains. A sync that turns every one of them into a contact buries your buyers under vendors, so our sync runs each email through filters first.
+Newsletters, receipts, alerts and no reply senders all carry names and company domains. A sync that turns every one of them into a contact buries your buyers under vendors, so Omniscient's sync runs each email through filters first.
 
 ![Flow chart of the five checks Omniscient runs before an email becomes CRM data: bulk mail like a newsletter is skipped, mail from a no reply or billing address is skipped, an address on your do not track list is skipped, a personal address like gmail.com is left out, and someone new who wrote to you first is not added. Every other email is filed under the person, company and deal, and Otto reads it for facts with quotes](/assets/blog/crm-with-automatic-data-entry/email-checks.svg)
 
 A few details behind those checks:
 
-- In Gmail, we skip the Promotions, Social, Updates and Forums tabs, plus mail with list headers such as List-Unsubscribe or List-Id.
-- In Outlook, we skip the mail that Focused Inbox sorts into its Other tab.
+- In Gmail, it skips the Promotions, Social, Updates and Forums tabs, plus mail with list headers such as List-Unsubscribe or List-Id.
+- In Outlook, it skips the mail that Focused Inbox sorts into its Other tab.
 - Each person keeps their own do not track list of addresses or whole domains, such as your lawyer's address or family.com.
 - With the suggested setting, people are added only from emails you send and meetings you hold.
 
-Our sync first added anyone who emailed you, and the welcome flow now suggests the stricter setting instead. Each person can change it later in Settings.
+The welcome flow suggests that stricter setting, and each person can change it later in Settings.
 
 Each person's company comes from their email domain, so mail.acme.com and acme.com land on the same company record. Once a company has a meeting with you, or emails have gone both ways, Omniscient opens an opportunity for it if it has none.
 
 ### Company details come from the company's own site
 
-When a new company has a web domain, Otto, our agent, reads its home page and about page once. It fills Industry, Employees, Headquarters and Description, and only when those fields are empty.
+When a new company has a web domain, Otto, Omniscient's agent, reads its home page and about page once. It fills Industry, Employees, Headquarters and Description, and only when those fields are empty.
 
 The rule from the opening covers every one of those fields. If the site doesn't mention a headcount, Employees stays blank, and a value someone on your team typed is never replaced.
 
-Personal domains like gmail.com are never looked up. A site that won't load gets three attempts, then we move on.
+Personal domains like gmail.com are never looked up. A site that won't load gets three attempts, then Otto moves on.
 
 ### Some values fill in, and the rest wait for you
 
@@ -120,9 +120,9 @@ A value Otto is less than 60% sure of, or can't quote, is dropped before you eve
 
 ### Call notes without a bot in the meeting
 
-Omniscient reads the transcripts that Google Meet, Zoom and Teams already create, so no bot has to join your call. Meet and Teams transcripts can take a while to appear, so we check each meeting every 30 minutes, up to 8 times over 3 days.
+Omniscient reads the transcripts that Google Meet, Zoom and Teams already create, so no bot has to join your call. Meet and Teams transcripts can take a while to appear, so Omniscient checks each meeting every 30 minutes, up to 8 times over 3 days.
 
-Without a bot, notes depend on whoever hosts the call turning transcription on. Once a meeting turns out to have no transcript, we stop checking it.
+Without a bot, notes depend on whoever hosts the call turning transcription on. Once a meeting turns out to have no transcript, Omniscient stops checking it.
 
 From the transcript, Otto writes the notes, action items and facts, each with its quote. A change to the stage, amount or next step waits on the deal as a suggestion until you accept it, and the wrap up a call skill drafts a follow up that you send from your own inbox. The [Meetings page](/product/meetings/) shows a call from start to finish.
 
@@ -210,11 +210,11 @@ Attio is a flexible CRM that you shape around your own objects and fields, with 
 - Pro costs $79 billed yearly, or $99 monthly, and includes Call Intelligence, which records and analyzes meetings.
 - AI features draw on monthly credits, and the Pro trial lasts 14 days.
 
-Attio suits a team with someone who enjoys designing objects and workflows. We compare it with our own CRM in [Omniscient vs Attio](/blog/omniscient-vs-attio/).
+Attio suits a team with someone who enjoys designing objects and workflows. The [Omniscient vs Attio](/blog/omniscient-vs-attio/) comparison goes deeper on the two.
 
 ### 5. Salesflare
 
-Salesflare is a B2B CRM that fills itself in from your inbox, email signatures, calendar and company websites, so it keeps itself up to date. Of every CRM here, its approach sits closest to ours.
+Salesflare is a B2B CRM that fills itself in from your inbox, email signatures, calendar and company websites, so it keeps itself up to date. Of every CRM here, its approach sits closest to Omniscient's.
 
 - It gathers contact and company info from emails, email signatures, social profiles and more, and logs your meetings and phone calls for you.
 - [Growth costs $29 per user a month billed yearly, or $39 monthly](https://salesflare.com/pricing), with a sidebar that works in Gmail, Outlook and LinkedIn.
@@ -223,7 +223,7 @@ Salesflare is a B2B CRM that fills itself in from your inbox, email signatures, 
 
 It fills the CRM semi automatically, so you confirm some of what it suggests.
 
-In your trial, look at who Salesflare adds as a contact from a busy inbox. That was the hardest rule we wrote for our own sync.
+In your trial, look at who Salesflare adds as a contact from a busy inbox. It is the hardest rule for any inbox sync to get right.
 
 ### 6. Pipedrive
 
@@ -278,7 +278,7 @@ Day AI is an AI CRM that builds a shared memory from your team's email, calendar
 
 Day is built around a context graph, so when you try it, see how much of that memory reaches the fields your reports run on. Its audit trail shows exactly what ran, which is the right instinct for an agent that writes on your behalf.
 
-Teammates who mostly look things up join on Free. That model sits close to our own free seats on Pro.
+Teammates who mostly look things up join on Free. That model sits close to Omniscient's free seats on Pro.
 
 ### 11. Clarify
 

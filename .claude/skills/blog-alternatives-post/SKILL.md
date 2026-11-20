@@ -25,7 +25,7 @@ summary: "One sentence for the index card."
 ## Sections, in order
 
 1. **H1** = the title.
-2. **Intro, two short paragraphs.** First: what the product is, in one friendly sentence, and the two most common reasons people compare alternatives, framed as what they want next. Second: who we are and why we know this ("We build Omniscient, an agentic CRM, and we built our own Attio importer"). One line that prices come from each vendor in a given month.
+2. **Intro, two short paragraphs.** First: what the product is, in one friendly sentence, and the two most common reasons people compare alternatives, framed as what they want next. Second: one line on how the list is sorted. Never say who wrote the post or that we build Omniscient (see blog-voice section 6). Prices get one line: "Prices are from each vendor's site in <month year>."
 3. **Short answer.** "Our short answer, by what you need:" then one `- Pick X if ...` bullet per tool, Omniscient first. Each bullet names a reader situation.
 4. **```tools block.** One row per tool: `Name | domain | what it is | starting price | best for`. Link prices to the vendor's pricing page.
 5. **## Where X shines.** Two or three sentences about who loves the product, then 4 or 5 plain facts about its plans as bullets. End with who should stay. Positive the whole way (blog-voice section 2).

@@ -24,7 +24,7 @@ const APP = "https://app.tryomniscient.com/";
 const TOPICS = { crm: "CRM" };
 const TYPES = ["best-of", "alternatives", "versus", "review", "pricing", "how-to"];
 const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], review: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
-const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly", "rival", "rivals"];
+const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly", "rival", "rivals", "we build", "we built", "we wrote", "our own importer", "which side we sit", "our product"];
 
 const rel = (p) => p.slice(root.length).replace(/^\/+/, "");
 const topicName = (t) => TOPICS[t] || t.charAt(0).toUpperCase() + t.slice(1);

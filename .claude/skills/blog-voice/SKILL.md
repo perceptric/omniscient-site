@@ -57,7 +57,7 @@ These make copy sound machine-written. Never start a sentence with: Interestingl
 ## 4. Plain, warm, short
 
 - About 9th grade words. Short sentences. One idea per sentence.
-- Talk to the reader as "you". Talk about us as "we" only when it adds trust ("We build Omniscient, so we know this part well").
+- Talk to the reader as "you". "We'd" is fine for advice ("Close is the one we'd pick for a phone team"). Never talk about us as the makers of Omniscient (section 6).
 - Lead with what the reader gets, then how.
 - No "not X, but Y", "X, not Y", or lists of exactly three for rhythm. No em dashes, no exclamation marks, no word "quietly".
 - No hype ("revolutionary", "game-changing", "powerful", "seamless", "robust", "cutting-edge", "unlock", "supercharge", "leverage").
@@ -68,12 +68,23 @@ These make copy sound machine-written. Never start a sentence with: Interestingl
 
 Confident and calm. Describe it the same way you describe everyone else: what it is, what it is best at, who it fits. Lead with the Omniscience context layer and skills (see the omniscient-positioning skill). Give one honest trade-off. Never claim to be best for everyone.
 
+## 6. The post is a guide, never a vendor speaking
+
+The reader came to answer a question, like "is Attio any good?" The page wins when it answers that question better than anyone else, and Omniscient shows up as a strong option the reader can judge for themselves. A line about who wrote the post pulls the reader away from their question, tells them to discount everything after it, and makes the page read like an ad.
+
+So:
+- Never say we build, built, wrote or make Omniscient, or any part of it (importers, sync, forms).
+- No disclosure lines: "read this knowing which side we sit on", "Omniscient is our product, so weigh what follows", "full disclosure".
+- No builder stories: "when we built X, we had to decide", "the hardest call we made", "what we learned building", "we chose to".
+- Describe Omniscient in the third person, exactly like every other tool: "Omniscient leaves the field empty when the site doesn't say."
+- Earn trust with specific, correct, fair facts about every tool.
+
 ## Review pass
 
 Before you finish, search the draft:
 
 ```
-grep -niE "homepage|pricing page (lists|shows|says)|read on|didn't load|we didn't see|not listed|give up|still fits|falls short|stops at|interestingly|thankfully|refreshingly|luckily|fortunately|conveniently|frankly|personally|honestly|admittedly|notably|quietly|rivals\?|—|!" <file>
+grep -niE "homepage|pricing page (lists|shows|says)|read on|didn't load|we didn't see|not listed|give up|still fits|falls short|stops at|interestingly|thankfully|refreshingly|luckily|fortunately|conveniently|frankly|personally|honestly|admittedly|notably|quietly|rivals\?|we build|we built|we wrote|we made|we chose|our own|our importer|our team|which side we sit|our product|—|!" <file>
 ```
 
 Rewrite every hit unless it is a link label, a product name or a screenshot caption.

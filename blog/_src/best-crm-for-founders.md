@@ -14,10 +14,10 @@ summary: "13 CRMs for founders who still do the selling, compared on inbox captu
 
 The best CRM for founders captures every deal from the inbox you sell with, and lets you choose what your team can see. While you're still the main seller, that inbox holds customer threads next to investor updates and offer letters.
 
-We build Omniscient for this stage, so we've had to solve both of those problems ourselves. Below are our 13 picks for 2026 with today's prices. We judged them on how founders sell, in short bursts between other work and mostly through their own network.
+Below are the 13 best picks for 2026 with today's prices, judged on how founders sell: in short bursts between other work, and mostly through their own network.
 
 ```callout
-Prices are from each vendor's site in November 2026. Where we compare a tool with Omniscient, we draw on what we learned building Omniscient's capture and sharing.
+Prices are from each vendor's site in November 2026.
 ```
 
 Our quick picks, by the way you sell:
@@ -62,7 +62,7 @@ You sell between investor meetings and product work, and you're often the only p
 
 We'd weigh the first two needs above the rest. They decide whether the CRM holds the whole story of each deal, and whether you'll ever let anyone else read it.
 
-## What we learned about sharing a founder's inbox
+## How to share a founder's inbox safely
 
 Omniscient's CRM builds its records from the email and calendar each person connects, all joined in [Omniscience](/product/omniscience/), its shared memory. For a founder, that one inbox mixes buyers with board members, candidates and lawyers.
 
@@ -76,7 +76,7 @@ The three rules work like this:
 
 ![Table of what a teammate sees from your inbox in Omniscient under each sharing rule: full access shows who and when, the subject and preview, Otto's facts and the quotes behind them; who and when only shows who and when plus Otto's facts without quotes; only me shows nothing. People on your do not track list are never synced from your inbox](/assets/blog/best-crm-for-founders/inbox-sharing.svg)
 
-We chose to apply each rule to a whole inbox at once. If investors and customers write to the same address, put investor domains on the do not track list, and Omniscient won't sync those people.
+Each rule applies to a whole inbox at once. If investors and customers write to the same address, put investor domains on the do not track list, and Omniscient won't sync those people.
 
 Because the list works person by person, an email to both an investor and a customer still syncs for the customer. Under full access, your team can read its subject and preview.
 
@@ -245,7 +245,7 @@ Salesflare is a B2B CRM that fills itself in from your inbox, email signatures, 
 
 Salesflare's pitch sits closer to ours than most CRMs here, and a 30 day trial gives you a full month of real selling to judge it.
 
-In your trial, look at who it adds as a contact from your inbox. Our own sync skips automated senders and notetaker bots, and leaves out anyone on your do not track list. That last rule matters most when investor mail sits next to customer threads.
+In your trial, look at who it adds as a contact from your inbox. Omniscient's sync, for example, skips automated senders and notetaker bots, and leaves out anyone on your do not track list. That last rule matters most when investor mail sits next to customer threads.
 
 ### 12. Twenty
 

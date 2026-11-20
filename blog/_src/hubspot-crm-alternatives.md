@@ -14,10 +14,10 @@ summary: "13 HubSpot CRM alternatives for small teams, sorted by what you need n
 
 HubSpot's free CRM covers 2 users and 1,000 contacts with no end date, so plenty of small teams start there. Teams usually compare HubSpot CRM alternatives a step later, when they want email sequences or a forecast on a smaller seat than Sales Hub Professional.
 
-We build Omniscient, an agentic CRM for small B2B teams, and we wrote our own HubSpot importer. Building it meant reading companies, contacts, pipelines, deals and notes through HubSpot's API, so we've seen which parts of an account move over cleanly. Here are the 13 alternatives we'd shortlist for a small team in 2026, sorted by what you need next.
+Here are the 13 best HubSpot CRM alternatives for a small team in 2026, sorted by what you need next.
 
 ```callout
-Prices are from each vendor's site in November 2026. Where we compare a tool with Omniscient, we draw on what we learned building our own CRM.
+Prices are from each vendor's site in November 2026.
 ```
 
 Our short answer, by what you need:
@@ -244,7 +244,7 @@ Salesflare is a B2B CRM that fills in contacts and deals from your inbox, email 
 - Enterprise costs $99 yearly, or $124 monthly, needs at least 5 users and includes data migration done for you.
 - The free trial runs 30 days with no credit card.
 
-Like Omniscient, Salesflare builds records from your inbox. Our own inbox sync skips noreply senders, newsletter tools and the bots that meeting notetakers send as guests, so check who Salesflare turns into a contact from a busy inbox during your trial.
+Like Omniscient, Salesflare builds records from your inbox. Omniscient's inbox sync skips noreply senders, newsletter tools and the bots that meeting notetakers send as guests, so check who Salesflare turns into a contact from a busy inbox during your trial.
 
 Salesflare suits a small B2B team that wants automatic capture and email campaigns in one tool, and it sends email campaigns, which Omniscient doesn't.
 
@@ -301,11 +301,11 @@ Past the seat price, these differences sort the list fastest:
 
 ## How to move from HubSpot to another CRM
 
-We built Omniscient's HubSpot importer ourselves, and most of what we learned applies whichever CRM you pick. Our connection only reads from HubSpot, so you can run both side by side until you're sure.
+Most of what matters in a HubSpot import applies whichever CRM you pick. Omniscient's connection only reads from HubSpot, so you can run both side by side until you're sure.
 
 ![What Omniscient's HubSpot importer brings over and where each record lands. Companies with their name and website become accounts, matched by domain. Contacts at any lifecycle stage become people, matched by email. Deal pipelines with their stages and probabilities become pipelines, with won and lost stages kept. Deals with amount, close date and owner become opportunities, with the owner matched to a teammate by email. Notes come over as plain text and land on the deal they belong to, or else on the account, or else on the person. Contacts with no email address are skipped, and the importer only reads from HubSpot.](/assets/blog/hubspot-crm-alternatives/import-map.svg)
 
-These details shaped how our importer works, and they're worth checking in any CRM's importer:
+These details are worth checking in any CRM's importer:
 
 - Deal owners are matched to teammates by email address, so a deal whose owner hasn't joined yet arrives with no owner.
 - Contacts without an email address are skipped, so export them to a spreadsheet before you switch.
@@ -327,7 +327,7 @@ We'd run the new CRM next to HubSpot for a couple of weeks and switch in this or
 
 ![An example of Omniscient's Import dialog with HubSpot picked, its Connect button grayed out while a HubSpot import runs, now on opportunities after bringing over accounts, contacts and leads](/assets/blog/hubspot-crm-alternatives/import.shot.html)
 
-If you'd rather not run it yourself, we migrate your companies, contacts, deals and notes from HubSpot for you. Our [Omniscient vs HubSpot](/blog/omniscient-vs-hubspot/) comparison goes deeper on the two, and our guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers a few more options.
+If you'd rather not run it yourself, Omniscient's team migrates your companies, contacts, deals and notes from HubSpot for you. The [Omniscient vs HubSpot](/blog/omniscient-vs-hubspot/) comparison goes deeper on the two, and the guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers a few more options.
 
 ```cta
 Import your HubSpot data, run Omniscient next to it for 14 days and let Otto do the busy work, from lead lists to meeting prep and deal updates.
@@ -341,7 +341,7 @@ A: Yes. Zoho CRM's Free edition covers 3 users, and EngageBay's free plan covers
 Q: Which HubSpot alternatives have email sequences for less than Sales Hub Professional?
 A: monday CRM Pro has email sequences at $28 per seat a month billed yearly, with a 3 seat minimum, and Freshsales Pro has sales sequences at $39 per user. Salesflare Pro sends email flows at $49 per user and folk Premium has email sequences at $48 per member, both billed yearly. EngageBay's free plan includes 2 email sequences.
 Q: Can I move my data from HubSpot to another CRM?
-A: Yes. Omniscient's importer brings over companies, contacts, deal pipelines, deals and notes, or we migrate them for you. Zoho offers free migration help, and Attio's help center has a guide to moving from another CRM, HubSpot included.
+A: Yes. Omniscient's importer brings over companies, contacts, deal pipelines, deals and notes, or Omniscient's team migrates them for you. Zoho offers free migration help, and Attio's help center has a guide to moving from another CRM, HubSpot included.
 Q: What is the simplest HubSpot alternative for a small business?
 A: Less Annoying CRM has one plan at $15 per user a month, with unlimited contacts, email and calendar logging and free phone support. Its trial lasts 30 days and needs no credit card.
 ```

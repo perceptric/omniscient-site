@@ -14,8 +14,6 @@ summary: "HubSpot Sales Hub and Omniscient side by side on records, AI answers w
 
 If you're comparing Omniscient vs HubSpot, you probably sell to other businesses and want one CRM that does more of the sales work, from the first lead to the closed deal. You might be on HubSpot's free CRM today or close to paying for Sales Hub. The two tools differ most on email sending, how the CRM answers questions, how AI is billed and setup.
 
-Omniscient is our product, so weigh what follows with that in mind. We also wrote Omniscient's HubSpot importer, so we've worked with HubSpot's records up close.
-
 How you find buyers and what you need from the CRM's AI settle most of the choice:
 
 - Pick HubSpot if you want marketing email, landing pages and sales on one database, or your reps book meetings through cold email in volume and calls.
@@ -178,7 +176,7 @@ You can keep HubSpot running while you set up Omniscient, since most steps are c
 
 ## Moving from HubSpot to Omniscient
 
-Our HubSpot importer reads your data and never writes back, so your HubSpot account stays exactly as it was. It brings over these records:
+Omniscient's HubSpot importer reads your data and never writes back, so your HubSpot account stays exactly as it was. It brings over these records:
 
 - Companies become accounts, matched by domain, and contacts become people, matched by email.
 - Contacts still at the subscriber, lead or marketing qualified lead stage arrive as leads.
@@ -225,7 +223,7 @@ A: HubSpot's agents run on HubSpot Credits. Otto comes with each paid seat and w
 Q: Can I use Omniscient and HubSpot together?
 A: Yes, while you compare them, since Omniscient reads your HubSpot data and never writes back to it. Plan to pick one as your main CRM when the trial ends.
 Q: Can I move my data from HubSpot to Omniscient?
-A: Yes, our importer brings over companies, contacts, pipelines, deals and notes, or we migrate them for you. Contacts without an email address are skipped unless they're still at a lead stage, and custom properties and workflows stay in HubSpot.
+A: Yes, Omniscient's importer brings over companies, contacts, pipelines, deals and notes, or Omniscient's team migrates them for you. Contacts without an email address are skipped unless they're still at a lead stage, and custom properties and workflows stay in HubSpot.
 Q: Does Omniscient send email like HubSpot?
 A: Partly. Otto drafts single emails and replies that you send from your own Gmail or Outlook, and workflows send follow-ups from your team's own templates. Omniscient has no marketing email, which HubSpot covers in Marketing Hub.
 ```

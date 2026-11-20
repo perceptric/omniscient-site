@@ -14,8 +14,6 @@ summary: "13 CRMs for startups compared on free plans, startup discounts, seat p
 
 The CRM you pick in your first year decides whether your deals live somewhere your first sales hire can find them, or only in the founder's inbox. Here are the 13 best CRMs for startups in 2026, with their prices, free plans, startup discounts and the stage of company each one suits.
 
-We build Omniscient, an agentic CRM that runs a B2B team's whole sales motion, often at startups where the founder still sells. That means we've made the same calls these vendors make, like who becomes a contact when you connect a busy inbox and what a teammate on a free seat gets to see.
-
 If you only have a minute, here's where we'd start:
 
 - Pick Omniscient if you want one agentic CRM for your startup's whole sales motion, from finding leads to closing deals, with Otto doing the busy work.
@@ -56,7 +54,7 @@ Your team is small and the way you sell will keep changing, so these are the fiv
 
 We'd weigh the first one above the rest. A founder with a full calendar rarely types notes after every call, and a CRM that depends on typing falls behind in exactly the weeks you're busiest with buyers.
 
-## What we learned building a CRM for small teams
+## Who becomes a contact when you connect your inbox
 
 Omniscient's CRM builds its records from the email and calendar you connect, all joined in [Omniscience](/product/omniscience/), its shared memory of every customer conversation. The sync skips bulk mail and automated senders, but at first it added anyone else who emailed you, so a cold pitch became a contact as easily as a buyer did.
 
@@ -614,7 +612,7 @@ As the team grows, the [Skills page](/product/skills/) shows how Otto gives the 
 
 ## How to switch CRMs later without losing data
 
-Your first CRM may not be your last, so look at how data comes out before you put it in. We wrote Omniscient's importer for HubSpot, Salesforce, Pipedrive and Attio, and the order it runs in shows what a clean move needs.
+Your first CRM may not be your last, so look at how data comes out before you put it in. Omniscient's importer for HubSpot, Salesforce, Pipedrive and Attio is a good example, and the order it runs in shows what a clean move needs.
 
 ![The order a CRM import runs in: companies first, matched by web domain; then people, linked to their company; then missing websites, filled from their people's work emails with free addresses like Gmail left out; then pipelines, with stages copied and won and lost kept; then deals, placed on the matching stage; and notes last, kept on the record they belong to](/assets/blog/best-crm-for-startups/import-order.svg)
 
@@ -624,7 +622,7 @@ What each step protects:
 - A company without a website gets one from its people's work emails, and free addresses like Gmail don't count.
 - Pipelines come before deals, so each deal lands on a matching stage, with won and lost kept.
 
-Our importer also skips people with no email address, so export those contacts separately if you need them.
+Omniscient's importer also skips people with no email address, so export those contacts separately if you need them.
 
 Ask any CRM how it matches companies on import, since records without a website are the hardest to place. A wrong match also takes longer to fix than a missing one, because people and deals follow the company they land on.
 

@@ -14,10 +14,10 @@ summary: "13 Attio alternatives sorted by what you need next, with each vendor's
 
 Attio is a CRM that builds records from your email and calendar and lets you shape the data model around how your business works. Teams usually compare alternatives when they want sequences or call notes on a smaller budget, or one agentic CRM that runs the whole sales motion.
 
-We build Omniscient, an agentic CRM for B2B teams, and we built our own Attio importer, so we've worked with Attio's records and objects up close. Here are the 13 alternatives we'd shortlist in 2026, sorted by what you need next.
+Here are the 13 best Attio alternatives in 2026, sorted by what you need next.
 
 ```callout
-Prices are from each vendor's site in November 2026. Where we compare a tool with Omniscient, we draw on what we learned building our own CRM.
+Prices are from each vendor's site in November 2026.
 ```
 
 Our short answer, by what you need:
@@ -177,7 +177,7 @@ Pipedrive is a sales pipeline CRM that helps small businesses manage leads and c
 - The free trial lasts 14 days with no credit card.
 - See [Pipedrive's plans](https://www.pipedrive.com/en/pricing) for current prices.
 
-Pipedrive suits a team that wants a clear pipeline more than a custom data model. Its CRM updates from calls wait for your approval, the same choice we made for suggested values in Omniscient.
+Pipedrive suits a team that wants a clear pipeline more than a custom data model. Its CRM updates from calls wait for your approval, the same way Omniscient handles suggested values.
 
 ### 5. Twenty
 
@@ -199,7 +199,7 @@ Day AI is an AI CRM that builds a shared memory from your team's email, calendar
 - The Free plan lets teammates search, view and share, and a workspace with a Professional agent or higher adds colleagues at no cost.
 - There are no per seat fees and no usage based fees.
 
-Day charges for the AI work a person gets, so colleagues who only look things up cost nothing. We made the same call in Omniscient, where teammates who only view or log data are free. Day suits a team that liked Attio's inbox sync and wants agents to take on more of the follow up. For LinkedIn outreach, pair it with a separate tool.
+Day charges for the AI work a person gets, so colleagues who only look things up cost nothing. Omniscient works the same way: teammates who only view or log data are free. Day suits a team that liked Attio's inbox sync and wants agents to take on more of the follow up. For LinkedIn outreach, pair it with a separate tool.
 
 ### 7. Lightfield
 
@@ -319,7 +319,7 @@ In Omniscient, the importer reads companies, people, deals with their stages, an
 
 ![Omniscient's Import dialog with Attio picked from a row of logos for HubSpot, Salesforce, Attio and Pipedrive, a line saying it brings over accounts, contacts, opportunities with their stages, and notes, and a finished Attio import with its counts, marked Done](/assets/blog/attio-alternatives/import.shot.html)
 
-Attio's custom objects stay behind, so you rebuild them in our data model. If you'd rather not run the import yourself, we migrate your companies, contacts, deals and notes for you.
+Attio's custom objects stay behind, so you rebuild them in Omniscient's data model. If you'd rather not run the import yourself, Omniscient's team migrates your companies, contacts, deals and notes for you.
 
 If none of these 13 fit, our roundup of the [best AI CRMs](/blog/best-ai-crm/) covers a few more.
 
@@ -337,5 +337,5 @@ A: HubSpot's free CRM covers up to 2 users and 1,000 contacts, and Clarify's fre
 Q: Which Attio alternatives are built around AI agents?
 A: Day AI runs agents on a shared memory of your team's email, meetings and Slack, and prices each agent instead of each seat. Lightfield updates its records from every interaction and runs outbound sequences from Pro, and Clarify's agent, Rep, drafts campaigns and enrolls leads. Omniscient's Otto does the busy work across the whole sales motion, from building lead lists to prepping meetings and keeping deals current, through skills on one shared memory of every email, call and note.
 Q: Can I move my data from Attio to Omniscient?
-A: Yes, our importer reads companies, people, deals with their stages, and notes from Attio, or we migrate them for you. Custom objects stay behind, so you recreate them in Omniscient's data model.
+A: Yes, Omniscient's importer reads companies, people, deals with their stages, and notes from Attio, or Omniscient's team migrates them for you. Custom objects stay behind, so you recreate them in Omniscient's data model.
 ```
