@@ -19,7 +19,10 @@ export function applyLayout(html) {
     const re = new RegExp(`<!-- ${name}:start -->[\\s\\S]*?<!-- ${name}:end -->`);
     html = html.replace(re, () => `<!-- ${name}:start -->\n${content}\n<!-- ${name}:end -->`);
   }
-  return html.replace(/(href|src)="\/assets\/([\w.-]+\.(?:css|js))(\?v=\w+)?"/g, (_, attr, name) => `${attr}="/assets/${name}?v=${version(name)}"`);
+  return html
+    .replace(/(href|src)="\/assets\/([\w.-]+\.(?:css|js))(\?v=\w+)?"/g, (_, attr, name) => `${attr}="/assets/${name}?v=${version(name)}"`)
+    // The site icons are served with a year-long cache, so they get the same stamp: a new icon reaches browsers at once.
+    .replace(/href="\/assets\/(brand\/(?:favicon\.ico|icon\.svg|apple-icon\.png))(\?v=\w+)?"/g, (_, name) => `href="/assets/${name}?v=${version(name)}"`);
 }
 
 // Folders that hold no pages. blog/_src holds the blog's Markdown sources.
