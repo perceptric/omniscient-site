@@ -92,11 +92,11 @@ if('IntersectionObserver' in window) SKIES.forEach(k=>new IntersectionObserver(e
   const inBox=(B,x,y)=>B.some(b=>x>b.x0&&x<b.x1&&y>b.y0&&y<b.y1);
   const init=()=>{
     d=Math.min(2,devicePixelRatio||1); W=hero.clientWidth; H=Math.min(hero.clientHeight,1100); c.style.height=H+'px'; c.width=W*d; c.height=H*d;
-    const B=boxes(), n=Math.round(Math.min(130,W*H/9000)); dust=[];
+    const B=boxes(), n=Math.round(Math.min(50,W*H/24000)); dust=[];
     for(let i=0;i<n*3&&dust.length<n;i++){ const x=rnd()*W, y=rnd()*H*.82; if(inBox(B,x,y)&&rnd()<.92) continue;
-      const m=Math.pow(rnd(),3); dust.push({x,y,r:.4+m*.9,a:.07+m*.35,s:.4+rnd()*1.4,p:rnd()*6.283,z:.1+rnd()*.6}); }
+      const m=Math.pow(rnd(),3); dust.push({x,y,r:.35+m*.6,a:.05+m*.2,s:.4+rnd()*1.4,p:rnd()*6.283,z:.1+rnd()*.6}); }
     // sparkles: one large, two medium, the rest small, spaced apart and away from text
-    const sizes=W>900?[18,11,8,6,5]:[12,7,5];
+    const sizes=[];
     glints=[]; let tries=0;
     while(glints.length<sizes.length&&tries++<4000){ const x=W*(.04+rnd()*.92), y=H*(.05+rnd()*.5);
       if(inBox(B,x,y)) continue; if(glints.some(q=>Math.hypot(q.x-x,q.y-y)<Math.min(W,900)*.25)) continue;
@@ -120,7 +120,7 @@ if('IntersectionObserver' in window) SKIES.forEach(k=>new IntersectionObserver(e
       g.globalAlpha=.35*b; g.rotate(Math.PI/4); star(0,0,R*.42,R*.08);
       g.restore();
     }
-    if(!reduce){ if(!shoot&&t>next) shoot={x:W*(.55+rnd()*.4),y:H*(.04+rnd()*.14),vx:-(2.6+rnd()*1.2),vy:.9+rnd()*.5,life:0};
+    if(false){ if(!shoot&&t>next) shoot={x:W*(.55+rnd()*.4),y:H*(.04+rnd()*.14),vx:-(2.6+rnd()*1.2),vy:.9+rnd()*.5,life:0};
       if(shoot){ shoot.life++; shoot.x+=shoot.vx*2.2; shoot.y+=shoot.vy*2.2; const a=Math.sin(Math.min(1,shoot.life/80)*Math.PI)*.45, L=60;
         const gr=g.createLinearGradient(shoot.x,shoot.y,shoot.x-shoot.vx*L,shoot.y-shoot.vy*L); gr.addColorStop(0,`rgba(255,255,255,${a})`); gr.addColorStop(1,'rgba(150,165,255,0)');
         g.globalAlpha=1; g.strokeStyle=gr; g.lineWidth=1; g.lineCap='round'; g.beginPath(); g.moveTo(shoot.x,shoot.y); g.lineTo(shoot.x-shoot.vx*L,shoot.y-shoot.vy*L); g.stroke();
@@ -172,13 +172,13 @@ if('IntersectionObserver' in window) SKIES.forEach(k=>new IntersectionObserver(e
   const c=document.getElementById('space'); if(!c) return; const g=c.getContext('2d'), neb=document.querySelector('.space .nebula');
   let W=0,H=0,d=1,L=[],shoot=null,next=2600; const rnd=Math.random;
   const init=()=>{ d=Math.min(2,devicePixelRatio||1); W=innerWidth; H=innerHeight; c.width=W*d; c.height=H*d;
-    const n=Math.min(900,Math.round(W*H/1500)); L=[.04,.12,.26].map((z,k)=>Array.from({length:Math.round(n*[.62,.28,.1][k])},()=>{ const m=Math.pow(rnd(),k===2?1.4:3);
-      const tint=rnd(); return {x:rnd()*W,y:rnd()*H*1.2,r:(k===0?.25:k===1?.4:.7)+m*(k===2?1.1:.7),a:.18+m*.7,s:.3+rnd()*1.6,p:rnd()*6.283,z,c:tint<.12?'200,215,255':tint<.18?'255,228,200':'255,255,255'}; })); };
+    const n=Math.min(260,Math.round(W*H/5000)); L=[.04,.12,.26].map((z,k)=>Array.from({length:Math.round(n*[.62,.28,.1][k])},()=>{ const m=Math.pow(rnd(),k===2?1.4:3);
+      const tint=rnd(); return {x:rnd()*W,y:rnd()*H*1.2,r:(k===0?.25:k===1?.35:.5)+m*(k===2?.6:.4),a:.1+m*.35,s:.3+rnd()*1.6,p:rnd()*6.283,z,c:tint<.12?'200,215,255':tint<.18?'255,228,200':'255,255,255'}; })); };
   const draw=t=>{ const sy=scrollY; g.setTransform(d,0,0,d,0,0); g.clearRect(0,0,W,H);
     for(const layer of L) for(const s of layer){ let y=(s.y-sy*s.z)%(H*1.2); if(y<0) y+=H*1.2; if(y>H+4) continue;
       const tw=reduce?1:.62+.38*Math.sin(t*.001*s.s+s.p); g.globalAlpha=s.a*tw; g.fillStyle=`rgb(${s.c})`; g.beginPath(); g.arc(s.x,y,s.r,0,6.283); g.fill();
       if(s.r>1.25){ g.globalAlpha=s.a*tw*.18; g.beginPath(); g.arc(s.x,y,s.r*3.2,0,6.283); g.fill(); } }
-    if(!reduce){ if(!shoot&&t>next) shoot={x:W*(.3+rnd()*.7),y:H*(.05+rnd()*.35),vx:-(3+rnd()*2),vy:1.1+rnd()*.8,life:0};
+    if(false){ if(!shoot&&t>next) shoot={x:W*(.3+rnd()*.7),y:H*(.05+rnd()*.35),vx:-(3+rnd()*2),vy:1.1+rnd()*.8,life:0};
       if(shoot){ shoot.life++; shoot.x+=shoot.vx*2.4; shoot.y+=shoot.vy*2.4; const a=Math.sin(Math.min(1,shoot.life/70)*Math.PI)*.7, T=70;
         const gr=g.createLinearGradient(shoot.x,shoot.y,shoot.x-shoot.vx*T,shoot.y-shoot.vy*T); gr.addColorStop(0,`rgba(255,255,255,${a})`); gr.addColorStop(1,'rgba(255,255,255,0)');
         g.globalAlpha=1; g.strokeStyle=gr; g.lineWidth=1.1; g.lineCap='round'; g.beginPath(); g.moveTo(shoot.x,shoot.y); g.lineTo(shoot.x-shoot.vx*T,shoot.y-shoot.vy*T); g.stroke();

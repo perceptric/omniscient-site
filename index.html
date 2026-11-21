@@ -1141,6 +1141,73 @@ body.cosmic .pr-h{max-width:22ch}
 /* a longer scroll for each part of the story */
 @media (min-width:901px){html.js body.cosmic .feat{min-height:115svh!important}html.js body.cosmic .stages{padding-bottom:30svh}}
 
+/* round 35: product screens in the app's light theme on the dark page */
+body.cosmic .app{--p0:#fff;--p1:#fff;--p2:#fafafa;--p3:#f2f2f2;--p4:#e9e9e9;--sh:#f3f3f1;--l1:#ececec;--l2:#e0e0e0;--l3:#cfcfcf;--t1:#0a0a0a;--t2:#2b2b2b;--t3:#6b6b6b;--t4:#9b9b9b;--t5:#b3b3b3;
+  --brand:#0a0a0a;--ring:rgba(0,0,0,.08);--rest:0 1px 2px rgba(0,0,0,.06),0 0 0 1px rgba(0,0,0,.08);--pop:0 12px 32px -6px rgba(0,0,0,.18),0 0 0 1px rgba(0,0,0,.08);
+  --prim:0 0 0 1px #0a0a0a,0 1px 2px rgba(0,0,0,.3);--input:0 0 0 1px rgba(0,0,0,.12),0 1px 3px rgba(0,0,0,.08);color-scheme:light}
+body.cosmic .win,body.cosmic .tm-win{box-shadow:0 0 0 1px rgba(255,255,255,.14),0 34px 80px -26px rgba(0,0,0,.95)}
+body.cosmic .vis .win{box-shadow:0 0 0 1px rgba(255,255,255,.14),0 34px 80px -26px rgba(0,0,0,.95)!important}
+body.cosmic .shell{background:var(--sh);box-shadow:0 0 0 1px rgba(255,255,255,.16),0 50px 140px -40px rgba(0,0,0,1),0 0 120px -30px rgba(140,160,255,.18)}
+body.cosmic .ws .wsl{background:#0a0a0a;color:#fff}
+body.cosmic #heroapp .lk:not(.on):hover{background:rgba(0,0,0,.05);color:var(--t1)}
+body.cosmic .send,body.cosmic .tm-send,body.cosmic .ibp,body.cosmic .skchip,body.cosmic .datetile i,body.cosmic .tbl .cb i.on{background:#0a0a0a;color:#fff}
+body.cosmic .badge,body.cosmic .badge.t-gray{background:#ededed;color:#171717}
+body.cosmic .badge.t-green{background:#e3f4ec;color:#086444}
+body.cosmic .badge.t-blue{background:#e2effd;color:#1e4f9a}
+body.cosmic .badge.t-violet{background:#e9e3fd;color:#5429d6}
+body.cosmic .badge.t-amber{background:#ffe9cc;color:#9a3412}
+body.cosmic .badge.t-red{background:#fde8e8;color:#a8201a}
+body.cosmic .badge.t-yellow{background:#fff6d6;color:#7a5600}
+body.cosmic .chip.c-sky{color:#2f9bf0}body.cosmic .chip.c-vio{color:#6d45e6}body.cosmic .chip.c-yel{color:#d99a00}body.cosmic .chip.c-sig{color:#0a0a0a}body.cosmic .chip.c-wa{color:#1a9e55}
+body.cosmic .chip.lg{box-shadow:0 1px 2px rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.07)}
+body.cosmic .tbl tr.sel td{background:#f6f6f6}
+body.cosmic #heroapp tbody tr:hover td{background:#f8f8f8}
+body.cosmic #heroapp .mrow[data-go]:hover b,body.cosmic #heroapp .cr[data-go]:hover{color:#000}
+body.cosmic #heroapp .oc:hover,body.cosmic .oc.sel{box-shadow:0 0 0 1px #0a0a0a}
+body.cosmic #heroapp .dock:hover{box-shadow:0 0 0 1px rgba(0,0,0,.25),0 12px 32px -6px rgba(0,0,0,.18)}
+body.cosmic .composer{box-shadow:0 12px 32px -6px rgba(0,0,0,.14),0 0 0 1.5px #0a0a0a}
+body.cosmic .spath div i{background:#ebebeb}body.cosmic .spath div.pass i{background:#a3a3a3}body.cosmic .spath div.cur i{background:#0a0a0a}
+body.cosmic .trig{box-shadow:0 0 0 1.5px #0a0a0a,0 10px 30px -14px rgba(0,0,0,.3)}
+body.cosmic .step{box-shadow:var(--rest),0 10px 24px -16px rgba(0,0,0,.25)}
+body.cosmic .src{box-shadow:var(--rest),0 4px 12px -6px rgba(0,0,0,.15)}
+body.cosmic .flowdot{background:#0a0a0a;box-shadow:none}
+body.cosmic .loader{color:#0a0a0a}
+body.cosmic .tabs span.on::after{background:#0a0a0a}
+body.cosmic .tm-stage.app .tm-win{background:#fff}
+
+/* round 35: more room. Taller sections, wider gaps, a calmer hero */
+body.cosmic .hero{padding-block:168px 0}
+body.cosmic .hero h1{margin-top:0}
+body.cosmic .hlede{margin-top:40px}
+body.cosmic .hero .hero-form{margin-top:56px}
+body.cosmic .hchecks{margin-top:24px}
+body.cosmic .horizon{margin-top:120px}
+.problem{padding-block:180px 80px}
+.pr-items{margin-top:72px}
+body.cosmic .species{padding-block:140px 180px}
+body.cosmic .species .figs{gap:24px}
+body.cosmic .story{padding-top:180px}
+body.cosmic .teams{padding-block:180px 100px}
+body.cosmic .sec{padding-block:180px 60px}
+body.cosmic .sec-title{margin-bottom:80px}
+body.cosmic .sec-head{margin-bottom:80px}
+body.cosmic .cosmos{padding-block:180px 180px;margin-top:140px}
+body.cosmic .finale{padding-block:200px 220px;margin-top:140px}
+body.cosmic .bento{gap:24px}
+body.cosmic .tm-grid{gap:80px;margin-top:96px}
+@media (max-width:900px){
+  .problem{padding-block:96px 40px}
+  body.cosmic .species{padding-block:88px 110px}
+  body.cosmic .story{padding-top:104px}
+  body.cosmic .teams{padding-block:104px 64px}
+  body.cosmic .sec{padding-block:104px 40px}
+  body.cosmic .sec-title,body.cosmic .sec-head{margin-bottom:56px}
+  body.cosmic .cosmos{padding-block:104px;margin-top:80px}
+  body.cosmic .finale{padding-block:120px 140px;margin-top:80px}
+  body.cosmic .tm-grid{gap:40px;margin-top:56px}
+}
+@media (max-width:640px){body.cosmic .hero{padding-block:96px 0}body.cosmic .horizon{margin-top:64px}body.cosmic .hero .hero-form{margin-top:40px}}
+
 /* footer: six columns */
 .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
 @media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
@@ -1237,7 +1304,6 @@ body.cosmic .pr-h{max-width:22ch}
   <canvas id="hsky" aria-hidden="true"></canvas>
   <div class="beams" aria-hidden="true"></div>
   <div class="wrap">
-    <a class="hpill" href="/product/omniscience/"><span class="hp-new">New</span>Meet Omniscience, the brain behind your CRM<svg class="i14"><use href="#i-ChevronRight"/></svg></a>
     <h1><span class="sr">The Agentic CRM for modern brands, agencies and SaaS</span><span aria-hidden="true"><span class="l">The Agentic CRM</span> <span class="l swap" data-words="For Modern Brands|For Forward-thinking Agencies|For Ambitious SaaS Teams"></span></span></h1>
     <p class="hlede"><span>The system of action for modern revenue teams.</span> <span>Agents prospect, follow up and keep every record current, so your people spend their time where revenue is won.</span></p>
     <form class="hero-form" action="https://app.tryomniscient.com/signup" novalidate>
@@ -1299,7 +1365,7 @@ body.cosmic .pr-h{max-width:22ch}
       <div class="screens" aria-hidden="true"></div>
       <article class="feat" id="prospect" data-i="0">
         <div class="stage-copy"><h2><span class="num">1.</span> Pipeline on demand</h2><p class="lede">Describe your ideal customer in a sentence. Omniscient searches millions of people and companies and returns a qualified list, with the reasoning behind every match.</p></div>
-        <div class="vis"><div class="acc acc-bl"><span class="acc-ic"><svg class="i14"><use href="#i-Check"/></svg></span><div><b>Saved 3 people</b><span>Added to People, emails found</span></div></div><div class="fit" data-w="760"><div class="fit-inner" style="width:760px"><div class="vis-in">
+        <div class="vis"><div class="fit" data-w="760"><div class="fit-inner" style="width:760px"><div class="vis-in">
           <div class="app win" style="width:680px">
             <div class="win-h"><span class="pi"><svg class="i"><use href="#i-Sparkles"/></svg></span><b>Ask Otto</b></div>
             <div style="padding:28px 28px 20px;display:flex;flex-direction:column;gap:22px;background:var(--p0)">
@@ -2054,13 +2120,13 @@ function drawFig(f, T){
   const c=document.getElementById('space'); if(!c) return; const g=c.getContext('2d'), neb=document.querySelector('.space .nebula');
   let W=0,H=0,d=1,L=[],shoot=null,next=2600; const rnd=Math.random;
   const init=()=>{ d=Math.min(2,devicePixelRatio||1); W=innerWidth; H=innerHeight; c.width=W*d; c.height=H*d;
-    const n=Math.min(900,Math.round(W*H/1500)); L=[.04,.12,.26].map((z,k)=>Array.from({length:Math.round(n*[.62,.28,.1][k])},()=>{ const m=Math.pow(rnd(),k===2?1.4:3);
-      const tint=rnd(); return {x:rnd()*W,y:rnd()*H*1.2,r:(k===0?.25:k===1?.4:.7)+m*(k===2?1.1:.7),a:.18+m*.7,s:.3+rnd()*1.6,p:rnd()*6.283,z,c:tint<.12?'200,215,255':tint<.18?'255,228,200':'255,255,255'}; })); };
+    const n=Math.min(260,Math.round(W*H/5000)); L=[.04,.12,.26].map((z,k)=>Array.from({length:Math.round(n*[.62,.28,.1][k])},()=>{ const m=Math.pow(rnd(),k===2?1.4:3);
+      const tint=rnd(); return {x:rnd()*W,y:rnd()*H*1.2,r:(k===0?.25:k===1?.35:.5)+m*(k===2?.6:.4),a:.1+m*.35,s:.3+rnd()*1.6,p:rnd()*6.283,z,c:tint<.12?'200,215,255':tint<.18?'255,228,200':'255,255,255'}; })); };
   const draw=t=>{ const sy=scrollY; g.setTransform(d,0,0,d,0,0); g.clearRect(0,0,W,H);
     for(const layer of L) for(const s of layer){ let y=(s.y-sy*s.z)%(H*1.2); if(y<0) y+=H*1.2; if(y>H+4) continue;
       const tw=reduce?1:.62+.38*Math.sin(t*.001*s.s+s.p); g.globalAlpha=s.a*tw; g.fillStyle=`rgb(${s.c})`; g.beginPath(); g.arc(s.x,y,s.r,0,6.283); g.fill();
       if(s.r>1.25){ g.globalAlpha=s.a*tw*.18; g.beginPath(); g.arc(s.x,y,s.r*3.2,0,6.283); g.fill(); } }
-    if(!reduce){ if(!shoot&&t>next) shoot={x:W*(.3+rnd()*.7),y:H*(.05+rnd()*.35),vx:-(3+rnd()*2),vy:1.1+rnd()*.8,life:0};
+    if(false){ if(!shoot&&t>next) shoot={x:W*(.3+rnd()*.7),y:H*(.05+rnd()*.35),vx:-(3+rnd()*2),vy:1.1+rnd()*.8,life:0};
       if(shoot){ shoot.life++; shoot.x+=shoot.vx*2.4; shoot.y+=shoot.vy*2.4; const a=Math.sin(Math.min(1,shoot.life/70)*Math.PI)*.7, T=70;
         const gr=g.createLinearGradient(shoot.x,shoot.y,shoot.x-shoot.vx*T,shoot.y-shoot.vy*T); gr.addColorStop(0,`rgba(255,255,255,${a})`); gr.addColorStop(1,'rgba(255,255,255,0)');
         g.globalAlpha=1; g.strokeStyle=gr; g.lineWidth=1.1; g.lineCap='round'; g.beginPath(); g.moveTo(shoot.x,shoot.y); g.lineTo(shoot.x-shoot.vx*T,shoot.y-shoot.vy*T); g.stroke();
@@ -2097,11 +2163,11 @@ function drawFig(f, T){
   const inBox=(B,x,y)=>B.some(b=>x>b.x0&&x<b.x1&&y>b.y0&&y<b.y1);
   const init=()=>{
     d=Math.min(2,devicePixelRatio||1); W=hero.clientWidth; H=Math.min(hero.clientHeight,1100); c.style.height=H+'px'; c.width=W*d; c.height=H*d;
-    const B=boxes(), n=Math.round(Math.min(130,W*H/9000)); dust=[];
+    const B=boxes(), n=Math.round(Math.min(50,W*H/24000)); dust=[];
     for(let i=0;i<n*3&&dust.length<n;i++){ const x=rnd()*W, y=rnd()*H*.82; if(inBox(B,x,y)&&rnd()<.92) continue;
-      const m=Math.pow(rnd(),3); dust.push({x,y,r:.4+m*.9,a:.07+m*.35,s:.4+rnd()*1.4,p:rnd()*6.283,z:.1+rnd()*.6}); }
+      const m=Math.pow(rnd(),3); dust.push({x,y,r:.35+m*.6,a:.05+m*.2,s:.4+rnd()*1.4,p:rnd()*6.283,z:.1+rnd()*.6}); }
     // sparkles: one large, two medium, the rest small, spaced apart and away from text
-    const sizes=W>900?[18,11,8,6,5]:[12,7,5];
+    const sizes=[];
     glints=[]; let tries=0;
     while(glints.length<sizes.length&&tries++<4000){ const x=W*(.04+rnd()*.92), y=H*(.05+rnd()*.5);
       if(inBox(B,x,y)) continue; if(glints.some(q=>Math.hypot(q.x-x,q.y-y)<Math.min(W,900)*.25)) continue;
@@ -2125,7 +2191,7 @@ function drawFig(f, T){
       g.globalAlpha=.35*b; g.rotate(Math.PI/4); star(0,0,R*.42,R*.08);
       g.restore();
     }
-    if(!reduce){ if(!shoot&&t>next) shoot={x:W*(.55+rnd()*.4),y:H*(.04+rnd()*.14),vx:-(2.6+rnd()*1.2),vy:.9+rnd()*.5,life:0};
+    if(false){ if(!shoot&&t>next) shoot={x:W*(.55+rnd()*.4),y:H*(.04+rnd()*.14),vx:-(2.6+rnd()*1.2),vy:.9+rnd()*.5,life:0};
       if(shoot){ shoot.life++; shoot.x+=shoot.vx*2.2; shoot.y+=shoot.vy*2.2; const a=Math.sin(Math.min(1,shoot.life/80)*Math.PI)*.45, L=60;
         const gr=g.createLinearGradient(shoot.x,shoot.y,shoot.x-shoot.vx*L,shoot.y-shoot.vy*L); gr.addColorStop(0,`rgba(255,255,255,${a})`); gr.addColorStop(1,'rgba(150,165,255,0)');
         g.globalAlpha=1; g.strokeStyle=gr; g.lineWidth=1; g.lineCap='round'; g.beginPath(); g.moveTo(shoot.x,shoot.y); g.lineTo(shoot.x-shoot.vx*L,shoot.y-shoot.vy*L); g.stroke();
@@ -2226,7 +2292,7 @@ if (!reduce){ const loop = t => { if (skyVis) frame(t); requestAnimationFrame(lo
 </script>
 
 
-<script src="/assets/globe.js?v=fa603f6c" defer></script>
+<script src="/assets/globe.js?v=77cab68a" defer></script>
 <script src="/assets/species.js?v=60f89ddc" defer></script>
 <script src="/assets/consent.js?v=6803e013" defer></script>
 

@@ -215,8 +215,12 @@
       if (ph > 1.25) continue;
       const head = Math.min(1, ph), tail = Math.max(0, ph - 0.35);
       const pts = arc.pts.map(P), n = pts.length - 1;
-      for (let i = Math.floor(tail * n); i < Math.ceil(head * n); i++) {
-        const a = pts[i], b = pts[i + 1];
+      // a point at any fraction along the arc, so the head and tail glide instead of stepping
+      const at = (f) => { const x = Math.max(0, Math.min(n, f * n)), i = Math.min(n - 1, Math.floor(x)), u = x - i, a = pts[i], b = pts[i + 1];
+        return [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u, a[2] + (b[2] - a[2]) * u]; };
+      const i0 = Math.floor(tail * n), i1 = Math.ceil(head * n);
+      for (let i = i0; i < i1; i++) {
+        const a = i === i0 ? at(tail) : pts[i], b = i + 1 === i1 ? at(head) : pts[i + 1];
         if (a[2] < 0 || b[2] < 0) continue;
         const k = (i / n - tail) / Math.max(0.001, head - tail);
         const al = Math.max(0, Math.min(1, k)) * Math.min(1, a[2] * 4) * fade * (ph > 1 ? 1 - (ph - 1) * 4 : 1);
@@ -224,7 +228,7 @@
         g.lineWidth = 1.2;
         g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.stroke();
       }
-      const hp = pts[Math.min(n, Math.round(head * n))];
+      const hp = at(head);
       if (hp[2] > 0 && ph <= 1) {
         g.fillStyle = `rgba(255,255,255,${0.95 * fade})`;
         g.beginPath(); g.arc(hp[0], hp[1], 1.8, 0, 6.283); g.fill();
@@ -249,9 +253,8 @@
         ready = true;
         box.classList.add("has-globe");
         if (reduce) { fade = 1; draw(performance.now()); return; }
-        let last = 0;
-        // 30 frames a second is plenty for a slow turn, and halves the GPU work
-        const loop = (now) => { if (vis && !document.hidden && now - last > 30) { last = now; draw(now); } requestAnimationFrame(loop); };
+        // every frame, so the turn and the arcs stay smooth
+        const loop = (now) => { if (vis && !document.hidden) draw(now); requestAnimationFrame(loop); };
         requestAnimationFrame(loop);
       })
       .catch(() => wrap.remove());
