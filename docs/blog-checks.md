@@ -187,3 +187,4 @@ Research narration, dates and unconfirmed details were taken out of the posts an
 - HubSpot: Agent Hub is "included in all Starter, Professional, and Enterprise editions", but the page doesn't map each agent to a plan or list credit amounts, so the post names no plan per agent and gives no price. The page no longer explains Breeze, so the post doesn't use the name.
 - Salesforce: no separate price for the SDR or Sales Coach agents. The post gives Foundations ($0) and Flex Credits ($500 per 100,000, 20 credits per action) only.
 - Attio: the custom agents page names no plan or credit cost, so the post links to Attio's pricing for prices.
+- Salesforce homepage screenshot: salesforce.com returns a bot wall (403) to tools/shot-tools.mjs, also with --wait 8000, so its numbered section shows the logo with no screenshot.
