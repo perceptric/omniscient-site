@@ -179,3 +179,11 @@ Research narration, dates and unconfirmed details were taken out of the posts an
 - G2 returned 403, so the post has no rating block.
 - Startup program: the FAQ now says "incorporated less than 5 years ago". best-crm-for-startups says 10 years, so that post needs updating. omniscient-vs-attio, attio-alternatives and attio-vs-hubspot still show Attio's old per-user prices and Enterprise plan.
 - The SQL-in-workflows row on the pricing table reads oddly for Free, so the post leaves it out.
+
+## agentic-crm (2065 words, 4 visuals)
+
+- Day AI: the plan cards show $24, $60, $200 and $800 with "Prices reflect annual billing, paid upfront" under the volume table, and the FAQ talks about annual billing with a 20% discount. The post says "agents from $24 a month" with no billing term. The homepage "Want a free month?" banner isn't explained, so the post leaves it out.
+- Lightfield: lightfield.app now redirects to lightfield.com. The post uses lightfield.com.
+- HubSpot: Agent Hub is "included in all Starter, Professional, and Enterprise editions", but the page doesn't map each agent to a plan or list credit amounts, so the post names no plan per agent and gives no price. The page no longer explains Breeze, so the post doesn't use the name.
+- Salesforce: no separate price for the SDR or Sales Coach agents. The post gives Foundations ($0) and Flex Credits ($500 per 100,000, 20 credits per action) only.
+- Attio: the custom agents page names no plan or credit cost, so the post links to Attio's pricing for prices.

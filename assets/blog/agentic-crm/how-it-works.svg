@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">How an agentic CRM works</title>
+<desc id="d">An agentic CRM works in four layers: a memory of every email, call, meeting and note on the right record; skills, fixed playbooks for each job; an agent that runs the skill on the memory and does the work; and you, who accept or skip each change before it lands.</desc>
+<rect width="720" height="560" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">How it works</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Four layers, one loop</text>
+<rect x="32.5" y="124.5" width="655" height="76" rx="12" fill="#ffffff" stroke="#ebebeb"/>
+<text x="56" y="158" font-size="21" font-weight="500" fill="#171717">Memory</text>
+<text x="56" y="184" font-size="18" fill="#737373">Every email, call, meeting and note on the right record</text>
+<path d="M360 204 v20 m-7 -8 l7 8 l7 -8" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="32.5" y="228.5" width="655" height="76" rx="12" fill="#ffffff" stroke="#ebebeb"/>
+<text x="56" y="262" font-size="21" font-weight="500" fill="#171717">Skills</text>
+<text x="56" y="288" font-size="18" fill="#737373">Fixed playbooks for each job, like prepping a meeting</text>
+<path d="M360 308 v20 m-7 -8 l7 8 l7 -8" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="32.5" y="332.5" width="655" height="76" rx="12" fill="#ffffff" stroke="#ebebeb"/>
+<text x="56" y="366" font-size="21" font-weight="500" fill="#171717">Agent</text>
+<text x="56" y="392" font-size="18" fill="#737373">Runs the skill on the memory and does the work</text>
+<path d="M360 412 v20 m-7 -8 l7 8 l7 -8" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="32.5" y="436.5" width="655" height="76" rx="12" fill="#0C8C5E" stroke="#0C8C5E"/>
+<text x="56" y="470" font-size="21" font-weight="500" fill="#ffffff">You</text>
+<text x="56" y="496" font-size="18" fill="#e6f4ee">Accept or skip each change before it lands</text>
+</svg>

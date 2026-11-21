@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 586" width="720" height="586" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What an agentic CRM does at each step of the sale</title>
+<desc id="d">At each step of the sale, an agentic CRM does the busy work: it builds lead lists from a plain description of your buyer, logs every email, meeting and call on the right deal, drafts follow-ups in your voice for you to send, preps a brief before each call and a recap after, suggests stage, amount and next step changes with proof, and flags deals that need attention and why.</desc>
+<rect width="720" height="586" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Across the sale</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Busy work the agent takes on</text>
+<rect x="32.5" y="124.5" width="132" height="56" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="98" y="159" text-anchor="middle" font-size="19" font-weight="500" fill="#171717">Find</text>
+<text x="188" y="159" font-size="18" fill="#404040">Builds lead lists from a plain description of your buyer</text>
+<rect x="32.5" y="196.5" width="132" height="56" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="98" y="231" text-anchor="middle" font-size="19" font-weight="500" fill="#171717">Capture</text>
+<text x="188" y="231" font-size="18" fill="#404040">Logs every email, meeting and call on the right deal</text>
+<rect x="32.5" y="268.5" width="132" height="56" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="98" y="303" text-anchor="middle" font-size="19" font-weight="500" fill="#171717">Engage</text>
+<text x="188" y="303" font-size="18" fill="#404040">Drafts follow-ups in your voice for you to send</text>
+<rect x="32.5" y="340.5" width="132" height="56" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="98" y="375" text-anchor="middle" font-size="19" font-weight="500" fill="#171717">Meet</text>
+<text x="188" y="375" font-size="18" fill="#404040">Preps a brief before the call and a recap after</text>
+<rect x="32.5" y="412.5" width="132" height="56" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="98" y="447" text-anchor="middle" font-size="19" font-weight="500" fill="#171717">Manage</text>
+<text x="188" y="447" font-size="18" fill="#404040">Suggests stage, amount and next step with proof</text>
+<rect x="32.5" y="484.5" width="132" height="56" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="98" y="519" text-anchor="middle" font-size="19" font-weight="500" fill="#171717">Review</text>
+<text x="188" y="519" font-size="18" fill="#404040">Flags deals that need attention and why</text>
+</svg>
