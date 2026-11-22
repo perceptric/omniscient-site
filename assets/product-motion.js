@@ -252,6 +252,49 @@
       else if (!e.isIntersecting && on) { on = false; clock.clear(); }
     }), { threshold: [0, .3] }).observe(root);
   });
-  if (typeof window.layoutFits === 'function') window.layoutFits();
+  /* bigger screens: each row's screen fills its stage, scaling up past its design size (the shared fitter stops at 1) */
+  const MAX = 1.45;
+  const fits = $$('.prow .pm-stage>.fit');
+  function fitBig() {
+    fits.forEach(f => {
+      const w = +f.dataset.w, inner = f.firstElementChild;
+      if (!w || !inner || !f.clientWidth) return;
+      const s = Math.min(MAX, f.clientWidth / w);
+      inner.style.transform = `scale(${s.toFixed(4)})`;
+      inner.style.marginLeft = (Math.max(0, f.clientWidth - w * s) / 2) + 'px';
+      f.style.height = Math.ceil(inner.offsetHeight * s) + 'px';
+    });
+  }
+  // runs after the shared fitter, which refits 120ms after a resize
+  let rt = 0;
+  const refit = () => { clearTimeout(rt); rt = setTimeout(fitBig, 180); };
+  addEventListener('resize', refit);
+  addEventListener('load', refit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
+  if ('ResizeObserver' in window) { const ro = new ResizeObserver(refit); fits.forEach(f => ro.observe(f.parentElement)); }
+  fitBig();
+
+  /* the screen tilts toward the pointer, with a glare that follows it */
+  if (!RM && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    $$('.prow .pm-stage').forEach(stage => {
+      const fit = $(':scope>.fit', stage);
+      if (!fit) return;
+      const glare = document.createElement('i');
+      glare.className = 'pm-glare';
+      stage.appendChild(glare);
+      let raf = 0;
+      stage.addEventListener('pointermove', e => {
+        const r = stage.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          stage.classList.add('pm-tilt');
+          fit.style.transform = `rotateX(${((.5 - y) * 6).toFixed(2)}deg) rotateY(${((x - .5) * 8).toFixed(2)}deg)`;
+          stage.style.setProperty('--gx', (x * 100).toFixed(1) + '%');
+          stage.style.setProperty('--gy', (y * 100).toFixed(1) + '%');
+        });
+      });
+      stage.addEventListener('pointerleave', () => { cancelAnimationFrame(raf); stage.classList.remove('pm-tilt'); fit.style.transform = ''; });
+    });
+  }
   dispatchEvent(new Event('resize'));
 })();

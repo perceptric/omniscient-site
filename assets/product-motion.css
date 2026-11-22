@@ -112,8 +112,26 @@ html.pm .acc.mx.pm-fl{animation:pm-float 6s ease-in-out .6s infinite!important}
 .pm-dg rect{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.06);stroke-width:1;animation:pm-cell 6s ease-in-out infinite}
 @keyframes pm-cell{0%,100%{fill:rgba(255,255,255,.03)}50%{fill:rgba(255,255,255,.08)}}
 
-/* room around each row's screen so its backdrop shows */
-@media (min-width:901px){html.pm .prow .pm-stage .vis-in{padding:34px 38px 38px}}
+/* bigger screens: the screen takes most of the row (on flipped rows too), and the JS lets it scale up to fill it */
+@media (min-width:901px){
+  html.pm .prow{grid-template-columns:minmax(0,.64fr) minmax(0,1.36fr);gap:64px}
+  html.pm .prow.flip{grid-template-columns:minmax(0,1.36fr) minmax(0,.64fr)}
+  html.pm .prow .pcopy h2{font-size:clamp(28px,2.5vw,40px)}
+  html.pm .prow .pm-stage .vis-in{padding:24px 26px 28px}
+  html.pm .prow .pm-stage{padding:8px}
+  /* on wide windows the stage reaches out into the side margin */
+  html.pm .prow:not(.flip)>.rv:not(.pcopy){margin-right:calc(-1 * clamp(0px, (100vw - 1240px) / 2, 120px))}
+  html.pm .prow.flip>.rv:not(.pcopy){margin-left:calc(-1 * clamp(0px, (100vw - 1240px) / 2, 120px))}
+}
+
+/* the screen tilts toward the pointer, with a soft glare across the glass */
+.pm-stage{perspective:1600px}
+.pm-stage>.fit{transform-origin:50% 50%;transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.pm-stage.pm-tilt>.fit{transition:transform .15s linear}
+.pm-glare{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;opacity:0;transition:opacity .4s;background:radial-gradient(520px circle at var(--gx,50%) var(--gy,30%),rgba(255,255,255,.10),transparent 60%);mix-blend-mode:screen}
+.pm-stage.pm-tilt .pm-glare{opacity:1}
+/* the screen rises in as it scrolls into view */
+html.pm .prow .rv:not(.in) .pm-stage>.fit{transform:translateY(24px) scale(.96)}
 
 /* a wide glow behind each row's stage */
 html.pm .prow>.rv{position:relative}
