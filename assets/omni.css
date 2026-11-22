@@ -1177,6 +1177,12 @@ body.cosmic .tm-grid{gap:80px;margin-top:96px}
   body.cosmic .finale{padding-block:120px 140px;margin-top:80px}
   body.cosmic .tm-grid{gap:40px;margin-top:56px}
 }
+/* round 36: the whole teams block, title included, stays pinned and centered in the window */
+@media (min-width:901px){
+  body.cosmic .teams{padding-top:96px}
+  html.js .tm-sticky{top:64px;min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:center;padding-block:24px}
+  html.js body.cosmic .tm-fit .tm-grid{margin-top:56px}
+}
 @media (max-width:640px){body.cosmic .hero{padding-block:96px 0}body.cosmic .horizon{margin-top:64px}body.cosmic .hero .hero-form{margin-top:40px}}
 
 /* footer: six columns */

@@ -1,0 +1,127 @@
+/* Product page motion: each product screen plays step by step when it scrolls into view and plays again when you
+   come back. A user message is typed into the box and sent, Otto thinks, then his answer, cards and rows land one by
+   one, update rows get applied and pop-ups come in last. Each stage gets a living backdrop. Built by
+   assets/product-motion.js. Without JS, or with reduced motion, the screens show their last frame. */
+
+/* the old one-time fade of screen parts gives way to the step-by-step play */
+html.pm .pm-own .um,html.pm .pm-own .om,html.pm .pm-own .lrow,html.pm .pm-own .urow,html.pm .pm-own .mrow,html.pm .pm-own .tli,html.pm .pm-own .flow>*,html.pm .pm-own .oc,html.pm .pm-own .src,html.pm .pm-own .card-b>div,html.pm .pm-own .toast{opacity:1;transform:none;transition-delay:0s}
+html.pm .pm-own .om .body>p:first-child::after{display:none}
+
+/* shared motion parts */
+html.pm .mx{transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1),filter .5s cubic-bezier(.22,1,.36,1)}
+html.pm .mx.x{opacity:0!important;transform:translateY(10px)!important;filter:blur(3px);pointer-events:none}
+html.pm .mx.pop.x{transform:translateY(6px) scale(.96)!important}
+html.pm .conn.mx{transform-origin:50% 0}
+html.pm .conn.mx.x{transform:scaleY(0)!important;opacity:1!important;filter:none}
+.snap .mx,.snap .mx *{transition:none!important;animation:none!important}
+@keyframes pm-blink{50%{opacity:0}}
+@keyframes pm-spin{to{transform:rotate(360deg)}}
+@keyframes pm-shim{to{background-position:-200% 0}}
+@keyframes pm-press{50%{transform:scale(.84)}}
+@keyframes pm-bump{40%{transform:scale(1.08)}}
+@keyframes pm-flash{0%{background:rgba(12,140,94,0)}20%{background:rgba(12,140,94,.08)}100%{background:rgba(12,140,94,0)}}
+@keyframes pm-float{50%{transform:translateY(-6px)}}
+
+/* typing into the box */
+.pm-ta{position:relative}
+.pm-ph{position:relative;display:inline-block}
+.pm-typed{position:absolute;left:0;top:50%;transform:translateY(-50%);display:none;align-items:center;gap:6px;white-space:nowrap;color:var(--t1);visibility:visible}
+.pm-typing .pm-typed{display:flex}
+.pm-typing .pm-ph{visibility:hidden}
+.pm-caret{display:inline-block;width:1.5px;height:16px;background:#0a0a0a;flex:none;animation:pm-blink 1s steps(1) infinite}
+.pm-kchip{display:inline-flex;align-items:center;gap:5px;border-radius:6px;background:#0a0a0a;color:#fff;padding:2px 8px;font-size:12px;font-weight:500;flex:none}
+.pm-send{transition:opacity .3s}
+.pm-send.idle{opacity:.28}
+.pm-send.press{animation:pm-press .3s ease}
+
+/* Otto thinking */
+.pm-om-body{position:relative}
+.pm-think{position:absolute;left:0;top:2px;display:flex;align-items:center;gap:8px;font-size:13.5px;white-space:nowrap;z-index:1}
+.pm-spn{width:12px;height:12px;border-radius:50%;border:1.5px solid #d4d4d4;border-top-color:#0a0a0a;animation:pm-spin .8s linear infinite;flex:none}
+.pm-shim{background:linear-gradient(90deg,#9b9b9b 0%,#9b9b9b 35%,#1a1a1a 50%,#9b9b9b 65%,#9b9b9b 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:pm-shim 1.4s linear infinite}
+
+/* rows land with a soft green flash */
+.pm-land{animation:pm-flash 1.6s ease both;border-radius:8px}
+.pm-cnt{font-variant-numeric:tabular-nums}
+
+/* update rows get applied */
+.pm-urow{position:relative}
+.pm-urow .tx{transition:opacity .4s}
+.pm-urow.ok .tx{opacity:.5}
+.pm-urow .ibp,.pm-urow .ibg{transition:opacity .3s,transform .3s}
+.pm-urow .ibp.press{animation:pm-press .32s ease}
+.pm-urow.ok .ibp,.pm-urow.ok .ibg{opacity:0;transform:scale(.6)}
+.pm-applied{position:absolute;right:16px;top:50%;margin-top:-13px;display:inline-flex;align-items:center;gap:5px;height:26px;padding:0 10px 0 8px;border-radius:999px;background:#e3f4ec;color:#086444;font-size:12px;font-weight:500;transition:opacity .35s,transform .35s cubic-bezier(.22,1,.36,1)}
+.pm-applied.x{opacity:0;transform:scale(.85)}
+
+/* the button at the end of a card gets a nudge */
+.pm-nudge{animation:pm-bump .5s ease}
+
+/* pop-ups come in last, then float */
+html.pm .acc.mx{animation:none!important}
+html.pm .acc.mx.pm-fl{animation:pm-float 6s ease-in-out .6s infinite!important}
+
+/* ---------- stage backdrops ---------- */
+@property --pm-a{syntax:"<angle>";inherits:false;initial-value:0deg}
+.pm-vbg{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none;z-index:0;--c1:150,160,255;--c2:90,210,170}
+.pm-stage{position:relative}
+.pm-stage>.fit{position:relative;z-index:2}
+.pm-stage>.acc{z-index:3}
+.pm-vbg .au{position:absolute;border-radius:50%;will-change:transform}
+.pm-vbg .a1{width:62%;height:72%;left:-14%;top:-24%;background:radial-gradient(closest-side,rgba(var(--c1),.30),transparent);animation:pm-au1 17s ease-in-out infinite alternate}
+.pm-vbg .a2{width:58%;height:70%;right:-16%;bottom:-28%;background:radial-gradient(closest-side,rgba(var(--c2),.24),transparent);animation:pm-au2 21s ease-in-out infinite alternate}
+.pm-vbg .a3{width:40%;height:46%;left:38%;top:30%;background:radial-gradient(closest-side,rgba(255,255,255,.07),transparent);animation:pm-au1 25s ease-in-out infinite alternate-reverse}
+@keyframes pm-au1{to{transform:translate(18%,22%) scale(1.15)}}
+@keyframes pm-au2{to{transform:translate(-20%,-14%) scale(1.2)}}
+.pm-vbg .spot{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.5) 1px,transparent 1.4px);background-size:18px 18px;-webkit-mask-image:radial-gradient(closest-side,#000,transparent);mask-image:radial-gradient(closest-side,#000,transparent);-webkit-mask-size:420px 420px;mask-size:420px 420px;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:pm-spot 20s ease-in-out infinite alternate}
+@keyframes pm-spot{0%{-webkit-mask-position:8% 12%;mask-position:8% 12%}33%{-webkit-mask-position:92% 30%;mask-position:92% 30%}66%{-webkit-mask-position:30% 95%;mask-position:30% 95%}100%{-webkit-mask-position:85% 85%;mask-position:85% 85%}}
+.pm-vbg .edge{position:absolute;inset:0;border-radius:inherit;padding:1px;background:conic-gradient(from var(--pm-a),transparent 0 62%,rgba(255,255,255,.45) 75%,transparent 88%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);animation:pm-edge 9s linear infinite}
+@keyframes pm-edge{to{--pm-a:360deg}}
+.pm-vbg .art{position:absolute;inset:0;width:100%;height:100%}
+.pm-k-chat .pm-vbg{--c1:130,140,255;--c2:80,200,255}
+.pm-k-sync .pm-vbg{--c1:60,210,150;--c2:120,150,255}
+.pm-k-call .pm-vbg{--c1:255,180,110;--c2:170,130,255}
+.pm-k-flow .pm-vbg{--c1:90,190,255;--c2:60,210,150}
+.pm-k-data .pm-vbg{--c1:170,140,255;--c2:255,170,120}
+
+/* chat: people and companies as a constellation, scanned while Otto thinks */
+.pm-cn line{stroke:rgba(255,255,255,.07);stroke-width:1}
+.pm-cn circle{fill:rgba(255,255,255,.28);animation:pm-tw 4s ease-in-out infinite}
+.pm-cn circle.ring{fill:none;stroke:rgba(255,255,255,.18);stroke-width:1}
+@keyframes pm-tw{50%{opacity:.35}}
+.pm-cn .sweep{fill:none;stroke:rgba(255,255,255,.35);stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center;animation:none}
+.pm-scan .pm-cn .sweep{animation:pm-sweep 1.6s cubic-bezier(.2,.7,.3,1) infinite}
+.pm-scan .pm-cn .sweep.b{animation-delay:.8s}
+@keyframes pm-sweep{0%{opacity:.8;transform:scale(.05)}100%{opacity:0;transform:scale(1)}}
+/* sync: data streams */
+.pm-st path{fill:none;stroke:rgba(255,255,255,.07);stroke-width:1}
+.pm-st path.f{stroke:rgba(255,255,255,.22);stroke-dasharray:2 22;animation:pm-wire 2.4s linear infinite}
+.pm-st path.f.r{animation-direction:reverse;animation-duration:3.1s}
+.pm-st path.f.s{animation-duration:4s}
+@keyframes pm-wire{to{stroke-dashoffset:-24}}
+/* call: a waveform and the customer's words floating up */
+.pm-wf rect{fill:rgba(255,255,255,.08);transform-box:fill-box;transform-origin:50% 100%;animation:pm-wfb 1.8s ease-in-out infinite}
+@keyframes pm-wfb{50%{transform:scaleY(.25)}}
+.pm-qf{position:absolute;font:italic 400 17px/1.3 "Instrument Serif",serif;color:rgba(255,255,255,.16);white-space:nowrap;animation:pm-qf 16s linear infinite}
+@keyframes pm-qf{0%{transform:translateY(40px);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateY(-120px);opacity:0}}
+/* flow: a grid of nodes with runs moving between them */
+.pm-ng rect{fill:rgba(255,255,255,.025);stroke:rgba(255,255,255,.08);stroke-width:1}
+.pm-ng path{fill:none;stroke:rgba(255,255,255,.07);stroke-width:1}
+.pm-ng circle{fill:#fff;opacity:.55}
+/* data: a slow grid of records with rows lighting up */
+.pm-dg rect{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.06);stroke-width:1;animation:pm-cell 6s ease-in-out infinite}
+@keyframes pm-cell{0%,100%{fill:rgba(255,255,255,.03)}50%{fill:rgba(255,255,255,.08)}}
+
+/* room around each row's screen so its backdrop shows */
+@media (min-width:901px){html.pm .prow .pm-stage .vis-in{padding:34px 38px 38px}}
+
+/* a wide glow behind each row's stage */
+html.pm .prow>.rv{position:relative}
+html.pm .prow>.rv::before{content:"";position:absolute;left:-12%;right:-12%;top:-14%;bottom:-14%;z-index:-1;border-radius:50%;background:radial-gradient(closest-side,rgba(var(--g,130,140,255),.12),transparent 72%);pointer-events:none}
+html.pm .prow>.rv:has(.pm-k-sync)::before{--g:60,210,150}
+html.pm .prow>.rv:has(.pm-k-call)::before{--g:255,170,110}
+html.pm .prow>.rv:has(.pm-k-flow)::before{--g:90,190,255}
+html.pm .prow>.rv:has(.pm-k-data)::before{--g:170,140,255}
+@media (max-width:900px){html.pm .prow>.rv::before{left:0;right:0}}
+
+@media (prefers-reduced-motion:reduce){.pm-vbg *,.pm-caret,.pm-spn,.pm-shim{animation:none!important}}

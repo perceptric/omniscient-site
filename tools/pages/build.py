@@ -432,6 +432,10 @@ def page(s, P):
 {finale_html(s, P.get("fin"), P.get("fin_p"))}</main>
 '''
     out = shell_html(s, P['title'], P['desc'], url(slug), body)
+    if slug.startswith('product/'):
+        # product screens play step by step in view (assets/product-motion.*)
+        out = out.replace('<link rel="stylesheet" href="/assets/omni.css">', '<link rel="stylesheet" href="/assets/omni.css">\n<link rel="stylesheet" href="/assets/product-motion.css">', 1)
+        out = out.replace('<script src="/assets/omni.js" defer></script>', '<script src="/assets/omni.js" defer></script>\n<script src="/assets/product-motion.js" defer></script>', 1)
     d = os.path.join(ROOT, slug); os.makedirs(d, exist_ok=True)
     open(os.path.join(d, 'index.html'), 'w').write(out)
     return slug
