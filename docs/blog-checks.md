@@ -188,3 +188,11 @@ Research narration, dates and unconfirmed details were taken out of the posts an
 - Salesforce: no separate price for the SDR or Sales Coach agents. The post gives Foundations ($0) and Flex Credits ($500 per 100,000, 20 credits per action) only.
 - Attio: the custom agents page names no plan or credit cost, so the post links to Attio's pricing for prices.
 - Salesforce homepage screenshot: salesforce.com returns a bot wall (403) to tools/shot-tools.mjs, also with --wait 8000, so its numbered section shows the logo with no screenshot.
+
+## attio-pricing (1833 words, 4 visuals)
+
+- Attio's pricing page still shows two prices per plan with no labels. The post reads the lower one as yearly billing, which matches "Save 20% with annual billing" and the FAQ's labelled credit-pack prices.
+- Not stated by Attio, so left out: taxes, whether users added mid-cycle are prorated (the FAQ covers plan upgrades), whether guests or viewers are free, Call Intelligence and sequence limits, and whether the trial needs a card.
+- attio.com/help/reference/billing-and-plans returns 404. The post links the credits guide instead.
+- Copper: no trial length is stated, so the table says "Free to start, no credit card".
+- folk and HubSpot were left out of the comparison: folk's page doesn't label which price is yearly, and HubSpot shows $7 and $20 for Starter (and $90 and $100 for Professional) without saying which billing each is. Pipedrive's pricing page still returns 403.

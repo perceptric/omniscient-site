@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 674" width="720" height="674" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What a team of 5 pays a month on yearly billing, Attio vs other CRMs</title>
+<desc id="d">A team of 5 users a month on yearly billing: Attio Plus $180 and Attio Pro $416; Omniscient Starter $95 and Pro $245; Copper Basic $115 and Professional $295; Salesflare Growth $145 and Pro $245. From each vendor's site, November 2026.</desc>
+<rect width="720" height="674" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Team of 5</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Monthly bill, billed yearly</text>
+<text x="32" y="154" font-size="19" fill="#171717">Attio Plus</text>
+<rect x="260" y="134" width="146" height="28" rx="6" fill="#333333"/>
+<text x="418" y="155" font-size="19" font-weight="500" fill="#171717">$180</text>
+<text x="32" y="214" font-size="19" fill="#171717">Attio Pro</text>
+<rect x="260" y="194" width="337" height="28" rx="6" fill="#333333"/>
+<text x="609" y="215" font-size="19" font-weight="500" fill="#171717">$416</text>
+<line x1="32" x2="688" y1="238" y2="238" stroke="#ebebeb"/>
+<text x="32" y="274" font-size="19" fill="#171717">Omniscient Starter</text>
+<rect x="260" y="254" width="77" height="28" rx="6" fill="#0C8C5E"/>
+<text x="349" y="275" font-size="19" font-weight="500" fill="#171717">$95</text>
+<text x="32" y="334" font-size="19" fill="#171717">Omniscient Pro</text>
+<rect x="260" y="314" width="198" height="28" rx="6" fill="#0C8C5E"/>
+<text x="470" y="335" font-size="19" font-weight="500" fill="#171717">$245</text>
+<line x1="32" x2="688" y1="358" y2="358" stroke="#ebebeb"/>
+<text x="32" y="394" font-size="19" fill="#171717">Copper Basic</text>
+<rect x="260" y="374" width="93" height="28" rx="6" fill="#333333"/>
+<text x="365" y="395" font-size="19" font-weight="500" fill="#171717">$115</text>
+<text x="32" y="454" font-size="19" fill="#171717">Copper Professional</text>
+<rect x="260" y="434" width="239" height="28" rx="6" fill="#333333"/>
+<text x="511" y="455" font-size="19" font-weight="500" fill="#171717">$295</text>
+<line x1="32" x2="688" y1="478" y2="478" stroke="#ebebeb"/>
+<text x="32" y="514" font-size="19" fill="#171717">Salesflare Growth</text>
+<rect x="260" y="494" width="117" height="28" rx="6" fill="#333333"/>
+<text x="389" y="515" font-size="19" font-weight="500" fill="#171717">$145</text>
+<text x="32" y="574" font-size="19" fill="#171717">Salesflare Pro</text>
+<rect x="260" y="554" width="198" height="28" rx="6" fill="#333333"/>
+<text x="470" y="575" font-size="19" font-weight="500" fill="#171717">$245</text>
+<text x="32" y="646" font-size="18" fill="#737373">From each vendor's site, November 2026.</text>
+</svg>
