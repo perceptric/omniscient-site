@@ -1218,6 +1218,7 @@ body.cosmic .tm-grid{gap:80px;margin-top:96px}
 .fgrid{grid-template-columns:1.2fr repeat(5,minmax(0,1fr))!important}
 @media (max-width:900px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 </style>
+<link rel="stylesheet" href="/assets/demo.css?v=8dc3657d">
 <link rel="stylesheet" href="/assets/story-motion.css?v=f9388c11">
 
 </head>
@@ -1764,88 +1765,8 @@ function faces(root){
 }
 
 /* ---------- clickable hero demo ---------- */
-const CO = [
-  {n:'Linear',i:'LI',d:'linear.app',rel:'Customer',arr:'$58,000',lt:'2h ago',nm:'Dec 2',pl:'San Francisco, CA',ind:'Software',ppl:[['KS','Karri Saarinen','CEO'],['TA','Tuomas Artman','CTO']],deal:['Team plan expansion','$58,000','Negotiation']},
-  {n:'Vercel',i:'VE',d:'vercel.com',rel:'Prospect',arr:'–',lt:'Today',nm:'Dec 2',pl:'San Francisco, CA',ind:'Developer tools',ppl:[['GR','Guillermo Rauch','CEO']],deal:['Pilot, 40 seats','$31,500','Proposal']},
-  {n:'Notion',i:'NO',d:'notion.so',rel:'Prospect',arr:'–',lt:'4d ago',nm:'–',pl:'San Francisco, CA',ind:'Productivity',ppl:[['IZ','Ivan Zhao','CEO']],deal:['Workspace migration','$86,400','Proposal']},
-  {n:'Stripe',i:'ST',d:'stripe.com',rel:'Customer',arr:'$120,000',lt:'2h ago',nm:'Nov 18',pl:'South San Francisco, CA',ind:'Payments',ppl:[['PC','Patrick Collison','CEO']],deal:['Global sales team','$120,000','Negotiation']},
-  {n:'Figma',i:'FI',d:'figma.com',rel:'Partner',arr:'$74,000',lt:'6h ago',nm:'–',pl:'San Francisco, CA',ind:'Design',ppl:[['DF','Dylan Field','CEO']],deal:['Design org rollout','$74,000','Proposal']},
-  {n:'Ramp',i:'RA',d:'ramp.com',rel:'Prospect',arr:'–',lt:'1d ago',nm:'Nov 21',pl:'New York, NY',ind:'Finance',ppl:[['EG','Eric Glyman','CEO']],deal:['Finance team pilot','$48,000','Negotiation']},
-  {n:'Airbnb',i:'AB',d:'airbnb.com',rel:'Customer',arr:'$36,000',lt:'5d ago',nm:'–',pl:'San Francisco, CA',ind:'Travel',ppl:[['BC','Brian Chesky','CEO']],deal:['Annual plan','$36,000','Won']},
-  {n:'Shopify',i:'SH',d:'shopify.com',rel:'Prospect',arr:'–',lt:'1d ago',nm:'Nov 20',pl:'Ottawa, Canada',ind:'Commerce',ppl:[['TB','Tobi Lütke','CEO']],deal:['Merchant success team','$64,000','Discovery']},
-  {n:'Anthropic',i:'AN',d:'anthropic.com',rel:'Prospect',arr:'–',lt:'3h ago',nm:'Nov 24',pl:'San Francisco, CA',ind:'AI research',ppl:[['DA','Dario Amodei','CEO']],deal:['Enterprise rollout','$240,000','Discovery']},
-  {n:'OpenAI',i:'OA',d:'openai.com',rel:'Customer',arr:'$180,000',lt:'1d ago',nm:'Dec 4',pl:'San Francisco, CA',ind:'AI research',ppl:[['SA','Sam Altman','CEO']],deal:['Go-to-market team','$180,000','Won']}
-];
-const relBadge = r => r === 'Customer' ? `<span class="badge dark">${r}</span>` : r === 'Partner' ? `<span class="badge line">${r}</span>` : `<span class="badge">${r}</span>`;
-const logo = (c, s='') => `<span class="logo ${c.c} ${s}">${c.i}</span>`;
-const head = (icon, title, extra='', crumb='', view='') => `<div class="win-h">${crumb}<span class="pi">${ic(icon)}</span><b>${title}</b>${extra}<div class="acts"><span class="ib">${ic('SearchIcon')}</span><span class="ib">${ic('Download')}</span><span class="ib" data-go="ask" title="Otto"><svg width="16" height="16"><use href="#otto"/></svg></span><span class="pb" data-go="ask">${ic('Plus','i14')}New</span></div></div>` + (view ? `<div class="fbar"><span class="vchip">${ic('TableIcon','i14')}${view}${ic('ChevronDown','i12')}</span><span class="fb">${ic('FilterIcon','i14')}Filter</span><span class="fb">${ic('ArrowUpDown','i14')}Sort</span><span class="sp"></span><span class="fb">${ic('Sliders','i14')}Fields</span></div>` : '');
-const th = (icon, label) => `<th><span class="thc">${ic(icon,'i13')}${label}</span></th>`;
-const cbx = '<td class="cb"><i></i></td>';
-const dock = (ph='Ask Otto') => `<div class="dock" data-go="ask"><svg class="o"><use href="#otto"/></svg><span>${ph}</span><span class="sp"></span><span class="ib">${ic('Mic')}</span><span class="send">${ic('ArrowUp')}</span></div>`;
-const V = {
-  companies: () => head('Building','Companies','<span class="ct">148</span>','','All companies') + `<div class="dbody"><table class="tbl"><thead><tr><th class="cb"><i></i></th>${th('Building','Company')}${th('Globe','Domain')}${th('Tag','Relationship')}${th('Dollar','ARR')}${th('Clock','Last touch')}${th('Calendar','Next meeting')}</tr></thead><tbody>${CO.map((c,k)=>`<tr data-go="co:${k}"${k===1?' class="sel"':''}>${k===1?'<td class="cb"><i class="on">'+ic('Check','i12')+'</i></td>':cbx}<td><div class="nm">${logo(c)}${c.n}</div></td><td class="lnk">${c.d}</td><td>${relBadge(c.rel)}</td><td class="num">${c.arr}</td><td class="mut">${c.lt}</td><td>${c.nm}</td></tr>`).join('')}</tbody><tfoot><tr><td class="cb"></td><td class="mut">148 companies</td><td></td><td></td><td class="num mut">$1.2M sum</td><td></td><td></td></tr></tfoot></table></div>` + dock(),
-  people: () => { const rows = CO.flatMap(c => c.ppl.map(p => [p, c])); return head('Users','People',`<span class="ct">${312}</span>`,'','All people') + `<div class="dbody"><table class="tbl"><thead><tr><th class="cb"><i></i></th>${th('Users','Name')}${th('Mail','Email')}${th('Briefcase','Title')}${th('Building','Company')}${th('Clock','Last touch')}</tr></thead><tbody>${rows.slice(0,9).map(([p,c])=>`<tr data-go="co:${CO.indexOf(c)}">${cbx}<td><div class="nm"><span class="av">${p[0]}</span>${p[1]}</div></td><td>${p[1].split(' ')[0].toLowerCase().normalize('NFD').replace(/[^a-z]/g,'')}@${c.d}</td><td>${p[2]}</td><td><span class="cchip">${logo(c,'s16')}${c.n}</span></td><td style="color:var(--t3)">${c.lt}</td></tr>`).join('')}</tbody></table></div>` + dock(); },
-  deals: () => { const st = ['Discovery','Proposal','Negotiation','Won']; return head('Handshake','Opportunities','<span class="ct">31</span>','','Pipeline') + `<div class="dbody"><div class="lanes" style="grid-template-columns:repeat(4,1fr);padding:16px">${st.map(s => { const ds = CO.filter(c => c.deal[2] === s); return `<div class="lane"><div class="lane-h">${s} <small>${ds.length}</small></div><div class="lane-b">${ds.map(c => `<div class="oc" data-go="co:${CO.indexOf(c)}"><b>${c.deal[0]}</b><span>${logo(c,'s16')}${c.n}</span><span>${ic('Dollar','i13')}${c.deal[1]}</span><span><span class="av s20">${c.ppl[0][0]}</span>${c.ppl[0][1]}</span></div>`).join('')}</div></div>`; }).join('')}</div></div>` + dock(); },
-  ask: () => `<div class="win-h"><span class="pi">${ic('Sparkles')}</span><b>Ask Otto</b></div><div class="dbody" style="padding:28px 40px 120px"><div style="max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:20px">
-      <div class="um"><div class="stack"><span class="skchip">${ic('Box','i12')}Find leads</span><div class="ubub">Founders of fast-growing software companies in San Francisco</div></div><span class="av s28">JR</span></div>
-      <div class="om"><svg><use href="#otto"/></svg><div class="body"><p>Founders and CEOs at San Francisco software companies hiring for sales.</p><div class="card"><div class="card-h">${ic('Radar','i14')}Leads<span class="r" style="font-weight:400;color:var(--t4)">3 found</span></div><div class="card-b">
-        <div class="lrow"><span class="av s28">KS</span><b>Karri Saarinen</b><span>CEO, Linear</span><em>In CRM</em></div>
-        <div class="lrow"><span class="av s28">IZ</span><b>Ivan Zhao</b><span>CEO, Notion</span></div>
-        <div class="lrow"><span class="av s28">SA</span><b>Sam Altman</b><span>CEO, OpenAI</span></div></div>
-        <div class="card-f"><span class="pb sm">${ic('Check','i14')}Save 2</span></div></div></div></div></div></div>
-      <div class="dock" style="width:min(640px,86%)"><span>Ask anything, or type / for skills</span><span class="sp"></span><span class="ib">${ic('Plus')}</span><span class="send">${ic('ArrowUp')}</span></div>`,
-  meetings: () => head('Calendar','Meetings','<span class="ct">18</span>') + `<div class="dbody"><div class="mini" style="padding:8px 20px">${[['NOV','18','Partner review',3,'10:00 AM'],['NOV','20','Intro with RevOps',7,'2:30 PM'],['NOV','21','Security review',5,'11:00 AM'],['DEC','2','Pricing review',1,'9:00 AM'],['DEC','2','January launch check-in',0,'3:00 PM']].map(m=>`<div class="mrow" data-go="co:${m[3]}" style="padding:12px 0"><span class="datetile"><i>${m[0]}</i><b>${m[1]}</b></span><div class="tx"><b>${m[2]}</b><small>${CO[m[3]].n}</small></div><span class="av s20" style="margin-right:6px">${CO[m[3]].ppl[0][0]}</span><span class="tm">${m[4]}</span></div>`).join('')}</div></div>` + dock(),
-  emails: () => head('Mail','Emails','<span class="ct">2,184</span>') + `<div class="dbody"><div class="mini" style="padding:8px 20px">${[[1,'Pricing for 40 seats?',1,'9:41 AM'],[2,'Re: Seat minimums',1,'Yesterday'],[0,'Sending the order form today',0,'2h ago'],[5,'Security questionnaire',0,'1d ago'],[4,'Rollout plan attached',0,'6h ago']].map(e=>{const c=CO[e[0]],p=c.ppl[0];return `<div class="mrow" data-go="co:${e[0]}" style="padding:11px 0"><span class="av s28">${p[0]}</span><div class="tx"><b>${p[1]}</b><small>${e[1]}</small></div>${e[2]?'<span class="badge dark">Needs reply</span>':''}<span class="tm" style="margin-left:10px">${e[3]}</span></div>`;}).join('')}</div></div>` + dock(),
-  notes: () => head('StickyNote','Notes','<span class="ct">64</span>') + `<div class="dbody"><div class="mini" style="padding:8px 20px">${[[0,'Rollout plan','Two teams go first.'],[1,'Scoping call','40 seats, timing over price.'],[3,'Partner terms','Annual, net 30.'],[6,'Renewal plan','Add the spring scents.']].map(n=>`<div class="mrow" data-go="co:${n[0]}" style="padding:12px 0"><span class="chip c-yel">${ic('StickyNote','i14')}</span><div class="tx"><b>${n[1]}</b><small>${n[2]}</small></div><span class="cchip">${logo(CO[n[0]],'s16')}${CO[n[0]].n}</span></div>`).join('')}</div></div>` + dock(),
-  knowledge: () => head('Book','Knowledge','<span class="ct">12</span>') + `<div class="dbody"><div class="mini" style="padding:8px 20px">${[['Pricing and discounts','Updated today'],['Sales playbook','12 pages'],['Email tone','Short and warm'],['Product catalog','Spring 2027']].map(k=>`<div class="mrow" style="padding:12px 0"><span class="chip">${ic('Book','i14')}</span><div class="tx"><b>${k[0]}</b><small>${k[1]}</small></div></div>`).join('')}</div></div>` + dock(),
-  skills: () => head('Box','Skills','<span class="ct">15</span>') + `<div class="dbody"><div class="mini" style="padding:8px 20px">${[['Find leads','Build a lead list from one sentence'],['Research an account','A short profile with sources'],['Draft an email','A first email, follow-up or reply'],['Prep for a meeting','A one-page brief before the call'],['Wrap up a call','Recap, updates and a follow-up'],['Review the pipeline','Deals that need attention']].map(k=>`<div class="mrow" data-go="ask" style="padding:11px 0"><span class="chip">${ic('Box','i14')}</span><div class="tx"><b>${k[0]}</b><small>${k[1]}</small></div><span class="badge">System</span></div>`).join('')}</div></div>` + dock(),
-  workflows: () => head('Bot','Workflows','<span class="ct">5</span>') + `<div class="dbody" style="display:flex;justify-content:center;padding-top:28px"><div class="flow" style="transform:scale(.9);transform-origin:top center">
-      <div class="trig"><div class="k">${ic('Workflow','i14')}Starts</div><b>When an opportunity moves to Proposal</b><small>12 in it now</small></div>
-      <div class="conn"><span class="flowdot"></span></div><div class="step"><span class="tile">${ic('Mail','i14')}</span><div><b>Send "Proposal follow-up"</b><small>40 sent, 9 replied</small></div></div>
-      <div class="conn"><span class="flowdot" style="animation-delay:.5s"></span></div><div class="step"><span class="tile">${ic('Clock','i14')}</span><div><b>Wait 3 days</b><small>Time</small></div></div>
-      <div class="conn"><span class="flowdot" style="animation-delay:1s"></span></div><div class="step"><span class="tile">${ic('Bell','i14')}</span><div><b>Notify their owner</b><small>If there is no reply</small></div></div></div></div>`
-};
-function record(k){
-  const c = CO[k], p = c.ppl[0], f = p[1].split(' ')[0];
-  const back = `<span class="cr" data-go="companies" style="cursor:pointer">Companies</span><span class="sl">/</span>`;
-  return `<div class="win-h">${back}<span class="pi">${ic('Building')}</span><b>${c.n}</b><div class="acts"><span class="ib">${ic('ChevronUp')}</span><span class="ib">${ic('ChevronDown')}</span><span class="ib" data-go="ask"><svg width="16" height="16"><use href="#otto"/></svg></span></div></div>
-  <div class="tabs"><span class="on">${ic('Building','i14')}Overview</span><span>${ic('Clock','i14')}Activity</span><span>${ic('Mail','i14')}Emails</span><span>${ic('Calendar','i14')}Meetings</span><span>${ic('Handshake','i14')}Opportunities</span><span>${ic('StickyNote','i14')}Notes</span></div>
-  <div class="dbody" style="display:grid;grid-template-columns:1fr 300px">
-    <div style="min-width:0">
-      <div style="padding:20px 22px 8px;display:flex;gap:14px;align-items:center">${logo(c,'s40')}<div><div style="font-size:20px;font-weight:500;letter-spacing:-.02em">${c.n}</div><div class="facts"><span>${ic('Globe','i13')}${c.d}</span><span>${ic('MapPin','i13')}${c.pl}</span>${relBadge(c.rel)}</div></div></div>
-      <div style="padding:6px 22px 4px"><div class="card" style="margin:0"><div class="card-b" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span class="badge">${c.deal[2]}</span><b style="font-weight:500;color:var(--t1)">${c.deal[0]}</b><span>${c.deal[1]}</span></div></div></div>
-      <div style="padding:6px 22px 0">
-        <div class="tli"><span class="chip lg"><img src="/assets/logos/gmail.svg" alt="" width="16" height="16"></span><div><div class="t1"><b>${f}</b> emailed you</div><div class="t2">Re: next steps</div></div><span class="tm">${c.lt}</span></div>
-        <div class="tli"><span class="chip lg"><img src="/assets/logos/meet.svg" alt="" width="16" height="16"></span><div><div class="t1">Meeting with <b>${f}</b></div><div class="t2">Weekly sync</div></div><span class="tm">Yesterday</span></div>
-        <div class="tli"><span class="chip">${ic('Pencil','i14')}</span><div><div class="t1"><b>Otto</b> set <b>Stage</b> to ${c.deal[2]}</div></div><span class="tm">Nov 9</span></div>
-      </div>
-    </div>
-    <div style="border-left:1px solid var(--l1);padding:14px 14px">
-      <div style="font-size:12px;font-weight:500;color:var(--t4);padding:4px 6px 8px">General</div>
-      ${[['Domain',c.d],['Relationship',relBadge(c.rel)],['Industry',c.ind+'<span class="src-o">Otto</span>'],['ARR',c.arr],['Owner','<span class="av s20">JR</span> Jonah Reyes']].map(r=>`<div style="display:grid;grid-template-columns:100px 1fr;gap:8px;padding:6px;align-items:center"><span style="font-size:12px;color:var(--t3)">${r[0]}</span><span style="display:flex;align-items:center;gap:6px">${r[1]}</span></div>`).join('')}
-      <div style="font-size:12px;font-weight:500;color:var(--t4);padding:14px 6px 8px">People</div>
-      ${c.ppl.map(q=>`<div style="display:flex;align-items:center;gap:10px;padding:6px"><span class="av s28">${q[0]}</span><div><b style="font-weight:500;display:block">${q[1]}</b><span style="font-size:12px;color:var(--t4)">${q[2]}</span></div></div>`).join('')}
-    </div>
-  </div>` + dock('Ask about ' + c.n);
-}
-const demo = document.getElementById('demo'), heroApp = document.getElementById('heroapp');
-function go(v){
-  if (!demo) return;
-  const isCo = v.startsWith('co:');
-  demo.innerHTML = isCo ? record(+v.slice(3)) : (V[v] || V.companies)();
-  const nav = isCo ? 'companies' : v;
-  heroApp.querySelectorAll('.lk').forEach(l => l.classList.toggle('on', l.dataset.v === nav));
-  faces(demo);
-  const b = demo.querySelector('.dbody'); if (b && !reduce){ b.classList.remove('in'); void b.offsetWidth; b.classList.add('in'); }
-}
-if (heroApp){
-  heroApp.addEventListener('click', e => {
-    const t = e.target.closest('[data-go],.lk[data-v]');
-    if (!t || !heroApp.contains(t)) return;
-    go(t.dataset.go || t.dataset.v);
-  });
-  go('companies');
-}
+// The demo app lives in assets/demo.js and borrows these helpers.
+window.OMNI = { ic, faces, reduce };
 
 faces();
 
@@ -2306,6 +2227,7 @@ if (!reduce){ const loop = t => { if (skyVis) frame(t); requestAnimationFrame(lo
 <script src="/assets/globe.js?v=77cab68a" defer></script>
 <script src="/assets/species.js?v=60f89ddc" defer></script>
 <script src="/assets/consent.js?v=6803e013" defer></script>
+<script src="/assets/demo.js?v=1a7e92f9" defer></script>
 <script src="/assets/story-motion.js?v=adb02ff8" defer></script>
 
 
