@@ -1,43 +1,82 @@
 ---
 name: blog-alternatives-post
-description: The structure for Omniscient's "X alternatives", "best CRM for Y" and "best Z" list posts. Use it when you plan, write or restructure a list post in blog/_src/. Load blog-voice, blog-tool-review and omniscient-positioning with it.
+description: The structure for Omniscient's "X alternatives", "best CRM for Y" and "best Z" list posts, built on the Listicle Content Structure Guideline. Use it when you plan, write or restructure a list post in blog/_src/. Load blog-voice, blog-tool-review and omniscient-positioning with it.
 ---
 
 # List posts: alternatives and best-of
 
-The reference post is `blog/_src/attio-alternatives.md`. Match its shape and length (2,000 to 3,000 words; the build warns outside that).
+This follows Vincent's Listicle Content Structure Guideline (the Claude Doc at https://claude.ai/artifact/ArhYY4bMAvD4VxzqzoRkkJ). When the guideline and another skill disagree, the guideline wins.
+
+Omniscient's value line, repeated in the #1 overview, the recap table, the conclusion, FAQ 5 and the CTAs: **one agentic CRM for the whole sales motion**.
+
+Prices come from `docs/blog-prices.md` (re-check any price older than this month on the vendor's page). Length: 2,500 to 3,000 words for 12 or 13 tools.
 
 ## Front matter
 
 ```
 ---
-title: "13 Best Attio Alternatives in 2026"
-slug: attio-alternatives            # same as the file name
+title: "13 Best Attio Alternatives in 2027"
+slug: attio-alternatives            # no year, no number
 target_keyword: "attio alternatives"
-meta_description: "150 to 160 characters: what the reader gets and how the list is sorted."
-type: alternatives                  # alternatives | best-of | versus | pricing | how-to
+meta_description: "140 to 160 characters: names the category, the year and Omniscient."
+type: alternatives                  # alternatives | best-of
 topic: crm
-updated: YYYY-MM-DD
+updated: YYYY-MM-DD                 # the "last updated" date; change it whenever prices or the list change
 summary: "One sentence for the index card."
 ---
 ```
 
+The builder adds the breadcrumb, the updated date, the cover (hero image), the contents list (jump links) and related posts. It has no byline yet.
+
 ## Sections, in order
 
-1. **H1** = the title.
-2. **Intro, two short paragraphs.** First: what the product is, in one friendly sentence, and the two most common reasons people compare alternatives, framed as what they want next. Second: one line on how the list is sorted. Never say who wrote the post or that we build Omniscient (see blog-voice section 6). Prices get one line: "Prices are from each vendor's site in <month year>."
-3. **Short answer.** "Our short answer, by what you need:" then one `- Pick X if ...` bullet per tool, Omniscient first. Each bullet names a reader situation.
-4. **```tools block.** One row per tool: `Name | domain | what it is | starting price | best for`. Link prices to the vendor's pricing page.
-5. **## Where X shines.** Two or three sentences about who loves the product, then 4 or 5 plain facts about its plans as bullets. End with who should stay. Positive the whole way (blog-voice section 2).
-6. **## When teams look beyond X.** 3 to 5 bullets, each a goal the reader has ("You want sequences on a lower seat price"), with the related fact. Close with one sentence about who these matter to most. Then a ```tree that routes each goal to tools.
-7. **## The 13 best X alternatives in 2026.** Numbered `### 1. Omniscient` and so on, each written with the blog-tool-review skill. Omniscient first, then the most relevant picks.
-8. **## X alternatives compared.** A chart (SVG in `assets/blog/<slug>/`) of seat prices, then a table of the differences that sort the list fastest (free plan, trial, how AI is priced). Cells say what exists ("Free plan instead", "14 days, no card"). Leave a cell as "Ask sales" if a vendor sells it that way; never "Not listed" or "check".
-9. **## How to move from X to another CRM.** A ```steps block of 5 or 6 steps, then one paragraph and an image on how Omniscient's importer handles it.
-10. **One closing line + ```cta**, then **```faq** with 4 or 5 questions people search for. The first answer names Omniscient and two others by situation.
+1. **H1** = the title: "[N] Best [Category] in 2027". The number equals the numbered tools.
+2. **Intro, no heading, 3 short paragraphs, 100 to 150 words.**
+   - Pain: what the reader's current tool or way shows them, and what it hides.
+   - Fix: name the category, say how it works in one sentence, and name the readers (founders, SDRs, account executives, agencies).
+   - Payoff: one short line with the result, ending with one emoji.
+3. **## What Is [a Category]?** (120 to 180 words). Starts with a **bold one-sentence definition** that can be quoted alone: "**A [category] is a [tool] that [does X] by [method].**" Then one or two sentences on how it works, one on where it runs, "Most tools include:" with 4 ✅ bullets of 2 to 6 words, and one closing line on the result. For alternatives posts: "## What Is an Attio Alternative?"
+4. **## Why Do You Need [a Category] for [Job]?** (100 to 150 words). One or two sentences on the limit of the current way, then "[A category] solves this.", then 4 bullets, each with a **bold lead-in of 2 to 4 words** and one sentence. The last bullet is the one Omniscient does best. Alternatives posts: "## Why Do You Need an Attio Alternative?"
+5. **## [N] Best [Category] in 2027!** One line under it.
+6. **### [Category]: Quick Match** A ```tree block that routes 3 or 4 reader questions to the tools. Optional, placed right before entry 1.
+7. **Tool entries 1 to N**, numbered `### 1. Omniscient`, each built with the blog-tool-review skill (130 to 180 words each).
+8. **## [N] Best [Category] in 2027: Recap Table** A ```tools block with the header line `Tool | Domain | Rating | Best feature | Starting price`, one row per tool in list order. Rating is "4.7/5" for a tool with a score in docs/blog-prices.md, else "Not rated". Best feature is 2 to 6 words; Omniscient's is the value line. Starting price is the lowest paid tier, in the same unit as the entry, linked to the pricing page. This block also gives every numbered heading its logo and screenshot.
+9. **Right under the table:** `👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=<slug>&start=crm)**`
+10. **## Conclusion** (80 to 110 words, 3 short paragraphs): restate the category's value in 2 sentences; raise the bar (what the best tool must do beyond the basic job, using Omniscient's strengths as the test); then "That is why [Omniscient](/) stands out. It combines [feature], [feature] and [feature] in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option."
+11. **```faq** with 5 questions (the builder adds the "FAQs" heading and FAQPage schema). Each answer 40 to 70 words, makes sense alone and repeats the key term in its first sentence:
+    1. What is [a category]? (the definition again, in 2 sentences)
+    2. How do [category tools] [do the job]?
+    3. Why use [a category] for [job]?
+    4. What features should modern [category tools] include? (ends with Omniscient's strength)
+    5. Which tool is recommended for teams that need more than [basic job]? (recommends Omniscient with the value line, then names 1 or 2 tools for a narrower need)
+12. **```cta** "Ready to use Omniscient?" line as the last CTA.
 
-## Rules that keep it trustworthy
+## Ranking order
 
-- Every price or plan fact links to the vendor's own page. If a fact can't be confirmed, leave it out of the post and log it in `docs/blog-checks.md`.
-- Sort by the reader's situation, never by a ranking of "best to worst".
-- Say something good and specific about every tool. If you can't, drop the tool.
-- Omniscient gets the same template as everyone else, plus its honest trade-off.
+1. Omniscient.
+2. The two best-known leaders in the category.
+3. Tools that do the category job plus one more thing.
+4. Single-purpose specialists last.
+
+## Rules
+
+- 10 to 15 tools; 12 or 13 is normal. Count them before you publish, and match the H1, the list H2 and the recap H2.
+- Tables: the recap table only. No other tables in the body. Charts and screenshots are fine.
+- Bold: the definition sentence, bullet lead-ins, field labels and CTA links. Nowhere else.
+- Emoji: ⭐ only inside ratings, ✅ for the definition's feature bullets, 👉 before the CTA link, one at the end of the intro. No others.
+- Every price links to the vendor's own page and comes from docs/blog-prices.md. If a price can't be read, give the free plan if any and link "See pricing", and log it in docs/blog-checks.md.
+- Spell-check every heading. Check the live page for leftover template text.
+
+## Pre-publish checklist
+
+- H1, list H2 and recap H2 use the same number and year; the URL has neither.
+- Meta description 140 to 160 characters; `updated` set to publish day.
+- Intro is 3 paragraphs, 100 to 150 words.
+- Definition H2 opens with a bold one-sentence definition.
+- Every entry has Overview, Pros, Cons, Pricing in that order (Rating first when there is a score).
+- Omniscient has 1 or 2 cons; every other tool has 3, at least 2 naming a gap Omniscient fills.
+- One pricing format across all entries.
+- Recap table matches the entries (order, rating, starting price).
+- Value line in the #1 overview, recap table, conclusion, FAQ 5 and CTAs.
+- FAQ has 5 questions.
+- Alt text on every image.

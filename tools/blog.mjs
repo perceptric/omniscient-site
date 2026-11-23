@@ -23,7 +23,7 @@ const SITE = "https://tryomniscient.com";
 const APP = "https://app.tryomniscient.com/";
 const TOPICS = { crm: "CRM" };
 const TYPES = ["best-of", "alternatives", "versus", "review", "pricing", "how-to"];
-const LENGTH = { "best-of": [2000, 3000], alternatives: [2000, 3000], versus: [1800, 2500], review: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
+const LENGTH = { "best-of": [2300, 3300], alternatives: [2300, 3300], versus: [1800, 2500], review: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
 const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly", "rival", "rivals", "we build", "we built", "we wrote", "our own importer", "which side we sit", "our product"];
 
 const rel = (p) => p.slice(root.length).replace(/^\/+/, "");
@@ -624,7 +624,7 @@ function toolRows(body, warn) {
     const [name, domainRaw = ""] = c;
     const domain = cleanDomain(domainRaw);
     const looksDomain = /^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(domain);
-    if (rows.length === 0 && !looksDomain && /^(name|tool)s?$/i.test(name)) return; // header line
+    if (rows.length === 0 && !looksDomain && /^(name|tool)s?$/i.test(name)) { rows.header = c; return; } // header line
     if (c.length < 3 || !name) { warn(`tools line ${n + 1} needs "Name | domain.com | what it is | price | best for": ${line.trim()}`); return; }
     if (!looksDomain) warn(`tools: "${name}" has no domain (${domainRaw || "empty"}), so no logo`);
     rows.push({ name, domain: looksDomain ? domain : "", what: c[2] || "", price: c[3] || "", best: c[4] || "" });
@@ -657,8 +657,12 @@ function tools(body, ctx) {
     const price = priceCell(r.price, r.name, ctx, true);
     return `<tr><th scope="row"><span class="bl-tools__name"><span class="bl-tools__logo">${img}</span>${name}</span></th><td>${inline(r.what, ctx)}</td><td class="bl-tools__price">${price}</td><td>${inline(r.best, ctx)}</td></tr>`;
   }).join("\n");
+  // A header line names the columns: "Tool | Domain | Rating | Best feature | Starting price" gives a recap table.
+  // Without one, the columns are What it is, Starting price and Best for.
+  const h = rows.header || [];
+  const label = (i, d) => esc((h[i] || "").trim() || d);
   return `<div class="bl-table bl-tools" role="region" aria-label="Tools compared" tabindex="0"><table>
-<thead><tr><th scope="col">Tool</th><th scope="col">What it is</th><th scope="col">Starting price</th><th scope="col">Best for</th></tr></thead>
+<thead><tr><th scope="col">${label(0, "Tool")}</th><th scope="col">${label(2, "What it is")}</th><th scope="col">${label(3, "Starting price")}</th><th scope="col">${label(4, "Best for")}</th></tr></thead>
 <tbody>
 ${tr}
 </tbody></table></div>`;
@@ -1048,7 +1052,8 @@ function render(post, known) {
   const prose = post.body.replace(/^(`{3,}|~{3,})[\s\S]*?^\1/gm, "");
   const dashes = (prose.match(/—/g) || []).length;
   if (dashes) ctx.warn(`${dashes} em dash${dashes > 1 ? "es" : ""}`);
-  const bangs = (prose.replace(/!\[/g, "").match(/!/g) || []).length;
+  // The list H2 ("## 13 Best X in 2027!") may end in "!", as the listicle guideline asks. Nowhere else.
+  const bangs = (prose.replace(/^## \d+ Best .*!$/gm, "").replace(/!\[/g, "").match(/!/g) || []).length;
   if (bangs) ctx.warn(`${bangs} exclamation mark${bangs > 1 ? "s" : ""}`);
   const banned = BANNED.filter((w) => new RegExp(`\\b${w.replace(/'/g, "['’]")}\\b`, "i").test(prose));
   if (banned.length) ctx.warn(`banned words: ${banned.join(", ")}`);

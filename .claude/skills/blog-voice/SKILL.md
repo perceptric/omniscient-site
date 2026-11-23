@@ -50,6 +50,15 @@ Write instead:
 
 A plain trade-off is fine when the reader needs it to choose ("Close is the better pick for teams that sell by phone, since Omniscient has no dialer"). Say it once, kindly, and move on.
 
+### List posts: the Listicle guideline wins
+
+In "X alternatives" and "best X" posts, the Listicle Content Structure Guideline (blog-alternatives-post and blog-tool-review skills) overrides this section where they differ:
+- Every competitor entry has a **Cons** list of 3 short, fair, true limits, and at least 2 name a gap Omniscient fills. Words like "no", "limited" and "only" are fine inside a con. Keep the overview and pros warm and specific.
+- Omniscient's entry has 1 or 2 cons, written as scope.
+- The list H2 ends with "!" ("## 13 Best Attio Alternatives in 2027!"). No other exclamation marks.
+- Emoji: ⭐ in ratings, ✅ for the definition's feature bullets, 👉 before the CTA link, one at the end of the intro. No others.
+- Tables: the recap table only.
+
 ## 3. Drop the filler openers
 
 These make copy sound machine-written. Never start a sentence with: Interestingly, Thankfully, Refreshingly, Luckily, Fortunately, Conveniently, Frankly, Personally, Honestly, Admittedly, Notably, Importantly, Essentially, Ultimately, In short, That said, It's worth noting.
