@@ -208,6 +208,10 @@
 .bl-browser__dots i { width: 9px; height: 9px; border-radius: 999px; background: #e2e2de; }
 .bl-browser__url { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 5px 14px; border-radius: 999px; background: var(--tint); font: 400 11.5px/1 var(--font); color: var(--muted); }
 .bl-band .bl-browser img { width: 100%; margin: 0; }
+/* Tool homepages: a faint line grid, smaller padding on top and sides, none at the bottom, so the window runs off the band */
+.bl-site .bl-band { padding: 20px 20px 0; background-color: #f2f2ee; background-image: linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.05) 1px, transparent 1px); background-size: 32px 32px; }
+.bl-site .bl-band::before { display: none; }
+.bl-site .bl-browser { border-radius: 12px 12px 0 0; }
 .bl-body .bl-shot .band { padding: 28px; }
 .bl-body .bl-shot .app { min-height: 0; }
 
@@ -328,6 +332,7 @@
   .bl-body :where(h2):where(:not(.bl-shot *)) { margin-top: 44px; font-size: 24px; }
   .bl-body :where(h3):where(:not(.bl-shot *)) { font-size: 19px; }
   .bl-band, .bl-body .bl-shot .band { padding: 12px; }
+  .bl-site .bl-band { padding: 12px 12px 0; background-size: 24px 24px; }
   .bl-band--wide { overflow-x: auto; overscroll-behavior-x: contain; }
   .bl-band--wide img[src$=".svg"] { width: 560px; max-width: none; margin-inline: 0; }
   .bl-cta { padding: 28px 20px; }
