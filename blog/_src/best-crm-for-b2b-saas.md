@@ -67,7 +67,7 @@ Where do most of your deals start?
 Omniscient is one of the most relevant CRMs for B2B SaaS teams that want one agentic CRM for the whole sales motion. Instead of only tracking demo requests and deals, Otto, its built-in agent, finds leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for SaaS teams that want sales, success and leadership on one record without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-b2b-saas&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-b2b-saas&start=crm
 ```
 
 **Pros**
@@ -81,7 +81,7 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 **Cons**
 
 - Not a bulk marketing email tool on its own
-- No phone dialer, so phone-first SDR teams may prefer Close
+- No built-in phone dialer for call-heavy SDR teams
 
 **Pricing**
 
@@ -110,7 +110,7 @@ HubSpot is one of the most widely used CRMs for B2B SaaS teams where inbound mar
 
 **Cons**
 
-- Professional adds a $1,500 onboarding fee
+- Professional may add a one-time onboarding fee
 - Sequences and forecasting start on Professional
 - AI runs on monthly credits that don't roll over
 
@@ -256,9 +256,9 @@ monday CRM is a widely used sales CRM that helps SaaS teams run onboarding and d
 
 **Cons**
 
-- Every plan starts at 3 seats
+- Seat minimums can raise the bill for solo users
 - AI agents come with separate AI plans
-- Basic allows 1,000 contacts and deals
+- Contact and deal limits can feel tight on Basic
 
 **Pricing**
 
@@ -349,7 +349,7 @@ Salesflare is a practical CRM for small B2B SaaS teams that sell and follow up b
 **Cons**
 
 - No free plan
-- Lead credits are capped, from 5 on Growth
+- Lead finder credits can run out on Growth
 - Multi-step email workflows start on Pro
 
 **Pricing**
@@ -403,7 +403,7 @@ Clarify is a dedicated AI CRM designed for fast-moving go-to-market teams that w
 
 - AI features pause when credits run out
 - Warehouse access starts on Growth
-- Starter allows 5 active campaigns
+- Campaign limits can feel tight on Starter
 
 **Pricing**
 
@@ -429,8 +429,8 @@ Twenty is a dedicated open source CRM designed for product-led SaaS teams with e
 **Cons**
 
 - Self-hosting means your own servers and upgrades
-- Pro allows 50 API calls a minute
-- Organization caps AI at about 500 tasks a week
+- API limits may slow larger syncs
+- AI task limits may cap heavy use
 
 **Pricing**
 
@@ -458,7 +458,7 @@ Clarify | clarify.ai | Not rated | Unlimited seats, paid AI credits | [$50/month
 Twenty | twenty.com | Not rated | Open source with full APIs | [$9/user/month billed annually](https://twenty.com/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-b2b-saas&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-b2b-saas&start=crm)**
 
 ![First paid plan per seat a month: Freshsales Growth $9 billed yearly, Twenty Pro $9 billed yearly, monday CRM Basic $12 billed yearly for 3 seats or more, Omniscient Starter $19 billed yearly, HubSpot Sales Hub Starter from $20, Day AI Turbo $24 per agent billed yearly, Salesforce Starter Suite $25 monthly or yearly, Salesflare Growth $29 billed yearly, Attio Plus $35 for each user after the first and Close Essentials $35 billed yearly. Close Solo is $9 for one user, Clarify charges for AI work with unlimited seats, free and then $50 a month, and Pipedrive and Zoho CRM are not shown](entry-prices.svg)
 

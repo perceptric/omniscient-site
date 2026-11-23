@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 922" width="560" height="922" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">What HubSpot and Omniscient need before the forecast works</title>
-<desc id="d">What each tool needs before the forecast works. HubSpot Professional: a Sales Hub Professional or Enterprise seat, a yearly commitment even when you pay monthly, the required onboarding at $1,500 paid once, and your pipelines set up or imported; then sequences and the forecast are on. Omniscient Pro: a Pro seat with no onboarding fee, Gmail or Outlook and your calendar connected, your HubSpot data imported read-only, and pipelines that keep their stages from HubSpot; then the forecast reads from your deals. Setup steps as of November 2026.</desc>
+<desc id="d">What each tool needs before the forecast works. HubSpot Professional: a Sales Hub Professional or Enterprise seat, $90 to $100 a seat a month by how you pay, the required onboarding at $1,500 paid once, and your pipelines set up or imported; then sequences and the forecast are on. Omniscient Pro: a Pro seat with no onboarding fee, Gmail or Outlook and your calendar connected, your HubSpot data imported read-only, and pipelines that keep their stages from HubSpot; then the forecast reads from your deals. Setup steps as of November 2026.</desc>
 <rect width="560" height="922" fill="#ffffff"/>
 <text x="24" y="48" font-size="19" fill="#737373">Setup</text>
 <text x="24" y="88" font-size="24" font-weight="500" fill="#171717">Before the forecast works</text>
@@ -13,7 +13,7 @@
 <line x1="25" x2="535" y1="214" y2="214" stroke="#ebebeb"/>
 <rect x="40" y="230" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
 <text x="54" y="250" text-anchor="middle" font-size="15" fill="#171717">2</text>
-<text x="82" y="251" font-size="18" fill="#171717">A yearly commitment, even paid monthly</text>
+<text x="82" y="251" font-size="18" fill="#171717">$90 to $100 a seat a month, by how you pay</text>
 <line x1="25" x2="535" y1="274" y2="274" stroke="#ebebeb"/>
 <rect x="40" y="290" width="28" height="28" fill="#ffffff" stroke="#a3a3a3" rx="6"/>
 <text x="54" y="310" text-anchor="middle" font-size="15" fill="#171717">3</text>

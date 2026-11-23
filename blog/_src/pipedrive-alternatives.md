@@ -73,7 +73,7 @@ What do you want next?
 Omniscient is one of the most relevant Pipedrive alternatives for teams that want one agentic CRM for the whole sales motion. Instead of only moving deals across a board, Otto, its built-in agent, finds leads, captures every email and call and suggests deal updates with the quote behind each, all on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want a familiar pipeline board without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=pipedrive-alternatives&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=pipedrive-alternatives&start=crm
 ```
 
 ![Omniscient's pipeline board after a Pipedrive import, with opportunities in the stages brought over from Pipedrive: Qualified, Contact made, Demo scheduled and Proposal made. Each card shows its amount, owner and next step, and a suggested update from a call raises Pallet Cloud's amount from $18,000 to $30,000, waiting to be accepted or skipped.](pipeline.shot.html)
@@ -88,8 +88,8 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 **Cons**
 
-- Not a phone dialer, so phone-first teams may prefer Close
-- No bulk marketing email, which HubSpot covers
+- No built-in phone dialer for call-heavy teams
+- Not built for bulk marketing email
 
 **Pricing**
 
@@ -178,7 +178,7 @@ monday CRM is a strong Pipedrive alternative for teams that want marketing, sale
 
 **Cons**
 
-- Every plan starts at 3 seats
+- Seat minimums can raise the bill for solo users
 - Email sequences start on Pro
 - AI agents draw on AI credits
 
@@ -299,7 +299,7 @@ Salesflare is a strong Pipedrive alternative for small and medium B2B teams that
 
 - No free plan
 - Email workflows and dashboards start on Pro
-- Lead finder credits start at 5 on Growth
+- Lead finder credits can run out on Growth
 
 **Pricing**
 
@@ -356,7 +356,7 @@ Copper is a dedicated Pipedrive alternative designed for relationship-focused se
 
 - No free plan
 - Email series start on Business
-- Basic holds up to 2,500 contacts
+- Contact limits can feel tight on Basic
 
 **Pricing**
 
@@ -414,7 +414,7 @@ Streak is a dedicated Pipedrive alternative designed for founders and small team
 
 **Cons**
 
-- First paid plan starts at $49 a user
+- Paid plans can cost more than simpler CRMs
 - Automations and integrations start on Pro+
 - Built to run inside Gmail only
 
@@ -447,7 +447,7 @@ Less Annoying CRM is a simple Pipedrive alternative built for small businesses t
 
 - No free plan
 - No built-in AI or email sequences
-- Sized for under about 50,000 contacts
+- May feel small for very large contact lists
 
 **Pricing**
 
@@ -472,7 +472,7 @@ Streak | streak.com | 4.5/5 | Pipelines inside Gmail | [$49/user/month billed an
 Less Annoying CRM | lessannoyingcrm.com | 4.8/5 | One simple plan | [$15/user/month](https://www.lessannoyingcrm.com/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=pipedrive-alternatives&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=pipedrive-alternatives&start=crm)**
 
 ## Conclusion
 

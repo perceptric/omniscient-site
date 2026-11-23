@@ -71,7 +71,7 @@ Who sells today?
 Omniscient is one of the most relevant CRMs for startups that want one agentic CRM for the whole sales motion. Instead of only tracking deals, Otto, its built-in agent, finds leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B startups where the founder still sells and the first hires need the full story of every deal.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-startups&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-startups&start=crm
 ```
 
 **Pros**
@@ -84,7 +84,7 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 **Cons**
 
-- Not a phone dialer, so phone-first teams may prefer Close
+- No built-in phone dialer for call-heavy teams
 - No bulk marketing email
 
 **Pricing**
@@ -116,7 +116,7 @@ HubSpot is one of the most widely used CRMs for startups that want marketing, sa
 
 **Cons**
 
-- Professional adds a $1,500 onboarding fee
+- Professional may add a one-time onboarding fee
 - AI agents run on monthly credits
 - Sequences and forecasting start on Professional
 
@@ -145,7 +145,7 @@ Attio is one of the most flexible CRMs for startups that want to shape the data 
 
 - AI runs on monthly credits by plan
 - Call Intelligence and sequences start on Pro
-- Plus covers up to 10 users
+- Plus may feel small as the team grows
 
 **Pricing**
 
@@ -205,7 +205,7 @@ Zoho CRM is a large sales CRM used by founders, sales reps and sales managers wh
 
 - Many modules can take real setup time
 - AI agents start on Professional
-- Free covers 3 users, so teams move up early
+- Free plan can feel small for a growing team
 
 **Pricing**
 
@@ -233,8 +233,8 @@ Salesforce is a large CRM platform used by sales reps, sales managers and admins
 
 **Cons**
 
-- Free Suite needs a login every 60 days
-- AI add-ons start at the $195 Core edition
+- Free Suite may need regular logins to stay active
+- AI features sit on higher editions
 - Agentforce actions run on Flex Credits
 
 **Pricing**
@@ -264,8 +264,8 @@ monday CRM is a practical sales CRM for startups that already run their work on 
 
 **Cons**
 
-- Plans start at 3 seats
-- Basic caps active contacts and deals at 1,000
+- Seat minimums can raise the bill for solo users
+- Contact and deal limits can feel tight on Basic
 - Mass email and sequences start on Pro
 
 **Pricing**
@@ -358,7 +358,7 @@ Salesflare is a practical sales CRM for small and medium B2B startups that want 
 
 - No free plan
 - Multi-step email workflows start on Pro
-- Enterprise needs at least 5 users
+- Top plan has a seat minimum
 
 **Pricing**
 
@@ -473,7 +473,7 @@ Streak | streak.com | 4.5/5 | Pipelines inside Gmail | [$49/user/month billed an
 Twenty | twenty.com | Not rated | Open source and self-hostable | [$9/user/month billed annually](https://twenty.com/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-startups&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-startups&start=crm)**
 
 ## Conclusion
 

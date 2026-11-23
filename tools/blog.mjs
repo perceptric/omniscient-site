@@ -6,7 +6,7 @@
 //
 // Sources live in blog/_src/<slug>.md. A file whose name starts with "_" is a draft: it builds when named, with noindex,
 // and never shows in the index, related posts or the sitemap. A broken post is skipped with a message, never a crash.
-// Each post gets assets/blog/<slug>/cover.svg, a picture with no words drawn by tools/covers.mjs, and og.png (1200x630)
+// Each post gets assets/blog/<slug>/cover.svg, a headline card and logo art drawn by tools/covers.mjs, and og.png (1200x630)
 // when Playwright is installed.
 // Tool screenshots and logos come from tools/shot-tools.mjs (assets/blog/tools/<domain>.webp, assets/blog/logos/<domain>.png).
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
@@ -675,7 +675,7 @@ ${tr}
 function cta(body, ctx) {
   const text = body.map((l) => l.trim()).filter(Boolean).join(" ");
   if (!text) ctx.warn("a ```cta block is empty");
-  return `<aside class="bl-cta"><p class="bl-cta__text">${inline(text || "Try Omniscient free for 14 days.", ctx)}</p><div class="bl-cta__row"><a class="btn btn--primary btn--lg" href="${APP}">Start free <span class="nudge" aria-hidden="true">→</span></a><span class="bl-mono">14 days free. No credit card required.</span></div></aside>`;
+  return `<aside class="bl-cta"><p class="bl-cta__text">${inline(text || "Try Omniscient free for 14 days.", ctx)}</p><div class="bl-cta__row"><a class="btn btn--primary btn--lg" href="${APP}signup?utm_source=article&amp;utm_medium=${esc(ctx.slug)}&amp;start=crm">Start free <span class="nudge" aria-hidden="true">→</span></a><span class="bl-mono">14 days free. No credit card required.</span></div></aside>`;
 }
 
 // Five square-cornered stars in a 14px row: gray outlines, and an emerald copy on top clipped to the score.
@@ -715,7 +715,7 @@ function rating(body, ctx, attached) {
   return `<div class="bl-rating">${svg} <span class="bl-rating__score">${m[1].replace(",", ".")}/5</span> <span class="bl-rating__src">on ${name}</span></div>`;
 }
 
-// ```try: one line, "Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog". A primary button in the
+// ```try: one line, "Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article". A primary button in the
 // flow of the text, under a tool's intro. Links off tryomniscient.com get rel="nofollow noopener".
 function tryButton(body, ctx) {
   const lines = body.map((l) => l.trim()).filter(Boolean);

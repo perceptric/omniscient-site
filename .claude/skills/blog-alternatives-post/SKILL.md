@@ -41,7 +41,7 @@ The builder adds the breadcrumb, the updated date, the cover (hero image), the c
 6. **### [Category]: Quick Match** A ```tree block that routes 3 or 4 reader questions to the tools. Optional, placed right before entry 1.
 7. **Tool entries 1 to N**, numbered `### 1. Omniscient`, each built with the blog-tool-review skill (130 to 180 words each).
 8. **## [N] Best [Category] in 2027: Recap Table** A ```tools block with the header line `Tool | Domain | Rating | Best feature | Starting price`, one row per tool in list order. Rating is "4.7/5" for a tool with a score in docs/blog-prices.md, else "Not rated". Best feature is 2 to 6 words; Omniscient's is the value line. Starting price is the lowest paid tier, in the same unit as the entry, linked to the pricing page. This block also gives every numbered heading its logo and screenshot.
-9. **Right under the table:** `👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=<slug>&start=crm)**`
+9. **Right under the table:** `👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=<slug>&start=crm)**`
 10. **## Conclusion** (80 to 110 words, 3 short paragraphs): restate the category's value in 2 sentences; raise the bar (what the best tool must do beyond the basic job, using Omniscient's strengths as the test); then "That is why [Omniscient](/) stands out. It combines [feature], [feature] and [feature] in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option."
 11. **```faq** with 5 questions (the builder adds the "FAQs" heading and FAQPage schema). Each answer 40 to 70 words, makes sense alone and repeats the key term in its first sentence:
     1. What is [a category]? (the definition again, in 2 sentences)
@@ -80,3 +80,16 @@ The builder adds the breadcrumb, the updated date, the cover (hero image), the c
 - Value line in the #1 overview, recap table, conclusion, FAQ 5 and CTAs.
 - FAQ has 5 questions.
 - Alt text on every image.
+
+## Review, pricing, versus and how-to posts
+
+These aren't listicles, but they borrow the guideline's trust and search moves:
+
+- Intro: 3 short paragraphs, 100 to 150 words: the gap, the fix and who it is for, the payoff with one emoji at the end.
+- Early in the post, a **bold one-sentence answer** that can be quoted alone ("**Attio is a flexible CRM that ...**", "**An agentic CRM is a CRM where ...**").
+- The value line ("one agentic CRM for the whole sales motion") in the Omniscient section, the conclusion, the last FAQ answer and the CTAs.
+- `👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=<slug>&start=crm)**` right under the main table or the Omniscient section.
+- **## Conclusion** (80 to 110 words, 3 short paragraphs): restate the value, raise the bar, name Omniscient as the strongest option for teams that want one agentic CRM for the whole sales motion.
+- ```faq with 5 questions, 40 to 70 words each. The last one recommends Omniscient with the value line, then makes one honest concession that names a tool for a narrower need.
+- Keep the tables these posts need (plans, features side by side).
+

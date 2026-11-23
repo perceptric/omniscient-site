@@ -72,8 +72,10 @@ Posts are Markdown files in `blog/_src/`. `tools/blog.mjs` (Node 22, no npm pack
 5. Commit the `.md` file, `blog/<slug>/`, `blog/index.html`, `sitemap.xml` and `assets/blog/<slug>/` (with the
    `cover.svg` and `og.png` the build writes).
 
-Covers are pictures with no words, drawn by `tools/covers.mjs` from the post's type and the tools in its first
-```tools block: alternatives circle the tool they replace, a versus post puts two tools face to face, a best-of post
+Covers (the featured image and `og.png`) are drawn by `tools/covers.mjs`: a white card on the left with a label for the
+kind of post (Alternatives, Top picks, Review, Pricing, Comparison, Guide), the year and a short headline (the title
+before its colon, without the year), and logo art on the right from the post's type and the tools in its first
+```tools block. Reviews and pricing posts put the tool face to face with Omniscient; alternatives circle the tool they replace, a versus post puts two tools face to face, a best-of post
 gets a podium and a ranked list. Posts about a topic (limits, pricing, safety, data entry, sync) have their own scene,
 listed in `SCENES` there. Logos come from `tools/cover-logos.json`: add a new tool's logo there (or let
 `tools/shot-tools.mjs` save it to `assets/blog/logos/`) so it shows on covers.
@@ -115,7 +117,7 @@ code and `---`. These fenced blocks render in the brand:
 |---|---|---|
 | ` ```tools ` | One line per tool: `Name \| domain.com \| what it is \| starting price \| best for`. | A framed comparison table. Each tool gets its logo from `assets/blog/logos/`, else `assets/logos/`, else its site's favicon. |
 | ` ```rating ` | One line: `4.8 \| G2 \| https://www.g2.com/products/<tool>/reviews`. Only a rating read on that site. | Right under a numbered tool heading, above its screenshot: five stars filled to the score, "4.8/5" and the source's name, linked in a new tab with `rel="nofollow noopener"`. No JSON-LD, since Google doesn't allow review markup for ratings gathered from other sites. |
-| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=<slug>&start=crm`. `start=crm` makes a new workspace start with the CRM (`start=content` or `both` for the others). | A dark gray primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
+| ` ```try ` | One line: `Try Omniscient free \| https://app.tryomniscient.com/signup?utm_source=article&utm_medium=<slug>&start=crm`. `start=crm` makes a new workspace start with the CRM (`start=content` or `both` for the others). | A dark gray primary button with the arrow, in the text where you put it (under Omniscient's intro). Links off tryomniscient.com get `rel="nofollow noopener"`. |
 | ` ```callout ` | One or two sentences. | A note on a white card with a green dot. |
 | ` ```cta ` | One line of text. | That line with the "Start free" button to the app. |
 | ` ```faq ` | `Q:` and `A:` lines. A blank line starts a second paragraph in an answer. No heading above it. | A "FAQs" heading (in the contents list), questions that open and close, plus FAQPage JSON-LD. |

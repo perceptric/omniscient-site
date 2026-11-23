@@ -221,3 +221,12 @@ Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings ar
 - Omniscient details dropped because they aren't in the positioning skill: the 60% and 85% confidence rules, Gmail tab and Outlook filters, the do-not-track list, meeting checks every 30 minutes, the "Quote may not match" label, round-robin lead assignment.
 - Unused images left on disk: crm-by-channel.svg (founders), crm-by-stage.svg and import-order.svg (startups), seat-prices.svg (folk), email-checks.svg, what-fills.svg and fill-a-field.svg, import-map.svg and import.shot.html (HubSpot alternatives), import.svg (Pipedrive), capture.shot.html (B2B SaaS).
 - The builder has no byline, so posts carry no author line yet.
+
+## Full guideline pass (November 23, 2026): every published post
+
+- Cons now follow the guideline's rules: no numbers, no other tool named, hedged. About 85 cons were reworded so the fact stays true without the figure (for example "Professional may add a one-time onboarding fee").
+- Every CTA link carries utm_source=article (the ```try buttons, the 👉 links and the ```cta "Start free" button, with utm_medium set to the post's slug).
+- Versus posts now use Attio's workspace pricing and HubSpot's "from $20" and "$90 to $100". Left out because the price sheet doesn't have them: Attio credit packs, HubSpot Revenue Hub, smart properties and credit prices, Sales Navigator, lemlist and HeyReach prices, Omniscient plan gating for dashboards and notes.
+- omniscient-vs-hubspot setup.svg said HubSpot Professional needs "a yearly commitment, even paid monthly". HubSpot's page shows Pay Monthly, Commit annually and Pay Annually options without making this clear, so the chart now shows the seat price instead.
+- No byline yet: the builder has no author line, and the guideline's "Blog / Guides" breadcrumb and "Book a demo" header button aren't built either.
+- Featured images now carry a headline card (post kind, year, short title) with the logo art on the right.

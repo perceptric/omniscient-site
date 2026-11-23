@@ -67,7 +67,7 @@ How do most of your deals start?
 Omniscient is one of the most relevant CRMs for founders who want one agentic CRM for the whole sales motion. Instead of only storing deals, Otto, its built-in agent, finds leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for founders who still sell and want time back for the rest of the company without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-founders&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-founders&start=crm
 ```
 
 **Pros**
@@ -80,7 +80,7 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 **Cons**
 
-- Not a phone dialer, so phone-first founders may prefer Close
+- No built-in phone dialer for call-heavy founders
 - No bulk marketing email
 
 **Pricing**
@@ -112,9 +112,9 @@ HubSpot is one of the most widely used CRMs for founders who want a free place t
 
 **Cons**
 
-- Professional adds a $1,500 onboarding fee
+- Professional may add a one-time onboarding fee
 - AI agents run on monthly credits
-- Free plan capped at 2 users and 1,000 contacts
+- Free plan can feel small for a growing team
 
 **Pricing**
 
@@ -141,7 +141,7 @@ Attio is a strong CRM for founders who want to design their own data model. You 
 
 - AI runs on monthly credits by plan
 - Call Intelligence and sequences start on Pro
-- Free covers 3 objects and Plus covers 5
+- Custom objects may need higher plans
 
 **Pricing**
 
@@ -262,7 +262,7 @@ Salesflare is a practical B2B CRM for founders and small teams who follow up by 
 
 - No free plan
 - Multi-step email workflows start on Pro
-- Enterprise needs at least 5 users
+- Top plan has a seat minimum
 
 **Pricing**
 
@@ -287,8 +287,8 @@ Lightfield is an AI CRM built for founders who want capture and call recording i
 **Cons**
 
 - No free plan
-- Starter covers up to 3 seats
-- Pro steps up to $999/month per workspace
+- Starter can feel small for growing teams
+- Workspace pricing can jump on higher plans
 
 **Pricing**
 
@@ -454,7 +454,7 @@ Streak | streak.com | 4.5/5 | Pipelines inside Gmail | [$49/user/month billed an
 Dex | getdex.com | Not rated | Personal network in one place | [$12/user/month billed annually](https://getdex.com/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-founders&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-founders&start=crm)**
 
 ## Conclusion
 

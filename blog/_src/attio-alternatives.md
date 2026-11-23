@@ -72,7 +72,7 @@ What do you want next?
 Omniscient is one of the most relevant Attio alternatives for teams that want one agentic CRM for the whole sales motion. Instead of only building records from your inbox, Otto, its built-in agent, finds leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want to go from first lead to closed deal without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=attio-alternatives&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=attio-alternatives&start=crm
 ```
 
 **Pros**
@@ -85,7 +85,7 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 **Cons**
 
-- Not a phone dialer, so phone-first teams may prefer Close
+- No built-in phone dialer for call-heavy teams
 - No bulk marketing email
 
 **Pricing**
@@ -115,7 +115,7 @@ HubSpot is one of the most widely used Attio alternatives, with marketing, sales
 
 **Cons**
 
-- Professional adds a $1,500 one-time onboarding fee
+- Professional may add a one-time onboarding fee
 - AI agents run on monthly credits
 - Sequences and forecasting start on Professional
 
@@ -177,7 +177,7 @@ folk is a strong Attio alternative for founders, agencies and small sales teams 
 
 - No free plan
 - Sequences and custom objects start on Premium
-- Standard shares the last 30 interactions with teammates
+- Team history sharing may be limited on Standard
 
 **Pricing**
 
@@ -205,7 +205,7 @@ monday CRM is a widely used Attio alternative that helps sales teams run their p
 
 **Cons**
 
-- Plans start at 3 seats
+- Seat minimums can raise the bill for solo users
 - Mass email and sequences start on Pro
 - AI work draws on AI credits
 
@@ -269,7 +269,7 @@ Salesflare is a practical Attio alternative for small B2B teams that want the CR
 
 - No free plan
 - Multi-step email workflows start on Pro
-- Growth includes 5 lead credits
+- Lead finder credits can run out on Growth
 
 **Pricing**
 
@@ -294,7 +294,7 @@ Day AI is an AI CRM that builds a shared memory from your team's email, calendar
 **Cons**
 
 - Priced per agent, so costs grow with each one
-- Turbo includes 2 automated skill slots
+- Lower tiers may limit automated skills
 - Free teammates need a Professional agent or higher
 
 **Pricing**
@@ -320,7 +320,7 @@ Lightfield is a dedicated AI CRM designed to update itself from every customer i
 
 **Cons**
 
-- Starter covers up to 3 seats
+- Starter can feel small for growing teams
 - Sequences start on the Pro workspace plan
 - Agent work on Pro draws on yearly credits
 
@@ -349,7 +349,7 @@ Clarify is an AI CRM built for small teams that want everyone in the CRM without
 
 - AI pauses when credits run out
 - Workflow automation starts on Growth
-- Free plan allows 1 active campaign
+- Free plan limits outbound campaigns
 
 **Pricing**
 
@@ -375,7 +375,7 @@ Twenty is an open source CRM designed for teams that want to own their CRM and i
 **Cons**
 
 - More of the CRM to set up yourself
-- Pro includes about 100 AI tasks a week per member
+- AI tasks are capped on lower plans
 - Custom roles and SSO start on Organization
 
 **Pricing**
@@ -406,7 +406,7 @@ Copper is a dedicated Attio alternative built for teams that work inside Gmail a
 **Cons**
 
 - No free plan
-- Basic covers up to 2,500 contacts
+- Contact limits can feel tight on Basic
 - Built around Google Workspace more than Outlook
 
 **Pricing**
@@ -461,7 +461,7 @@ Copper | copper.com | 4.4/5 | CRM inside Gmail | [$23/seat/month billed annually
 Affinity | affinity.co | Not rated | Relationship scoring for investors | [$2,000/user/year billed annually](https://www.affinity.co/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=attio-alternatives&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=attio-alternatives&start=crm)**
 
 ## Conclusion
 

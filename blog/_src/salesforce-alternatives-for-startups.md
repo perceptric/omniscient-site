@@ -67,7 +67,7 @@ What does your startup want next?
 Omniscient is one of the most relevant Salesforce alternatives for startups that want one agentic CRM for the whole sales motion. Instead of only storing accounts and opportunities, Otto, its built-in agent, builds lead lists, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B startups that want founders and first sales hires on one system without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=salesforce-alternatives-for-startups&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=salesforce-alternatives-for-startups&start=crm
 ```
 
 **Pros**
@@ -81,7 +81,7 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 **Cons**
 
 - Not a bulk marketing email tool on its own
-- No phone dialer, so phone-first teams may prefer Close
+- No built-in phone dialer for call-heavy teams
 
 **Pricing**
 
@@ -316,9 +316,9 @@ monday CRM is a widely used CRM that helps teams run sales on the same boards as
 
 **Cons**
 
-- Every plan starts at 3 seats
+- Seat minimums can raise the bill for solo users
 - AI agents come with separate AI plans
-- Basic allows 5 columns per board
+- Basic may limit how you shape boards
 
 **Pricing**
 
@@ -344,7 +344,7 @@ Nutshell is a practical sales CRM for small businesses that want their pipeline 
 **Cons**
 
 - Email marketing is a paid add-on
-- Foundation allows up to 100 open leads
+- Open lead limits can feel tight on Foundation
 - AI recaps for each lead start on Pro
 
 **Pricing**
@@ -376,7 +376,7 @@ Copper is a CRM built for Google Workspace that runs inside Gmail and Google Cal
 
 - No free plan
 - Workflow automation starts on Professional
-- Built around Google tools more than Microsoft 365
+- Built around Google tools more than Microsoft tools
 
 **Pricing**
 
@@ -460,7 +460,7 @@ folk | folk.app | 4.5/5 | LinkedIn capture for founders | [$24/user/month](https
 Twenty | twenty.com | Not rated | Open source, free to self-host | [$9/user/month billed annually](https://twenty.com/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=salesforce-alternatives-for-startups&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=salesforce-alternatives-for-startups&start=crm)**
 
 ![Price per seat a month on yearly billing, on each alternative's first paid plan: Freshsales Growth $9, Twenty Pro $9, monday CRM Basic $12 from 3 seats, Omniscient Starter $19, Copper Basic $23, Salesflare Growth $29 and Attio Plus $35 for each user after the first. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite at $100. Not shown: HubSpot, Close, folk and Nutshell, which price their first plan in other ways, and Pipedrive and Zoho CRM.](seat-prices.svg)
 

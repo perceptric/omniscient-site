@@ -2,18 +2,24 @@
 title: "Attio Pricing: Plans and Costs Explained (2027)"
 slug: attio-pricing
 target_keyword: "attio pricing"
-meta_description: "Attio pricing for 2027 explained: Free, Plus, Pro and Ultra, the workspace price and per-user price, AI credits, add-ons and what a team of 5 really pays."
+meta_description: "Attio pricing for 2027 explained: Free, Plus, Pro and Ultra, the workspace and per-user prices, AI credits, add-ons, and what a team of 5 pays each month."
 type: pricing
 topic: crm
-updated: 2026-11-22
+updated: 2026-11-23
 summary: "How Attio's Free, Plus, Pro and Ultra plans work, what a team really pays, what costs extra and how to pay less."
 ---
 
 # Attio Pricing: Plans and Costs Explained (2027)
 
-Attio's paid plans start at $40 a month on yearly billing. That covers the workspace and its first user on Plus, and each added user costs $35. Most teams pick Pro, Attio's most popular plan, at $100 a month with the first user and $79 for each added user, billed yearly.
+Attio prices each plan with a workspace price, a price for each added user, two kinds of AI credits and add-ons for objects and records. Each part is simple, but it takes some math to see what a real team pays.
 
-Attio is a flexible CRM that lets you shape objects, records and workflows around your business. This guide explains each plan, what a real team pays, what costs extra and how to pay less.
+Attio is a flexible CRM that lets you shape objects, records and workflows around your business. Founders, startups, investors and growing B2B teams use it. This guide explains each plan, what a team of 5 pays, what costs extra and how to pay less.
+
+You'll leave with a clear monthly number for your team and know which plan is worth it. 💰
+
+## How much does Attio cost?
+
+**Attio's paid plans start at $40 a month for the workspace and first user on Plus, billed yearly, and most teams pick Pro at $100 a month with the first user and $79 for each added user.** On Plus, each added user costs $35. Pro is Attio's most popular plan.
 
 ```callout
 Prices are from Attio's site in November 2026.
@@ -169,7 +175,7 @@ Each CRM fits a different team:
 
 ### How Omniscient compares on price
 
-Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account. Otto, its built-in agent, does the busy work at every step, and all of it runs on [Omniscience](/product/omniscience/), a shared memory of every customer conversation.
+Omniscient is one agentic CRM for the whole sales motion, from finding the next customer to closing the deal and keeping the account. Otto, its built-in agent, does the busy work at every step, and all of it runs on [Omniscience](/product/omniscience/), a shared memory of every customer conversation.
 
 Here is how [Omniscient's plans](/pricing/) work, billed yearly:
 
@@ -182,25 +188,29 @@ Paid seats include the CRM's AI, so there are no credit pools to watch. Monthly 
 
 For more on how the two compare, see our [Attio review](/blog/attio-review/) and our list of [Attio alternatives](/blog/attio-alternatives/). Our guide to [agentic CRMs](/blog/agentic-crm/) explains how other vendors charge for agents.
 
-## Is Attio worth the price?
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=attio-pricing&start=crm)**
 
-Attio is worth it for teams that want to shape the CRM around their own process. Free and Plus are a low-cost way to start, and Pro is the plan to price if you need sequences, call recording or custom objects. If you qualify for the startup program, Pro becomes one of the best deals in the CRM market.
+## Conclusion
 
-If you'd rather have AI in the seat price and an agent that runs the whole sales motion, try Omniscient next to Attio and compare the two on real deals.
+Attio is worth the price for teams that want to shape the CRM around their own process. Free and Plus are a low-cost start, and Pro is the plan to price for sequences, call recording and custom objects.
 
-```cta
-Try Omniscient free for 14 days, next to the CRM you use today.
-```
+The best CRM price in 2027 covers more than seats. It should put the AI in the seat and pay for an agent that finds leads, captures every conversation and keeps deals current.
+
+That is why [Omniscient](/) stands out. It combines [AI in every paid seat](/pricing/), [one shared memory](/product/omniscience/) and [skills](/product/skills/) in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option.
 
 ```faq
 Q: How much does Attio cost?
-A: Attio Free costs $0 for up to 3 users. On yearly billing, Plus costs $40 a month for the workspace and first user, then $35 for each added user, and Pro costs $100, then $79 per user. Ultra costs $1,000 a month with 5 users, billed yearly.
+A: Attio costs $0 on Free for up to 3 users. On yearly billing, Plus costs $40 a month for the workspace and first user, then $35 for each added user, and Pro costs $100, then $79 for each added user. Ultra costs $1,000 a month with 5 users, billed yearly. A team of 5 pays $180 a month on Plus or $416 on Pro.
 Q: Is Attio free?
-A: Yes. Attio's Free plan costs $0 for up to 3 users, with email and calendar sync, 3 objects, 50,000 records and 3 reports. Every new workspace also starts with a 14-day free trial of Pro.
-Q: Does Attio charge per user?
-A: Partly. Each paid plan has a monthly workspace price that includes the first user, and each added user has a set price. On Pro, for example, a team of 5 pays $100 plus 4 users at $79, or $416 a month on yearly billing.
+A: Yes, Attio is free for up to 3 users on its Free plan. Free includes email and calendar sync, 3 objects, 50,000 records, 3 reports, 200 emails a month per user and 100 Ask Attio credits per user. Every new workspace also starts with a 14-day free trial of Pro, with every Pro feature.
 Q: What are Attio credits?
-A: Attio uses two kinds of credits. Seat credits pay for Ask Attio, from 100 to 2,500 per user a month by plan. Workspace credits pay for workflows, AI attributes and agents, from 250 to 20,000 a month, and paid plans can buy more from $70 a month.
+A: Attio credits pay for the CRM's AI, and there are two kinds. Seat credits pay for Ask Attio, from 100 to 2,500 per user a month by plan. Workspace credits pay for workflows, AI attributes and agents, from 250 to 20,000 a month, and paid plans can buy more from $70 a month on yearly billing.
 Q: Does Attio have a startup discount?
-A: Yes. Venture-backed startups with up to 10 users get 80% off the yearly Pro plan and credits for the first year, and 30% off the second year. You apply within 90 days of creating your workspace.
+A: Yes, Attio has a startup discount for venture-backed startups with up to 10 users. They get 80% off the yearly Pro plan and credits for the first year, then 30% off the second year. You apply within 90 days of creating your workspace on Attio's startup program page.
+Q: Which CRM is recommended for teams that want more than Attio's credit-based AI?
+A: For teams that want more than Attio's credit-based AI, we'd recommend Omniscient. It is one agentic CRM for the whole sales motion, with AI in every paid seat from $19 a month billed yearly, and Otto finding leads, capturing every conversation and keeping deals current. Small B2B teams that want a simple sales CRM may prefer Salesflare.
+```
+
+```cta
+Ready to use Omniscient? Try one agentic CRM for the whole sales motion next to Attio, with AI in every paid seat.
 ```

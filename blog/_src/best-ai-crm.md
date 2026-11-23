@@ -83,7 +83,7 @@ What decides it for your team?
 Omniscient is one of the most relevant AI CRMs for teams that want one agentic CRM for the whole sales motion. Instead of only summarizing records, Otto, its built-in agent, finds leads, captures every email and call, preps meetings and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want AI doing the busy work without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-ai-crm&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-ai-crm&start=crm
 ```
 
 ![Omniscient opportunity record for Pallet Cloud, where Otto filled the amount, close date and decision maker from a discovery call with the quote behind each one, and two more changes wait in Suggestions](/assets/blog/best-ai-crm/record.shot.html)
@@ -128,7 +128,7 @@ HubSpot is one of the most widely used AI CRMs, built for marketers, sales reps 
 
 **Cons**
 
-- Professional adds a $1,500 onboarding fee
+- Professional may add a one-time onboarding fee
 - AI agents draw on monthly HubSpot Credits
 - Sequences and forecasting start on Professional
 
@@ -159,7 +159,7 @@ Salesforce is one of the most established AI CRMs, used by sales reps, admins an
 
 **Cons**
 
-- Built-in AI starts on Enterprise at $195
+- Built-in AI sits on higher editions
 - Agentforce actions spend Flex Credits
 - Setup works best with an admin or partner
 
@@ -240,7 +240,7 @@ Day AI is a practical AI CRM for founders, revenue leaders and account executive
 **Cons**
 
 - Free teammates need a paid Professional agent
-- Campaign tools sit on the $200 Executive tier
+- Campaign tools sit on higher tiers
 - Per-agent pricing takes some planning
 
 **Pricing**
@@ -266,7 +266,7 @@ Lightfield is an AI CRM built to replace your CRM, call recorder, sequencer and 
 
 **Cons**
 
-- Workspace pricing from $999 a month on Pro
+- Workspace pricing can jump on higher plans
 - Unused workspace credits expire each year
 - Record updates need a capture seat
 
@@ -293,7 +293,7 @@ Clarify is a dedicated AI CRM designed to get a whole small team into the CRM wi
 
 **Cons**
 
-- Each meeting summary spends 30 credits
+- Meeting summaries use credits, so costs can vary
 - AI features pause when credits run out
 - Workspace agents start on Growth
 
@@ -353,7 +353,7 @@ monday CRM is a widely used AI CRM that helps sales, marketing and delivery team
 
 **Cons**
 
-- Plans start at 3 seats
+- Seat minimums can raise the bill for solo users
 - AI credits and agents start on Standard
 - AI work draws on credits
 
@@ -415,7 +415,7 @@ Freshsales is a practical AI CRM from Freshworks for startups, small businesses 
 
 - No free plan
 - Contact scoring and deal insights start on Pro
-- Chatbot sessions cost extra after the first 500
+- Chatbot use can cost extra at volume
 
 **Pricing**
 
@@ -504,7 +504,7 @@ Close | close.com | 4.7/5 | Built-in calling with AI | [$9/month billed annually
 folk | folk.app | 4.5/5 | LinkedIn capture with AI fields | [$24/user/month](https://www.folk.app/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-ai-crm&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-ai-crm&start=crm)**
 
 ## Conclusion
 

@@ -76,7 +76,7 @@ What should the new CRM do best?
 Omniscient is one of the most relevant HubSpot CRM alternatives for teams that want one agentic CRM for the whole sales motion. Instead of only storing contacts and deals, Otto, its built-in agent, builds lead lists, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want to grow past HubSpot's free CRM without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=hubspot-crm-alternatives&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=hubspot-crm-alternatives&start=crm
 ```
 
 **Pros**
@@ -90,7 +90,7 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 **Cons**
 
 - Not a bulk marketing email tool on its own
-- No phone dialer, so phone-first teams may prefer Close
+- No built-in phone dialer for call-heavy teams
 
 **Pricing**
 
@@ -176,7 +176,7 @@ monday CRM is a strong HubSpot CRM alternative for teams that already run their 
 
 **Cons**
 
-- Every plan starts at 3 seats
+- Seat minimums can raise the bill for solo users
 - AI agents draw on AI credits
 - Boards take some setup before they fit
 
@@ -233,9 +233,9 @@ EngageBay is a budget-friendly HubSpot CRM alternative that helps startups and s
 
 **Cons**
 
-- Free plan holds up to 250 contacts
+- Free plan contact limits can feel tight
 - More marketing-focused than agentic sales CRMs
-- Contact limits rise by plan, 500 on Basic
+- Contact limits can feel tight on Basic
 
 **Pricing**
 
@@ -261,7 +261,7 @@ Nutshell is a practical HubSpot CRM alternative for small businesses that want t
 
 - Email marketing is a paid add-on
 - AI work runs on a monthly allowance
-- Foundation holds up to 100 open leads
+- Open lead limits can feel tight on Foundation
 
 **Pricing**
 
@@ -380,7 +380,7 @@ Copper is a dedicated HubSpot CRM alternative designed for service businesses th
 
 - No free plan
 - Email series start on Business
-- Basic holds up to 2,500 contacts
+- Contact limits can feel tight on Basic
 
 **Pricing**
 
@@ -440,7 +440,7 @@ Less Annoying CRM is a simple HubSpot CRM alternative built for small businesses
 
 - No free plan
 - No built-in AI or email sequences
-- Sized for under about 50,000 contacts
+- May feel small for very large contact lists
 
 **Pricing**
 
@@ -465,7 +465,7 @@ folk | folk.app | 4.5/5 | LinkedIn capture for your network | [$24/user/month](h
 Less Annoying CRM | lessannoyingcrm.com | 4.8/5 | One simple plan | [$15/user/month](https://www.lessannoyingcrm.com/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=hubspot-crm-alternatives&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=hubspot-crm-alternatives&start=crm)**
 
 ## Conclusion
 

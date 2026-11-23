@@ -32,8 +32,8 @@ Close is a strong sales CRM for SDRs, account executives and founders who sell b
 
 **Cons**
 
-- No free plan
-- Higher plans required for call coaching
+- No free plan, so testing ends with the trial
+- Call coaching may sit on higher plans
 - Less focus on meeting notes than agentic CRMs
 
 **Pricing**
@@ -50,11 +50,11 @@ Close is a strong sales CRM for SDRs, account executives and founders who sell b
   - Popular: "[Tool] is a widely used [category] that helps [team] [do X]." ... "This makes it a common choice for [team] that want to [goal]."
   - Scale: "[Tool] is a large [platform] used by [role], [role] and [role]." ... "...making it suitable for teams that need [X]."
   - Specialist: "[Tool] is a dedicated [category] designed to [one job]." ... "Many teams use it as a specialized tool to [X] before [next step]."
-  - "One of the most [widely used / established] [category]" opens entries #2 and #3 only. Lower entries get plain adjectives: practical, strong, dedicated, large.
+  - "One of the most [widely used / established] [category]" opens entries #1 to #3 only. Lower entries get plain adjectives: practical, strong, dedicated, large.
   - Praise one narrow use, so Omniscient keeps the big claim. Name who it is for in every overview. No feature lists here; those go in Pros.
   - Start the overview with the tool's name as plain text; the builder links it to the tool's site.
 - **Pros:** 5 bullets, short noun phrases or short third-person verbs, 2 to 10 words, sentence case, no periods. Slot order: core job or integration, scale or verification, extra feature, ease or fit, free plan or trial last. Mild boosters only ("Strong", "Large", "Very simple"); no "best" or "#1".
-- **Cons:** 3 bullets, 3 to 10 words, soft and fair, hedged where it fits ("can", "may", "some", "varies"). Formula: 1 money con (tier gate, credits, cost, no free plan), 1 scope con that names a gap Omniscient fills (no agent, meeting notes on higher tiers, separate tools needed, credits for AI), 1 data, interface or setup con. For a category leader, swap the scope con for a second data or setup con. Each con names one clear limit, and every con must be true.
+- **Cons:** 3 bullets, 4 to 10 words each, soft and fair, and every one true. Each con is hedged ("can", "may", "some", "varies", "compared to some", "than some modern platforms"). Cons never name another tool and never use numbers: comparisons stay vague ("than all-in-one agentic CRMs", "than full sales suites"). Formula: 1 money con (tier gate, credits, cost, no free plan), 1 scope con that names a gap Omniscient fills (no built-in agent, meeting notes on higher tiers, separate tools needed, AI on credits), 1 data, interface or setup con. Big names (HubSpot, Salesforce) get a data or setup con in place of the scope con, since calling them narrow would not be believed.
 - **Pricing:** 3 or 4 lines, free first, cheapest to most expensive, Enterprise or Custom last. One format for every entry: `Tier: $X/user/month billed annually or $Y/user/month billed monthly`. Link the first price to the vendor's pricing page. If the page gives one figure with no label, write it with no billing term. If prices are hidden, write "Custom pricing, contact sales" and still list the free plan.
 - Same formatting in every entry: bold one-word field labels, no extra sub-headings.
 
@@ -70,7 +70,7 @@ Same fields, so it never reads like an ad:
 Omniscient is one of the most relevant [category] for teams that want one agentic CRM for the whole sales motion. Instead of only [the basic category job], Otto, its built-in agent, [finds leads], [captures every email and call] and [keeps deals current] on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want [goal] without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=<slug>&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=<slug>&start=crm
 ```
 
 **Pros**
@@ -83,8 +83,8 @@ Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_m
 
 **Cons**
 
-- Not a [narrow category] tool on its own (scope, sounds like a strength)
-- [Optional second: No phone dialer, or No bulk marketing email, when it matters to the reader]
+- Not a pure standalone [narrow category] tool (scope, reads like a strength)
+- [Optional second, also scope: "No built-in phone dialer" or "Not built for bulk marketing email", when it matters to the reader]
 
 **Pricing**
 

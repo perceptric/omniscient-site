@@ -74,7 +74,7 @@ What should it fill in for you?
 Omniscient is one of the most relevant CRMs with automatic data entry for teams that want one agentic CRM for the whole sales motion. Instead of only logging emails, Otto, its built-in agent, finds leads, captures every email, meeting and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want records that fill themselves in without juggling several tools.
 
 ```try
-Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=crm-with-automatic-data-entry&start=crm
+Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=article&utm_medium=crm-with-automatic-data-entry&start=crm
 ```
 
 ![Omniscient's settings for a custom opportunity field named Competitor, set to Fill when empty, next to the Shiftwise opportunity, where Otto found the competitor and the next step in an email, each with the sentence it came from](field-rule.shot.html)
@@ -119,7 +119,7 @@ HubSpot is one of the most widely used CRMs with automatic data entry, built for
 
 **Cons**
 
-- Professional adds a $1,500 onboarding fee
+- Professional may add a one-time onboarding fee
 - AI agents draw on monthly HubSpot Credits
 - New contacts from email is a beta setting
 
@@ -150,7 +150,7 @@ Salesforce is one of the most established CRMs with automatic data entry, used b
 
 **Cons**
 
-- Built-in AI starts on Enterprise at $195
+- Built-in AI sits on higher editions
 - Agentforce actions spend Flex Credits
 - Setup works best with an admin or partner
 
@@ -238,7 +238,7 @@ Salesflare is a strong CRM with automatic data entry for small B2B teams, founde
 **Cons**
 
 - No free plan
-- Enterprise needs at least 5 users
+- Top plan has a seat minimum
 - Some captured data waits for your confirmation
 
 **Pricing**
@@ -268,7 +268,7 @@ Copper is a CRM with automatic data entry built for service businesses on Google
 **Cons**
 
 - No free plan
-- Basic caps contacts at 2,500
+- Contact limits can feel tight on Basic
 - Made for Google Workspace more than Outlook
 
 **Pricing**
@@ -350,8 +350,8 @@ Lightfield is an AI CRM built to update itself from every customer interaction. 
 
 **Cons**
 
-- Starter covers up to 3 seats
-- Workspace pricing from $999 a month on Pro
+- Starter can feel small for growing teams
+- Workspace pricing can jump on higher plans
 - Email sync needs a capture seat
 
 **Pricing**
@@ -377,9 +377,9 @@ Clarify is a dedicated AI CRM designed to turn every call into an updated deal. 
 
 **Cons**
 
-- Each meeting summary spends 30 credits
+- Meeting summaries use credits, so costs can vary
 - Unused credits don't roll over
-- Free plan caps records at 20,000
+- Free plan record limits can feel tight
 
 **Pricing**
 
@@ -404,7 +404,7 @@ Coffee is a dedicated AI agent designed to fill in a CRM for sales teams. It cre
 
 **Cons**
 
-- Workspace plans start at $1,000 a month
+- Workspace plans can cost more for small teams
 - Often runs next to a separate CRM
 - Per-person price on Grande grows with the team
 
@@ -430,7 +430,7 @@ Affinity is a dedicated CRM for private capital firms, designed to capture relat
 
 **Cons**
 
-- Priced per user per year, from $2,000
+- Yearly per-user pricing can feel high for small teams
 - Built for investors more than B2B sales
 - PitchBook data needs your own subscription
 
@@ -460,7 +460,7 @@ Coffee | coffee.ai | Not rated | Clean data in your current CRM | [$50/user/mont
 Affinity | affinity.co | Not rated | Relationship strength scores | [$2,000/user/year billed annually](https://www.affinity.co/pricing)
 ```
 
-👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=crm-with-automatic-data-entry&start=crm)**
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=crm-with-automatic-data-entry&start=crm)**
 
 ## Conclusion
 

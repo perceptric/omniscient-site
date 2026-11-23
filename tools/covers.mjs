@@ -1,5 +1,5 @@
-// Blog covers: picture-only art in the calm style (docs/brand.md in the app repo). No words: the post's title is on
-// the page. Each post gets a scene from its type and slug: an orbit of alternatives around the tool they replace,
+// Blog covers in the calm style (docs/brand.md in the app repo): a headline card on the left (post kind, year, short
+// title) and logo art on the right. Each post gets a scene from its type and slug: an orbit of alternatives around the tool they replace,
 // two tools face to face, a ranked list in a product window, or a scene drawn for the topic (limits, pricing,
 // safety, data entry, sync). Logos come from tools/cover-logos.json (built from assets/blog/logos and the vector marks
 // in assets/blog/marks). Everything is seeded by the slug, so a cover only changes when its post or this file does.
@@ -742,6 +742,9 @@ export function coverArt({ slug, type = "", topic = "", title = "", body = "", t
   } else if (slug === "blog") {
     fieldKind = "paper";
     art = orbit(k, rnd, { subject: "tryomniscient.com", others: tools, center: "omni" });
+  } else if (type === "review" || type === "pricing") {
+    const subject = domainsIn(`${slug.replace(/-/g, " ")} ${title}`).find((d) => d !== "tryomniscient.com") || tools[0];
+    art = versus(k, rnd, { a: subject, b: "tryomniscient.com" });
   } else if (type === "versus" || / vs\.? /i.test(title)) {
     const [a, b] = domainsIn(title);
     art = versus(k, rnd, { a: a || tools[0], b: b || tools[1] || "hubspot.com" });
@@ -752,9 +755,62 @@ export function coverArt({ slug, type = "", topic = "", title = "", body = "", t
     art = bestOf(k, rnd, { tools, accent: pick.accent || (topic === "linkedin" ? "sequence" : "pipeline"), layout: pick.layout || ["podium", "mirror", "grid"][hashOf(slug) % 3] });
   }
   const bg = field(fieldKind, rngFor(`${slug}:field`));
+  // The blog's own cover keeps the full-width art. Posts get a headline card on the left and the art on the right.
+  const body2 = slug === "blog" ? art : `${headline({ title, type })}
+<g transform="translate(580 140) scale(0.515)">${art}</g>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
 <defs>${k.filters()}${k.defs.join("")}</defs>
 ${bg}
-${art}
+${body2}
 </svg>`;
+}
+
+// ─── Headline card ───────────────────────────────────────────────────────────────────────────────────────────────
+// The featured image names the post: a short headline (the title before its colon, without the year), a label for
+// the kind of post and the year, on a white card. The full title stays on the page.
+
+const KIND = { alternatives: "Alternatives", "best-of": "Top picks", review: "Review", pricing: "Pricing", versus: "Comparison", "how-to": "Guide" };
+const xml = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+export function shortTitle(title = "") {
+  let t = title.replace(/\s*\(\d{4}\)/g, "");
+  if (/\?/.test(t) && t.indexOf("?") < (t.indexOf(":") + 1 || 1e9)) t = t.slice(0, t.indexOf("?") + 1);
+  else if (t.includes(":")) t = t.slice(0, t.indexOf(":"));
+  return t.replace(/\s+(in|for)\s+\d{4}\b/i, "").replace(/\s+\d{4}$/, "").trim();
+}
+
+function wrap(text, max) {
+  const lines = [];
+  let line = "";
+  for (const w of text.split(/\s+/)) {
+    if (line && (line + " " + w).length > max) { lines.push(line); line = w; } else line = line ? `${line} ${w}` : w;
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+function headline({ title, type }) {
+  const short = shortTitle(title);
+  const year = (title.match(/\b(20\d{2})\b/) || [])[1] || "";
+  let size = 66, lines = wrap(short, 14);
+  if (lines.length > 4) { size = 54; lines = wrap(short, 17); }
+  if (lines.length > 5) { size = 46; lines = wrap(short, 20); lines = lines.slice(0, 5); }
+  // Keep every line inside the card: about 0.58 of the font size per character for Inter Bold.
+  const widest = Math.max(...lines.map((l) => l.length));
+  while (size > 40 && widest * size * 0.58 > 420) size -= 2;
+  const lead = Math.round(size * 1.12);
+  const top = 300 - ((lines.length - 1) * lead) / 2;
+  const kind = KIND[type] || "Guide";
+  const chipW = 26 + kind.length * 11.5;
+  const chips = `<rect x="88" y="104" width="${f1(chipW)}" height="40" rx="20" fill="#0a0a0a"/>
+<text x="${f1(88 + chipW / 2)}" y="130" text-anchor="middle" font-size="19" font-weight="600" fill="#ffffff">${xml(kind)}</text>${year ? `
+<rect x="${f1(100 + chipW)}" y="104" width="76" height="40" rx="20" fill="#f5f5f5" stroke="#e5e5e5"/>
+<text x="${f1(138 + chipW)}" y="130" text-anchor="middle" font-size="19" font-weight="600" fill="#171717">${year}</text>` : ""}`;
+  const text = lines.map((l, i) => `<text x="88" y="${f1(top + i * lead + size * 0.35)}" font-size="${size}" font-weight="700" letter-spacing="-1.5" fill="#0a0a0a">${xml(l)}</text>`).join("\n");
+  return `<g font-family="Inter, system-ui, -apple-system, sans-serif">
+<rect x="48" y="48" width="500" height="534" rx="28" fill="#ffffff" stroke="#e5e5e5"/>
+${chips}
+${text}
+<text x="88" y="540" font-size="20" font-weight="500" fill="#737373">tryomniscient.com</text>
+</g>`;
 }
