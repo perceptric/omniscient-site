@@ -47,6 +47,8 @@
   font: 500 clamp(32px, 4.2vw, 46px)/1.06 var(--font); letter-spacing: -0.035em; color: var(--ink); text-wrap: balance;
 }
 .bl-meta { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 16px; font-family: var(--font); font-size: 12px; color: var(--muted); }
+.bl-pitch { margin-top: 12px; font-family: var(--font); font-size: 14px; line-height: 1.5; color: var(--muted); }
+.bl-pitch a { color: var(--ink); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .bl-cover { margin: 32px 0 40px; overflow: hidden; border-radius: var(--r-2xl); box-shadow: var(--sh-rest); }
 .bl-cover svg, .bl-card__cover svg { display: block; width: 100%; height: auto; }
 

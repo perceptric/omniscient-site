@@ -1187,7 +1187,8 @@ ${related.map((p) => card(p, 3)).join("\n")}
         <header class="bl-head">
           <nav class="bl-crumb" aria-label="Breadcrumb"><ol><li><a href="/blog/">Blog</a></li><li><a href="/blog/?topic=${esc(post.topic)}">${esc(topicLabel)}</a></li></ol></nav>
           <h1 class="bl-title">${h1}</h1>
-          <p class="bl-meta"><span>Updated <time datetime="${post.updated}">${prettyDate(post.updated)}</time></span><span>${r.readMinutes} min read</span></p>
+          <p class="bl-meta"><span>Last updated <time datetime="${post.updated}">${prettyDate(post.updated)}</time></span><span>${r.readMinutes} min read</span></p>
+          <p class="bl-pitch">Omniscient is one agentic CRM for the whole sales motion. <a href="mailto:hello@tryomniscient.com?subject=Omniscient%20demo">Book a demo <span aria-hidden="true">→</span></a></p>
         </header>
         <figure class="bl-cover">${cover}</figure>
         <div class="bl-body">
