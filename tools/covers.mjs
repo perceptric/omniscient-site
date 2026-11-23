@@ -741,6 +741,16 @@ function listScene(k, { tools }) {
   return grid(k, list, { cx: 600, cy: 315, cols: Math.min(4, Math.ceil(list.length / 2)), size: 120, gap: 40 });
 }
 
+// A soft gray ground that brightens toward the middle, with a large white stage, like the site's product cards.
+function ground(k) {
+  const g = `${k.id}-g`, r = `${k.id}-r`;
+  k.defs.push(`<linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efefed"/><stop offset="1" stop-color="#e6e6e3"/></linearGradient>`);
+  k.defs.push(`<radialGradient id="${r}" cx=".5" cy=".42" r=".7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7f7f6"/></radialGradient>`);
+  return `<rect width="${W}" height="${H}" fill="url(#${g})"/>
+<rect x="72" y="64" width="${W - 144}" height="${H - 128}" rx="36" fill="url(#${r})" filter="url(#${k.id}-l)"/>
+<rect x="72.5" y="64.5" width="${W - 145}" height="${H - 129}" rx="35.5" fill="none" stroke="#000" stroke-opacity=".06"/>`;
+}
+
 export function coverArt({ slug, type = "", topic = "", title = "", body = "", tools: given }) {
   const id = `cv-${slug.replace(/[^a-z0-9]/gi, "").slice(0, 24)}`;
   const k = kit(id);
@@ -758,9 +768,10 @@ export function coverArt({ slug, type = "", topic = "", title = "", body = "", t
   } else {
     art = listScene(k, { tools });
   }
+  const bg = ground(k);
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
 <defs>${k.filters()}${k.defs.join("")}</defs>
-<rect width="${W}" height="${H}" fill="${C.page}"/>
+${bg}
 ${art}
 </svg>`;
 }
