@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" width="720" height="640" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
 <title id="t">How AI CRMs charge for AI</title>
-<desc id="d">Omniscient includes AI in each paid seat, from $19 a month billed yearly. HubSpot, Attio, Close, folk and monday CRM add AI credits to the seat. Day AI prices each paid seat as an agent, and Lightfield charges for capture seats with free viewer seats on Pro. Clarify has a free plan, then charges $40 a month for the team billed yearly, with credits and any number of seats. Salesforce adds AI on Core and above, Microsoft Dynamics 365 Sales from Enterprise, Zoho CRM puts its agents on Professional and above, and Pipedrive and Freshsales keep their richer AI for higher plans.</desc>
+<desc id="d">Omniscient includes AI in each paid seat, from $19 a month billed yearly. HubSpot, Attio, Close, folk and monday CRM add AI credits to the seat. Day AI prices each paid seat as an agent, and Lightfield charges for capture seats with free viewer seats on Pro. Clarify has a free plan, then charges $50 a month for the workspace, with credits and any number of seats. Salesforce adds AI on Core and above, Microsoft Dynamics 365 Sales from Enterprise, Zoho CRM puts its agents on Professional and above, and Pipedrive and Freshsales keep their richer AI for higher plans.</desc>
 <rect width="720" height="640" fill="#ffffff"/>
 <text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">AI pricing</text>
 <text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Five ways to pay for AI <tspan fill="#171717">in a CRM</tspan></text>
@@ -27,7 +27,7 @@
 <text x="48" y="448" font-size="21" font-weight="500" fill="#171717">Credits,</text>
 <text x="48" y="474" font-size="21" font-weight="500" fill="#171717">any seats</text>
 <text x="248" y="448" font-size="21" font-weight="500" fill="#171717">Clarify</text>
-<text x="248" y="476" font-size="19" fill="#737373">Free plan, then $40 a month, billed yearly</text>
+<text x="248" y="476" font-size="19" fill="#737373">Free plan, then $50 a month for the workspace</text>
 <rect x="32.5" y="508.5" width="199" height="99" fill="#f5f5f5" stroke="#ebebeb"/>
 <rect x="232.5" y="508.5" width="455" height="99" fill="#ffffff" stroke="#ebebeb"/>
 <text x="48" y="544" font-size="21" font-weight="500" fill="#171717">On higher</text>

@@ -1,352 +1,247 @@
 ---
-title: "13 Best folk CRM Alternatives in 2026"
+title: "13 Best folk CRM Alternatives in 2027"
 slug: folk-crm-alternatives
 target_keyword: "folk crm alternatives"
-meta_description: "The 13 best folk CRM alternatives for 2026, sorted by what you need next, with the features, pros, cons and prices of each and how to move your contacts."
+meta_description: "Compare the 13 best folk CRM alternatives in 2027, from Omniscient to HubSpot and Attio, with ratings, pros, cons and the current prices of each tool here."
 type: alternatives
 topic: crm
-updated: 2026-11-15
-read_minutes: 26
-summary: "13 folk CRM alternatives sorted by what you need next, with the features, pros, cons and price of each, plus how to move your contacts out of folk."
+updated: 2026-11-23
+summary: "13 folk CRM alternatives for 2027, ranked with ratings, pros, cons and current prices, led by one agentic CRM for the whole sales motion."
 ---
 
-# 13 Best folk CRM Alternatives in 2026
+# 13 Best folk CRM Alternatives in 2027
 
-folk is an AI CRM for founders and small teams whose deals start in their own network. Teams usually compare alternatives when they want deals and email sequences on a different budget, since both start on the $48 Premium seat, or follow ups that reach past email.
+folk shows you every person in your network, saved from LinkedIn, Gmail or WhatsApp in a click. What it shows less clearly is the path from a contact to a closed deal: sequences, deals and dashboards start on Premium, and teammates on Standard see only the last 30 interactions.
 
-Here are the 13 best folk alternatives in 2026, sorted by what you need next, with the features, pros, cons and price of each.
+A folk CRM alternative is a CRM that keeps the same relationship view and adds what your team wants next. It syncs your inbox and calendar, tracks each deal and, in the newer tools, lets an agent find leads and draft follow-ups. Founders, SDRs, account executives and agencies use these tools to turn their network into pipeline.
 
-Our short answer, by what you need:
+The right pick means fewer tabs, a fuller history and more deals closed. 🤝
 
-- Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads beyond your network to closing deals, with Otto doing the busy work.
-- Pick Attio if you want to design your own objects.
-- Pick HubSpot if you want a free CRM now and marketing tools later.
-- Pick Salesflare if you want automatic data entry with a LinkedIn sidebar and email workflows.
-- Pick Breakcold if you want LinkedIn, WhatsApp, Telegram and email conversations in one inbox.
-- Pick Pipedrive if your team plans its week around pipeline stages.
-- Pick Copper if your agency runs on Google Workspace.
-- Pick Streak if you want your pipeline inside Gmail itself.
-- Pick Twenty if you want open source software you can host yourself.
-- Pick Clarify if you want the whole team on board without paying per seat.
-- Pick Close if your team sells by phone.
-- Pick Nimble if you want one simple plan with room for 25,000 contacts.
-- Pick Dex if folk was mostly where you kept up with your own network.
+## What Is a folk CRM Alternative?
 
-```tools
-Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
-Attio | attio.com | A CRM with records built from your inbox and a data model you shape | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want their own objects
-HubSpot | hubspot.com | A CRM platform with marketing, sales and service tools | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that want marketing and sales in one place
-Salesflare | salesflare.com | A B2B CRM that fills itself in, with a LinkedIn sidebar | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small teams that follow up by email
-Breakcold | breakcold.com | An AI CRM with one inbox for email, LinkedIn, WhatsApp and Telegram | [$99 a month for 1 seat, billed monthly](https://www.breakcold.com/pricing) | Small teams that sell over chat apps
-Pipedrive | pipedrive.com | A sales pipeline CRM with an AI sales assistant and Nova meeting intelligence | [See pricing](https://www.pipedrive.com/en/pricing) | Teams that work by pipeline stage
-Copper | copper.com | A CRM for relationship businesses, built to work inside Google Workspace | [$23 per seat a month, billed yearly](https://www.copper.com/pricing) | Agencies that live in Gmail
-Streak | streak.com | A CRM that works inside Gmail | [$49 per user a month, billed yearly](https://www.streak.com/pricing) | Teams that want the pipeline in the inbox
-Twenty | twenty.com | An open source CRM with a data model you build yourself | [$9 per user a month, billed yearly](https://twenty.com/pricing) | Teams with an engineer who want to own their CRM
-Clarify | clarify.ai | An AI CRM priced by credits, with unlimited seats | [Free, then $40 a month, billed yearly](https://www.clarify.ai/pricing) | Small teams that want everyone on board
-Close | close.com | A CRM for calling, email and SMS, with an AI sales agent | [$9 a month for one user, billed yearly](https://www.close.com/pricing) | Teams that sell by phone
-Nimble | nimble.com | A relationship CRM for small teams on Microsoft 365 or Google | [$24.90 per seat a month, billed yearly](https://www.nimble.com/pricing/) | Small teams that want one plan
-Dex | getdex.com | A personal CRM that syncs your LinkedIn connections | [$12 a month, billed yearly](https://getdex.com/pricing) | Founders keeping up with their network
-```
+**A folk CRM alternative is a CRM that keeps your contacts, conversations and deals in one place by syncing your inbox, your calendar and the profiles you save.** It matches each email and meeting to the right person and company, so the timeline fills itself in. Most run as a web app with a Chrome extension or an inbox sidebar, and many add AI that fills fields, sums up calls or drafts replies. Some also find new leads, so the list grows past the people you know.
 
-## Where folk shines
+Most tools include:
 
-folk is a great fit for teams whose deals start in their network. Here is where it shines:
+- ✅ Email and calendar sync
+- ✅ Contact capture from LinkedIn
+- ✅ Pipelines for deals
+- ✅ Email follow-ups or sequences
 
-- [folkX](https://www.folk.app/products/folkx), its Chrome extension, imports single people or whole lists from LinkedIn and Sales Navigator, and it also works on Gmail, WhatsApp, Instagram and X.
-- [Standard](https://www.folk.app/pricing) costs $24 per member a month billed yearly, or $30 monthly, with pipelines, email campaigns, enrichment, AI assistants and magic fields that fill custom fields for you.
-- Email, calendar and WhatsApp sync come on Standard, and every plan allows unlimited members.
-- folk records phone calls you make from your own number, and it has a mobile app.
-- The trial lasts 2 weeks with every premium feature and no credit card.
+The result is a CRM that remembers your relationships and moves them toward revenue.
 
-We like folk's design so much that Omniscient's square, black and white look takes after it. If your deals come from people you already know and you follow up by email, folk is a strong place to stay.
+## Why Do You Need a folk CRM Alternative?
 
-## When teams look beyond folk
+folk works well for teams whose deals start in their own network. As the team grows, the jump to Premium for sequences and deals, and the limits on shared history, start to matter. A folk CRM alternative solves this.
 
-Teams usually start looking when they want one of these:
+- **Follow-ups on the first plan:** Several tools here send email follow-ups without a Premium seat.
+- **Full history for everyone:** Every teammate sees the whole history of each account.
+- **AI without allowances:** Some tools include AI in the seat instead of monthly caps.
+- **Leads past your network:** The strongest tools build new lead lists and keep every email, call and note in one shared memory.
 
-- **Sequences and deals on a smaller seat.** Email sequences, custom objects and deals, dashboards and API access start on Premium, at $48 per member a month billed yearly, or $60 monthly.
-- **Follow ups past email.** folk's [sequences](https://help.folk.app/en/articles/8744016-send-email-sequence) are built for email, with up to 10 steps, and replies land in your own email inbox instead of folk's messaging inbox.
-- **Outreach without counting credits.** Every step needs credits before a sequence starts, so 3 steps to 200 contacts takes 600 credits.
-- **LinkedIn and email in one flow.** On LinkedIn, folkX saves people, syncs your conversations and fills your [message templates](https://help.folk.app/en/articles/6573940-message-templates) inside LinkedIn chats, and sequences are built for email.
-- **Full history for the whole team.** Standard syncs 1 account per member and shares the last 30 interactions with teammates, and Premium syncs 5 and shares the full history.
+![folk's Standard plan at $24 and Premium plan at $48 per user a month. Email sequences, custom objects and deals, dashboards and API access are on Premium only. Monthly limits on Standard and Premium: find emails 500 and 1,000; magic fields 2,000 and 5,000; Workflow Assistant 1,500 and 10,000; messages per member 2,000 and 5,000; synced accounts per member 1 and 5; interactions shared, the last 30 or the full history](folk-plans.svg "What folk Premium adds over Standard")
 
-These matter most to a small team that wants sequences and a shared history on a smaller budget.
+## 13 Best folk CRM Alternatives in 2027!
 
-![folk's Standard plan at $24 and Premium plan at $48 per member a month, billed yearly. Email sequences, custom objects and deals, dashboards and API access are on Premium only. Monthly limits on Standard and Premium: find emails 500 and 1,000; magic fields 2,000 and 5,000; Workflow Assistant 1,500 and 10,000; messages per member 2,000 and 5,000; synced accounts per member 1 and 5; interactions shared, the last 30 or the full history](/assets/blog/folk-crm-alternatives/folk-plans.svg)
+Prices are from each vendor's site in November 2026, and ratings are from Capterra.
 
-## The 13 best folk CRM alternatives in 2026
-
-Each pick below matches one thing you might want next, starting with the one we know from the inside.
+### folk CRM Alternatives: Quick Match
 
 ```tree
-# What you want next, and the CRM that fits
+# Find your folk alternative
 What do you want next?
-  The whole sales motion: Omniscient | One CRM for the whole sales motion, from the first lead to the closed deal
-  LinkedIn and messages: What should happen on LinkedIn?
-    A sidebar, with email workflows: Salesflare
-    One inbox with WhatsApp: Breakcold
-    Profiles saved as you browse, email sequences on Premium: folk (folk.app) | folk may still fit best
-  How you sell: Where does your day happen?
-    Gmail: What do you need?
-      A CRM for an agency: Copper
-      Pipelines inside the inbox: Streak
-    The phone: Close
-    A pipeline you plan your week around: Pipedrive
-    Your own network, with no pipeline: Dex
-  Price and setup: What do you want?
-    A free start, with room for marketing: HubSpot
-    One team price, unlimited seats: Clarify
-    25,000 contacts on one plan: Nimble
-    Control: Of what?
-      The data model: Attio
-      The hosting, as open source: Twenty
+  One CRM for the whole motion: Omniscient
+  More from LinkedIn and email: Which part?
+    A LinkedIn sidebar and campaigns: Salesflare
+    Prospects saved as you browse: Nimble, Copper
+    Pipelines inside Gmail: Streak
+  A different way to sell: How does your team sell?
+    By pipeline stage: Pipedrive
+    By phone: Close
+    With your own objects: Attio, Twenty
+  A simpler or cheaper setup: What matters most?
+    A free start: HubSpot, Clarify
+    One flat plan: Less Annoying CRM
+    A personal network: Dex
 ```
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, and it suits founders and agencies whose deals start in their own network. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
+**Overview**
 
-All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
+Omniscient is one of the most relevant folk CRM alternatives for teams that want one agentic CRM for the whole sales motion. Instead of only saving the people you already know, Otto, its built-in agent, finds new leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for founders and B2B teams that want to grow past their network without juggling several tools.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=folk-crm-alternatives&start=crm
 ```
 
-#### Key features
+**Pros**
 
-- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
-- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
-- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
-- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
-- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
-- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
-- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
+- [Email and calendar sync from Gmail and Outlook](/product/email-sync/)
+- [Lead lists built from a plain description](/product/find-leads/)
+- [Answers with the quote behind each fact](/product/ask-otto/)
+- [Skills keep every rep's work consistent](/product/skills/)
+- [AI included in every paid seat](/pricing/)
 
-#### Pros
+**Cons**
 
-- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
-- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
-- **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
-- **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
-- **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
+- Not a LinkedIn automation tool
+- No phone dialer, so phone-first teams may prefer Close
 
-#### Cons
+**Pricing**
 
-- **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
-- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
-- **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
+- Free: $0 for teammates who only view or log data
+- Starter: [$19/seat/month billed annually](/pricing/)
+- Pro: $49/seat/month billed annually
+- Business: $99/seat/month billed annually
 
-#### Price and plans
-
-You can try Pro free for 14 days with no credit card. Paid seats, billed yearly (monthly billing costs 20% more):
-
-- **Free:** $0 for teammates who only view or log data.
-- **Starter:** $19 per seat a month.
-- **Pro:** $49 per seat a month.
-- **Business:** $99 per seat a month.
-
-The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
-
-### 2. Attio
-
-Attio is a flexible CRM built for startups and revenue teams that want to shape their objects and workflows around how they sell. It builds records from your email and calendar, and its agents research, score and route each new lead before a rep picks it up.
-
-#### Key features
-
-- **Custom objects:** Track projects, investors or anything else as its own object, with 3 objects on Free, 5 on Plus and 12 on Pro.
-- **Email and calendar sync:** Each contact shows first and last interaction, connection strength and the next meeting from your synced inbox.
-- **Automatic enrichment:** Company records fill in details such as employee count, location and funding raised without anyone typing them.
-- **Lead agents:** A web agent researches each new lead, a custom agent scores its fit, and a workflow routes it to a rep.
-- **Ask Attio:** Put any revenue question to it in plain words, from this week's forecast to performance by rep.
-- **Call Intelligence and sequences:** Both come with Pro, so call insights and email sequences live inside the CRM.
-- **Built to extend:** An API, webhooks, an App SDK and an MCP server connect Attio to your own tools and AI assistants.
-
-#### Pros
-
-- **Your own data model:** Custom objects and relationship attributes let the CRM follow your process, from sales deals to a fund's deal flow.
-- **Useful free plan:** Up to 3 seats are free, with real time contact syncing and automatic enrichment.
-- **Startup discount:** Eligible startups can get up to 80% off, which softens the move to Pro.
-- **Apps and extension:** Attio has iOS and Android apps, plus a Gmail extension for working from your inbox.
-
-#### Cons
-
-- **Sequences start on Pro:** Sequences come with Pro, at $79 a user billed yearly, next to $48 for a folk Premium member.
-- **Plus covers up to 10 seats:** A growing team moves to the $79 Pro plan at its eleventh seat.
-- **AI runs on credits:** AI and workflows draw on shared credits, and extra packs start at $70 a month for 5,000 on yearly billing.
-- **Best with a builder:** The flexibility pays off when someone on your team enjoys designing objects and workflows.
-
-#### Price and plans
-
-You can start on Attio's free plan with no credit card, and the 14 day trial gives you Pro. Per user a month:
-
-- **Free:** $0 for up to 3 seats.
-- **Plus:** $35 billed yearly, or $44 monthly, for up to 10 seats.
-- **Pro:** $79 billed yearly, or $99 monthly.
-- **Enterprise:** priced on a call with their sales team.
-
-Our [Attio alternatives](/blog/attio-alternatives/) guide covers the CRMs teams pick instead.
-
-### 3. HubSpot
+### 2. HubSpot
 
 ```rating
 4.5 | Capterra | https://www.capterra.com/p/152373/HubSpot-CRM/reviews/
 ```
 
-HubSpot is a customer platform built for teams that want marketing, sales and service tools on one CRM. Its free CRM covers up to 2 users with no credit card, and Sales Hub adds AI agents and calling from Starter, then email sequences from Professional.
+**Overview**
 
-#### Key features
+HubSpot is one of the most widely used folk CRM alternatives, with marketing, sales and service tools on one CRM. Its free CRM covers up to 2 users with no credit card, and Sales Hub adds calling and custom agents from Starter, then sequences from Professional. With Sales Navigator, those sequences can mix LinkedIn steps with email. This makes it a common choice for marketers, sales managers and founders who want room to grow on one platform.
 
-- **Free CRM:** Free sales, marketing, service and content tools cover up to 2 users, with no credit card needed.
-- **Agent Builder from Starter:** Starter lets you build simple custom agents and includes 500 HubSpot Credits a month to run them.
-- **Calling built in:** Starter includes 500 calling minutes, Professional 3,000 and Enterprise 12,000, so calls stay on the record.
-- **HubSpot Notetaker:** It captures meetings automatically and sends follow up recordings, so call notes land in the CRM.
-- **Sequences on Professional:** Each user can send up to 500 sequence emails a day, and LinkedIn steps work with a Sales Navigator subscription.
-- **Forecasting:** Professional adds default and custom forecasts, and Enterprise rolls them up across team hierarchies.
-- **App marketplace:** More than 2,000 integrations in the HubSpot Marketplace connect it to the rest of your stack.
+**Pros**
 
-#### Pros
+- Free CRM for up to 2 users
+- Marketing and sales on one record
+- LinkedIn steps in sequences with Sales Navigator
+- More than 2,000 marketplace integrations
+- Free plan available
 
-- **Free to start:** The free CRM covers 2 users with no card, so a small team can try it on real contacts.
-- **Marketing next door:** Marketing and sales share one record, which suits teams where marketing owns the lead.
-- **LinkedIn in sequences:** With Sales Navigator, Professional sequences can mix LinkedIn actions with email steps.
-- **Room to grow:** Over 2,000 integrations mean most of your stack will plug straight in.
+**Cons**
 
-#### Cons
+- Professional adds a $1,500 one-time onboarding fee
+- AI agents run on monthly credits
+- Sequences and forecasting start on Professional
 
-- **Onboarding fees:** Professional carries a required one time $1,500 onboarding fee, and Enterprise one of $3,500.
-- **Sequences start on Professional:** Email sequences come with Professional, from $90 a seat a month, next to $48 on folk Premium.
-- **Agents spend credits:** AI agents draw on HubSpot Credits, extra credits cost $0.01 each, and unused ones don't roll over.
+**Pricing**
 
-#### Price and plans
+- Free: [$0/month for up to 2 users](https://www.hubspot.com/pricing/sales)
+- Starter: from $20/seat/month, with lower prices for new customers
+- Professional: $90 to $100/seat/month by billing term, plus $1,500 one-time onboarding
+- Enterprise: from $150/seat/month, plus $3,500 one-time onboarding
 
-You can use HubSpot's free CRM for up to 2 users with no credit card. Sales Hub, per seat a month:
+### 3. Attio
 
-- **Free:** $0 for up to 2 users.
-- **Starter:** $20, with 500 HubSpot Credits, and new customers get a limited time discount.
-- **Professional:** from $90, with 3,000 HubSpot Credits and the $1,500 onboarding fee.
-- **Enterprise:** from $150, with 5,000 HubSpot Credits and the $3,500 onboarding fee.
+**Overview**
 
-You can run the free CRM next to folk before you pay for anything. Our [HubSpot CRM alternatives](/blog/hubspot-crm-alternatives/) post covers lighter options for teams that want sequences on a smaller budget.
+Attio is one of the most flexible folk CRM alternatives, built for startups and revenue teams that want to shape their objects around how they sell. It builds records from your email and calendar, and its agents research, score and route each new lead before a rep picks it up. Founders and RevOps leads use it when a network turns into a process with its own data model.
 
-### 4. Salesflare
+**Pros**
 
-```rating
-4.7 | Capterra | https://www.capterra.com/p/149522/Salesflare/reviews/
-```
+- Custom objects and relationship attributes
+- Email and calendar sync with enrichment
+- Lead agents that research, score and route
+- iOS and Android apps, plus a Gmail extension
+- Free plan available
 
-Salesflare is a sales CRM built for small and medium B2B teams that want the CRM to keep itself up to date. It fills in contacts from your inbox, email signatures, websites and calendar, and every plan comes with a LinkedIn sidebar.
+**Cons**
 
-#### Key features
+- AI runs on monthly credits
+- Sequences and call intelligence start on Pro
+- Plus covers up to 10 users
 
-- **Automatic data capture:** Contacts fill in from your inbox, email signatures, websites and calendar, so reps type far less.
-- **A timeline of every touch:** Sent and opened emails, website visits and meetings land on each account's timeline by themselves.
-- **LinkedIn and email sidebars:** Growth includes a LinkedIn sidebar, an email sidebar and the mobile app.
-- **Email campaigns and workflows:** Growth sends personalized email campaigns, and Pro adds workflows of several emails.
-- **Email and web tracking:** Track opens, links and website visits to see who's engaged before you follow up.
-- **Lead finder:** Find new leads and business emails with lead credits, 5 on Growth and 100 on Pro.
-- **Relationship intelligence:** See who on your team knows whom, and how strong each relationship is.
+**Pricing**
 
-#### Pros
+- Free: [$0/month for up to 3 users](https://attio.com/pricing)
+- Plus: $40/month for the first user, then $35/user/month billed annually, or $50, then $44/user/month billed monthly
+- Pro: $100/month for the first user, then $79/user/month billed annually, or $125, then $99/user/month billed monthly
+- Ultra: $1,000/month with 5 users, then $189/user/month billed annually
 
-- **Low CRM admin:** Automatic capture keeps contacts and activity current without anyone typing them in.
-- **No caps on the basics:** Salesflare puts no hidden limits on contacts, users, templates, sent emails, custom fields, workflows or pipelines.
-- **Free onboarding:** Salesflare helps your team get set up and trained at no charge.
-- **Long trial:** You get 30 days free with no credit card, longer than most trials on this list.
-
-#### Cons
-
-- **Trial instead of a free plan:** Once the 30 day trial ends, you pick a paid plan.
-- **Workflows start on Pro:** Workflows of several emails, user permissions and custom dashboards start on Pro at $49 billed yearly.
-- **Lead credits grow with the plan:** Growth includes 5 lead credits and Pro 100, so heavy prospecting fits Pro or a separate tool.
-
-#### Price and plans
-
-You can try Salesflare free for 30 days with no credit card. Per user a month:
-
-- **Growth:** $29 billed yearly, or $39 monthly.
-- **Pro:** $49 billed yearly, or $64 monthly.
-- **Enterprise:** $99 billed yearly, or $124 monthly, with a minimum of 5 users.
-
-For a folk user who wants automatic capture and email follow ups from one tool, Salesflare is the closest swap.
-
-### 5. Breakcold
-
-```rating
-4.8 | Capterra | https://www.capterra.com/p/10011093/Breakcold/reviews/
-```
-
-Breakcold is an AI CRM built for salespeople who talk to prospects on LinkedIn and chat apps as much as by email. It keeps email, LinkedIn, WhatsApp and Telegram conversations on the right record, and Chief of Staff, its AI agent, updates deals and drafts replies for you to approve.
-
-#### Key features
-
-- **One inbox for every channel:** Email, LinkedIn, WhatsApp and Telegram conversations stay attached to the right contact and deal.
-- **Chief of Staff:** Chat with your whole CRM, or let it update deals and draft replies in the background.
-- **Tasks you approve:** A tasks queue holds every send until you approve it, so nothing reaches a customer unseen.
-- **Lead capture:** The Chrome extension saves leads from LinkedIn, Sales Navigator, Instagram, Gmail and YouTube into one CRM.
-- **AI employees:** Specialists turn buying signals into deals, draft follow ups, merge duplicates and update deals from calls.
-- **Calls and enrichment:** Every plan records calls with summaries and enriches people and companies without limits.
-- **MCP access:** Claude, ChatGPT and other AI agents can read your CRM and update records.
-
-#### Pros
-
-- **Closest to folkX:** Like folk, Breakcold saves people from LinkedIn, and it also keeps their chats on the record.
-- **Everything on every plan:** Plans differ only by seats and AI usage, so even X1 gets the full CRM and Chief of Staff.
-- **Room for a small team:** X5 covers 5 seats and 5 connected accounts for $199 a month.
-- **You stay in control:** AI employees ask first, and their changes come with an undo.
-
-#### Cons
-
-- **Card for the trial:** The 14 day trial asks for a credit card up front.
-- **Priced by team size:** X1 costs $99 a month for 1 seat, next to $30 for a folk Standard member billed monthly.
-- **Weekly AI allowance:** AI work draws on a weekly allowance, and resetting it early costs $50.
-
-#### Price and plans
-
-You can try Breakcold free for 14 days with a credit card. Plans, billed monthly, with 10% off quarterly and 20% off yearly:
-
-- **X1:** $99 a month for 1 seat, 1 workspace and 2 connected accounts.
-- **X5:** $199 a month for 5 seats, 2 workspaces and 5 connected accounts.
-- **X20:** $499 a month for 20 seats, 5 workspaces and 10 connected accounts.
-
-Each extra seat or connected account costs $10 a month on any plan.
-
-### 6. Pipedrive
+### 4. Pipedrive
 
 ```rating
 4.5 | Capterra | https://www.capterra.com/p/132666/Pipedrive/reviews/
 ```
 
-Pipedrive is a sales pipeline CRM built for small businesses that plan their week around deal stages. Its AI Sales Assistant points you to the deals worth your time, and Nova, its meeting intelligence, briefs you before calls and drafts CRM updates after them.
+**Overview**
 
-#### Key features
+Pipedrive is a strong folk CRM alternative for small sales teams that plan their week around deal stages. Reps drag deals through a visual pipeline, and its AI Sales Assistant suggests which deals and leads to work next. Nova, its meeting intelligence, records and transcribes calls, then drafts a recap and CRM updates you approve in one click. A key strength is that Nova comes with every plan, which makes it attractive for teams that want meeting notes without an add-on.
 
-- **Visual pipeline:** Drag deals through stages that match your sales cycle, and Pipedrive tells you when to follow up.
-- **AI Sales Assistant:** It predicts which deals you're likely to win or lose and suggests which leads to pursue next.
-- **Nova briefs:** Before each call, Nova pulls deal history and past conversations into a short brief.
-- **Call notes and recaps:** Nova records and transcribes calls, then drafts a recap and CRM updates you approve in one click.
-- **Sales inbox:** Two way email sync brings your sales email into one inbox inside Pipedrive.
-- **Reports and forecasts:** Forecasts built on past performance, plus goals and visual dashboards, show how your funnel is doing.
-- **Marketplace:** More than 500 integrations connect Pipedrive to the rest of your stack.
+**Pros**
 
-#### Pros
+- Visual drag-and-drop pipeline
+- Nova briefs, recordings and recaps on every plan
+- Two-way email sync into a sales inbox
+- More than 500 integrations
+- 14-day free trial, no credit card
 
-- **Nova on every plan:** Meeting briefs, recordings and recaps come with all plans at no extra cost.
-- **Updates you approve:** Nova drafts CRM updates for review, so a record changes only after you agree.
-- **Easy trial:** You get 14 days with full access and no credit card.
+**Cons**
 
-#### Cons
+- Email campaigns are a paid add-on
+- Every seat on the plan is billed, used or not
+- Built around deals more than a personal network
 
-- **Campaigns cost extra:** Email campaigns are a paid add on, available on every paid plan but included in none.
-- **Billed by seat:** You pay for every seat on the plan, whether or not someone is using it yet.
-- **Built around stages:** Pipedrive is organized around deals and stages, so it fits selling by pipeline more than keeping up with a network.
+**Pricing**
 
-#### Price and plans
+- Free trial: 14 days, no credit card
+- Lite, Growth, Premium and Ultimate: [See Pipedrive's pricing](https://www.pipedrive.com/en/pricing)
 
-You can try Pipedrive free for 14 days with full access and no credit card. It sells four plans per seat, Lite, Growth, Premium and Ultimate, and paying yearly costs less than paying monthly. [See Pipedrive's current prices](https://www.pipedrive.com/en/pricing).
+### 5. Salesflare
 
-Nova's updates wait for your approval, the same way Omniscient handles the values Otto suggests. The [Pipedrive alternatives](/blog/pipedrive-alternatives/) post covers CRMs that write more of your records for you.
+```rating
+4.7 | Capterra | https://www.capterra.com/p/149522/Salesflare/reviews/
+```
+
+**Overview**
+
+Salesflare is a practical folk CRM alternative for small and medium B2B teams that want the CRM to keep itself up to date. It fills in contacts from your inbox, email signatures, websites and calendar, and every plan comes with a LinkedIn sidebar. Its first paid plan sends personalized email campaigns. It is especially useful for founders, account managers and small sales teams that want automatic capture and email follow-ups in one tool.
+
+**Pros**
+
+- Automatic data capture from email and calendar
+- LinkedIn and email sidebars on every plan
+- Email campaigns on the first paid plan
+- Free onboarding and training
+- 30-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Multi-step email workflows start on Pro
+- Growth includes 5 lead credits
+
+**Pricing**
+
+- Growth: [$29/user/month billed annually](https://salesflare.com/pricing) or $39/user/month billed monthly
+- Pro: $49/user/month billed annually or $64/user/month billed monthly
+- Enterprise: $99/user/month billed annually or $124/user/month billed monthly, minimum 5 users
+
+### 6. Close
+
+```rating
+4.7 | Capterra | https://www.capterra.com/p/132667/Close-io/reviews/
+```
+
+**Overview**
+
+Close is a strong folk CRM alternative for SDRs, account executives and founders who sell by phone. Calling, SMS and email live inside the CRM, so every conversation lands in one inbox. Chloe, its AI assistant, comes with every plan and answers questions about your pipeline and calls. Growth adds the Power Dialer and workflows, which makes it a natural pick for teams that book meetings by phone.
+
+**Pros**
+
+- Built-in calling, SMS and email
+- Power Dialer and Predictive Dialer
+- Chloe AI assistant on every plan
+- Good fit for phone-first teams
+- 14-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Workflows and bulk email start on Growth
+- Calls and SMS are billed by use
+
+**Pricing**
+
+- Solo: [$9/month billed annually](https://www.close.com/pricing) or $19/month billed monthly, 1 user
+- Essentials: $35/user/month billed annually or $49/user/month billed monthly
+- Growth: $99/user/month billed annually or $109/user/month billed monthly
+- Scale: $139/user/month billed annually or $149/user/month billed monthly
 
 ### 7. Copper
 
@@ -354,335 +249,241 @@ Nova's updates wait for your approval, the same way Omniscient handles the value
 4.4 | Capterra | https://www.capterra.com/p/141642/Copper/reviews/
 ```
 
-Copper is a CRM built for relationship businesses, like agencies and consultancies, that run on Google Workspace. You add leads and track conversations from Gmail and Google Calendar, then turn a won deal into a project without leaving the CRM.
+**Overview**
 
-#### Key features
+Copper is a folk CRM alternative built for relationship businesses, like agencies and consultancies, that run on Google Workspace. You add leads and track conversations from Gmail and Google Calendar, and you can save prospects from LinkedIn without switching tabs. A won deal turns into a project for onboarding and delivery. This makes it a good fit for account managers, consultants and agency owners who want sales and delivery in one tool.
 
-- **Inside Google Workspace:** Add leads, track conversations, find files and manage tasks straight from Gmail and Google Calendar.
-- **LinkedIn capture:** Research and add prospects from LinkedIn, or any website, without switching tabs.
-- **Pipelines with alerts:** AI flags point out slipping deals, and moving a deal to a new stage can send an email or a reminder.
-- **Projects after the sale:** Turn a closed deal into a project for onboarding and delivery, with tasks for the whole team.
-- **Email automation:** Professional adds bulk email and workflow automation, and Business adds automated email series.
-- **Rekindle emails:** Copper automatically reconnects you with contacts you haven't heard from in a while.
-- **Mobile app:** Calls and texts log themselves from the mobile app, so accounts stay current on the road.
+**Pros**
 
-#### Pros
+- Works inside Gmail and Google Calendar
+- LinkedIn capture without switching tabs
+- Deals turn into delivery projects
+- Good fit for agencies and service firms
+- Free start, no credit card
 
-- **Little setup for Google teams:** Copper works inside Gmail and Calendar, so a Google Workspace team starts selling quickly.
-- **Sales and delivery together:** Deals become projects, so account managers and creatives work in the same tool.
-- **Free start:** You can start free with no credit card and try Copper on your own Gmail and Calendar before paying.
+**Cons**
 
-#### Cons
+- No free plan
+- Basic covers up to 2,500 contacts
+- Built around Google Workspace more than Outlook
 
-- **Contacts grow with the plan:** Basic covers up to 2,500 contacts and Professional up to 15,000, so a large folk network fits on Business.
-- **Email series on Business:** Email series start on Business at $99 a seat billed yearly.
-- **Made for Google:** Copper is built around Google Workspace, so Microsoft 365 teams will find a better fit in Nimble or Salesflare.
+**Pricing**
 
-#### Price and plans
+- Basic: [$23/seat/month billed annually](https://www.copper.com/pricing) or $29/seat/month billed monthly
+- Professional: $59/seat/month billed annually or $69/seat/month billed monthly
+- Business: $99/seat/month billed annually or $134/seat/month billed monthly
 
-You can start Copper free with no credit card. Per seat a month:
-
-- **Basic:** $23 billed yearly, or $29 monthly, with up to 2,500 contacts.
-- **Professional:** $59 billed yearly, or $69 monthly, with up to 15,000 contacts.
-- **Business:** $99 billed yearly, or $134 monthly, with unlimited contacts.
-
-### 8. Streak
-
-```rating
-4.5 | Capterra | https://www.capterra.com/p/124465/Streak/reviews/
-```
-
-Streak is a CRM built for teams that live in Gmail and want their pipeline inside the inbox. Each email shows the pipeline and stage it belongs to, and Streak gives Claude and ChatGPT live context on every deal, so your AI assistant can search deals and update records too.
-
-#### Key features
-
-- **Pipelines in Gmail:** Run sales, hiring, deal flow or any other process in pipelines right next to your email.
-- **Automatic email sharing:** Every deal, contact and company shows its full email history, shared with your team automatically.
-- **Mail merge with follow ups:** Send templated emails to a list, with automatic follow ups, straight from Gmail.
-- **Magic fields:** Fields update themselves with data like last reply, time in stage and email activity.
-- **AI autofill and summaries:** Streak scans deal history or searches the web to update records, and sums up where each deal stands.
-- **Automations on Pro+:** Rules create tasks, add comments, notify you, update boxes or email customers.
-- **Mobile apps:** Native iOS, iPad and Android apps, plus add ons for Gmail on your phone.
-
-#### Pros
-
-- **Nothing new to open:** Streak sits where your team already works, which makes the CRM much easier to keep up.
-- **Unlimited data:** Every paid plan includes unlimited contacts, pipelines and records, with no required fees.
-- **Free email tools:** Email tracking, snippets and 50 mail merge sends a day stay free forever.
-- **AI assistants welcome:** Claude and ChatGPT can search deals, create tasks and update records for you.
-
-#### Cons
-
-- **Built for Gmail:** Streak lives in Gmail, so a team on Outlook will find a better fit in Nimble or Salesflare.
-- **Automations on Pro+:** Automations, integrations and advanced reports start on Pro+ at $69 billed yearly.
-- **AI credits grow with the plan:** Pro includes 20 AI credits per user a month, and Pro+ includes 150.
-
-#### Price and plans
-
-You can try Streak's Pro+ plan free for 14 days, and its email tools stay free after that. Per user a month:
-
-- **Pro:** $49 billed yearly, or $59 monthly.
-- **Pro+:** $69 billed yearly, or $89 monthly.
-- **Enterprise:** $129 billed yearly, or $159 monthly.
-
-Streak's mail merge with automatic follow ups covers much of what folk users upgrade to Premium for.
-
-### 9. Twenty
-
-Twenty is an open source CRM built for technical teams that want to own their data and shape the CRM around their business. You can run it in Twenty's cloud or host the open source core yourself, and you build custom objects and fields from Settings without code.
-
-#### Key features
-
-- **Custom data model:** Build unlimited custom objects, fields and views from Settings, at no extra charge.
-- **Email and calendar sync:** Google and Microsoft email and calendars sync, so emails and meetings log themselves.
-- **Calls and enrichment:** Pro records calls and enriches leads, and more apps wait in Twenty's marketplace.
-- **Agentic workflows:** Automate the busywork with workflows, and hand routine CRM chores to AI.
-- **MCP server:** Every cloud workspace ships with one, so your AI assistant can read and write CRM data.
-- **Self hosting:** Host the open source core on your own servers for free and keep full control.
-- **Views:** Table, Kanban and Calendar views come on every plan, with unlimited custom layouts.
-
-#### Pros
-
-- **Low seat price:** Cloud Pro costs $9 per user a month on yearly billing.
-- **You own it:** Self hosting keeps your CRM and its data on your own infrastructure.
-- **No seat limits:** Every plan allows unlimited seats, records and custom objects, so adding people never hits a cap.
-- **Long trial:** You get 30 days of the cloud with no credit card.
-
-#### Cons
-
-- **More to build:** You set up pipelines and workflows yourself, while folk gives you ready pipelines and a LinkedIn extension.
-- **AI grows with the plan:** Pro includes about 100 AI tasks a week per member, and Organization about 500.
-- **Roles on Organization:** Custom roles, SSO and audit logs start on Organization at $39 billed yearly.
-
-#### Price and plans
-
-You can try Twenty's cloud free for 30 days with no credit card, and self hosting the open source core is free. Per user a month:
-
-- **Pro:** $9 billed yearly, or $12 monthly.
-- **Organization:** $39 billed yearly, or $52 monthly.
-- **Enterprise:** from $50,000 a year.
-
-### 10. Clarify
-
-Clarify is an AI CRM built for small teams that want everyone in the CRM without paying per seat. It records calls with or without a bot and updates your records from them. You pay for that AI work in credits instead of headcount.
-
-#### Key features
-
-- **Unlimited seats:** Every plan, Free included, lets your whole team in at no extra cost.
-- **Call recorder and notetaker:** Clarify records each conversation, summarizes it and updates your CRM while you keep selling.
-- **Daily prep:** Each morning your meetings come prepped with context, and deals that need attention are already surfaced.
-- **Lead Finder and enrichment:** Free includes Lead Finder and standard enrichment, and Starter adds advanced enrichment.
-- **Email campaigns:** It drafts and runs personalized email campaigns, then drafts replies in your voice, with 5 campaigns on Starter.
-- **Works from other tools:** An MCP server lets you use Clarify from Claude, ChatGPT, Cursor or Slack.
-
-#### Pros
-
-- **Free to start:** The Free plan includes the AI sales agent, the call recorder and 1,000 credits a month.
-- **Plain credit math:** A meeting summary costs 30 credits and a campaign email 1, and recording never touches your bill.
-- **Spending controls:** Switch off features that use credits, and get emails at 80%, 90% and 100% of your allowance.
-
-#### Cons
-
-- **AI pauses at zero:** When credits run out, AI features stop until the next cycle unless you turn on paid credits.
-- **Campaigns built for email:** Clarify's campaigns run on email, and LinkedIn automation hasn't launched on any plan yet.
-- **Entry plans for small teams:** Free allows 1 campaign, and Starter suits teams of up to 3 people.
-- **Agents on Growth:** Workspace agents and workflow automation start on Growth, from $1,000 a month.
-
-#### Price and plans
-
-You can start on Clarify's free plan and upgrade when the team needs more credits. Plans for the whole team:
-
-- **Free:** $0, with 1,000 credits a month.
-- **Starter:** $40 a month billed yearly, or $50 monthly, with 5,000 credits a month.
-- **Growth:** from $1,000 a month billed yearly, with 100,000 or more credits.
-- **Enterprise:** priced on a call with their sales team.
-
-For a growing team, adding a person never changes the bill. Count the meetings you summarize each month before you pick a credit tier.
-
-### 11. Close
-
-```rating
-4.7 | Capterra | https://www.capterra.com/p/132667/Close-io/reviews/
-```
-
-Close is a sales CRM built for teams that sell by phone, with calling, email and SMS inside the CRM. Every plan includes Chloe, its AI sales agent, who calls and qualifies your leads, then books meetings and updates the CRM.
-
-#### Key features
-
-- **Calling and SMS built in:** Call, text and email leads from inside Close, with every conversation in one inbox.
-- **Chloe on every plan:** Access to Chloe is free on all plans, and she spends your AI credits and calling minutes as she works.
-- **Automated workflows:** From Growth, workflows run your follow ups and can hand steps to Chloe.
-- **Two dialers:** Growth adds the power dialer, and Scale adds the predictive dialer and live call coaching.
-- **Bulk email:** Growth sends bulk email to a list, right alongside your calls and texts.
-- **WhatsApp through TimelinesAI:** A two way sync with TimelinesAI brings WhatsApp chats into Close, billed separately after a free first month.
-
-#### Pros
-
-- **Made for phone teams:** Two dialers and live call coaching make Close the natural pick for a team on the phone.
-- **AI from Solo up:** Even the $9 Solo plan includes Chloe and 500 AI credits per user a month.
-- **Low risk to try:** The trial runs 14 days with no card, and a 30 day money back guarantee follows.
-
-#### Cons
-
-- **Workflows on Growth:** Automated workflows, bulk email and the power dialer start at $99 a user billed yearly.
-- **Calls billed by use:** Calling and SMS pass through at cost, with most outbound calls around $0.02 a minute.
-- **Solo is for one seller:** Solo covers 1 user and up to 10,000 leads, and workflows start on Growth.
-
-#### Price and plans
-
-You can try Close free for 14 days with no credit card. Per user a month:
-
-- **Solo:** $9 billed yearly, or $19 monthly, for 1 user.
-- **Essentials:** $35 billed yearly, or $49 monthly.
-- **Growth:** $99 billed yearly, or $109 monthly.
-- **Scale:** $139 billed yearly, or $149 monthly.
-
-Close is the one we'd pick for a team that books meetings by phone, since Omniscient has no phone dialer.
-
-### 12. Nimble
+### 8. Nimble
 
 ```rating
 4.4 | Capterra | https://www.capterra.com/p/123032/Nimble/reviews/
 ```
 
-Nimble is a relationship CRM built for small teams that work in Microsoft 365 or Google Workspace. It builds contact records from your email, calendar and social accounts, and Nimble Prospector adds LinkedIn leads as you browse. Email sequences come in its one plan.
+**Overview**
 
-#### Key features
+Nimble is a relationship CRM built for small teams that work in Microsoft 365 or Google Workspace. It builds contact records from your email, calendar and social accounts, and Nimble Prospector saves LinkedIn leads as you browse. Email sequences come in its one plan. It is a relevant option for founders, consultants and small sales teams that mainly need relationship tracking with sequences, without tiers to compare.
 
-- **Nimble Prospector:** Find, enrich and save LinkedIn leads, or people on any website, without copying and pasting.
-- **Email sequences:** Send a series of automated emails from your own address, written by hand or with AI.
-- **Microsoft and Google sync:** Email, contacts and calendars sync from Microsoft 365 or Google Workspace.
-- **Saved segments:** Split your database into smaller groups for nurturing, and save searches you run often.
-- **Pipelines and reports:** Customizable deals and reports, with forecasting, templates and email tracking.
-- **Workflows:** Move a lead through qualification and onto your pipeline, with an email sequence along the way.
-- **Claude and ChatGPT:** Nimble works inside Claude and ChatGPT through its MCP connection.
+**Pros**
 
-#### Pros
+- Nimble Prospector for LinkedIn leads
+- Email sequences in the one plan
+- Microsoft 365 and Google sync
+- Works in Claude and ChatGPT through MCP
+- 14-day free trial, no credit card
 
-- **One plan for everyone:** Every seat gets the same tools, so there are no tiers to compare or outgrow.
-- **Sequences at the entry price:** Email sequences come with the $24.90 plan, for less than folk Premium's $48.
-- **Easy trial:** You get 14 days for up to 5 licenses, with no credit card.
+**Cons**
 
-#### Cons
+- No free plan
+- The account holds 25,000 contacts
+- Enrichment credits cost extra
 
-- **Contacts in blocks:** The account holds 25,000 contacts, and each extra 10,000 costs $10 a month.
-- **Paid extras:** Enrichment credits cost $10 a month per 100, and web chat and forms cost $12 a month per team after a free test.
-- **Newsletters as an add on:** Email marketing with the drag and drop editor is a $15 a month add on for the company.
+**Pricing**
 
-#### Price and plans
+- Nimble: [$29.90/seat/month billed annually](https://www.nimble.com/pricing/) or $35.90/seat/month billed monthly
 
-You can try Nimble free for 14 days with up to 5 licenses and no credit card. One plan, per seat a month:
+### 9. Clarify
 
-- **Nimble:** $24.90 billed yearly, or $29.90 monthly, with 25,000 contacts for the account.
+**Overview**
+
+Clarify is an AI CRM built for small teams that want everyone in the CRM without paying per seat. It records calls with or without a bot, sums them up and updates your records from them. Its agent, Rep, drafts email campaigns, enrolls leads in them and drafts replies in your voice. It works well for founders and small sales teams that mainly need AI notes and campaigns without a bill that grows with each hire.
+
+**Pros**
+
+- Unlimited seats on every plan
+- Call recorder and notetaker
+- Lead Finder and enrichment on Free
+- Clear credit cost for each AI task
+- Free plan available
+
+**Cons**
+
+- AI pauses when credits run out
+- Workflow automation starts on Growth
+- Free plan allows 1 active campaign
+
+**Pricing**
+
+- Free: [$0/month](https://www.clarify.ai/pricing), unlimited seats, 1,000 credits a month
+- Starter: $50/month for the workspace, billed monthly or annually
+- Growth: from $1,000/month billed annually
+- Enterprise: Custom pricing, contact sales
+
+### 10. Twenty
+
+**Overview**
+
+Twenty is an open source CRM designed for technical teams that want to own their data and shape the CRM around their business. You can run it in Twenty's cloud or host the open source core yourself, and you build custom objects and fields from Settings without code. Every cloud workspace ships with an MCP server. Many teams with an engineer use it as a flexible base before they add more tools around it.
+
+**Pros**
+
+- Open source with free self-hosting
+- Unlimited custom objects and fields
+- Google and Microsoft email and calendar sync
+- MCP server on cloud workspaces
+- 30-day free trial, no credit card
+
+**Cons**
+
+- More of the CRM to set up yourself
+- Pro includes about 100 AI tasks a week per member
+- Custom roles and SSO start on Organization
+
+**Pricing**
+
+- Self-hosted: [$0 for the open-source version](https://twenty.com/pricing)
+- Pro: $9/user/month billed annually
+- Organization: $39/user/month billed annually
+- Enterprise: from $50,000/year
+
+### 11. Streak
+
+```rating
+4.5 | Capterra | https://www.capterra.com/p/124465/Streak/reviews/
+```
+
+**Overview**
+
+Streak is a dedicated folk CRM alternative designed for teams that live in Gmail and want their pipeline inside the inbox. Each email shows the pipeline and stage it belongs to, and the full history is shared with your team automatically. Claude and ChatGPT can search deals and update records through it. Many founders and small teams use it as a specialized tool to run sales, hiring or deal flow without leaving Gmail.
+
+**Pros**
+
+- Pipelines right inside Gmail
+- Unlimited contacts, pipelines and records
+- Mail merge with automatic follow-ups
+- Native iOS and Android apps
+- Free Gmail tools, free forever
+
+**Cons**
+
+- Built for Gmail more than Outlook
+- Automations start on Pro+
+- Pro includes 20 AI credits per user a month
+
+**Pricing**
+
+- Free: [$0 for the Gmail tools](https://www.streak.com/pricing)
+- Pro: $49/user/month billed annually or $59/user/month billed monthly
+- Pro+: $69/user/month billed annually or $89/user/month billed monthly
+- Enterprise: $129/user/month billed annually or $159/user/month billed monthly
+
+### 12. Less Annoying CRM
+
+```rating
+4.8 | Capterra | https://www.capterra.com/p/118921/Less-Annoying-CRM/reviews/
+```
+
+**Overview**
+
+Less Annoying CRM is a simple CRM built for small businesses that have outgrown a spreadsheet and want something lighter than a big CRM. It logs email from a Google or Outlook inbox, saves calendar events to the right contact and sends a daily email with the people to follow up with. Every feature sits on one flat plan. It suits owners, consultants and small teams that want a tidy contact list with reminders.
+
+**Pros**
+
+- Email logging and calendar sync
+- Daily follow-up email
+- Unlimited pipelines and custom fields
+- Free email and phone support
+- 30-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- No email sequences or AI features
+- Sized for under about 50,000 contacts
+
+**Pricing**
+
+- Everything included: [$15/user/month](https://www.lessannoyingcrm.com/pricing)
 
 ### 13. Dex
 
-Dex is a personal CRM built for founders and professionals who want to keep up with the people they know, without a sales pipeline. It syncs your LinkedIn connections, email, calendar and WhatsApp into one private list, and tells you when someone changes jobs or it's time to get back in touch.
+**Overview**
 
-#### Key features
+Dex is a personal CRM designed for founders and professionals who want to keep up with the people they know, without a sales pipeline. It syncs your LinkedIn connections, email, calendar and WhatsApp into one private list. It tells you when someone changes jobs or when it's time to get back in touch. Many founders use it as a specialized tool to stay close to investors and advisors before they need a full CRM.
 
-- **LinkedIn sync:** Sync up to 2,500 connections on Premium or 9,000 on Professional, with job titles kept current.
-- **Job change alerts:** Dex tells you when a connection changes title, which makes a natural moment to reach out.
-- **Keep in touch reminders:** Reminders and birthday notices tell you when to get back in touch.
-- **Messaging sync:** Premium syncs WhatsApp and other messaging, plus your email and calendar.
-- **Everywhere you work:** Mobile, web and desktop apps, and a browser extension for Gmail, Facebook, Instagram and X.
-- **Mail merge:** Professional adds mail merge, plus the Outlook and notetaker integrations.
-- **MCP:** Claude, ChatGPT, Gemini and other MCP tools can read your contacts, notes and follow ups.
+**Pros**
 
-#### Pros
+- LinkedIn sync with current job titles
+- Job change alerts
+- Keep-in-touch and birthday reminders
+- Mobile, web and desktop apps
+- 7-day free trial
 
-- **Built for relationships:** Notes on how you met, family and gift ideas fit a personal network better than deal fields.
-- **Private by design:** Dex runs on subscriptions with no ads, and never sells your data to third parties.
-- **Low price:** Premium costs $12 a month on yearly billing, and students get 50% off for a year.
+**Cons**
 
-#### Cons
+- No sales pipeline or forecasts
+- The trial needs a credit card
+- Outlook starts on Professional
 
-- **Built for a network:** Dex has no sales pipeline, so stages and forecasts live in another CRM.
-- **Short trial with a card:** The 6 day trial asks for a credit card up front.
-- **Outlook on Professional:** The Outlook integration starts on Professional at $20 billed yearly.
+**Pricing**
 
-#### Price and plans
+- Premium: [$12/user/month billed annually](https://getdex.com/pricing) or $20/user/month billed monthly
+- Professional: $20/user/month billed annually or $34/user/month billed monthly
+- Team: $40/user/month billed monthly
 
-You can try Premium or Professional free for 6 days with a credit card. Per month:
+## 13 Best folk CRM Alternatives in 2027: Recap Table
 
-- **Premium:** $12 billed yearly, or $20 monthly.
-- **Professional:** $20 billed yearly, or $34 monthly.
-- **Team:** $40 per user, billed monthly.
-
-We'd point a founder to Dex when folk was mostly a place to remember investors and advisors.
-
-## folk alternatives compared
-
-Two things sort this list fastest: the seat price and the plan where email follow ups begin. The chart shows both on yearly billing for the tools that price per seat.
-
-![Price per seat a month on yearly billing. folk: Standard $24, email sequences on Premium at $48. Omniscient: Starter $19, with email sequences as Automation workflows. Attio: Plus $35, sequences on Pro at $79. Salesflare: Growth $29, email workflows on Pro at $49. Copper: Basic $23, email series on Business at $99. Streak: Pro $49, with mail merge and automatic follow ups. Twenty: Pro $9, with workflows on every plan. Nimble: one plan at $24.90, email sequences included. Dex: Premium $12, mail merge on Professional at $20. Close: Solo $9 for one user, workflows on Growth at $99. HubSpot, Pipedrive, Breakcold and Clarify are not shown](/assets/blog/folk-crm-alternatives/seat-prices.svg)
-
-The table adds how each tool lets you start for free, including the four the chart leaves out. Its prices are per month on yearly billing.
-
-| CRM | Free way to start | Email follow ups start on |
-|---|---|---|
-| folk | 2 week trial, no card | Premium, $48 a member |
-| Omniscient | 14 day trial, no card, free seats for viewers | Starter, $19 a seat, as workflows |
-| Attio | Free for 3 seats, 14 day Pro trial | Pro, $79 a user |
-| HubSpot | Free CRM for 2 users | Professional, plus a $1,500 onboarding fee |
-| Salesflare | 30 day trial, no card | Pro, $49 a user |
-| Breakcold | 14 day trial, card needed | Follow up drafts you approve, every plan |
-| Pipedrive | 14 day trial, no card | Campaigns as a paid add on |
-| Copper | Start free, no card | Business, $99 a seat |
-| Streak | 14 day trial, free email tools | Mail merge with follow ups on Pro, $49 a user |
-| Twenty | 30 day trial, no card, free to host | Workflows on every plan, Pro $9 a user |
-| Clarify | Free plan, unlimited seats | Free, with 1 campaign |
-| Close | 14 day trial, no card | Growth, $99 a user |
-| Nimble | 14 day trial, no card | The one plan, $24.90 a seat |
-| Dex | 6 day trial, card needed | Mail merge on Professional, $20 a month |
-
-## How to choose a folk alternative
-
-Start from what you want next, then run the two tools that match it with your own contacts for a week. These questions settle most cases:
-
-- If your deals start on LinkedIn, decide whether you want a tool that keeps your chats together (Breakcold), a sidebar beside each profile (Salesflare), or one that adds prospects as you browse (Copper or Nimble).
-- If you want one CRM for the whole sales motion, from the first lead to the closed deal, with Otto doing the busy work, try Omniscient.
-- If email follow ups are what you want next, Nimble includes sequences in its one plan, while Salesflare Pro and Streak Pro cost $49 a user on yearly billing, against $48 for folk Premium.
-- If seat count drives your bill, look at Clarify's unlimited seats, Breakcold's X5 or Omniscient's free seats for viewers.
-- If your team calls more than it writes, go straight to Close.
-- If you want to own the code and the data, Twenty is the only open source pick here.
-
-## How to move from folk to another CRM
-
-folk [exports](https://help.folk.app/en/articles/5007388-export-data) one group at a time: open the group, click the three dots next to the view name and choose "Export view as CSV". You get a zip with a contacts file and a notes file. Interactions, tasks and contact custom fields stay behind, so plan to rebuild those.
-
-We'd move in this order, with Omniscient as the example:
-
-```steps
-1. Show every column first: folk's export follows the columns and filters in the view, so show every field you want before you export each group.
-2. Connect your inbox and calendar: Add your email to the new CRM while folk keeps running, so the timeline starts filling.
-3. Import companies first: Bring them in with their domains, so Omniscient puts each imported person on the company that matches their email domain.
-4. Import people: Match each CSV column to a field, and keep in mind that rows without a valid email address are skipped.
-5. Rebuild open deals: Recreate them as opportunities, and keep folk's notes file next to them for reference.
-6. Check the history: Open five accounts you know well and make sure their emails, meetings and notes landed on the right company, person and deal.
+```tools
+Tool | Domain | Rating | Best feature | Starting price
+Omniscient | tryomniscient.com | Not rated | One agentic CRM for the whole sales motion | [$19/seat/month billed annually](/pricing/)
+HubSpot | hubspot.com | 4.5/5 | Free CRM with marketing tools | [From $20/seat/month](https://www.hubspot.com/pricing/sales)
+Attio | attio.com | Not rated | Custom objects and lead agents | [$40/month for the first user, then $35/user/month billed annually](https://attio.com/pricing)
+Pipedrive | pipedrive.com | 4.5/5 | Nova meeting notes on every plan | [See pricing](https://www.pipedrive.com/en/pricing)
+Salesflare | salesflare.com | 4.7/5 | Automatic capture with LinkedIn sidebar | [$29/user/month billed annually](https://salesflare.com/pricing)
+Close | close.com | 4.7/5 | Built-in calling and dialers | [$9/month billed annually](https://www.close.com/pricing)
+Copper | copper.com | 4.4/5 | CRM inside Google Workspace | [$23/seat/month billed annually](https://www.copper.com/pricing)
+Nimble | nimble.com | 4.4/5 | Sequences in one plan | [$29.90/seat/month billed annually](https://www.nimble.com/pricing/)
+Clarify | clarify.ai | Not rated | Unlimited seats, priced by credits | [$50/month for the workspace](https://www.clarify.ai/pricing)
+Twenty | twenty.com | Not rated | Open source data model | [$9/user/month billed annually](https://twenty.com/pricing)
+Streak | streak.com | 4.5/5 | Pipelines inside Gmail | [$49/user/month billed annually](https://www.streak.com/pricing)
+Less Annoying CRM | lessannoyingcrm.com | 4.8/5 | One simple flat plan | [$15/user/month](https://www.lessannoyingcrm.com/pricing)
+Dex | getdex.com | Not rated | Personal network reminders | [$12/user/month billed annually](https://getdex.com/pricing)
 ```
 
-Omniscient's CSV import takes people or companies, where people need an email address and companies need a domain. A record already in your workspace is matched on those and filled in, without overwriting anything your team set.
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=folk-crm-alternatives&start=crm)**
 
-![Omniscient's Import people from CSV dialog with 312 rows found, each column matched to a field: Full name to Name, Email to Email (required), Job title to Title, Phone to Phone and Company to Skip, with an Import 312 rows button](/assets/blog/folk-crm-alternatives/import.shot.html)
+## Conclusion
 
-If none of these 13 fit, our guide to the [best CRM for founders](/blog/best-crm-for-founders/) covers a few more for teams that sell through their network.
+A folk CRM alternative keeps your contacts, conversations and deals in one place. It turns the people you know into a pipeline your team can see.
 
-```cta
-Run Omniscient next to folk for 14 days and let Otto do the busy work, from the first lead to the closed deal.
-```
+The best tool does more than save profiles. It should find leads past your network, capture every email and call, prep each meeting and keep deals current, with answers your team can check.
+
+That is why [Omniscient](/) stands out. It combines lead lists, a shared memory of every conversation and skills that keep Otto consistent in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option. A folk group exported as a CSV imports as people, matched on email.
+
+![Omniscient's Import people from CSV dialog with 312 rows found, each column matched to a field: Full name to Name, Email to Email (required), Job title to Title, Phone to Phone and Company to Skip, with an Import 312 rows button](import.shot.html)
 
 ```faq
-Q: What is the best folk CRM alternative?
-A: That depends on what you need next. Omniscient fits teams that want one CRM for the whole sales motion, from finding leads to closing deals, and Salesflare fits teams that want automatic data entry with email workflows. Attio suits teams that design their own objects, and Close suits teams that sell by phone.
-Q: Is there a cheaper alternative to folk?
-A: Yes. folk Standard costs $24 per member a month billed yearly, while Twenty starts at $9 per user, Dex at $12 a month, Omniscient at $19 per seat and Copper at $23 per seat, all billed yearly. HubSpot, Attio and Clarify also have free plans.
-Q: Does folk automate LinkedIn outreach?
-A: folkX saves LinkedIn profiles and lists, syncs your LinkedIn conversations to folk and fills your message templates inside LinkedIn chats. folk's sequences send email only, with up to 10 steps, on Premium.
-Q: Which folk alternative keeps LinkedIn messages in the CRM?
-A: Breakcold keeps LinkedIn, WhatsApp, Telegram and email conversations in one inbox, and Salesflare's LinkedIn sidebar saves profiles and updates the CRM as you browse.
-Q: Which folk plan includes email sequences?
-A: Premium, at $48 per member a month billed yearly or $60 monthly. Premium also adds custom objects and deals, dashboards and API access.
-Q: Can I move my contacts from folk to Omniscient?
-A: Yes. Export each folk group as a CSV, then import it as people in Omniscient, where each row is matched on its email address.
+Q: What is a folk CRM alternative?
+A: A folk CRM alternative is a CRM that keeps your contacts, conversations and deals in one place by syncing your inbox, your calendar and the profiles you save. Teams pick one when they want sequences, deals or a full shared history on a different plan, or a CRM that reaches past their own network.
+Q: How do folk CRM alternatives capture contacts and conversations?
+A: folk CRM alternatives connect to Gmail or Outlook and your calendar, then match each email and meeting to the right person, company and deal. Many add a Chrome extension or sidebar that saves LinkedIn profiles as you browse. Agentic CRMs such as Omniscient also merge duplicates and fill in missing details, and you can undo any of it.
+Q: Why use a folk CRM alternative for your sales team?
+A: A folk CRM alternative can give a sales team deals, follow-ups and the full history of every account on a plan that fits its size. Some tools include AI in the seat, some skip per-seat pricing, and some build new lead lists, so the pipeline no longer depends on who you already know.
+Q: What features should modern folk CRM alternatives include?
+A: Modern folk CRM alternatives should include email and calendar sync, LinkedIn capture, pipelines and email follow-ups. The strongest ones also keep a shared memory of every email, call and note, answer questions with the quote behind each fact, and build lead lists from a plain description. Omniscient combines all of these on Omniscience, its shared memory.
+Q: Which tool is recommended for teams that need more than a relationship CRM?
+A: For teams that need more than a relationship CRM, Omniscient is the recommended pick, since it is one agentic CRM for the whole sales motion, from finding leads to closing deals. Teams that sell mostly by phone may prefer Close, and founders who only want to keep up with their own network may prefer Dex.
+```
+
+```cta
+Ready to use Omniscient? Try one agentic CRM for the whole sales motion free for 14 days.
 ```

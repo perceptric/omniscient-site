@@ -121,79 +121,191 @@ Here are the 6 agentic CRMs we'd look at first, with what each one is best at.
 Prices are from each vendor's site in November 2026.
 ```
 
-```tools
-Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
-Attio | attio.com | A flexible CRM with custom agents you describe in plain words | [See pricing](https://attio.com/pricing) | Teams that want to design their own data model and agents
-Day AI | day.ai | A customer memory and a set of named agents for go-to-market teams | [Free plan, agents from $24 a month](https://day.ai/pricing) | Teams that want to hire agents for set roles
-Lightfield | lightfield.com | An AI-native CRM that updates itself from every customer interaction | [Starter $89 per user a month, billed monthly](https://lightfield.com/pricing) | Funded teams that want recording and outbound in the CRM
-HubSpot | hubspot.com | A sales and marketing platform with an Agent Hub for its AI agents | [See pricing](https://www.hubspot.com/pricing/sales) | Teams that run sales and marketing in one place
-Salesforce | salesforce.com | An enterprise CRM with Agentforce, its AI agent platform | [Flex Credits $500 per 100,000](https://www.salesforce.com/agentforce/pricing/) | Large teams already on Salesforce
-```
-
 ### 1. Omniscient
 
-Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account. Otto, its built-in agent, does the busy work at every step. All of it runs on [Omniscience](/product/omniscience/), a shared memory of every customer conversation that your team and AI agents can ask anything.
+**Overview**
+
+Omniscient is one of the most relevant agentic CRMs for teams that want one agentic CRM for the whole sales motion. Instead of only answering questions, Otto, its built-in agent, finds leads, captures every email and call, runs skills and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want agents doing the busy work without juggling several tools.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=agentic-crm&start=crm
 ```
 
-What Otto does for you:
-
-- **Finds leads:** Describe your buyer and Otto builds a lead list with work emails.
-- **Runs skills:** Ready [skills](/product/skills/) for researching an account, prepping a meeting, wrapping up a call and reviewing the pipeline, plus skills your team writes.
-- **Updates deals with proof:** After a call, Otto suggests stage, amount and next step changes, each with the customer's words behind it. Nothing changes until you accept.
-- **Answers anything:** Ask about any account and get an answer with the quote and date behind each fact.
-
 ![Omniscient opportunity record for Pallet Cloud, where Otto filled the amount, close date and decision maker from a discovery call with the quote behind each one, and two more changes wait in Suggestions](/assets/blog/best-ai-crm/record.shot.html)
 
-Paid seats include the CRM's AI, and [Omniscient's plans](/pricing/) start at $19 per seat a month on Starter, billed yearly, with a 14-day free trial of Pro and no credit card. Omniscient has no phone dialer, so Close fits teams that sell by phone.
+**Pros**
+
+- [Lead lists from a plain description of your buyer](/product/find-leads/)
+- [Deal updates with the customer's words](/product/meetings/)
+- [Answers with the quote behind each fact](/product/ask-otto/)
+- [Skills keep every rep's work consistent](/product/skills/)
+- [AI included in every paid seat](/pricing/)
+
+**Cons**
+
+- No phone dialer, so Close fits phone teams
+
+**Pricing**
+
+- Free: $0 for teammates who only view or log data
+- Starter: [$19/seat/month billed annually](/pricing/)
+- Pro: $49/seat/month billed annually
+- Business: $99/seat/month billed annually
 
 ### 2. Attio
 
-Attio is a flexible CRM that lets you shape objects, records and workflows around your business. Its [custom agents](https://attio.com/platform/custom-agents) take a play you describe in plain words and run it on every record.
+**Overview**
 
-- **Example agents:** Lead scoring against your ideal customer, meeting prep, deal risk alerts and call coaching against your own scorecard.
-- **Model choice:** You pick the model, such as Claude, GPT or Gemini.
-- **Control:** Each agent runs with the permissions of a person you name, and an agent log shows its work. You can pause, replay or cancel any run.
+Attio is a strong agentic CRM for founders, operators and revenue teams who shape objects, records and workflows around their business. Its [custom agents](https://attio.com/platform/custom-agents) take a play you describe in plain words and run it on every record, with the model you pick. A key strength is control, since each agent runs with a named person's permissions, which makes it attractive for teams that want to check agent work.
 
-Our [Attio review](/blog/attio-review/) covers its plans and credits in detail.
+**Pros**
+
+- Custom agents from plain words
+- Lead scoring, meeting prep and deal risk agents
+- Choice of Claude, GPT or Gemini
+- Agent log to pause, replay or cancel runs
+- Free plan for up to 3 users
+
+**Cons**
+
+- AI features run on monthly credits
+- Call Intelligence starts on Pro
+- Agents take time to design and tune
+
+**Pricing**
+
+- Free: [$0/month for up to 3 users](https://attio.com/pricing)
+- Plus: $40/month for the workspace and first user, then $35/user/month billed annually
+- Pro: $100/month for the workspace and first user, then $79/user/month billed annually
+- Ultra: $1,000/month with 5 users, then $189/user/month billed annually
 
 ### 3. Day AI
 
-Day AI builds a customer memory from your email, calendar, meetings and Slack, then lets you deploy named agents with set roles.
+**Overview**
 
-- **Agent roles:** Sales assistant, meeting notetaker, account executive, sales coach, revenue operations manager and more, by plan.
-- **Pricing:** Charged per agent, with a free plan and paid agents from $24 a month on [Day AI's plans](https://day.ai/pricing).
-- **Teammates:** Free to add once the workspace has a Professional agent or higher.
+Day AI is a practical agentic CRM for founders, revenue leaders and account executives who want to hire agents for set roles. It builds a customer memory from your email, calendar, meetings and Slack, then lets you deploy named agents, such as a sales coach. It is a relevant option for teams that want agents with clear jobs and free seats for teammates.
+
+**Pros**
+
+- Customer memory from email, meetings and Slack
+- Named agents with set roles
+- Meeting notetaker agent
+- Teammates free once a Professional agent is on
+- Free plan to start
+
+**Cons**
+
+- Free teammates need a paid Professional agent
+- Agent roles vary by plan
+- Per-agent pricing takes some planning
+
+**Pricing**
+
+- Free: [$0/month](https://day.ai/pricing)
+- Turbo: $24/agent/month billed annually
+- Professional: $60/agent/month billed annually, with Executive at $200/agent/month
+- Super: $800/agent/month, annual plans only
 
 ### 4. Lightfield
 
-Lightfield is an AI-native CRM that updates itself from every customer interaction. Its agents run outbound, flag deals at risk and point you to where to focus next.
+**Overview**
 
-- **Ask Lightfield:** Answers questions about your records, like what churned accounts had in common.
-- **Skills:** Account research, call prep, meeting recaps, follow-up emails and deal reviews.
-- **Starter:** $89 per user a month, billed monthly, for up to 3 seats, with a 14-day free trial.
-- **Pro:** $999 a month for the workspace, billed yearly, with 5 capture seats and any number of viewer seats on [Lightfield's plans](https://lightfield.com/pricing).
+Lightfield is an AI-native CRM built to update itself from every customer interaction. Its agents run outbound, flag deals at risk and point you to where to focus next, and Ask Lightfield answers questions about your records. It is a relevant option for funded sales teams, founders and revenue leaders who want outbound and deal reviews without stitching tools together.
+
+**Pros**
+
+- Records update from every interaction
+- Agents for outbound and deals at risk
+- Ask Lightfield answers record questions
+- Skills for research, call prep and recaps
+- 14-day free trial on Starter
+
+**Cons**
+
+- Starter covers up to 3 seats
+- Workspace pricing from $999 a month on Pro
+- Record updates need a capture seat
+
+**Pricing**
+
+- Starter: [$89/user/month billed monthly](https://lightfield.com/pricing), up to 3 seats
+- Pro: $999/month for the workspace billed annually, with 5 capture seats
+- Growth: $2,999/month for the workspace billed annually
+- Enterprise: Custom pricing, contact sales
 
 ### 5. HubSpot
 
-HubSpot's [Agent Hub](https://www.hubspot.com/products/artificial-intelligence) is one home for its AI agents across the platform. For sales teams, two agents stand out:
+```rating
+4.5 | Capterra | https://www.capterra.com/p/152373/HubSpot-CRM/reviews/
+```
 
-- **Prospecting Agent:** Watches buying signals and starts personal outreach.
-- **Data Agent:** Pulls insights from your CRM, calls and documents.
+**Overview**
 
-Agent Hub comes with every Starter, Professional and Enterprise edition, and many agents run on HubSpot Credits.
+HubSpot is one of the most widely used CRMs with agents, built for marketers, sales reps and service teams that run sales and marketing in one place. Its [Agent Hub](https://www.hubspot.com/products/artificial-intelligence) is one home for AI agents across the platform, and its sales agents watch buying signals and pull insights from your CRM, calls and documents. This makes it a common choice for teams already on HubSpot.
+
+**Pros**
+
+- Agent Hub on every paid edition
+- Prospecting Agent starts personal outreach
+- Data Agent reads CRM, calls and documents
+- Marketing and sales on one record
+- Free CRM for up to 2 users
+
+**Cons**
+
+- Many agents run on HubSpot Credits
+- Professional adds a $1,500 onboarding fee
+- Sequences and forecasting start on Professional
+
+**Pricing**
+
+- Free: $0/month for up to 2 users
+- Starter: [from $20/seat/month](https://www.hubspot.com/pricing/sales), with lower prices for new customers
+- Professional: $90 to $100/seat/month by how you pay, plus $1,500 one-time onboarding
+- Enterprise: from $150/seat/month, plus $3,500 one-time onboarding
 
 ### 6. Salesforce
 
-[Agentforce](https://www.salesforce.com/agentforce/) is Salesforce's AI agent platform. Its sales agents include:
+```rating
+4.4 | Capterra | https://www.capterra.com/p/61368/Salesforce/reviews/
+```
 
-- **Sales Development Representative:** Answers prospect questions, handles objections and books meetings.
-- **Sales Coach:** Runs role-play practice tailored to each deal.
+**Overview**
 
-You can start free with Salesforce Foundations. Flex Credits cost $500 per 100,000, and each Agentforce action uses 20 credits.
+Salesforce is one of the most established CRMs with agents, used by sales reps, admins and enterprise sales leaders. [Agentforce](https://www.salesforce.com/agentforce/), its AI agent platform, includes a Sales Development Representative that answers prospect questions and books meetings, and a Sales Coach that runs role-play practice for each deal. A key strength is depth, making it suitable for large teams already on Salesforce.
+
+**Pros**
+
+- Agentforce agents for sales
+- SDR agent books meetings
+- Sales Coach role-play for each deal
+- Editions from a Free Suite up to Max
+- Start free with Foundations
+
+**Cons**
+
+- Each Agentforce action spends 20 Flex Credits
+- Built-in AI starts on Enterprise at $195
+- Setup works best with an admin or partner
+
+**Pricing**
+
+- Free Suite: [$0/user/month](https://www.salesforce.com/sales/pricing/)
+- Starter Suite: $25/user/month billed monthly or annually
+- Pro Suite: $100/user/month billed annually
+- Enterprise: $195/user/month billed annually, with Flex Credits at $500 per 100,000
+
+```tools
+Tool | Domain | Rating | Best feature | Starting price
+Omniscient | tryomniscient.com | Not rated | One agentic CRM for the whole sales motion | [$19/seat/month billed annually](/pricing/)
+Attio | attio.com | Not rated | Custom agents from plain words | [$40/month with the first user, billed annually](https://attio.com/pricing)
+Day AI | day.ai | Not rated | Named agents with set roles | [$24/agent/month billed annually](https://day.ai/pricing)
+Lightfield | lightfield.com | Not rated | Agents for outbound and deal risk | [$89/user/month billed monthly](https://lightfield.com/pricing)
+HubSpot | hubspot.com | 4.5/5 | Agent Hub across the platform | [From $20/seat/month](https://www.hubspot.com/pricing/sales)
+Salesforce | salesforce.com | 4.4/5 | Agentforce sales agents | [$25/user/month](https://www.salesforce.com/sales/pricing/)
+```
+
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=agentic-crm&start=crm)**
 
 For a wider list, our roundup of the [best AI CRMs](/blog/best-ai-crm/) compares 14 tools, and our guide to a [CRM with automatic data entry](/blog/crm-with-automatic-data-entry/) goes deeper on the capture step.
 

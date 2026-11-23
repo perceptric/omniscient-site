@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 596" width="720" height="596" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Starting price of the lowest paid seat</title>
+<desc id="d">The lowest paid seat a month for nine CRMs with automatic data entry: Omniscient $19 billed yearly, HubSpot from $20, Copper $23 billed yearly, folk $24, Salesforce $25, Salesflare $29 billed yearly, Attio $40 for the workspace and first user billed yearly, Coffee $50 and Lightfield $89 billed monthly. Day AI, Clarify, Affinity and Pipedrive are left out because they price per agent, per workspace, per year, or have no figure here.</desc>
+<rect width="720" height="596" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Starting prices</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Lowest paid seat, per month</text>
+<line x1="180.0" y1="120" x2="180.0" y2="520" stroke="#ebebeb"/>
+<line x1="302.2" y1="120" x2="302.2" y2="520" stroke="#ebebeb"/>
+<line x1="424.4" y1="120" x2="424.4" y2="520" stroke="#ebebeb"/>
+<line x1="546.7" y1="120" x2="546.7" y2="520" stroke="#ebebeb"/>
+<text x="32" y="154" font-size="18" font-weight="500" fill="#171717">Omniscient</text>
+<rect x="180" y="136" width="92.9" height="24" rx="4" fill="#0C8C5E"/>
+<text x="282.9" y="154" font-size="17" fill="#525252">$19</text>
+<text x="32" y="198" font-size="18" font-weight="500" fill="#171717">HubSpot</text>
+<rect x="180" y="180" width="97.8" height="24" rx="4" fill="#333333"/>
+<text x="287.8" y="198" font-size="17" fill="#525252">$20</text>
+<text x="32" y="242" font-size="18" font-weight="500" fill="#171717">Copper</text>
+<rect x="180" y="224" width="112.4" height="24" rx="4" fill="#333333"/>
+<text x="302.4" y="242" font-size="17" fill="#525252">$23</text>
+<text x="32" y="286" font-size="18" font-weight="500" fill="#171717">folk</text>
+<rect x="180" y="268" width="117.3" height="24" rx="4" fill="#333333"/>
+<text x="307.3" y="286" font-size="17" fill="#525252">$24</text>
+<text x="32" y="330" font-size="18" font-weight="500" fill="#171717">Salesforce</text>
+<rect x="180" y="312" width="122.2" height="24" rx="4" fill="#333333"/>
+<text x="312.2" y="330" font-size="17" fill="#525252">$25</text>
+<text x="32" y="374" font-size="18" font-weight="500" fill="#171717">Salesflare</text>
+<rect x="180" y="356" width="141.8" height="24" rx="4" fill="#333333"/>
+<text x="331.8" y="374" font-size="17" fill="#525252">$29</text>
+<text x="32" y="418" font-size="18" font-weight="500" fill="#171717">Attio</text>
+<rect x="180" y="400" width="195.6" height="24" rx="4" fill="#333333"/>
+<text x="385.6" y="418" font-size="17" fill="#525252">$40</text>
+<text x="32" y="462" font-size="18" font-weight="500" fill="#171717">Coffee</text>
+<rect x="180" y="444" width="244.4" height="24" rx="4" fill="#333333"/>
+<text x="434.4" y="462" font-size="17" fill="#525252">$50</text>
+<text x="32" y="506" font-size="18" font-weight="500" fill="#171717">Lightfield</text>
+<rect x="180" y="488" width="435.1" height="24" rx="4" fill="#333333"/>
+<text x="625.1" y="506" font-size="17" fill="#525252">$89</text>
+<text x="32" y="552" font-size="15" fill="#737373">Lowest paid tier per seat or user. Billing terms vary; see each entry.</text>
+<text x="32" y="576" font-size="15" fill="#737373">Left out: Day AI (per agent), Clarify (per workspace), Affinity (per year), Pipedrive.</text>
+</svg>

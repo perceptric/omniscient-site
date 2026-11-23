@@ -1,349 +1,482 @@
 ---
-title: "Best CRM for Founders in 2026: 13 Picks With Prices"
+title: "13 Best CRMs for Founders in 2027"
 slug: best-crm-for-founders
 target_keyword: "best crm for founders"
-meta_description: "The best CRM for founders who still sell in 2026: 13 CRMs compared on inbox capture, privacy for investor mail, today's prices and handing off to a first rep."
+meta_description: "The 13 best CRMs for founders in 2027, with prices, ratings, pros and cons, and why Omniscient leads as the one agentic CRM for the whole sales motion."
 type: best-of
 topic: crm
-updated: 2026-11-15
-read_minutes: 16
-summary: "13 CRMs for founders who still do the selling, compared on inbox capture, what teammates can see, today's prices and the handoff to a first sales hire."
+updated: 2026-11-23
+summary: "13 CRMs for founders who still sell, each with its rating, pros, cons and current prices, led by one agentic CRM for the whole sales motion."
 ---
 
-# Best CRM for Founders in 2026: 13 Picks With Prices
+# 13 Best CRMs for Founders in 2027
 
-The best CRM for founders captures every deal from the inbox you sell with, and lets you choose what your team can see. While you're still the main seller, that inbox holds customer threads next to investor updates and offer letters.
+Your inbox shows every buyer you've talked to this quarter. It hides which deals moved, which ones need a reply today and what you promised on last week's call. It also mixes customer threads with investor updates and offer letters, so handing it to a first hire feels risky.
 
-Below are the 13 best picks for 2026 with today's prices, judged on how founders sell: in short bursts between other work, and mostly through their own network.
+A CRM for founders fixes this. It builds deal records from the email, calendar and calls you already have, so the pipeline stays current while you run the company. It suits founders who still sell, cofounders who look things up, and the first account executives and SDRs who take over the deals.
 
-```callout
-Prices are from each vendor's site in November 2026.
-```
+The result is fewer lost threads and a clean handoff when you hire. 🚀
 
-Our quick picks, by the way you sell:
+## What Is a CRM for Founders?
 
-- Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads to closing deals, with Otto doing the busy work while you run the company.
-- Pick folk if your deals come from your network and your LinkedIn contacts.
-- Pick Attio if you want investors and partners next to your customers, in a workspace you design.
-- Pick HubSpot if you and a cofounder want a free CRM to start with.
-- Pick Pipedrive if you're about to hire your first rep and want a board of stages you can both learn quickly.
-- Pick Streak if you run your sales from Gmail.
-- Pick Close if you sell by phone.
-- Pick Clarify if you want every teammate in the CRM without paying per seat.
-- Pick Twenty if you're a technical founder who wants to own the code.
-- Pick Dex if the people around your deals, like investors and advisors, matter as much as the pipeline.
+**A CRM for founders is a sales tool that keeps every deal, contact and conversation in one place by capturing them from the founder's own email, calendar and calls.** It connects to Gmail or Outlook, matches each thread and meeting to the right company and person, and shows open deals on a board of stages. Most run as a web app, with a Chrome extension or a mobile app for selling between meetings. The best ones also let you choose what teammates can see, since a founder's inbox holds investor and hiring mail next to customer threads.
 
-```tools
-Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
-folk | folk.app | An AI CRM for small teams, with a LinkedIn extension | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who sell through their network
-Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Founders who track investors and partners too
-HubSpot | hubspot.com | A CRM platform with a free plan that doesn't expire | [Free for up to 2 users](https://www.hubspot.com/products/crm) | Cofounders who want a free start
-Pipedrive | pipedrive.com | A pipeline CRM with meeting intelligence on every plan | check | A first sales hire who works by stage
-Streak | streak.com | A CRM that works inside Gmail | [$49 per user a month, billed yearly](https://www.streak.com/pricing) | Founders who run sales from Gmail
-Close | close.com | A CRM for calling, email and SMS | [$9 a month for one user, billed yearly](https://www.close.com/pricing) | Founders who sell by phone
-Lightfield | lightfield.com | An AI CRM that updates itself from every customer interaction | [$89 per user a month](https://lightfield.com/pricing) | Founders who want capture and call recording in one tool
-Day AI | day.ai | An AI CRM with agents on a shared memory of your team's mail and meetings | [$60 per agent a month, billed yearly](https://day.ai/pricing) | Founders who want agents and free seats for teammates
-Clarify | clarify.ai | An AI CRM priced by AI work, with unlimited seats | [Free, then $50 a month](https://www.clarify.ai/pricing) | Founders who want the whole team in at no seat cost
-Salesflare | salesflare.com | A B2B CRM that fills itself in from email, calendar and the web | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small B2B teams that follow up by email
-Twenty | twenty.com | An open source CRM you host yourself or run in its cloud | [$9 per user a month, billed yearly](https://twenty.com/pricing) | Technical founders who want to own their CRM
-Dex | getdex.com | A personal CRM that keeps your network in one place | [$12 a month, billed yearly](https://getdex.com/pricing) | Founders keeping up with investors and introductions
-```
+Most tools include:
 
-## What a founder needs from a CRM
+- ✅ Email and calendar sync
+- ✅ A pipeline of deal stages
+- ✅ Follow-up reminders
+- ✅ Free seats or low entry prices
 
-You sell between investor meetings and product work, and you're often the only person who knows the whole story of a deal. These are the needs we'd check first:
+The result is a pipeline that stays current even in a busy fundraising month.
 
-- Records that fill in from your email and calendar, since typing notes after every call rarely fits a founder's week.
-- A choice over what teammates see, because your inbox also holds investor and hiring mail.
-- A reminder when a deal goes quiet, so a busy fundraising month doesn't cost you a customer.
-- A place for deals that start on LinkedIn or through an introduction.
-- A low price for one seat, plus an easy way to add a first sales hire and a cofounder who mostly looks things up.
+## Why Do You Need a CRM for Founder-Led Sales?
 
-We'd weigh the first two needs above the rest. They decide whether the CRM holds the whole story of each deal, and whether you'll ever let anyone else read it.
+Running sales from your inbox and your memory works for the first ten customers. Past that, deals slip between investor meetings and product work, and a teammate can't pick them up. A CRM for founders solves this.
 
-## How to share a founder's inbox safely
-
-Omniscient's CRM builds its records from the email and calendar each person connects, all joined in [Omniscience](/product/omniscience/), its shared memory. For a founder, that one inbox mixes buyers with board members, candidates and lawyers.
-
-So every connected inbox in Omniscient has its own rule for what teammates see, and only the person who connected it can change it. The database enforces the rule, so answers from [Ask Otto](/product/ask-otto/) follow it too.
-
-The three rules work like this:
-
-- Full access shows teammates the subject, a preview and the facts Otto found, each with its quote.
-- Who and when only shows who you emailed or met and when, plus Otto's facts without their quotes.
-- Only me keeps everything from that inbox with you, including the facts and suggestions Otto made from it.
+- **Less typing:** Records fill in from email and meetings, so notes after every call stop piling up.
+- **Clear next steps:** Reminders flag deals with no recent contact, so a busy month doesn't cost you a customer.
+- **Safe sharing:** Sharing rules keep investor and hiring mail private while teammates see customer threads.
+- **One memory for the team:** Every email, call and note sits on the account, so your first hire inherits the full story of each deal.
 
 ![Table of what a teammate sees from your inbox in Omniscient under each sharing rule: full access shows who and when, the subject and preview, Otto's facts and the quotes behind them; who and when only shows who and when plus Otto's facts without quotes; only me shows nothing. People on your do not track list are never synced from your inbox](/assets/blog/best-crm-for-founders/inbox-sharing.svg)
 
-Each rule applies to a whole inbox at once. If investors and customers write to the same address, put investor domains on the do not track list, and Omniscient won't sync those people.
+## 13 Best CRMs for Founders in 2027!
 
-Because the list works person by person, an email to both an investor and a customer still syncs for the customer. Under full access, your team can read its subject and preview.
+Here are the 13 CRMs we'd shortlist for founders who still do the selling.
 
-You can test all of this on a free plan or a trial before you commit. Step 2 of the checklist near the end of this guide shows how.
+### CRMs for Founders: Quick Match
 
-## The best CRM for founders: 13 picks for 2026
+```tree
+How do most of your deals start?
+  Email and meetings: What matters most next?
+    Agents doing the busy work: Omniscient, Day AI, Lightfield, Clarify
+    A free start: HubSpot, Attio
+    A first sales hire: Pipedrive, Omniscient
+  LinkedIn and introductions: folk, Salesflare, Dex
+  Phone calls: Close
+  Gmail or your own code: Which one?
+    Gmail all day: Streak
+    Code you own: Twenty
+```
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, so a founder who still sells gets time back for the rest of the company. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
+**Overview**
 
-All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
+Omniscient is one of the most relevant CRMs for founders who want one agentic CRM for the whole sales motion. Instead of only storing deals, Otto, its built-in agent, finds leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for founders who still sell and want time back for the rest of the company without juggling several tools.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-founders&start=crm
 ```
 
-#### Key features
+**Pros**
 
-- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
-- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
-- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
-- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
-- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
-- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
-- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
+- [Every email and meeting captured](/product/email-sync/)
+- [Lead lists from a plain description](/product/find-leads/)
+- [Answers with the quote behind each fact](/product/ask-otto/)
+- [Skills keep every answer consistent](/product/skills/)
+- [AI included in every paid seat](/pricing/)
 
-Each weekday morning, a short digest lists the deals and emails that need you, so you start the day knowing where to look.
+**Cons**
+
+- Not a phone dialer, so phone-first founders may prefer Close
+- No bulk marketing email
+
+**Pricing**
+
+- Free: $0 for teammates who only view or log data
+- Starter: [$19/seat/month billed annually](/pricing/)
+- Pro: $49/seat/month billed annually
+- Business: $99/seat/month billed annually
 
 ![Omniscient's weekday morning digest for a founder: two meetings today, three emails to answer from Pallet Cloud, Shiftwise and Ledgerly, and two deals that need attention, Verda with no contact in 16 days and Ledgerly with a passed close date](/assets/blog/best-crm-for-founders/digest.shot.html)
 
-#### Pros
+### 2. HubSpot
 
-- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
-- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
-- **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
-- **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
-- **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
+```rating
+4.5 | Capterra | https://www.capterra.com/p/152373/HubSpot-CRM/reviews/
+```
 
-#### Cons
+**Overview**
 
-- **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
-- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
-- **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
+HubSpot is one of the most widely used CRMs for founders who want a free place to start and room to grow. Its free CRM has no expiry date and runs marketing, sales and service on one shared record. Breeze Assistant, its AI helper, comes with the free plan too. This makes it a common choice for cofounders who want a free start and expect to add marketing later.
 
-#### Price and plans
+**Pros**
 
-You can try Pro free for 14 days with no credit card. Paid seats, billed yearly (monthly billing costs 20% more):
+- Free CRM for up to 2 users
+- Email tracking and meeting links
+- Marketing, sales and service on one CRM
+- Startup discount for eligible teams
+- Free plan with no expiry date
 
-- **Free:** $0 for teammates who only view or log data.
-- **Starter:** $19 per seat a month.
-- **Pro:** $49 per seat a month.
-- **Business:** $99 per seat a month.
+**Cons**
 
-The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
+- Professional adds a $1,500 onboarding fee
+- AI agents run on monthly credits
+- Free plan capped at 2 users and 1,000 contacts
 
-### 2. folk
+**Pricing**
 
-folk is an AI CRM that keeps a small team's contacts and pipelines in one place, with a LinkedIn extension for Chrome.
-
-- [Standard costs $24 per member a month billed yearly, or $30 monthly](https://www.folk.app/pricing), and Premium costs $48, or $60 monthly.
-- Standard includes pipelines, email campaigns, the LinkedIn extension and email, calendar and WhatsApp sync.
-- Email sequences, deals, custom objects and dashboards start on Premium.
-- The 2 week trial includes the Premium features and needs no credit card.
-
-Deal reminders count the days since you last connected with someone, with a follow up button beside each one. That suits a founder whose deals come through introductions and LinkedIn conversations.
+- Free: $0/month for up to 2 users
+- Starter: [from $20/seat/month](https://www.hubspot.com/pricing/sales), with lower prices for new customers
+- Professional: $90 to $100/seat/month by billing, plus $1,500 one-time onboarding
+- Enterprise: from $150/seat/month, plus $3,500 one-time onboarding
 
 ### 3. Attio
 
-Attio is a flexible CRM that you shape around your own objects, with agents that prospect and draft follow ups for you to approve. Connect your inbox and calendar, and Attio captures your emails and calls on its own.
+**Overview**
 
-- The Free plan covers up to 3 seats, 3 objects and 50,000 records, with one synced email account per user.
-- [Plus costs $35 per seat a month billed yearly, or $44 monthly](https://attio.com/pricing), for up to 10 seats and 5 objects.
-- Pro costs $79 a seat billed yearly, or $99 monthly, and adds Call Intelligence, sequences and permission controls.
-- The Pro trial lasts 14 days, and you can start without a credit card.
+Attio is a strong CRM for founders who want to design their own data model. You shape the objects and lists yourself, so an investor pipeline can sit next to the customer one. Connect your inbox and calendar and it captures emails and calls on its own, while its agents prospect and draft follow-ups for you to approve. A key strength is that freedom to build, which makes it attractive for founders who track investors and partners too.
 
-Attio lets you build an investor pipeline next to the customer one, because you design the objects and lists yourself. Free covers 3 objects and Plus covers 5, so count the ones you plan before you pick a plan. If you're weighing it against us, [Omniscient vs Attio](/blog/omniscient-vs-attio/) puts the two side by side.
+**Pros**
 
-### 4. HubSpot
+- Custom objects for investors and partners
+- Automatic email and call capture
+- Agents that prospect and draft follow-ups
+- Startup program with 80% off Pro in year 1
+- Free plan for up to 3 users
 
-HubSpot is a customer platform that runs marketing, sales and service on one shared CRM, and its free CRM has no expiry date.
+**Cons**
 
-- [The free CRM covers up to 2 users and 1,000 contacts](https://www.hubspot.com/products/crm), with email tracking, meeting links, deal pipelines and Breeze Assistant.
-- [Sales Hub Starter costs $20 per seat a month](https://www.hubspot.com/pricing/sales), with a lower $7 starting price for new customers.
-- Professional starts at $90 per seat a month, plus a required one time onboarding fee of $1,500.
+- AI runs on monthly credits by plan
+- Call Intelligence and sequences start on Pro
+- Free covers 3 objects and Plus covers 5
 
-Two cofounders can run their first pipeline on the free CRM. When you grow into Professional, its onboarding fee comes on top of the seat price.
+**Pricing**
 
-### 5. Pipedrive
+- Free: $0/month for up to 3 users
+- Plus: [$40/month for the workspace and first user, then $35/user/month billed annually](https://attio.com/pricing), or $50, then $44/user/month billed monthly
+- Pro: $100/month for the workspace and first user, then $79/user/month billed annually, or $125, then $99/user/month billed monthly
+- Ultra: $1,000/month with 5 users, then $189/user/month, billed annually
 
-Pipedrive is a sales CRM that lays out your deals as a pipeline of stages, with a meeting assistant on every plan.
+### 4. Pipedrive
 
-- Nova, its meeting assistant, pulls in deal history before a call, records and transcribes it, then suggests CRM updates for you to approve.
-- Nova comes with every plan at no extra cost.
-- The free trial lasts 14 days with no credit card.
-- See [Pipedrive's plans](https://www.pipedrive.com/en/pricing) for current prices.
+```rating
+4.5 | Capterra | https://www.capterra.com/p/132666/Pipedrive/reviews/
+```
 
-Pipedrive fits the month you hire your first rep, because a board of stages is quick to learn and easy to review together.
+**Overview**
 
-### 6. Streak
+Pipedrive is a practical sales CRM for founders who are about to hire a first rep. It lays out deals as a board of stages that a new seller can learn quickly. Nova, its meeting assistant, pulls in deal history before a call, records and transcribes it, then suggests CRM updates for you to approve. A key strength is that Nova comes with every plan, which makes it a good fit for small teams that review the pipeline together.
 
-Streak is a CRM that works inside Gmail, so your pipelines and deals sit next to the emails they came from.
+**Pros**
 
-- [Pro costs $49 per user a month billed yearly, or $59 monthly](https://www.streak.com/pricing), with unlimited pipelines, contacts and records.
-- Pro+ costs $69, or $89 monthly, and adds automations, Zapier and more AI credits.
-- The free plan keeps email tracking and 50 mail merge sends a day, without CRM pipelines.
-- The free trial runs for 14 days on Pro+.
+- Visual pipeline of deal stages
+- Nova meeting briefs and transcripts
+- CRM updates you approve after each call
+- Quick for a first sales hire to learn
+- 14-day free trial, no credit card
 
-Streak suits a founder on Google Workspace who wants the CRM inside the inbox they already keep open all day.
+**Cons**
 
-### 7. Close
+- No free plan
+- Campaigns and Web Visitors are paid add-ons
+- Every seat is billed, even before it's assigned
 
-Close is a sales CRM that brings calling, email and SMS into one app, with an AI sales agent named Chloe on every plan.
+**Pricing**
 
-- [Solo costs $9 a month billed yearly, or $19 monthly](https://www.close.com/pricing), for one user and up to 10,000 leads.
-- Essentials costs $35 per user a month billed yearly, or $49 monthly, with unlimited leads.
-- The Power Dialer and automated workflows start on Growth, at $99 per user a month billed yearly.
-- Most outbound calls cost around $0.02 a minute on top of the seat, and the 14 day trial needs no card.
+- Lite, Growth, Premium and Ultimate: [See Pipedrive's pricing](https://www.pipedrive.com/en/pricing)
+- 14-day free trial, no credit card
 
-Solo is a sensible start for a founder who sells by phone and works alone for now. Once you hire, Essentials is the Close plan to compare.
+### 5. folk
+
+```rating
+4.5 | Capterra | https://www.capterra.com/p/251534/folk/reviews/
+```
+
+**Overview**
+
+folk is a strong CRM for founders whose deals come from their network and LinkedIn. Its folkX Chrome extension brings LinkedIn profiles straight in, and it syncs email, calendar and WhatsApp on the entry plan. Deal reminders count the days since you last connected with someone, with a follow-up button beside each one. A key strength is that focus on relationships, which makes it attractive for founders who sell through introductions.
+
+**Pros**
+
+- folkX extension for LinkedIn profiles
+- Email, calendar and WhatsApp sync
+- Follow-up reminders on each contact
+- Email campaigns on Standard
+- 14-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Sequences, deals and custom objects start on Premium
+- Account locks after the trial until you pick a plan
+
+**Pricing**
+
+- Standard: [$24/user/month](https://www.folk.app/pricing)
+- Premium: $48/user/month
+- Enterprise: from $80/user/month billed annually
+
+### 6. Close
+
+```rating
+4.7 | Capterra | https://www.capterra.com/p/132667/Close-io/reviews/
+```
+
+**Overview**
+
+Close is a strong sales CRM for founders who sell by phone and email. Calling, email and SMS live in one app, and Chloe, its AI sales agent, comes with every plan. Solo covers one user and up to 10,000 leads, so a founder selling alone can start small. A key strength is calling built into every lead, which makes it the pick we'd make for a founder whose buyers answer the phone.
+
+**Pros**
+
+- Built-in calling, email and SMS
+- Chloe, an AI sales agent, on every plan
+- Up to 10,000 leads on Solo
+- Low entry price for one seller
+- 14-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Workflows and the Power Dialer start on Growth
+- Chloe's work uses AI credits and call costs
+
+**Pricing**
+
+- Solo: [$9/month billed annually](https://www.close.com/pricing) or $19/month billed monthly, 1 user
+- Essentials: $35/user/month billed annually or $49/user/month billed monthly
+- Growth: $99/user/month billed annually or $109/user/month billed monthly
+- Scale: $139/user/month billed annually or $149/user/month billed monthly
+
+### 7. Salesflare
+
+```rating
+4.7 | Capterra | https://www.capterra.com/p/149522/Salesflare/reviews/
+```
+
+**Overview**
+
+Salesflare is a practical B2B CRM for founders and small teams who follow up by email. It fills itself in from your inbox, email signatures, calendar and company websites, then logs each conversation on a timeline. A LinkedIn sidebar lets you update the CRM where you work. A key strength is how little typing it asks for, which makes it a good fit for small B2B teams that want capture and email campaigns in one tool.
+
+**Pros**
+
+- Automatic capture from email and calendar
+- Conversation timeline on each account
+- Email campaigns on Growth
+- LinkedIn and inbox sidebars
+- 30-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Multi-step email workflows start on Pro
+- Enterprise needs at least 5 users
+
+**Pricing**
+
+- Growth: [$29/user/month billed annually](https://salesflare.com/pricing) or $39/user/month billed monthly
+- Pro: $49/user/month billed annually or $64/user/month billed monthly
+- Enterprise: $99/user/month billed annually or $124/user/month billed monthly, minimum 5 users
 
 ### 8. Lightfield
 
-Lightfield is an AI CRM that updates itself from every customer interaction, so its agents can run outbound and flag deals at risk.
+**Overview**
 
-- [Starter costs $89 per user a month](https://lightfield.com/pricing), billed monthly, for up to 3 seats and 50,000 records.
-- Starter includes email, calendar and Slack sync, meeting recording and transcription, and records that update on their own.
-- Pro costs $999 a month per workspace, billed yearly, with 5 capture seats and unlimited viewer seats.
-- Starter comes with a 14 day free trial.
+Lightfield is an AI CRM built for founders who want capture and call recording in one product from day one. It updates itself from every customer interaction across email, calendar and Slack, and it records and transcribes meetings. Its agents can run outbound and flag deals at risk. It is a relevant option for small teams that want an AI-first CRM and are ready for workspace pricing as they grow.
 
-Lightfield fits a founder who wants capture and call recording in one product from the first day. Teams that grow past 3 seats move to Pro, which is priced per workspace.
+**Pros**
+
+- Records that update on their own
+- Email, calendar and Slack sync
+- Meeting recording and transcription
+- Agents for outbound and at-risk deals
+- 14-day free trial of Starter
+
+**Cons**
+
+- No free plan
+- Starter covers up to 3 seats
+- Pro steps up to $999/month per workspace
+
+**Pricing**
+
+- Starter: [$89/user/month billed monthly](https://lightfield.com/pricing), up to 3 seats
+- Pro: $999/month for the workspace billed annually, 5 capture seats
+- Growth: $2,999/month for the workspace billed annually
+- Enterprise: Custom pricing, contact sales
 
 ### 9. Day AI
 
-Day AI is an AI CRM that builds a shared memory from your team's email, calendar, meetings and Slack, and runs agents on top of it.
+**Overview**
 
-- [The Free plan costs $0](https://day.ai/pricing) and includes Gmail and Calendar ingestion, meeting recording clips and meeting notes.
-- Every workspace needs at least one Professional or Executive agent, and Professional costs $60 per agent a month on yearly billing.
-- Once you have one, teammates join on Free at no cost, and Turbo agents cost $24 each a month.
-- Pipeline management and campaign sequences start on Professional.
+Day AI is an AI CRM built for founders who want agents on a shared memory of their team's work. It builds that memory from email, calendar, meetings and Slack, and every agent reports to someone on your team, with an audit trail of what ran. Once a Professional agent is on the workspace, teammates join free. It is a relevant option for founders who want agents and free seats for teammates.
 
-Every agent reports to someone on your team, and an audit trail records what ran.
+**Pros**
+
+- Memory from mail, meetings and Slack
+- Agents with an audit trail
+- Meeting recording clips and notes
+- Free seats for teammates
+- Free plan
+
+**Cons**
+
+- Per-agent pricing can be harder to plan
+- Pipeline management and sequences start on Professional
+- Free teammates need a Professional agent first
+
+**Pricing**
+
+- Free: [$0/month](https://day.ai/pricing)
+- Turbo: $24/agent/month billed annually
+- Professional: $60/agent/month billed annually
+- Executive: $200/agent/month billed annually
 
 ### 10. Clarify
 
-Clarify is an autonomous AI CRM that syncs with your email and calendar and turns each recorded call into a summary and next steps. Its sales agent is named Rep.
+**Overview**
 
-- [The Free plan costs $0](https://www.clarify.ai/pricing) for unlimited seats, with 1,000 credits a month, 20,000 records and one campaign.
-- Free already includes Rep, the call recorder and notetaker, email and calendar sync and AI fields that fill themselves in.
-- Starter costs $50 a month for the whole workspace, with 5,000 credits, 250,000 records and 5 campaigns.
-- Growth starts at $1,000 a month on yearly billing and adds workflow automation and workspace agents.
+Clarify is an autonomous AI CRM built for founders who want every teammate in at no seat cost. It syncs with email and calendar and turns each recorded call into a summary and next steps, and its sales agent is named Rep. It charges for AI work in credits instead of per seat. It is a relevant option for founders who want the whole team in the CRM without paying for each seat.
 
-Clarify charges for AI work in credits instead of charging per seat. Your cofounder and your first rep can both join without changing the bill, so plan around how much AI work you use each month.
+**Pros**
 
-The Free plan lets you sync your real inbox and judge the agent before you pay anything.
+- Email and calendar sync
+- Call recorder and notetaker on Free
+- Rep, a built-in sales agent
+- Unlimited seats on Free and Starter
+- Free plan with 1,000 credits a month
 
-### 11. Salesflare
+**Cons**
 
-Salesflare is a B2B CRM that fills itself in from your inbox, email signatures, calendar and company websites. It keeps itself up to date without much typing.
+- AI work runs on monthly credits
+- Large step from Starter to Growth
+- Workflow automation starts on Growth
 
-- [Growth costs $29 per user a month billed yearly, or $39 monthly](https://salesflare.com/pricing), with automatic data capture, email tracking, a LinkedIn sidebar and email campaigns.
-- Pro costs $49 per user billed yearly, or $64 monthly, and adds workflows that send several emails, user permissions and custom dashboards.
-- Enterprise costs $99 per user billed yearly, needs at least 5 users, and adds setup, training and data migration.
-- The free trial lasts 30 days and needs no credit card.
+**Pricing**
 
-Salesflare's pitch sits closer to ours than most CRMs here, and a 30 day trial gives you a full month of real selling to judge it.
+- Free: [$0/month](https://www.clarify.ai/pricing), unlimited seats, 1,000 credits a month
+- Starter: $50/month for the workspace, billed monthly or annually
+- Growth: from $1,000/month billed annually
+- Enterprise: Custom pricing, contact sales
 
-In your trial, look at who it adds as a contact from your inbox. Omniscient's sync, for example, skips automated senders and notetaker bots, and leaves out anyone on your do not track list. That last rule matters most when investor mail sits next to customer threads.
+### 11. Twenty
 
-### 12. Twenty
+**Overview**
 
-Twenty is an open source CRM that technical teams shape into their own, in its cloud or on servers they run. It is one of the most popular open source CRMs.
+Twenty is a dedicated open source CRM designed for technical founders who want to own the code. You can run it in Twenty's cloud or host the open source core on your own servers for free. Every cloud workspace ships with an MCP server, so you can work with your CRM data from an AI assistant. Many technical teams use it as a specialized tool they can shape and extend themselves.
 
-- [Pro costs $9 per user a month, billed yearly](https://twenty.com/pricing), with Google and Microsoft email and calendar sync, call recording, AI agents and unlimited custom objects.
-- Organization costs $39 per user a month billed yearly, and adds custom roles with field and row permissions, SSO and audit logs.
-- The open source core is free to host yourself.
-- The cloud trial lasts 30 days and needs no credit card.
+**Pros**
 
-Twenty suits a technical founder who likes Attio's freedom to design objects and also wants to own the code. Every cloud workspace ships with an MCP server, so you can work with your CRM data from an AI assistant.
+- Open source and self-hostable
+- Email and calendar sync on Pro
+- Unlimited custom objects
+- MCP server in every cloud workspace
+- 30-day free cloud trial, no credit card
 
-For investor records, look at roles first. Pro has Admin and Member roles, and Organization adds the field and row permissions that hide a record from a teammate. If you host Twenty yourself, you look after the servers too.
+**Cons**
+
+- Self-hosting means running the servers too
+- Field and row permissions start on Organization
+- Best with an engineer to build objects and integrations
+
+**Pricing**
+
+- Self-hosted: $0 for the open source version
+- Pro: [$9/user/month billed annually](https://twenty.com/pricing)
+- Organization: $39/user/month billed annually
+- Enterprise: from $50,000/year
+
+### 12. Streak
+
+```rating
+4.5 | Capterra | https://www.capterra.com/p/124465/Streak/reviews/
+```
+
+**Overview**
+
+Streak is a dedicated CRM designed to run inside Gmail for founders on Google Workspace. Pipelines and deals sit next to the emails they came from, and the same pipelines can track fundraising and hiring. Fields like last reply and time in stage update on their own. Many founders use it as a specialized tool to track deals from the inbox they already keep open all day.
+
+**Pros**
+
+- Pipelines inside Gmail
+- Email history shared with the team
+- Fields that update on their own
+- Fundraising and hiring pipelines too
+- Free Gmail tools and a 14-day Pro+ trial
+
+**Cons**
+
+- Pipelines start on Pro
+- Automations and integrations start on Pro+
+- Each teammate takes a paid seat
+
+**Pricing**
+
+- Free: $0 for Gmail tools, free forever
+- Pro: [$49/user/month billed annually](https://www.streak.com/pricing) or $59/user/month billed monthly
+- Pro+: $69/user/month billed annually or $89/user/month billed monthly
+- Enterprise: $129/user/month billed annually or $159/user/month billed monthly
 
 ### 13. Dex
 
-Dex is a personal CRM that pulls the people you know from more than 15 sources, including LinkedIn, email and your calendar, into one place. It's built around people and the relationships between them.
+**Overview**
 
-- [Premium costs $12 a month billed yearly, or $20 monthly](https://getdex.com/pricing), and syncs up to 2,500 LinkedIn connections.
-- Professional costs $20 a month billed yearly, or $34 monthly, syncs up to 9,000 connections and adds Outlook, several email accounts and mail merge.
-- Keep in touch reminders tell you when it's time to get back to someone.
-- The 6 day trial needs a card, though you aren't charged until it ends.
+Dex is a dedicated personal CRM designed to keep a founder's network in one place. It pulls the people you know from more than 15 sources, including LinkedIn, email and your calendar, and keep-in-touch reminders tell you when to get back to someone. Many founders use it as a specialized tool to keep up with investors and advisors next to a sales CRM.
 
-Dex works best next to a sales CRM. It helps a founder keep up with the network around your deals, such as investors and the people who introduce you to buyers.
+**Pros**
 
-Run your deals in one of the CRMs above, and keep Dex for the relationships that don't belong in a pipeline.
+- People from more than 15 sources
+- LinkedIn connections sync
+- Keep-in-touch reminders
+- Outlook and mail merge on Professional
+- 7-day free trial
 
-## CRM prices for a founder and a first hire
+**Cons**
 
-Most founders start with one paid seat and add a seller later. This table shows the free option, the trial and the entry price for each CRM today.
+- Stages and deal owners are left to sales CRMs
+- Card required for the trial
+- LinkedIn sync capped by plan
 
-| CRM | Free plan | Free trial | Entry paid price |
-|---|---|---|---|
-| Omniscient | Free seats for teammates who view or log data, once you have a Pro or Business seat | 14 days of Pro, no card | $19 per seat, billed yearly |
-| folk | Trial instead | 2 weeks, no card | $24 per member, billed yearly |
-| Attio | Up to 3 seats | 14 days of Pro | $35 per seat, billed yearly |
-| HubSpot | Up to 2 users and 1,000 contacts | Free plan instead | From $7 per seat for new customers |
-| Pipedrive | Trial instead | 14 days, no card | [See Pipedrive's plans](https://www.pipedrive.com/en/pricing) |
-| Streak | Gmail tools without pipelines | 14 days of Pro+ | $49 per user, billed yearly |
-| Close | Trial instead | 14 days, no card | $9 for one user, billed yearly |
-| Lightfield | Trial instead | 14 days of Starter | $89 per user, billed monthly |
-| Day AI | Free teammates, once you have a Professional agent | Free plan instead | $60 per agent, billed yearly |
-| Clarify | Unlimited seats, 1,000 credits a month | Free plan instead | $50 a month for the workspace |
-| Salesflare | Trial instead | 30 days, no card | $29 per user, billed yearly |
-| Twenty | Free to host yourself | 30 days in the cloud, no card | $9 per user, billed yearly |
-| Dex | Trial instead | 6 days, card needed | $12 a month, billed yearly |
+**Pricing**
 
-A cofounder who mostly looks things up can join at no cost on Attio's or HubSpot's free plan. Omniscient and Day AI also add free teammates once you pay for one Pro seat or one Professional agent, and Clarify doesn't count seats on its Free or Starter plans at all.
+- Premium: [$12/user/month billed annually](https://getdex.com/pricing) or $20/user/month billed monthly
+- Professional: $20/user/month billed annually or $34/user/month billed monthly
+- Team: $40/user/month billed monthly
 
-For published startup discounts, our guide to the [best CRM for startups](/blog/best-crm-for-startups/) lists each program and its fine print.
+## 13 Best CRMs for Founders in 2027: Recap Table
 
-## Which CRM fits the way you sell
+```tools
+Tool | Domain | Rating | Best feature | Starting price
+Omniscient | tryomniscient.com | Not rated | One agentic CRM for the whole sales motion | [$19/seat/month billed annually](/pricing/)
+HubSpot | hubspot.com | 4.5/5 | Free CRM with no expiry | [From $20/seat/month](https://www.hubspot.com/pricing/sales)
+Attio | attio.com | Not rated | Objects you design yourself | [$40/month, then $35/user/month billed annually](https://attio.com/pricing)
+Pipedrive | pipedrive.com | 4.5/5 | Nova meeting briefs on every plan | [See pricing](https://www.pipedrive.com/en/pricing)
+folk | folk.app | 4.5/5 | LinkedIn extension and reminders | [$24/user/month](https://www.folk.app/pricing)
+Close | close.com | 4.7/5 | Built-in calling, email and SMS | [$9/month billed annually](https://www.close.com/pricing)
+Salesflare | salesflare.com | 4.7/5 | Fills itself in from email | [$29/user/month billed annually](https://salesflare.com/pricing)
+Lightfield | lightfield.com | Not rated | Capture and call recording | [$89/user/month billed monthly](https://lightfield.com/pricing)
+Day AI | day.ai | Not rated | Agents with free teammate seats | [$24/agent/month billed annually](https://day.ai/pricing)
+Clarify | clarify.ai | Not rated | Unlimited seats, priced by credits | [$50/month for the workspace](https://www.clarify.ai/pricing)
+Twenty | twenty.com | Not rated | Open source and self-hostable | [$9/user/month billed annually](https://twenty.com/pricing)
+Streak | streak.com | 4.5/5 | Pipelines inside Gmail | [$49/user/month billed annually](https://www.streak.com/pricing)
+Dex | getdex.com | Not rated | Personal network in one place | [$12/user/month billed annually](https://getdex.com/pricing)
+```
 
-Founders sell through different channels, so we matched each of the 13 CRMs to the channel it handles best. Look at where your last five deals started, and build your shortlist from that row of the chart.
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-founders&start=crm)**
 
-![Which CRM fits the way a founder sells: email and meetings need capture without typing, from Omniscient, Lightfield, Day AI or Clarify; selling from Gmail all day fits Streak; LinkedIn and introductions need people saved from LinkedIn, from folk or Salesflare; phone calls need a dialer next to each lead, from Close; tracking investors and partners too needs your own objects and pipelines, from Attio or Twenty; a first sales hire needs a board of stages to share, from Pipedrive or HubSpot; keeping in touch with your network needs reminders, from Dex](/assets/blog/best-crm-for-founders/crm-by-channel.svg)
+## Conclusion
 
-If most of your deals start on LinkedIn, folk and Salesflare save people from LinkedIn into the CRM, and our guide to [folk CRM alternatives](/blog/folk-crm-alternatives/) compares more tools that do.
+A CRM for founders keeps every deal in one place while you run the company. It turns your email, calendar and calls into a pipeline your first hire can read.
 
-## How to hand your deals to a first sales hire
+The best one does more than store deals. It finds the next customer, captures every conversation, keeps private mail private and keeps each deal current, so you spend your time on buyers instead of the CRM.
 
-Your first sales hire inherits every open deal you've been carrying in your head. The CRM is where that history lives, so get it ready before their first day.
+That is why [Omniscient](/) stands out. It combines lead finding, a shared memory of every conversation and skills that keep Otto's work consistent in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option.
 
-This is the order we'd follow:
-
-1. Give every open deal an owner and a written next step.
-2. Set your inbox's sharing rule so the new rep can read customer threads.
-3. Put investor and personal domains on a do not track list, or your CRM's version of one.
-4. Stay on the deals where you hold the relationship, and bring the rep to the next call.
-5. Ask the rep to read five deal timelines and tell you what's missing.
-
-In Omniscient, the next step lives on each opportunity, and the morning digest flags open deals with a passed close date or 14 days without contact. Your rep can also ask Otto to research an account or prep a meeting, and the skill behind it gives them the same kind of answer it gives you. We'd finish this list before the rep starts, so their first week goes to buyers instead of old threads.
-
-## How to choose a CRM as a founder
-
-Most trials here last 14 days, which is enough if you run real selling through them. These five checks cover what a founder needs to know:
-
-```steps
-1. Connect your real inbox: Sync your own Gmail or Outlook and look at which contacts appear after the first sync.
-2. Check what a teammate sees: Invite a cofounder or advisor and ask what they can see of one investor thread.
-3. Run a week of real selling: Take your calls and follow ups through the CRM for five working days.
-4. Price your first hire: Look up the plan you'd need with one more seller and one teammate who only views.
-5. Test the way out: Export your contacts and deals, or ask how they'd move to another CRM.
+```faq
+Q: What is a CRM for founders?
+A: A CRM for founders is a sales tool that keeps every deal, contact and conversation in one place by capturing them from the founder's own email, calendar and calls. It gives a founder who still sells a current pipeline without hours of typing, and gives the first sales hire the full story of every open deal.
+Q: How do CRMs for founders capture deals?
+A: CRMs for founders connect to Gmail or Outlook and your calendar, then match each email and meeting to the right company, person and deal. Many add call notes from Zoom, Google Meet or Teams. In Omniscient, a do not track list keeps investor and personal domains out of the sync, so customer threads stay apart from fundraising mail.
+Q: Why use a CRM for founder-led sales?
+A: A CRM for founder-led sales keeps deals moving while you split your week between buyers, investors and product. It reminds you when a deal has gone without contact, keeps notes on the account and makes the handoff to a first rep simple. Give every open deal an owner and a next step before that rep starts.
+Q: What features should modern CRMs for founders include?
+A: Modern CRMs for founders should include email and calendar sync, a pipeline of stages, follow-up reminders, sharing rules for a mixed inbox and a low price for one seat. The strongest also run on one shared memory of every conversation, with an agent that finds leads, preps meetings and keeps deals current, as Otto does in Omniscient.
+Q: Which CRM is recommended for founders who need more than a pipeline?
+A: For founders who need more than a pipeline, Omniscient is the recommended pick: one agentic CRM for the whole sales motion, from finding leads to closing deals, with Otto doing the busy work. Founders who sell mostly by phone may prefer Close, and those who sell through their network may prefer folk.
 ```
 
 ```cta
-Connect the inbox you sell from, and Otto does the busy work from the first lead to the closed deal while you run the company.
-```
-
-```faq
-Q: What is the best CRM for founders in 2026?
-A: For founders who want one CRM for the whole sales motion, from finding leads to closing deals, with Otto doing the busy work between everything else you run, we'd start with Omniscient. folk suits founders who sell through their network, and Close suits founders who sell by phone.
-Q: Is there a free CRM for founders?
-A: Yes, HubSpot's free CRM covers 2 users and 1,000 contacts, Attio's Free plan covers up to 3 seats, and Clarify's Free plan has unlimited seats with 1,000 AI credits a month. Omniscient and Day AI give free seats to teammates once your workspace pays for one Pro seat or one Professional agent.
-Q: When should a founder start using a CRM?
-A: Start when you have more open conversations than you can keep in your head, or a few weeks before your first sales hire joins.
-Q: Is a personal CRM like Dex enough for a founder?
-A: It can be before you have a pipeline, while most of your work is staying in touch with people. Once you have several deals open at once, you'll want stages, owners and next steps, which Dex leaves to sales CRMs.
-Q: Should a founder track investors in the same CRM as customers?
-A: It works when the CRM keeps them apart, with a separate object or pipeline and a rule for who can see each one. In Omniscient, the simplest route is to keep investor domains out of the sync with the do not track list.
+Ready to use Omniscient? Connect the inbox you sell from and run one agentic CRM for the whole sales motion.
 ```

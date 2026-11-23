@@ -1,126 +1,100 @@
 ---
-title: "13 Best CRMs for Startups in 2026"
+title: "13 Best CRMs for Startups in 2027"
 slug: best-crm-for-startups
 target_keyword: "best crm for startups"
-meta_description: "The 13 best CRMs for startups in 2026, compared on free plans, startup discounts, seat prices and how much of the data entry each one handles from email and meetings."
+meta_description: "The 13 best CRMs for startups in 2027, with prices, ratings, startup discounts, pros and cons, led by Omniscient, one agentic CRM for the whole sales motion."
 type: best-of
 topic: crm
-updated: 2026-11-15
-read_minutes: 24
-summary: "13 CRMs for startups compared on free plans, startup discounts, seat prices and how much typing each one asks of you."
+updated: 2026-11-23
+summary: "13 CRMs for startups, each with its rating, pros, cons, current prices and startup discounts, led by one agentic CRM for the whole sales motion."
 ---
 
-# 13 Best CRMs for Startups in 2026
+# 13 Best CRMs for Startups in 2027
 
-The CRM you pick in your first year decides whether your deals live somewhere your first sales hire can find them, or only in the founder's inbox. Here are the 13 best CRMs for startups in 2026, with their prices, free plans, startup discounts and the stage of company each one suits.
+A spreadsheet or the founder's inbox shows who you've talked to. It hides which deals are moving, who owns each one and what the next step is, and it leaves your first sales hire starting from zero.
 
-If you only have a minute, here's where we'd start:
+A CRM for startups fixes this. It turns email, meetings and calls into one pipeline the whole team can read, at a price that works for a few seats. It suits founders, the first account executives and SDRs, and small teams that sell to other businesses.
 
-- Pick Omniscient if you want one agentic CRM for your startup's whole sales motion, from finding leads to closing deals, with Otto doing the busy work.
-- Pick HubSpot if marketing and sales will share one system.
-- Pick Attio if you want to design your own data model.
-- Pick Pipedrive if your first sales hire wants a simple pipeline with AI meeting briefs on every plan.
-- Pick Salesflare if you want automatic capture and email campaigns in one tool.
-- Pick Close if your team sells by phone.
-- Pick Streak if your team works out of Gmail all day.
-- Pick Twenty if you have engineers and want an open source CRM you can host.
+The result is a pipeline that grows with you from the first seat to the first sales team. 📈
 
-```tools
-Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
-HubSpot | hubspot.com | A customer platform with marketing, sales and service on one CRM | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Startups that run marketing and sales together
-Attio | attio.com | A flexible CRM you shape around your own objects | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their data model
-Pipedrive | pipedrive.com | A pipeline CRM with AI meeting briefs on every plan | [See pricing](https://www.pipedrive.com/en/pricing) | A first sales hire who works by stage
-folk | folk.app | An AI CRM for small teams, with a LinkedIn extension | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders who sell through their network
-Salesflare | salesflare.com | A B2B CRM that fills itself in from email, calendar and the web | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small B2B teams that want capture and email campaigns
-Close | close.com | A CRM for calling, email and SMS, with an AI sales agent | [$9 a month for one user, billed yearly](https://www.close.com/pricing) | Teams that sell by phone
-Zoho CRM | zoho.com | A CRM with a forever free plan and AI agents | [Free for 3 users](https://www.zoho.com/crm/zohocrm-pricing.html) | Startups that want a free plan with room to grow
-monday CRM | monday.com | A CRM built on customizable boards, with AI agents | [$12 per seat a month, billed yearly, 3 seat minimum](https://monday.com/crm/pricing) | Teams that already run projects on monday.com
-Copper | copper.com | A CRM that works inside Google Workspace | [$23 per seat a month, billed yearly](https://www.copper.com/pricing) | Service startups that run on Google Workspace
-Streak | streak.com | A CRM that runs inside Gmail | [$49 per user a month, billed yearly](https://www.streak.com/pricing) | Founders who work out of Gmail
-Salesforce | salesforce.com | A CRM platform from a free suite to editions with AI agents | [Free for up to 2 users](https://www.salesforce.com/crm/free-crm/) | Startups that expect a complex sales process
-Twenty | twenty.com | An open source CRM you can host yourself | [$9 per user a month, billed yearly](https://twenty.com/pricing) | Technical teams that want to own their CRM
+## What Is a CRM for Startups?
+
+**A CRM for startups is a sales tool that keeps a young company's contacts, deals and conversations in one place by syncing them from email, calendars and calls.** It connects to Gmail or Outlook, logs each thread and meeting on the right company and person, and shows open deals as a pipeline of stages. Most run as a web app with a mobile app, and many add a Chrome extension or an inbox sidebar. The ones built for startups keep the first seats free or cheap and grow without a migration.
+
+Most tools include:
+
+- ✅ A free plan or free seats
+- ✅ Email and calendar sync
+- ✅ A simple deal pipeline
+- ✅ Startup discounts or low prices
+
+The result is one record of every deal that a new hire can open on day one.
+
+## Why Do You Need a CRM for Startup Sales?
+
+Spreadsheets and a shared inbox work while the founder makes every sale. Once a second seller joins, deals live in two heads and the history behind them stays in one person's mail. A CRM for startups solves this.
+
+- **Low starting cost:** Free plans, free viewer seats and startup programs keep the bill small while you find your market.
+- **Fast ramp for hires:** A new rep reads each deal's history instead of asking the founder.
+- **Less data entry:** Records fill in from email and meetings, so the CRM stays current in busy weeks.
+- **One memory for every deal:** Every email, call and note lands on the account, so the whole team works from the same story.
+
+![Startup discounts: HubSpot for Startups gives Seed and Series A founders 90% off the first year; Attio for Startups gives up to 10 users 80% off the yearly Pro plan and credits in the first year and 30% off the second](/assets/blog/best-crm-for-startups/startup-discounts.svg)
+
+
+## 13 Best CRMs for Startups in 2027!
+
+Here are the 13 CRMs we'd shortlist for a startup, from the first seat to the first sales team.
+
+### CRMs for Startups: Quick Match
+
+```tree
+Who sells today?
+  The founder alone: What do you want first?
+    A free start: HubSpot, Zoho CRM, Attio
+    Agents doing the busy work: Omniscient
+    Selling inside Gmail: Streak, Copper
+  A first sales hire: How do they sell?
+    By stage on a board: Pipedrive, Omniscient
+    By phone: Close
+    Through LinkedIn and email: folk, Salesflare
+  A growing sales team: What does it need?
+    A complex process: Salesforce, Attio
+    Boards the team already uses: monday CRM
+    Code you own: Twenty
 ```
-
-## What a startup needs from its first CRM
-
-Your team is small and the way you sell will keep changing, so these are the five things we'd look at first in a startup CRM:
-
-- Records that fill in from your email and calendar, so the founder's selling still reaches the CRM.
-- A free plan, or free seats for teammates who mostly look things up.
-- A pipeline your first sales hire can learn in a day.
-- A price that still works at five or ten seats.
-- An easy way out, so a switch in two years doesn't mean weeks of cleanup.
-
-We'd weigh the first one above the rest. A founder with a full calendar rarely types notes after every call, and a CRM that depends on typing falls behind in exactly the weeks you're busiest with buyers.
-
-## Who becomes a contact when you connect your inbox
-
-Omniscient's CRM builds its records from the email and calendar you connect, all joined in [Omniscience](/product/omniscience/), its shared memory of every customer conversation. The sync skips bulk mail and automated senders, but at first it added anyone else who emailed you, so a cold pitch became a contact as easily as a buyer did.
-
-The welcome flow now suggests settings that keep the CRM to people you sell to:
-
-- Add people only when you reach out, from emails you send and meetings you hold.
-- Leave out personal addresses like gmail.com and outlook.com.
-- Track external meetings only.
-- Read one month of past mail the first time, with options from one week to one year.
-- Keep a do not track list of emails or domains, like your lawyer or your family.
-
-![Omniscient's Mail and calendar sync step with the suggested settings: contacts and accounts are added when you reach out, personal addresses are left out, only external meetings are tracked, the first sync reads one month back, teammates get full access, and a do not track box takes emails or domains](/assets/blog/best-crm-for-startups/sync.shot.html)
-
-The price we accepted is timing. Someone new who writes to you first only becomes a contact once you reply or meet them.
-
-You can change every choice later in Settings, where each connected inbox keeps its own sharing rule. Teammates then see everything from that inbox, only who and when, or nothing at all.
-
-You can run the same test on any CRM during its trial. Connect one real inbox and count how many of the new contacts are people you'd actually sell to.
-
-## The 13 best CRMs for startups in 2026
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, and it suits startups where the founder still sells. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
+**Overview**
 
-All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
+Omniscient is one of the most relevant CRMs for startups that want one agentic CRM for the whole sales motion. Instead of only tracking deals, Otto, its built-in agent, finds leads, captures every email and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B startups where the founder still sells and the first hires need the full story of every deal.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-startups&start=crm
 ```
 
-#### Key features
+**Pros**
 
-- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
-- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
-- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
-- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
-- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
-- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
-- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
+- [Every email and meeting captured](/product/email-sync/)
+- [Lead lists from a plain description](/product/find-leads/)
+- [Answers with the quote behind each fact](/product/ask-otto/)
+- [Skills keep every rep's work consistent](/product/skills/)
+- [AI included in every paid seat](/pricing/)
 
-#### Pros
+**Cons**
 
-- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
-- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
-- **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
-- **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
-- **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
+- Not a phone dialer, so phone-first teams may prefer Close
+- No bulk marketing email
 
-#### Cons
+**Pricing**
 
-- **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
-- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
-- **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
+- Free: $0 for teammates who only view or log data
+- Starter: [$19/seat/month billed annually](/pricing/)
+- Pro: $49/seat/month billed annually
+- Business: $99/seat/month billed annually
 
-#### Price and plans
-
-You can try Pro free for 14 days with no credit card. Paid seats, billed yearly (monthly billing costs 20% more):
-
-- **Free:** $0 for teammates who only view or log data.
-- **Starter:** $19 per seat a month.
-- **Pro:** $49 per seat a month.
-- **Business:** $99 per seat a month.
-
-The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
+![Omniscient's Mail and calendar sync step with the suggested settings: contacts and accounts are added when you reach out, personal addresses are left out, only external meetings are tracked, the first sync reads one month back, teammates get full access, and a do not track box takes emails or domains](/assets/blog/best-crm-for-startups/sync.shot.html)
 
 ### 2. HubSpot
 
@@ -128,72 +102,57 @@ The [Omniscience page](/product/omniscience/) shows the shared memory behind it,
 4.5 | Capterra | https://www.capterra.com/p/152373/HubSpot-CRM/reviews/
 ```
 
-HubSpot is a customer platform built for startups that want marketing, sales and service on one shared CRM as they grow. Its free CRM never expires and covers 2 users, and Breeze Assistant, its AI helper, researches companies and preps you for sales calls at no cost.
+**Overview**
 
-#### Key features
+HubSpot is one of the most widely used CRMs for startups that want marketing, sales and service on one shared record as they grow. Its free CRM covers 2 users with no expiry, and Breeze Assistant, its AI helper, researches companies and preps you for calls at no cost. HubSpot for Startups takes up to 90% off in year one for eligible startups that have raised up to a Series A. This makes it a common choice for startups that run marketing and sales together.
 
-- **Free CRM for 2 users:** Contact management, deal pipelines, CRM import and a reporting dashboard cost nothing and need no credit card.
-- **Breeze Assistant:** On the free plan, the built in AI summarizes CRM records and helps you get ready for calls.
-- **Email tracking and meeting links:** You hear when prospects open your emails, and meeting links book time straight into your calendar.
-- **Calling and a notetaker on Starter:** Sales Hub Starter adds calling, a notetaker, task queues and a prospecting agent.
-- **Forecasting on Professional:** Sales Hub Professional adds forecasting, sequences and conversation intelligence, plus deal plans in beta.
-- **Over 2,000 integrations:** The HubSpot Marketplace connects the CRM to more than 2,000 business apps.
+**Pros**
 
-#### Pros
+- Free CRM for up to 2 users
+- Startup discount of up to 90% in year one
+- Calling and a notetaker on Starter
+- Over 2,000 integrations
+- Free plan with no expiry date
 
-- **A free start that lasts:** Two founders can run contacts and a pipeline at no cost while they find their first customers.
-- **Grows without a migration:** Marketing, sales and service share one CRM, so you upgrade in place as the team grows.
-- **Large startup discount:** HubSpot for Startups takes up to 90% off in year one for eligible startups that have raised up to a Series A.
+**Cons**
 
-#### Cons
+- Professional adds a $1,500 onboarding fee
+- AI agents run on monthly credits
+- Sequences and forecasting start on Professional
 
-- **Professional costs more:** Professional starts at $90 per seat a month, plus a $1,500 onboarding fee you pay once.
-- **Credits for AI work:** Agents run on HubSpot Credits, with 500 a month on Starter and 3,000 on Professional, and extra credits cost a cent each.
+**Pricing**
 
-#### Price and plans
-
-You can use HubSpot's free CRM for up to 2 users with no credit card. Sales Hub plans, per seat a month:
-
-- **Starter:** $20, or from $7 for new customers.
-- **Professional:** from $90, plus a one time $1,500 onboarding fee.
-- **Enterprise:** from $150, plus a one time $3,500 onboarding fee.
+- Free: $0/month for up to 2 users
+- Starter: [from $20/seat/month](https://www.hubspot.com/pricing/sales), with lower prices for new customers
+- Professional: $90 to $100/seat/month by billing, plus $1,500 one-time onboarding
+- Enterprise: from $150/seat/month, plus $3,500 one-time onboarding
 
 ### 3. Attio
 
-Attio is a CRM built for startups that want to shape the data model around how they sell, with AI agents that research accounts and reach out to buyers. Connect your email and calendar, and Attio builds your contact database on its own and enriches the companies and people in it.
+**Overview**
 
-#### Key features
+Attio is one of the most flexible CRMs for startups that want to shape the data model around how they sell. Connect email and calendar and it builds your contact database on its own, then enriches companies with funding, size and category. AI agents research accounts and reach out to buyers. A key strength is custom objects, which makes it attractive for startups that also track investors or hiring in the same workspace.
 
-- **Custom objects:** Build objects and relationship attributes that match your sales process, with up to 12 objects on Pro.
-- **Email and calendar sync:** Attio builds a real time database of your contacts from your inbox and calendar.
-- **Automatic enrichment:** Companies get a description, category, employee count and funding raised, and people get a photo, social profiles and a location.
-- **Relationship intelligence:** Each record shows connection strength, your strongest connection and the first and last interactions.
-- **Ask Attio and AI agents:** Ask questions or change records in plain language, and let agents research accounts for you.
-- **Call intelligence and sequences:** Pro adds call intelligence and email sequences inside the CRM.
-- **Developer tools:** A REST API, an App SDK and an MCP server connect Attio to the rest of your stack.
+**Pros**
 
-#### Pros
+- Custom objects and relationship attributes
+- Contact database built from your inbox
+- Automatic company and people enrichment
+- Startup program with 80% off Pro in year 1
+- Free plan for up to 3 users
 
-- **Free for 3 seats:** The Free plan covers up to 3 seats and 50,000 records, plenty for a founding team.
-- **Startup discount:** Attio for Startups takes 80% off the yearly Pro plan and credits in year one.
-- **Fits more than deals:** The same workspace can track investors or hiring, each as an object of its own.
+**Cons**
 
-#### Cons
+- AI runs on monthly credits by plan
+- Call Intelligence and sequences start on Pro
+- Plus covers up to 10 users
 
-- **Best with a builder:** Attio gets the most out of its flexibility when someone on the team enjoys designing objects and workflows.
-- **Plus covers up to 10 seats:** An eleventh teammate moves you to Pro, at $79 per seat billed yearly.
-- **Calls and sequences start on Pro:** Call intelligence and email sequences both come with the Pro plan, two tiers above Free.
+**Pricing**
 
-#### Price and plans
-
-You can start on Attio's Free plan, or try Pro free for 14 days. Plans, per seat a month:
-
-- **Free:** $0 for up to 3 seats.
-- **Plus:** $35 billed yearly, or $44 monthly, for up to 10 seats.
-- **Pro:** $79 billed yearly, or $99 monthly.
-- **Enterprise:** priced on a call with their sales team.
-
-If you're weighing Attio against us, [Omniscient vs Attio](/blog/omniscient-vs-attio/) puts the two side by side.
+- Free: $0/month for up to 3 users
+- Plus: [$40/month for the workspace and first user, then $35/user/month billed annually](https://attio.com/pricing), or $50, then $44/user/month billed monthly
+- Pro: $100/month for the workspace and first user, then $79/user/month billed annually, or $125, then $99/user/month billed monthly
+- Ultra: $1,000/month with 5 users, then $189/user/month, billed annually
 
 ### 4. Pipedrive
 
@@ -201,458 +160,342 @@ If you're weighing Attio against us, [Omniscient vs Attio](/blog/omniscient-vs-a
 4.5 | Capterra | https://www.capterra.com/p/132666/Pipedrive/reviews/
 ```
 
-Pipedrive is a sales CRM built for small businesses and startups that want a visual pipeline that's easy to run. Its meeting assistant, Nova, writes call briefs and transcripts for you, and it comes with every plan at no extra cost.
+**Overview**
 
-#### Key features
+Pipedrive is a practical sales CRM for startups whose first sales hire wants a visual pipeline that's easy to run. Nova, its meeting assistant, writes call briefs and transcripts, then suggests CRM updates you approve, edit or skip. It also transcribes phone, dial-in and in-person meetings. A key strength is that Nova comes with every plan, which makes it a good fit for small teams that want meeting help without moving up a tier.
 
-- **Nova meeting briefs:** Before each call, Nova pulls deal history, past emails and earlier conversations into one brief.
-- **Call transcripts:** Nova records and transcribes Google Meet, Zoom and Teams calls, and its desktop app does it without a bot.
-- **CRM updates you approve:** After a meeting, Nova suggests changes, and you approve, edit or skip each one.
-- **AI Sales Assistant:** It predicts which deals are likely to be won or lost, so you know where to spend your time.
-- **Two way email and calendar sync:** Connect up to five inboxes, and emails and meetings stay in step with Pipedrive.
-- **Automations and integrations:** Automate steps of your sales cycle and connect more than 500 apps.
-- **Mobile apps:** Android and iOS apps keep the pipeline with you between meetings.
+**Pros**
 
-#### Pros
+- Stage-by-stage visual pipeline
+- Nova meeting briefs on every plan
+- Two-way email and calendar sync
+- Over 500 app integrations
+- 14-day free trial, no credit card
 
-- **AI on every plan:** You don't move up a plan or buy an add on to get Nova's briefs and transcripts.
-- **Quick to learn:** The stage by stage pipeline is simple enough for a first sales hire to pick up in a day.
-- **More than video calls:** Nova also transcribes phone, dial in and in person meetings, next to Meet, Zoom and Teams.
+**Cons**
 
-#### Cons
+- No free plan
+- Campaigns and Web Visitors are paid add-ons
+- Every seat is billed, even before it's assigned
 
-- **Billed by seat:** Pipedrive bills each seat on your plan, whether or not it's assigned to anyone yet.
-- **Paid add ons:** LeadBooster, Projects and Smart Docs cost extra on Lite and Growth, and Campaigns and Web Visitors cost extra on every plan.
+**Pricing**
 
-#### Price and plans
+- Lite, Growth, Premium and Ultimate: [See Pipedrive's pricing](https://www.pipedrive.com/en/pricing)
+- 14-day free trial, no credit card
 
-You can try Pipedrive free for 14 days with no credit card. It sells four plans, Lite, Growth, Premium and Ultimate, each priced per seat, and all four include Nova. See [Pipedrive's plans](https://www.pipedrive.com/en/pricing) for current prices.
-
-### 5. folk
-
-```rating
-4.5 | Capterra | https://www.capterra.com/p/251534/folk/reviews/
-```
-
-folk is an AI CRM built for founders and small sales teams who find clients through their network and LinkedIn. It keeps contacts and deals next to your outreach in one workspace, and its AI assistants research contacts and suggest follow ups so the list stays current.
-
-#### Key features
-
-- **folkX for LinkedIn:** The folkX Chrome extension brings LinkedIn profiles straight into folk.
-- **Email, calendar and WhatsApp sync:** Standard syncs one account per member, and Premium raises that to five.
-- **Contact enrichment:** Standard finds up to 500 email addresses a month, and Premium finds up to 1,000.
-- **AI assistants:** Research, follow up and recap assistants work next to magic fields that AI fills in.
-- **Email campaigns:** Send campaigns with LinkedIn and Gmail templates, then follow results in campaign analytics.
-- **Pipelines and a mobile app:** Track deals by stage and keep your contacts on your phone.
-
-#### Pros
-
-- **Made for relationship selling:** It suits founders whose deals start with people they already know or meet on LinkedIn.
-- **More than email:** WhatsApp sync sits next to email and calendar on the entry plan.
-- **A full trial:** The 2 week trial includes the premium features, so you can try everything before you pay.
-
-#### Cons
-
-- **Sequences start on Premium:** Email sequences, custom objects, dashboards and API access come with Premium.
-- **A set trial length:** After 2 weeks, folk locks the account until you pick a plan. Your data stays, and you can ask for another week.
-
-#### Price and plans
-
-You can try folk free for 2 weeks with no credit card. Plans, per member a month:
-
-- **Standard:** $24 billed yearly, or $30 monthly.
-- **Premium:** $48 billed yearly, or $60 monthly.
-- **Enterprise:** from $80 billed yearly, or from $100 monthly.
-
-### 6. Salesflare
-
-```rating
-4.7 | Capterra | https://www.capterra.com/p/149522/Salesflare/reviews/
-```
-
-Salesflare is a sales CRM built for small and medium B2B companies that want their CRM to keep itself up to date. It fills in contacts from your inbox, email signatures, calendar and the web, then logs every conversation on a timeline, which makes it the closest pitch to ours on this list.
-
-#### Key features
-
-- **Automatic data capture:** Contacts and companies fill in from your inbox, email signatures, websites and calendar.
-- **Conversation timeline:** Sent proposals, opened emails, website visits and meetings land on each account's timeline.
-- **Email and web tracking:** Track email opens and link clicks, and see who visits your website.
-- **LinkedIn and email sidebars:** Sidebars in LinkedIn and your inbox let you update the CRM where you work, and there's a mobile app too.
-- **Email campaigns and workflows:** Growth sends personalized email campaigns, and Pro adds workflows of several emails in a row.
-- **Lead finder:** Find new leads inside Salesflare, with 5 lead credits on Growth and 100 on Pro.
-- **Relationship intelligence:** See who on your team knows whom, and how strong each relationship is.
-
-#### Pros
-
-- **Low admin:** Automatic capture keeps accounts current, so reps type far less.
-- **A long trial:** The free trial runs 30 days with no credit card, more than double the 14 days most CRMs here give you.
-- **Capture and campaigns together:** Email campaigns go out from the same app that logs the replies.
-
-#### Cons
-
-- **Paid plans after the trial:** When the trial ends you choose Growth, Pro or Enterprise, all billed per user.
-- **Automation starts on Pro:** Workflows of several emails, user permissions and custom dashboards start on Pro.
-- **Enterprise from 5 users:** The Enterprise plan, with migration and training done for you, needs at least 5 users.
-
-#### Price and plans
-
-You can try Salesflare free for 30 days with no credit card. Plans, per user a month:
-
-- **Growth:** $29 billed yearly, or $39 monthly.
-- **Pro:** $49 billed yearly, or $64 monthly.
-- **Enterprise:** $99 billed yearly, or $124 monthly, with a minimum of 5 users.
-
-### 7. Close
-
-```rating
-4.7 | Capterra | https://www.capterra.com/p/132667/Close-io/reviews/
-```
-
-Close is a sales CRM built for founders and small teams that sell by phone, email and SMS from one place. Chloe, its AI sales agent, comes with every plan and can call your leads, hold qualifying conversations, book meetings and update the CRM afterwards.
-
-#### Key features
-
-- **Calling, email and SMS built in:** Reps call, email and text leads without leaving the CRM.
-- **Chloe on every plan:** Access to the AI agent is free, and you pay only for the AI credits and calls she uses.
-- **AI credits included:** Solo comes with 500 AI credits per user a month, rising to 2,000 on Scale.
-- **One inbox and task list:** Essentials adds a centralized inbox and task list for the whole team.
-- **Workflows and a power dialer:** Growth adds automated workflows, a power dialer, custom activities and bulk email.
-- **Forms into leads:** Website forms turn visitors into leads in Close, so inbound requests land next to your outbound work.
-
-#### Pros
-
-- **A cheap start for one seller:** Solo costs $9 a month billed yearly, for one user and up to 10,000 leads.
-- **Calls at cost:** Close passes calling and SMS usage through at cost, around $0.02 a minute for most outbound calls.
-- **Money back guarantee:** If Close isn't right, you get a full refund within 30 days of paying.
-
-#### Cons
-
-- **Workflows start on Growth:** Automated workflows come with Growth, at $99 per user a month billed yearly.
-- **Built for the phone:** The calling tools matter most when your buyers pick up the phone.
-
-#### Price and plans
-
-You can try Close free for 14 days with no credit card. Plans, per user a month:
-
-- **Solo:** $9 billed yearly, or $19 monthly, for 1 user.
-- **Essentials:** $35 billed yearly, or $49 monthly.
-- **Growth:** $99 billed yearly, or $109 monthly.
-- **Scale:** $139 billed yearly, or $149 monthly.
-
-### 8. Zoho CRM
+### 5. Zoho CRM
 
 ```rating
 4.3 | Capterra | https://www.capterra.com/p/155928/Zoho-CRM/reviews/
 ```
 
-Zoho CRM is a sales CRM built for teams that want a free plan now and room to grow into AI agents and quoting later. Its free edition covers 3 users with no time limit, and Standard adds pipelines, forecasting and calling for $14 per user.
+**Overview**
 
-#### Key features
+Zoho CRM is a large sales CRM used by founders, sales reps and sales managers who want a free plan now and room to grow later. Its free edition covers 3 users with no time limit. Paid plans add pipelines, forecasting and calling, and Professional adds Zia AI agents and quoting. This makes it suitable for startups that want one vendor from the first seat to an approval-driven sales process.
 
-- **Free plan for 3 users:** Contact management, follow up reminders, workflow automation and mobile apps cost nothing.
-- **Pipelines and forecasting:** Standard adds several sales pipelines, sales forecasting and web forms that capture leads.
-- **Email, calendar and calling:** Standard connects Gmail and Outlook, sends mass emails and includes built in calling.
-- **Zia AI agents:** Professional adds AI agents and predictive intelligence from Zia, Zoho's assistant.
-- **Quotes and processes:** Professional also brings configure, price, quote (CPQ) and process management.
-- **Bigin for first timers:** Bigin Express is Zoho's simpler CRM for teams moving off spreadsheets.
+**Pros**
 
-#### Pros
+- Free plan for up to 3 users
+- Workflow automation on the free plan
+- Zia AI agents on Professional
+- Free migration help from Salesforce or HubSpot
+- Free trials of paid plans
 
-- **A generous free plan:** Three users get workflow automation and API access at no cost.
-- **Free migration help:** Teams switching from Salesforce or HubSpot get free help moving their data into Zoho.
-- **Room to grow in one CRM:** Professional and Enterprise add AI agents, quoting and approval processes without a move to another tool.
+**Cons**
 
-#### Cons
+- Many modules can take real setup time
+- AI agents start on Professional
+- Free covers 3 users, so teams move up early
 
-- **Time to set up:** With this many modules and settings, plan for someone on your team to spend real time configuring it.
-- **Free for a small team:** The free edition covers up to 3 users, so a growing team moves to Standard early.
+**Pricing**
 
-#### Price and plans
+- Free: [$0/month for up to 3 users](https://www.zoho.com/crm/zohocrm-pricing.html)
+- Standard, Professional and Enterprise: [See Zoho's pricing](https://www.zoho.com/crm/zohocrm-pricing.html)
+- Yearly billing saves up to 34%
 
-You can use Zoho CRM free for up to 3 users, and each paid plan comes with a free trial. Plans, per user a month:
-
-- **Standard:** $14 billed yearly, or $20 monthly.
-- **Professional:** $23 billed yearly, or $35 monthly.
-- **Enterprise:** $40 billed yearly, or $50 monthly.
-- **Bigin Express:** $7 billed yearly, or $9 monthly.
-
-### 9. monday CRM
-
-```rating
-4.7 | Capterra | https://www.capterra.com/p/245800/Monday-CRM/reviews/
-```
-
-monday CRM is a sales CRM built for teams that already run their work on monday.com boards and want sales on the same platform. Your calls and emails fill in CRM fields on their own, and AI agents source leads and prepare you for meetings.
-
-#### Key features
-
-- **Customizable boards:** Pipelines, contacts and deals live on boards you shape with your own columns.
-- **AI agents from Standard:** Standard brings a lead sourcer, an outreach caller, a meeting prep agent and an AI meeting notetaker.
-- **Communications hub:** Standard adds a central hub for your team's sales conversations.
-- **Automations:** Standard runs 250 custom automations a month, and Pro raises that to 25,000.
-- **Mass email and sequences:** Pro adds mass emails and email sequences, so outreach runs from the same boards.
-- **Quotes and invoices:** Every plan creates quotes and invoices, starting at 20 a month on Basic.
-
-#### Pros
-
-- **Familiar for monday teams:** Sales work happens on the same boards your team already uses for projects.
-- **AI on the second tier:** Agents and the notetaker come with Standard, at $17 per seat billed yearly.
-- **Room to grow:** Pro raises the limits to 100,000 contacts and deals and 25,000 automations a month.
-
-#### Cons
-
-- **3 seat minimum:** Plans start at 3 seats, so a founder selling alone still pays for three.
-- **Basic suits a small list:** Basic covers up to 1,000 active contacts and deals and 5 columns per board, so a larger contact list fits better on a higher plan.
-- **Trial instead of a free plan:** After the 14 day trial, you pick a paid plan.
-
-#### Price and plans
-
-You can try monday CRM free for 14 days with no credit card. Plans, per seat a month, from 3 seats:
-
-- **Basic:** $12 billed yearly, or $18 monthly.
-- **Standard:** $17 billed yearly, or $25 monthly.
-- **Pro:** $28 billed yearly, or $41 monthly.
-- **Ultimate:** priced on a call with their sales team.
-
-### 10. Copper
-
-```rating
-4.4 | Capterra | https://www.capterra.com/p/141642/Copper/reviews/
-```
-
-Copper is a CRM built for service businesses that run on Google Workspace and win work through relationships. It works inside Gmail and Google Calendar and logs emails and meetings as you work. Won deals then become projects your team can deliver.
-
-#### Key features
-
-- **Gmail and Google Calendar:** Add leads, track conversations, find files and manage tasks without leaving Gmail and Calendar.
-- **Automatic logging:** Contact details, emails and meetings are captured as you work, without manual entry.
-- **Pipelines with AI flags:** Drag and drop pipelines use AI flags and alerts to point out deals that are slipping.
-- **Projects from won deals:** Turn a closed deal into a project for onboarding and delivery.
-- **LinkedIn research:** Research and add prospects from LinkedIn, or any website, without switching tabs.
-- **AI email help:** An AI template generator and an AI rewriter help you draft emails.
-- **Email series:** Business sends email series that answer form submissions right away and follow up for you.
-
-#### Pros
-
-- **Made for Google Workspace teams:** Everything happens in Gmail and Calendar, so the team keeps its habits.
-- **Sales and delivery together:** Projects pick up where deals end, which suits a service startup.
-- **Thousands of integrations:** Through Zapier, Copper connects to more than 5,000 other apps.
-
-#### Cons
-
-- **Contacts grow with the plan:** Basic covers up to 2,500 contacts and Professional up to 15,000, and Business has no cap.
-- **Built for Google:** Copper's best features live in Gmail and Google Calendar, so it fits best when your team runs on Google Workspace.
-- **Service first:** A product company hiring its first sellers may find Pipedrive or Attio closer to how it sells.
-
-#### Price and plans
-
-You can start Copper free with no credit card. Plans, per seat a month:
-
-- **Basic:** $23 billed yearly, or $29 monthly.
-- **Professional:** $59 billed yearly, or $69 monthly.
-- **Business:** $99 billed yearly, or $134 monthly.
-
-### 11. Streak
-
-```rating
-4.5 | Capterra | https://www.capterra.com/p/124465/Streak/reviews/
-```
-
-Streak is a CRM built for founders and teams who work out of Gmail all day and would rather not open another app. Pipelines live right in your inbox, and Streak's AI uses your team's inbox activity to fill in records and suggest next steps.
-
-#### Key features
-
-- **Pipelines in Gmail:** Shared and private pipelines sit in your inbox, with every thread tagged by its pipeline and stage.
-- **Automatic email sharing:** Each deal, contact and company shows its full email history to the whole team.
-- **Magic fields:** Fields like last reply, time in stage and email activity update on their own.
-- **AI autofill and summaries:** Streak's AI reads deal history or searches the web to update records, and writes deal summaries.
-- **Mail merge and tracking:** Send mail merges and see email opens and link clicks inside Gmail.
-- **Pipelines beyond sales:** The same pipelines run hiring, fundraising, partnerships and support from your inbox.
-- **Mobile apps:** Native apps for iOS, iPad and Android, plus add ons for Gmail on your phone.
-
-#### Pros
-
-- **No new app to learn:** Everything happens in Gmail, so the team adopts it without new habits.
-- **Investors next to deals:** A founder can track fundraising and hiring in the same place as sales.
-- **Free email tools:** The free plan adds email and link tracking, snippets, a thread splitter and 50 mail merge sends a day to Gmail.
-
-#### Cons
-
-- **Pipelines start on Pro:** Pro costs $49 per user a month billed yearly, and the free plan covers Gmail tools without pipelines.
-- **A paid seat for each user:** Streak has no view only pricing, so each teammate takes a paid seat.
-- **Automations start on Pro+:** Integrations, automations and advanced reports all start on Pro+, at $69 billed yearly.
-- **AI credits grow with the plan:** Pro includes 20 AI credits per user a month, Pro+ includes 150 and Enterprise 500.
-
-#### Price and plans
-
-You can use Streak's free Gmail tools for as long as you like, or try Pro+ free for 14 days. Plans, per user a month:
-
-- **Pro:** $49 billed yearly, or $59 monthly.
-- **Pro+:** $69 billed yearly, or $89 monthly.
-- **Enterprise:** $129 billed yearly, or $159 monthly.
-
-### 12. Salesforce
+### 6. Salesforce
 
 ```rating
 4.4 | Capterra | https://www.capterra.com/p/61368/Salesforce/reviews/
 ```
 
-Salesforce is a CRM platform built for companies that expect a complex sales process, from a free two user suite up to editions with AI agents. Even the Free Suite includes AI that summarizes customer records and drafts emails for you.
+**Overview**
 
-#### Key features
+Salesforce is a large CRM platform used by sales reps, sales managers and admins at companies that expect a complex sales process. Even its Free Suite for 2 users includes AI that summarizes customer records and drafts emails. Editions run from Free up to Max, with Agentforce agents on top. This makes it suitable for startups that sell to large customers who expect it, or that hire someone who has run it before.
 
-- **Free Suite for 2 users:** Manage leads, deals and customer cases, and connect the CRM to Slack.
-- **Marketing tools:** The Free Suite builds custom landing pages and sends up to 100 marketing emails a month.
-- **Email and calendar sync:** Starter Suite's AI syncs your emails, events and contacts for you.
-- **Quoting and forecasting:** Pro Suite adds sales quotes and forecasting, with more customization and automation.
-- **Agentforce for Sales:** AI agents for sales come as an add on, from $125 per user a month.
+**Pros**
 
-#### Pros
+- Free Suite for up to 2 users
+- Email and calendar sync on Starter Suite
+- Quoting and forecasting on Pro Suite
+- Editions that grow up to Max
+- No expiry or credit card on the Free Suite
 
-- **Free to start:** The Free Suite has no expiration date and needs no contract or credit card.
-- **Room for complexity:** Editions run from Free up to Max, so the CRM can grow with a complicated sales process.
-- **Clear paid entry:** Starter Suite costs $25 per user a month, on monthly or yearly billing.
+**Cons**
 
-#### Cons
+- Free Suite needs a login every 60 days
+- AI add-ons start at the $195 Core edition
+- Agentforce actions run on Flex Credits
 
-- **Log in to stay free:** The Free Suite stays free only if you log in at least once every 60 days.
-- **AI add ons from Core:** AI add ons start at the Core edition, which costs $195 per user a month billed yearly.
-- **Built for bigger teams:** We'd put a seed stage team on Salesforce when a big customer expects it or a teammate has run it before.
+**Pricing**
 
-#### Price and plans
+- Free Suite: [$0/user/month](https://www.salesforce.com/sales/pricing/)
+- Starter Suite: $25/user/month, billed monthly or annually
+- Pro Suite: $100/user/month billed annually
+- Enterprise (Core): $195/user/month billed annually
 
-You can use Salesforce's Free Suite for up to 2 users with no credit card. Plans, per user a month:
+### 7. monday CRM
 
-- **Starter Suite:** $25, billed monthly or yearly.
-- **Pro Suite:** $100, billed yearly.
-- **Core:** $195, billed yearly.
-- **Advanced:** $395, billed yearly.
-- **Max:** $550, billed yearly.
+```rating
+4.7 | Capterra | https://www.capterra.com/p/245800/Monday-CRM/reviews/
+```
 
-Our guide to [Salesforce alternatives for startups](/blog/salesforce-alternatives-for-startups/) covers lighter options.
+**Overview**
+
+monday CRM is a practical sales CRM for startups that already run their work on monday.com boards. Pipelines, contacts and deals live on boards you shape with your own columns, and calls and emails fill in CRM fields on their own. Standard adds AI agents that source leads and prep meetings, plus a meeting notetaker. A key strength is one platform for projects and sales, which makes it attractive for teams already on monday.com.
+
+**Pros**
+
+- Customizable boards and columns
+- AI agents and notetaker from Standard
+- Quotes and invoices on every plan
+- Familiar for monday.com teams
+- Free trial, no credit card
+
+**Cons**
+
+- Plans start at 3 seats
+- Basic caps active contacts and deals at 1,000
+- Mass email and sequences start on Pro
+
+**Pricing**
+
+- Basic: [$12/seat/month billed annually](https://mondaycrm.ai/pricing) or $18/seat/month billed monthly
+- Standard: $17/seat/month billed annually or $25/seat/month billed monthly
+- Pro: $28/seat/month billed annually or $41/seat/month billed monthly
+- Enterprise: Custom pricing, contact sales
+
+### 8. Close
+
+```rating
+4.7 | Capterra | https://www.capterra.com/p/132667/Close-io/reviews/
+```
+
+**Overview**
+
+Close is a strong sales CRM for startups whose team sells by phone, email and SMS from one place. Chloe, its AI sales agent, comes with every plan and can call leads, hold qualifying conversations, book meetings and update the CRM afterwards. Website forms turn visitors into leads next to your outbound work. A key strength is built-in calling, which makes it attractive for phone-first sales teams.
+
+**Pros**
+
+- Built-in calling, email and SMS
+- Chloe, an AI sales agent, on every plan
+- Website forms that create leads
+- 30-day money-back guarantee
+- 14-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Workflows and the Power Dialer start on Growth
+- Chloe's work uses AI credits and call costs
+
+**Pricing**
+
+- Solo: [$9/month billed annually](https://www.close.com/pricing) or $19/month billed monthly, 1 user
+- Essentials: $35/user/month billed annually or $49/user/month billed monthly
+- Growth: $99/user/month billed annually or $109/user/month billed monthly
+- Scale: $139/user/month billed annually or $149/user/month billed monthly
+
+### 9. folk
+
+```rating
+4.5 | Capterra | https://www.capterra.com/p/251534/folk/reviews/
+```
+
+**Overview**
+
+folk is a strong CRM for startup founders and small sales teams who find clients through their network and LinkedIn. It keeps contacts and deals next to your outreach, and its AI assistants research contacts and suggest follow-ups so the list stays current. Standard finds up to 500 email addresses a month. A key strength is relationship selling, which makes it attractive for teams whose deals start with people they already know.
+
+**Pros**
+
+- folkX extension for LinkedIn
+- Email, calendar and WhatsApp sync
+- Research and follow-up assistants
+- Email campaigns with analytics
+- 14-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Sequences, custom objects and dashboards start on Premium
+- Account locks after the trial until you pick a plan
+
+**Pricing**
+
+- Standard: [$24/user/month](https://www.folk.app/pricing)
+- Premium: $48/user/month
+- Enterprise: from $80/user/month billed annually
+
+### 10. Salesflare
+
+```rating
+4.7 | Capterra | https://www.capterra.com/p/149522/Salesflare/reviews/
+```
+
+**Overview**
+
+Salesflare is a practical sales CRM for small and medium B2B startups that want their CRM to keep itself up to date. It fills in contacts from your inbox, email signatures, calendar and the web, then logs every conversation on a timeline. It also shows who on your team knows whom. A key strength is capture and email campaigns in one app, which makes it a good fit for small teams that follow up by email.
+
+**Pros**
+
+- Automatic capture from email and the web
+- Email and website visit tracking
+- Built-in lead finder
+- Relationship intelligence across the team
+- 30-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Multi-step email workflows start on Pro
+- Enterprise needs at least 5 users
+
+**Pricing**
+
+- Growth: [$29/user/month billed annually](https://salesflare.com/pricing) or $39/user/month billed monthly
+- Pro: $49/user/month billed annually or $64/user/month billed monthly
+- Enterprise: $99/user/month billed annually or $124/user/month billed monthly, minimum 5 users
+
+### 11. Copper
+
+```rating
+4.4 | Capterra | https://www.capterra.com/p/141642/Copper/reviews/
+```
+
+**Overview**
+
+Copper is a dedicated CRM designed for service startups that run on Google Workspace. It works inside Gmail and Google Calendar and logs emails and meetings as you work. Won deals then become projects your team can deliver. Many service teams use it as a specialized tool to keep sales and delivery inside Google before they need a bigger stack.
+
+**Pros**
+
+- Works inside Gmail and Google Calendar
+- Automatic logging of emails and meetings
+- Projects from won deals
+- Over 5,000 apps through Zapier
+- Free start, no credit card
+
+**Cons**
+
+- No free plan
+- Contact caps on Basic and Professional
+- Built mainly for Google Workspace teams
+
+**Pricing**
+
+- Basic: [$23/seat/month billed annually](https://www.copper.com/pricing) or $29/seat/month billed monthly
+- Professional: $59/seat/month billed annually or $69/seat/month billed monthly
+- Business: $99/seat/month billed annually or $134/seat/month billed monthly
+
+### 12. Streak
+
+```rating
+4.5 | Capterra | https://www.capterra.com/p/124465/Streak/reviews/
+```
+
+**Overview**
+
+Streak is a dedicated CRM designed for startup teams who work out of Gmail all day. Pipelines live right in your inbox, every deal shows its full email history to the team, and its AI fills in records and writes deal summaries. The same pipelines can run hiring and fundraising. Many founders use it as a specialized tool to track deals without opening another app.
+
+**Pros**
+
+- Pipelines inside Gmail
+- Email history shared with the team
+- AI autofill and deal summaries
+- Mobile apps for iOS and Android
+- Free Gmail tools and a 14-day Pro+ trial
+
+**Cons**
+
+- Pipelines start on Pro
+- Automations and integrations start on Pro+
+- Each teammate takes a paid seat
+
+**Pricing**
+
+- Free: $0 for Gmail tools, free forever
+- Pro: [$49/user/month billed annually](https://www.streak.com/pricing) or $59/user/month billed monthly
+- Pro+: $69/user/month billed annually or $89/user/month billed monthly
+- Enterprise: $129/user/month billed annually or $159/user/month billed monthly
 
 ### 13. Twenty
 
-Twenty is an open source CRM built for technical teams that want to shape their own CRM and choose where it runs. You can use Twenty's cloud, where emails and meetings log themselves, or host the open source core on your own servers for free.
+**Overview**
 
-#### Key features
+Twenty is a dedicated open source CRM designed for technical startups that want to own their CRM and choose where it runs. Use Twenty's cloud, where emails and meetings log themselves, or host the open source core on your servers for free. Seats, objects and records are unlimited on every cloud plan. Many engineering-led teams use it as a specialized tool they can extend in TypeScript.
 
-- **Open source and self hostable:** Run Twenty on your own servers, or let Twenty run it in its cloud.
-- **Email and calendar sync:** Cloud Pro syncs Google and Microsoft email and calendars, and logs emails and meetings for you.
-- **Custom data model:** Cloud plans have unlimited custom objects, fields, views and records, with table, Kanban and calendar views.
-- **Agentic workflows:** Automate CRM chores with workflows and a personal AI allowance of about 100 AI tasks a week per member.
-- **Calls and enrichment:** Cloud Pro records your calls and enriches your leads, both inside the CRM.
-- **Apps and integrations:** Add apps from Twenty's marketplace, or build your own in TypeScript with its Apps framework.
+**Pros**
 
-#### Pros
+- Open source and self-hostable
+- Email, calendar and call recording on Pro
+- Unlimited seats, objects and records
+- Apps framework in TypeScript
+- 30-day free cloud trial, no credit card
 
-- **You own the data:** Self hosting keeps the CRM, and every customer record in it, on servers you control.
-- **A low cloud price:** Cloud Pro costs $9 per user a month billed yearly.
-- **No caps on records:** Seats, objects and records are unlimited on every cloud plan.
+**Cons**
 
-#### Cons
+- AI allowance grows with the plan
+- Field and row permissions start on Organization
+- Self-hosting needs an engineer to run it
 
-- **Best with an engineer:** Self hosting pays off when someone can run it and build the objects and integrations you need.
-- **AI allowance grows with the plan:** Pro gives each member about 100 AI tasks a week, and Organization raises that to about 500.
-- **Community help on free self hosting:** Self hosted Pro relies on community support, while cloud plans and self hosted Organization get help from Twenty's team.
+**Pricing**
 
-#### Price and plans
+- Self-hosted: $0 for the open source version
+- Pro: [$9/user/month billed annually](https://twenty.com/pricing)
+- Organization: $39/user/month billed annually
+- Enterprise: from $50,000/year
 
-You can start a 30 day cloud trial with no credit card, or host Twenty yourself. Plans, per user a month:
+## 13 Best CRMs for Startups in 2027: Recap Table
 
-- **Cloud Pro:** $9 billed yearly, or $12 monthly.
-- **Cloud Organization:** $39 billed yearly, or $52 monthly.
-- **Self hosted Pro:** $0, for up to 5 workspaces.
-- **Self hosted Organization:** $19 billed yearly, or $25 monthly.
-- **Enterprise:** from $50,000 a year.
-
-## Startup discounts on CRMs
-
-HubSpot and Attio both run startup programs, and both discounts shrink each year. Plan your budget on the full price you'll pay once the discount years end.
-
-![Startup discounts step down each year: HubSpot for Startups takes 90% off in year one, 50% in year two and 25% in year three, then list price, for startups that have raised up to a Series A and commit to a year. Attio for Startups takes 80% off the yearly Pro plan and credits in year one and 30% in year two, then list price, for workspaces of up to 10 seats](/assets/blog/best-crm-for-startups/startup-discounts.svg)
-
-The fine print we'd read before you apply:
-
-- HubSpot's top tier is for startups that have raised money up to a Series A, but not a Series B, and that work with an approved partner or have verified venture funding.
-- That tier takes 90% off in year one, 50% in year two and 25% in year three. The discount period is typically two years, though, so ask whether the third year applies to you.
-- HubSpot's second tier takes 30% off in year one and 15% in year two, for members of approved entrepreneurial organizations.
-- Both HubSpot tiers need an annual commitment.
-- Attio wants venture backing or a tie to one of its startup partners, a company incorporated less than 10 years ago, and an application within 90 days of creating your workspace.
-
-For any other CRM here, you can ask the sales team about a startup price before you sign.
-
-## Free plans and trials for startups
-
-Every CRM here lets you try it before you pay, through a free plan, a trial or both.
-
-| CRM | How to try it free | Entry paid price |
-|---|---|---|
-| Omniscient | 14 day trial with no card, plus free seats for teammates who view or log data on Pro and Business | $19 per seat, billed yearly |
-| HubSpot | Free CRM for up to 2 users | $20 per seat, or from $7 for new customers |
-| Attio | Free plan for up to 3 seats, and a 14 day trial of Pro | $35 per seat, billed yearly |
-| Pipedrive | 14 day trial with no card | [See pricing](https://www.pipedrive.com/en/pricing) |
-| folk | 2 week trial with no card | $24 per member, billed yearly |
-| Salesflare | 30 day trial with no card | $29 per user, billed yearly |
-| Close | 14 day trial with no card | $9 for one user, billed yearly |
-| Zoho CRM | Free plan for up to 3 users, and trials of paid plans | $14 per user, billed yearly |
-| monday CRM | 14 day trial with no card | $12 per seat, billed yearly, from 3 seats |
-| Copper | Free start with no card | $23 per seat, billed yearly |
-| Streak | Free Gmail tools without pipelines, and a 14 day trial of Pro+ | $49 per user, billed yearly |
-| Salesforce | Free Suite for up to 2 users | $25 per user |
-| Twenty | Free to host yourself, and a 30 day cloud trial with no card | $9 per user, billed yearly |
-
-## Which CRM fits each stage of a startup
-
-The right CRM changes as you hire, so here's our match for four common startup stages.
-
-![Which CRM fits each stage of a startup: a founder selling alone needs capture without typing, from Omniscient, folk, Streak or HubSpot's free CRM; a first sales hire needs a pipeline learned in a day, from Pipedrive, Close, Salesflare or Omniscient; a small sales team needs a forecast and access rules, from HubSpot, Attio, Zoho CRM or monday CRM; a custom sales process needs custom objects and an admin, from Salesforce, Attio or Twenty](/assets/blog/best-crm-for-startups/crm-by-stage.svg)
-
-As the team grows, the [Skills page](/product/skills/) shows how Otto gives the founder and each new hire the same kind of answer to the same question.
-
-## How to switch CRMs later without losing data
-
-Your first CRM may not be your last, so look at how data comes out before you put it in. Omniscient's importer for HubSpot, Salesforce, Pipedrive and Attio is a good example, and the order it runs in shows what a clean move needs.
-
-![The order a CRM import runs in: companies first, matched by web domain; then people, linked to their company; then missing websites, filled from their people's work emails with free addresses like Gmail left out; then pipelines, with stages copied and won and lost kept; then deals, placed on the matching stage; and notes last, kept on the record they belong to](/assets/blog/best-crm-for-startups/import-order.svg)
-
-What each step protects:
-
-- Companies come first, matched by web domain, so every person has a company to land on.
-- A company without a website gets one from its people's work emails, and free addresses like Gmail don't count.
-- Pipelines come before deals, so each deal lands on a matching stage, with won and lost kept.
-
-Omniscient's importer also skips people with no email address, so export those contacts separately if you need them.
-
-Ask any CRM how it matches companies on import, since records without a website are the hardest to place. A wrong match also takes longer to fix than a missing one, because people and deals follow the company they land on.
-
-## How to choose a CRM for your startup
-
-Most trials here last 14 days, which is enough if you spend them on real work. This is the order we'd test in:
-
-```steps
-1. Write down how you sell: List the channels your deals start from, like email, LinkedIn, calls or inbound forms.
-2. Invite your next teammate: Add a colleague and see what a free or viewer seat lets them see and do.
-3. Price your next hires: Look up the plan you'd need at three and at five seats, on yearly and monthly billing.
-4. Ask about startup pricing: Ask whether you qualify for a discount and what you'll pay once it ends.
-5. Test the way out: Export a list, or ask how contacts, deals and notes would move to another CRM.
+```tools
+Tool | Domain | Rating | Best feature | Starting price
+Omniscient | tryomniscient.com | Not rated | One agentic CRM for the whole sales motion | [$19/seat/month billed annually](/pricing/)
+HubSpot | hubspot.com | 4.5/5 | Free CRM and startup discount | [From $20/seat/month](https://www.hubspot.com/pricing/sales)
+Attio | attio.com | Not rated | Objects you design yourself | [$40/month, then $35/user/month billed annually](https://attio.com/pricing)
+Pipedrive | pipedrive.com | 4.5/5 | Nova meeting briefs on every plan | [See pricing](https://www.pipedrive.com/en/pricing)
+Zoho CRM | zoho.com | 4.3/5 | Free plan for 3 users | [See pricing](https://www.zoho.com/crm/zohocrm-pricing.html)
+Salesforce | salesforce.com | 4.4/5 | Editions for complex sales | [$25/user/month](https://www.salesforce.com/sales/pricing/)
+monday CRM | monday.com | 4.7/5 | Boards with AI agents | [$12/seat/month billed annually](https://mondaycrm.ai/pricing)
+Close | close.com | 4.7/5 | Built-in calling, email and SMS | [$9/month billed annually](https://www.close.com/pricing)
+folk | folk.app | 4.5/5 | LinkedIn extension and assistants | [$24/user/month](https://www.folk.app/pricing)
+Salesflare | salesflare.com | 4.7/5 | Fills itself in from email | [$29/user/month billed annually](https://salesflare.com/pricing)
+Copper | copper.com | 4.4/5 | Works inside Google Workspace | [$23/seat/month billed annually](https://www.copper.com/pricing)
+Streak | streak.com | 4.5/5 | Pipelines inside Gmail | [$49/user/month billed annually](https://www.streak.com/pricing)
+Twenty | twenty.com | Not rated | Open source and self-hostable | [$9/user/month billed annually](https://twenty.com/pricing)
 ```
 
-For a closer look at AI that fills in records, our list of the [best AI CRMs](/blog/best-ai-crm/) compares how each one shows its work.
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=best-crm-for-startups&start=crm)**
 
-```cta
-Run your startup's whole sales motion in Omniscient, from the first lead to the closed deal, with Otto doing the busy work.
-```
+## Conclusion
+
+A CRM for startups gives a young team one place for every deal, so the pipeline survives the first hire. It keeps the bill small while you find your market.
+
+The best one does more than track stages. It finds the next customer, captures every email and meeting, preps each call and keeps deals current, so a five-person team sells like a bigger one.
+
+That is why [Omniscient](/) stands out. It combines lead finding, a shared memory of every conversation and skills that keep Otto's work consistent in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option.
 
 ```faq
-Q: What is the best CRM for startups in 2026?
-A: For B2B startups that want one CRM for the whole sales motion, from finding leads to closing deals, with Otto doing the busy work, we'd start with Omniscient. HubSpot fits startups that run marketing and sales together, and Pipedrive suits a first sales hire who wants a simple pipeline.
-Q: Is there a free CRM for startups?
-A: Yes. HubSpot, Attio, Zoho CRM and Salesforce all have free plans for 2 or 3 users, and Twenty is free to host yourself. Streak's free plan adds tracking and mail merge to Gmail, with pipelines starting on Pro, and on its Pro and Business plans Omniscient gives free seats to teammates who only view or log data.
-Q: Do CRMs offer startup discounts?
-A: Two CRMs on this list publish startup programs. HubSpot for Startups takes up to 90% off in year one for eligible startups that have raised up to a Series A, and Attio for Startups takes 80% off its yearly Pro plan in year one.
-Q: Which CRM for startups works inside Gmail?
-A: Streak runs entirely inside Gmail, and Copper lets you add leads and track conversations from Gmail and Google Calendar. Omniscient, Attio and Salesflare connect to Gmail and fill in records from your email in their own apps.
-Q: When should a startup start using a CRM?
-A: Start as soon as you have more open conversations than you can keep in your head.
+Q: What is a CRM for startups?
+A: A CRM for startups is a sales tool that keeps a young company's contacts, deals and conversations in one place by syncing them from email, calendars and calls. It keeps the first seats free or cheap and gives each new hire the full history of every deal, so the pipeline doesn't live in the founder's inbox.
+Q: How do CRMs for startups keep records current?
+A: CRMs for startups connect to Gmail or Outlook and your calendar, then log each email and meeting on the right company, person and deal. In Omniscient, the suggested sync settings add people only when you reach out and leave out personal addresses, so the CRM holds people you sell to. Imports from HubSpot, Salesforce, Attio and Pipedrive bring older records along.
+Q: Why use a CRM for startup sales?
+A: A CRM for startup sales keeps every deal visible once more than one person sells. It cuts data entry, helps new reps ramp and shows which deals need a next step. HubSpot and Attio both run startup programs whose discounts step down each year, so plan your budget on the full price you'll pay once the discount ends.
+Q: What features should modern CRMs for startups include?
+A: Modern CRMs for startups should include email and calendar sync, a simple pipeline, a free plan or free seats, and prices that still work at five or ten seats. The strongest also run on one shared memory of every conversation, with an agent that finds leads, preps meetings and keeps deals current, as Otto does in Omniscient.
+Q: Which CRM is recommended for startups that need more than a pipeline?
+A: For startups that need more than a pipeline, Omniscient is the recommended pick: one agentic CRM for the whole sales motion, from finding leads to closing deals, with Otto doing the busy work. Startups that run marketing and sales together may prefer HubSpot, and teams that sell by phone may prefer Close.
+```
+
+```cta
+Ready to use Omniscient? Run your startup's whole sales motion in one agentic CRM, from the first lead to the closed deal.
 ```

@@ -654,8 +654,12 @@ function tools(body, ctx) {
     const img = logo ? `<img src="${esc(logo)}" alt="" width="20" height="20" loading="lazy" decoding="async">` : "";
     const href = r.domain === "tryomniscient.com" ? "/" : r.domain ? `https://${r.domain}/` : "";
     const name = href ? `<a href="${esc(href)}"${href === "/" ? "" : ' rel="nofollow"'}>${inline(r.name, ctx)}</a>` : inline(r.name, ctx);
-    const price = priceCell(r.price, r.name, ctx, true);
-    return `<tr><th scope="row"><span class="bl-tools__name"><span class="bl-tools__logo">${img}</span>${name}</span></th><td>${inline(r.what, ctx)}</td><td class="bl-tools__price">${price}</td><td>${inline(r.best, ctx)}</td></tr>`;
+    // A recap header puts the price last ("... | Best feature | Starting price"): style that column as the price.
+    const priceLast = /price/i.test((rows.header || [])[4] || "");
+    const cols = priceLast
+      ? [`<td>${inline(r.what, ctx)}</td>`, `<td>${inline(r.price, ctx)}</td>`, `<td class="bl-tools__price">${priceCell(r.best, r.name, ctx, true)}</td>`]
+      : [`<td>${inline(r.what, ctx)}</td>`, `<td class="bl-tools__price">${priceCell(r.price, r.name, ctx, true)}</td>`, `<td>${inline(r.best, ctx)}</td>`];
+    return `<tr><th scope="row"><span class="bl-tools__name"><span class="bl-tools__logo">${img}</span>${name}</span></th>${cols.join("")}</tr>`;
   }).join("\n");
   // A header line names the columns: "Tool | Domain | Rating | Best feature | Starting price" gives a recap table.
   // Without one, the columns are What it is, Starting price and Best for.

@@ -1,43 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 690" width="720" height="690" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
-<title id="t">Startup discounts step down each year</title>
-<desc id="d">HubSpot for Startups takes 90% off in year one, 50% in year two and 25% in year three, then list price from year four, for startups that have raised up to a Series A and commit to a year. Attio for Startups takes 80% off the yearly Pro plan and credits in year one and 30% in year two, then list price from year three, for workspaces of up to 10 seats. HubSpot's discount typically runs two years, so ask whether year three applies to you.</desc>
-<rect width="720" height="690" fill="#ffffff"/>
-<text x="32" y="48" font-family="Inter, system-ui, sans-serif" font-size="19" fill="#737373">Startup discounts</text>
-<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Discounts step down <tspan fill="#171717">each year</tspan></text>
-<text x="32" y="144" font-size="22" font-weight="500" fill="#171717">HubSpot for Startups</text>
-<text x="32" y="172" font-size="19" fill="#737373">Raised up to a Series A, with a yearly commitment</text>
-<g font-family="Inter, system-ui, sans-serif" font-size="18" fill="#171717">
-<text x="32" y="215">Year 1</text>
-<text x="32" y="259">Year 2</text>
-<text x="32" y="303">Year 3</text>
-<text x="32" y="347">Year 4</text>
-</g>
-<rect x="128.5" y="192.5" width="450" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="236.5" width="250" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="280.5" width="125" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="324.5" width="2" height="31" fill="#333333" rx="1"/>
-<g font-size="19" font-weight="600" fill="#171717">
-<text x="592" y="215">90% off</text>
-<text x="392" y="259">50% off</text>
-<text x="267" y="303">25% off</text>
-</g>
-<text x="144" y="347" font-size="19" fill="#737373">List price</text>
-<line x1="32" y1="388.5" x2="688" y2="388.5" stroke="#ebebeb"/>
-<text x="32" y="434" font-size="22" font-weight="500" fill="#171717">Attio for Startups</text>
-<text x="32" y="462" font-size="19" fill="#737373">Yearly Pro plan and credits, workspaces up to 10 seats</text>
-<g font-family="Inter, system-ui, sans-serif" font-size="18" fill="#171717">
-<text x="32" y="505">Year 1</text>
-<text x="32" y="549">Year 2</text>
-<text x="32" y="593">Year 3</text>
-</g>
-<rect x="128.5" y="482.5" width="400" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="526.5" width="150" height="31" fill="#0a0a0a" stroke="#ebebeb" rx="10"/>
-<rect x="128.5" y="570.5" width="2" height="31" fill="#333333" rx="1"/>
-<g font-size="19" font-weight="600" fill="#171717">
-<text x="542" y="505">80% off</text>
-<text x="292" y="549">30% off</text>
-</g>
-<text x="144" y="593" font-size="19" fill="#737373">List price</text>
-<text x="32" y="636" font-size="17" fill="#737373">Sources: hubspot.com/startups/about and attio.com/startups</text>
-<text x="32" y="662" font-size="17" fill="#737373">HubSpot's discount typically runs two years, so ask about year 3.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" width="720" height="470" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Startup discounts from HubSpot and Attio</title>
+<desc id="d">HubSpot for Startups gives Seed and Series A founders 90% off the first year, plus discounts on AI credits as they grow. Attio for Startups gives venture-backed startups with up to 10 users 80% off the yearly Pro plan and credits in the first year, and 30% off the second year. From hubspot.com/startups and attio.com/startups, November 2026.</desc>
+<rect width="720" height="470" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Startup programs</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Discount by year</text>
+<text x="32" y="148" font-size="20" font-weight="500" fill="#171717">HubSpot for Startups</text>
+<text x="32" y="174" font-size="17" fill="#737373">Seed and Series A founders</text>
+<rect x="300" y="128" width="346" height="32" rx="6" fill="#333333"/>
+<text x="314" y="150" font-size="18" font-weight="500" fill="#ffffff">Year 1: 90% off</text>
+<line x1="32" x2="688" y1="210" y2="210" stroke="#ebebeb"/>
+<text x="32" y="258" font-size="20" font-weight="500" fill="#171717">Attio for Startups</text>
+<text x="32" y="284" font-size="17" fill="#737373">Up to 10 users, yearly Pro</text>
+<rect x="300" y="238" width="308" height="32" rx="6" fill="#333333"/>
+<text x="314" y="260" font-size="18" font-weight="500" fill="#ffffff">Year 1: 80% off</text>
+<rect x="300" y="282" width="115" height="32" rx="6" fill="#333333"/>
+<text x="425" y="304" font-size="18" font-weight="500" fill="#171717">Year 2: 30% off</text>
+<line x1="32" x2="688" y1="350" y2="350" stroke="#ebebeb"/>
+<text x="32" y="400" font-size="18" fill="#737373">Bar length shows the share taken off the list price.</text>
+<text x="32" y="440" font-size="18" fill="#737373">From hubspot.com/startups and attio.com/startups, November 2026.</text>
 </svg>

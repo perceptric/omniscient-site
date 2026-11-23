@@ -1,372 +1,488 @@
 ---
-title: "13 Best CRMs With Automatic Data Entry in 2026"
+title: "13 Best CRMs With Automatic Data Entry in 2027"
 slug: crm-with-automatic-data-entry
 target_keyword: "crm with automatic data entry"
-meta_description: "The 13 best CRMs with automatic data entry in 2026, compared on what each fills in from email, meetings and calls, when it asks first and what it costs."
+meta_description: "The 13 best CRMs with automatic data entry in 2027, from Omniscient to HubSpot and Salesflare, compared with ratings, pros, cons and prices for each one."
 type: best-of
 topic: crm
-updated: 2026-11-15
-read_minutes: 19
-summary: "The 13 best CRMs with automatic data entry, compared on what each fills in from email, meetings and calls, and when it asks you before writing."
+updated: 2026-11-23
+summary: "13 CRMs that fill in contacts, activity and deal fields for you, with the rating, pros, cons and price of each, led by Omniscient."
 ---
 
-# 13 Best CRMs With Automatic Data Entry in 2026
+# 13 Best CRMs With Automatic Data Entry in 2027
 
-The best test for a CRM with automatic data entry is what it does when it isn't sure. A guessed headcount looks exactly like a real one once it sits in your CRM, so a good CRM leaves the field empty.
+Your inbox and calendar show every conversation you have with a buyer. Your CRM shows what someone found time to type in after the call, so contacts go missing, notes stay thin and deal fields fall behind.
 
-Below are 13 CRMs with automatic data entry, compared on what each one fills in for you and what it does when it isn't sure.
+A CRM with automatic data entry closes that gap. It reads your email, calendar and calls, then writes the contacts, activity and deal details for you. Founders, SDRs, account executives and agencies use one to keep records current without the typing.
 
-```callout
-Prices are from each vendor's site in November 2026.
+The result is a pipeline you can trust and more of the day for selling. ⏱️
+
+## What Is a CRM With Automatic Data Entry?
+
+**A CRM with automatic data entry is a CRM that fills in its own contacts, activity and deal fields by reading your email, calendar and calls.**
+
+It connects to your inbox and meeting tools, matches each message and call to the right company, person and deal, and adds details such as job titles or company size. Most run as a web app with a Gmail or Outlook connection, and some add a Chrome extension or a meeting recorder.
+
+Most tools include:
+
+- ✅ Email and calendar sync
+- ✅ Automatic contact creation
+- ✅ Call notes from transcripts
+- ✅ Company and contact enrichment
+
+The result is a CRM that stays current while your team keeps selling.
+
+## Why Do You Need a CRM With Automatic Data Entry for Sales?
+
+Typing up notes after every call works for a few deals a week. Past that, records fall behind, and forecasts rest on whatever someone remembered to log.
+
+A CRM with automatic data entry solves this.
+
+- **Hours back weekly:** Reps stop copying emails, contacts and notes into the CRM by hand.
+- **Complete records:** Every email, meeting and call lands on the right company, person and deal.
+- **Cleaner data:** Duplicates merge and missing company details fill in for you.
+- **One shared memory:** Your team and its AI agents read from the same history of every customer conversation, with the source behind each fact.
+
+## 13 Best CRMs With Automatic Data Entry in 2027!
+
+Here are the 13 CRMs we'd look at first, from all-in-one agentic CRMs to specialists. Prices are from each vendor's site in November 2026.
+
+![Bar chart of the lowest paid seat a month: Omniscient $19, HubSpot from $20, Copper $23, folk $24, Salesforce $25, Salesflare $29, Attio $40 with the first user, Coffee $50 and Lightfield $89](starting-prices.svg "Lowest paid seat for nine of the 13 CRMs")
+
+### CRMs With Automatic Data Entry: Quick Match
+
+```tree
+# Which CRM with automatic data entry fits you
+What should it fill in for you?
+  Everything, from first lead to closed deal: Omniscient
+  Contacts and emails: Where do you work?
+    Gmail and Google Calendar: Copper
+    Gmail, Outlook and LinkedIn: Salesflare, folk
+  Call notes and deal fields: How should updates land?
+    You approve each one: Omniscient, Pipedrive
+    Agents keep records current: Day AI, Lightfield, Clarify
+  Records in a CRM you keep: Which one?
+    Salesforce or HubSpot: Coffee, Salesforce, HubSpot
+    Your own data model: Attio
+    A venture or private equity firm: Affinity
 ```
-
-```tools
-Name | Domain | What it is | Starting price | Best for
-Omniscient | tryomniscient.com | An agentic CRM that runs your whole sales motion, from finding leads to closing deals, on one shared memory | [$19 per seat a month, billed yearly](/pricing/) | B2B teams that want one CRM for the whole sales motion
-HubSpot | hubspot.com | A CRM platform that logs email from connected inboxes | [Free for up to 2 users](https://www.hubspot.com/pricing/sales) | Teams that run marketing and sales together
-Salesforce | salesforce.com | A CRM whose Starter Suite syncs emails, events and contacts | [$25 per user a month](https://www.salesforce.com/sales/pricing/) | Teams with an admin and a custom sales process
-Attio | attio.com | A flexible CRM with email sync and enrichment on every plan | [Free for up to 3 seats](https://attio.com/pricing) | Teams that want to design their own data model
-Salesflare | salesflare.com | A B2B CRM that fills itself in from your inbox, email signatures and calendar | [$29 per user a month, billed yearly](https://salesflare.com/pricing) | Small B2B teams that want capture and email campaigns
-Pipedrive | pipedrive.com | A pipeline CRM whose Nova notetaker drafts updates you approve | check | Small teams that plan around pipeline stages
-Copper | copper.com | A CRM built to work inside Gmail and Google Calendar | [$23 per seat a month, billed yearly](https://www.copper.com/pricing) | Service businesses on Google Workspace
-Coffee | coffee.ai | An AI agent that fills in its own CRM or the one you have | [$50 per person a month](https://coffee.ai/pricing) | Teams that want to keep Salesforce or HubSpot
-Lightfield | lightfield.com | An AI CRM that updates itself from every customer interaction | [$89 per user a month](https://lightfield.com/pricing) | Teams that want Slack captured with email and meetings
-Day AI | day.ai | An AI CRM built on a shared memory of email, calendar, meetings and Slack | [$60 per agent a month, billed yearly](https://day.ai/pricing) | Teams that want agents plus free seats for teammates
-Clarify | clarify.ai | An AI CRM that records calls and updates deals, priced by AI credits | [Free, with unlimited seats](https://www.clarify.ai/pricing) | Teams that want call notes without seat fees
-folk | folk.app | An AI CRM with email, calendar and WhatsApp sync and AI fields | [$24 per member a month, billed yearly](https://www.folk.app/pricing) | Founders and agencies selling through their network
-Affinity | affinity.co | A CRM for private capital firms that captures email and calendar activity | [$2,000 per user a year](https://www.affinity.co/pricing) | Venture and private equity deal teams
-```
-
-The short version, by what you want filled in for you:
-
-- Pick Omniscient if you want one agentic CRM for your whole sales motion, from finding leads to closing deals, with Otto doing the data entry and the rest of the busy work.
-- Pick Salesflare if you want contacts filled in from your inbox and email signatures.
-- Pick Coffee if your team is staying on Salesforce or HubSpot.
-- Pick Clarify if you want call notes on a free plan with unlimited seats.
-- Pick HubSpot if marketing and sales share one platform.
-- Pick Affinity if you run a venture or private equity firm.
-
-## What a CRM with automatic data entry fills in
-
-Automatic data entry means the CRM writes its own records from the tools your team already uses. Your team stops copying email addresses into contacts and typing up notes after each call.
-
-It comes in six kinds, and each CRM is strongest at some of them:
-
-| Kind | What gets filled | Where it comes from |
-|---|---|---|
-| Contact capture | People and their companies | Email headers and meeting invites |
-| Activity logging | Each email and meeting, on the right record | Gmail, Outlook and your calendar |
-| Call notes | Notes, next steps and objections | Call transcripts or a recording bot |
-| Deal fields | Amount, close date, stage and next step | Emails and calls, read by AI |
-| Enrichment | Industry, size, location and job titles | The company's website or a data provider |
-| Lead capture | New leads and where each one came from | Web forms and webhooks |
-
-Contact capture and activity logging are common now, and every CRM in this guide offers some form of them. The differences sit in the last four rows and in the rules each CRM follows when an email or call is unclear.
-
-These are the questions we'd put to any vendor that promises automatic data entry:
-
-- Who becomes a contact when you connect a busy inbox?
-- Which values does it write on its own, and which wait for you?
-- Can you click a value and see the sentence it came from?
-- What happens to a field someone on your team typed?
-
-## How automatic data entry works in Omniscient
-
-Omniscient fills in its records from the Gmail or Outlook inbox and calendar you connect and from the transcripts your calls already create. It also takes in your website forms. Everything lands in [Omniscience](/product/omniscience/), the shared memory that puts each email, call, meeting and note on the right company, person and deal, and much of it comes down to rules for what to leave out.
-
-### Not every email should become a contact
-
-Newsletters, receipts, alerts and no reply senders all carry names and company domains. A sync that turns every one of them into a contact buries your buyers under vendors, so Omniscient's sync runs each email through filters first.
-
-![Flow chart of the five checks Omniscient runs before an email becomes CRM data: bulk mail like a newsletter is skipped, mail from a no reply or billing address is skipped, an address on your do not track list is skipped, a personal address like gmail.com is left out, and someone new who wrote to you first is not added. Every other email is filed under the person, company and deal, and Otto reads it for facts with quotes](/assets/blog/crm-with-automatic-data-entry/email-checks.svg)
-
-A few details behind those checks:
-
-- In Gmail, it skips the Promotions, Social, Updates and Forums tabs, plus mail with list headers such as List-Unsubscribe or List-Id.
-- In Outlook, it skips the mail that Focused Inbox sorts into its Other tab.
-- Each person keeps their own do not track list of addresses or whole domains, such as your lawyer's address or family.com.
-- With the suggested setting, people are added only from emails you send and meetings you hold.
-
-The welcome flow suggests that stricter setting, and each person can change it later in Settings.
-
-Each person's company comes from their email domain, so mail.acme.com and acme.com land on the same company record. Once a company has a meeting with you, or emails have gone both ways, Omniscient opens an opportunity for it if it has none.
-
-### Company details come from the company's own site
-
-When a new company has a web domain, Otto, Omniscient's agent, reads its home page and about page once. It fills Industry, Employees, Headquarters and Description, and only when those fields are empty.
-
-The rule from the opening covers every one of those fields. If the site doesn't mention a headcount, Employees stays blank, and a value someone on your team typed is never replaced.
-
-Personal domains like gmail.com are never looked up. A site that won't load gets three attempts, then Otto moves on.
-
-### Some values fill in, and the rest wait for you
-
-Otto reads each new email thread and call transcript for the facts that move a deal, like next steps, objections, competitors, budget, timeline and who decides. Each fact carries a quote copied word for word, and a fact without a quote is left out.
-
-Amount, close date and stage are always read, though each follows its own rule:
-
-- Amount and close date fill on their own only when the field is empty and Otto is at least 85% sure.
-- A change of stage always waits as a suggestion on the record, where you accept it or skip it.
-- A field a person typed is never changed, however sure Otto is.
-- A conversation from a private inbox never fills a field on its own.
-
-![What Omniscient fills on its own and what waits for you. Fills on its own: new people and companies by your sync settings, each email and meeting on the right record, call notes and facts with their quotes, company details from its own website when empty, amount and close date when empty and Otto is 85% sure, and fields set to Fill when empty. Waits for you to accept or skip: every change of stage, a value that would replace one already there, a value Otto is less than 85% sure of, and a field value from a private inbox. Left alone or dropped: a field a person typed, and a rule value under 60% sure or with no quote](/assets/blog/crm-with-automatic-data-entry/what-fills.svg)
-
-Any other field can follow the same kind of rule. On the field's page, you set Otto to Off, Suggest or Fill when empty, then describe in plain words what to look for.
-
-![Omniscient's settings for a custom opportunity field named Competitor, set to Fill when empty, next to the Shiftwise opportunity, where Otto found the competitor and the next step in an email, each with the sentence it came from](/assets/blog/crm-with-automatic-data-entry/field-rule.shot.html)
-
-A value Otto is less than 60% sure of, or can't quote, is dropped before you ever see it. Field rules like this one come with the Pro plan, while email capture comes with every plan and call notes start on Starter.
-
-### Call notes without a bot in the meeting
-
-Omniscient reads the transcripts that Google Meet, Zoom and Teams already create, so no bot has to join your call. Meet and Teams transcripts can take a while to appear, so Omniscient checks each meeting every 30 minutes, up to 8 times over 3 days.
-
-Without a bot, notes depend on whoever hosts the call turning transcription on. Once a meeting turns out to have no transcript, Omniscient stops checking it.
-
-From the transcript, Otto writes the notes, action items and facts, each with its quote. A change to the stage, amount or next step waits on the deal as a suggestion until you accept it, and the wrap up a call skill drafts a follow up that you send from your own inbox. The [Meetings page](/product/meetings/) shows a call from start to finish.
-
-### Filled records feed every answer
-
-Once every email, call and note sits on the right record, you can ask Otto about any account in plain words. He answers in a line or two, with the quote and date behind each fact, and he can answer in Slack or by voice too.
-
-Otto answers through skills, fixed steps for one job like prepping a meeting or reviewing the pipeline. The same question gets the same kind of answer each time, built from the records your sync filled in. Your team can write its own skills in plain words, and the [Ask Otto page](/product/ask-otto/) shows how a question gets answered.
-
-## The 13 best CRMs with automatic data entry in 2026
 
 ### 1. Omniscient
 
-Omniscient is an agentic CRM that runs a B2B team's whole sales motion, from finding the next customer to closing the deal and keeping the account, and it keeps its own records so your team spends less time typing. Otto, its built-in agent, does the busy work at every step: he builds lead lists, captures every email and call, preps and recaps your meetings, keeps deals current and answers anything about your accounts.
+**Overview**
 
-All of it runs on Omniscience, a shared memory of every customer conversation that your team and AI agents can ask anything. Otto works through skills, fixed playbooks for each job, so answers stay accurate and consistent.
+Omniscient is one of the most relevant CRMs with automatic data entry for teams that want one agentic CRM for the whole sales motion. Instead of only logging emails, Otto, its built-in agent, finds leads, captures every email, meeting and call and keeps deals current on Omniscience, one shared memory of every customer conversation. That makes it a strong fit for B2B teams that want records that fill themselves in without juggling several tools.
 
 ```try
 Try Omniscient free | https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=crm-with-automatic-data-entry&start=crm
 ```
 
-#### Key features
+![Omniscient's settings for a custom opportunity field named Competitor, set to Fill when empty, next to the Shiftwise opportunity, where Otto found the competitor and the next step in an email, each with the sentence it came from](field-rule.shot.html)
 
-- **Find customers:** Describe your buyer and Otto builds a lead list with work emails, finds the right people at a company, or finds companies like your best customers. Job changes are tracked, and website forms bring inbound leads straight in.
-- **Capture everything:** Gmail, Outlook, your calendar and call notes from Zoom, Google Meet and Teams land on the right company, person and deal. Duplicates merge and missing details fill in, and you can undo any of it.
-- **Engage:** Replies waiting on you rise to the top, and Otto drafts follow-ups in your voice from your pricing and playbook. You send them from your own inbox.
-- **Meet:** A one-page brief arrives before each meeting. After it come the notes, action items and suggested deal updates with the customer's own words, plus MEDDICC and BANT from calls.
-- **Manage the pipeline:** Accounts, contacts, opportunities and your own objects, a pipeline board and forecast, and fields Otto fills with proof for you to accept.
-- **Run the business:** Ask anything and get an answer with sources. Manager mode adds deal reviews, rep scorecards and call coaching, and dashboards come from a sentence.
-- **Automate and extend:** Workflows run follow-ups and alerts on their own, and Claude, ChatGPT or Cursor can use the same memory through MCP.
+**Pros**
 
-#### Pros
+- [Gmail, Outlook and calendar captured on the right record](/product/email-sync/)
+- [Duplicates merged and company details filled in](/product/clean-data/)
+- [Answers with the quote behind each fact](/product/ask-otto/)
+- [Skills keep every rep's work consistent](/product/skills/)
+- [AI included in every paid seat](/pricing/)
 
-- **One CRM for the whole motion:** Prospecting, conversations, meetings, pipeline and reporting live in one place, so there are fewer tools to stitch together.
-- **One shared memory:** Every answer and suggested update draws on every email, call and note on the account, with the quote behind it.
-- **Consistent results from skills:** Skills give Otto the same steps every time, so two reps asking the same question get the same kind of answer.
-- **You stay in charge:** Otto shows a card before any change and writes drafts that you send yourself.
-- **Free seats for viewers:** On Pro and Business, teammates who only view or log data take a free seat.
+**Cons**
 
-#### Cons
+- Not a standalone enrichment tool on its own
+- No phone dialer for phone-first teams
 
-- **No phone dialer:** Omniscient doesn't make calls, so teams that sell by phone will be happier with Close.
-- **No marketing email:** Workflows send follow-ups from your team's templates, and HubSpot fits better when bulk marketing email is your main channel.
-- **The best parts start on Pro:** Free viewer seats, prep briefs and the pipeline forecast come with the $49 Pro seat, and manager mode with Business.
-- **Newer product:** Omniscient is younger than most CRMs here and has a shorter public track record.
+**Pricing**
 
-#### Price and plans
-
-You can try Pro free for 14 days with no credit card. Paid seats, billed yearly (monthly billing costs 20% more):
-
-- **Free:** $0 for teammates who only view or log data.
-- **Starter:** $19 per seat a month.
-- **Pro:** $49 per seat a month.
-- **Business:** $99 per seat a month.
-
-The [Omniscience page](/product/omniscience/) shows the shared memory behind it, and the [Skills page](/product/skills/) shows how Otto's answers stay consistent.
+- Free: $0 for teammates who only view or log data
+- Starter: [$19/seat/month billed annually](/pricing/)
+- Pro: $49/seat/month billed annually
+- Business: $99/seat/month billed annually
 
 ### 2. HubSpot
 
-HubSpot is a customer platform that connects marketing, sales and service tools around one CRM. Its free CRM covers up to 2 users and 1,000 contacts, and it includes Breeze Assistant, HubSpot's AI assistant.
+```rating
+4.5 | Capterra | https://www.capterra.com/p/152373/HubSpot-CRM/reviews/
+```
 
-- When you connect a work inbox, [HubSpot's logging rules](https://knowledge.hubspot.com/connected-email/manage-contact-email-logging-rules) log emails to and from your existing contacts by default, on every plan.
-- Creating new contacts from logged emails is a beta setting that a Super Admin turns on, and a never log list keeps chosen addresses and domains out.
-- [Sales Hub Starter](https://www.hubspot.com/pricing/sales) costs $20 per seat a month, or from $7 for new customers.
-- Professional starts at $90 per seat a month, plus a one time onboarding fee of $1,500.
+**Overview**
 
-Since default logging starts from contacts you already have, HubSpot works best when your forms and marketing already bring people in.
+HubSpot is one of the most widely used CRMs with automatic data entry, built for teams that run marketing and sales together. When you connect a work inbox, it logs emails to and from your existing contacts by default on every plan, and a never log list keeps chosen addresses and domains out. Its free CRM includes Breeze Assistant. This makes it a common choice for teams whose forms and marketing already bring contacts in.
+
+**Pros**
+
+- Email logged for existing contacts by default
+- Never log list for addresses and domains
+- Notetaker included on Sales Hub Starter
+- Marketing and sales on one record
+- Free CRM for up to 2 users
+
+**Cons**
+
+- Professional adds a $1,500 onboarding fee
+- AI agents draw on monthly HubSpot Credits
+- New contacts from email is a beta setting
+
+**Pricing**
+
+- Free: $0/month for up to 2 users
+- Starter: [from $20/seat/month](https://www.hubspot.com/pricing/sales), with lower prices for new customers
+- Professional: $90 to $100/seat/month by how you pay, plus $1,500 one-time onboarding
+- Enterprise: from $150/seat/month, plus $3,500 one-time onboarding
 
 ### 3. Salesforce
 
-Salesforce is a CRM platform that runs from a free suite up to large enterprise editions, with AI agents through Agentforce. It captures interactions automatically, so the record shows what happened.
+```rating
+4.4 | Capterra | https://www.capterra.com/p/61368/Salesforce/reviews/
+```
 
-- [Starter Suite costs $25 per user a month](https://www.salesforce.com/sales/pricing/), billed monthly or yearly, with AI that syncs emails, events and contacts for you.
-- AI add ons start at Core, which costs $195 per user a month, billed yearly.
-- Agentforce for Sales costs extra, from $125 per user a month.
+**Overview**
 
-Salesforce makes the most sense once you have an admin or a partner to set it up. A small team can start on Starter Suite for the sync, then move up to Core when it wants to add AI.
+Salesforce is one of the most established CRMs with automatic data entry, used by sales teams, admins and enterprise sales leaders. Even Starter Suite uses AI to sync emails, events and contacts into the CRM, and Agentforce adds AI agents across the platform. A key strength is room to grow, with editions from a Free Suite up to Max, making it suitable for teams that have an admin and a custom sales process.
+
+**Pros**
+
+- AI sync of emails, events and contacts
+- Editions from a Free Suite up to Max
+- Agentforce agents across the sale
+- Account updates inside Slack and Teams
+- Free Suite and a 30-day trial
+
+**Cons**
+
+- Built-in AI starts on Enterprise at $195
+- Agentforce actions spend Flex Credits
+- Setup works best with an admin or partner
+
+**Pricing**
+
+- Free Suite: [$0/user/month](https://www.salesforce.com/sales/pricing/)
+- Starter Suite: $25/user/month billed monthly or annually
+- Pro Suite: $100/user/month billed annually
+- Enterprise: $195/user/month billed annually, with Advanced at $395 and Max at $550
 
 ### 4. Attio
 
-Attio is a flexible CRM that you shape around your own objects and fields, with email and calendar sync on every plan. Emails and calls are captured automatically, so the CRM logs itself.
+**Overview**
 
-- Automatic data enrichment comes with the Free plan, with more on Plus and Pro.
-- [The Free plan covers up to 3 seats](https://attio.com/pricing), and Plus costs $35 per seat a month billed yearly, or $44 monthly.
-- Pro costs $79 billed yearly, or $99 monthly, and includes Call Intelligence, which records and analyzes meetings.
-- AI features draw on monthly credits, and the Pro trial lasts 14 days.
+Attio is a strong CRM with automatic data entry for founders, operators and revenue teams who like to design their own data model. Email and calendar sync come with every plan, and automatic enrichment fills in company details such as headcount and funding. A key strength is its custom objects and fields, which makes it attractive for teams that want the CRM shaped around how they sell.
 
-Attio suits a team with someone who enjoys designing objects and workflows. The [Omniscient vs Attio](/blog/omniscient-vs-attio/) comparison goes deeper on the two.
+**Pros**
 
-### 5. Salesflare
+- Email and calendar sync on every plan
+- Automatic enrichment, even on Free
+- Call Intelligence records and analyzes meetings
+- Custom objects and fields
+- Free plan for up to 3 users
 
-Salesflare is a B2B CRM that fills itself in from your inbox, email signatures, calendar and company websites, so it keeps itself up to date. Of every CRM here, its approach sits closest to Omniscient's.
+**Cons**
 
-- It gathers contact and company info from emails, email signatures, social profiles and more, and logs your meetings and phone calls for you.
-- [Growth costs $29 per user a month billed yearly, or $39 monthly](https://salesflare.com/pricing), with a sidebar that works in Gmail, Outlook and LinkedIn.
-- Pro costs $49 billed yearly, or $64 monthly, and Enterprise costs $99 billed yearly with at least 5 users.
-- The free trial runs 30 days with no credit card, the longest trial on this list.
+- Call Intelligence starts on Pro
+- AI features run on monthly credits
+- Flexible setup takes time to design
 
-It fills the CRM semi automatically, so you confirm some of what it suggests.
+**Pricing**
 
-In your trial, look at who Salesflare adds as a contact from a busy inbox. It is the hardest rule for any inbox sync to get right.
+- Free: [$0/month for up to 3 users](https://attio.com/pricing)
+- Plus: $40/month for the workspace and first user, then $35/user/month billed annually or $50, then $44/user/month billed monthly
+- Pro: $100/month for the workspace and first user, then $79/user/month billed annually or $125, then $99/user/month billed monthly
+- Ultra: $1,000/month with 5 users, then $189/user/month billed annually
 
-### 6. Pipedrive
+### 5. Pipedrive
 
-Pipedrive is a sales pipeline CRM that helps small teams manage leads and close deals by stage. Its two way email sync connects up to five email accounts.
+```rating
+4.5 | Capterra | https://www.capterra.com/p/132666/Pipedrive/reviews/
+```
 
-- Nova, its meeting intelligence, records and transcribes your calls, then drafts CRM updates you review and approve in one click.
-- Nova is included in all plans at no extra cost, and the free trial lasts 14 days with no credit card.
-- See [Pipedrive's plans](https://www.pipedrive.com/en/pricing) for current prices.
+**Overview**
 
-For teams that want to review AI updates first, Nova's approve step means you see each update before it lands. That's close to how we treat a change of stage in Omniscient.
+Pipedrive is a sales pipeline CRM built for small teams that plan their week around deal stages. Its two-way email sync connects up to 5 email accounts, and Nova, its meeting intelligence, records and transcribes your calls, then drafts CRM updates you approve in one click. It is a relevant option for founders, sales managers and small sales teams who want a person to sign off on every AI update.
 
-The trade is a click per update, which adds up on a heavy call day. Pipedrive suits small teams that plan their week around pipeline stages and want a person to sign off on every change.
+**Pros**
+
+- Two-way sync for up to 5 email accounts
+- Nova records and transcribes calls
+- One-click approval for each CRM update
+- Visual pipeline by deal stage
+- 14-day free trial, no credit card
+
+**Cons**
+
+- More AI features on higher plans
+- Its AI points to next steps more than fields
+- Each update takes a click on busy days
+
+**Pricing**
+
+- Free trial: 14 days, no credit card
+- Plans: [See Pipedrive's pricing](https://www.pipedrive.com/en/pricing)
+
+### 6. Salesflare
+
+```rating
+4.7 | Capterra | https://www.capterra.com/p/149522/Salesflare/reviews/
+```
+
+**Overview**
+
+Salesflare is a strong CRM with automatic data entry for small B2B teams, founders and account managers who live in their inbox. It gathers contact and company details from emails, email signatures, social profiles and company websites, and it logs your meetings and phone calls. A key strength is its sidebar for Gmail, Outlook and LinkedIn, which makes it attractive for teams that want capture and email campaigns in one place.
+
+**Pros**
+
+- Contacts filled in from email signatures
+- Meetings and calls logged for you
+- Sidebar in Gmail, Outlook and LinkedIn
+- Email campaigns built in
+- 30-day free trial, no credit card
+
+**Cons**
+
+- No free plan
+- Enterprise needs at least 5 users
+- Some captured data waits for your confirmation
+
+**Pricing**
+
+- Growth: [$29/user/month billed annually](https://salesflare.com/pricing) or $39/user/month billed monthly
+- Pro: $49/user/month billed annually or $64/user/month billed monthly
+- Enterprise: $99/user/month billed annually or $124/user/month billed monthly, minimum 5 users
 
 ### 7. Copper
 
-Copper is a CRM that works inside Gmail and Google Calendar, built for service businesses that sell through relationships. It captures contact details and logs emails and meetings as you work.
+```rating
+4.4 | Capterra | https://www.capterra.com/p/141642/Copper/reviews/
+```
 
-- Contact enrichment comes with Basic, so every plan includes it.
-- [Basic costs $23 per seat a month billed yearly](https://www.copper.com/pricing), or $29 monthly, with up to 2,500 contacts.
-- Every plan has a free trial of 14 days, with no credit card needed.
+**Overview**
 
-Copper fits a team that already spends its day in Gmail. Since capture adds contacts while you work, compare the 2,500 contacts on Basic with the size of your inbox.
+Copper is a CRM with automatic data entry built for service businesses on Google Workspace. It works inside Gmail and Google Calendar, capturing contact details and logging emails and meetings as you work, with contact enrichment on every plan. It is a relevant option for agencies, consultants and account managers who mainly need a CRM inside Gmail without paying for a bigger sales stack.
 
-### 8. Coffee
+**Pros**
 
-Coffee is an AI agent that fills in a CRM for sales teams, either in its own CRM or on top of Salesforce or HubSpot.
+- Works inside Gmail and Google Calendar
+- Emails and meetings logged as you work
+- Contact enrichment on every plan
+- Good fit for relationship-driven service teams
+- Free trial, no credit card
 
-- It creates contacts and companies from external meetings and emails, and merges duplicates the moment they appear.
-- After a meeting, it writes notes and follow up drafts, with action items and suggested deal updates.
-- On top of Salesforce or HubSpot, it writes clean data back, and your CRM stays the system of record.
-- [Grande costs $50 per person a month](https://coffee.ai/pricing), with a meeting recorder and a free trial of 14 days, and Venti costs $1,000 per workspace a month.
+**Cons**
 
-Of the picks here, Coffee is the one most clearly built to write its updates into a CRM you already run. That makes it worth a look if your team is settled on Salesforce or HubSpot.
+- No free plan
+- Basic caps contacts at 2,500
+- Made for Google Workspace more than Outlook
 
-### 9. Lightfield
+**Pricing**
 
-Lightfield is an AI CRM that updates itself from every customer interaction, then runs agents on top of that record. It connects email, calendar, Slack, LinkedIn and your other systems.
+- Basic: [$23/seat/month billed annually](https://www.copper.com/pricing) or $29/seat/month billed monthly
+- Professional: $59/seat/month billed annually or $69/seat/month billed monthly
+- Business: $99/seat/month billed annually or $134/seat/month billed monthly
 
-- [Starter costs $89 per user a month](https://lightfield.com/pricing), billed monthly, for up to 3 seats, with automatic record updates, meeting recording and transcription, and email, calendar and Slack sync.
-- Starter comes with a free trial of 14 days.
-- Pro costs $999 per workspace a month, billed yearly, with 5 capture seats, and emails and meetings sync for users with a capture seat.
+### 8. folk
 
-Lightfield suits a team that wants Slack captured too, so count how many people need a capture seat before you pick a plan.
+```rating
+4.5 | Capterra | https://www.capterra.com/p/251534/folk/reviews/
+```
 
-### 10. Day AI
+**Overview**
 
-Day AI is an AI CRM that builds a shared memory from your team's email, calendar, meetings and Slack, then runs agents on top of it. Day calls it Customer Memory, and it brings those sources in automatically, with permissions applied.
+folk is a widely used AI CRM that helps founders, agencies and partnership teams keep contacts and deals in one place. Email, calendar and WhatsApp sync come with every plan, and its agents start when a new interaction comes in and update the contacts involved. Magic fields, folk's AI fields, fill in custom details for you. This makes it a common choice for small teams that sell through their network.
 
-- Gmail and Calendar ingestion, meeting recording and meeting notes come with every tier, Free included.
-- Every workspace needs at least one Professional or Executive agent, and [Professional costs $60 per agent a month](https://day.ai/pricing) on yearly billing paid upfront.
-- Turbo agents cost $24 and Executive agents $200, with no per seat fees and no usage based pricing.
+**Pros**
 
-Day is built around a context graph, so when you try it, see how much of that memory reaches the fields your reports run on. Its audit trail shows exactly what ran, which is the right instinct for an agent that writes on your behalf.
+- Email, calendar and WhatsApp sync
+- Agents update contacts after each interaction
+- 2,000 magic fields a month on Standard
+- Follow-up and recap assistants on every plan
+- 14-day free trial, no credit card
 
-Teammates who mostly look things up join on Free. That model sits close to Omniscient's free seats on Pro.
+**Cons**
+
+- No free plan
+- Monthly limits on magic fields and enrichments
+- Deals and sequences start on Premium
+
+**Pricing**
+
+- Standard: [$24/user/month](https://www.folk.app/pricing)
+- Premium: $48/user/month
+- Enterprise: from $80/user/month billed annually
+
+### 9. Day AI
+
+**Overview**
+
+Day AI is a practical AI CRM for founders, revenue leaders and account executives who want agents working from one memory of every customer conversation. It turns your team's email, calendar, meetings and Slack into Customer Memory, with permissions applied as the data comes in. A key strength is the audit trail of what each agent ran, which makes it attractive for teams that want to see the agent's work.
+
+**Pros**
+
+- Customer Memory from email, meetings and Slack
+- Meeting recording and notes on every tier
+- Audit trail of every agent run
+- Teammates join free once a Professional agent is on
+- Free plan to start
+
+**Cons**
+
+- Free teammates need a paid Professional agent
+- Campaigns and contact finding sit on Executive
+- Per-agent pricing takes some planning
+
+**Pricing**
+
+- Free: [$0/month](https://day.ai/pricing)
+- Turbo: $24/agent/month billed annually
+- Professional: $60/agent/month billed annually, with Executive at $200/agent/month
+- Super: $800/agent/month, annual plans only
+
+### 10. Lightfield
+
+**Overview**
+
+Lightfield is an AI CRM built to update itself from every customer interaction. It connects email, calendar, Slack and LinkedIn, records and transcribes your meetings, then runs agents on top of that record. It is a relevant option for funded sales teams, founders and revenue leaders who want Slack captured along with email and meetings without buying a separate call recorder.
+
+**Pros**
+
+- Records update from every interaction
+- Meeting recording and transcription
+- Email, calendar and Slack sync
+- Any number of viewer seats on Pro
+- 14-day free trial on Starter
+
+**Cons**
+
+- Starter covers up to 3 seats
+- Workspace pricing from $999 a month on Pro
+- Email sync needs a capture seat
+
+**Pricing**
+
+- Starter: [$89/user/month billed monthly](https://lightfield.com/pricing), up to 3 seats
+- Pro: $999/month for the workspace billed annually, with 5 capture seats
+- Growth: $2,999/month for the workspace billed annually
+- Enterprise: Custom pricing, contact sales
 
 ### 11. Clarify
 
-Clarify is an AI CRM that records your calls and updates deals from them, with plans priced by AI credits instead of seats. Every call is recorded and summarized, the deal is updated, and the call turns into clear next steps.
+**Overview**
 
-- It stays in sync with your email and calendar, and enrichment fills data gaps automatically.
-- Custom AI fields fill themselves in: you name a field, and AI takes it from there.
-- [The Free plan costs $0](https://www.clarify.ai/pricing) for unlimited seats, with 1,000 credits a month, 20,000 records and the call recorder and notetaker.
-- Starter costs $50 a month for the whole workspace with 5,000 credits, larger credit options go up to 40,000, and unused credits don't roll over.
-- A meeting summary uses 30 credits, while enrichment and meeting recording never affect your bill.
+Clarify is a dedicated AI CRM designed to turn every call into an updated deal. It records and summarizes calls, keeps email and calendar in sync and fills custom AI fields you name. Plans are priced by AI credits instead of seats, so founders, SDRs and account executives can all join. Many small teams use it to get call notes on a free plan before they move to paid credits.
 
-Its agents run on autopilot or with a person in the loop. Before you connect a busy pipeline, decide which of the two moves your deal stages.
+**Pros**
 
-### 12. folk
+- Call recorder and notetaker on Free
+- Custom AI fields that fill themselves in
+- Enrichment fills data gaps for you
+- Unlimited seats on every plan
+- Free plan with 1,000 credits a month
 
-folk is an AI CRM that keeps a small team's contacts and deals in one place, with email, calendar and WhatsApp sync on every plan. Its agents start when a new interaction comes in and update the contacts involved.
+**Cons**
 
-- [Standard costs $24 per member a month billed yearly, or $30 monthly](https://www.folk.app/pricing), and Premium costs $48, or $60 monthly.
-- Standard includes 2,000 magic fields a month, folk's AI fields, plus 500 enrichments to find emails.
-- The follow up and recap assistants come with every plan.
-- The trial lasts 2 weeks with premium features and no credit card.
+- Each meeting summary spends 30 credits
+- Unused credits don't roll over
+- Free plan caps records at 20,000
 
-Each plan states its AI allowance, so you can see how far a plan stretches before you buy.
+**Pricing**
 
-folk suits founders and agencies whose deals start from LinkedIn conversations and their own network. We cover other options in [folk CRM alternatives](/blog/folk-crm-alternatives/).
+- Free: [$0/month](https://www.clarify.ai/pricing) with unlimited seats and 1,000 credits a month
+- Starter: $50/month for the workspace billed monthly or annually
+- Growth: from $1,000/month billed annually
+- Enterprise: Custom pricing, contact sales
+
+### 12. Coffee
+
+**Overview**
+
+Coffee is a dedicated AI agent designed to fill in a CRM for sales teams. It creates contacts and companies from external emails and meetings, merges duplicates as they appear and writes notes, action items and suggested deal updates after each meeting. It can run its own CRM or sit on top of Salesforce or HubSpot. Many sales leaders, RevOps teams and account executives use it as a specialized tool to keep their current CRM clean.
+
+**Pros**
+
+- Works on top of Salesforce or HubSpot
+- Contacts and companies from emails and meetings
+- Duplicates merged as they appear
+- Meeting notes and follow-up drafts
+- 14-day free trial
+
+**Cons**
+
+- Workspace plans start at $1,000 a month
+- Often runs next to a separate CRM
+- Per-person price on Grande grows with the team
+
+**Pricing**
+
+- Grande: [$50/user/month](https://coffee.ai/pricing)
+- Venti: $1,000/month for the workspace
+- Trenta: $2,000/month for the workspace billed annually
 
 ### 13. Affinity
 
-Affinity is a CRM for private capital firms that captures every email, meeting and calendar interaction across the firm. It captures that activity with no manual entry.
+**Overview**
 
-- It scores relationship strength from real communication patterns, so a deal team can see who knows a founder best.
-- [Essential costs $2,000 per user a year](https://www.affinity.co/pricing), billed annually, with automatic activity capture across email and calendar.
-- Scale costs $2,300 and adds Notetaker for meeting capture and follow up, and Advanced costs $2,700 with enrichment from PitchBook, Dealroom and Crunchbase.
-- Admins set sync rules for the team, and each person controls what's shared from their own inbox and calendar.
-- Talk to Affinity's team for a demo, and note that PitchBook data needs the firm's own subscription.
+Affinity is a dedicated CRM for private capital firms, designed to capture relationships across the whole firm. It records every email, meeting and calendar interaction with no manual entry, then scores relationship strength from real communication patterns. Venture partners, private equity deal teams and platform teams use it to see who knows a founder best. Many firms use it as a specialized tool to track deal flow before an investment.
 
-Its features follow the private capital buyer, down to relationship scores and data from PitchBook. It fits best when your pipeline is a list of companies to invest in, while a B2B sales team gets more from a sales CRM.
+**Pros**
 
-## CRMs with automatic data entry compared
+- Email and calendar captured across the firm
+- Relationship strength scores
+- Notetaker for meetings on Scale
+- PitchBook, Dealroom and Crunchbase data on Advanced
+- Each person controls what's shared
 
-Email capture is common ground across these 13, so the call notes column is where they differ most.
+**Cons**
 
-| CRM | Email and calendar | Call notes | Free plan or trial |
-|---|---|---|---|
-| Omniscient | Synced for every seat, with rules for who's added | From Meet, Zoom and Teams transcripts | Free seats on Pro, trial of 14 days |
-| HubSpot | Logged by default for existing contacts | Notetaker on Sales Hub Starter | Free for up to 2 users |
-| Salesforce | Starter Suite syncs emails, events and contacts | Talk to sales | Free Suite |
-| Attio | Synced on every plan | Call Intelligence on Pro | Free for up to 3 seats, Pro trial of 14 days |
-| Salesflare | Filled in from inbox, signatures and calendar | Calls logged | Trial of 30 days |
-| Pipedrive | Two way sync, up to 5 accounts | Nova, on all plans | Trial of 14 days |
-| Copper | Logged as you work in Gmail | Meetings logged as you work | Trial of 14 days |
-| Coffee | Logged from emails and meetings | Meeting recorder on Grande | Trial of 14 days |
-| Lightfield | Synced for capture seats | Recording and transcription | Trial of 14 days on Starter |
-| Day AI | Gmail and Calendar ingestion on every tier | Meeting recording and notes | Free seats once you pay for one agent |
-| Clarify | Synced on every plan | Call recorder and notetaker, free | Free plan with unlimited seats |
-| folk | Email, calendar and WhatsApp sync | Follow up and recap assistants | Trial of 2 weeks |
-| Affinity | Captured across the firm | Notetaker on Scale | Demo instead |
+- Priced per user per year, from $2,000
+- Built for investors more than B2B sales
+- PitchBook data needs your own subscription
 
-We'd weigh that column above the rest if your deals move forward in meetings, because that's where the details you'd otherwise type come from.
+**Pricing**
 
-## How to test automatic data entry in a free trial
+- Essential: [$2,000/user/year billed annually](https://www.affinity.co/pricing)
+- Scale: $2,300/user/year billed annually
+- Advanced: $2,700/user/year billed annually
+- Enterprise: Custom pricing, contact sales
 
-Your own inbox will teach you more in a week than any demo, so these are the checks we'd run with it connected:
+## 13 Best CRMs With Automatic Data Entry in 2027: Recap Table
 
-```steps
-1. Connect your busiest inbox: Pick the one where newsletters sit next to buyers, then count the new contacts the next morning.
-2. Search for a newsletter: Look up a vendor that emails you every week and confirm it didn't become a contact.
-3. Hold one sales call: Run a call on Meet, Zoom or Teams and note what lands on the deal, and when.
-4. Trace one value: Open a field the AI filled and find the sentence it came from.
-5. Type over a field: Change a value by hand, then send an email that says otherwise and check that your value stays.
-6. Add a company by domain: See which details fill in, and whether any of them look guessed.
+```tools
+Tool | Domain | Rating | Best feature | Starting price
+Omniscient | tryomniscient.com | Not rated | One agentic CRM for the whole sales motion | [$19/seat/month billed annually](/pricing/)
+HubSpot | hubspot.com | 4.5/5 | Email logged for existing contacts | [From $20/seat/month](https://www.hubspot.com/pricing/sales)
+Salesforce | salesforce.com | 4.4/5 | AI sync of emails and events | [$25/user/month](https://www.salesforce.com/sales/pricing/)
+Attio | attio.com | Not rated | Enrichment on every plan | [$40/month with the first user, billed annually](https://attio.com/pricing)
+Pipedrive | pipedrive.com | 4.5/5 | Call updates you approve | [See pricing](https://www.pipedrive.com/en/pricing)
+Salesflare | salesflare.com | 4.7/5 | Contacts from email signatures | [$29/user/month billed annually](https://salesflare.com/pricing)
+Copper | copper.com | 4.4/5 | Capture inside Gmail | [$23/seat/month billed annually](https://www.copper.com/pricing)
+folk | folk.app | 4.5/5 | WhatsApp, email and calendar sync | [$24/user/month](https://www.folk.app/pricing)
+Day AI | day.ai | Not rated | Customer Memory for agents | [$24/agent/month billed annually](https://day.ai/pricing)
+Lightfield | lightfield.com | Not rated | Slack captured with email | [$89/user/month billed monthly](https://lightfield.com/pricing)
+Clarify | clarify.ai | Not rated | Free call recorder, unlimited seats | [$50/month for the workspace](https://www.clarify.ai/pricing)
+Coffee | coffee.ai | Not rated | Clean data in your current CRM | [$50/user/month](https://coffee.ai/pricing)
+Affinity | affinity.co | Not rated | Relationship strength scores | [$2,000/user/year billed annually](https://www.affinity.co/pricing)
 ```
 
-11 of the 13 CRMs here have a free plan or a free trial, so you can run these checks before you pay. Day AI starts with one paid agent, and Affinity starts with a demo. For more picks, see our guides to the [best AI CRM](/blog/best-ai-crm/) and the [best CRM for founders](/blog/best-crm-for-founders/).
+👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=blog&utm_medium=crm-with-automatic-data-entry&start=crm)**
 
-```cta
-Run your whole sales motion in Omniscient, from the first lead to the closed deal, with Otto doing the data entry and the rest of the busy work.
-```
+## Conclusion
+
+A CRM with automatic data entry gives your team back the time it spends typing. It also keeps every record complete, so forecasts and handoffs rest on what buyers really said.
+
+The best one does more than log emails. It should find the next customer, capture every conversation, keep deal fields current with proof and answer questions from the same memory, without a second tool.
+
+That is why [Omniscient](/) stands out. It combines [email and call capture](/product/email-sync/), [one shared memory](/product/omniscience/) and [skills](/product/skills/) in one place. For teams that want one agentic CRM for the whole sales motion, it is the strongest option.
 
 ```faq
 Q: What is a CRM with automatic data entry?
-A: It's a CRM that writes its own records from your email, calendar, calls and web forms, so contacts, meetings and deal details appear without anyone typing them.
-Q: Which CRM has the best automatic data entry?
-A: For B2B teams that want one CRM for the whole sales motion, with Otto filling in records and doing the rest of the busy work, we'd start with Omniscient. Salesflare suits teams that want contacts filled in from email signatures, Pipedrive suits teams that want to approve call updates in one click, and Coffee suits teams staying on Salesforce or HubSpot.
-Q: Can a CRM log emails automatically?
-A: Yes, every CRM in this guide syncs or logs email once you connect your inbox, though the rules differ. HubSpot, for example, logs email with your existing contacts by default.
-Q: Do I need a meeting bot for automatic call notes?
-A: It depends on the CRM, since Omniscient reads the transcripts Google Meet, Zoom and Teams already create, while Pipedrive's Nova, Lightfield and Clarify record calls themselves.
-Q: Is there a free CRM with automatic data entry?
-A: HubSpot's free CRM covers up to 2 users and logs email from a connected inbox, and Attio is free for up to 3 seats with email and calendar sync. Clarify's Free plan includes its call recorder and notetaker for unlimited seats. Omniscient has a free trial of Pro for 14 days, and free seats on Pro and Business for teammates who only view or log data.
+A: A CRM with automatic data entry is a CRM that fills in its own contacts, activity and deal fields by reading your email, calendar and calls. Your team stops copying details by hand, and each record stays current as conversations happen, so the pipeline shows what buyers really said.
+Q: How do CRMs with automatic data entry fill in records?
+A: CRMs with automatic data entry connect to Gmail or Outlook, your calendar and your meeting tools. They match each email and call to the right company, person and deal, create new contacts, write call notes from transcripts and enrich company details. The better ones show the source behind each value and leave fields a person typed alone.
+Q: Why use a CRM with automatic data entry for sales?
+A: A CRM with automatic data entry saves reps the time they spend logging emails, meetings and notes. Records stay complete, so managers forecast from real activity and new teammates see the full history of every account. To test one, connect your busiest inbox in a trial and check who became a contact the next morning.
+Q: What features should modern CRMs with automatic data entry include?
+A: Modern CRMs with automatic data entry should include email and calendar sync, rules for who becomes a contact, call notes from Zoom, Google Meet and Teams, enrichment and duplicate merging. They should show the quote behind each filled value and wait for you before changing a deal. Omniscient adds one shared memory your team and agents can ask anything.
+Q: Which tool is recommended for teams that need more than automatic data entry?
+A: For teams that need more than automatic data entry, we'd recommend Omniscient. It is one agentic CRM for the whole sales motion, with Otto finding leads, capturing every conversation and keeping deals current. Teams staying on Salesforce or HubSpot may prefer Coffee, and venture or private equity firms may prefer Affinity.
+```
+
+```cta
+Ready to use Omniscient? Get one agentic CRM for the whole sales motion, with Otto doing the data entry.
 ```

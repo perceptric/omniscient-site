@@ -205,3 +205,19 @@ Research narration, dates and unconfirmed details were taken out of the posts an
 - Free CRM: the 1,000-contact limit came from a page summary only, so the post leaves it out. HubSpot Credits on Free are not stated.
 - HubSpot for Startups: the page doesn't say which products or tiers the 90% first-year discount covers, so the post says "90% off the first year" only.
 - G2 was not read today, so there is no rating block.
+
+## Listicle guideline rework (November 23, 2026): all 10 list posts and the agentic-crm tool list
+
+Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings are the Capterra scores the posts already had; tools without one show "Not rated". G2 blocks our reader.
+
+- Salesforce: salesforce.com returns a bot wall to tools/shot-tools.mjs (also with --wait 8000), so its entries show the logo with no screenshot. The build warns about this on 5 posts.
+- Pipedrive and Zoho CRM: their pricing pages can't be read (403, and figures drawn by script), so entries give the free plan where one exists and link "See pricing". Old figures ($14 to $79 for Pipedrive, $14 to $52 for Zoho) are gone.
+- Breakcold: every page on breakcold.com returns 404, so it was removed. folk-crm-alternatives now lists Less Annoying CRM in its place, using facts from the HubSpot and Pipedrive posts.
+- Prices dropped because the sheet doesn't have them: HubSpot's "$7 for new customers", Salesforce Agentforce for Sales ($125), Close call rates, Freddy AI Agent ($49 per 100 sessions), Nutshell add-ons, Twenty and folk monthly figures, Lightfield extra capture seat, EngageBay Growth and Pro.
+- Changed to match the sheet: Clarify Starter is $50 a month for the workspace (was $40 yearly), Nimble $29.90 / $35.90 (was $24.90 / $29.90), Freshsales trial 14 days (was 21), Dex trial 7 days with a card (was 6), Lightfield Growth $2,999 (was $1,999), Attio Plus "$40 for the workspace and first user, then $35".
+- HubSpot for Startups: today's page says 90% off the first year for Seed and Series A founders and gives no later-year figures. The old 90%/50%/25% chart in best-crm-for-startups was redrawn with first-year figures only.
+- Reused from earlier November posts, not re-read this week: monday CRM's 3-seat minimum and 14-day trial (hubspot-crm-alternatives says 14 days), Salesforce's 30-day trial, Close Auto Updates on Growth, Freshsales chatbot sessions over 500, Day AI campaign tools on Executive, Dynamics agents on Copilot Credits, Attio Call Intelligence on Pro, Affinity selling through a demo.
+- Soft scope cons (comparisons, not hard gaps) on Day AI, Freshsales, Copper, EngageBay and Zoho. Each con is true, but a few competitors have one concrete gap con plus a comparison.
+- Omniscient details dropped because they aren't in the positioning skill: the 60% and 85% confidence rules, Gmail tab and Outlook filters, the do-not-track list, meeting checks every 30 minutes, the "Quote may not match" label, round-robin lead assignment.
+- Unused images left on disk: crm-by-channel.svg (founders), crm-by-stage.svg and import-order.svg (startups), seat-prices.svg (folk), email-checks.svg, what-fills.svg and fill-a-field.svg, import-map.svg and import.shot.html (HubSpot alternatives), import.svg (Pipedrive), capture.shot.html (B2B SaaS).
+- The builder has no byline, so posts carry no author line yet.
