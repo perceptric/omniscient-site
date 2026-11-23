@@ -14,5 +14,6 @@ Third-party Claude Code skills, copied as-is from their public repos. Each folde
 | Matt Pocock Skills | github.com/mattpocock/skills |
 | Superpowers | github.com/obra/superpowers |
 | Karpathy Skills | github.com/forrestchang/andrej-karpathy-skills |
+| Motion skills (motion-director, web-motion-auditor) | github.com/frankxai/awesome-motion-design-agent-skills (CC0), via perceptric-site |
 
 Running cost: none on its own. Skills only add to Claude tokens when one loads in a session.
