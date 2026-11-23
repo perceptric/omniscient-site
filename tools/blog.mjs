@@ -274,10 +274,9 @@ function toolFigure(domain, name, alt, ctx) {
   const file = join(root, "assets", "blog", "tools", `${domain}.webp`);
   if (!existsSync(file)) return "";
   const s = webpSize(file) || { w: 1200, h: 750 };
-  const month = statSync(file).mtime.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
   const src = `/assets/blog/tools/${domain}.webp`;
   const bar = `<div class="bl-browser__bar" aria-hidden="true"><span class="bl-browser__dots"><i></i><i></i><i></i></span><span class="bl-browser__url">${esc(domain)}</span></div>`;
-  return `<figure class="bl-fig bl-site"><div class="bl-band"><div class="bl-browser">${bar}<img src="${esc(src)}" alt="${esc(alt || `${name} homepage`)}" width="${s.w}" height="${s.h}" loading="lazy" decoding="async"></div></div><figcaption>${esc(name)} homepage, ${month}</figcaption></figure>`;
+  return `<figure class="bl-fig bl-site"><div class="bl-band"><div class="bl-browser">${bar}<img src="${esc(src)}" alt="${esc(alt || `${name} homepage`)}" width="${s.w}" height="${s.h}" loading="lazy" decoding="async"></div></div></figure>`;
 }
 
 function figure({ text: alt, url, title }, ctx) {
