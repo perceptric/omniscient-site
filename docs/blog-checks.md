@@ -196,3 +196,12 @@ Research narration, dates and unconfirmed details were taken out of the posts an
 - attio.com/help/reference/billing-and-plans returns 404. The post links the credits guide instead.
 - Copper: no trial length is stated, so the table says "Free to start, no credit card".
 - folk and HubSpot were left out of the comparison: folk's page doesn't label which price is yearly, and HubSpot shows $7 and $20 for Starter (and $90 and $100 for Professional) without saying which billing each is. Pipedrive's pricing page still returns 403.
+
+## hubspot-crm-review (1882 words, 5 visuals)
+
+- HubSpot's pages disagree on Starter and Professional prices. The Sales Hub pricing page shows Starter "starts at $7" and "$20", and Professional "starts at $90" and "$100", with no label tying either figure to monthly or yearly billing, and a footnote that discounts are for new customers only. The CRM page shows Starter from $15, Professional from $50 and Enterprise from $75. The Sales Hub product page shows Starter "$10 $20" and Professional from $100. The post says Starter from $20 with lower prices for new customers, and Professional $90 to $100 by how you pay.
+- Sequences on Starter: the Starter cell in the pricing table is a checkmark or blank that didn't come through as text. The post says sequences start on Professional, as HubSpot's own Sales Hub pricing guide said earlier (see attio-alternatives).
+- Custom objects on Enterprise, Notetaker by plan, and the plans for the Prospecting, Data and Customer agents are checkmark-only, so the post names no plan for them.
+- Free CRM: the 1,000-contact limit came from a page summary only, so the post leaves it out. HubSpot Credits on Free are not stated.
+- HubSpot for Startups: the page doesn't say which products or tiers the 90% first-year discount covers, so the post says "90% off the first year" only.
+- G2 was not read today, so there is no rating block.
