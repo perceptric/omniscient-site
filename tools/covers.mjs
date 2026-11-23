@@ -1,5 +1,6 @@
-// Blog covers in the calm style (docs/brand.md in the app repo): a headline card on the left (post kind, year, short
-// title) and logo art on the right. Each post gets a scene from its type and slug: an orbit of alternatives around the tool they replace,
+// Blog covers in the calm style (docs/brand.md in the app repo): no words, a plain ground, logo tiles. Alternatives
+// show the replaced tool and a grid of alternatives; reviews, pricing and versus posts put two logos face to face;
+// the rest show a grid of logos. Each post gets a scene from its type and slug: an orbit of alternatives around the tool they replace,
 // two tools face to face, a ranked list in a product window, or a scene drawn for the topic (limits, pricing,
 // safety, data entry, sync). Logos come from tools/cover-logos.json (built from assets/blog/logos and the vector marks
 // in assets/blog/marks). Everything is seeded by the slug, so a cover only changes when its post or this file does.
@@ -292,28 +293,13 @@ function orbit(k, rnd, { subject, others, center = "subject" }) {
 
 // Versus: two tools face to face over a butterfly chart in their own colors.
 function versus(k, rnd, { a, b }) {
-  const ca = colorOf(a);
-  const cb = colorOf(b);
   let out = "";
-  out += `<circle cx="330" cy="235" r="210" fill="${glowFill(a)}" opacity="${glowFill(a) === "#ffffff" ? 0.85 : 0.14}" filter="url(#${k.id}-b)"/>`;
-  out += `<circle cx="870" cy="235" r="210" fill="${glowFill(b)}" opacity="${glowFill(b) === "#ffffff" ? 0.85 : 0.14}" filter="url(#${k.id}-b)"/>`;
-  out += `<line x1="600" y1="70" x2="600" y2="560" stroke="${C.ink}" stroke-opacity=".1" stroke-width="1.5" stroke-dasharray="2 9" stroke-linecap="round"/>`;
-  // The chart: rows of bars from the middle out.
-  const rows = 5;
-  const top = 392;
-  for (let i = 0; i < rows; i++) {
-    const y = top + i * 30;
-    const la = 90 + rnd() * 250;
-    const lb = 90 + rnd() * 250;
-    out += k.bar(600 - 30 - la, y, la, 14, ca);
-    out += k.bar(630, y, lb, 14, cb);
-    out += `<circle cx="600" cy="${y + 7}" r="4" fill="${C.ink}" opacity=".18"/>`;
-  }
-  out += k.tile(330, 220, 172, a, { big: true });
-  out += k.tile(870, 220, 172, b, { big: true });
-  // The switch between them.
-  out += `<circle cx="600" cy="220" r="36" fill="#fff" filter="url(#${k.id}-s)"/><circle cx="600" cy="220" r="35.5" fill="none" stroke="#000" stroke-opacity=".06"/>`;
-  out += k.icon("arrows", 586, 206, 28, C.ink, 2);
+  out += `<circle cx="380" cy="315" r="170" fill="${glowFill(a)}" opacity="${glowFill(a) === "#ffffff" ? 0.85 : 0.14}" filter="url(#${k.id}-b)"/>`;
+  out += `<circle cx="820" cy="315" r="170" fill="${glowFill(b)}" opacity="${glowFill(b) === "#ffffff" ? 0.85 : 0.14}" filter="url(#${k.id}-b)"/>`;
+  out += k.tile(380, 315, 184, a, { big: true });
+  out += k.tile(820, 315, 184, b, { big: true });
+  out += `<circle cx="600" cy="315" r="36" fill="#fff" filter="url(#${k.id}-s)"/><circle cx="600" cy="315" r="35.5" fill="none" stroke="#000" stroke-opacity=".06"/>`;
+  out += k.icon("arrows", 586, 301, 28, C.ink, 2);
   return out;
 }
 
@@ -729,88 +715,52 @@ const SCENES = {
   "linkedin-automation-tools-for-agencies": { accent: "agency", field: "paper" },
 };
 
+// ─── Clean scenes ────────────────────────────────────────────────────────────────────────────────────────────────
+// Plain ground, logo tiles in a tidy grid, Omniscient first on its black tile. No words, no dots, no rings.
+
+function grid(k, list, { cx, cy, cols, size, gap }) {
+  const rows = Math.ceil(list.length / cols);
+  const step = size + gap;
+  const x0 = cx - ((cols - 1) * step) / 2;
+  const y0 = cy - ((rows - 1) * step) / 2;
+  return list.map((dom, i) => k.tile(x0 + (i % cols) * step, y0 + Math.floor(i / cols) * step, size, dom, { big: dom === "tryomniscient.com", glow: dom === "tryomniscient.com" })).join("");
+}
+
+const firstOmni = (tools) => ["tryomniscient.com", ...tools.filter((d) => d !== "tryomniscient.com" && known(d))];
+
+function alternativesScene(k, { subject, tools }) {
+  const list = firstOmni(tools.filter((d) => d !== subject)).slice(0, 6);
+  let out = k.tile(300, 315, 176, subject, { big: true });
+  out += `<path d="M436 315h96m-18-16 18 16-18 16" fill="none" stroke="${C.ink}" stroke-opacity=".22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
+  out += grid(k, list, { cx: 820, cy: 315, cols: 3, size: 112, gap: 36 });
+  return out;
+}
+
+function listScene(k, { tools }) {
+  const list = firstOmni(tools).slice(0, 8);
+  return grid(k, list, { cx: 600, cy: 315, cols: Math.min(4, Math.ceil(list.length / 2)), size: 120, gap: 40 });
+}
+
 export function coverArt({ slug, type = "", topic = "", title = "", body = "", tools: given }) {
   const id = `cv-${slug.replace(/[^a-z0-9]/gi, "").slice(0, 24)}`;
   const k = kit(id);
   const rnd = rngFor(slug);
   const tools = given || toolsOf(body);
-  const pick = SCENES[slug] || {};
-  let fieldKind = pick.field || (hashOf(slug) % 3 === 0 ? "mint" : "paper");
+  const subjectOf = () => domainsIn(`${slug.replace(/-/g, " ")} ${title}`).find((d) => d !== "tryomniscient.com");
   let art;
-  if (pick.scene) {
-    art = pick.scene(k, rnd, { tools });
-  } else if (slug === "blog") {
-    fieldKind = "paper";
-    art = orbit(k, rnd, { subject: "tryomniscient.com", others: tools, center: "omni" });
-  } else if (type === "review" || type === "pricing") {
-    const subject = domainsIn(`${slug.replace(/-/g, " ")} ${title}`).find((d) => d !== "tryomniscient.com") || tools[0];
-    art = versus(k, rnd, { a: subject, b: "tryomniscient.com" });
-  } else if (type === "versus" || / vs\.? /i.test(title)) {
+  if (type === "versus" || / vs\.? /i.test(title)) {
     const [a, b] = domainsIn(title);
     art = versus(k, rnd, { a: a || tools[0], b: b || tools[1] || "hubspot.com" });
+  } else if (type === "review" || type === "pricing") {
+    art = versus(k, rnd, { a: subjectOf() || tools[0], b: "tryomniscient.com" });
   } else if (type === "alternatives" || /alternatives/i.test(title)) {
-    const subject = domainsIn(`${slug.replace(/-/g, " ")} ${title}`).find((d) => d !== "tryomniscient.com") || tools[1];
-    art = orbit(k, rnd, { subject, others: tools.filter((d) => d !== subject && d !== "tryomniscient.com") });
+    art = alternativesScene(k, { subject: subjectOf() || tools[1], tools });
   } else {
-    art = bestOf(k, rnd, { tools, accent: pick.accent || (topic === "linkedin" ? "sequence" : "pipeline"), layout: pick.layout || ["podium", "mirror", "grid"][hashOf(slug) % 3] });
+    art = listScene(k, { tools });
   }
-  const bg = field(fieldKind, rngFor(`${slug}:field`));
-  // The blog's own cover keeps the full-width art. Posts get a headline card on the left and the art on the right.
-  const body2 = slug === "blog" ? art : `${headline({ title, type })}
-<g transform="translate(580 140) scale(0.515)">${art}</g>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
 <defs>${k.filters()}${k.defs.join("")}</defs>
-${bg}
-${body2}
+<rect width="${W}" height="${H}" fill="${C.page}"/>
+${art}
 </svg>`;
-}
-
-// ─── Headline card ───────────────────────────────────────────────────────────────────────────────────────────────
-// The featured image names the post: a short headline (the title before its colon, without the year), a label for
-// the kind of post and the year, on a white card. The full title stays on the page.
-
-const KIND = { alternatives: "Alternatives", "best-of": "Top picks", review: "Review", pricing: "Pricing", versus: "Comparison", "how-to": "Guide" };
-const xml = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-
-export function shortTitle(title = "") {
-  let t = title.replace(/\s*\(\d{4}\)/g, "");
-  if (/\?/.test(t) && t.indexOf("?") < (t.indexOf(":") + 1 || 1e9)) t = t.slice(0, t.indexOf("?") + 1);
-  else if (t.includes(":")) t = t.slice(0, t.indexOf(":"));
-  return t.replace(/\s+(in|for)\s+\d{4}\b/i, "").replace(/\s+\d{4}$/, "").trim();
-}
-
-function wrap(text, max) {
-  const lines = [];
-  let line = "";
-  for (const w of text.split(/\s+/)) {
-    if (line && (line + " " + w).length > max) { lines.push(line); line = w; } else line = line ? `${line} ${w}` : w;
-  }
-  if (line) lines.push(line);
-  return lines;
-}
-
-function headline({ title, type }) {
-  const short = shortTitle(title);
-  const year = (title.match(/\b(20\d{2})\b/) || [])[1] || "";
-  let size = 66, lines = wrap(short, 14);
-  if (lines.length > 4) { size = 54; lines = wrap(short, 17); }
-  if (lines.length > 5) { size = 46; lines = wrap(short, 20); lines = lines.slice(0, 5); }
-  // Keep every line inside the card: about 0.58 of the font size per character for Inter Bold.
-  const widest = Math.max(...lines.map((l) => l.length));
-  while (size > 40 && widest * size * 0.58 > 420) size -= 2;
-  const lead = Math.round(size * 1.12);
-  const top = 300 - ((lines.length - 1) * lead) / 2;
-  const kind = KIND[type] || "Guide";
-  const chipW = 26 + kind.length * 11.5;
-  const chips = `<rect x="88" y="104" width="${f1(chipW)}" height="40" rx="20" fill="#0a0a0a"/>
-<text x="${f1(88 + chipW / 2)}" y="130" text-anchor="middle" font-size="19" font-weight="600" fill="#ffffff">${xml(kind)}</text>${year ? `
-<rect x="${f1(100 + chipW)}" y="104" width="76" height="40" rx="20" fill="#f5f5f5" stroke="#e5e5e5"/>
-<text x="${f1(138 + chipW)}" y="130" text-anchor="middle" font-size="19" font-weight="600" fill="#171717">${year}</text>` : ""}`;
-  const text = lines.map((l, i) => `<text x="88" y="${f1(top + i * lead + size * 0.35)}" font-size="${size}" font-weight="700" letter-spacing="-1.5" fill="#0a0a0a">${xml(l)}</text>`).join("\n");
-  return `<g font-family="Inter, system-ui, -apple-system, sans-serif">
-<rect x="48" y="48" width="500" height="534" rx="28" fill="#ffffff" stroke="#e5e5e5"/>
-${chips}
-${text}
-<text x="88" y="540" font-size="20" font-weight="500" fill="#737373">tryomniscient.com</text>
-</g>`;
 }

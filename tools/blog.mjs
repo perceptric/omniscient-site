@@ -6,7 +6,7 @@
 //
 // Sources live in blog/_src/<slug>.md. A file whose name starts with "_" is a draft: it builds when named, with noindex,
 // and never shows in the index, related posts or the sitemap. A broken post is skipped with a message, never a crash.
-// Each post gets assets/blog/<slug>/cover.svg, a headline card and logo art drawn by tools/covers.mjs, and og.png (1200x630)
+// Each post gets assets/blog/<slug>/cover.svg, logo art with no words drawn by tools/covers.mjs, and og.png (1200x630)
 // when Playwright is installed.
 // Tool screenshots and logos come from tools/shot-tools.mjs (assets/blog/tools/<domain>.webp, assets/blog/logos/<domain>.png).
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
