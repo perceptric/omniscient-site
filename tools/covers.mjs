@@ -1,6 +1,5 @@
-// Blog covers in the calm style (docs/brand.md in the app repo): no words, a plain ground, logo tiles. Alternatives
-// show the replaced tool and a grid of alternatives; reviews, pricing and versus posts put two logos face to face;
-// the rest show a grid of logos. Each post gets a scene from its type and slug: an orbit of alternatives around the tool they replace,
+// Blog covers in the calm style (docs/brand.md in the app repo): no words, an off-white dot grid, one ring around a
+// center tile, and the post's tools, features or steps on the ring (see Orbit scenes below). Each post gets a scene from its type and slug: an orbit of alternatives around the tool they replace,
 // two tools face to face, a ranked list in a product window, or a scene drawn for the topic (limits, pricing,
 // safety, data entry, sync). Logos come from tools/cover-logos.json (built from assets/blog/logos and the vector marks
 // in assets/blog/marks). Everything is seeded by the slug, so a cover only changes when its post or this file does.
@@ -715,58 +714,89 @@ const SCENES = {
   "linkedin-automation-tools-for-agencies": { accent: "agency", field: "paper" },
 };
 
-// ─── Clean scenes ────────────────────────────────────────────────────────────────────────────────────────────────
-// Plain ground, logo tiles in a tidy grid, Omniscient first on its black tile. No words, no dots, no rings.
+// ─── Orbit scenes ────────────────────────────────────────────────────────────────────────────────────────────────
+// An off-white dot grid, one ring around a center tile, and the post's tools, features or steps on the ring.
+// No words. Each post type gets its own center and ring.
 
-function grid(k, list, { cx, cy, cols, size, gap }) {
-  const rows = Math.ceil(list.length / cols);
-  const step = size + gap;
-  const x0 = cx - ((cols - 1) * step) / 2;
-  const y0 = cy - ((rows - 1) * step) / 2;
-  return list.map((dom, i) => k.tile(x0 + (i % cols) * step, y0 + Math.floor(i / cols) * step, size, dom, { big: dom === "tryomniscient.com", glow: dom === "tryomniscient.com" })).join("");
-}
-
+const CX = 600, CY = 315, R = 210;
+const around = (n, start = -90) => Array.from({ length: n }, (_, i) => { const a = (start + (i * 360) / n) * Math.PI / 180; return [CX + R * Math.cos(a), CY + R * Math.sin(a)]; });
 const firstOmni = (tools) => ["tryomniscient.com", ...tools.filter((d) => d !== "tryomniscient.com" && known(d))];
 
+function ground(k) {
+  k.defs.push(`<pattern id="${k.id}-dp" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="1.6" fill="#000" fill-opacity=".16"/></pattern>`);
+  return `<rect width="${W}" height="${H}" fill="#fafaf9"/><rect width="${W}" height="${H}" fill="url(#${k.id}-dp)"/>`;
+}
+const ring = (cx, cy, r, op = 0.1) => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#0a0a0a" stroke-opacity="${op}" stroke-width="2"/>`;
+const plate = (cx, cy, r) => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="#fafaf9"/>`;
+const orbitBase = () => plate(CX, CY, 250) + ring(CX, CY, R) + ring(CX, CY, 118, 0.07);
+const halo = (k, x, y, dom, r = 140) => (dom === "tryomniscient.com" || glowFill(dom) === "#ffffff" ? "" : `<circle cx="${f1(x)}" cy="${f1(y)}" r="${r}" fill="${glowFill(dom)}" opacity=".14" filter="url(#${k.id}-b)"/>`);
+// A white chip with a line icon, for a feature or a step.
+const chip = (k, x, y, name, s = 76) => `<rect x="${f1(x - s / 2)}" y="${f1(y - s / 2)}" width="${s}" height="${s}" rx="${f1(s * 0.26)}" fill="#fff" stroke="#000" stroke-opacity=".08"/>` + k.icon(name, x - 20, y - 20, 40, C.ink, 2);
+
 function alternativesScene(k, { subject, tools }) {
-  const list = firstOmni(tools.filter((d) => d !== subject)).slice(0, 6);
-  let out = k.tile(300, 315, 176, subject, { big: true });
-  out += `<path d="M436 315h96m-18-16 18 16-18 16" fill="none" stroke="${C.ink}" stroke-opacity=".22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
-  out += grid(k, list, { cx: 820, cy: 315, cols: 3, size: 112, gap: 36 });
+  const list = firstOmni(tools.filter((d) => d !== subject)).slice(0, 8);
+  let out = orbitBase() + k.tile(CX, CY, 156, subject, { big: true });
+  around(list.length).forEach(([x, y], i) => { const o = list[i] === "tryomniscient.com"; out += k.tile(x, y, o ? 112 : 88, list[i], { big: o, glow: o }); });
   return out;
 }
 
 function listScene(k, { tools }) {
-  const list = firstOmni(tools).slice(0, 8);
-  return grid(k, list, { cx: 600, cy: 315, cols: Math.min(4, Math.ceil(list.length / 2)), size: 120, gap: 40 });
+  const list = tools.filter((d) => d !== "tryomniscient.com" && known(d)).slice(0, 8);
+  let out = orbitBase() + k.omni(CX, CY, 156, { glow: true, big: true });
+  around(list.length || 1).forEach(([x, y], i) => { if (list[i]) out += k.tile(x, y, 92, list[i]); });
+  return out;
 }
 
-// A light gray ground with a faint line grid, and a white stage that keeps its top and side margins and runs off the
-// bottom edge, like the site's product cards.
-function ground(k) {
-  const pat = `${k.id}-grid`;
-  k.defs.push(`<pattern id="${pat}" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#000" stroke-opacity=".055" stroke-width="1"/></pattern>`);
-  const m = 40;
-  return `<rect width="${W}" height="${H}" fill="#f2f2ee"/>
-<rect width="${W}" height="${H}" fill="url(#${pat})"/>
-<path d="M${m} ${H + 40}V${m + 28}a28 28 0 0 1 28 -28H${W - m - 28}a28 28 0 0 1 28 28V${H + 40}Z" fill="#ffffff" filter="url(#${k.id}-l)"/>
-<path d="M${m + 0.5} ${H + 40}V${m + 28}a27.5 27.5 0 0 1 27.5 -27.5H${W - m - 28}a27.5 27.5 0 0 1 27.5 27.5V${H + 40}" fill="none" stroke="#000" stroke-opacity=".06"/>`;
+function versusScene(k, { a, b }) {
+  let out = plate(450, CY, 230) + plate(750, CY, 230) + ring(450, CY, 200) + ring(750, CY, 200) + ring(450, CY, 120, 0.06) + ring(750, CY, 120, 0.06);
+  out += halo(k, 450, CY, a, 130) + halo(k, 750, CY, b, 130);
+  out += k.tile(450, CY, 160, a, { big: true }) + k.tile(750, CY, 160, b, { big: true });
+  out += `<circle cx="${CX}" cy="${CY}" r="34" fill="#fff" filter="url(#${k.id}-s)"/>` + k.icon("arrows", CX - 14, CY - 14, 28, C.ink, 2);
+  return out;
+}
+
+function reviewScene(k, { subject }) {
+  let out = orbitBase() + halo(k, CX, CY, subject) + k.tile(CX, CY, 168, subject, { big: true });
+  const ic = ["mail", "calendar", "video", "users", "trend", "sparkle"];
+  around(ic.length).forEach(([x, y], i) => { out += chip(k, x, y, ic[i]); });
+  return out;
+}
+
+function pricingScene(k, { subject }) {
+  let out = orbitBase() + halo(k, CX, CY, subject) + k.tile(CX, CY, 156, subject, { big: true });
+  around(4, -135).forEach(([x, y], i) => {
+    const h = 70 + i * 18, top = y - h / 2;
+    out += `<rect x="${f1(x - 52)}" y="${f1(top)}" width="104" height="${h}" rx="16" fill="#fff" stroke="#000" stroke-opacity=".08"/>`;
+    out += k.bar(x - 34, top + 18, 40, 10, C.ink) + k.bar(x - 34, top + 38, 68, 8, C.bar) + (h > 90 ? k.bar(x - 34, top + 56, 56, 8, C.bar2) : "");
+  });
+  return out;
+}
+
+function guideScene(k) {
+  let out = orbitBase() + k.omni(CX, CY, 156, { glow: true, big: true });
+  const ic = ["userPlus", "mail", "calendar", "video", "flag", "trend"];
+  out += `<path d="M${CX} ${CY - R} A${R} ${R} 0 0 1 ${f1(CX + R * Math.cos(-Math.PI / 6))} ${f1(CY + R * Math.sin(-Math.PI / 6))}" fill="none" stroke="${C.ink}" stroke-width="3" stroke-linecap="round" opacity=".55"/>`;
+  around(ic.length).forEach(([x, y], i) => { out += chip(k, x, y, ic[i]); });
+  return out;
 }
 
 export function coverArt({ slug, type = "", topic = "", title = "", body = "", tools: given }) {
   const id = `cv-${slug.replace(/[^a-z0-9]/gi, "").slice(0, 24)}`;
   const k = kit(id);
-  const rnd = rngFor(slug);
   const tools = given || toolsOf(body);
   const subjectOf = () => domainsIn(`${slug.replace(/-/g, " ")} ${title}`).find((d) => d !== "tryomniscient.com");
   let art;
   if (type === "versus" || / vs\.? /i.test(title)) {
     const [a, b] = domainsIn(title);
-    art = versus(k, rnd, { a: a || tools[0], b: b || tools[1] || "hubspot.com" });
-  } else if (type === "review" || type === "pricing") {
-    art = versus(k, rnd, { a: subjectOf() || tools[0], b: "tryomniscient.com" });
+    art = versusScene(k, { a: a || tools[0], b: b || tools[1] || "hubspot.com" });
+  } else if (type === "review") {
+    art = reviewScene(k, { subject: subjectOf() || tools[0] });
+  } else if (type === "pricing") {
+    art = pricingScene(k, { subject: subjectOf() || tools[0] });
   } else if (type === "alternatives" || /alternatives/i.test(title)) {
     art = alternativesScene(k, { subject: subjectOf() || tools[1], tools });
+  } else if (type === "how-to") {
+    art = guideScene(k);
   } else {
     art = listScene(k, { tools });
   }
@@ -774,6 +804,6 @@ export function coverArt({ slug, type = "", topic = "", title = "", body = "", t
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
 <defs>${k.filters()}${k.defs.join("")}</defs>
 ${bg}
-<g transform="translate(0 22)">${art}</g>
+${art}
 </svg>`;
 }

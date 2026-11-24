@@ -72,10 +72,11 @@ Posts are Markdown files in `blog/_src/`. `tools/blog.mjs` (Node 22, no npm pack
 5. Commit the `.md` file, `blog/<slug>/`, `blog/index.html`, `sitemap.xml` and `assets/blog/<slug>/` (with the
    `cover.svg` and `og.png` the build writes).
 
-Covers (the featured image and `og.png`) are pictures with no words, drawn by `tools/covers.mjs` on a plain ground with
-no pattern: an alternatives post shows the tool it replaces, an arrow and a tidy grid of six alternatives with Omniscient
-first; a review, pricing or versus post puts two logos face to face; every other post shows a grid of up to eight
-logos from its first ```tools block. Logos come from `tools/cover-logos.json`: add a new tool's logo there (or let
+Covers (the featured image and `og.png`) are pictures with no words, drawn by `tools/covers.mjs` on an off-white dot
+grid: one ring around a center tile. Alternatives put the replaced tool in the center and the alternatives on the
+ring, Omniscient at the top; list posts put Omniscient in the center and the tools on the ring; versus posts show two
+overlapping rings with a logo in each; reviews and pricing posts put the tool in the center with feature icons or
+plan cards on the ring; guides put Omniscient in the center with the steps of the job as icons. Logos come from `tools/cover-logos.json`: add a new tool's logo there (or let
 `tools/shot-tools.mjs` save it to `assets/blog/logos/`) so it shows on covers.
 
 ```
