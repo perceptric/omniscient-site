@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 538" width="720" height="538" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Four levels of AI in a CRM</title>
+<desc id="d">AI in a CRM comes in four levels: writing help that drafts emails and sums up notes when you ask; insights that score leads and flag deals that need attention; automation that fills fields and logs activity from email and calls; and agents that run whole jobs, like lead lists and call recaps.</desc>
+<rect width="720" height="538" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Levels</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Four levels of AI in a CRM</text>
+<rect x="32.5" y="124.5" width="430" height="76" rx="12" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="56" y="158" font-size="21" font-weight="500" fill="#171717">Writing help</text>
+<text x="56" y="184" font-size="17" fill="#737373">Drafts emails and sums up notes when you ask</text>
+<rect x="32.5" y="220.5" width="505" height="76" rx="12" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="56" y="254" font-size="21" font-weight="500" fill="#171717">Insights</text>
+<text x="56" y="280" font-size="17" fill="#737373">Scores leads and flags deals that need attention</text>
+<rect x="32.5" y="316.5" width="580" height="76" rx="12" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="56" y="350" font-size="21" font-weight="500" fill="#171717">Automation</text>
+<text x="56" y="376" font-size="17" fill="#737373">Fills fields and logs activity from email and calls</text>
+<rect x="32.5" y="412.5" width="655" height="76" rx="12" fill="#0C8C5E" stroke="#0C8C5E"/>
+<text x="56" y="446" font-size="21" font-weight="500" fill="#ffffff">Agents</text>
+<text x="56" y="472" font-size="17" fill="#e6f4ee">Runs whole jobs, like lead lists and call recaps</text>
+</svg>

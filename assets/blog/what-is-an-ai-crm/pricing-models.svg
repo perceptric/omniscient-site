@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 558" width="720" height="558" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">How AI CRMs charge for AI</title>
+<desc id="d">Four ways AI CRMs charge for AI: Omniscient puts AI in the seat, from $19 per seat a month billed yearly; Attio, Clarify and Salesforce draw AI features from a pool of credits; Day AI charges per agent, with a free plan and agents from $24 a month; and Zoho CRM and Salesforce put their richest AI on upper plans. From each vendor's site, November 2026.</desc>
+<rect width="720" height="558" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Pricing</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Four ways to pay for AI</text>
+<rect x="32.5" y="124.5" width="219" height="83" fill="#0C8C5E" stroke="#ebebeb"/>
+<rect x="252.5" y="124.5" width="435" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="172" font-size="20" font-weight="500" fill="#ffffff">AI in the seat</text>
+<text x="268" y="160" font-size="20" font-weight="500" fill="#171717">Omniscient</text>
+<text x="268" y="187" font-size="17" fill="#737373">From $19 per seat a month, billed yearly</text>
+<rect x="32.5" y="220.5" width="219" height="83" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="252.5" y="220.5" width="435" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="268" font-size="20" font-weight="500" fill="#171717">Credits</text>
+<text x="268" y="256" font-size="20" font-weight="500" fill="#171717">Attio, Clarify, Salesforce</text>
+<text x="268" y="283" font-size="17" fill="#737373">AI features draw from a pool of credits</text>
+<rect x="32.5" y="316.5" width="219" height="83" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="252.5" y="316.5" width="435" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="364" font-size="20" font-weight="500" fill="#171717">Per agent</text>
+<text x="268" y="352" font-size="20" font-weight="500" fill="#171717">Day AI</text>
+<text x="268" y="379" font-size="17" fill="#737373">Free plan, then agents from $24 a month</text>
+<rect x="32.5" y="412.5" width="219" height="83" fill="#f5f5f5" stroke="#ebebeb"/>
+<rect x="252.5" y="412.5" width="435" height="83" fill="#ffffff" stroke="#ebebeb"/>
+<text x="48" y="460" font-size="20" font-weight="500" fill="#171717">Higher editions</text>
+<text x="268" y="448" font-size="20" font-weight="500" fill="#171717">Zoho CRM, Salesforce</text>
+<text x="268" y="475" font-size="17" fill="#737373">The richest AI sits on upper plans</text>
+<text x="32" y="534" font-size="18" fill="#737373">From each vendor's site, November 2026.</text>
+</svg>

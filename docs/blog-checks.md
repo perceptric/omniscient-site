@@ -230,3 +230,11 @@ Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings ar
 - omniscient-vs-hubspot setup.svg said HubSpot Professional needs "a yearly commitment, even paid monthly". HubSpot's page shows Pay Monthly, Commit annually and Pay Annually options without making this clear, so the chart now shows the seat price instead.
 - No byline yet: the builder has no author line, and the guideline's "Blog / Guides" breadcrumb and "Book a demo" header button aren't built either.
 - Featured images now carry a headline card (post kind, year, short title) with the logo art on the right.
+
+## what-is-an-ai-crm (2284 words, 5 visuals)
+
+- HubSpot's pricing page returned only its title today (likely drawn by script), so HubSpot was left out of this post's list.
+- Attio's page shows each plan's two prices with no labels again. The post keeps the yearly reading from docs/blog-prices.md ($40 then $35, $100 then $79).
+- Zoho CRM paid prices still don't load, so the entry gives the free plan and "See Zoho's pricing".
+- Salesforce has no homepage screenshot (bot wall), so its entry shows the logo only.
+- Tool facts (Agentforce, Zia Agents, Day AI approval trail, Lightfield capture seats, Clarify recording) come from best-ai-crm and agentic-crm, checked earlier this month. Prices were re-read today.
