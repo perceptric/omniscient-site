@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 542" width="720" height="542" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">Close plans a month, billed yearly</title>
+<desc id="d">Close plans a month on yearly billing: Solo $9 for 1 user, or $19 billed monthly; Essentials $35 per user, or $49 billed monthly; Growth $99 per user, or $109 billed monthly; Scale $139 per user, or $149 billed monthly. Calling and SMS usage is billed on top. From close.com/pricing, November 2026.</desc>
+<rect width="720" height="542" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Close pricing</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">A month, billed yearly</text>
+<rect x="32" y="116" width="656" height="366" fill="#ffffff" stroke="#ebebeb"/>
+<rect x="32" y="116" width="656" height="46" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="52" y="146" font-size="18" fill="#404040">Plan</text>
+<text x="668" y="146" text-anchor="end" font-size="18" fill="#404040">Billed yearly</text>
+<text x="52" y="196" font-size="20" font-weight="500" fill="#171717">Solo</text>
+<text x="668" y="196" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$9</text>
+<text x="52" y="222" font-size="18" fill="#737373">1 user, $19 billed monthly</text>
+<line x1="33" x2="687" y1="242" y2="242" stroke="#ebebeb"/>
+<text x="52" y="276" font-size="20" font-weight="500" fill="#171717">Essentials</text>
+<text x="668" y="276" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$35</text>
+<text x="52" y="302" font-size="18" fill="#737373">Per user, $49 billed monthly</text>
+<line x1="33" x2="687" y1="322" y2="322" stroke="#ebebeb"/>
+<text x="52" y="356" font-size="20" font-weight="500" fill="#171717">Growth</text>
+<text x="668" y="356" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$99</text>
+<text x="52" y="382" font-size="18" fill="#737373">Per user, $109 billed monthly</text>
+<line x1="33" x2="687" y1="402" y2="402" stroke="#ebebeb"/>
+<text x="52" y="436" font-size="20" font-weight="500" fill="#171717">Scale</text>
+<text x="668" y="436" text-anchor="end" font-size="22" font-weight="500" fill="#171717">$139</text>
+<text x="52" y="462" font-size="18" fill="#737373">Per user, $149 billed monthly</text>
+<text x="32" y="516" font-size="18" fill="#737373">Calling and SMS usage is billed on top.</text>
+</svg>

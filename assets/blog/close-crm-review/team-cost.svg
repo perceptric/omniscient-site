@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 578" width="720" height="578" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What a team of 5 pays a month, billed yearly</title>
+<desc id="d">A team of 5 users a month on yearly billing: Close Essentials $175, Close Growth $495 and Close Scale $695, plus calling and SMS usage; Omniscient Starter $95, Pro $245 and Business $495. From close.com/pricing and tryomniscient.com, November 2026.</desc>
+<rect width="720" height="578" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Team of 5</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Monthly bill, billed yearly</text>
+<text x="32" y="154" font-size="19" fill="#171717">Close Essentials</text>
+<rect x="260" y="134" width="85" height="28" rx="6" fill="#333333"/>
+<text x="357" y="155" font-size="19" font-weight="500" fill="#171717">$175</text>
+<text x="32" y="218" font-size="19" fill="#171717">Close Growth</text>
+<rect x="260" y="198" width="240" height="28" rx="6" fill="#333333"/>
+<text x="512" y="219" font-size="19" font-weight="500" fill="#171717">$495</text>
+<text x="32" y="282" font-size="19" fill="#171717">Close Scale</text>
+<rect x="260" y="262" width="338" height="28" rx="6" fill="#333333"/>
+<text x="610" y="283" font-size="19" font-weight="500" fill="#171717">$695</text>
+<line x1="32" x2="688" y1="310" y2="310" stroke="#ebebeb"/>
+<text x="32" y="346" font-size="19" fill="#171717">Omniscient Starter</text>
+<rect x="260" y="326" width="46" height="28" rx="6" fill="#0C8C5E"/>
+<text x="318" y="347" font-size="19" font-weight="500" fill="#171717">$95</text>
+<text x="32" y="410" font-size="19" fill="#171717">Omniscient Pro</text>
+<rect x="260" y="390" width="119" height="28" rx="6" fill="#0C8C5E"/>
+<text x="391" y="411" font-size="19" font-weight="500" fill="#171717">$245</text>
+<text x="32" y="474" font-size="19" fill="#171717">Omniscient Business</text>
+<rect x="260" y="454" width="240" height="28" rx="6" fill="#0C8C5E"/>
+<text x="512" y="475" font-size="19" font-weight="500" fill="#171717">$495</text>
+<text x="32" y="550" font-size="18" fill="#737373">Close calling and SMS usage is billed on top.</text>
+</svg>

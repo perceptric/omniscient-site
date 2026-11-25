@@ -238,3 +238,10 @@ Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings ar
 - Zoho CRM paid prices still don't load, so the entry gives the free plan and "See Zoho's pricing".
 - Salesforce has no homepage screenshot (bot wall), so its entry shows the logo only.
 - Tool facts (Agentforce, Zia Agents, Day AI approval trail, Lightfield capture seats, Clarify recording) come from best-ai-crm and agentic-crm, checked earlier this month. Prices were re-read today.
+
+## close-crm-review (1870 words, 5 visuals)
+
+- Close's homepage says "4.7 rating across 2,000+ G2 reviews", but G2 itself can't be read from here, so the post has no rating block.
+- Close's /features page returned the homepage, so the per-plan features come from the pricing page's tables.
+- Not stated by Close, so left out: per-message SMS prices, per-country call rates beyond "around $0.02 a minute", and the price of extra AI credits.
+- Agents are marked "in beta" on Close's site, with the Voice Agent live; the post says Close "offers AI Agents" and names the Voice Agent as live.
