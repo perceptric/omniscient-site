@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 578" width="720" height="578" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What a team of 5 pays a month, billed yearly</title>
+<desc id="d">A team of 5 users a month on yearly billing: Copper Basic $115, Professional $295 and Business $495; Omniscient Starter $95, Pro $245 and Business $495. From copper.com/pricing and tryomniscient.com, November 2026.</desc>
+<rect width="720" height="578" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">Team of 5</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">Monthly bill, billed yearly</text>
+<text x="32" y="154" font-size="19" fill="#171717">Copper Basic</text>
+<rect x="260" y="134" width="75" height="28" rx="6" fill="#333333"/>
+<text x="347" y="155" font-size="19" font-weight="500" fill="#171717">$115</text>
+<text x="32" y="218" font-size="19" fill="#171717">Copper Professional</text>
+<rect x="260" y="198" width="193" height="28" rx="6" fill="#333333"/>
+<text x="465" y="219" font-size="19" font-weight="500" fill="#171717">$295</text>
+<text x="32" y="282" font-size="19" fill="#171717">Copper Business</text>
+<rect x="260" y="262" width="324" height="28" rx="6" fill="#333333"/>
+<text x="596" y="283" font-size="19" font-weight="500" fill="#171717">$495</text>
+<line x1="32" x2="688" y1="310" y2="310" stroke="#ebebeb"/>
+<text x="32" y="346" font-size="19" fill="#171717">Omniscient Starter</text>
+<rect x="260" y="326" width="62" height="28" rx="6" fill="#0C8C5E"/>
+<text x="334" y="347" font-size="19" font-weight="500" fill="#171717">$95</text>
+<text x="32" y="410" font-size="19" fill="#171717">Omniscient Pro</text>
+<rect x="260" y="390" width="160" height="28" rx="6" fill="#0C8C5E"/>
+<text x="432" y="411" font-size="19" font-weight="500" fill="#171717">$245</text>
+<text x="32" y="474" font-size="19" fill="#171717">Omniscient Business</text>
+<rect x="260" y="454" width="324" height="28" rx="6" fill="#0C8C5E"/>
+<text x="596" y="475" font-size="19" font-weight="500" fill="#171717">$495</text>
+<text x="32" y="550" font-size="18" fill="#737373">From copper.com/pricing and tryomniscient.com, November 2026.</text>
+</svg>

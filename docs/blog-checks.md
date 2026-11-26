@@ -245,3 +245,10 @@ Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings ar
 - Close's /features page returned the homepage, so the per-plan features come from the pricing page's tables.
 - Not stated by Close, so left out: per-message SMS prices, per-country call rates beyond "around $0.02 a minute", and the price of extra AI credits.
 - Agents are marked "in beta" on Close's site, with the Voice Agent live; the post says Close "offers AI Agents" and names the Voice Agent as live.
+
+## copper-crm-review (1832 words, 5 visuals)
+
+- Copper's pricing page doesn't state a trial length ("Start free, no credit card required"); its homepage FAQ says every plan starts with a 14-day free trial, so the post uses 14 days.
+- The pricing page's feature matrix lost its tier checkmarks, so the post names a plan only for features in each plan's bullet list. Tiers for the AI email tools, email tracking, Okta single sign-on and custom fields aren't stated.
+- Copper's Gemini features are described in a blog article with no plan or price, so the post leaves them out. The homepage's "Capterra 4.4" and "G2 Leader" badges aren't used, since G2 can't be read here.
+- No seat limits or add-on prices are stated. Personal onboarding and premium support are "for eligible Business & Professional annual tier accounts".
