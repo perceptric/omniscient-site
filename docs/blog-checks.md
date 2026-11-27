@@ -252,3 +252,10 @@ Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings ar
 - The pricing page's feature matrix lost its tier checkmarks, so the post names a plan only for features in each plan's bullet list. Tiers for the AI email tools, email tracking, Okta single sign-on and custom fields aren't stated.
 - Copper's Gemini features are described in a blog article with no plan or price, so the post leaves them out. The homepage's "Capterra 4.4" and "G2 Leader" badges aren't used, since G2 can't be read here.
 - No seat limits or add-on prices are stated. Personal onboarding and premium support are "for eligible Business & Professional annual tier accounts".
+
+## hubspot-crm-pricing (1707 words, 5 visuals)
+
+- HubSpot's Sales Hub page loaded today but its flat text doesn't tie each price to a billing option: Starter shows "$7" and "$20" with "Pay Monthly", "Commit monthly" and "Pay Annually", and Professional shows "$90" and "$100" with "Pay Monthly", "Commit annually" and "Pay Annually". The post says Starter "from $20, lower for new customers" and Professional "$90 to $100, by how you pay".
+- The price of extra HubSpot Credits came only from a page summary ($0.010 each), so the post leaves it out.
+- Plan markings for Notetaker, meeting prep, Deal Summaries and similar features are checkmarks that don't come through as text, so the post doesn't name a plan for them.
+- The team-of-5 chart uses each plan's lowest seat price: HubSpot's lowest listed figure for Starter ($20) and Professional ($90), and yearly prices for Omniscient, Close and Copper. Close's and Copper's prices are from their pages read on November 25 and 26.

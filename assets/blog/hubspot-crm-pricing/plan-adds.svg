@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 532" width="720" height="532" role="img" aria-labelledby="t d" font-family="Inter, system-ui, sans-serif">
+<title id="t">What each HubSpot Sales Hub plan adds</title>
+<desc id="d">What each HubSpot Sales Hub plan adds: Free has contacts, deal pipelines, email tracking, meetings and Breeze Assistant; Starter adds up to 15 pipelines, 50 workflows and 500 calling minutes; Professional adds sequences, forecasting, playbooks, custom reports and lead scoring; Enterprise adds conversation intelligence, deal journey analytics and up to 1,000 workflows.</desc>
+<rect width="720" height="532" fill="#ffffff"/>
+<text x="32" y="48" font-size="19" fill="#737373">By plan</text>
+<text x="32" y="88" font-size="30" font-weight="500" fill="#171717">What each plan adds</text>
+<rect x="32.5" y="124.5" width="180" height="76" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="122" y="169" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">Free</text>
+<text x="236" y="156" font-size="18" fill="#404040">Contacts, deal pipelines, email</text>
+<text x="236" y="182" font-size="18" fill="#404040">tracking, meetings, Breeze Assistant</text>
+<rect x="32.5" y="216.5" width="180" height="76" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="122" y="261" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">Starter</text>
+<text x="236" y="248" font-size="18" fill="#404040">Up to 15 pipelines, 50 workflows, 500</text>
+<text x="236" y="274" font-size="18" fill="#404040">calling minutes</text>
+<rect x="32.5" y="308.5" width="180" height="76" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="122" y="353" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">Professional</text>
+<text x="236" y="340" font-size="18" fill="#404040">Sequences, forecasting, playbooks,</text>
+<text x="236" y="366" font-size="18" fill="#404040">custom reports, lead scoring</text>
+<rect x="32.5" y="400.5" width="180" height="76" rx="10" fill="#f5f5f5" stroke="#ebebeb"/>
+<text x="122" y="445" text-anchor="middle" font-size="20" font-weight="500" fill="#171717">Enterprise</text>
+<text x="236" y="432" font-size="18" fill="#404040">Conversation intelligence, deal journey</text>
+<text x="236" y="458" font-size="18" fill="#404040">analytics, 1,000 workflows</text>
+</svg>
