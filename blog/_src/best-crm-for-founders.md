@@ -456,6 +456,53 @@ Dex | getdex.com | Not rated | Personal network in one place | [$12/user/month b
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-founders&start=crm)**
 
+## How to Share a Founder's Inbox Safely
+
+A founder's inbox mixes buyers with investors, candidates, lawyers and friends. When a CRM syncs that inbox, the question is what your teammates can see from it.
+
+Before you connect your inbox to any CRM, check these settings:
+
+- **Per-inbox privacy.** You should decide what teammates see from your inbox, from full threads down to only who you met and when.
+- **People left out of the sync.** Look for a way to keep investor or personal domains out of the CRM entirely.
+- **Who can change the rule.** Only the person who connected the inbox should be able to open it up.
+- **AI answers follow the rule.** If the CRM has an assistant, its answers should respect the same privacy settings.
+
+Omniscient has inbox privacy settings, so you choose what your team sees from each connected inbox before the first sync finishes. Test this on a trial with a real investor thread, then ask a cofounder what they can see.
+
+## How to Hand Your Deals to a First Sales Hire
+
+Your first sales hire inherits every open deal you've been carrying in your head. The CRM is where that history lives, so get it ready before their first day.
+
+This is the order to follow:
+
+1. **Give every open deal an owner** and a written next step.
+2. **Open customer threads to the new rep** with your inbox privacy settings, while investor mail stays private.
+3. **Stay on the deals where you hold the relationship,** and bring the rep to the next call.
+4. **Ask the rep to read five deal timelines** and tell you what's missing.
+5. **Share your playbook** so the rep sells the same way you do.
+
+In Omniscient, the next step lives on each opportunity, and the daily digest points out deals that need attention. Your rep can ask Otto to research an account or prep a meeting, and the [skill](/product/skills/) behind it gives them the same kind of answer it gives you. Pricing, product facts and your playbook go in [Knowledge](/product/knowledge/), so Otto's drafts for the rep use the same facts and tone as yours.
+
+## How to Choose a CRM as a Founder
+
+Most trials here last 14 days, which is enough if you run real selling through them. These five checks cover what a founder needs to know:
+
+```steps
+1. Connect your real inbox: Sync your own Gmail or Outlook and look at which contacts appear after the first sync.
+2. Check what a teammate sees: Invite a cofounder or advisor and ask what they can see of one investor thread.
+3. Run a week of real selling: Take your calls and follow-ups through the CRM for five working days.
+4. Price your first hire: Look up the plan you'd need with one more seller and one teammate who only views.
+5. Test the way out: Export your contacts and deals, or ask how they'd move to another CRM.
+```
+
+For step 4, here is what a founder plus one seller pays a month on a few entry plans:
+
+- **Omniscient:** $38 on Starter or $98 on Pro, billed yearly, with free seats for teammates who only view or log data.
+- **Close:** $70 on Essentials, billed yearly, since Solo covers 1 user only.
+- **folk:** $48 on Standard.
+- **Salesflare:** $58 on Growth, billed yearly.
+- **HubSpot:** $0 on the free CRM, which covers up to 2 users.
+
 ## Conclusion
 
 A CRM for founders keeps every deal in one place while you run the company. It turns your email, calendar and calls into a pipeline your first hire can read.

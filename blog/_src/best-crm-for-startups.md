@@ -475,6 +475,80 @@ Twenty | twenty.com | Not rated | Open source and self-hostable | [$9/user/month
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-crm-for-startups&start=crm)**
 
+## Startup Discounts on CRMs
+
+HubSpot and Attio both run startup programs, and both discounts are largest in the first year. Plan your budget on the full price you'll pay once the discount ends.
+
+- **HubSpot for Startups:** Seed and Series A founders get 90% off in year one, plus discounts on HubSpot Credits as they grow. Check the [startup program](https://www.hubspot.com/startups) for what you pay after year one.
+- **Attio for Startups:** 80% off the yearly Pro plan and credits in year one, then 30% off in year two, for workspaces of up to 10 seats. Startups must be VC-backed or tied to an Attio startup partner, incorporated less than 5 years ago, and apply within 90 days of creating the workspace. Details are on the [Attio startup page](https://attio.com/startups).
+
+For any other CRM here, ask the sales team about a startup price before you sign.
+
+## Free Plans and Trials for Startups
+
+Every CRM here lets you try it before you pay, through a free plan, a trial or both.
+
+These have a free plan:
+
+- **HubSpot:** a free CRM for up to 2 users.
+- **Attio:** a Free plan for up to 3 users, plus a 14-day trial of Pro.
+- **Zoho CRM:** a Free plan for up to 3 users.
+- **Salesforce:** a Free Suite, with paid plans from $25 per user a month.
+- **Streak:** free Gmail tools, plus a 14-day trial of Pro+.
+- **Twenty:** free to host yourself, plus a 30-day cloud trial with no credit card.
+
+These start with a free trial:
+
+- **Omniscient:** a 14-day trial of Pro with no credit card, plus free seats for teammates who only view or log data.
+- **Close:** a 14-day trial with no credit card.
+- **folk:** a 14-day trial with no credit card.
+- **Salesflare:** a 30-day trial with no credit card.
+- **monday CRM:** a free start with no credit card.
+- **Copper:** a free start with no credit card.
+
+## Which CRM Fits Each Stage of a Startup
+
+The right CRM changes as you hire. Here is a match for four common startup stages:
+
+![Which CRM fits each stage of a startup: a founder selling alone needs capture without typing, from Omniscient, folk, Streak or HubSpot's free CRM; a first sales hire needs a pipeline learned in a day, from Pipedrive, Close, Salesflare or Omniscient; a small sales team needs a forecast and access rules, from HubSpot, Attio, Zoho CRM or monday CRM; a custom sales process needs custom objects and an admin, from Salesforce, Attio or Twenty](/assets/blog/best-crm-for-startups/crm-by-stage.svg)
+
+1. **A founder selling alone** needs capture without typing, from Omniscient, folk, Streak or HubSpot's free CRM.
+2. **A first sales hire** needs a pipeline they can learn in a day, from Pipedrive, Close, Salesflare or Omniscient.
+3. **A small sales team** needs a forecast and access rules, from HubSpot, Attio, Zoho CRM or monday CRM.
+4. **A custom sales process** needs custom objects and an admin, from Salesforce, Attio or Twenty.
+
+As the team grows, the [Skills page](/product/skills/) shows how Otto gives the founder and each new hire the same kind of answer to the same question.
+
+## How to Switch CRMs Later Without Losing Data
+
+Your first CRM may not be your last, so look at how data comes out before you put it in. A clean move usually runs in this order:
+
+```steps
+1. Companies first: Bring in companies matched by web domain, so every person has a company to land on.
+2. Then people: Import contacts and link each one to their company.
+3. Then pipelines: Copy your stages before any deals, and keep won and lost.
+4. Then deals: Place each deal on its matching stage, with its owner and amount.
+5. Notes last: Keep each note on the record it belongs to.
+```
+
+Ask any CRM how it matches companies on import, since records without a website are the hardest to place. A wrong match takes longer to fix than a missing one, because people and deals follow the company they land on.
+
+Omniscient imports from HubSpot, Salesforce, Attio and Pipedrive, so a startup that outgrows its first CRM can move without starting over.
+
+## How to Choose a CRM for Your Startup
+
+Most trials here last 14 days, which is enough if you spend them on real work. This is the order to test in:
+
+```steps
+1. Write down how you sell: List the channels your deals start from, like email, LinkedIn, calls or inbound forms.
+2. Invite your next teammate: Add a colleague and see what a free or viewer seat lets them see and do.
+3. Price your next hires: Look up the plan you'd need at three and at five seats, on yearly and monthly billing.
+4. Ask about startup pricing: Ask whether you qualify for a discount and what you'll pay once it ends.
+5. Test the way out: Export a list, or ask how contacts, deals and notes would move to another CRM.
+```
+
+For a closer look at AI that fills in records, our list of the [best AI CRMs](/blog/best-ai-crm/) compares how each one shows its work.
+
 ## Conclusion
 
 A CRM for startups gives a young team one place for every deal, so the pipeline survives the first hire. It keeps the bill small while you find your market.
