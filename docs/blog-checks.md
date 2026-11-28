@@ -259,3 +259,8 @@ Prices now come from docs/blog-prices.md (checked November 20 to 23). Ratings ar
 - The price of extra HubSpot Credits came only from a page summary ($0.010 each), so the post leaves it out.
 - Plan markings for Notetaker, meeting prep, Deal Summaries and similar features are checkmarks that don't come through as text, so the post doesn't name a plan for them.
 - The team-of-5 chart uses each plan's lowest seat price: HubSpot's lowest listed figure for Starter ($20) and Professional ($90), and yearly prices for Omniscient, Close and Copper. Close's and Copper's prices are from their pages read on November 25 and 26.
+
+## folk-crm-review (2026-11-28)
+- folk.app/pricing shows a "Pay yearly −20%" toggle but the page text doesn't say whether $24 and $48 are the yearly or monthly view. Post gives the prices with no billing term and says folk offers a yearly discount.
+- "5,000+ companies" is folk's own homepage claim, worded as "folk says".
+- Homepage says "30+ integrations" while pricing says "5,000+ integrations" on Premium. Post names Zapier and the API only.
