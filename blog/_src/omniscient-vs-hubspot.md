@@ -61,6 +61,8 @@ A few things stand out for a small team:
 - Breeze Assistant, HubSpot's AI helper, comes with the free CRM and can research companies and sum up records.
 - The [mobile app](https://www.hubspot.com/products/crm/mobile) is free on iOS and Android.
 
+![Breeze Assistant answering a request for today's priorities with a day brief, next to a panel showing the business and user context it used](/assets/blog/hubspot-crm-review/hubspot-breeze.webp "Breeze Assistant and the context it used. Image: HubSpot Knowledge Base")
+
 If your team runs newsletters and landing pages next to sales, HubSpot keeps them on the same database as your pipeline.
 
 ## Where Omniscient shines
@@ -113,6 +115,10 @@ Here is what each paid [HubSpot plan](https://blog.hubspot.com/sales/hubspot-sal
 | Professional | 3,000 | Up to 500 email sends per user a day |
 | Enterprise | 12,000 | Up to 1,000 email sends per user a day |
 
+![A HubSpot sequence step, Automated Email Day 1, with company and first name tokens in the email and a menu to edit, replace or clone the email](/assets/blog/hubspot-crm-review/hubspot-sequence.webp "An automated email step in a sequence. Image: HubSpot Knowledge Base")
+
+![A HubSpot contacts list with a phone number selected and the HubSpot calling window open with a dial pad](/assets/blog/hubspot-crm-review/hubspot-calling.webp "Calling a contact from the contacts list. Image: HubSpot Knowledge Base")
+
 Omniscient reads your mailbox to fill in records, and Otto drafts your next email from each thread. You send it from your own Gmail or Outlook. [Workflows](/product/workflows/) start on events like a stage change or a booked meeting, then send emails from your team's templates, wait, branch or post Slack alerts.
 
 If your team books meetings through cold email in volume or calls, HubSpot Professional covers more of that work in one place.
@@ -120,6 +126,8 @@ If your team books meetings through cold email in volume or calls, HubSpot Profe
 ## AI and credits in HubSpot and Omniscient
 
 HubSpot runs its AI agents on [HubSpot Credits](https://www.hubspot.com/products/artificial-intelligence/credits). Paid plans include 500 credits a month on Starter, 3,000 on Professional and 5,000 on Enterprise. The prospecting agent uses 100 credits a lead, and unused credits expire at the end of each month.
+
+![HubSpot's sales workspace showing an AI-written outreach email for a contact, with an associated play, a regenerate button and a Start outreach button](/assets/blog/hubspot-crm-review/hubspot-prospecting.webp "An AI-written outreach email in the sales workspace. Image: HubSpot Knowledge Base")
 
 Omniscient includes the CRM's AI in the seat price, so Ask Otto and his skills run on each paid seat.
 

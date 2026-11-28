@@ -103,6 +103,10 @@ The difference shows up clearly when you move data out of each tool:
 - Attio's deal stages arrive as a list of statuses with no win probability, so an importer reads the won stage from Attio's celebration setting and the lost one from its name.
 - HubSpot keeps leads and customers in one contact list sorted by lifecycle stage.
 
+![An Attio Deals board in a kanban view with Outreach, Lead, In Progress and Won columns, each card showing the company, owner, deal type, domain and revenue range](/assets/blog/attio-review/attio-pipeline.webp "Attio: a deals pipeline in kanban view. Image: Attio help center")
+
+![HubSpot deal pipeline settings listing stages such as Pilot / Proof of Concept, Procurement & Legal Review, Closed Won and Closed Lost, each with a win probability, while a new Manager Approved stage is added](/assets/blog/hubspot-crm-review/hubspot-pipeline.webp "HubSpot: setting up deal stages. Image: HubSpot Knowledge Base")
+
 ## Email, sequences and calls in Attio and HubSpot
 
 Both tools log email on the right records and keep sequences for their higher plans:
@@ -116,6 +120,10 @@ Both tools log email on the right records and keep sequences for their higher pl
 HubSpot also includes calling: 500 minutes a month on Starter and 3,000 on Professional, with call transcription on Professional. Attio's sequences are built for email to warm leads and customers, sent through your synced Gmail or Microsoft account, as its [help center](https://attio.com/help/reference/automations/sequences/create-a-sequence) explains.
 
 If your reps live on the phone, HubSpot is the better pick here, since calling minutes start on Starter.
+
+![An Attio sequence step with an automated email, a first name variable and an AI Composer block set to a friendly introduction](/assets/blog/attio-review/attio-sequence.webp "Attio: an AI content block in a sequence email. Image: Attio help center")
+
+![A HubSpot sequence step, Automated Email Day 1, with company and first name tokens in the email and a menu to edit, replace or clone the email](/assets/blog/hubspot-crm-review/hubspot-sequence.webp "HubSpot: an automated email step in a sequence. Image: HubSpot Knowledge Base")
 
 ## LinkedIn outreach in Attio and HubSpot
 
@@ -141,6 +149,10 @@ Both tools meter AI with credits, counted in different ways:
 | Unused credits | Renew each month on your billing date | Reset each month and don't roll over |
 
 On HubSpot, [credits](https://knowledge.hubspot.com/account-management/understand-hubspot-credits-and-billing) come with paid seats. Once a month's credits are used, features that use them pause until the next reset date, unless you add capacity. Both let you set limits on credit use, and Attio's [credits guide](https://attio.com/help/reference/workspace-settings-billing/manage-workspace-and-seat-credits) lets admins cap Ask Attio's share of the pool.
+
+![An Ask Attio chat where a user asks to prep their next meeting and gets a meeting overview with the prospect, deal stage, deal size and external participants](/assets/blog/attio-review/attio-ask.webp "Attio: Ask Attio prepping a meeting. Image: Attio help center")
+
+![Breeze Assistant answering a request for today's priorities with a day brief, next to a panel showing the business and user context it used](/assets/blog/hubspot-crm-review/hubspot-breeze.webp "HubSpot: Breeze Assistant and the context it used. Image: HubSpot Knowledge Base")
 
 ## Attio vs HubSpot pricing
 
