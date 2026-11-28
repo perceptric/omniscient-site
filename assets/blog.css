@@ -131,8 +131,8 @@
 .bl-body .bl-callout > :last-child { margin-bottom: 0; }
 
 .bl-cta { position: relative; margin: 40px 0; padding: 40px 32px; border-radius: var(--r-2xl); background: var(--signal-soft); overflow: hidden; }
-.bl-cta::before, .bl-band::before { content: ""; position: absolute; inset: 0; background-image: var(--bl-grain); mix-blend-mode: multiply; opacity: .32; pointer-events: none; }
-.bl-cta > *, .bl-band > * { position: relative; }
+.bl-cta::before { content: ""; position: absolute; inset: 0; background-image: var(--bl-grain); mix-blend-mode: multiply; opacity: .32; pointer-events: none; }
+.bl-cta > * { position: relative; }
 .bl-body .bl-cta__text { max-width: 560px; margin: 0 0 20px; font: 500 24px/1.2 var(--font); letter-spacing: -0.03em; color: var(--ink); text-wrap: balance; }
 .bl-cta__row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
 
@@ -153,11 +153,11 @@
 .bl-steps__title { display: block; margin-bottom: 4px; font-size: 16px; line-height: 1.5; font-weight: 600; color: var(--ink); }
 .bl-body .bl-steps p { margin: 0; font-size: 16px; line-height: 1.6; }
 
-/* Figures: images and product shots sit on a soft rounded field, like the product pages */
+/* Figures: the image itself, rounded with a hairline ring, on the page. No field or frame around it. */
 .bl-fig { margin: 32px 0 36px; }
-.bl-band { position: relative; padding: 28px; border-radius: var(--r-2xl); background: #f2f2ee; overflow: hidden; }
-.bl-band img { display: block; max-width: 100%; height: auto; margin-inline: auto; }
-.bl-band img[src$=".svg"] { width: 100%; border-radius: 16px; box-shadow: var(--sh-rest); }
+.bl-band { position: relative; }
+.bl-band img { display: block; max-width: 100%; height: auto; margin-inline: auto; border-radius: var(--r-lg); box-shadow: var(--sh-rest); }
+.bl-band img[src$=".svg"] { width: 100%; }
 .bl-fig figcaption { margin-top: 10px; font: 400 12px/1.5 var(--font); color: var(--muted); }
 .bl-fig figcaption a { color: inherit; }
 .bl-shot { font-size: 12.5px; line-height: 1.5; color: var(--ink); }
@@ -207,18 +207,16 @@
 .bl-browser__dots { display: flex; gap: 6px; }
 .bl-browser__dots i { width: 9px; height: 9px; border-radius: 999px; background: #e2e2de; }
 .bl-browser__url { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 5px 14px; border-radius: 999px; background: var(--tint); font: 400 11.5px/1 var(--font); color: var(--muted); }
-.bl-band .bl-browser img { width: 100%; margin: 0; }
-/* Tool homepages: a faint line grid, smaller padding on top and sides, none at the bottom, so the window runs off the band */
-.bl-site .bl-band { padding: 20px 20px 0; background-color: #f2f2ee; background-image: linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.05) 1px, transparent 1px); background-size: 32px 32px; }
-.bl-site .bl-band::before { display: none; }
-.bl-site .bl-browser { border-radius: 12px 12px 0 0; }
+.bl-band .bl-browser img { width: 100%; margin: 0; border-radius: 0; box-shadow: none; }
+/* Tool homepages: the browser window on its own */
+.bl-site .bl-browser { border-radius: var(--r-lg); }
 .bl-body .bl-shot .band { padding: 28px; }
 .bl-body .bl-shot .app { min-height: 0; }
 
 /* ═══ Decision trees (```tree): a question on top, labeled branches, tool cards at the ends ═══
    Stacked by default: each question's branches hang under it on a rail. From 784px a question whose branches fit side
    by side (the build marks it --row) draws them as a tree, joined by lines. Text always wraps, never cuts off. */
-.bl-band--tree { padding: 32px 28px; overflow-x: auto; overscroll-behavior-x: contain; }
+.bl-band--tree { overflow-x: auto; overscroll-behavior-x: contain; }
 .bl-tree { --tl: var(--line-strong); min-width: 0; }
 .bl-tree ul { margin: 0; padding: 0; list-style: none; }
 .bl-body .bl-tree__title { margin: 0 0 24px; font: 500 18px/1.3 var(--font); letter-spacing: -0.015em; color: var(--ink); text-wrap: balance; }
@@ -331,8 +329,7 @@
   .bl-body, .bl-body :where(p, li):where(:not(.bl-shot *)) { font-size: 16px; }
   .bl-body :where(h2):where(:not(.bl-shot *)) { margin-top: 44px; font-size: 24px; }
   .bl-body :where(h3):where(:not(.bl-shot *)) { font-size: 19px; }
-  .bl-band, .bl-body .bl-shot .band { padding: 12px; }
-  .bl-site .bl-band { padding: 12px 12px 0; background-size: 24px 24px; }
+  .bl-body .bl-shot .band { padding: 12px; }
   .bl-band--wide { overflow-x: auto; overscroll-behavior-x: contain; }
   .bl-band--wide img[src$=".svg"] { width: 560px; max-width: none; margin-inline: 0; }
   .bl-cta { padding: 28px 20px; }
@@ -352,7 +349,6 @@
   .bl-browser__dots { gap: 4px; }
   .bl-browser__dots i { width: 6px; height: 6px; }
   .bl-browser__url { font-size: 10.5px; }
-  .bl-band--tree { padding: 20px 14px; }
   .bl-tree__kids { margin-left: 14px; }
   .bl-body .bl-tree__kid { padding-left: 20px; }
   .bl-tree__kid::after { width: 14px; }
