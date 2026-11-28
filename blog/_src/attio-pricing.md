@@ -61,6 +61,8 @@ Free costs $0 for up to 3 users. It is a real CRM for a small team, with:
 
 Free is a great place to start a CRM for a founder or a two-person team.
 
+![An Attio Deals board in a kanban view with Outreach, Lead, In Progress and Won columns, each card showing the company, owner, deal type, domain and revenue range](/assets/blog/attio-review/attio-pipeline.webp "A deals pipeline in kanban view. Image: Attio help center")
+
 ## Attio Plus
 
 Plus costs $40 a month for the workspace and first user, and $35 for each added user, billed yearly. On monthly billing it costs $50, then $44 per user. Plus fits teams of up to 10 users, and it adds:
@@ -88,6 +90,8 @@ Pro costs $100 a month for the workspace and first user, and $79 for each added 
 - **Records:** up to 1,000,000, then $240 a month per extra million on yearly billing.
 
 If you need sequences, call recording or custom objects, price Attio at Pro, since all three start here.
+
+![An Attio sequence step with an automated email, a first name variable and an AI Composer block set to a friendly introduction](/assets/blog/attio-review/attio-sequence.webp "A sequence email, a Pro feature. Image: Attio help center")
 
 ## Attio Ultra
 
@@ -140,7 +144,13 @@ A few things help you plan:
 - Emails sent straight from a sequence use no credits.
 - Admins can see usage under Workspace settings, then Billing, then Usage.
 
+![The Attio Credits settings page showing 8,241 of 10,000 credits consumed in the current billing period, a daily bar chart, and usage split into Ask Attio 421, Workflows 4,897 and AI Autofill 2,923](attio-credits-page.webp "Workspace credit usage in settings. Image: Attio help center")
+
+![The Attio Ask Attio usage settings page showing 1,000 credits per member, 8 of 10 members using Ask Attio, a workspace credit limit toggle and usage by member](attio-credits.webp "Ask Attio credits per member. Image: Attio help center")
+
 The [credits guide](https://attio.com/help/reference/workspace-settings-billing/manage-workspace-and-seat-credits) lists what each workflow step and AI action costs.
+
+![An Attio workflow run that starts when a record is created, passes through a Switch step and adds the record to a list, with the run history showing 1 credit used](attio-workflow.webp "A workflow run and its credit cost. Image: Attio help center")
 
 ## How to pay less for Attio
 
