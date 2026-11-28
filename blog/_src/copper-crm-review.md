@@ -51,17 +51,29 @@ Here are the parts of Copper that service teams use most, with links to Copper's
 
 Copper syncs Gmail email, contacts and files, Google Calendar and Google Contacts, and works with Google Drive, Google Sheets and Looker Studio. The Chrome extension shows client details next to each email, so you can add a contact or update a deal without switching tabs.
 
+![An email open in Gmail with the Copper Chrome extension panel on the right, showing an Add To Copper button and the sender's address, website, LinkedIn and company details](copper-gmail.webp "The Copper extension in Gmail. Image: Copper help center")
+
 ### Pipelines and deal management
 
 Drag-and-drop pipelines track each deal by stage, with flags and alerts that point out deals that need attention. Copper also tracks revenue and helps with contracts and proposals.
+
+![A Copper pipeline board with Discovery Call Booked, Demo and Negotiation stages, deal cards with company, contact and value, and a Pipeline card flags panel with High Value and Slipping flags turned on](copper-pipeline.webp "A pipeline board with card flags. Image: Copper help center")
 
 ### Projects and tasks
 
 Copper includes project management on every plan, so the team can track client work after the deal closes. Tasks, reminders and task automation keep each step moving.
 
+![The Copper My Tasks list grouped by project, with each task's priority, activity type, owner, related record and due date](copper-projects.webp "Tasks grouped by project. Image: Copper help center")
+
 ### Email and automation
 
 Copper includes email templates and open and click tracking, and Basic includes task automation. Professional adds workflow automation and bulk email, and Business adds email series, Copper's way to send a set of follow-up emails over time. Copper also includes an AI email template generator and an AI email rewriter.
+
+![A Copper workflow automation trigger set to run when a specific field is updated on an opportunity, with conditions for Status equals Won and Pipeline equals Sales](copper-workflow.webp "A workflow automation trigger. Image: Copper help center")
+
+![The Copper Edit Email Template window with a Draft an email template for me option and a menu of template types such as Webform Response, Quote Reminder and Request Referrals](copper-ai-template.webp "AI email template drafts. Image: Copper help center")
+
+![A Copper Send Email window with a sentence highlighted and Spruce it up and Tidy it up buttons for the AI email rewriter](copper-ai-rewriter.webp "The AI email rewriter. Image: Copper help center")
 
 ### Reporting
 
