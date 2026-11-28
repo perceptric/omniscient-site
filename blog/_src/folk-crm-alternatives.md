@@ -461,6 +461,47 @@ Dex | getdex.com | Not rated | Personal network reminders | [$12/user/month bill
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=folk-crm-alternatives&start=crm)**
 
+## Where folk Shines
+
+folk is a great fit for teams whose deals start in their network. Here is where it shines:
+
+- **Capture from anywhere:** [folkX](https://www.folk.app/), its Chrome extension, saves people from LinkedIn, Sales Navigator, Instagram, X and other sites.
+- **WhatsApp on every plan:** folk logs your direct WhatsApp chats from the last 12 months on each contact.
+- **AI assistants included:** Research, Follow-up and Recap assistants come with every plan.
+- **Unlimited contacts:** every plan holds as many contacts as you need, with email campaigns on [Standard](https://www.folk.app/pricing) at $24 per user a month.
+- **Calls and mobile:** folk records phone calls with transcripts and summaries, and its mobile app scans business cards.
+
+If your deals come from people you already know and you follow up by email, folk is a strong place to stay. Our [folk CRM review](/blog/folk-crm-review/) covers each plan in more detail.
+
+## How to Choose a folk Alternative
+
+Start from what you want next, then run the two tools that match it with your own contacts for a week. These questions settle most cases:
+
+1. **Do you want one CRM for the whole sales motion?** Try Omniscient, where Otto finds leads, captures every conversation and keeps deals current.
+2. **Do your deals start on LinkedIn?** Salesflare adds a LinkedIn sidebar on every plan, and Copper saves prospects from LinkedIn without switching tabs.
+3. **Do you live in Gmail?** Streak puts your pipeline inside the inbox, and Copper works inside Google Workspace.
+4. **Does seat count drive your bill?** Clarify has unlimited seats, and Omniscient has free seats for teammates who only view or log data.
+5. **Does your team call more than it writes?** Go straight to Close.
+6. **Do you want to own the code and the data?** Twenty is the only open source pick here.
+7. **Do you only need to stay in touch?** Dex is a personal CRM for the people you know, without a sales pipeline.
+
+## How to Move from folk to Another CRM
+
+folk exports your contacts as CSV files, one group at a time. The export follows the columns and filters in your view, so plan the move before you click export.
+
+Here is the order we'd follow:
+
+```steps
+1. Show every column first: Open each group and show every field you want to keep before you export it.
+2. Export each group: Save the CSV files and keep folk's notes next to them for reference.
+3. Connect your inbox and calendar: Add your email to the new CRM while folk keeps running, so the timeline starts filling.
+4. Import companies, then people: Bring in companies first, then match each people column to a field in the new CRM.
+5. Rebuild open deals: Recreate each live deal with its stage, amount and next step.
+6. Check the history: Open five accounts you know well and make sure their emails, meetings and notes landed on the right person and company.
+```
+
+Run both tools side by side for the length of a free trial, about two weeks, before you switch off folk. If none of these 13 fit, our guide to the [best CRM for founders](/blog/best-crm-for-founders/) covers more tools for teams that sell through their network.
+
 ## Conclusion
 
 A folk CRM alternative keeps your contacts, conversations and deals in one place. It turns the people you know into a pipeline your team can see.

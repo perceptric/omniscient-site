@@ -462,6 +462,34 @@ Twenty | twenty.com | Not rated | Open source with full APIs | [$9/user/month bi
 
 ![First paid plan per seat a month: Freshsales Growth $9 billed yearly, Twenty Pro $9 billed yearly, monday CRM Basic $12 billed yearly for 3 seats or more, Omniscient Starter $19 billed yearly, HubSpot Sales Hub Starter from $20, Day AI Turbo $24 per agent billed yearly, Salesforce Starter Suite $25 monthly or yearly, Salesflare Growth $29 billed yearly, Attio Plus $35 for each user after the first and Close Essentials $35 billed yearly. Close Solo is $9 for one user, Clarify charges for AI work with unlimited seats, free and then $50 a month, and Pipedrive and Zoho CRM are not shown](entry-prices.svg)
 
+## What a B2B SaaS Team Needs From Its CRM
+
+A SaaS company sells a subscription to a group of people, then sells to the same account again at renewal. What that asks of your CRM depends on how each deal starts:
+
+- **Inbound demo request:** capture the form, name the channel and send it to a rep fast.
+- **Outbound to your ideal customers:** find accounts that fit and log every LinkedIn and email touch.
+- **Sales-led deal:** keep everyone in the buying group on one deal, with notes from every call.
+- **Product-led signup:** show product usage on the account.
+- **Renewal or expansion:** track renewal dates and what each account pays.
+
+Few teams need all five on day one. Weigh each CRM against the motion behind most of last quarter's revenue, then check that it can grow into your next one.
+
+You don't need a data warehouse to get product data into a CRM at first. A nightly script that sends each account's plan and seat count through the CRM's API covers a small team for a while. Omniscient has a REST API with webhooks for this, and most CRMs on this list have an API too.
+
+## How to Choose a CRM for Your SaaS Team
+
+A two-week trial is enough if you spend it on one real deal. Test in this order:
+
+```steps
+1. Name your main motion: Note whether last quarter's closed deals started inbound, outbound, in the product or as expansions.
+2. Fill in your own demo form: Submit it during the trial and check who owns the lead, which channel it shows and how fast the owner hears.
+3. Run one live deal through it: Connect your inbox and calendar, hold a real discovery call and read what the CRM wrote afterward.
+4. Send in one product number: Ask how a plan name or seat count reaches the account, and who keeps that sync running.
+5. Price the plan you'll grow into: Look up the plan with forecasting at next year's seat count, on yearly and monthly billing.
+```
+
+You can try every CRM here before you pay, so run these checks first. For smaller teams, our guide to the [best CRMs for startups](/blog/best-crm-for-startups/) covers startup discounts, and our list of the [best AI CRMs](/blog/best-ai-crm/) goes deeper on AI that fills in records.
+
 ## Conclusion
 
 A CRM for B2B SaaS keeps every account, buyer and renewal in one place. It helps a SaaS team answer demo requests faster.

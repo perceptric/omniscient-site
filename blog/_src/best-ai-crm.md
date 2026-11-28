@@ -506,6 +506,46 @@ folk | folk.app | 4.5/5 | LinkedIn capture with AI fields | [$24/user/month](htt
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=best-ai-crm&start=crm)**
 
+## How These AI CRMs Were Chosen
+
+Every CRM on this list was judged on the same five questions:
+
+- **Where the facts come from:** your inbox, your calendar, call notes or the web.
+- **Proof behind each value:** whether a field the AI fills shows the email or quote behind it.
+- **Respect for what people type:** whether it asks before it changes a value a person entered.
+- **How the AI is priced:** inside the seat, through credits, per agent or only on higher plans.
+- **Setup for a small team:** how much work it takes before the AI does something useful.
+
+The second and third questions matter most. A CRM that fills in a wrong amount with confidence costs more than an empty field, because someone will forecast from that number.
+
+## How AI CRMs Charge for AI
+
+The seat price is only part of the bill, because the AI often comes with an allowance of its own. The 14 CRMs here charge for it in five ways:
+
+1. **AI in the seat:** Omniscient includes the CRM's AI in each paid seat, so a busy month adds no usage bill.
+2. **Credits on top of the seat:** HubSpot, Attio, Close, folk and monday CRM give each paid plan a monthly AI allowance, and heavy use can mean buying more.
+3. **Per agent or capture seat:** Day AI prices each paid seat as an agent, and Lightfield charges for capture seats, with free viewer seats on Pro.
+4. **Credits with any number of seats:** Clarify has a free plan, then charges $50 a month for the workspace, so the credit pool is most of the bill.
+5. **More AI on higher plans:** Salesforce, Microsoft Dynamics 365 Sales, Zoho CRM, Pipedrive and Freshsales keep their richer AI for higher editions.
+
+Ask every vendor one question in the trial: what does a busy month cost when the AI reads every email and meeting? Get the answer in numbers, using the plan's own credit rates.
+
+## How to Choose an AI CRM
+
+One week with your own inbox connected will teach you more than any demo. These are the tests to run in a free trial:
+
+```steps
+1. Connect one real inbox: Connect your email and calendar on day one and see what the CRM writes by Friday.
+2. Open an AI value: Pick any field the AI filled and look for the email, quote or call it came from.
+3. Type over a field: Change a value by hand, wait a day and check that the AI left it alone.
+4. Ask about a live deal: Ask what is holding up a real deal and open every record the answer points to.
+5. Mark an inbox private: Set one inbox to private and see what your teammates can still read.
+6. Price a busy month: Use the plan's credit rates to estimate a month where the AI reads every email and meeting.
+7. Plan the move: Ask how your contacts, deals and notes come over from the CRM you use today.
+```
+
+Most CRMs on this list have a free plan or a free trial, so you can run these tests before you pay. If automatic data entry is your main reason to switch, our list of the [best CRMs with automatic data entry](/blog/crm-with-automatic-data-entry/) goes deeper, and the [best CRMs for startups](/blog/best-crm-for-startups/) covers smaller teams.
+
 ## Conclusion
 
 An AI CRM takes the busy work of selling off your team's plate. Records stay current, and reps spend more of the day with buyers.
