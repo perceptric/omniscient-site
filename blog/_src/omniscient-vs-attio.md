@@ -43,6 +43,8 @@ Here is how [Attio's plans](https://attio.com/pricing) work:
 - Call Intelligence records and transcribes Zoom, Google Meet and Microsoft Teams calls, and it starts on Pro.
 - The API, webhooks, an MCP server and an App SDK come with every plan, and Attio has iOS and Android apps.
 
+![An Attio Deals board in a kanban view with Outreach, Lead, In Progress and Won columns, each card showing the company, owner, deal type, domain and revenue range](/assets/blog/attio-review/attio-pipeline.webp "A deals pipeline in kanban view. Image: Attio help center")
+
 Attio is where we'd point a team whose process doesn't fit a standard CRM, like deal flow for an investor. Its startup program takes 80% off yearly Pro in the first year and 30% in the second, for up to 10 users, so check if you qualify before you compare prices.
 
 ## Where Omniscient shines
@@ -82,6 +84,8 @@ Here is how the two compare. [Attio's plans](https://attio.com/pricing) and [hel
 
 Attio fills in communication intelligence, such as first and last interaction and connection strength. From Plus up, it writes summaries and labels for emails, and on Pro, Call Intelligence turns calls into summaries linked to the right records.
 
+![An Attio Companies table with description, first email interaction, last calendar interaction and estimated ARR columns, and a menu of interaction attributes such as connection strength](/assets/blog/attio-review/attio-interactions.webp "Email and calendar data on company records. Image: Attio help center")
+
 Omniscient saves each email, meeting and transcript to the right company, person and deal. After a call, Otto suggests stage, amount and next step changes, each with the quote it came from. You accept or skip each one, and nothing changes until you do.
 
 ![Omniscient opportunity record for Pallet Cloud, where Otto filled the amount, close date and decision maker from a discovery call with the quote behind each one, and two more changes wait in Suggestions](/assets/blog/best-ai-crm/record.shot.html)
@@ -89,6 +93,8 @@ Omniscient saves each email, meeting and transcript to the right company, person
 ## Asking questions in Attio and Omniscient
 
 This is where the two differ most. Attio has Ask Attio, which runs on credits. In Omniscient, Ask Otto reads the same shared memory that every step of the sales motion runs on.
+
+![An Ask Attio chat where a user asks to prep their next meeting and gets a meeting overview with the prospect, deal stage, deal size and external participants](/assets/blog/attio-review/attio-ask.webp "Ask Attio prepping a meeting. Image: Attio help center")
 
 [Omniscience](/product/omniscience/) puts every email, call, meeting and note in one place that Otto can read. When you ask what Pallet Cloud said about pricing, the answer draws on the whole account, and each fact shows its quote and the date it was said. You can check any answer in seconds, and Claude, ChatGPT or Cursor read the same memory through the [MCP server](/product/mcp/).
 
@@ -113,6 +119,8 @@ Attio sends email from inside the CRM, one at a time or in bulk. Here is how muc
 | Free | 200 | 10 | No |
 | Plus | 1,000 | 50 | No |
 | Pro | Unlimited | 50 | Yes |
+
+![An Attio sequence step with an automated email, a first name variable and an AI Composer block set to a friendly introduction](/assets/blog/attio-review/attio-sequence.webp "An AI content block in a sequence email. Image: Attio help center")
 
 Omniscient reads your Gmail or Outlook mailbox to fill in records. Replies waiting on you rise to the top, and Otto drafts the next email from the thread, which goes out from your own account when you click Send.
 
