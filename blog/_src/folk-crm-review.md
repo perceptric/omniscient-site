@@ -51,13 +51,19 @@ Here are the parts of folk that relationship-driven teams use most, with links t
 
 The [folkX extension](https://www.folk.app/) works on LinkedIn, Sales Navigator, Instagram, X and other sites. It saves a person to folk with their profile details, so you can add them to a pipeline or a campaign from the page you are on. It comes with every plan.
 
+![The folkX side panel open on a LinkedIn profile, showing the saved contact with Enrich, Open in folk, details, interactions and notes](folk-folkx.webp "folkX on a LinkedIn profile. Image: folk help center")
+
 ### Email, calendar and WhatsApp sync
 
 folk syncs Google and Outlook email and calendars, plus WhatsApp. Each member gets 1 synced account on Standard and 5 on Premium, and WhatsApp counts as one synced account. Standard keeps the last 30 interactions per contact, while Premium and Enterprise keep the full history.
 
+![A folk contact list with a Past interactions panel showing a synced WhatsApp conversation, message by message with times](folk-whatsapp.webp "WhatsApp chats logged on a contact. Image: folk help center")
+
 ### Pipelines and deals
 
 Every plan includes pipeline management, so you can track people and companies by stage. Premium adds custom objects and deals, which helps teams that track more than one deal per company.
+
+![A folk sales pipeline board with Demo booked and In discussion columns, contact cards with company, tags and owner, and Add people, Email all and Enrich all buttons](folk-pipeline.webp "A folk pipeline board. Image: folk help center")
 
 ### AI assistants
 
@@ -70,13 +76,21 @@ folk includes AI assistants on every plan:
 
 AI fields fill in columns for you, with 2,000 a month on Standard and 5,000 on Premium.
 
+![The folk assistants page with the Follow-up assistant, marked Active, and the Research assistant, each with a short description](folk-assistants.webp "folk assistants. Image: folk help center")
+
+![The Recap assistant settings in folk, with a toggle and custom instructions for how recaps are written](folk-recap.webp "Recap assistant settings. Image: folk help center")
+
 ### Email campaigns and sequences
 
 Every plan sends email campaigns with templates, LinkedIn and Gmail templates and campaign analytics. Premium adds multi-step sequences with waits and conditions. Members send up to 2,000 messages a month on Standard and 5,000 on Premium.
 
+![A folk email sequence step with a Wait 3 days delay, a From sender, 3 recipients sent one by one, templates and a Stop if replies toggle](folk-sequence.webp "Building an email sequence. Image: folk help center")
+
 ### Enrichment, calls and mobile
 
 folk finds work emails for your contacts, with 500 a month on Standard and 1,000 on Premium. Every plan also includes phone call recording with transcripts and summaries, a mobile app that scans business cards and records voice notes, and an MCP server for AI assistants.
+
+![The folk Calls view listing recorded phone calls with contact, summary, duration and date](folk-calls.webp "Recorded calls in folk. Image: folk help center")
 
 ## Getting started with folk
 
