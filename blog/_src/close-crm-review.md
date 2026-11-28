@@ -56,19 +56,31 @@ The dialers grow with the plan:
 1. **Growth:** the Power Dialer calls through a list one lead after another, with voicemail drop.
 2. **Scale:** the Predictive Dialer, plus live call coaching.
 
+![The Close dialer screen showing Calls Made Today and a Start Calling button, with a Dialer Options menu for predictive calling, the outbound number and Reduced Ring Time](close-power-dialer.webp "Dialer options in Close. Image: Close help center")
+
+![A Close lead record during a live call, with Listen, Whisper and Barge buttons at the top and a Call Coaching entry on the call](close-coaching.webp "Live call coaching. Image: Close help center")
+
 ### Email and SMS
 
 Every plan sends email and SMS from the CRM. Each user connects 3 email accounts on Solo and Essentials, and 10 on Growth and Scale. Growth adds bulk email, email scheduling, Send As and text scheduling.
 
+![A Close lead record with the SMS composer open, showing a From number, a To contact, a template picker and Send and Schedule buttons](close-sms.webp "Sending an SMS from a lead. Image: Close help center")
+
 ### Chloe and AI agents
 
 Chloe, Close's AI assistant, answers questions from your own data, preps calls and creates tasks. The AI Notetaker records and summarizes calls and meetings on every plan.
+
+![The Chloe chat panel in Close with suggested prompts such as summarizing key themes and finding action items across 14 conversations](close-chloe.webp "Chloe, Close's AI assistant. Image: Close help center")
+
+![A meeting in Close with an AI summary in bullet points, a meeting recording player and a talk-time split between two speakers](close-notetaker.webp "A recorded meeting with its summary. Image: Close help center")
 
 Close also offers AI Agents, and its Voice Agent is live. Growth adds AI Playbooks, Auto Updates, AI email rewrite and Lead Summaries. Each plan includes AI credits: 500 a month on Solo, then 1,000, 1,500 and 2,000 per user a month on Essentials, Growth and Scale.
 
 ### Workflows and automation
 
 Growth adds Workflows, which send automated emails, texts and call tasks, including after hours. It also adds automated lead assignment and call and meeting outcomes.
+
+![The Close Workflows list with workflows such as New Lead Outreach and SMS Customer Follow Up, each with active, bounced and goal met numbers](close-workflows.webp "The Workflows list. Image: Close help center")
 
 ### Reporting and team controls
 
