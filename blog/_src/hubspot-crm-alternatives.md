@@ -467,6 +467,47 @@ Less Annoying CRM | lessannoyingcrm.com | 4.8/5 | One simple plan | [$15/user/mo
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=hubspot-crm-alternatives&start=crm)**
 
+## Where HubSpot Shines
+
+HubSpot is a strong fit for small teams that want to start free and add marketing tools on the same CRM later. A team of two may never outgrow the free CRM. Here is what it does well, from [HubSpot's Sales Hub plans](https://www.hubspot.com/pricing/sales):
+
+- **A free CRM with no end date.** It covers up to 2 users, with contacts, deal pipelines, email tracking and meetings.
+- **Room to grow.** You can add seats, hubs and features as the team grows.
+- **Sales tools on Professional.** Sequences and forecasting start on Professional, at $90 to $100 per seat a month plus a one-time $1,500 onboarding fee.
+- **AI on credits.** Starter includes 500 HubSpot Credits a month, Professional 3,000 and Enterprise 5,000.
+- **A startup program.** [HubSpot for Startups](https://www.hubspot.com/startups) gives eligible Seed and Series A founders 90% off the first year.
+
+If two founders need a contact list and a deal pipeline, the free CRM is a great place to stay. Our [Omniscient vs HubSpot](/blog/omniscient-vs-hubspot/) comparison goes through the two feature by feature.
+
+## How to Choose a HubSpot CRM Alternative
+
+Start from the reason you're looking, then test the short list on your own deals:
+
+1. **Name the gap.** Write down what HubSpot doesn't do for you today, such as room for a third seller, sequences before Professional or a steady AI budget.
+2. **Price the full first year.** Add seats, onboarding fees and any add-ons, so you compare the real bill.
+3. **Count the seats.** Check how the bill grows as you add your next sellers.
+4. **Check the AI budget.** Ask whether AI comes with the seat or draws on monthly credits.
+5. **Test with real data.** Connect your inbox in a free trial and see how much of the record fills in on its own.
+
+## How to Move from HubSpot to Another CRM
+
+Run the new CRM next to HubSpot for a couple of weeks and switch in this order:
+
+```steps
+1. Connect your inbox and calendar: Add Gmail or Outlook first, so the new CRM's timeline fills in while HubSpot keeps running.
+2. Invite your team: Use the same email addresses they use in HubSpot, so deal owners match when you import.
+3. Save what won't move: Export contacts without an email address, and write down your workflows and sequences.
+4. Run the import: Bring everything over, then check five deals by hand for stage, amount and owner.
+5. Rebuild automations last: Recreate workflows once the data settles, so nothing fires on a half imported record.
+6. Plan around your renewal: If you committed to a year of HubSpot, time the switch to your renewal date.
+```
+
+Omniscient imports your companies, contacts, deals and notes from HubSpot, as well as from Salesforce, Attio and Pipedrive.
+
+![An example of Omniscient's Import dialog with HubSpot picked, its Connect button grayed out while a HubSpot import runs, now on opportunities after bringing over accounts, contacts and leads](/assets/blog/hubspot-crm-alternatives/import.shot.html)
+
+Our guide to the [best CRM for startups](/blog/best-crm-for-startups/) covers a few more options for early teams.
+
 ## Conclusion
 
 A HubSpot CRM alternative gives a small team its contacts, pipeline and follow-ups on a plan sized to how it sells. The right one saves you from paying for tools you don't use.

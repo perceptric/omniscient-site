@@ -463,6 +463,47 @@ Affinity | affinity.co | Not rated | Relationship scoring for investors | [$2,00
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=attio-alternatives&start=crm)**
 
+## Where Attio Shines
+
+Attio is a strong fit for teams that like to design their own CRM. You start with companies, people and deals, then add objects of your own and link them together. Here is what it does well, from [Attio's plans](https://attio.com/pricing):
+
+- **Records fill in for you.** Every plan syncs email and calendar, and enrichment adds company and person details.
+- **The data model grows with you.** Objects grow from 3 on Free and 5 on Plus to 12 on Pro and any number on Ultra.
+- **Pro adds the sales tools.** Sequences, Call Intelligence and custom objects all start on Pro.
+- **A free plan for small teams.** Free covers up to 3 users, and the trial gives you 14 days of Pro.
+- **Help for startups.** Eligible startups get 80% off yearly Pro in year 1 and 30% in year 2, for up to 10 users.
+
+If your process doesn't fit a standard CRM and someone on your team enjoys designing objects, Attio is a strong place to stay. Our [Omniscient vs Attio](/blog/omniscient-vs-attio/) comparison goes through the two feature by feature.
+
+## How to Choose an Attio Alternative
+
+Start from the reason you're looking, then test the short list on your own deals:
+
+1. **Name the gap.** Write down what Attio doesn't do for you today, such as sequences on a smaller seat, AI without credits or calls in the CRM.
+2. **Price the plan you need.** Compare the plan that has that feature, since many tools keep sequences, call notes or AI on a higher tier.
+3. **Count the seats.** Check how the bill grows from your team today to the team you'll have next year.
+4. **Check the AI budget.** Ask whether AI comes with the seat or draws on monthly credits.
+5. **Test with real data.** Connect your inbox in a free trial and see how much of the record fills in on its own.
+
+## How to Move from Attio to Another CRM
+
+Run the new CRM next to Attio for a couple of weeks before you move the team over, in this order:
+
+```steps
+1. Connect your inbox first: Add Gmail or Outlook and your calendar to the new CRM while Attio keeps running, so its timeline starts filling.
+2. Export what an importer might skip: Save custom objects and lists as spreadsheets, since an importer may only read the standard records.
+3. Import the core records: Move companies, people, deals and notes, then check that each deal kept its stage and owner.
+4. Rebuild the custom parts: Recreate custom objects and fields in the new data model, then load the spreadsheets from step 2.
+5. Move automations last: Rebuild workflows and sequences once the data settles, so nothing fires on a half imported record.
+6. Check the history: Open five accounts you know well and make sure their emails, meetings and notes landed on the right company, person and deal.
+```
+
+Omniscient imports from Attio, as well as from HubSpot, Salesforce and Pipedrive, so your companies, people, deals and notes come over in one step.
+
+![Omniscient's Import dialog with Attio picked from a row of logos for HubSpot, Salesforce, Attio and Pipedrive, a line saying it brings over accounts, contacts, opportunities with their stages, and notes, and a finished Attio import with its counts, marked Done](/assets/blog/attio-alternatives/import.shot.html)
+
+Attio's custom objects stay behind, so plan to rebuild them in the new CRM's data model.
+
 ## Conclusion
 
 An Attio alternative keeps your companies, people and deals current from your email and calendar. The right one also fits how your team sells today.
