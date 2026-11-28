@@ -88,6 +88,10 @@ Professional costs $90 to $100 per seat a month, by how you pay, plus a one-time
 
 If you need sequences or forecasting, price HubSpot at Professional, since both start here.
 
+![A HubSpot sequence with an automated email step, with the email subject and body](/assets/blog/hubspot-crm-review/hubspot-sequence.webp "A sequence email step. Image: HubSpot Knowledge Base")
+
+![The HubSpot forecast tool with a team's forecast and a panel to submit a forecast amount](/assets/blog/hubspot-crm-review/hubspot-forecast.webp "The forecast tool. Image: HubSpot Knowledge Base")
+
 ## HubSpot Sales Hub Enterprise
 
 Enterprise starts at $150 per seat a month, plus a one-time $3,500 onboarding fee. It is built for larger sales teams:
@@ -99,6 +103,8 @@ Enterprise starts at $150 per seat a month, plus a one-time $3,500 onboarding fe
 - Up to 1,000 email sends per user a day from sequences.
 - 12,000 calling minutes and 1,500 hours of transcription a month.
 - 5,000 HubSpot Credits a month.
+
+![HubSpot's Buy additional seats screen for Enterprise, listing Core Seat at $75, Sales Seat at $150, Commerce Seat at $140 and Service Seat at $150 per month per seat, each with a quantity box](hubspot-seats.webp "Buying Enterprise seats. Image: HubSpot Knowledge Base")
 
 ![What each HubSpot Sales Hub plan adds: Free has contacts, deal pipelines, email tracking, meetings and Breeze Assistant; Starter adds up to 15 pipelines, 50 workflows and 500 calling minutes; Professional adds sequences, forecasting, playbooks, custom reports and lead scoring; Enterprise adds conversation intelligence, deal journey analytics and up to 1,000 workflows](plan-adds.svg "What each Sales Hub plan adds")
 
@@ -122,9 +128,15 @@ Most teams pay the plan price and the onboarding fee. These are the extras to kn
 - **Other hubs:** Marketing Hub, Service Hub and HubSpot's quoting tools in Revenue Hub are sold on their own.
 - **Tax:** prices don't include applicable tax.
 
+![The Products and Add-ons section of HubSpot's Account and Billing page, listing a Marketing Hub Professional plan, 1 additional Core Seat, 5,000 additional HubSpot Credits and a total of 3,000 included plus 5,000 additional credits](hubspot-products.webp "Products and add-ons in Account and Billing. Image: HubSpot Knowledge Base")
+
 ### How HubSpot Credits work
 
 HubSpot Credits pay for power features and AI agents. Starter includes 500 credits a month, Professional 3,000 and Enterprise 5,000. Custom agents built with Agent Builder use credits too, so check your usage during setup if you plan to run many agents.
+
+![The HubSpot Credits card in Account and Billing showing 0 of 8,000 credits used, a reset date and Add credits and Manage usage buttons, next to a Marketing Contacts card](hubspot-credits-overview.webp "HubSpot Credits in Account and Billing. Image: HubSpot Knowledge Base")
+
+![The HubSpot Credits usage pop-up in the top bar showing 950 of 20,000 credits used, a reset date and View usage and Set monthly limits buttons](hubspot-credits-usage.webp "The credits meter. Image: HubSpot Knowledge Base")
 
 ## How to pay less for HubSpot
 
