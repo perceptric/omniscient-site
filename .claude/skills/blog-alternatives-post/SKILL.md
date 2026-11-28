@@ -9,7 +9,7 @@ This follows Vincent's Listicle Content Structure Guideline (the Claude Doc at h
 
 Omniscient's value line, repeated in the #1 overview, the recap table, the conclusion, FAQ 5 and the CTAs: **one agentic CRM for the whole sales motion**.
 
-Prices come from `docs/blog-prices.md` (re-check any price older than this month on the vendor's page). Length: 2,500 to 3,000 words for 12 or 13 tools.
+Prices come from `docs/blog-prices.md` (re-check any price older than this month on the vendor's page). Length: at least 2,500 words for 12 or 13 tools, with no maximum. Use the room for the extra sections below.
 
 ## Front matter
 
@@ -50,6 +50,14 @@ The builder adds the breadcrumb, the updated date, the cover (hero image), the c
     4. What features should modern [category tools] include? (ends with Omniscient's strength)
     5. Which tool is recommended for teams that need more than [basic job]? (recommends Omniscient with the value line, then names 1 or 2 tools for a narrower need)
 12. **```cta** "Ready to use Omniscient?" line as the last CTA.
+
+### Extra sections (no word cap)
+
+Between the 👉 Try link and the Conclusion, add 2 to 4 H2 sections that help the reader act, picked for the post:
+
+- Alternatives posts: "## Where [Tool] Shines" (what it does well, fairly), "## How to Choose a [Tool] Alternative" (numbered steps) and "## How to Move from [Tool] to Another CRM" (export, map fields, test, switch).
+- Best-of posts: "## How to Choose [a Category]" (numbered steps), plus one that fits the reader, such as startup discounts, free plans and trials, how the tools charge for AI, or how to test the job in a free trial.
+- No tables in these sections. Bullets, numbered steps, ```steps blocks, charts and screenshots are fine. Every fact comes from the vendor's site or docs/blog-prices.md.
 
 ## Ranking order
 

@@ -23,7 +23,8 @@ const SITE = "https://tryomniscient.com";
 const APP = "https://app.tryomniscient.com/";
 const TOPICS = { crm: "CRM" };
 const TYPES = ["best-of", "alternatives", "versus", "review", "pricing", "how-to"];
-const LENGTH = { "best-of": [2300, 3300], alternatives: [2300, 3300], versus: [1800, 2500], review: [1800, 2500], pricing: [1500, 2500], "how-to": [1500, 2500] };
+// Minimum body length per post type. There is no maximum.
+const LENGTH = { "best-of": 2300, alternatives: 2300, versus: 1800, review: 1800, pricing: 1500, "how-to": 1500 };
 const BANNED = ["delve", "landscape", "game-changer", "game changer", "seamless", "seamlessly", "robust", "leverage", "in today's", "unlock", "elevate", "quietly", "rival", "rivals", "we build", "we built", "we wrote", "our own importer", "which side we sit", "our product"];
 
 const rel = (p) => p.slice(root.length).replace(/^\/+/, "");
@@ -1048,8 +1049,8 @@ function render(post, known) {
   if (!post.data.summary) ctx.warn("no summary (the index card uses meta_description)");
   if (!ctx.h1s.length) ctx.warn("no # title line in the body (the page uses the frontmatter title)");
   if (!ctx.toc.length) ctx.warn("no ## headings, so the table of contents is empty");
-  const range = LENGTH[post.type];
-  if (range && (words < range[0] * 0.95 || words > range[1] * 1.05)) ctx.warn(`${words} words; a ${post.type} post runs ${range[0]} to ${range[1]}`);
+  const min = LENGTH[post.type];
+  if (min && words < min * 0.95) ctx.warn(`${words} words; a ${post.type} post runs at least ${min}`);
   if (ctx.visuals < 3) ctx.warn(`${ctx.visuals} visual${ctx.visuals === 1 ? "" : "s"} found; posts need at least 3`);
   if (ctx.checks.length) ctx.warn(`"check" or no price for ${[...new Set(ctx.checks)].join(", ")}: the page shows "See pricing" linked to each pricing page; write the confirmed price, "Custom", or [See pricing](url) when the page isn't at /pricing`);
   const prose = post.body.replace(/^(`{3,}|~{3,})[\s\S]*?^\1/gm, "");
