@@ -63,9 +63,13 @@ The free CRM covers up to 2 users. It includes:
 
 [Sales Hub](https://www.hubspot.com/products/sales) helps reps move deals from first touch to close. It adds deal scoring, deal pipelines, AI guided selling and deal plans. The number of pipelines grows with the plan: up to 15 on Starter, 100 on Professional and 350 on Enterprise.
 
+![HubSpot deal pipeline settings listing stages such as Pilot / Proof of Concept, Procurement & Legal Review, Closed Won and Closed Lost, each with a win probability, while a new Manager Approved stage is added](hubspot-pipeline.webp "Setting up deal stages. Image: HubSpot Knowledge Base")
+
 ### Sequences and sales automation
 
 Sequences send personal emails in steps and start on Professional. Professional covers 5,000 sequences per account and up to 500 sends per user a day. Enterprise raises that to 1,000 sends per user a day and lets workflows start a sequence.
+
+![A HubSpot sequence step, Automated Email Day 1, with company and first name tokens in the email and a menu to edit, replace or clone the email](hubspot-sequence.webp "An automated email step in a sequence. Image: HubSpot Knowledge Base")
 
 Sales workflows grow with each plan:
 
@@ -77,11 +81,17 @@ Sales workflows grow with each plan:
 
 HubSpot has calling built in, with a power dialer, voicemail drops and calls logged to the CRM. Calling minutes grow from 500 a month on Starter to 3,000 on Professional and 12,000 on Enterprise.
 
+![A HubSpot contacts list with a phone number selected and the HubSpot calling window open with a dial pad](hubspot-calling.webp "Calling a contact from the contacts list. Image: HubSpot Knowledge Base")
+
 HubSpot Notetaker records meetings, and call transcription and coaching come with Professional, at 750 hours per account a month, and Enterprise, at 1,500 hours. Conversation intelligence, with tracked terms, comes with Enterprise.
 
 ### Forecasting and reporting
 
 Professional adds default and custom forecasting, plus up to 100 custom reports. Enterprise adds forecasting across team levels, up to 500 custom reports and deal journey analytics. Dashboards grow from 10 on Free to 30 on Starter, 75 on Professional and 100 on Enterprise.
+
+![The HubSpot forecast tool showing goal, closed won, gap and forecast submission for all teams, with a panel to submit a forecast amount and note for Q3 2025](hubspot-forecast.webp "Submitting a forecast. Image: HubSpot Knowledge Base")
+
+![A HubSpot completed activities report in the Sales analytics suite, with a horizontal bar chart of emails sent to contacts and calls](hubspot-reports.webp "A completed activities report. Image: HubSpot Knowledge Base")
 
 ### AI agents and Breeze
 
@@ -92,6 +102,10 @@ HubSpot's [Agent Hub](https://www.hubspot.com/products/artificial-intelligence) 
 - **Agent Builder:** lets you build your own agents on your customer data.
 
 Many agents run on HubSpot Credits. Breeze Assistant, the AI helper, comes with the free CRM too.
+
+![HubSpot's sales workspace showing an AI-written outreach email for a contact, with an associated play, a regenerate button and a Start outreach button](hubspot-prospecting.webp "An AI-written outreach email in the sales workspace. Image: HubSpot Knowledge Base")
+
+![Breeze Assistant answering a request for today's priorities with a day brief, next to a panel showing the business and user context it used](hubspot-breeze.webp "Breeze Assistant and the context it used. Image: HubSpot Knowledge Base")
 
 ## HubSpot pricing
 
