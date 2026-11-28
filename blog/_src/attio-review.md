@@ -54,17 +54,25 @@ Attio's [data model](https://attio.com/platform/data) lets you sync and structur
 
 Records grow with the plan too. Free holds 50,000 records, Plus 250,000, Pro 1,000,000 and Ultra 3,000,000.
 
+![An Attio Deals board in a kanban view with Outreach, Lead, In Progress and Won columns, each card showing the company, owner, deal type, domain and revenue range](attio-pipeline.webp "A deals pipeline in kanban view. Image: Attio help center")
+
+![An Attio company record for Mailchimp with company details on the left and an Overview tab showing highlights, recent activity, emails and notes](attio-record.webp "A company record page. Image: Attio help center")
+
 ### Email and calendar sync with enrichment
 
 Every plan syncs email and calendar. Each user connects 1 account on Free and Plus, 2 on Pro and 3 or more on Ultra. [Enrichment](https://attio.com/platform/enrichment) fills in company and person details on every record, so you spend less time typing.
 
 From Plus up, Attio writes summaries and labels for your emails. This helps a busy rep see what a thread is about before opening it.
 
+![An Attio Companies table with description, first email interaction, last calendar interaction and estimated ARR columns, and a menu of interaction attributes such as connection strength](attio-interactions.webp "Email and calendar data on company records. Image: Attio help center")
+
 ### Ask Attio and agents
 
 [Ask Attio](https://attio.com/platform/ask) answers questions about your data and helps you create lists and reports with AI. Custom agents take on repeat jobs, like routing new leads or researching a company before a call.
 
 Ask Attio runs on credits. Each user gets a monthly allowance, and the workspace shares a pool for agents and workflows. The pricing section below has the numbers.
+
+![An Ask Attio chat where a user asks to prep their next meeting and gets a meeting overview with the prospect, deal stage, deal size and external participants](attio-ask.webp "Ask Attio prepping a meeting. Image: Attio help center")
 
 ### Call Intelligence
 
@@ -81,11 +89,16 @@ Attio sends email from inside the CRM. [Sequences](https://attio.com/platform/se
 | Pro | Unlimited | 50 | Yes |
 | Ultra | Unlimited | 50 | Yes |
 
+
+![An Attio sequence step with an automated email, a first name variable and an AI Composer block set to a friendly introduction](attio-sequence.webp "An AI content block in a sequence email. Image: Attio help center")
+
 ### Workflows and reporting
 
 [Workflows](https://attio.com/platform/workflows) run on every plan and use the workspace credit pool. They move records, send alerts and connect other tools when something changes.
 
 [Reporting and forecasts](https://attio.com/platform/reporting) show your pipeline in real time. You get 3 reports on Free, 15 on Plus, 100 on Pro and as many as you like on Ultra. Plus adds funnels and segments, and Pro adds targets and trends.
+
+![An Attio Revenue Dashboard with a total deal value metric and a stacked bar chart of active deals by team member across deal stages](attio-dashboard.webp "A revenue dashboard. Image: Attio help center")
 
 ## Attio pricing
 
