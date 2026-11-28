@@ -464,6 +464,54 @@ Twenty | twenty.com | Not rated | Open source, free to self-host | [$9/user/mont
 
 ![Price per seat a month on yearly billing, on each alternative's first paid plan: Freshsales Growth $9, Twenty Pro $9, monday CRM Basic $12 from 3 seats, Omniscient Starter $19, Copper Basic $23, Salesflare Growth $29 and Attio Plus $35 for each user after the first. Outlined for comparison: Salesforce Starter Suite at $25 and Salesforce Pro Suite at $100. Not shown: HubSpot, Close, folk and Nutshell, which price their first plan in other ways, and Pipedrive and Zoho CRM.](seat-prices.svg)
 
+## Where Salesforce Shines
+
+Salesforce is a strong CRM, and if your setup already works, it can be a good place to stay. Here is what it does well for a startup:
+
+- **A free start.** The Free Suite covers up to 2 users, so two founders can begin at no cost.
+- **Room to grow.** Six Sales Cloud editions take a team from Starter Suite at $25 per user a month to Core, Advanced and Max.
+- **Deep custom setup.** Custom objects, territories and approval steps suit startups that sell to large companies with complex buying processes.
+- **A huge ecosystem.** Many partners, consultants and apps already work with Salesforce.
+
+We'd stay on Salesforce and revisit it at renewal in these cases:
+
+- You sell to large companies with several sales processes, territories or approval steps.
+- Someone on your team already runs Salesforce well, so the setup work is done.
+- Your team uses custom objects and automations you built in Salesforce every day.
+
+## How to Choose a Salesforce Alternative
+
+Start from the way your startup sells, then test the shortlist on real deals. These steps keep the choice simple:
+
+1. **Name your main job.** Pick the one thing the CRM must do best, such as finding leads, logging calls or running marketing.
+2. **Count your seats for the next year.** Price each tool for the team you'll have at renewal, on yearly billing.
+3. **Check where AI is priced.** Some CRMs include AI in the seat, and others sell it as an add-on or with credits.
+4. **Look at the import.** Make sure the tool can bring over your accounts, contacts, leads and opportunities from Salesforce.
+5. **Run a free trial on live deals.** Connect your inbox and calendar, and see how much the CRM fills in on its own in a week.
+
+## How to Move from Salesforce to Another CRM
+
+Most of what matters in a Salesforce move applies whichever CRM you pick. These details are worth checking:
+
+- **Leads and contacts.** Salesforce keeps them apart, so check that unconverted leads come over too.
+- **Records without an email.** Some importers skip contacts and leads with no email, so export them first if you want to keep them.
+- **Pipelines.** Check how your opportunity stages map, and split them into more than one pipeline if you run several sales processes.
+- **Notes.** Salesforce has two note tools, and [each note opens in the tool that made it](https://help.salesforce.com/s/articleView?id=000384089&language=en_US&type=1), so check which kind your team writes.
+- **Owners.** Opportunity owners usually match by email, so invite teammates with the same addresses they use in Salesforce.
+
+Omniscient imports from Salesforce, HubSpot, Attio and Pipedrive. We'd switch in this order:
+
+```steps
+1. Check your renewal date: Pro Suite and the editions above it are billed yearly, so time the switch to the end of your billing year.
+2. Save what won't move: Export files and custom objects, and write down your flows and alerts.
+3. Connect your inbox and calendar: Add Gmail or Outlook first, so new activity lands in the new CRM.
+4. Invite your team: Use the email addresses they use in Salesforce, so opportunity owners match.
+5. Run the import: Bring everything over, then check five opportunities by hand for stage, amount and owner.
+6. Rebuild automations last: Recreate flows once the data settles, so nothing fires on a half-imported record.
+```
+
+Run both CRMs side by side until the numbers match, then switch. Our guide to the [best CRM for startups](/blog/best-crm-for-startups/) compares a few more options.
+
 ## Conclusion
 
 A Salesforce alternative gives a startup a CRM it can run without an admin. It keeps accounts, contacts and deals in order at a price that fits an early team.

@@ -462,6 +462,47 @@ Affinity | affinity.co | Not rated | Relationship strength scores | [$2,000/user
 
 👉 **[Try Omniscient for free](https://app.tryomniscient.com/signup?utm_source=article&utm_medium=crm-with-automatic-data-entry&start=crm)**
 
+## How Automatic Data Entry Works in Omniscient
+
+Omniscient fills in its records from the Gmail or Outlook inbox and calendar you connect, and from the notes of your Zoom, Google Meet and Teams calls. Everything lands in [Omniscience](/product/omniscience/), the shared memory that puts each email, meeting, call and note on the right company, person and deal.
+
+Here is what happens as you work:
+
+- **Emails and meetings land on the right record.** Each conversation is filed under the right person, company and deal, and replies waiting on you rise to the top of your inbox.
+- **Inbox privacy stays in your hands.** Each person controls their inbox privacy settings, so private mail stays private.
+- **Duplicates merge and details fill in.** Duplicates merge with their full history, emails and company details fill in, and you can undo any of it.
+- **Calls become notes.** Otto writes notes, action items and transcripts from Zoom, Google Meet and Teams. A recording bot is optional, as a $25 per seat add-on.
+- **Deal changes come with proof.** After a call, Otto suggests stage, amount and next step changes, each with the customer's words behind it. They wait in a Suggestions inbox, and nothing changes until you accept.
+
+Once the records are full, you can [ask Otto](/product/ask-otto/) about any account in plain words and get an answer with the quote and date behind each fact. The [Meetings page](/product/meetings/) shows a call from start to finish.
+
+## How to Test Automatic Data Entry in a Free Trial
+
+Your own inbox will teach you more in a week than any demo. These are the checks we'd run with it connected:
+
+```steps
+1. Connect your busiest inbox: Pick the one where newsletters sit next to buyers, then count the new contacts the next morning.
+2. Search for a newsletter: Look up a vendor that emails you every week and confirm it didn't become a contact.
+3. Hold one sales call: Run a call on Meet, Zoom or Teams and note what lands on the deal, and when.
+4. Trace one value: Open a field the AI filled and find the sentence it came from.
+5. Type over a field: Change a value by hand, then send an email that says otherwise and check what happens to your value.
+6. Add a company by domain: See which details fill in, and whether any of them look guessed.
+```
+
+Most of the CRMs on this list have a free plan or a free trial, so you can run these checks before you pay.
+
+## How to Choose a CRM With Automatic Data Entry
+
+Pick the CRM whose automatic entry you can trust, then check the price. These steps help:
+
+1. **Decide what should fill in.** List the records and fields you want filled for you, such as contacts, companies, call notes and deal amounts.
+2. **Ask how changes are approved.** Some CRMs change fields on their own, and others wait for you to accept each change.
+3. **Look for proof.** A filled value should point back to the email or call it came from.
+4. **Check where AI is priced.** Some CRMs include AI in the seat price, and others charge credits or add-ons.
+5. **Test it on your own data.** Run the free trial checks above before you buy.
+
+For more picks, see our guides to the [best AI CRM](/blog/best-ai-crm/) and the [best CRM for founders](/blog/best-crm-for-founders/).
+
 ## Conclusion
 
 A CRM with automatic data entry gives your team back the time it spends typing. It also keeps every record complete, so forecasts and handoffs rest on what buyers really said.
