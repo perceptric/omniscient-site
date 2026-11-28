@@ -57,7 +57,7 @@ The [folkX extension](https://www.folk.app/) works on LinkedIn, Sales Navigator,
 
 folk syncs Google and Outlook email and calendars, plus WhatsApp. Each member gets 1 synced account on Standard and 5 on Premium, and WhatsApp counts as one synced account. Standard keeps the last 30 interactions per contact, while Premium and Enterprise keep the full history.
 
-![A folk contact list with a Past interactions panel showing a synced WhatsApp conversation, message by message with times](folk-whatsapp.webp "WhatsApp chats logged on a contact. Image: folk help center")
+![folk's Past interactions panel showing a synced WhatsApp conversation with Maria Acosta, message by message with times](folk-whatsapp.webp "WhatsApp chats logged on a contact. Image: folk help center")
 
 ### Pipelines and deals
 
